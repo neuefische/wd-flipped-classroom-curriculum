@@ -13,7 +13,6 @@
 -
 -
 
-
 ## Inform
 ### Sessionguide
 - 
@@ -29,3 +28,7 @@
 ### Recap of the Project/Assignement and Discussion of MVP / Solution
 - 
 -
+
+
+## Keywords for Recap:
+- 
