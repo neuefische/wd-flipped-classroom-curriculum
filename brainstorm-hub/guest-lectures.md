@@ -1,17 +1,17 @@
-# Ideas for guestlectures
+# Ideas for guest lectures
 
 the lectures will take place after the lunchbreak for 30-45min, from 13:30 - max. 14:15
 
-- seld-sufficient learning
-  .._ How to google fast and smart
-  .._ Introduction to a Dev's best friends (Stackoverflow, MDN..)
+- self-sufficient learning
+  * How to google fast and smart
+  * Introduction to a Dev's best friends (Stackoverflow, MDN..)
 
 - efficient group-work
-  ..\* expectation management
+  * Expectation management
 
 - Selfmanagement
-  .._ Time management
-  .._ How to set priorities right
+  * Time management
+  * How to set priorities right
 
 - Agile Workflow
 
