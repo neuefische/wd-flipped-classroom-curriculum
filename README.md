@@ -23,6 +23,22 @@ This update is aiming to improve the way our students learn. <br>
 > 💡 Balanced coaches
 > to give more space for coaches to advance their personal development or contribute to in-house projects
 
+## Daily routine
+
+| duration | time          | content                  |
+| -------- | ------------- | ------------------------ |
+| 0:15     | 9:00 - 9:15   | Student Recap            |
+| 0:45     | 9:15 - 10:00  | Session                  |
+| 1:30     | 10:00 - 11:30 | Project / Pairing time   |
+| 0:30     | 11:30 - 12:00 | Project recap            |
+| 0:30     | 12:00 - 12:30 | Workout                  |
+| 1:00     | 12:30 - 13:30 | Break                    |
+| 0:45     | 13:30 - 14:15 | Guest Session            |
+| 0:45     | 14:15 - 15:00 | Session                  |
+| 1:30     | 15:00 - 16:30 | Project / Pairing time   |
+| 0:30     | 16:30 - 17:00 | Project recap            |
+| 2:00     | 17:00 - 19:00 | Independent project time |
+
 ## Sessions
 
 Sessions are structured not by week - but by days. It does not matter anymore which session is being held on which day of the week. This is the recommended order of sessions.
