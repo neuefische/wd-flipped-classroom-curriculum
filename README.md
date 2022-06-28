@@ -7,7 +7,7 @@ This update is aiming to improve the way our students learn. <br>
 > 💡 Self-sufficient learning <br>
 > to prepare the students for their learning path and entry into their professional life
 
-> 💡 Active learning <br>
+> 💡 Active and problem based learning <br>
 > to offer a practical approach of learning according to [research](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
 
 > 💡 Integration of a "safety net"/"backup" <br>
