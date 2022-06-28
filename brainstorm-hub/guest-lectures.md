@@ -22,3 +22,5 @@ the lectures will take place after the lunchbreak for 30-45min, from 13:30 - max
 - Open Source
 
 - Career Coaching / CV Sessions
+
+- Nutrition
