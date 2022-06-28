@@ -25,7 +25,7 @@
 
 ## Evaluate
 > Note to self: Don't forget to highlight the progress of today :)
-### Recap of the Project/Assignement and Discussion of MVP / Solution
+### Recap of the Project/Assignment and Discussion of MVP / Solution
 - 
 -
 
