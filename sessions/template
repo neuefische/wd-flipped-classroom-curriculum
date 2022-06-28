@@ -1,0 +1,5 @@
+## Collect students from prior standpoint
+## Activate prior knowledge
+## Inform
+## Process
+## Evaluate
