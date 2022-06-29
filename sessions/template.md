@@ -3,7 +3,7 @@
 - 
 
 ## Arrival: Collect students from prior standpoint
-> Note to self: Breathe and relax :)
+> 💡: Breathe and relax :)
 ### Which problem will we solve today? 
 - 
 - 
@@ -24,7 +24,7 @@
 -
 
 ## Evaluate
-> Note to self: Don't forget to highlight the progress of today :)
+> 💡: Don't forget to highlight the progress of today :)
 ### Recap of the Project/Assignment and Discussion of MVP / Solution
 - 
 -
