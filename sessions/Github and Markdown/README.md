@@ -2,6 +2,7 @@
 
 - What is a VCS and why is it so useful / important
 - Importance of GitHub in dev community
+- Understanding what Markdown is / what it is used for / how to write Markdown
 - Creating repositories on GitHub
 - Creating / editing files on GitHub
 - Creating commits on GitHub
@@ -31,15 +32,32 @@
 
 ### Sessionguide
 
--
--
+- Draw picture explaining Git Workflow (Commits only) like this one:
+
+![Git Workflow](assets/git-workflow.png)
+[Excalidraw link](https://excalidraw.com/#json=S4Crt12dskNcVYoTPe58b,Mt7hzF-6pA3ZKvWfj3nV4g)
+
+- Explain / draw use cases:
+
+  - Go back to previous commit and continue work from there
+  - Fork someone elses repository and continue work from any commit
+
+- Explain core principles / terminology:
+
+  - `version control`
+  - `repository` : Collection of files with historisation / different versions.
+  - `commit` (+ `hash` as unique identifier)
+
+- Show briefly on GitHub how to create a repository. Create a repository with your GitHub username.
+  - Create a README.md file and commit.
+  - Explain what Markdown is / what it is used for
+    - ...
+    - ...
+  - Create one or two commits showing some Markdown syntax
 
 ## Process
 
 ### Project / Assignment
-
--
--
 
 ## Evaluate
 
