@@ -92,3 +92,10 @@ The following is unsorted and there for the sole purpose of showing how much tim
 | 38  |                                  |                                |
 | 39  | Capstone Forum / Agile week      | Capstone Forum / Agile week    |
 | 40  | Capstone Forum / Agile week      | Capstone Forum / Agile week    |
+
+## Further Reading
+
+- [AVIVA Method](https://moodle.jku.at/jku/pluginfile.php/3829921/mod_resource/content/1/5S%C3%A4ulen%20der%20Unterrichtsvorbereitung.pdf)
+- [AVIVA Method Blog Post](https://www.julia-training.com/blog/2017/10/30/optimal-lernen-mit-aviva)
+- [problem based learning](https://citl.illinois.edu/citl-101/teaching-learning/resources/teaching-strategies/planning-a-class-session)
+- [more problem base learning](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
