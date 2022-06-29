@@ -7,7 +7,11 @@
 
 > 💡 Breathe and relax :)
 
-### Which problem will we solve today?
+### Which important problem will we solve today?
+
+### Why is the content of todays block so important for the students?
+
+### Raise a question to be answered by the end of the block!
 
 -
 -
