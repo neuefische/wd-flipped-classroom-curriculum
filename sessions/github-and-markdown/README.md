@@ -105,7 +105,7 @@ The next 3 months will be a very exciting time, as I will learn new things every
 
 ## Process: Project / Assignment
 
-- [ ] Explain the process in general (Breakoutrooms / They can ask us for help at any time / Where to find the project tasks / Tell them to help each other / Keep and eye on Slack...)
+- [ ] Explain the process in general (Breakoutrooms / They can ask us for help at any time / Where to find the project tasks / Tell them to help each other / Take a break when you need it in the next 1.5h / Keep and eye on Slack...)
 - [ ] Provide the [handout](handout.md) for the students
 - [ ] Open the handout and walk the students through the structure (summary on top and tasks on the bottom of the handout)
 - [ ] Divide the students in groups of 3-4
@@ -115,12 +115,18 @@ The next 3 months will be a very exciting time, as I will learn new things every
 
 ## Evaluate: Recap of the Assignment
 
-> 💡 Don't forget to highlight the progress of today :)
-
 - [ ] Ask the students if someone would like to share their README.md file
 - [ ] Let them explain their working process
-- [ ] Analyse their commit history
-- [ ] Try to get as interactive with the students as possible (e.g ask for their oppinions on the commit messages that were written)
+- [ ] Analyze their commit history
+- [ ] Try to get as interactive with the students as possible (e.g ask for their opinions on the commit messages that were written)
+- [ ] Optional: Open a thread in Slack to let them post links to their README.md
+
+## Checkout
+
+- [ ] Summarize the day by repeating all the topics that were discussed
+- [ ] Highlight the progress of the day
+- [ ] Encourage the students to repeat what they learned with practical exercises
+- [ ] Remind them to rest, as its just the first day :)
 
 ## Keywords for Recap:
 
@@ -130,4 +136,4 @@ git,
 version control,
 repository,
 commit,
-commit message,
+commit message
