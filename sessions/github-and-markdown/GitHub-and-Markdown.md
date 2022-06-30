@@ -2,14 +2,16 @@
 
 ## Learning Objectives
 
-After this session you should be able to:
+In this session you will learn:
 
-- [ ] understand version control and why is it so useful / important.
-- [ ] create repositories on GitHub.
-- [ ] create / edit files on GitHub.
-- [ ] create commits on GitHub.
-- [ ] understand Markdown syntax.
-- [ ] write Markdown.
+- [ ] what version control is and why is it so useful / important.
+- [ ] to create repositories on GitHub.
+- [ ] to create / edit files on GitHub.
+- [ ] to create commits on GitHub.
+- [ ] what Markdown is.
+- [ ] to write Markdown.
+
+---
 
 ## Markdown
 
@@ -103,6 +105,8 @@ Now visitors of your profile get a good overview about you, but plain markdown l
 
 2. Now it's your turn to implement some of these elements in your profile. Get crazy!
    > 💡 Hint: You can find a list of the tools used in these profile readmes [here](https://github.com/abhisheknaiidu/awesome-github-profile-readme#tools).
+
+---
 
 ## Resources
 

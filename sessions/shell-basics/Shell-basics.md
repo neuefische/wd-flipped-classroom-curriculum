@@ -1,12 +1,14 @@
-# Session Name
+# Shell Basics
 
 ## Learning Objectives
 
-After this session you should be able to:
+In this session you will learn:
 
-- [ ] understand what the terminal and the shell are.
-- [ ] navigate the file system inside the shell.
-- [ ] create, rename, remove and move files and folders inside the shell.
+- [ ] what the terminal and the shell are.
+- [ ] to navigate the file system inside the shell.
+- [ ] to create, rename, remove and move files and folders in the filesystem.
+
+---
 
 ## Shell
 
