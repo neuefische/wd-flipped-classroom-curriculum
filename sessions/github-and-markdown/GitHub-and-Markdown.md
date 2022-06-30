@@ -71,6 +71,9 @@ At the same time GitHub is a social network for developers and companies of all 
 
 > 💡 Even though GitHub is the most popular online git platform, it is by far not the only one. There are several alternatives to GitHub, i.e Gitlab or Bitbucket.
 
+<br>
+<br>
+
 # Project: GitHub Profile
 
 Your Github Profile is generally the first impression that other developers and future employers will get of you. There is a simple way to enhance this profile with your individual style, namely the so called `profile readme markdown file`. So let's build our very own personal profile page!

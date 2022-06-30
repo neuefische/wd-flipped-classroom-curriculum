@@ -1,6 +1,6 @@
 # GitHub & Markdown
 
-> feel free to create a personal branch of this guide to add your own notes
+> 💡 feel free to create a personal branch of this guide to add your own notes
 
 ## Learning objectives
 
@@ -33,7 +33,7 @@
 
 ## Activate prior knowledge of students
 
-- Ask questions:
+- You can ask these questions:
 
   - Have you come into contact with a VCS before (and how / why)?
   - Can you think of anything where a VCS would have been helpful to you (e.g. writing an assay and accidently deleting parts of it)?
@@ -105,7 +105,7 @@ The next 3 months will be a very exciting time, as I will learn new things every
 
 ## Process: Project / Assignment
 
-- [ ] Explain the process in general (Breakoutrooms / They can ask us for help at any time / Where to find the project tasks / Tell them to help each other / Take a break when you need it in the next 1.5h / Keep and eye on Slack...)
+- [ ] Explain the process in general (Breakoutrooms / They can ask the cpoaches for help at any time / Where to find the project tasks / Tell them to help each other / Take a break when you need it in the next 1.5h / Keep and eye on Slack...)
 - [ ] Provide the [handout](handout.md) for the students
 - [ ] Open the handout and walk the students through the structure (summary on top and tasks on the bottom of the handout)
 - [ ] Divide the students in groups of 3-4
