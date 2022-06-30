@@ -12,11 +12,24 @@ In this session you will learn:
 
 ## Shell
 
-Normally, you use your operating system via a graphical user interface (GUI), i.e. the finder in Mac, windows explorer in Windows or basically anything you see on screen when using your computer.
+You are probably used to using graphical user interfaces (GUI) to interact with computers, for example:
 
-As developers we need to learn an additional way to interact with our computer, the so called shell, to access crucial tools and features. Instead of an graphical user interface, the shell is text based. This means, that anyting you want to do has to be executed via specific commands written in a command line. Inside the shell you can do everything and even more you can already do with the GUI of your operating system. Every functionality like displaying the files of the current directory, changing directories, creating new files, deleting files, opening any program on the computer has its own command.
+- Windows Explorer to search for files / rename / delete them
+- Your operating systems UI for changing the time zone via mouse clicks
+- Using "installation wizards" to install software via mouse clicks
 
-The default shell installed on Mac is zsh (z shell). The program which displays the shell command line and output is the so called terminal. In Mac, the terminal programs are iterm or iterm2.
+Often times developers interact with computers over CLIs (Command line interfaces) which are text based user interfaces.
+That means that developers type commands to interact with the computer (create / move / delete / edit files, install software, change system settings...).
+
+This has the following reasons / advantages:
+
+- Many tools don't have GUI (graphical user interfaces) and can only be run over a CLI
+- You can write scripts (which consist of a number of commands) to automize processes and repetitive tasks and ensure they are being run exactly the same way every time they are executed.
+
+We are using the shell and in particular the zsh (z shell) - which is the default shell on macOS - to run commands.
+The shell is the application that runs and executes commands on your computer and outputs results.
+A terminal is a text input and output environment. It sends commands to the shell and displays its output.
+On macOS we use iterm or iterm2 as a terminal to write our shell commands.
 
 ### Basic Shell commands
 
@@ -30,7 +43,6 @@ The default shell installed on Mac is zsh (z shell). The program which displays 
 | `touch example.md` | create a file called example.md                                            |
 | `mkdir newFolder`  | create a folder called newFolder                                           |
 | `rm file name`     | delete a file permanently                                                  |
-| `code .`           | open the current folder in vscode                                          |
 | `open .`           | open the current folder in the finder                                      |
 | `cat <file name>`  | prints the content of a specific file                                      |
 | `curl <url>`       | prints the received content from the specified url. (try `curl ipinfo.io`) |
