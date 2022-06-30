@@ -5,8 +5,8 @@
 After this session you should be able to:
 
 - [ ] understand what the terminal and the shell are.
-- [ ] navigate the file system inside the terminal.
-- [ ] create, rename, remove and move files and folders inside the terminal.
+- [ ] navigate the file system inside the shell.
+- [ ] create, rename, remove and move files and folders inside the shell.
 
 ## Shell
 
