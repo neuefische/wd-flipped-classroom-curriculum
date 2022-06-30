@@ -1,7 +1,6 @@
 ## Learning objectives
 
--
--
+- [ ]
 
 ## Arrival: Motivate students and prepare them for the topic
 
