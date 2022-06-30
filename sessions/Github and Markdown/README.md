@@ -120,4 +120,10 @@ Provide the [handout](handout.md) for the students
 
 ## Keywords for Recap:
 
--
+GitHub
+git
+version control
+repository
+commit
+commit message
+Markdown

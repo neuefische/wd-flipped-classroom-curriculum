@@ -2,9 +2,9 @@
 
 ## Markdown
 
-Markdown is a plain text formatting syntax. It makes writing formatted text (bold headlines, Blockquotes, lists, etc.) easier.
+Markdown is a plain text formatting syntax. It makes writing formatted text (bold headlines, Blockquotes, lists, etc.) much easier.
 You don't have to learn HTML or some other more demanding language. Just write your Markdown in plain text and see your beautifully formatted results.
-You can view the formatted result of your Markdown in your Code Editor. It is also used by countless Websites likes GitHub.
+You can view the formatted result of your Markdown in your Code Editor. It is also used by countless Websites like GitHub.
 
 ### Markdown Examples
 
@@ -79,7 +79,7 @@ Just a simple welcome message does a poor job at describing who you are. Start t
 2. a link to a picture / gif,
 3. a list or table.
 
- > ❗️Commit after each step with a [good commit message](#good-commit-messages).
+> ❗️Commit after each step with a [good commit message](#good-commit-messages).
 
 ### Part 3
 
