@@ -121,12 +121,16 @@ The next 3 months will be a very exciting time, as I will learn new things every
 - [ ] Try to get as interactive with the students as possible (e.g ask for their opinions on the commit messages that were written)
 - [ ] Optional: Open a thread in Slack to let them post links to their README.md
 
+---
+
 ## Checkout
 
 - [ ] Summarize the day by repeating all the topics that were discussed
 - [ ] Highlight the progress of the day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest, as its just the first day :)
+
+---
 
 ## Keywords for Recap:
 
