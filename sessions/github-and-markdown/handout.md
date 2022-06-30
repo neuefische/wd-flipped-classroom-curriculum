@@ -14,7 +14,7 @@ After this session you should be able to:
 ## Markdown
 
 Markdown is a plain text formatting syntax. It makes writing formatted text (bold headlines, Blockquotes, lists, etc.) much easier.
-You can get beautifully formatted results by using Markdown only instead of using a dedicated program like Word.
+You can get beautifully formatted results by writing Markdown only instead of using a program like Word.
 You can view the formatted result of your Markdown in your Code Editor. It is also used by countless Websites like GitHub or Slack.
 It uses specific characters to display parts of the text in a certain way.
 
@@ -61,7 +61,7 @@ All commit messages combined should form a protocol or log of all features and c
 
 ## GitHub
 
-Now we know about git, but what exactly is GitHub? In its core, GitHub is an online platform where you can store, share and collaborate on `remote git repositories`. With GitHub, the same codebase can be shared and edited across many collaborators. Many repositories are open source, so you can create a copy of the code, modify it or use it in your own projects. Nearly `every open source project` has a repository on GitHub.
+Now we know about git, but what exactly is GitHub? In its core, GitHub is an online platform where you can store, share and collaborate on `remote git repositories`. With GitHub, the same codebase can be shared and edited across many collaborators. Many repositories are open source, so you can create a copy of the code, modify it or use it in your own projects. Many `open source projects` have a repository on GitHub.
 
 > 💡 Hint: Check out this huge [list of GitHub repositories](https://github.com/pawelborkar/awesome-repos) and see what you can find there.
 
@@ -78,8 +78,8 @@ Your Github Profile is generally the first impression that other developers and 
 First we need a [special repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) containing a file called `README.md`. This markdown file will later be displayed on your profile page.
 
 1. If not already done: create a GitHub account with a professional username (dont: superH4x0r_1337, do: mary-smith)
-2. Create a new repository **with the same name as your GitHub username**. Choose to include a readme.md file.
-3. Edit the readme.md file and include a `level one heading` which welcomes visitors to your page. Commit your results directly to the main branch (we will explore later what that actually means).
+2. Create a new repository **with the same name as your GitHub username**. Choose not to include a README.md file.
+3. Add a new README.md file and include a `level one heading` which welcomes visitors to your page. Commit your results directly to the main branch (we will explore later what that actually means).
 
 Our setup is done. Let's see if it worked. Go to your profile page and check if the readme is displayed there.
 
