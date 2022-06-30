@@ -55,18 +55,20 @@
 
 **2. Explain / draw use cases:**
 
-- Go back to previous commit and continue work from there
+- Go back to a previous commit and continue work from there
 - Fork someone elses repository and continue work from any commit
 
 **3. Explain core principles / terminology:**
 
-- [ ] `version control system` : a system for managing multiple versions of files (i.e. html files, code, text files,pictures). It enables developers to "go back" to earlier versions of the source code. A version control system facilitates collaboration.
+- [ ] `version control system` : a system for managing the files of a project and its different versions (i.e. source code, text files, pictures).
+      Two most relevant use cases:
+  - It enables developers to "go back" to earlier versions of the source code. - It facilitates collaboration (sharing / synchronizing different versions of files).
 - [ ] `repository` : a centralized storage for a project with a record of all different versions (historisation).
 - [ ] `git` : a version control system that enables developers to create commits and a history of their projects
 - [ ] `commit` : a savepoint in a project that can be returned to at any time. It's a snapshot of the current changes. The sum of all commits define the history of a project or file.
 - [ ] `hash` : a unique identifier of a commit.
-- [ ] `GitHub` : platform to collaborate on projects and share code via git remote repositories.
-- [ ] `difference of git and GitHub` : git is the software that runs on your own computer and executes the version control. It sends the information of your current changes to the platform GitHub where you are able to share it with your team or the world.
+- [ ] `GitHub` : a cloud based repository hosting service (a place where git projects can be stored online and be shared outside of your local machine / computer). It also has additional Services (CI/CD, DevOps Workflows) and is a platform for exchange on different projects.
+- [ ] `difference of git and GitHub` : git is the software that runs on your own computer. GitHub is a repository hosting service that enables whole teams to work on one and the same `remote repository`.
 
 **4. Show briefly on GitHub how to create a repository.**
 
@@ -76,16 +78,16 @@
 
 Example text:
 My first day on GitHub
-Today I learned that version control is an essential part of my career as web developer. Some keyword that I should remember for later are: git, GitHub, version controll, repository, commit and hash.
+Today I learned that version control is an essential part of my career as web developer. Some keywords that I should remember for later are: git, GitHub, version control, repository, commit and hash.
 The next 3 months will be a very exciting time, as I will learn new things every day.
 
 ### Markdown:
 
-**1. Show the preview of your file and demostrate the lack of formatting** (fehlende Übersichtlichkeit)
+**1. Show the preview of your file and demonstrate the lack of formatting** (fehlende Übersichtlichkeit)
 
 **2. Explain what Markdown is:**
 
-- [ ] Markdown is a minimalistic markup language for formatting text, which is created like this: "xxx.md"
+- [ ] Markdown is a minimalistic markup language for formatting text, with the `.md` file ending: "example.md"
 - [ ] It has a specific syntax, but also HTML syntax can be used in Markdown files.
 
 **3. Add Markdown syntax to your README.md file**
