@@ -32,7 +32,7 @@ A Git repository is a place where a project is being saved. It keeps track of al
 
 ### Commits
 
-A commit is a snapshot of your repository at a specific point in time. Creating a commit in your project is similar to hitting the "save" button in a video game. The process you have made so far will not be lost and you can always `go back` to the commit - so you will have all the project files as they were when you made the commit.
+A commit is a `snapshot of your repository` at a specific point in time. Creating a commit in your project is similar to hitting the "save" button in a video game. The process you have made so far will not be lost and you can always `go back to any prior commit` - so you will have all the project files as they were when you made the commit.
 Each commit contains a message which should include a descriptive text, so that you and other developers will know what changes the commit includes.
 
 ### Good commit messages
@@ -57,9 +57,7 @@ At the same time GitHub is a social network for developers and companies of all 
 
 > 💡 Even though GitHub is the most popular online git platform, it is by far not the only one. There are several alternatives to GitHub, i.e Gitlab or Bitbucket.
 
----
-
-## Project: GitHub Profile
+# Project: GitHub Profile
 
 Your Github Profile is generally the first impression that other developers and future employers will get of you. There is a simple way to enhance this profile with your individual style, namely the so called `profile readme markdown file`. So let's build our very own personal profile page!
 
@@ -81,7 +79,7 @@ Just a simple welcome message does a poor job at describing who you are. Start t
 2. a link to a picture / gif,
 3. a list or table.
 
-> ❗️Commit after each step with a `good commit messages`.
+ > ❗️Commit after each step with a [good commit message](#good-commit-messages).
 
 ### Part 3
 
