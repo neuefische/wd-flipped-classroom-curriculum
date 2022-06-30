@@ -51,10 +51,10 @@ Morning sessions should be the ones more challenging than afternoon sessions.
 | 3   | Git branches & pull requests | HTML Basics and the Web             | Session Notes / Learnings & Personal Website |
 | 4   | CSS Basics                   | CSS Selectors                       | TBD Personal Website & ...                   |
 | 5   | CSS Flexbox                  | HTML Forms                          | TBD Personal Website & ...                   |
-| 6   | CSS Grid                     | CSS Structure                       |                                              |
+| 6   | CSS Positioning              | CSS Structure                       |                                              |
 | 7   | `Repetition Project`         | A11y                                |                                              |
 | 8   | JS Basics                    | JS Variables and Numbers            |                                              |
-| 9   | JS Loops (neu)               | CSS Positioning                     |                                              |
+| 9   | JS Loops (neu)               | CSS Grid                            |                                              |
 | 10  | JS Functions                 | JS Conditions Booleans              |                                              |
 | 11  | Git Advanced                 | JS Strings and inputs               |                                              |
 | 12  | JS Callback Functions (neu)  | JS EventListener and createElement  |                                              |
