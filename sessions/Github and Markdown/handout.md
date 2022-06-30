@@ -1,10 +1,22 @@
 # GitHub and Markdown
 
+## Learning Objectives
+
+After this session you should be able to:
+
+- [ ] understand version control and why is it so useful / important.
+- [ ] create repositories on GitHub.
+- [ ] create / edit files on GitHub.
+- [ ] create commits on GitHub.
+- [ ] understand Markdown syntax.
+- [ ] write Markdown.
+
 ## Markdown
 
 Markdown is a plain text formatting syntax. It makes writing formatted text (bold headlines, Blockquotes, lists, etc.) much easier.
-You don't have to learn HTML or some other more demanding language. Just write your Markdown in plain text and see your beautifully formatted results.
-You can view the formatted result of your Markdown in your Code Editor. It is also used by countless Websites like GitHub.
+You can get beautifully formatted results by using Markdown only instead of using a dedicated program like Word.
+You can view the formatted result of your Markdown in your Code Editor. It is also used by countless Websites like GitHub or Slack.
+It uses specific characters to display parts of the text in a certain way.
 
 ### Markdown Examples
 

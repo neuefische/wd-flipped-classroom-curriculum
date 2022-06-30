@@ -60,12 +60,12 @@
 
 **3. Explain core principles / terminology:**
 
-- [ ] `version control` : a system for managing multiple versions of software, content, websites or any other information. Any change in the given file(s) can be recalled later at any point. A version control system facilitates collaboration.
+- [ ] `version control system` : a system for managing multiple versions of files (i.e. html files, code, text files,pictures). It enables developers to "go back" to earlier versions of the source code. A version control system facilitates collaboration.
 - [ ] `repository` : a centralized storage for a project with a record of all different versions (historisation).
-- [ ] `commit` : a savepoint marking a milestone in a project that can be returned to at any time. It's a snapshot of the current changes. The sum of all commits define the history of a project or file.
+- [ ] `git` : a version control system that enables developers to create commits and a history of their projects
+- [ ] `commit` : a savepoint in a project that can be returned to at any time. It's a snapshot of the current changes. The sum of all commits define the history of a project or file.
 - [ ] `hash` : a unique identifier of a commit.
-- [ ] `git` : softwate that enables developers to create commits and a history of their projects
-- [ ] `GitHub` : platform to collaborate on projects and share code.
+- [ ] `GitHub` : platform to collaborate on projects and share code via git remote repositories.
 - [ ] `difference of git and GitHub` : git is the software that runs on your own computer and executes the version control. It sends the information of your current changes to the platform GitHub where you are able to share it with your team or the world.
 
 **4. Show briefly on GitHub how to create a repository.**
@@ -85,7 +85,7 @@ The next 3 months will be a very exciting time, as I will learn new things every
 
 **2. Explain what Markdown is:**
 
-- [ ] Markdown is a lightweight markup language for formatting text, which is created like this: "xxx.md"
+- [ ] Markdown is a minimalistic markup language for formatting text, which is created like this: "xxx.md"
 - [ ] It has a specific syntax, but also HTML syntax can be used in Markdown files.
 
 **3. Add Markdown syntax to your README.md file**
