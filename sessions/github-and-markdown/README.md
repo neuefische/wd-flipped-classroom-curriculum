@@ -103,29 +103,31 @@ The next 3 months will be a very exciting time, as I will learn new things every
 
 ---
 
-## Process
+## Process: Project / Assignment
 
-Provide the [handout](handout.md) for the students
-
-### Project / Assignment
+- [ ] Explain the process in general (Breakoutrooms / They can ask us for help at any time / Where to find the project tasks / Tell them to help each other / Keep and eye on Slack...)
+- [ ] Provide the [handout](handout.md) for the students
+- [ ] Open the handout and walk the students through the structure (summary on top and tasks on the bottom of the handout)
+- [ ] Divide the students in groups of 3-4
+- [ ] Tell students to meet again 30min before lunchbreak in the classroom
 
 ---
 
-## Evaluate
+## Evaluate: Recap of the Assignment
 
 > 💡 Don't forget to highlight the progress of today :)
 
-### Recap of the Project/Assignment and Discussion of MVP / Solution
-
--
--
+- [ ] Ask the students if someone would like to share their README.md file
+- [ ] Let them explain their working process
+- [ ] Analyse their commit history
+- [ ] Try to get as interactive with the students as possible (e.g ask for their oppinions on the commit messages that were written)
 
 ## Keywords for Recap:
 
-GitHub
-git
-version control
-repository
-commit
-commit message
-Markdown
+Markdown,
+GitHub,
+git,
+version control,
+repository,
+commit,
+commit message,
