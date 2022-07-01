@@ -38,13 +38,15 @@
 
 ### Basic shell commands
 
-- [ ] `cd`: Change directory
+- [ ] `cd folder_name` / `cd ..` / `cd`: Change directory
 - [ ] `ls`: List files
 - [ ] `pwd`: Print working directory
-- [ ] `mkdir`: Create a directory
-- [ ] `touch`: Create a file
-- [ ] `rm`: Remove a file
-- [ ] `mv`: Move a file
+- [ ] `mkdir folder_name`: Create a directory
+- [ ] `touch file.md`: Create a file
+- [ ] `rm file.md`: Remove a file
+- [ ] `mv`: Move a file / Rename a file
+- [ ] `open .`: Open the current folder in Finder
+- [ ] `cat`: Show the contents of a file
 
 ---
 
