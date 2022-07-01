@@ -22,20 +22,22 @@ It uses specific characters to display parts of the text in a certain way.
 
 ### Markdown Examples
 
-| Element                         | Markdown Syntax                              |
-| ------------------------------- | -------------------------------------------- |
-| Level 1 headline                | `# Level one headline`                       |
-| Level 2 headline                | `## Level one headline`                      |
-| Level 5 headline                | `##### Level one headline`                   |
-| list item                       | `- list item`                                |
-| [ ] done                        | `[ ] checkbox`                               |
-| [x] done                        | `'['x']' checkbox (without quotation marks)` |
-| **bold text**                   | `**bold text**`                              |
-| _italicized text_               | `_italicized text_`                          |
-| [link](https://www.example.com) | `[link](https://www.example.com)`            |
-| image                           | `![link](url to image)`                      |
-| block quote                     | `> block quote`                              |
-| divider                         | `---`                                        |
+| Element                         | Markdown Syntax                                      |
+| ------------------------------- | ---------------------------------------------------- |
+| Level 1 headline                | `# Level one headline`                               |
+| Level 2 headline                | `## Level one headline`                              |
+| Level 5 headline                | `##### Level one headline`                           |
+| list item                       | `- list item`                                        |
+| [ ] done                        | `[ ] checkbox`                                       |
+| [x] done                        | `'['x']' checkbox (without quotation marks)`         |
+| **bold text**                   | `**bold text**`                                      |
+| _italicized text_               | `_italicized text_`                                  |
+| [link](https://www.example.com) | `[link](https://www.example.com)`                    |
+| image                           | `![link](url to image)`                              |
+| block quote                     | `> block quote`                                      |
+| divider                         | `---`                                                |
+| `inline code block`             | `<back tick> inline code block <back tick> `         |
+| `code block`                    | `< 3 back ticks> inline code block < 3 back ticks> ` |
 
 See this [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for more Markdown Syntax.
 
