@@ -33,7 +33,7 @@ It uses specific characters to display parts of the text in a certain way.
 | **bold text**                   | `**bold text**`                              |
 | _italicized text_               | `_italicized text_`                          |
 | [link](https://www.example.com) | `[link](https://www.example.com)`            |
-| image                           | `![link](https://www.example.com)`           |
+| image                           | `![link](url to image)`                      |
 | block quote                     | `> block quote`                              |
 | divider                         | `---`                                        |
 
