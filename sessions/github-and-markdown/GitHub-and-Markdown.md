@@ -28,7 +28,7 @@ It uses specific characters to display parts of the text in a certain way.
 | Level 2 headline                | `## Level one headline`                              |
 | Level 5 headline                | `##### Level one headline`                           |
 | list item                       | `- list item`                                        |
-| [ ] done                        | `[ ] checkbox`                                       |
+| [ ] done                        | `'[' ']' checkbox (without quotation marks)`         |
 | [x] done                        | `'['x']' checkbox (without quotation marks)`         |
 | **bold text**                   | `**bold text**`                                      |
 | _italicized text_               | `_italicized text_`                                  |
