@@ -4,7 +4,10 @@
 
 ## Learning objectives
 
-- [ ]
+- [ ] Understanding what the terminal and the shell are and why they are used.
+- [ ] Understanding the difference between the shell, the terminal and CLI
+- [ ] Navigating the file system inside the shell.
+- [ ] Creating, renaming, removing and moving files and folders in the filesystem.
 
 ---
 
@@ -78,4 +81,6 @@
 
 ## Keywords for Recap:
 
-This is to automatically generate
+> These keywords are for the weekly summary on Fridays.
+> We use the keywords to automatically generate excalidraw tags with the help of [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator).
+> The students structure the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs to be explained in a few words by one student. We go in rounds one by one until all tags are included in the structure.

@@ -66,4 +66,6 @@
 
 ## Keywords for Recap:
 
-This is to automatically generate
+> These keywords are for the weekly summary on Fridays.
+> We use the keywords to automatically generate excalidraw tags with the help of [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator).
+> The students structure the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs to be explained in a few words by one student. We go in rounds one by one until all tags are included in the structure.
