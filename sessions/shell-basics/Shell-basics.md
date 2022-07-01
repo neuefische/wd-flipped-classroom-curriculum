@@ -42,7 +42,7 @@ On macOS we use iterm or iterm2 as a terminal to write our shell commands.
 | `pwd`              | print the current directory path                                           |
 | `touch example.md` | create a file called example.md                                            |
 | `mkdir newFolder`  | create a folder called newFolder                                           |
-| `rm file name`     | delete a file permanently                                                  |
+| `rm <file name>`   | delete a file permanently                                                  |
 | `open .`           | open the current folder in the finder                                      |
 | `cat <file name>`  | prints the content of a specific file                                      |
 | `curl <url>`       | prints the received content from the specified url. (try `curl ipinfo.io`) |
