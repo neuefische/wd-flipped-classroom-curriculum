@@ -28,14 +28,14 @@ In your terminal you can navigate into any folder in your file system and use th
 
 ### States of files
 
-If we have a repository on GitHub we can create / modify / delete files, and through a few button clicks create a commit which entails all the changes we have made and creates a new snapshot of our repository.
+If we have a repository on GitHub we can create / modify / delete files. Through a few button clicks we create a commit which contains all the changes we have made.
 We can do the same thing through our terminal with local repositories. To understand how this happens we have to know about the different states a file can be in.
 
 - Tracked files: Tracked files are files that git knows about. All tracked files were in the last snapshot.
   Tracked files can be in different states:
 
   - modified: A file is modified when it has changed since the last commit.
-  - staged: A file is staged when we told git to include the changes in the next commit. One way to think of it is as if the file is sitting in the waiting room - waiting to be committed.
+  - staged: A file is staged when we told git to include the changes in the next commit. One way to think of it is as if the files were entering a literal stage - waiting for the snapshot to be taken (waiting to be committed).
   - committed: A file is in the committed state when it has not changed since the last commit.
 
 - Untracked files: Untracked files are files that are not in the latest snapshot and have not been staged. Git does not yet keep track of those files.
@@ -50,12 +50,12 @@ We will use the following git commands to go through an example of how to take a
 | -------------------------------- | ------------------------------------------------ |
 | `git status`                     | list all files that have changed and their state |
 | `git add <filename>`             | add a file to the staging area                   |
-| `git commit -m "commit message"` | create a commit                                  |
+| `git commit -m "commit message"` | create a commit including all staged files       |
 | `git log --oneline`              | show a list of commits starting with the latest  |
 
 Say we have a folder containing an empty README.md file and nothing else. We can turn that folder into a git repository using `git init`. That folder is now a git repository but it has no commits and therefore an empty commit history.
 
-If we run the command `git status` we should get a message like this:
+If we run the command `git status` we get a message like this:
 
 ```
 No commits yet
@@ -67,9 +67,9 @@ Untracked files:
 
 The README.md is now untracked:
 
-![untracked](assets/untracked.png)
+<img src="assets/untracked.png" alt="untracked" width="400">
 
-We can put untracked files into the staging area. That tells git to include it in the next commit. We can do this by typing `git add README.md`.
+We can put untracked files into the staging area. That tells git to include them in the next commit. We can do this by typing `git add README.md`.
 If we then run `git status` again we get the following message:
 
 ```
@@ -82,7 +82,7 @@ Changes to be committed:
 
 The README.md is now staged:
 
-![staged](assets/staged.png)
+<img src="assets/staged.png" alt="staged" width="400">
 
 We can now create the first commit with a descriptive commit message by typing `git commit -m "add readme without content"`
 If we run `git status` now we get the following message:
@@ -94,7 +94,7 @@ nothing to commit, working tree clean
 
 The README.md is now committed:
 
-![committed](assets/committed.png)
+<img src="assets/committed.png" alt="committed" width="400">
 
 ## Connecting to a remote repository
 
@@ -113,7 +113,7 @@ git push -u origin main
 
 The first command tells git to add a new remote repository and remember it under the name "origin".
 
-The second command renames the branch that you are working on to "main". You don't have to understand what branches are - we will go over that in a future session.
+The second command renames the branch that you are working on to "main". You don't have to understand what branches are - we will go over that in a future session. This command is only relevant if you use older versions of git.
 
 The third command pushes your local commits to the remote repository. After executing this command you can refresh the GitHub page in your browser and you will see that the remote repository contains all the commits of your local repository.
 
@@ -139,9 +139,14 @@ If the remote repository contains new commits that your local repository doesn't
 | `git push`  | send content to the remote repository                                       |
 | `git pull`  | download content from the remote repository and update the local repository |
 
-Let's look at an example: Say you want to work on a website with your friend. Your friend has already started and created a Homepage for your website. He created a repository on GitHub which contains all his work (commits). You cloned the repository and worked on the website on your own machine. Say you added a second page - a Contact Page for example. You made a few new commits for the new page on your local repository.
-If you look at the repository page on GitHub, it looks just like before - no sign of your newly created Contact Page. That is because the remote repository doesn't know that you made a few new commits on your local machine. You have to use `git push`. After executing this command you can refresh the GitHub repository page and you will then see the changes you made and the Contact Page you created.
-Your friend probably has a local repository. This local repository doesn't contain your work. Your friend has to execute the `git pull` command. After executing this command his local repository will contain the new commits and he will see the Contact Page.
+Let's look at an example: Say you want to work on a website with your friend.
+
+1. Your friend has already started and created a Homepage for your website. He created a repository on GitHub which contains all his work (commits).
+2. You cloned the repository.
+3. You worked on the website on your own machine. Say you added a second page - a Contact Page for example. You made a few new commits for the new page on your local repository.
+4. If you look at the repository page on GitHub, it looks just like before - no sign of your newly created Contact Page. That is because the remote repository doesn't know that you made a few new commits on your local machine.
+5. You have to use `git push`. After executing this command you can refresh the GitHub repository page and you will then see the changes you made and the Contact Page you created.
+6. Your friend probably has a local repository. This local repository doesn't contain your work. Your friend has to execute the `git pull` command. After executing this command his local repository will contain the new commits and he will see the Contact Page.
 
 # Project: Project Name
 
