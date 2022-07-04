@@ -4,7 +4,9 @@
 
 ## Learning objectives
 
-- [ ]
+- [ ] why the following concepts are important for collaboration.
+- [ ] what git branches are and how to use them.
+- [ ] what Pull Requests are and how to use them.
 
 ---
 
@@ -28,12 +30,12 @@
 
 ## Inform: Sessionguide
 
-### Section 1
+### Git Branches
 
 - [ ]
 - [ ]
 
-### Section 2
+### Git Pull Requests
 
 - [ ]
 - [ ]
@@ -42,7 +44,7 @@
 
 ## Process: Project / Assignment
 
-- [ ] Provide the [handout](session-name.md) for the students
+- [ ] Provide the [handout](git-branches-and-prs.md) for the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students in groups
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They can ask the coaches for help at any time / Always help each other / Take a break when you need it in the next 1.5h/ Keep an eye on Slack)
