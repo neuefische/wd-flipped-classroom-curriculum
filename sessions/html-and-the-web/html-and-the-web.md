@@ -35,6 +35,10 @@ Just like remembering all the phone numbers of your friends is impractical, reme
 
 Then the browser fetches all necessary content for the website like the html file, css style sheets, javascript files, images, fonts, etc. As soon as all files have been stored on the local computer, the browser displays the html content, styles it as specified in the style sheet and executes javascript code. We can now interact with the content of the website and send new requests to receive other websites.
 
+Below is a sketch on how a typical request of a web page looks like. <br>
+<br>
+<img src="./assets/request-response.png" width=600 />
+
 ## HTML basics
 
 HTML (hyper text markup language) is similar to markown a markup language to express text in a structured way. This structure is represented by html tags which indicate what kind of element is displayed in the website. For example, a headline element is written like this:
@@ -164,6 +168,8 @@ In general, html elements can include other elements as shown above. This is use
     <span> submit </span>
   </button>
   ```
+  Below is a sketch on how semantic elements are nested in typical web page. <br><br>
+  <img src="./assets/sectioning-elements.png" width=700 />
 
 # Project: Project Name
 
