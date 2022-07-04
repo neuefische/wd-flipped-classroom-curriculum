@@ -4,15 +4,15 @@
 
 In this session you will learn:
 
-- [ ] why the following concepts are important for collaboration.
 - [ ] what git branches are and how to use them.
 - [ ] what Pull Requests are and how to use them.
+- [ ] how branches and pull requests facilitates collaboration and help maintaining multiple versions of a project.
 
 ---
 
 ## Git Branches
 
-When working on a project, especially as a team, we need `one official version` of the project or a `single source of truth`. This is the `main` branch (in older projects it was called `master`). If we want to add new features we create a alternative version of our project or `feature branch`. Here we can create new code `without changing the official version` or `main` branch. This is an important concept for working on a project as a team. Because if we make a mistake we can easily revert to the `main` branch and don't get problems with other versions (branches). You can `switch` between branches to see what changes have been made to other version of the project.
+When working on a project, especially as a team, we need `one official version` of the project or a `single source of truth`. This is the `main` branch. If we want to add new features we create an alternative version of our project or `feature branch`. Here we can create new code `without changing the official version` or `main` branch. This is an important concept for working on a project as a team. Because if we make a mistake we can easily return to the `main` branch and don't get problems with other versions (branches). You can `switch` between branches to see what changes have been made to other version of the project.
 
 ### Git `branch` commands
 
