@@ -71,15 +71,13 @@ e.g. you open the terminal, start sharing you screen and ask the students if the
 - [ ] `open .`: open the current folder in Finder
 - [ ] `cat`: print the contents of a file to the terminal
 
-### Why do develpers need to complicate everything and use the terminal instead of a graphical user interface?
+### Why do develpers need to complicate everything and use the terminal instead of a graphical user interface (GUI)?
 
-- [ ] the terminal is a user interface, it just not graphical, meaning no pretty buttons or hamburger menus.
-- [ ] All of this pretty userinterface needs more time to process the information you are trying to send/recieve, this makes it much slower.
-- [ ] Most of the people that ever get into the position to use a CLI, are technical and do have the skills needed to use it.
-- [ ] You can easliy automate processes in a shell, because computer programms can access the information in commands as easily as humans.
-- [ ] You can be very specific in the CLI.
-        - Example: Imagine you can't type search queries into your Google Search. Imagine you only get a graphical interface where you can click the category you want to search in and have to click through the filter options. It would take ages, wouldn't it?<br>
-        So it's the same with a GUI and the terminal. **It's much faster, you can copy and paste the commands you need, and you will probably make less mistakes.**
+- [ ] the terminal is a user interface, it just not graphical, meaning no pretty buttons or hamburger menus. Without a GUI you can send/recieve information much faster, because there is no additional (beautiful) layer needs to process the information.
+- [ ] it takes a lot of time to code a GUI, therefore some programs don't use one.
+- [ ] most of the people that ever get into the position to use a terminal, are technical and do have the skills needed to use it.
+- [ ] you can easliy automate processes in a shell, because you can write computer programms that executes the commands for you, this wouldn't be possible with a GUI.<br> 
+> **It's much faster, you can copy and paste the commands you need, and you will probably make less mistakes.**
 ---
 
 ## Process: Project / Assignment
