@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-After this session you should be able to:
+In this session you will learn:
 
 - [ ]
 

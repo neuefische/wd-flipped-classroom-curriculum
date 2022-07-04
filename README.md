@@ -47,7 +47,7 @@ Morning sessions should be the ones more challenging than afternoon sessions.
 | day | morning                      | afternoon                           | project                                               |
 | --- | ---------------------------- | ----------------------------------- | ----------------------------------------------------- |
 | 1   | Welcome                      | Github and Markdown                 | profile README                                        |
-| 2   | Shell Basics                 | Setup & Git shell commands & remote | Treasure hunt & Session Notes / Learnings Collection  |
+| 2   | Shell Basics                 | Setup & Git CLI & remote | Treasure hunt & Session Notes / Learnings Collection  |
 | 3   | Git branches & pull requests | HTML Basics and the Web             | Session Notes / Learnings & Personal Website (part 1) |
 | 4   | CSS Basics                   | CSS Selectors                       | TBD Personal Website (part 2) & ...                   |
 | 5   | CSS Flexbox                  | HTML Forms                          | TBD Personal Website (part 3) & flexbox game.         |
