@@ -101,7 +101,10 @@ You can do almost anything in the terminal, also delete things irreversibily or 
 
 - Come back to the question that was raised in the beginning od the session and try and answer it in a few phrases: <br>
 - **What is the shell / the terminal and why is it useful?**
-    - The shell is a program that runs in our terminal. It can access the services of the operating system of our computer (e.g. macOS). This means we can quickly execute any at action needed. It let's us install, create, edit, download... really anything you can imagine. - Also, as soon as you start using it, people will think you are a real hacker.
+    - The shell is a program that runs in our terminal. 
+    - It can access the services of the operating system of our computer (e.g. macOS). This means we can quickly execute any at action needed. 
+    - It let's us install, create, edit, download... really anything you can imagine. 
+    - Also, as soon as you start using it, people will think you are a real hacker.
 
 ---
 
