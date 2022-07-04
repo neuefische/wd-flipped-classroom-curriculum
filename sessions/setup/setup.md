@@ -15,13 +15,15 @@ You can find all scripts used in this setup in Setup [this repository](https://g
 
 1. You should have the latest macOS installed. To make sure, click on the apple logo at the top left, go to "About this Mac" and click "Software Update". Install any missing updates.
 
-1. Find and run the program "Terminal"
+2. Find and run the program "Terminal"
 
-1. Go through each of the following steps and copy and paste each command into Terminal and press Enter. Wait for the command to finish and follow any instructions.
+3. Go through each of the following steps and copy and paste each command into Terminal and press Enter. Wait for the command to finish and follow any instructions.
 
-1. In case of any Error, read the error text from the beginning and google for help. Ask a coach for help.
+> for some installations you might need to enter your user password. This is the same password you use when logging into your Macbook. The terminal will display a little symbol with a key sign. When you start typing you won't get any visual feedback. That's normal. Just press Enter after you typed in the password and wait for the next instruction.
 
-**Copy each command and paste it into the Terminal. Run it by pressing `Enter`. If a command does not work and you can't fix the problem, continue with the next command.**
+4. In case of any Error, read the error text from the beginning and google for help. Ask a coach for help.
+
+**Summary: Copy each command and paste it into the Terminal. Run it by pressing `Enter`. If a command does not work and you can't fix the problem, continue with the next command.**
 
 ## Install Homebrew and Command Line Tools
 
