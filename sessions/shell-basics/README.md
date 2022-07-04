@@ -99,7 +99,7 @@ You can do almost anything in the terminal, also delete things irreversibily or 
 
 ## Evaluate: Recap of the assignment / Discussion of MVP / Solution
 
-- Come back to the question that was raised in the beginning od the session and try and answer it in a few phrases: <br>
+- Come back to the question that was raised in the beginning of the session and try and answer it in a few phrases: <br>
 - **What is the shell / the terminal and why is it useful?**
     - The shell is a program that runs in our terminal. 
     - It can access the services of the operating system of our computer (e.g. macOS). This means we can quickly execute any at action needed. 
