@@ -54,7 +54,7 @@
 
 - [ ] `the terminal` is a command line interface (CLI) that allows us to interact with the operation system of our computer. 
 - [ ] It is used to run programs and perform actions. As a developer we use the terminal for a lot of tasks, like creating files, installing programs, start or stop a server and many more. 
-- [ ] On macOS we can use the integrated program **Terminal**.
+- [ ] On macOS we can use the integrated program `terminal`.
 
 ### Shell
 
@@ -85,6 +85,7 @@
 
 But: With great power comes great responsibility! <br>
 You can do almost anything in the terminal, also delete things irreversibily or other things that you didn't intend to so. So be cautious!
+
 ---
 
 ## Process: Project / Assignment
