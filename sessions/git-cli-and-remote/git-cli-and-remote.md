@@ -24,6 +24,8 @@ To turn a folder into a git repository you need your first git command:
 | ----------- | --------------------------------- |
 | `git init`  | create a new local git repository |
 
+> ❗️ Do not initialize a git repository inside another git repository!
+
 In your terminal you can navigate into any folder in your file system and use the `git init` command to turn that folder into a local repository. Git will create a hidden `.git folder` in the project folder. This hidden folder contains all the information about the repository and its commit history. Never touch or modify anything in that folder.
 
 ### States of files
