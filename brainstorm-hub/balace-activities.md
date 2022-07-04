@@ -4,6 +4,7 @@ the activity will take place half an hour before lunch, from 12:00 - 12:30
 
 ### remote
 
+- Autogenic training
 - Yoga
 - Streching
 - Back-relaxation
