@@ -17,22 +17,25 @@
 
 ### Which important problem will we solve today?
 
-Many developer tools don't have a graphical User Interface, but are nevertheless incredibly useful. 
-We want to learn how to interact with these tools through the CLI to get access to them and use them to write amazing code.
+- Many developer tools don't have a graphical User Interface, but are nevertheless incredibly useful. 
+- We want to learn how to interact with these tools through the CLI to get access to them and use them to write amazing code.
 
 
 ### Why is the content of todays block so important for the students?
 
-Being able to navigate in the Shell and interact with programs via CLI is an essencial skill for every developer and required for any job in the field.
+- Being able to navigate in the Shell and interact with programs via CLI is an essencial skill for every developer and required for any job in the field.
+- It's the first step to feel like a hacker
 
 
 ### Raise a question to be answered by the end of the block!
 
-What is the shell / the terminal and why is it useful?
+- What is the shell / the terminal and why is it useful?
 
 ---
 
 ## Activate prior knowledge of students
+(It is an option to start the session with these questions and follow up with the motivation of the student: <br>
+e.g. you open the terminal, start sharing you screen and ask the students if they know/have ever used this (the terminal). This is to start with a little bit more interactivity, in case the students are still shy to speak) 
 
 ### Which prior knowledge will be used for this session?
 
@@ -41,39 +44,46 @@ What is the shell / the terminal and why is it useful?
     - Did any of you ever use the terminal before? Was it easier or more difficult to use?
     - Did any of you ever open the terminal by accident and ask themselves what the heck is this used for?
 
-(Let's learn: It's time to feel like a proper hacker)
-
 ---
 
 ## Inform: Sessionguide
 
 ### Terminal
 
-- [ ] Explain what the terminal is and what it's used for: **Terminal** is a command line interface that allows us to interact with the computer. It is used to run programs and perform actions. As a developer we use the terminal for a lot of tasks, like creating files, start or stop a server and so on. On MacOS we can use the integrated program **Terminal**.
+**Explain what the terminal is and what it's used for:**
+
+- [ ] `the terminal` is a command line interface (CLI) that allows us to interact with the operation system of our computer. It is used to run programs and perform actions. As a developer we use the terminal for a lot of tasks, like creating files, installing programs, start or stop a server and many more. On macOS we can use the integrated program **Terminal**.
 
 ### Shell
 
-- [ ] Explain what the shell is and what it's used for: **Shell** is a program that runs on top of a terminal. It's used to execute commands and outputs the results.
+**Explain what the shell is and what it's used for:**
+- [ ] `the shell` is a program that runs in a terminal. It's used to execute commands and outputs the results. Oftentimes the words shell and terminal are used interchangably, even though they are not exactly the same thing.
 
-### Basic shell commands
+#### Basic shell commands
 
-- [ ] `cd folder_name` / `cd ..` / `cd`: Change directory
-- [ ] `ls`: List files
-- [ ] `pwd`: Print working directory
-- [ ] `mkdir folder_name`: Create a directory
-- [ ] `touch file.md`: Create a file
-- [ ] `rm file.md`: Remove a file
-- [ ] `mv`: Move a file / Rename a file
-- [ ] `open .`: Open the current folder in Finder
-- [ ] `cat`: Show the contents of a file
+- [ ] `cd folder_name` / `cd ..` / `cd`: change directory
+- [ ] `ls`: list files
+- [ ] `pwd`: print working directory
+- [ ] `mkdir folder_name`: create a directory
+- [ ] `touch file.md`: create a file
+- [ ] `rm file.md`: remove a file
+- [ ] `mv`: vove a file / rename a file
+- [ ] `open .`: open the current folder in Finder
+- [ ] `cat`: show the contents of a file
 
+### Why do develpers need to complicate everything and use the terminal instead of a graphical user interface?
+
+- [ ] the terminal is a user interface, it just not graphical, meaning no pretty buttons or hamburger menus.
+- [ ] All of this pretty userinterface needs more time to process the information you are trying to send/recieve, this makes it much slower.
+- [ ] Most of the people that ever get into the position to use a CLI, are technical and do have the skills needed to use it.
+- [ ] You can be _much_ more specific in the CLI.
+        - Example: Imagine you can't type search queries into your Google Search. Imagine you only get a graphical interface where you can click the category you want to search in and have to click through the filter options. It would take ages, wouldn't it?<br>
+        So it's the same with a GUI and the terminal. **It's much faster, you can copy and paste the commands you need, and you will probably make less mistakes in the terminal.**
 ---
-
-## Process
 
 ## Process: Project / Assignment
 
-- [ ] Provide the [handout](Shell-basics.md) for the students
+- [ ] Provide the [handout](shell-basics.md) for the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students in groups
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They can ask the coaches for help at any time / Always help each other / Take a break when you need it in the next 1.5h/ Keep an eye on Slack)
@@ -82,7 +92,9 @@ What is the shell / the terminal and why is it useful?
 
 ## Evaluate: Recap of the assignment / Discussion of MVP / Solution
 
-- Come back to the question that was raised in the beginning od the session and try and answer it in a few phrases.
+- Come back to the question that was raised in the beginning od the session and try and answer it in a few phrases: <br>
+- **What is the shell / the terminal and why is it useful?**
+    - The shell is a program that runs in our terminal. It can access the services of the operating system of our computer (e.g. macOS). This means we can quickly execute any at action needed. It let's us install, create, edit, download... really anything you can imagine. - Also, as soon as you start using it, people will think you are a real hacker.
 
 ---
 
@@ -96,6 +108,12 @@ What is the shell / the terminal and why is it useful?
 - [ ] Remind them to rest :)
 
 ## Keywords for Recap:
+
+shell,
+terminal,
+CLI,
+cd ..,
+
 
 > These keywords are for the weekly summary on Fridays.
 > We use the keywords to automatically generate excalidraw tags with the help of [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator).

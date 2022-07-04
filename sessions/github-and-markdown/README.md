@@ -47,7 +47,7 @@
 
 ### Git Workflow:
 
-**1. Draw picture explaining Git Workflow (Commits only) like this one:**
+**1. Draw a picture explaining Git Workflow (Commits only) like this one:**
 
 <img width="500" alt="git-workflow" src="assets/git-workflow.png">
 
@@ -70,7 +70,7 @@
 - [ ] `GitHub` : a cloud based repository hosting service (a place where git projects can be stored online and be shared outside of your local machine / computer). It also has additional Services (CI/CD, DevOps Workflows) and is a platform for exchange on different projects.
 - [ ] `difference of git and GitHub` : git is the software that runs on your own computer. GitHub is a repository hosting service that enables whole teams to work on one and the same `remote repository`.
 
-**4. Show briefly on GitHub how to create a repository.**
+**4. Show briefly how to create a repository on GitHub.**
 
 - [ ] Create a repository `my-first-repository`. (Uncheck the checkbox "Add a README file"!)
 - [ ] Create a README.md file manually and create the first commit.
@@ -140,7 +140,7 @@ git,
 version control,
 repository,
 commit,
-commit message
+commit message,
 
 > These keywords are for the weekly summary on Fridays.
 > We use the keywords to automatically generate excalidraw tags with the help of [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator).
