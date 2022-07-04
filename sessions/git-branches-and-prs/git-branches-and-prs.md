@@ -43,6 +43,8 @@ If your work on a `branch` with new code is finished, you wan't to get a `review
 8. Delete the new branch on GitHub and locally
 9. Don't forget to `git pull` inside the `main` branch on your local machine
 
+![Basic git workflow for branches and PRs](assets/git-basics-branching-workflow.png)
+
 # Project: Project Name
 
 ### Part 1
