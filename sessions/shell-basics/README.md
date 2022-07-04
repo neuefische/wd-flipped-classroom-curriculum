@@ -35,13 +35,13 @@
 
 ## Activate prior knowledge of students
 (It is an option to start the session with these questions and follow up with the motivation of the student: <br>
-e.g. you open the terminal, start sharing you screen and ask the students if they know/have ever used this (the terminal). This is to start with a little bit more interactivity, in case the students are still shy to speak) 
+- e.g. you open the terminal, start sharing you screen and ask the students if they know/have ever used this (the terminal). This is to start with a little bit more interactivity, in case the students are still shy to speak) 
 
 ### Which prior knowledge will be used for this session?
 
 - You can ask these questions:
 
-    - Did any of you ever use the terminal before? Was it easier or more difficult to use?
+    - Did any of you ever use the terminal before? Was it easy or difficult to use?
     - Did any of you ever open the terminal by accident and ask themselves what the heck is this used for?
 
 ---
@@ -52,12 +52,16 @@ e.g. you open the terminal, start sharing you screen and ask the students if the
 
 **Explain what the terminal is and what it's used for:**
 
-- [ ] `the terminal` is a command line interface (CLI) that allows us to interact with the operation system of our computer. It is used to run programs and perform actions. As a developer we use the terminal for a lot of tasks, like creating files, installing programs, start or stop a server and many more. On macOS we can use the integrated program **Terminal**.
+- [ ] `the terminal` is a command line interface (CLI) that allows us to interact with the operation system of our computer. 
+- [ ] It is used to run programs and perform actions. As a developer we use the terminal for a lot of tasks, like creating files, installing programs, start or stop a server and many more. 
+- [ ] On macOS we can use the integrated program **Terminal**.
 
 ### Shell
 
 **Explain what the shell is and what it's used for:**
-- [ ] `the shell` is a program that runs in a terminal. It's used to execute commands and outputs the results. Oftentimes the words shell and terminal are used interchangably, even though they are not exactly the same thing.
+- [ ] `the shell` is a program that runs in a terminal. 
+- [ ] It's used to execute commands and outputs the results.
+- [ ] Oftentimes the words shell and terminal are used interchangably, even though they are not exactly the same thing.
 
 #### Basic shell commands
 
@@ -73,11 +77,14 @@ e.g. you open the terminal, start sharing you screen and ask the students if the
 
 ### Why do develpers need to complicate everything and use the terminal instead of a graphical user interface (GUI)?
 
-- [ ] the terminal is a user interface, it just not graphical, meaning no pretty buttons or hamburger menus. Without a GUI you can send/recieve information much faster, because there is no additional (beautiful) layer that needs to process the information.
-- [ ] most of the people that ever get into the position to use a terminal, are technical and do have the skills needed to use it.
+- [ ] the terminal also is a user interface, it just not graphical, meaning no pretty buttons or hamburger menus. Without a GUI you can send/recieve information much faster, because there is no additional (beautiful) layer that needs to process the information.
 - [ ] it takes a lot of time to code a GUI, therefore some programs don't use one.
+- [ ] most of the people that ever get into the position to use a terminal, are technical and do have the skills needed to use it.
 - [ ] you can easily automate processes in a shell, because you can write computer programms that execute the commands for you, this wouldn't be possible with a GUI.<br> 
-> **It's much faster, you can copy and paste the commands you need, and you will probably make less mistakes.**
+> **It's much faster, you can copy and paste the commands you need, and you will probably make less mistakes.** 
+
+But: With great power comes great responsibility! <br>
+You can do almost anything in the terminal, also delete things irreversibily or other things that you didn't intend to so. So be cautious!
 ---
 
 ## Process: Project / Assignment
