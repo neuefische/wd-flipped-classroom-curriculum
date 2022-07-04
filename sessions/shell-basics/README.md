@@ -77,10 +77,10 @@
 
 ### Why do develpers need to complicate everything and use the terminal instead of a graphical user interface (GUI)?
 
-- [ ] the terminal also is a user interface, it just not graphical, meaning no pretty buttons or hamburger menus. Without a GUI you can send/recieve information much faster, because there is no additional (beautiful) layer that needs to process the information.
-- [ ] it takes a lot of time to code a GUI, therefore some programs don't use one.
+- [ ] the terminal also is a user interface, it just not graphical, meaning no pretty buttons or hamburger menus. Without a GUI you can **send/recieve information much faster**, because there is no additional (beautiful) layer that needs to process the information.
+- [ ] it takes a lot of time to code a GUI, therefore **some programs don't use one**.
 - [ ] most of the people that ever get into the position to use a terminal, are technical and do have the skills needed to use it.
-- [ ] you can easily automate processes in a shell, because you can write computer programms that execute the commands for you, this wouldn't be possible with a GUI.<br> 
+- [ ] you can **easily automate processes** in a shell, because you can write computer programms that execute the commands for you, this wouldn't be possible with a GUI.<br> 
 > **It's much faster, you can copy and paste the commands you need, and you will probably make less mistakes.** 
 
 But: With great power comes great responsibility! <br>
