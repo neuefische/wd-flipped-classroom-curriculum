@@ -17,15 +17,31 @@
 
 ### Which important problem will we solve today?
 
+Many developer tools don't have a graphical User Interface, but are nevertheless incredibly useful. 
+We want to learn how to interact with these tools through the CLI to get access to them and use them to write amazing code.
+
+
 ### Why is the content of todays block so important for the students?
 
+Being able to navigate in the Shell and interact with programs via CLI is an essencial skill for every developer and required for any job in the field.
+
+
 ### Raise a question to be answered by the end of the block!
+
+What is the shell / the terminal and why is it useful?
 
 ---
 
 ## Activate prior knowledge of students
 
 ### Which prior knowledge will be used for this session?
+
+- You can ask these questions:
+
+    - Did any of you ever use the terminal before? Was it easier or more difficult to use?
+    - Did any of you ever open the terminal by accident and ask themselves what the heck is this used for?
+
+(Let's learn: It's time to feel like a proper hacker)
 
 ---
 
