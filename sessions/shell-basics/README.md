@@ -17,13 +17,13 @@
 
 ### Which important problem will we solve today?
 
-- Many developer tools don't have a graphical User Interface, but are nevertheless incredibly useful. 
+- Many developer tools don't have a graphical User Interface, but are nevertheless incredibly useful. (e.g git, npm, node)
 - We want to learn how to interact with these tools through the CLI to get access to them and use them to write amazing code.
 
 
 ### Why is the content of todays block so important for the students?
 
-- Being able to navigate in the Shell and interact with programs via CLI is an essencial skill for every developer and required for any job in the field.
+- Being able to navigate in the Shell and interact with programs via CLI is an essential skill for every developer and required for any job in the field.
 - It's the first step to feel like a hacker
 
 
@@ -69,16 +69,17 @@ e.g. you open the terminal, start sharing you screen and ask the students if the
 - [ ] `rm file.md`: remove a file
 - [ ] `mv`: vove a file / rename a file
 - [ ] `open .`: open the current folder in Finder
-- [ ] `cat`: show the contents of a file
+- [ ] `cat`: print the contents of a file to the terminal
 
 ### Why do develpers need to complicate everything and use the terminal instead of a graphical user interface?
 
 - [ ] the terminal is a user interface, it just not graphical, meaning no pretty buttons or hamburger menus.
 - [ ] All of this pretty userinterface needs more time to process the information you are trying to send/recieve, this makes it much slower.
 - [ ] Most of the people that ever get into the position to use a CLI, are technical and do have the skills needed to use it.
-- [ ] You can be _much_ more specific in the CLI.
+- [ ] You can easliy automate processes in a shell, because computer programms can access the information in commands as easily as humans.
+- [ ] You can be very specific in the CLI.
         - Example: Imagine you can't type search queries into your Google Search. Imagine you only get a graphical interface where you can click the category you want to search in and have to click through the filter options. It would take ages, wouldn't it?<br>
-        So it's the same with a GUI and the terminal. **It's much faster, you can copy and paste the commands you need, and you will probably make less mistakes in the terminal.**
+        So it's the same with a GUI and the terminal. **It's much faster, you can copy and paste the commands you need, and you will probably make less mistakes.**
 ---
 
 ## Process: Project / Assignment
@@ -112,7 +113,7 @@ e.g. you open the terminal, start sharing you screen and ask the students if the
 shell,
 terminal,
 CLI,
-cd ..,
+cd,
 
 
 > These keywords are for the weekly summary on Fridays.
