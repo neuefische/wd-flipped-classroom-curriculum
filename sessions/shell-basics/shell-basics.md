@@ -29,7 +29,6 @@ This has the following reasons / advantages:
 We are using the shell and in particular the zsh (z shell) - which is the default shell on macOS - to run commands.
 The shell is the application that runs and executes commands on your computer and outputs results.
 A terminal is a text input and output environment. It sends commands to the shell and displays its output.
-On macOS we use iterm or iterm2 as a terminal to write our shell commands.
 
 ### Basic Shell commands
 
@@ -50,3 +49,8 @@ On macOS we use iterm or iterm2 as a terminal to write our shell commands.
 > 💡 There are a lot of commands for any sort of action you want to perform check out [this cheat cheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet) to look up important commands.
 
 # Project: Project Name
+
+## Resources
+
+- [terminal basics](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/)
+- [command line cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet#english-version)
