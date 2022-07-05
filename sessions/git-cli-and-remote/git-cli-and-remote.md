@@ -154,9 +154,19 @@ Let's look at an example: Say you want to work on a website with your friend.
 
 ---
 
-# Assignment: Session Notes
+# Assignment
 
-In the Shell Basics session you already created a folder and file structure for your session notes. Now we want to provide this project to your GitHub account as a repository. Therefore we need to connect the local repository with a remote repository.
+## Session Notebook
+
+In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content. You may only use the terminal for these tasks:
+
+1. create a folder called `session-notebook`
+2. inside this folder, create a folder called `_template`
+3. inside the \_template, create a
+
+## Connect the Session Notebook to GitHub
+
+You already created a folder and file structure for your session notes. Now we want to provide this project to your GitHub account as a repository. Therefore we need to connect the local repository with a remote repository.
 
 ### Part 1
 
