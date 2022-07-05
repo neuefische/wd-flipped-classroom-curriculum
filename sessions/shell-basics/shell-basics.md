@@ -48,7 +48,27 @@ A terminal is a text input and output environment. It sends commands to the shel
 
 > 💡 There are a lot of commands for any sort of action you want to perform check out [this cheat cheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet) to look up important commands.
 
-# Project: Project Name
+# Assignments
+
+## Exercise: Treasure Hunt
+
+Open the `treasure-hunt.zip` that you received. The goal is to navigate through the treasure island only with the terminal and to find the treasure! These are the commands you need:
+
+- use `cd` to change directories
+- use `cd ..` to move out of the current folder
+- use `ls` to look what is in the current folder
+- use `cat` to see what is inside a markdown file
+- use `pwd` to see your current directory path
+
+Good luck!
+
+## Project: Session Notebook (Part 1)
+
+In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content. You may only use the terminal for these tasks:
+
+1. create a folder called `session-notebook`
+2. inside this folder, create a folder called `_template`
+3. inside the \_template, create a
 
 ## Resources
 
