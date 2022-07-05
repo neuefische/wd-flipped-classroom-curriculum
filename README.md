@@ -48,7 +48,7 @@ There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new
 Sessions are structured not by week - but by days. It does not matter anymore which session is being held on which day of the week. This is the recommended order of sessions.
 Morning sessions should be the ones more challenging than afternoon sessions.
 
-| day | morning                      | afternoon                                     | project                                               | Guestlecture                                                                                            |
+| day | morning                      | afternoon                                     | project                                               | guest lecture                                                                                            |
 | --- | ---------------------------- | --------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | 1   | Welcome                      | Github and Markdown                           | profile README                                        | Meet your teammates                                                                                     |
 | 2   | Shell Basics & Setup         | Git CLI & remote & ssh Setup                  | Treasure hunt & Session Notes / Learnings Collection  | Our communication goals                                                                                 |
