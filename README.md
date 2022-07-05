@@ -33,14 +33,14 @@ There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new
 | -------- | ------------- | ------------------------ |
 | 0:15     | 9:00 - 9:15   | Student Recap            |
 | 0:45     | 9:15 - 10:00  | Session                  |
-| 1:30     | 10:00 - 11:30 | Project / Pairing time   |
-| 0:30     | 11:30 - 12:00 | Project recap            |
+| 1:30     | 10:00 - 11:30 | Active Learning          |
+| 0:30     | 11:30 - 12:00 | Recap                    |
 | 0:30     | 12:00 - 12:30 | Breather                 |
 | 1:00     | 12:30 - 13:30 | Break                    |
-| 0:45     | 13:30 - 14:15 | Guest Session            |
+| 0:45     | 13:30 - 14:15 | Guest Lecture            |
 | 0:45     | 14:15 - 15:00 | Session                  |
-| 1:30     | 15:00 - 16:30 | Project / Pairing time   |
-| 0:30     | 16:30 - 17:00 | Project recap            |
+| 1:30     | 15:00 - 16:30 | Active Learning          |
+| 0:30     | 16:30 - 17:00 | Recap                    |
 | 2:00     | 17:00 - 19:00 | Independent project time |
 
 ## Sessions
@@ -48,29 +48,29 @@ There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new
 Sessions are structured not by week - but by days. It does not matter anymore which session is being held on which day of the week. This is the recommended order of sessions.
 Morning sessions should be the ones more challenging than afternoon sessions.
 
-| day | morning                      | afternoon                          | project                                               |
-| --- | ---------------------------- | ---------------------------------- | ----------------------------------------------------- |
-| 1   | Welcome                      | Github and Markdown                | profile README                                        |
-| 2   | Shell Basics                 | Setup & Git CLI & remote           | Treasure hunt & Session Notes / Learnings Collection  |
-| 3   | Git branches & pull requests | HTML Basics and the Web            | Session Notes / Learnings & Personal Website (part 1) |
-| 4   | CSS Basics                   | CSS Selectors                      | TBD Personal Website (part 2) & ...                   |
-| 5   | CSS Flexbox                  | HTML Forms                         | TBD Personal Website (part 3) & flexbox game.         |
-| 6   | CSS Positioning              | CSS Structure                      |                                                       |
-| 7   | `Repetition Project`         | A11y                               |                                                       |
-| 8   | JS Basics                    | JS Variables and Numbers           |                                                       |
-| 9   | JS Loops (neu)               | CSS Grid                           |                                                       |
-| 10  | JS Functions                 | JS Conditions Booleans             |                                                       |
-| 11  | Git Advanced                 | JS Strings and inputs              |                                                       |
-| 12  | JS Callback Functions (neu)  | JS EventListener and createElement |                                                       |
-| 13  | `Repetition Project`         | npm basics                         |                                                       |
-| 14  | JS Objects and Arrays        | JS Strings and inputs              |                                                       |
-| 15  | JS Array Methods             | JS Forms                           |                                                       |
-| 16  | JS Array Methods Advanced    | JS Structure                       |                                                       |
-| 17  | JS Fetch                     | Linting Basics                     |                                                       |
-| 18  | ES Next                      | CSS Animations                     |                                                       |
-| 19  | `Repetition Project`         | CSS Responsive                     |                                                       |
-| 20  | Async Await (neu)            | Linting Advanced                   |                                                       |
-| 21  | JS Unit Testing              |                                    |                                                       |
+| day | morning                      | afternoon                                     | project                                               |
+| --- | ---------------------------- | --------------------------------------------- | ----------------------------------------------------- |
+| 1   | Welcome                      | Github and Markdown                           | profile README                                        |
+| 2   | Shell Basics & Setup         | Git CLI & remote & ssh Setup                  | Treasure hunt & Session Notes / Learnings Collection  |
+| 3   | Git branches & pull requests | HTML Basics and the Web                       | Session Notes / Learnings & Personal Website (part 1) |
+| 4   | CSS Basics                   | CSS Selectors                                 | TBD Personal Website (part 2) & ...                   |
+| 5   | CSS Flexbox                  | CSS Positioning                               | TBD Personal Website (part 3) & flexbox game.         |
+| 7   | `Repetition Project`         | A11y                                          |                                                       |
+| 6   | JS Basics                    | CSS Structure                                 |                                                       |
+| 8   | JS Variables and Numbers     | CSS Grid                                      |                                                       |
+| 9   | JS Loops (neu)               | CSS Responsive                                |                                                       |
+| 10  | JS Functions                 | JS Functions 2                                |                                                       |
+| 11  | JS Conditions Booleans       | JS Strings and inputs                         |                                                       |
+| 12  | JS Callback Functions (neu)  | JS EventListener and createElement            |                                                       |
+| 13  | `Repetition Project`         | Linting Basics & Debugging (with console.log) |                                                       |
+| 14  | JS Objects and Arrays        | HTML Forms                                    |                                                       |
+| 15  | JS Array Methods             | JS Forms                                      |                                                       |
+| 16  | JS Array Methods 2           | JS Structure                                  |                                                       |
+| 17  | JS Fetch                     | Async Await (neu)                             |                                                       |
+| 18  | Git Advanced                 | CSS Animations                                |                                                       |
+| 19  | `Repetition Project`         | ES Next                                       |                                                       |
+| 20  | npm basics                   | JS Unit Testing                               |                                                       |
+| 21  | Buffer                       | Buffer                                        |                                                       |
 
 The following is unsorted and there for the sole purpose of showing how much time is left to be distributed:
 
@@ -92,8 +92,8 @@ The following is unsorted and there for the sole purpose of showing how much tim
 | 34  | Mongoose                         | MongoDB Atlas                  |
 | 35  | Express #1                       | Express #2                     |
 | 36  | Vercel Serverless Functions #1   | Vercel Serverless Functions #2 |
-| 37  | `Repetition Project`             |                                |
-| 38  |                                  |                                |
+| 37  | `Repetition Project`             | Buffer                         |
+| 38  | Buffer                           | Buffer                         |
 | 39  | Capstone Forum / Agile week      | Capstone Forum / Agile week    |
 | 40  | Capstone Forum / Agile week      | Capstone Forum / Agile week    |
 
