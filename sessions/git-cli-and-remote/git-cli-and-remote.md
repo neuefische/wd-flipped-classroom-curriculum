@@ -46,6 +46,10 @@ We will go through an example of different states a file can be in in the follow
 
 ### Committing in a local repository
 
+To understand the workflow with git, we want to visualize the process with the following example:
+
+
+
 We will use the following git commands to go through an example of how to take a file through the different states and put it into a commit:
 
 | Git command                      | Git task                                         |
