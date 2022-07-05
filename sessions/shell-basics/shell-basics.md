@@ -71,14 +71,6 @@ One of the many features of our shell zsh is its extensibility. We can install p
 3. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew), a powerful zsh theme. Follow the installation instructions under `Homebrew`.
 4. run the following command to configure your the powerlevel10k theme: `p10k configure`
 
-## Project: Session Notebook (Part 1) [move to git cli session]
-
-In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content. You may only use the terminal for these tasks:
-
-1. create a folder called `session-notebook`
-2. inside this folder, create a folder called `_template`
-3. inside the \_template, create a
-
 ## Resources
 
 - [terminal basics](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/)
