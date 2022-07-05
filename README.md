@@ -48,20 +48,20 @@ There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new
 Sessions are structured not by week - but by days. It does not matter anymore which session is being held on which day of the week. This is the recommended order of sessions.
 Morning sessions should be the ones more challenging than afternoon sessions.
 
-| day | morning                      | afternoon                                     | project                                               |
-| --- | ---------------------------- | --------------------------------------------- | ----------------------------------------------------- |
-| 1   | Welcome                      | Github and Markdown                           | profile README                                        |
-| 2   | Shell Basics & Setup         | Git CLI & remote & ssh Setup                  | Treasure hunt & Session Notes / Learnings Collection  |
-| 3   | Git branches & pull requests | HTML Basics and the Web                       | Session Notes / Learnings & Personal Website (part 1) |
-| 4   | CSS Basics                   | CSS Selectors                                 | TBD Personal Website (part 2) & ...                   |
-| 5   | CSS Flexbox                  | CSS Positioning                               | TBD Personal Website (part 3) & flexbox game.         |
-| 7   | `Repetition Project`         | A11y                                          |                                                       |
-| 6   | JS Basics                    | CSS Structure                                 |                                                       |
-| 8   | JS Variables and Numbers     | CSS Grid                                      |                                                       |
-| 9   | JS Loops (neu)               | CSS Responsive                                |                                                       |
-| 10  | JS Functions                 | JS Functions 2                                |                                                       |
-| 11  | JS Conditions Booleans       | JS Strings and inputs                         |                                                       |
-| 12  | JS Callback Functions (neu)  | JS EventListener and createElement            |                                                       |
+| day | morning                      | afternoon                                     | project                                               | Guestlecture                                                                                            |
+| --- | ---------------------------- | --------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| 1   | Welcome                      | Github and Markdown                           | profile README                                        | Meet your teammates                                                                                     |
+| 2   | Shell Basics & Setup         | Git CLI & remote & ssh Setup                  | Treasure hunt & Session Notes / Learnings Collection  | Our communication goals                                                                                 |
+| 3   | Git branches & pull requests | HTML Basics and the Web                       | Session Notes / Learnings & Personal Website (part 1) | How to ask good questions                                                                               |
+| 4   | CSS Basics                   | CSS Selectors                                 | TBD Personal Website (part 2) & ...                   | How to work in a group effectively                                                                      |
+| 5   | CSS Flexbox                  | CSS Positioning                               | TBD Personal Website (part 3) & flexbox game.         | How to google fast and smart + A Dev's best friends: MDN & Stackoverflow introduction                   |
+| 6   | `Repetition Project`         | A11y                                          | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     |
+| 7   | JS Basics                    | CSS Structure                                 | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |
+| 8   | JS Variables and Numbers     | CSS Grid                                      | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |
+| 9   | JS Loops (neu)               | CSS Responsive                                | ...                                                   | Why we love Open Source                                                                                 |
+| 10  | JS Functions                 | JS Functions 2                                |                                                       | Design Workshop 1                                                                                       |
+| 11  | JS Conditions Booleans       | JS Strings and inputs                         |                                                       | Design Workshop 2                                                                                       |
+| 12  | JS Callback Functions (neu)  | JS EventListener and createElement            |                                                       | Design Workshop 3                                                                                       |
 | 13  | `Repetition Project`         | Linting Basics & Debugging (with console.log) |                                                       |
 | 14  | JS Objects and Arrays        | HTML Forms                                    |                                                       |
 | 15  | JS Array Methods             | JS Forms                                      |                                                       |
