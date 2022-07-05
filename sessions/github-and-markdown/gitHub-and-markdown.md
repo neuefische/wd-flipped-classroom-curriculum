@@ -4,7 +4,7 @@
 
 In this session you will learn:
 
-- [ ] what version control is and why is it so useful / important.
+- [ ] what version control is and why it is useful / important.
 - [ ] to create repositories on GitHub.
 - [ ] to create / edit files on GitHub.
 - [ ] to create commits on GitHub.

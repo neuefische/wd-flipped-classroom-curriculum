@@ -12,19 +12,19 @@ In this session you will learn:
 
 ## How the web works
 
-The world wide web is a network of computers who can communicate and exchange information with each other. There are many different protocols which define the rules on how two machines can communicate with each other:
+The world wide web is a network of computers that can communicate and exchange information with each other. There are many different protocols that define the rules on how two machines communicate with each other, for example:
 
-- requesting and displaying html files via the `http` protocol (e.g. opening websites with your browser)
-- accessing the shell of another computer via `ssh` (e.g. cloning repositories from GitHub via a ssh connection)
+- requesting and displaying html files via `http` (e.g. opening websites with your browser)
+- accessing the shell of another computer via `ssh` or cloning repositories from GitHub via a ssh connection
 - sending and receiving e-mails via `TLS/SSL`
 - Accessing files on a server via `FTP` (file transfer protocol)
 
-For now we are focusing on the most commonly used feature of the web: displaying and interacting with websites. In order to view a specific website you have to:
+For now we are focusing on the most commonly used feature of the web: Displaying and interacting with websites. In order to view a specific website you have to:
 
-- get the `specific address` of the computer where the html files are stored on, i.e. the `IP address` (internet protocol address).
+- get the `address` of the server that provides the html file, i.e. the `IP address` (internet protocol address).
 - send a `GET request` to that address
 - request additional resources (CSS files, images, etc.)
-- `rendering` the received content (e.g. via a browser)
+- `render` the received content (e.g. via a browser)
 
 Most computers connected to the internet can be reached via an `IPv4` address which consists of 4 numbers in a range from 0 to 255 separated by a dot.
 
@@ -34,7 +34,7 @@ Most computers connected to the internet can be reached via an `IPv4` address wh
 
 Just like remembering all the phone numbers of your friends is impractical, remembering the IP addresses of all the websites is not very user friendly. To solve this problem, websites can be reached via a `url` like `https://www.neuefische.de`. The browser then requests the IP address of this website from a `DNS` (domain name server), which is basically a phone book for domains.
 
-Then the browser fetches all necessary content for the website like the html file, CSS and JavaScript files, images, fonts, etc. As soon as all files have been stored on the local computer, the browser displays the html content, styles it as specified in the style sheet and executes JavaScript code. We can now interact with the content of the website and send new requests to receive other websites.
+Then the browser fetches all necessary content for the website like the html file, CSS and JavaScript files, images, fonts, etc. As soon as all files have downloaded, the browser displays the html content, styles it as specified in the style sheet and executes JavaScript code. We can now interact with the website.
 
 Below is a sketch of how a typical request of a web page looks like. <br>
 <br>
@@ -42,23 +42,23 @@ Below is a sketch of how a typical request of a web page looks like. <br>
 
 ## HTML basics
 
-HTML (hyper text markup language) is similar to markown a markup language to express text in a structured way. This structure is represented by html tags which indicate what kind of element is displayed on the website. For example, a headline element is written like this:
+HTML (hyper text markup language) is a markup language - similar to markdown. It's a language to express text in a structured way. This structure is represented by html tags which indicate what kind of element is displayed on the website. For example, a headline element is written like this:
 
 ```html
 <h1>I am a headline!</h1>
 ```
 
-As you can see, the html element is opened with an h1 tag and closed with a corresponding closing tag. Everything in between these two tags is considered the headline, even other html elements emphasized text:
+As you can see, the html element is opened with an h1 tag and closed with a corresponding closing tag. Everything in between these two tags is considered the headline, even other html elements:
 
 ```html
 <h1>I am a <em>headline!</em></h1>
 ```
 
-Some images can't contain any other elements and therefore don't have a closing tag. These elements like images or inputs are called self closing and are closed immediatly at the end of the tag with a `/` forward slash (see `img` example below).
+Some element can't contain any other elements and therefore don't have a closing tag. These elements like images or inputs are called self closing and are closed immediatly at the end of the tag with a `/` forward slash (see `img` example below).
 
 ### HTML tag attributes
 
-Some elements require some kind of data in order to function properly. These informations are specified via tag attributes. For example:
+Some elements require some more information in order to function properly. This information is specified via tag attributes. For example:
 
 - the source of an image
   ```html
@@ -125,12 +125,12 @@ Developers have two main tools to express a meaningful structure in a website:
 
 ### Semantic HTML
 
-Semantic HTML elements not only divide the content of the web page into distinct parts, but also describe the function or purpose about the elements. This has two major effects:
+Semantic HTML elements not only divide the content of the web page into distinct parts, but also describe the function or purpose of the elements. This has two major benefits:
 
-- the HTML file becomes way more understandable for other developers
+- the HTML becomes more understandable for other developers
 - accessibility tools and search engines can interpret the website
 
-Therefore, one should use semantic HTML elements whenever it is possible.
+Therefore, one should use semantic HTML elements whenever possible.
 
 ### List of Semantic HTML elements
 
@@ -145,11 +145,11 @@ Therefore, one should use semantic HTML elements whenever it is possible.
 | `<header></header>`     | representing introductory content, typically a group of introductory or navigational aids                           |
 | `<footer></footer>`     | typically contains information about the author of the section, copyright data or links to related documents        |
 
-> 💡 You can find a comprehensive list of semantic html elements at the [MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+> 💡 You can find a comprehensive list of semantic html elements in the [MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
 
 ### Nesting HTML elements
 
-In general, html elements can include other elements as shown above. This is used to group elements together in a meaningful way. The element containing the other elements is called the `parent element`, which contains one or more `child elements`. The following cases are typical examples where elements are nested:
+In general, html elements can include other elements as shown above. This is used to group elements together in a meaningful way. The element containing the other elements is called the `parent element`, which contains one or more `child elements`. The following cases are typical examples of nested elements:
 
 - ```html
   <ul>
@@ -171,12 +171,12 @@ In general, html elements can include other elements as shown above. This is use
     <span> submit </span>
   </button>
   ```
-  Below is a sketch on how semantic elements are nested in typical web page. <br><br>
+  Below is a sketch of how semantic elements can be nested in a web page. <br><br>
   <img src="./assets/sectioning-elements.png" width=700 />
 
 ## Emmet
 
-VSCode has a powerful tool called Emmet which lets you autocomplete a lot of code by just typing certain snippets and pressing the `Tab` key afterwards. Try these snippets inside an html file and see what happens:
+VSCode has a useful tool called Emmet which lets you autocomplete a lot of code by just typing certain snippets and pressing the `Tab` key afterwards. Try these snippets inside an html file and see what happens:
 
 - `!`
 - `.highlight`
