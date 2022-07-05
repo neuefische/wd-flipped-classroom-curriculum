@@ -48,8 +48,6 @@ We will go through an example of different states a file can be in in the follow
 
 To understand the workflow with git, we want to visualize the process with the following example:
 
-
-
 We will use the following git commands to go through an example of how to take a file through the different states and put it into a commit:
 
 | Git command                      | Git task                                         |
@@ -154,11 +152,60 @@ Let's look at an example: Say you want to work on a website with your friend.
 5. You have to use `git push`. After executing this command you can refresh the GitHub repository page and you will then see the changes you made and the Contact Page you created.
 6. Your friend probably has a local repository. This local repository doesn't contain your work. Your friend has to execute the `git pull` command. After executing this command his local repository will contain the new commits and he will see the Contact Page.
 
-# Project: Project Name
+---
+
+# Assignment
+
+## Session Notebook
+
+In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content. You may only use the terminal for these tasks:
+
+1. create a folder called `session-notebook`
+2. inside this folder, create a folder called `_template`
+3. inside the \_template, create a
+
+## Connect the Session Notebook to GitHub
+
+You already created a folder and file structure for your session notes. Now we want to provide this project to your GitHub account as a repository. Therefore we need to connect the local repository with a remote repository.
 
 ### Part 1
 
+The first step is to initialize a new repository based on the folder you created for the session notes.
+
+1. If not already done, navigate through the shell to the folder you created for the session notes.
+2. Make sure you have at least a `README.md` and optionally another file inside the folder. If not, create them by using shell commands.
+3. Run the git command to initialize a new local git repository.
+4. Create your first commit.
+
+You should get a message like this:
+
+```shell
+Initialized empty Git repository in /Users/<your-username>/<path_to_folder/<your-repository-name>/.git/
+```
+
 ### Part 2
+
+For the next step you need to create a new repository on GitHub and connect your local repository with the remote repository.
+
+![Create a new GitHub repository](assets/create-new-repository.png)
+
+1.  Open GitHub and create a new repository.
+2.  Make sure it's a public repository and uncheck "Add a README file" because we already created one.
+3.  You should see the message `…or push an existing repository from the command line`. Follow the instructions.
+
+> 💡 Hint: if the name of your branch is already `main`, you don't need to use the command `git branch -M main` because this command renames the branch to `main`.
+
+### Part 3
+
+For now on you are able to push your local changes to the remote repository.
+
+1. Create new files, add new content, remove content, ...
+2. Commit your changes.
+3. Push your changes to the remote repository and look at the GitHub repository page to see your changes.
+
+> ❗️ Commit after each step with a good commit message.
+
+> 💡 Hint: you can see the commit history on GitHub.
 
 ---
 

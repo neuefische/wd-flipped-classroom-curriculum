@@ -62,13 +62,14 @@ Open the `treasure-hunt.zip` that you received. The goal is to navigate through 
 
 Good luck!
 
-## Project: Session Notebook (Part 1)
+## Exercise: Enhance your terminal
 
-In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content. You may only use the terminal for these tasks:
+One of the many features of our shell zsh is its extensibility. We can install plugins which will improve our developer experience significantly. You can install all necessary programs by following the installation steps on the respective websites. So let's get started!
 
-1. create a folder called `session-notebook`
-2. inside this folder, create a folder called `_template`
-3. inside the \_template, create a
+1. install the zsh framework [oh my zsh](https://ohmyz.sh/#install) (follow the instructions on their installation page). This framework helps us to manage the zsh configuration.
+2. install [homebrew](https://brew.sh/), the package manager for MacOS. With homebrew we can install packages (e.g. programs, extensions, tools,...) via the command line.
+3. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew), a powerful zsh theme. Follow the installation instructions under `Homebrew`.
+4. run the following command to configure your the powerlevel10k theme: `p10k configure`
 
 ## Resources
 
