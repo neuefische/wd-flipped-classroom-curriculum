@@ -23,9 +23,10 @@ For now we are focusing on the most commonly used feature of the web: displaying
 
 - get the `specific address` of the computer where the html files are stored on, i.e. the `IP address` (internet protocol address).
 - send a `GET request` to that address
-- `rendering` the received html content (e.g. via a browser)
+- request additional resources (css files, images, etc.)
+- `rendering` the received content (e.g. via a browser)
 
-Each computer connected to the internet can be reached via a `IPv4` address which consists of 4 numbers in a range from 0 to 255 separated by a dot.
+Each computer connected to the internet can be reached via an `IPv4` address which consists of 4 numbers in a range from 0 to 255 separated by a dot.
 
 > 💡 Enter this ip address in the address bar of your browser and see what happens: `172.217.203.94`.
 
