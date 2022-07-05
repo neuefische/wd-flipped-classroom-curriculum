@@ -17,6 +17,10 @@ Imagine a team member works on a feature and introduces a bug which would keep e
 When working on a project, especially as a team, you want to work on features independently, so they never affect anyone else's work.
 Git offers us `branches` to keep our current work away from a teams common codebase until completion.
 
+A `branch` lets you split from the main line of development. The new branch shares a part of its commit history with the main branch. At a certain commit the new branch branches off and the commit histories differ.
+
+<img src="assets/branches.png" width="450">
+
 The teams common codebase is typically kept in the `main` branch. If you work on a new feature you create a new `feature branch` and work on that new branch. You commit your work on the new branch and the main branch is not effected. You can finish work on the new feature, test the new functionality and have other developers review your work. In the end you `merge` your feature branch into the main branch, so all your work and commits of the new feature are included in the main branch.
 
 ## Naming branches
@@ -51,8 +55,8 @@ We can create a pull request on GitHub and ask other developers to review all ch
 5. Share the pull request with your team
 6. Review the pull request, implement changes if needed, push again to update the pull request until it gets approved
 7. Merge the pull request into `main`
-8. Delete the new branch on GitHub and locally
-9. Don't forget to `git pull` inside the `main` branch on your local machine
+8. Don't forget to `git pull` inside the `main` branch on your local machine
+9. Delete the new branch on GitHub and locally
 
 ![Basic git workflow for branches and PRs](assets/git-basics-branching-workflow.png)
 
