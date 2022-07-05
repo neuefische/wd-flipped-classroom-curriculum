@@ -176,7 +176,7 @@ In general, html elements can include other elements as shown above. This is use
 
 ## Emmet
 
-VSCode has a powerful tool called Emmet which lets you autocomplete a lot of code by just typing certain snippets and pressing the `Tab` key afterwards. Try these snippets and see what happens:
+VSCode has a powerful tool called Emmet which lets you autocomplete a lot of code by just typing certain snippets and pressing the `Tab` key afterwards. Try these snippets inside an html file and see what happens:
 
 - `!`
 - `.highlight`
