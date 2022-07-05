@@ -187,11 +187,13 @@ Initialized empty Git repository in /Users/<your-username>/<path_to_folder/<your
 
 For the next step you need to create a new repository on GitHub and connect your local repository with the remote repository.
 
+![Create a new GitHub repository](assets/create-new-repository.png)
+
 1.  Open GitHub and create a new repository.
 2.  Make sure it's a public repository and uncheck "Add a README file" because we already created one.
 3.  You should see the message `…or push an existing repository from the command line`. Follow the instructions.
 
-![Create a new GitHub repository](assets/create-new-repository.png)
+> 💡 Hint: if the name of your branch is already `main`, you don't need to use the command `git branch -M main` because this command renames the branch to `main`.
 
 ### Part 3
 
