@@ -6,13 +6,23 @@ In this session you will learn:
 
 - [ ] what git branches are and how to use them.
 - [ ] what Pull Requests are and how to use them.
-- [ ] how branches and pull requests facilitates collaboration and help maintaining multiple versions of a project.
+- [ ] how branches and pull requests facilitate collaboration.
 
 ---
 
 ## Git Branches
 
-When working on a project, especially as a team, we need `one official version` of the project or a `single source of truth`. This is the `main` branch. If we want to add new features we create an alternative version of our project or `feature branch`. Here we can create new code `without changing the official version` or `main` branch. This is an important concept for working on a project as a team. Because if we make a mistake we can easily return to the `main` branch and don't get problems with other versions (branches). You can `switch` between branches to see what changes have been made to other version of the project.
+Imagine a team member works on a feature and introduces a bug which would keep everyone else from testing their own work. That would be inefficient and keep everyone else from doing their job.
+
+When working on a project, especially as a team, you want to work on features independently, so they never affect anyone else's work.
+Git offers us `branches` to keep our current work away from a teams common codebase until completion.
+
+The teams common codebase is typically kept in the `main` branch. If you work on a new feature you create a new `feature branch` and work on that new branch. You commit your work on the new branch and the main branch is not effected. You can finish work on the new feature, test the new functionality and have other developers review your work. In the end you `merge` your feature branch into the main branch, so all your work and commits of the new feature are included in the main branch.
+
+## Naming branches
+
+Each branch in git has a name. The common codebase is typically kept in the `main` branch. It is good practice to use short descriptive names for your feature branches, e.g. `contact-form` if your new feature is a contact form in your website.
+We recommend using hyphens as separators as they make the name more comfortable to read.
 
 ### Git `branch` commands
 
@@ -29,7 +39,8 @@ When working on a project, especially as a team, we need `one official version` 
 
 ## Git Pull Requests
 
-If your work on a `branch` with new code is finished, you wan't to get a `review` and bring the `feature` into the `main` branch. Therefore we use something called `pull request`. A pull request is a request to `merge` a branch into another branch. But before we `merge` we always need a `code review` from other developers to make sure that the changes are working and don't have any mistakes. With this concept we make sure that we have better code quality with less bugs.
+It is important for developers to maintain a high code quality and to have other developers review their work. Git offers us `pull requests` which we can use as a convenient way to request reviews of the work on a `feature branch`. A pull request is a request to `merge` one branch into another branch.
+We can create a pull request on GitHub and ask other developers to review all changes made in the respective feature branch. The reviewers can comment on the changes, request further changes to be made or approve the pull request. If a pull request is approved we can merge the feature branch into the main branch.
 
 ### Basic Workflow for a Pull Request
 
