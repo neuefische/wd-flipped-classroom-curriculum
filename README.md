@@ -3,6 +3,10 @@
 This is the working progress of the new curriculum of the bootcamp Web Development. <br>
 This update is aiming to improve the way our students learn. <br>
 
+#### To-Do's
+
+There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new-format/issues/41) to keep an eye on.
+
 #### Our goals are:
 
 > 💡 Self-sufficient learning <br>
@@ -31,7 +35,7 @@ This update is aiming to improve the way our students learn. <br>
 | 0:45     | 9:15 - 10:00  | Session                  |
 | 1:30     | 10:00 - 11:30 | Project / Pairing time   |
 | 0:30     | 11:30 - 12:00 | Project recap            |
-| 0:30     | 12:00 - 12:30 | Workout                  |
+| 0:30     | 12:00 - 12:30 | Breather                 |
 | 1:00     | 12:30 - 13:30 | Break                    |
 | 0:45     | 13:30 - 14:15 | Guest Session            |
 | 0:45     | 14:15 - 15:00 | Session                  |
@@ -44,29 +48,29 @@ This update is aiming to improve the way our students learn. <br>
 Sessions are structured not by week - but by days. It does not matter anymore which session is being held on which day of the week. This is the recommended order of sessions.
 Morning sessions should be the ones more challenging than afternoon sessions.
 
-| day | morning                      | afternoon                           | project                                               |
-| --- | ---------------------------- | ----------------------------------- | ----------------------------------------------------- |
-| 1   | Welcome                      | Github and Markdown                 | profile README                                        |
-| 2   | Shell Basics                 | Setup & Git CLI & remote | Treasure hunt & Session Notes / Learnings Collection  |
-| 3   | Git branches & pull requests | HTML Basics and the Web             | Session Notes / Learnings & Personal Website (part 1) |
-| 4   | CSS Basics                   | CSS Selectors                       | TBD Personal Website (part 2) & ...                   |
-| 5   | CSS Flexbox                  | HTML Forms                          | TBD Personal Website (part 3) & flexbox game.         |
-| 6   | CSS Positioning              | CSS Structure                       |                                                       |
-| 7   | `Repetition Project`         | A11y                                |                                                       |
-| 8   | JS Basics                    | JS Variables and Numbers            |                                                       |
-| 9   | JS Loops (neu)               | CSS Grid                            |                                                       |
-| 10  | JS Functions                 | JS Conditions Booleans              |                                                       |
-| 11  | Git Advanced                 | JS Strings and inputs               |                                                       |
-| 12  | JS Callback Functions (neu)  | JS EventListener and createElement  |                                                       |
-| 13  | `Repetition Project`         | npm basics                          |                                                       |
-| 14  | JS Objects and Arrays        | JS Strings and inputs               |                                                       |
-| 15  | JS Array Methods             | JS Forms                            |                                                       |
-| 16  | JS Array Methods Advanced    | JS Structure                        |                                                       |
-| 17  | JS Fetch                     | Linting Basics                      |                                                       |
-| 18  | ES Next                      | CSS Animations                      |                                                       |
-| 19  | `Repetition Project`         | CSS Responsive                      |                                                       |
-| 20  | Async Await (neu)            | Linting Advanced                    |                                                       |
-| 21  | JS Unit Testing              |                                     |                                                       |
+| day | morning                      | afternoon                          | project                                               |
+| --- | ---------------------------- | ---------------------------------- | ----------------------------------------------------- |
+| 1   | Welcome                      | Github and Markdown                | profile README                                        |
+| 2   | Shell Basics                 | Setup & Git CLI & remote           | Treasure hunt & Session Notes / Learnings Collection  |
+| 3   | Git branches & pull requests | HTML Basics and the Web            | Session Notes / Learnings & Personal Website (part 1) |
+| 4   | CSS Basics                   | CSS Selectors                      | TBD Personal Website (part 2) & ...                   |
+| 5   | CSS Flexbox                  | HTML Forms                         | TBD Personal Website (part 3) & flexbox game.         |
+| 6   | CSS Positioning              | CSS Structure                      |                                                       |
+| 7   | `Repetition Project`         | A11y                               |                                                       |
+| 8   | JS Basics                    | JS Variables and Numbers           |                                                       |
+| 9   | JS Loops (neu)               | CSS Grid                           |                                                       |
+| 10  | JS Functions                 | JS Conditions Booleans             |                                                       |
+| 11  | Git Advanced                 | JS Strings and inputs              |                                                       |
+| 12  | JS Callback Functions (neu)  | JS EventListener and createElement |                                                       |
+| 13  | `Repetition Project`         | npm basics                         |                                                       |
+| 14  | JS Objects and Arrays        | JS Strings and inputs              |                                                       |
+| 15  | JS Array Methods             | JS Forms                           |                                                       |
+| 16  | JS Array Methods Advanced    | JS Structure                       |                                                       |
+| 17  | JS Fetch                     | Linting Basics                     |                                                       |
+| 18  | ES Next                      | CSS Animations                     |                                                       |
+| 19  | `Repetition Project`         | CSS Responsive                     |                                                       |
+| 20  | Async Await (neu)            | Linting Advanced                   |                                                       |
+| 21  | JS Unit Testing              |                                    |                                                       |
 
 The following is unsorted and there for the sole purpose of showing how much time is left to be distributed:
 

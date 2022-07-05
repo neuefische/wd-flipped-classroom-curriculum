@@ -174,6 +174,17 @@ In general, html elements can include other elements as shown above. This is use
   Below is a sketch on how semantic elements are nested in typical web page. <br><br>
   <img src="./assets/sectioning-elements.png" width=700 />
 
+## Emmet
+
+VSCode has a powerful tool called Emmet which lets you autocomplete a lot of code by just typing certain snippets and pressing the `Tab` key afterwards. Try these snippets inside an html file and see what happens:
+
+- `!`
+- `.highlight`
+- `button#red`
+- ul>li.card\*10
+
+> 💡 You can learn about more emmet commands in [this cheatsheet](https://coolcheatsheet.com/toolkit/emmet)
+
 # Project: Project Name
 
 ### Part 1
