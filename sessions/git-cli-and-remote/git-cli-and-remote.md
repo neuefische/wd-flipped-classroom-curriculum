@@ -154,7 +154,7 @@ Let's look at an example: Say you want to work on a website with your friend.
 
 ---
 
-# Project: Session Notes
+# Assignment: Session Notes
 
 In the Shell Basics session you already created a folder and file structure for your session notes. Now we want to provide this project to your GitHub account as a repository. Therefore we need to connect the local repository with a remote repository.
 
