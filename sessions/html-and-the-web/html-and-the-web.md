@@ -2,11 +2,11 @@
 
 ## Learning Objectives
 
-After this session you should be able to:
+In this session you will learn:
 
-- [ ] understand client/server dynamics
-- [ ] how html works
-- [ ] what semantic html is
+- [ ] about client/server dynamics
+- [ ] how HTML works
+- [ ] what semantic HTML is
 
 ---
 
@@ -23,36 +23,38 @@ For now we are focusing on the most commonly used feature of the web: displaying
 
 - get the `specific address` of the computer where the html files are stored on, i.e. the `IP address` (internet protocol address).
 - send a `GET request` to that address
-- request additional resources (css files, images, etc.)
+- request additional resources (CSS files, images, etc.)
 - `rendering` the received content (e.g. via a browser)
 
-Each computer connected to the internet can be reached via an `IPv4` address which consists of 4 numbers in a range from 0 to 255 separated by a dot.
+Most computers connected to the internet can be reached via an `IPv4` address which consists of 4 numbers in a range from 0 to 255 separated by a dot.
 
-> 💡 Enter this ip address in the address bar of your browser and see what happens: `172.217.203.94`.
+> 💡 Enter this IP address in the address bar of your browser and see what happens: `172.217.203.94`.
 
-> 💡 Execute following command in your terminal to get the current ip address of your computer: `curl ipinfo.io`.
+> 💡 Execute following command in your terminal to get the current IP address of your computer: `curl ipinfo.io`.
 
-Just like remembering all the phone numbers of your friends is impractical, remembering the ip addresses of all the websites is not very user friendly. To solve this problem, websites can be reached via a `url` like `www.neuefische.de`. The browser then requests the ip address of this website from a `DNS` (domain name server), which is basically a phone book for domains.
+Just like remembering all the phone numbers of your friends is impractical, remembering the IP addresses of all the websites is not very user friendly. To solve this problem, websites can be reached via a `url` like `https://www.neuefische.de`. The browser then requests the IP address of this website from a `DNS` (domain name server), which is basically a phone book for domains.
 
-Then the browser fetches all necessary content for the website like the html file, css style sheets, javascript files, images, fonts, etc. As soon as all files have been stored on the local computer, the browser displays the html content, styles it as specified in the style sheet and executes javascript code. We can now interact with the content of the website and send new requests to receive other websites.
+Then the browser fetches all necessary content for the website like the html file, CSS and JavaScript files, images, fonts, etc. As soon as all files have been stored on the local computer, the browser displays the html content, styles it as specified in the style sheet and executes JavaScript code. We can now interact with the content of the website and send new requests to receive other websites.
 
-Below is a sketch on how a typical request of a web page looks like. <br>
+Below is a sketch of how a typical request of a web page looks like. <br>
 <br>
 <img src="./assets/request-response.png" width=600 />
 
 ## HTML basics
 
-HTML (hyper text markup language) is similar to markown a markup language to express text in a structured way. This structure is represented by html tags which indicate what kind of element is displayed in the website. For example, a headline element is written like this:
+HTML (hyper text markup language) is similar to markown a markup language to express text in a structured way. This structure is represented by html tags which indicate what kind of element is displayed on the website. For example, a headline element is written like this:
 
 ```html
 <h1>I am a headline!</h1>
 ```
 
-As you can see, the html element is opened with an h1 tag and closed with a corresponding closing tag. Everything in between these two tags is considered the headline, even other html elements like a picture:
+As you can see, the html element is opened with an h1 tag and closed with a corresponding closing tag. Everything in between these two tags is considered the headline, even other html elements emphasized text:
 
 ```html
-<h1><img src="logo.png" /> I am a headline!</h1>
+<h1>I am a <em>headline!</em></h1>
 ```
+
+Some images can't contain any other elements and therefore don't have a closing tag. These elements like images or inputs are called self closing and are closed immediatly at the end of the tag with a `/` forward slash (see `img` example below).
 
 ### HTML tag attributes
 
@@ -60,7 +62,7 @@ Some elements require some kind of data in order to function properly. These inf
 
 - the source of an image
   ```html
-  <img src="logo.png" />
+  <img src="logo.png" alt="The logo of the company." />
   ```
 - the destination of an anchor element
   ```html
@@ -71,7 +73,7 @@ Some elements require some kind of data in order to function properly. These inf
   <input type="date" />
   ```
 
-Which html element requires which kind of attribute can be looked up in the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics).
+Which html element requires which kind of attribute can be looked up in the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
 
 ### Layout of an HTML file
 
@@ -97,20 +99,20 @@ A typical html website consists of two main parts:
 
 ### List of common HTML elements
 
-| element    | meaning                                                             |
-| ---------- | ------------------------------------------------------------------- |
-| `<head>`   | only once per website, indludes meta data and linked files          |
-| `<body>`   | only once per website, includes the html website content            |
-| `<h1>`     | only once per website, a level one heading                          |
-| `<h2>`     | a level two heading                                                 |
-| `<h3>`     | a level three heading                                               |
-| `<h6>`     | a level six heading                                                 |
-| `<p>`      | a paragraph                                                         |
-| `<a>`      | an link or anchor element                                           |
-| `<img>`    | an image, has no closing tag                                        |
-| `<form>`   | a form element                                                      |
-| `<input>`  | an input field, has no closing tag                                  |
-| `<button>` | a clickable element, often equipped with some kind of functionality |
+| element             | meaning                                                             |
+| ------------------- | ------------------------------------------------------------------- |
+| `<head></head>`     | only once per website, indludes meta data and linked files          |
+| `<body></body>`     | only once per website, includes the html website content            |
+| `<h1></h1>`         | only once per website, a level one heading                          |
+| `<h2></h2>`         | a level two heading                                                 |
+| `<h3></h3>`         | a level three heading                                               |
+| `<h6></h6>`         | a level six heading                                                 |
+| `<p></p>`           | a paragraph                                                         |
+| `<a></a>`           | an link or anchor element                                           |
+| `<img />`           | an image, has no closing tag                                        |
+| `<form></form>`     | a form element                                                      |
+| `<input />`         | an input field, has no closing tag                                  |
+| `<button></button>` | a clickable element, often equipped with some kind of functionality |
 
 > 💡 A comprehensive list of all html elements can be found at the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics)
 
@@ -118,7 +120,7 @@ A typical html website consists of two main parts:
 
 Developers have two main tools to express a meaningful structure in a website:
 
-1.  useing semantic HTML elements
+1.  using semantic HTML elements
 2.  nesting / grouping of HTML elements
 
 ### Semantic HTML
@@ -132,16 +134,16 @@ Therefore, one should use semantic HTML elements whenever it is possible.
 
 ### List of Semantic HTML elements
 
-| element       | meaning                                                                                                             |
-| ------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `<main>`      | only once per website, indludes the main content of the page                                                        |
-| `<section>`   | a generic standalone section of a document                                                                          |
-| `<ul>`/`<ol>` | a list of elements with the same structure, only has `<li>` elements as direct children                             |
-| `<nav>`       | a navigation bar                                                                                                    |
-| `<aside>`     | element representing a portion of a document whose content is only indirectly related to the main content           |
-| `<article>`   | representing a self-containing part of the website, which is intended to be independently distributable or reusable |
-| `<header>`    | representing introductory content, typically a group of introductory or navigational aids                           |
-| `<footer>`    | typically contains information about the author of the section, copyright data or links to related documents        |
+| element                 | meaning                                                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `<main></main>`         | only once per website, indludes the main content of the page                                                        |
+| `<section></section>`   | a generic standalone section of a document                                                                          |
+| `<ul></ul>`/`<ol></ol>` | a list of elements with the same structure, only has `<li>` elements as direct children                             |
+| `<nav></nav>`           | a navigation bar                                                                                                    |
+| `<aside></aside>`       | element representing a portion of a document whose content is only indirectly related to the main content           |
+| `<article></article>`   | representing a self-containing part of the website, which is intended to be independently distributable or reusable |
+| `<header></header>`     | representing introductory content, typically a group of introductory or navigational aids                           |
+| `<footer></footer>`     | typically contains information about the author of the section, copyright data or links to related documents        |
 
 > 💡 You can find a comprehensive list of semantic html elements at the [MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
 
