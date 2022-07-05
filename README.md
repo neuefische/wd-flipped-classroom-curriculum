@@ -33,14 +33,14 @@ There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new
 | -------- | ------------- | ------------------------ |
 | 0:15     | 9:00 - 9:15   | Student Recap            |
 | 0:45     | 9:15 - 10:00  | Session                  |
-| 1:30     | 10:00 - 11:30 | Project / Pairing time   |
-| 0:30     | 11:30 - 12:00 | Project recap            |
+| 1:30     | 10:00 - 11:30 | Active Learning          |
+| 0:30     | 11:30 - 12:00 | Recap                    |
 | 0:30     | 12:00 - 12:30 | Breather                 |
 | 1:00     | 12:30 - 13:30 | Break                    |
-| 0:45     | 13:30 - 14:15 | Guest Session            |
+| 0:45     | 13:30 - 14:15 | Guest Lecture            |
 | 0:45     | 14:15 - 15:00 | Session                  |
-| 1:30     | 15:00 - 16:30 | Project / Pairing time   |
-| 0:30     | 16:30 - 17:00 | Project recap            |
+| 1:30     | 15:00 - 16:30 | Active Learning          |
+| 0:30     | 16:30 - 17:00 | Recap                    |
 | 2:00     | 17:00 - 19:00 | Independent project time |
 
 ## Sessions
