@@ -3,6 +3,10 @@
 This is the working progress of the new curriculum of the bootcamp Web Development. <br>
 This update is aiming to improve the way our students learn. <br>
 
+#### To-Do's
+
+There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new-format/issues/41) to keep an eye on.
+
 #### Our goals are:
 
 > 💡 Self-sufficient learning <br>
