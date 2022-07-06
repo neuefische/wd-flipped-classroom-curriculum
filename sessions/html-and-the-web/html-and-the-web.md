@@ -194,14 +194,14 @@ In this challenge you will start creating your own personal website.
 Setup a local and a remote repository for your project:
 
 1. Create a local git repository. Make your initial commit with an empty HTML file.
-2. Create a remote repository on GitHub and connect your local repository. Use the `push an existing repository from the command line` commands from GitHub to push your work.
+2. Create a remote repository on GitHub and connect your local repository. Use the commands on your GitHub repository page found under `..or push an existing repository from the command line` to push your work.
 
 ### Part 2
 
 Start working on the HTML markup of your personal website.
 
 1. Create and switch to a new feature branch locally.
-2. Think about the content you want to put on your website and its structure.Keep the principles of mobile first in mind without worrying about the styling - we will take care of that later.
+2. Think about the content you want to put on your website and its structure. Don't worry about the styling - we will take care of that later.
 3. Start writing your markup, giving your website structure and content. Use semantic HTML whenever possible.
 4. Commit your work on the new feature branch whenever a new part of your website is done.
 5. Create a pull request on GitHub. Send a link to the pull request to another student and request a review.
