@@ -5,7 +5,7 @@
 ## Learning objectives
 
 - [ ] to use version control locally to create repositories and commits.
-- [ ] about the `different states` of files.
+- [ ] understanding and controlling the `different states` of files.
 - [ ] to synchronize local repositories with remote repositories (on GitHub for example).
 
 ---
@@ -16,13 +16,13 @@
 
 ### Which important problem will we solve today?
 
-- You will learn today one of the most important tools you will ever need in your development career.
+- You will learn today one of the most important tools you will need in your development career.
 - How return to the latest version of a project / file when something goes wrong.
 - You will learn how to share your code with the world on GitHub.
 
 ### Why is the content of todays block so important for the students?
 
-- git is an industry standard, they need to learn it in order to become a developer
+- git is an industry standard, it is a requirement for most almost all open positions as a developer.
 - git helps the students when they accidentally mess up their code, so they can always go back to the last save point
 
 ---
@@ -34,7 +34,7 @@
   - commits
   - repositories
   - git workflow (creating commits after each important step)
-- tell the students that they will learn today how to do these steps on their local machine
+- tell the students that they will learn today how to do these steps on their local machine and connect their progress to the remote version of their code on github
 
 ### Which prior knowledge will be used for this session?
 
@@ -54,6 +54,8 @@
 - [ ] `git init` - turning the folder into a local repository
 - [ ] show that the folder becomes a repository through the hidden .git folder
 - [ ] show that you can delete the repository by deleting the folder
+- [ ] create a `.gitignore` file and add `.DS_Store` to the file. Explain that inside the DS_Store file are listed display configurations by macOS, that are not interesting for our remote repository. This is why we want git to ignore it.
+- [ ] explain that everything we add to the `.gitignore` file will not be commited to our remote repository
 
 ### Git commit
 
@@ -64,7 +66,7 @@
 - [ ] staged - the changes in the file are prepared to become part of the next commit (it is put onto a stage with other changes to take a snapshot of everything on that stage later).
 - [ ] committed - the file / changes have become part of the commit. Untracked files become part of the repository and will be tracked from now on.
 
-<img src="assets/untracked.png" alt="untracked" width="400">
+  <img src="assets/untracked.png" alt="untracked" width="400">
 
 **2. Show how to commit changes made to a file in the repository.**
 
