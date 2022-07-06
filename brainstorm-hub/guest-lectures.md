@@ -36,12 +36,12 @@ the lectures will take place after the lunchbreak for 30-45min, from 13:30 - max
 
 - [ ] Design Basics
 
-  - [ ] Design Workshop 1
-  - [ ] Design Workshop 2
-  - [ ] Design Workshop 2
+  - [x] Design Workshop 1
+  - [x] Design Workshop 2
+  - [x] Design Workshop 2
 
 - Sustainable Code / Sustainability
 
-- Open Source
+- [x] Open Source
 
 - Career Coaching / CV Sessions
