@@ -52,7 +52,8 @@ A terminal is a text input and output environment. It sends commands to the shel
 
 ## Treasure Hunt
 
-Open the `treasure-hunt.zip` that you received. The goal is to navigate through the treasure island only with the terminal and to find the treasure! These are the commands you need:
+In this challenge you have to find the lost diamond of the ancient king of treasure island!
+Open the `treasure-hunt.zip` that you received. Navigate through treasure island only with the terminal and find the treasure! Use the following commands:
 
 - use `cd` to change directories
 - use `cd ..` to move out of the current folder
