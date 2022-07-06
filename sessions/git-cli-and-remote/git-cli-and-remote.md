@@ -259,3 +259,5 @@ For now on you are able to push your local changes to the remote repository.
 ---
 
 ## Resources
+
+- [Connect with SSH Docs on GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
