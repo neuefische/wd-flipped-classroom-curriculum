@@ -45,23 +45,26 @@
 
 ## Inform: Sessionguide
 
-### git init
+### Git init
 
 **1. Show how to initialize a git repository.**
 
-- [ ] `git init` - turning a folder into a local repository
+- [ ] `mkdir new-project` - create a new folder
+- [ ] `cd new-project` - go into the new folder
+- [ ] `git init` - turning the folder into a local repository
 - [ ] show that the folder becomes a repository through the hidden .git folder
 - [ ] show that you can delete the repository by deleting the folder
 
-### git commit
+### Git commit
 
-**1. Explain the different states a file inside a repository can be in and how to commit changes.**
+**1. Explain the different states a file inside a repository can be in.**
 
-- [ ] mention the following states (you can use the sketch below to illustrate the process):
-  - [ ] untracked - a file has never been part of a commit and therefore is not a part of the repository yet.
-  - [ ] modified - a file is tracked by git but has changed since the last commit
-  - [ ] staged - the changes in the file are prepared to become part of the next commit (it is put onto a stage with other changes to take a snapshot of everything on that stage later).
-  - [ ] committed - the file / changes have become part of the commit. Untracked files become part of the repository and will be tracked from now on.
+- [ ] untracked - a file has never been part of a commit and therefore is not a part of the repository yet.
+- [ ] modified - a file is tracked by git but has changed since the last commit
+- [ ] staged - the changes in the file are prepared to become part of the next commit (it is put onto a stage with other changes to take a snapshot of everything on that stage later).
+- [ ] committed - the file / changes have become part of the commit. Untracked files become part of the repository and will be tracked from now on.
+
+<img src="assets/untracked.png" alt="untracked" width="400">
 
 **2. Show how to commit changes made to a file in the repository.**
 
@@ -80,7 +83,43 @@
 - [ ] `git restore <file name>` - reset the file to the last committed state.
 - [ ] `git restore .` show that you can reset the whole repository to the state of the last commit if necessary.
 
-### git remote repositories
+### Git remote repositories
+
+**1. Show how students can connect a remote repository to their local repository.**
+
+- [ ] mention that the ssh connection needs to be setup, which we will to later in the session.
+
+on GitHub:
+
+- [ ] on github - create a new repository without a README.md
+- [ ] copy the ssh link
+
+inside the local repository:
+
+- [ ] `git remote -v` look which remote repositories are already connected - none of course
+- [ ] `git remote add origin <ssh link>` - add our new GitHub repository to the remote repositories under the name `origin`
+- [ ] explain that one local repository can have multiple remote repositories, therefore they need a name to distinguish them.
+- [ ] `git remote -v` show that our repository shows up in the remote repository list
+- [ ] `git push -u origin main` - push all commits to the remote repository, highlight that -u origin main is only necessary when pushing for the first time
+
+**1. Show how to clone an existing repository to the local machine.**
+
+on GitHub:
+
+- [ ] copy the ssh key of the repository
+
+in the terminal, outside any other repository:
+
+- [ ] `git clone <ssh link>` - a new folder gets created containing the cloned repository.
+- [ ] point out that a new folder gets created when cloning a repository, and that you should not cloning a repository while being in another repository.
+
+### SSH configuration
+
+**Guide the students through the ssh configuration.**
+
+- [ ] let them install the `git cli` via brew: `brew install gh`
+- [ ] let them execute the `git ssh script`: `<insert link to script here :)>`
+- [ ] make sure the students fill in the prompts of the script correctly (correct mail used on GitHub and username).
 
 ---
 
