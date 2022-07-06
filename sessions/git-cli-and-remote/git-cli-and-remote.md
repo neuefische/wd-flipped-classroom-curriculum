@@ -158,12 +158,15 @@ Let's look at an example: Say you want to work on a website with your friend.
 
 ## Session Notebook
 
-In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content. You may only use the terminal for these tasks:
+In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content.
 
-1. Create a folder called `session-notebook`
-2. Inside this folder, create multiple folders, e.g. `html`, `css`, `javascript`.
-3. Create a `README.md` file inside each folder, so you can easily watch the Markdown files on GitHub later.
-4. You could also create a `git-cheatsheet.md` file, where you collect all your git commands.
+> ❗️ You may only use the terminal for these tasks!
+
+1. Create a folder called `session-notebook`.
+2. Create a README.md in this folder, we will use it later to link to the other markdown files.
+3. Inside this folder, create multiple folders, e.g. `shell-and-git`,`html`, `css`, `javascript`.
+4. Create a markdown file for each session we had so far. Make sure they are created in the correct folder.
+5. You could also create a `git-cheatsheet.md` file, where you collect all your git commands.
 
 ## Connect the Session Notebook to GitHub
 
