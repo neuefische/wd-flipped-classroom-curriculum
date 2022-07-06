@@ -64,7 +64,7 @@ Good luck!
 
 ## Enhance your terminal
 
-One of the many features of our shell zsh is its extensibility. We can install plugins which will improve our developer experience significantly. You can install all necessary programs by following the installation steps on the respective websites. So let's get started!
+Something that developers do all the time via the terminal is installing new software or tools, just as we will in this exercise. One of the many features of our shell zsh is its extensibility. We can install plugins which will improve our developer experience significantly. You can install all necessary programs by following the installation steps on the respective websites. So let's get started!
 
 1. install the zsh framework [oh my zsh](https://ohmyz.sh/#install) (follow the instructions on their installation page). This framework helps us to manage the zsh configuration.
 2. install [homebrew](https://brew.sh/), the package manager for MacOS. With homebrew we can install packages (e.g. programs, extensions, tools,...) via the command line.
