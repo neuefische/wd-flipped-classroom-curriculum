@@ -100,6 +100,22 @@ The README.md is now committed:
 
 <img src="assets/committed.png" alt="committed" width="400">
 
+## Using commits as backups
+
+When you accidentally introduce a bug into your code or delete some important parts of your project, you can always return to the last committed state of the project:
+
+```sh
+git restore .
+```
+
+This command resets your whole project to the version saved in the last commit. You can also restore individual files:
+
+```sh
+git restore <file name>
+```
+
+> 💡 Hint: Commits are a powerful tool when it comes to backup your progress. Commit often an make sure your code works as expected when you do.
+
 ## Connecting to a remote repository
 
 We want to connect our local repository with a remote repository which can be on GitHub for example. This enables whole teams to work on the same `remote repository` and create copies or `local repositories`. The remote repository also serves as a backup in case your hard drive breaks.
@@ -154,16 +170,48 @@ Let's look at an example: Say you want to work on a website with your friend.
 
 ---
 
+## Setup SSH Key
+
+In order to communicate safely between your local machine and GitHub, we use a protocoll called `SSH` (Secure Shell). This protocoll allows you to connect to GitHub and authenticate yourself without using your username and password every time.
+
+Therefore we generate a `SSH key` on your local machine and add it to GitHub. These steps are necessary once on every machine you want to work with.
+
+#### Step 1: GitHub CLI
+
+Install the GitHub command-line tool via Homebrew:
+
+```
+brew install gh
+```
+
+#### Step 2: Git config and SSH key
+
+We created a script for you to easily set your git config, generate a SSH key and add it to GitHub. Follow the instructions in your Terminal.
+
+- Pleaser enter the requested inputs
+- Press `Enter` (default) when asked about which file to save the key and your passphrase (leave it empty).
+- Choose `ssh` as your preferred connection method when asked.
+- Login and authenticate with the browser. (The device code is found in the Terminal.)
+
+```
+zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)
+```
+
+---
+
 # Challenges
 
 ## Session Notebook
 
-In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content. You may only use the terminal for these tasks:
+In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content.
 
-1. Create a folder called `session-notebook`
-2. Inside this folder, create multiple folders, e.g. `html`, `css`, `javascript`.
-3. Create a `README.md` file inside each folder, so you can easily watch the Markdown files on GitHub later.
-4. You could also create a `git-cheatsheet.md` file, where you collect all your git commands.
+> ❗️ You may only use the terminal for these tasks!
+
+1. Create a folder called `session-notebook`.
+2. Create a README.md in this folder, we will use it later to link to the other markdown files.
+3. Inside this folder, create multiple folders, e.g. `shell-and-git`,`html`, `css`, `javascript`.
+4. Create a markdown file for each session we had so far. Make sure they are created in the correct folder.
+5. You could also create a `git-cheatsheet.md` file, where you collect all your git commands.
 
 ## Connect the Session Notebook to GitHub
 
