@@ -14,14 +14,13 @@ In this session you will learn:
 
 ### Sub Topic 2
 
-<br>
-<br>
+---
 
-# Project: Project Name
+# Challenges
 
-### Part 1
+## Part 1
 
-### Part 2
+## Part 2
 
 ---
 

@@ -40,7 +40,7 @@
 
 ---
 
-## Process: Project / Assignment
+## Process: Challenges
 
 - [ ] Provide the [handout](session-name.md) for the students
 - [ ] Open the handout and walk the students through the tasks

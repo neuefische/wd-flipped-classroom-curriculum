@@ -114,7 +114,7 @@ A typical html website consists of two main parts:
 | `<input />`         | an input field, has no closing tag                                  |
 | `<button></button>` | a clickable element, often equipped with some kind of functionality |
 
-> 💡 A comprehensive list of all html elements can be found at the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics)
+> 💡 A comprehensive list of all html elements can be found at the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics).
 
 ## Structuring a Website
 
@@ -145,7 +145,7 @@ Therefore, one should use semantic HTML elements whenever possible.
 | `<header></header>`     | representing introductory content, typically a group of introductory or navigational aids                           |
 | `<footer></footer>`     | typically contains information about the author of the section, copyright data or links to related documents        |
 
-> 💡 You can find a comprehensive list of semantic html elements in the [MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+> 💡 You can find a comprehensive list of semantic html elements in the [MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
 
 ### Nesting HTML elements
 
@@ -201,11 +201,13 @@ Setup a local and a remote repository for your project:
 Start working on the HTML markup of your personal website.
 
 1. Create and switch to a new feature branch locally.
+   > ❗️ Be careful never to work on your main branch. You should always introduce new features through a feature branch and a pull request.
 2. Think about the content you want to put on your website and its structure. Don't worry about the styling - we will take care of that later.
 3. Start writing your markup, giving your website structure and content. Use semantic HTML whenever possible.
 4. Commit your work on the new feature branch whenever a new part of your website is done.
-5. Create a pull request on GitHub. Send a link to the pull request to another student and request a review.
+5. Create a pull request on GitHub. Send a link to the pull request the course slack channel and request a review.
 6. After committing requested changes and getting an approval for your pull request, merge your feature branch into the main branch.
+   > 💡 Not getting an approval right away for your pull request is absolutely normal. Don't let it discourage you and take it as a chance to learn!
 
 Here is an example of a structure for a website that you can draw inspiration from:
 
