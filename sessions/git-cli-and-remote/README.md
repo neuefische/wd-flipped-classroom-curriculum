@@ -66,7 +66,7 @@
 - [ ] staged - the changes in the file are prepared to become part of the next commit (it is put onto a stage with other changes to take a snapshot of everything on that stage later).
 - [ ] committed - the file / changes have become part of the commit. Untracked files become part of the repository and will be tracked from now on.
 
-  <img src="assets/untracked.png" alt="untracked" width="400">
+<img src="assets/untracked.png" alt="untracked" width="400">
 
 **2. Show how to commit changes made to a file in the repository.**
 
@@ -89,7 +89,8 @@
 
 **1. Show how students can connect a remote repository to their local repository.**
 
-- [ ] mention that the ssh connection needs to be setup, which we will to later in the session.
+- [ ] mention that the ssh connection needs to be setup, which we will do later in the session.
+- [ ] For now they just need to watch and try to understand the necessary steps.
 
 on GitHub:
 
@@ -98,11 +99,11 @@ on GitHub:
 
 inside the local repository:
 
-- [ ] `git remote -v` look which remote repositories are already connected - none of course
-- [ ] `git remote add origin <ssh link>` - add our new GitHub repository to the remote repositories under the name `origin`
+- [ ] `git remote -v` looking which remote repositories are already connected - none of course
+- [ ] `git remote add origin <ssh link>` - adding our new GitHub repository to the remote repositories under the name `origin`
 - [ ] explain that one local repository can have multiple remote repositories, therefore they need a name to distinguish them.
-- [ ] `git remote -v` show that our repository shows up in the remote repository list
-- [ ] `git push -u origin main` - push all commits to the remote repository, highlight that -u origin main is only necessary when pushing for the first time
+- [ ] `git remote -v` showing that our repository shows up in the remote repository list
+- [ ] `git push -u origin main` - pushing all commits to the remote repository, highlight that -u origin main is only necessary when pushing for the first time
 
 **1. Show how to clone an existing repository to the local machine.**
 
@@ -110,10 +111,11 @@ on GitHub:
 
 - [ ] copy the ssh key of the repository
 
-in the terminal, outside any other repository:
+in the terminal, outside of any other repository:
 
 - [ ] `git clone <ssh link>` - a new folder gets created containing the cloned repository.
 - [ ] point out that a new folder gets created when cloning a repository, and that you should not cloning a repository while being in another repository.
+- [ ] when using this command the local repository will be named exactly like the remote repository
 
 ### SSH configuration
 
@@ -136,7 +138,10 @@ in the terminal, outside any other repository:
 
 ## Evaluate: Recap of the assignment / Discussion of MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in a few phrases.
+- Ask the students how easy or difficult this workflow was for them
+- If it was difficult you can calm them and say that we will do it so many times during the bootcamp that they will dream of the git workflow.
+- Optional if you feel like they need a compact, visual overview: <br>
+  Let the students repeat the whole workflow and write the keywords and commands in an excalidraw.
 
 ---
 
@@ -147,7 +152,7 @@ in the terminal, outside any other repository:
 - [ ] Summarize the day by repeating all the topics that were discussed
 - [ ] Highlight the progress of the day
 - [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
+- [ ] Remind them to rest (preferably sleep) after -latest- 10 p.m.:)
 
 ## Keywords for Recap:
 
