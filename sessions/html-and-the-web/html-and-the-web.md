@@ -185,18 +185,18 @@ VSCode has a useful tool called Emmet which lets you autocomplete a lot of code 
 
 > 💡 You can learn about more emmet commands in [this cheatsheet](https://coolcheatsheet.com/toolkit/emmet)
 
-# Challenge: Personal Website
+# Challenges
 
 In this challenge you will start creating your own personal website.
 
-### Part 1
+## Personal Website part 1
 
 Setup a local and a remote repository for your project:
 
 1. Create a local git repository. Make your initial commit with an empty HTML file.
 2. Create a remote repository on GitHub and connect your local repository. Use the commands on your GitHub repository page found under `..or push an existing repository from the command line` to push your work.
 
-### Part 2
+## Personal Website part 2
 
 Start working on the HTML markup of your personal website.
 

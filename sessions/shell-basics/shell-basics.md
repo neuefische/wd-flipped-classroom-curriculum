@@ -48,9 +48,9 @@ A terminal is a text input and output environment. It sends commands to the shel
 
 > 💡 There are a lot of commands for any sort of action you want to perform check out [this cheat cheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet) to look up important commands.
 
-# Assignments
+# Challenges
 
-## Exercise: Treasure Hunt
+## Treasure Hunt
 
 Open the `treasure-hunt.zip` that you received. The goal is to navigate through the treasure island only with the terminal and to find the treasure! These are the commands you need:
 
@@ -62,7 +62,7 @@ Open the `treasure-hunt.zip` that you received. The goal is to navigate through 
 
 Good luck!
 
-## Exercise: Enhance your terminal
+## Enhance your terminal
 
 One of the many features of our shell zsh is its extensibility. We can install plugins which will improve our developer experience significantly. You can install all necessary programs by following the installation steps on the respective websites. So let's get started!
 
