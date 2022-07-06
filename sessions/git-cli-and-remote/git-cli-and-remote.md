@@ -154,15 +154,16 @@ Let's look at an example: Say you want to work on a website with your friend.
 
 ---
 
-# Assignment
+# Challenges
 
 ## Session Notebook
 
 In this project you will create a markdown based notebook for all your upcoming session notes. In this part you will create the folder structure and markdown files, in a future part we will fill up these files with actual content. You may only use the terminal for these tasks:
 
-1. create a folder called `session-notebook`
-2. inside this folder, create a folder called `_template`
-3. inside the \_template, create a
+1. Create a folder called `session-notebook`
+2. Inside this folder, create multiple folders, e.g. `html`, `css`, `javascript`.
+3. Inside each folder, create a `README.md` file, so you can easily watch the Markdown files on GitHub later.
+4. You could also create a `git-cheatsheet.md` file, where you collect all your git commands.
 
 ## Connect the Session Notebook to GitHub
 
@@ -172,16 +173,16 @@ You already created a folder and file structure for your session notes. Now we w
 
 The first step is to initialize a new repository based on the folder you created for the session notes.
 
-1. If not already done, navigate through the shell to the folder you created for the session notes.
-2. Make sure you have at least a `README.md` and optionally another file inside the folder. If not, create them by using shell commands.
+1. If not already done, navigate through the shell to the folder `session-notebook` you created for the session notes.
+2. Make sure you have at least a `README.md` and optionally more files inside the folder. If not, create them by using shell commands.
 3. Run the git command to initialize a new local git repository.
 4. Create your first commit.
 
-You should get a message like this:
-
-```shell
-Initialized empty Git repository in /Users/<your-username>/<path_to_folder/<your-repository-name>/.git/
-```
+> 💡 After initializing you should get a message like this:
+>
+> ```shell
+> Initialized empty Git repository in /Users/<your-username>/<path_to_folder>/session-notebook/.git/
+> ```
 
 ### Part 2
 
