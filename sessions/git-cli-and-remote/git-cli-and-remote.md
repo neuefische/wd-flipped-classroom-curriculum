@@ -100,6 +100,22 @@ The README.md is now committed:
 
 <img src="assets/committed.png" alt="committed" width="400">
 
+## Using commits as backups
+
+When you accidentally introduce a bug into your code or delete some important parts of your project, you can always return to the last committed state of the project:
+
+```sh
+git restore .
+```
+
+This command resets your whole project to the version saved in the last commit. You can also restore individual files:
+
+```sh
+git restore <file name>
+```
+
+> 💡 Hint: Commits are a powerful tool when it comes to backup your progress. Commit often an make sure your code works as expected when you do.
+
 ## Connecting to a remote repository
 
 We want to connect our local repository with a remote repository which can be on GitHub for example. This enables whole teams to work on the same `remote repository` and create copies or `local repositories`. The remote repository also serves as a backup in case your hard drive breaks.
