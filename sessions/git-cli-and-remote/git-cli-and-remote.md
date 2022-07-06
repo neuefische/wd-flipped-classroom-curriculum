@@ -170,6 +170,35 @@ Let's look at an example: Say you want to work on a website with your friend.
 
 ---
 
+## Setup SSH Key
+
+In order to communicate safely between your local machine and GitHub, we use a protocoll called `SSH` (Secure Shell). This protocoll allows you to connect to GitHub and authenticate yourself without using your username and password every time.
+
+Therefore we generate a `SSH key` on your local machine and add it to GitHub. These steps are necessary once on every machine you want to work with.
+
+#### Step 1: GitHub CLI
+
+Install the GitHub command-line tool via Homebrew:
+
+```
+brew install gh
+```
+
+#### Step 2: Git config and SSH key
+
+We created a script for you to easily set your git config, generate a SSH key and add it to GitHub. Follow the instructions in your Terminal.
+
+- Pleaser enter the requested inputs
+- Press `Enter` (default) when asked about which file to save the key and your passphrase (leave it empty).
+- Choose `ssh` as your preferred connection method when asked.
+- Login and authenticate with the browser. (The device code is found in the Terminal.)
+
+```
+zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)
+```
+
+---
+
 # Challenges
 
 ## Session Notebook
