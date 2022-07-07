@@ -26,7 +26,7 @@ Please add you name to the guest-column, if you can imagine giving one of these 
   - [x] How to ask good questions
   - [x] How to google fast and smart
   - [x] Introduction to a Dev's best friends (Stackoverflow, MDN..)
-  - [ ] Hwo to read error messages - don't be afraid of the red wall
+  - [ ] How to read error messages - don't be afraid of the red wall
 
 - [x] group-work
 
