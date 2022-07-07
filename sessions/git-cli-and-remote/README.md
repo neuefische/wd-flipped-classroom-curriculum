@@ -131,23 +131,21 @@ in the terminal, outside of any other repository:
 
 - [ ] Provide the [handout](session-name.md) for the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
+- [ ] Divide the students in groups of 2 - 3
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They can ask the coaches for help at any time / Always help each other / Take a break when you need it in the next 1.5h/ Keep an eye on Slack)
 
 ---
 
 ## Evaluate: Recap of the assignment / Discussion of MVP / Solution
 
-- Ask the students how easy or difficult this workflow was for them
-- If it was difficult you can calm them and say that we will do it so many times during the bootcamp that they will dream of the git workflow.
-- Optional if you feel like they need a compact, visual overview: <br>
-  Let the students repeat the whole workflow and write the keywords and commands in an excalidraw.
+- [ ] Ask the students how easy or difficult this workflow was for them
+- [ ] If it was difficult you can calm them and say that we will do it so many times during the bootcamp that they will dream of the git workflow.
+  > - [ ] Optional if you feel like they need a compact, visual overview: <br>
+  >       Let the students repeat the whole workflow and write the keywords and commands in an excalidraw.
 
 ---
 
 ## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of how far they have come already) :)
 
 - [ ] Summarize the day by repeating all the topics that were discussed
 - [ ] Highlight the progress of the day
@@ -155,6 +153,16 @@ in the terminal, outside of any other repository:
 - [ ] Remind them to rest (preferably sleep) after -latest- 10 p.m.:)
 
 ## Keywords for Recap:
+
+git add .,
+git commit -m "cmsg",
+git status,
+git push,
+git restore .,
+ssh key,
+stage
+untracked files,
+commited files,
 
 > These keywords are for the weekly summary on Fridays.
 > We use the keywords to automatically generate excalidraw tags with the help of [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator).

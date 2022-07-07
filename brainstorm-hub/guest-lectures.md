@@ -2,6 +2,25 @@
 
 the lectures will take place after the lunchbreak for 30-45min, from 13:30 - max. 14:15
 
+Please add you name to the guest-column, if you can imagine giving one of these guest lectures
+
+| day | topic                                                                                                   | guest      |
+| --- | ------------------------------------------------------------------------------------------------------- | ---------- |
+| 1   | Meet your teammates                                                                                     | Julia      |
+| 2   | Our communication goals                                                                                 | Paul (?)   |
+| 3   | How to ask good questions                                                                               |            |
+| 4   | How to work in a group effectively                                                                      |            |
+| 5   | How to google fast and smart + A Dev's best friends: MDN & Stackoverflow introduction                   |            |
+| 6   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     | Merle      |
+| 7   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |            |
+| 8   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |            |
+| 9   | Why we love Open Source                                                                                 | Gregor     |
+| 10  | Design Workshop 1                                                                                       | Sascha (?) |
+| 11  | Design Workshop 2                                                                                       | Sascha (?) |
+| 12  | Design Workshop 3                                                                                       | Sascha (?) |
+| 13  | Sustainable Code                                                                                        | Felix (?)  |
+| 14  |                                                                                                         |            |
+
 - [x] self-sufficient learning
 
   - [x] How to ask good questions

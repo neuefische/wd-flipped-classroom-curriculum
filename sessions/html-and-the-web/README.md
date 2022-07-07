@@ -4,11 +4,9 @@
 
 ## Learning objectives
 
-understand:
-
-- [ ] client/server dynamics
-- [ ] how HTML works
-- [ ] what semantic HTML is
+- [ ] Understanding client/server dynamics
+- [ ] How HTML works
+- [ ] Understanding and applying semantic HTML is
 
 ---
 
@@ -18,12 +16,21 @@ understand:
 
 ### Which important problem will we solve today?
 
-- You will create your first website today.
+- With semantic HTML you will learn how to write better code because
+  - it's more accessible
+  - it's SEO optimized
+  - it's better understandable for other developers
 
 ### Why is the content of todays block so important for the students?
 
 - You will get an understanding about the very basics / the foundation of how the web works.
 - You will have a solid foundation to build upon and expand your knowledge and skills. It's the starting point of your technical expertise.
+
+- You will create your first website today, a big step towards becoming a developer!
+
+### Raise a question to be answered by the end of the block
+
+- Why do we WANT to write semantic HTML?
 
 ---
 
