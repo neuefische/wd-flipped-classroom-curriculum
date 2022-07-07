@@ -15,7 +15,7 @@
   "contributors": [
     "Felix Kirchhoff",
     "Merle Makoben",
-    "Merc Bendixen",
+    "Marc Bendixen",
     "Gregor Adams <greg@pixelass.com> (https://pixelass.com)"
   ],
   "license": "UNLICENSED",
@@ -27,6 +27,8 @@
     "husky": "^8.0.1"
   },
   "lint-staged": {
-    "*.md": ["npx prettier --write"]
+    "*.md": [
+      "npx prettier --write"
+    ]
   }
 }
