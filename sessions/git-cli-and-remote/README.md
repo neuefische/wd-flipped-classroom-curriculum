@@ -1,11 +1,11 @@
-# Session name
+# Git CLI and Remote
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
 ## Learning objectives
 
 - [ ] to use version control locally to create repositories and commits.
-- [ ] about the `different states` of files.
+- [ ] understanding and controlling the `different states` of files.
 - [ ] to synchronize local repositories with remote repositories (on GitHub for example).
 
 ---
@@ -16,13 +16,13 @@
 
 ### Which important problem will we solve today?
 
-- You will learn today one of the most important tools you will ever need in your development career.
+- You will learn today one of the most important tools you will need in your development career.
 - How return to the latest version of a project / file when something goes wrong.
 - You will learn how to share your code with the world on GitHub.
 
 ### Why is the content of todays block so important for the students?
 
-- git is an industry standard, they need to learn it in order to become a developer
+- git is an industry standard, it is a requirement for most almost all open positions as a developer.
 - git helps the students when they accidentally mess up their code, so they can always go back to the last save point
 
 ---
@@ -34,7 +34,7 @@
   - commits
   - repositories
   - git workflow (creating commits after each important step)
-- tell the students that they will learn today how to do these steps on their local machine
+- tell the students that they will learn today how to do these steps on their local machine and connect their progress to the remote version of their code on github
 
 ### Which prior knowledge will be used for this session?
 
@@ -54,6 +54,8 @@
 - [ ] `git init` - turning the folder into a local repository
 - [ ] show that the folder becomes a repository through the hidden .git folder
 - [ ] show that you can delete the repository by deleting the folder
+- [ ] create a `.gitignore` file and add `.DS_Store` to the file. Explain that inside the DS_Store file are listed display configurations by macOS, that are not interesting for our remote repository. This is why we want git to ignore it.
+- [ ] explain that everything we add to the `.gitignore` file will not be commited to our remote repository
 
 ### Git commit
 
@@ -87,7 +89,8 @@
 
 **1. Show how students can connect a remote repository to their local repository.**
 
-- [ ] mention that the ssh connection needs to be setup, which we will to later in the session.
+- [ ] mention that the ssh connection needs to be setup, which we will do later in the session.
+- [ ] For now they just need to watch and try to understand the necessary steps.
 
 on GitHub:
 
@@ -96,11 +99,11 @@ on GitHub:
 
 inside the local repository:
 
-- [ ] `git remote -v` look which remote repositories are already connected - none of course
-- [ ] `git remote add origin <ssh link>` - add our new GitHub repository to the remote repositories under the name `origin`
+- [ ] `git remote -v` looking which remote repositories are already connected - none of course
+- [ ] `git remote add origin <ssh link>` - adding our new GitHub repository to the remote repositories under the name `origin`
 - [ ] explain that one local repository can have multiple remote repositories, therefore they need a name to distinguish them.
-- [ ] `git remote -v` show that our repository shows up in the remote repository list
-- [ ] `git push -u origin main` - push all commits to the remote repository, highlight that -u origin main is only necessary when pushing for the first time
+- [ ] `git remote -v` showing that our repository shows up in the remote repository list
+- [ ] `git push -u origin main` - pushing all commits to the remote repository, highlight that -u origin main is only necessary when pushing for the first time
 
 **1. Show how to clone an existing repository to the local machine.**
 
@@ -108,10 +111,11 @@ on GitHub:
 
 - [ ] copy the ssh key of the repository
 
-in the terminal, outside any other repository:
+in the terminal, outside of any other repository:
 
 - [ ] `git clone <ssh link>` - a new folder gets created containing the cloned repository.
 - [ ] point out that a new folder gets created when cloning a repository, and that you should not cloning a repository while being in another repository.
+- [ ] when using this command the local repository will be named exactly like the remote repository
 
 ### SSH configuration
 
@@ -127,27 +131,38 @@ in the terminal, outside any other repository:
 
 - [ ] Provide the [handout](session-name.md) for the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
+- [ ] Divide the students in groups of 2 - 3
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They can ask the coaches for help at any time / Always help each other / Take a break when you need it in the next 1.5h/ Keep an eye on Slack)
 
 ---
 
 ## Evaluate: Recap of the assignment / Discussion of MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in a few phrases.
+- [ ] Ask the students how easy or difficult this workflow was for them
+- [ ] If it was difficult you can calm them and say that we will do it so many times during the bootcamp that they will dream of the git workflow.
+  > - [ ] Optional if you feel like they need a compact, visual overview: <br>
+  >       Let the students repeat the whole workflow and write the keywords and commands in an excalidraw.
 
 ---
 
 ## Checkout
 
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of how far they have come already) :)
-
 - [ ] Summarize the day by repeating all the topics that were discussed
 - [ ] Highlight the progress of the day
 - [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
+- [ ] Remind them to rest (preferably sleep) after -latest- 10 p.m.:)
 
 ## Keywords for Recap:
+
+git add .,
+git commit -m "cmsg",
+git status,
+git push,
+git restore .,
+ssh key,
+stage
+untracked files,
+commited files,
 
 > These keywords are for the weekly summary on Fridays.
 > We use the keywords to automatically generate excalidraw tags with the help of [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator).
