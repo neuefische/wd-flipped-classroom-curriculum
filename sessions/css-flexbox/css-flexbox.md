@@ -7,14 +7,14 @@ In this session you will learn:
 - [ ] Understanding the purpose of Flexbox:
   - [ ] let items fill out the possible space in their container
   - [ ] distributing elements for different screen sizes
-  - [ ] make responsive websites
+  - [ ] make the website more responsive with flexbox
 - [ ] Understand and use of most important flexbox properties
 
 ---
 
 ## Flexbox
 
-Flexbox is a powerful css tool to layout your html elements, especially when you want to align elements horizontally. It is defined on a container element, containing multiple elements whose position will be determined by the flexbox rules. You define it as follows:
+Flexbox is a powerful CSS tool to layout your HTML elements, especially when you want to align elements horizontally. It is defined on a container element, containing multiple elements whose position will be determined by the flexbox rules. You define it as follows:
 
 ```css
 .container-element {
