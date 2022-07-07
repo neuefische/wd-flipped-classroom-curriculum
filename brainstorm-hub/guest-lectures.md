@@ -59,8 +59,8 @@ Please add you name to the guest-column, if you can imagine giving one of these 
   - [x] Design Workshop 2
   - [x] Design Workshop 2
 
-- Sustainable Code / Sustainability
-
 - [x] Open Source
+
+- [ ] Sustainable Code / Sustainability
 
 - Career Coaching / CV Sessions
