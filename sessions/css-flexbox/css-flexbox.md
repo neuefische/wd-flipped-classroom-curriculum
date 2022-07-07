@@ -24,7 +24,7 @@ Flexbox is a powerful css tool to layout your html elements, especially when you
 
 Flexbox does the following:
 
-- By default, all child elements will be displayed next to each other along the `main axis`, the horizontal axis by default. The perpendicular axis is called `cross axis`.
+- All child elements will be displayed next to each other along the `main axis`, the horizontal axis by default. The perpendicular axis is called `cross axis`.
 - If the width of all child elements exceed the container width, the child elements will be shrunk such that they all fit into the available space.
 
 This behaviour can be modified to achieve some very useful layouts. The most important flex properties are listed in the following table.
