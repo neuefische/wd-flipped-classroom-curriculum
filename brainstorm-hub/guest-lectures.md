@@ -64,3 +64,6 @@ Please add you name to the guest-column, if you can imagine giving one of these 
 - [ ] Sustainable Code / Sustainability
 
 - Career Coaching / CV Sessions
+- CV Sessions 1 (1h)
+- CV Sessions 2
+- CV Sessions 3
