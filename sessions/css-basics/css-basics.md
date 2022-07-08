@@ -103,10 +103,10 @@ of an element. There are four different parts: `content`, `padding`, `border` an
 | `margin`  | The space around the border and other elements.          |
 
 The property `box-sizing` changes the way how the `width` and `height` of an element is calculated.
-The default value is `content-box`. As the name suggests, the value defined by `width` is applied to
-the content box, padding, border-with and margin are then added on top. This can lead to unintended
-effects where an elements becomes larger than originally planned and overflows the screen display.
-To avoid this, the `box-sizing` of all elements is often set to `border-box`.
+The default value is `content-box`. The values of `width` and `height` set the size of the content
+box; padding, border-with and margin are then added on top. This can lead to unintended effects
+where an element becomes larger than originally planned and overflows the screen display. To avoid
+this, the `box-sizing` of all elements is often set to `border-box`.
 
 ```css
 * {
@@ -114,7 +114,7 @@ To avoid this, the `box-sizing` of all elements is often set to `border-box`.
 }
 ```
 
-Now the `width` property defines the size of the border box, padding and border width are
+The `width` property defines now the size of the border box, padding and border width are
 substracted to calculate the available space for the content.
 
 <img src="./assets/box-model.png" width="500" alt="Box model">
@@ -122,9 +122,8 @@ substracted to calculate the available space for the content.
 ### Inline and block elements
 
 There are basically two types of elements: inline-level and block-level elements. `Inline elements`
-occupy the space as required by the element itself and they don't begin from a new line. On the
-other side, `block elements` occupy the full horizontal space of the parent element and do begin a
-new line.
+occupy the space as required by the element itself and are placed inside the text lines.
+`Block elements` occupy the full horizontal space of the parent element and begin a new line.
 
 Example:
 
@@ -140,7 +139,7 @@ Example:
 
 You can change this behavior by using the CSS `display` property.
 
-## Styling fonts & working with relative units
+## Styling fonts
 
 With CSS you can style the fonts of your website in many ways. Here are just some examples:
 
