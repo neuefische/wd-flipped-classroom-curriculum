@@ -87,20 +87,21 @@ list shows only a few examples:
 | `margin`           | Defines the margin of an element.                |
 | `width`            | This property defines the width of an element.   |
 
-You can find more properties in the
-[CSS Properties Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) on MDN.
+> 💡 You can find more properties in the
+> [CSS Properties Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) on
+> MDN.
 
 ### Box Model
 
 All elements of a website are wrapped in a `box model`. It's a way to define the size and position
 of an element. There are four different parts: `content`, `padding`, `border` and `margin`.
 
-| Part      | Explaination                                             |
-| --------- | -------------------------------------------------------- |
-| `content` | The actual content of the element.                       |
-| `padding` | Space between the content and the border of the element. |
-| `border`  | The border of the element.                               |
-| `margin`  | The space around the border and other elements.          |
+| box model part | Function                                                 |
+| -------------- | -------------------------------------------------------- |
+| `content`      | The actual content of the element.                       |
+| `padding`      | Space between the content and the border of the element. |
+| `border`       | The border of the element.                               |
+| `margin`       | The space around the border and other elements.          |
 
 The property `box-sizing` changes the way how the `width` and `height` of an element is calculated.
 The default value is `content-box`. The values of `width` and `height` set the size of the content
@@ -153,8 +154,8 @@ There are two different types of units: `relative` and `absolute`.
 
 - `Relative units` are relative to another length. With relative units we can scale from different
   output environments to another more easily.
-- `Absolute units` are fixed and aren't relative to anything else. They should only be used when the
-  output environment is known. The most common absolute unit is `px` (Pixels).
+- `Absolute units` are fixed and aren't relative to anything else. The most common absolute unit is
+  `px` (Pixels).
 
 **Relative units examples**
 
@@ -167,11 +168,14 @@ There are two different types of units: `relative` and `absolute`.
 
 ## Linking Stylesheets
 
-To seperat your HTML and CSS code, you can create a new file, like `styles.css` and link it to your
-HTML file with the `<link>` tag.
+To separate your HTML and CSS code, you can create a new file, like `styles.css` and link it to your
+HTML file by placing a `<link>` tag in the `<head>` of your HTML document.
 
 ```html
-<link rel="stylesheet" href="styles.css" />
+<head>
+	...
+	<link rel="stylesheet" href="styles.css" />
+</head>
 ```
 
 ---
