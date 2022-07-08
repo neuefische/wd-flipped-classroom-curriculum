@@ -85,16 +85,16 @@ branch into the main branch.
 Continue to work on your session notebook.
 
 1. First create a new branch called `notes/github-and-markdown`.
-1. Switch on that branch and start working on the respective session note. Fill the session note
+2. Switch on that branch and start working on the respective session note. Fill the session note
    with short hints and command collections you find helpful.
-1. Commit regularly after each step and use `good commit messages`.
-1. When you are satisfied with the session note, push the content of the branch to the remote
+3. Commit regularly after each step and use `good commit messages`.
+4. When you are satisfied with the session note, push the content of the branch to the remote
    repository (`git push -u origin notes/github-and-markdown`).
-1. On GitHub, go to the remote repository. A yellow action box should have appeared suggesting to
+5. On GitHub, go to the remote repository. A yellow action box should have appeared suggesting to
    create a pull request for the named branch. Create the pull request.
-1. Share the link to the pull request with your group so they can check your notes.
-1. Merge the pull request or add some suggestions of your group mates.
-1. Repeat this process with the other session notes.
+6. Share the link to the pull request with your group so they can check your notes.
+7. Merge the pull request or add some suggestions of your group mates.
+8. Repeat this process with the other session notes.
 
 > 💡 This workflow is very fundamental to web developers in all of the industry. We will continue to
 > work in this way, especially in the capstone project. So try to get comfortable with each step, it
