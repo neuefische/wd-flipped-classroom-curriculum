@@ -22,9 +22,7 @@ a document written in HTML.
 
 ![Comparison of HTML, CSS and JavaScript](assets/animated-gif-for-comparison.gif)
 
-## Fundamentals
-
-### CSS syntax
+## CSS syntax
 
 The structure of how to write CSS is also called `ruleset`. It consists of four parts:
 
@@ -60,7 +58,7 @@ h3 {
 }
 ```
 
-### Basic Selectors
+## Basic Selectors
 
 There are different CSS selectors you can use to style elements. The most common ones are:
 
@@ -71,7 +69,7 @@ There are different CSS selectors you can use to style elements. The most common
 > ❗️ In theory you could also use element IDs as selectors, but this is bad practice and must be
 > avoided.
 
-### CSS Properties
+## CSS Properties
 
 There are a lot of CSS proporties and you will discover new ones every day. Therefore the following
 list shows only a few examples:
@@ -91,7 +89,7 @@ list shows only a few examples:
 > [CSS Properties Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) on
 > MDN.
 
-### Box Model
+## Box Model
 
 All elements of a website are wrapped in a `box model`. It's a way to define the size and position
 of an element. There are four different parts: `content`, `padding`, `border` and `margin`.
@@ -106,8 +104,8 @@ of an element. There are four different parts: `content`, `padding`, `border` an
 The property `box-sizing` changes the way how the `width` and `height` of an element is calculated.
 The default value is `content-box`. The values of `width` and `height` set the size of the content
 box; padding, border-with and margin are then added on top. This can lead to unintended effects
-where an element becomes larger than originally planned and overflows the screen display. To avoid
-this, the `box-sizing` of all elements is often set to `border-box`.
+where an element becomes larger than originally planned and overflows the screen. To avoid this, the
+`box-sizing` of all elements is often set to `border-box`.
 
 ```css
 * {
@@ -115,12 +113,12 @@ this, the `box-sizing` of all elements is often set to `border-box`.
 }
 ```
 
-The `width` property defines now the size of the border box, padding and border width are
-substracted to calculate the available space for the content.
+Now, the `width` property defines the size of the border box, padding and border width are
+subtracted to calculate the available space for the content.
 
 <img src="./assets/box-model.png" width="500" alt="Box model">
 
-### Inline and block elements
+## Inline and block elements
 
 There are basically two types of elements: inline-level and block-level elements. `Inline elements`
 occupy the space as required by the element itself and are placed inside the text lines.
