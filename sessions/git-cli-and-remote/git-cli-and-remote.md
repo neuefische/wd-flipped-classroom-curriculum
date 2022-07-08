@@ -216,11 +216,11 @@ Let's look at an example: Say you want to work on a website with your friend.
 ## Setup Visual Studio Code
 
 There are plenty of editors available on the internet. In general you can use any of them to edit
-your code. Even with the regular MacOS TextEdit App, you could write code. But that's not very
-convenient because code editors give us useful functions. Also we want to guarantee that all Coaches
-and Students can help each other. Therefore we are all using one of the most popular editors:
-[Visual Studio Code](https://code.visualstudio.com/). This editor from Microsoft is a free, open
-source and available for all platforms, even on the browser, e.g. on GitHub.
+your code. Even with the regular MacOS TextEdit App, you could write code. But that wouldn't be very
+convenient, because code editors give us many useful features. Also we want to guarantee that all
+coaches and students can help each other. Therefore we are all using one of the most popular
+editors: [Visual Studio Code](https://code.visualstudio.com/). This editor from Microsoft is a free,
+open source and available for all platforms, even on the browser, e.g. on GitHub.
 
 Normally you would go to the website and download the software. But as you may already know, we can
 use `Homebrew` to install things we need.
@@ -291,7 +291,7 @@ You already created a folder and file structure for your session notes. Now we w
 `session-notebook` to your GitHub account as a repository. Therefore we need to connect the local
 repository with a remote repository.
 
-### Part 1
+### Step 1
 
 The first step is to initialize a new repository based on the folder you created for the session
 notes.
