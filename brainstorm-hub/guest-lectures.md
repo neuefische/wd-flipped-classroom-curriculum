@@ -14,7 +14,7 @@ every `(??)`means that the person is just an idear, and not contacted jet.
 | 2   | Our communication goals                                                                                 | Paul (?)                         |
 | 3   | How to ask good questions/How to work in a group effectively                                            |
 | 4   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     | Merle (?)                        |
-| 5   | wie gebe ich gutes Feedback                                                                             | Pauls Frau                       |
+| 5   | wie gebe ich gutes Feedback                                                                             | Nele(?)                          |
 | 6   | A11y Guest Session                                                                                      | Kontakt Gregor (??)              |
 | 7   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |                                  |
 | 8   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |                                  |
@@ -63,3 +63,7 @@ more idears
 - [ ] Zustand
 - [ ] Cloudinary
 - [ ] freelancing pro and cons (Jerry)
+- [ ] how to talent app (Student service)
+- [ ] Stressmanagement (Nele/Extern)
+- [ ] Interview training für schüchterne (Student service)
+- [ ] Linkedin Workshop (für alle nach 17Uhr vermutlich)
