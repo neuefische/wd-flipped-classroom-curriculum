@@ -213,6 +213,27 @@ Let's look at an example: Say you want to work on a website with your friend.
 
 ---
 
+## Setup Visual Studio Code
+
+There are plenty of editors available on the internet. In general you can use any of them to edit
+your code. Even with the regular MacOS TextEdit App, you could write code. But that's not very
+convenient because code editors give us useful functions. Also we want to guarantee that all Coaches
+and Students can help each other. Therefore we are all using one of the most popular editors:
+[Visual Studio Code](https://code.visualstudio.com/). This editor from Microsoft is a free, open
+source and available for all platforms, even on the browser, e.g. on GitHub.
+
+Normally you would go to the website and download the software. But as you may already know, we can
+use `Homebrew` to install things we need.
+
+```shell
+brew install --cask visual-studio-code
+```
+
+You can find more details on this installation here:
+[visual-studio-code — Homebrew Formulae](https://formulae.brew.sh/cask/visual-studio-code)
+
+---
+
 ## Setup SSH Key
 
 In order to communicate safely between your local machine and GitHub, we use a protocoll called
