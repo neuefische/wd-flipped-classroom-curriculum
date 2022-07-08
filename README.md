@@ -1,31 +1,62 @@
 # Welcome to the new curriculum!
 
-This is the working progress of the new curriculum of the bootcamp Web Development. <br>
-This update is aiming to improve the way our students learn. <br>
+This is the working progress of the new curriculum of the bootcamp Web Development. <br> This update
+is aiming to improve the way our students learn. <br>
 
-#### To-Do's
+## How to contribute
 
-There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new-format/issues/41) to keep an eye on.
+There are two things to consider when assigning yourself to a ticket in the project:
 
-#### Our goals are:
+- How much time do you have?
+- How comfortable are you with your chosen topic?
 
-> 💡 **Self-sufficient learning** <br>
-> to prepare the students for their learning path and entry into their professional life
+---
 
-> 💡 **Active and problem-based learning** <br>
-> to offer a practical approach of learning according to [research](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
+- `Reviews` are usually the "quickest" task, when you have an hour in between.
+- `Sessionguides` oftentimes can take advantage of existing session material. Remember: One session
+  should be max. 45min long! So think of which topics can be learned by reading the handout instead
+  of discussing it during the session.
+- `Challenges` are nice tasks when you feel comfortable with a topic or have experience with
+  exercises of this session.
+- `Handouts` are usually the most time intensive, because we want them to be as complete as possible
+  (but of course it still needs to be feasible).
 
-> 💡 **Integration of a "safety net"/"backup"** <br>
-> to make sure the students are following along with the content of the course
+## To-Do's
 
-> 💡 **Balanced coders**
-> to actively make time to process the content, this is to increase motivation, productivity and focus for the students
+There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new-format/issues/41)
+to keep an eye on.
 
-> 💡 **Guest lectures for a broad skillset**
-> to teach a broad collection of soft- and hardskills that teach methodological approaches useful for the daily professional life
+## Our workflow
 
-> 💡 **Balanced coaches**
-> to give more space for coaches to advance their personal development or contribute to in-house projects
+1. Go into the project `Curriculum Roadmap`
+2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
+   one from the 2 week milestone column)
+3. assign yourself to the ticket..
+4. Once you are done with the task, unassign yourself and put the ticket into the next column
+
+> good to know: When a ticket is in a "In progress" column, but it has no assignee, it is a To-Do,
+> so it not really "in progress", but it is supposed to be, so go get it tiger
+
+## Our goals are:
+
+> 💡 **Self-sufficient learning** <br> to prepare the students for their learning path and entry
+> into their professional life
+
+> 💡 **Active and problem-based learning** <br> to offer a practical approach of learning according
+> to
+> [research](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
+
+> 💡 **Integration of a "safety net"/"backup"** <br> to make sure the students are following along
+> with the content of the course
+
+> 💡 **Balanced coders** to actively make time to process the content, this is to increase
+> motivation, productivity and focus for the students
+
+> 💡 **Guest lectures for a broad skillset** to teach a broad collection of soft- and hardskills
+> that teach methodological approaches useful for the daily professional life
+
+> 💡 **Balanced coaches** to give more space for coaches to advance their personal development or
+> contribute to in-house projects
 
 ## Daily routine
 
@@ -45,8 +76,9 @@ There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new
 
 ## Sessions
 
-Sessions are structured not by week - but by days. It does not matter anymore which session is being held on which day of the week. This is the recommended order of sessions.
-Morning sessions should be the ones more challenging than afternoon sessions.
+Sessions are structured not by week - but by days. It does not matter anymore which session is being
+held on which day of the week. This is the recommended order of sessions. Morning sessions should be
+the ones more challenging than afternoon sessions.
 
 | day | morning                      | afternoon                                     | project                                               | guest lecture                                                                                           |
 | --- | ---------------------------- | --------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -72,7 +104,8 @@ Morning sessions should be the ones more challenging than afternoon sessions.
 | 20  | npm basics                   | JS Unit Testing                               |                                                       |
 | 21  | Buffer                       | Buffer                                        |                                                       |
 
-The following is unsorted and there for the sole purpose of showing how much time is left to be distributed:
+The following is unsorted and there for the sole purpose of showing how much time is left to be
+distributed:
 
 | day | morning                          | afternoon                      |
 | --- | -------------------------------- | ------------------------------ |
