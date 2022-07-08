@@ -35,7 +35,7 @@ to keep an eye on.
 4. Once you are done with the task, unassign yourself and put the ticket into the next column
 
 > Context: When a ticket is in a "In progress" column, but it has no assignee, it is a To-Do, so it
-> not really "in progress", but it is supposed to be, so go get it tiger
+> not really "in progress", but it is supposed to be, so go get it tiger 🐯
 
 <br>
 
