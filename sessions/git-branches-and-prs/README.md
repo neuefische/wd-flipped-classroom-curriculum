@@ -16,9 +16,15 @@
 
 ### Which important problem will we solve today?
 
+- Working on the main branch is dangerous, since you might introduce a bug into the production
+  version of your application
+- A save workflow is needed where features can be developed and tested without breaking the main
+  version of the application
+- This workflow is git feature branches
+
 ### Why is the content of todays block so important for the students?
 
-### Raise a question to be answered by the end of the block!
+- using git branches full potential is mandatory if you want to work in the industry
 
 ---
 
@@ -26,19 +32,44 @@
 
 ### Which prior knowledge will be used for this session?
 
+- [ ] git commits
+- [ ] git repositories
+- [ ] pushing to main branch
+
 ---
 
 ## Inform: Sessionguide
 
 ### Git Branches
 
-- [ ]
-- [ ]
+- [ ] give an example where working with different versions of an application is very useful
+- [ ] sketch how git branches work <img src="assets/branches.png" width="450">
+
+- [ ] highlight, that creating a new branch does not copy the whole git history, but creates just a
+      new label for the current commit
+- [ ] show how to create a new branch
+
+  - [ ] `git branch <branch name>` / `git switch -c <branch name>`
+  - [ ] `git checkout <branch name>` / `git switch <branch name>`
+
+- [ ] create some commits on the feature branch
+- [ ] show how you can now switch between different versions of the code by switching branches
+- [ ] highlight, that students can always create a test branch if they want to try out ideas in a
+      save environment
 
 ### Git Pull Requests
 
 - [ ]
 - [ ]
+
+### Git Feature Branch Workflow
+
+- [ ] show the students how the basic git feature branch workflow works
+      <img src="assets/git-basics-branching-workflow.png" width="450">
+  - [ ] create git feature branch and work on the code
+  - [ ] push the result to a new remote feature branch
+  - [ ] `git push -u origin <feature branch name>`
+  - [ ] create a Pull Request and merge the
 
 ---
 
