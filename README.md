@@ -31,11 +31,13 @@ to keep an eye on.
 1. Go into the project `Curriculum Roadmap`
 2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
    one from the 2 week milestone column)
-3. assign yourself to the ticket..
+3. Assign yourself to the ticket..
 4. Once you are done with the task, unassign yourself and put the ticket into the next column
 
-> good to know: When a ticket is in a "In progress" column, but it has no assignee, it is a To-Do,
-> so it not really "in progress", but it is supposed to be, so go get it tiger
+> Context: When a ticket is in a "In progress" column, but it has no assignee, it is a To-Do, so it
+> not really "in progress", but it is supposed to be, so go get it tiger
+
+<br>
 
 ## Our goals are:
 
