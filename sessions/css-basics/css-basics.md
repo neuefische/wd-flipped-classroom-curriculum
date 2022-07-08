@@ -76,14 +76,16 @@ There are different CSS selectors you can use to style elements. The most common
 There are a lot of CSS proporties and you will discover new ones every day. Therefore the following
 list shows only a few examples:
 
-- `color`: Color of an element
-- `font-size`: Defines the size of a font
-- `text-align`: This property defines the alignment of text
-- `background-color`: Background color of an element
-- `border`: Defines the border of an element.
-- `padding`: This property defines the padding of an element.
-- `margin`: Defines the margin of an element.
-- `width`: This property defines the width of an element.
+| Property           | Effect                                           |
+| ------------------ | ------------------------------------------------ |
+| `color`            | Color of an element                              |
+| `font-size`        | Defines the size of a font                       |
+| `text-align`       | This property defines the alignment of text      |
+| `background-color` | Background color of an element                   |
+| `border`           | Defines the border of an element.                |
+| `padding`          | This property defines the padding of an element. |
+| `margin`           | Defines the margin of an element.                |
+| `width`            | This property defines the width of an element.   |
 
 You can find more properties in the
 [CSS Properties Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) on MDN.
@@ -91,15 +93,29 @@ You can find more properties in the
 ### Box Model
 
 All elements of a website are wrapped in a `box model`. It's a way to define the size and position
-of an element. There are four different parts: `content`, `padding`, `border` and `margin`. Beside
-that there are also two different types of `box model`: `border-box` and `content-box`. This
-property is called `box-sizing` and changes the way how the `width` and `height` of an element is
-calculated.
+of an element. There are four different parts: `content`, `padding`, `border` and `margin`.
 
-- `content`: The actual content of the element.
-- `padding`: Space between the content and the border of the element.
-- `border`: The border of the element.
-- `margin`: The space around the border and other elements.
+| Part      | Explaination                                             |
+| --------- | -------------------------------------------------------- |
+| `content` | The actual content of the element.                       |
+| `padding` | Space between the content and the border of the element. |
+| `border`  | The border of the element.                               |
+| `margin`  | The space around the border and other elements.          |
+
+The property `box-sizing` changes the way how the `width` and `height` of an element is calculated.
+The default value is `content-box`. As the name suggests, the value defined by `width` is applied to
+the content box, padding, border-with and margin are then added on top. This can lead to unintended
+effects where an elements becomes larger than originally planned and overflows the screen display.
+To avoid this, the `box-sizing` of all elements is often set to `border-box`.
+
+```css
+* {
+	box-sizing: border-box;
+}
+```
+
+Now the `width` property defines the size of the border box, padding and border width are
+substracted to calculate the available space for the content.
 
 <img src="./assets/box-model.png" width="500" alt="Box model">
 
@@ -132,7 +148,7 @@ With CSS you can style the fonts of your website in many ways. Here are just som
 - `font-size`: Size of a font
 - `font-weight`: This property defines the weight of a font
 
-### Relative units
+## Relative units
 
 There are two different types of units: `relative` and `absolute`.
 
