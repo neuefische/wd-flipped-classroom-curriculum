@@ -9,22 +9,22 @@ There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new
 
 #### Our goals are:
 
-> 💡 Self-sufficient learning <br>
+> 💡 **Self-sufficient learning** <br>
 > to prepare the students for their learning path and entry into their professional life
 
-> 💡 Active and problem-based learning <br>
+> 💡 **Active and problem-based learning** <br>
 > to offer a practical approach of learning according to [research](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
 
-> 💡 Integration of a "safety net"/"backup" <br>
+> 💡 **Integration of a "safety net"/"backup"** <br>
 > to make sure the students are following along with the content of the course
 
-> 💡 Balanced coders
+> 💡 **Balanced coders**
 > to actively make time to process the content, this is to increase motivation, productivity and focus for the students
 
-> 💡 Guest lectures for a broad skillset
+> 💡 **Guest lectures for a broad skillset**
 > to teach a broad collection of soft- and hardskills that teach methodological approaches useful for the daily professional life
 
-> 💡 Balanced coaches
+> 💡 **Balanced coaches**
 > to give more space for coaches to advance their personal development or contribute to in-house projects
 
 ## Daily routine
