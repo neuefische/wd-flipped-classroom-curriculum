@@ -24,8 +24,7 @@
 ### Why is the content of todays block so important for the students?
 
 - You will get an understanding about the very basics / the foundation of how the web works.
-- You will have a solid foundation to build upon and expand your knowledge and skills. It's the
-  starting point of your technical expertise.
+- You will have a solid foundation to build upon and expand your knowledge and skills.
 
 - You will create your first website today, a big step towards becoming a developer!
 
@@ -50,18 +49,18 @@
 
 ### How the web works
 
-The internet is a large network of computers that communicate with each other. There are many
-different protocols that define the rules on how two machines communicate with each other. For us
-the `http` protocol is most important. Let us look at an example of how a client and a server
-communicate with each other:
+- [ ] The internet is a large network of computers that communicate with each other.
+- [ ] The communication between these many computers follows specific rules, that we call
+      `protocols`
+- [ ] For us the `http` protocol is the most important one.
 
-Say we have a user that uses a browser to visit a website. In that case the browser is the client
-and it communicates with a server that provides all necessary files (HTML, CSS, JS, images, fonts,
-etc.) to display the website.
+Go to [excalidraw](https://excalidraw.com/) and draw the steps of communication that happen during
+the process of visiting a website via a browser. Explain step by step and draw the steps
+accordingly.
 
-> 💡 Comment: This is a simplified example. It might very well be that the client needs to
-> communicate with multiple servers if some of the static resources (like fonts or images) are being
-> fetched from other domains.
+Scenario: Say we have a user that uses a browser to visit a website. In that case the browser is the
+client and it communicates with a server that provides all necessary files (HTML, CSS, JS, images,
+fonts, etc.) to display the website. What happens there in detail, we will discuss now:
 
 1. The user types in the URL of a website, e.g.
    [https://www.neuefische.de](https://www.neuefische.de)
@@ -75,30 +74,62 @@ etc.) to display the website.
    button. That leads to a different kind of http request being sent to the server - an
    `http POST request`.
 
-<img src="./assets/request-response.png" width=600 />
+When you are done with your drawing it could look something like this:<br>
+<img src="./assets/request-response.png" width=500 />
 
-> 💡 You can show this by visiting wikipedia.de and opening the inspector. In the network tab you
-> can see that the browser first receives the html file. The html file contains links to other
-> resources like the style.css. In the network tab you can see another request for the style.css
-> file.
+> 💡 Comment: This is a simplified example. It might very well be that the client needs to
+> communicate with multiple servers if some of the static resources (like fonts or images) are being
+> fetched from other domains.
+
+If you walked through these steps quickly there is an nice "real life example" you can show:
+
+- [ ] Open [wikipedia.de](https://www.wikipedia.de) and open the inspector.
+- [ ] In the network tab you can see that the browser first receives the html file.
+- [ ] By going through the html file, the browser recieves more information about required resources
+      and sends more GET-requests for example for the style.css file and several .js files to the
+      server
+
+> Now would be a good time for a break :)
 
 ### HTML
 
-HTML is short for hyper text markup language. It is the markup language that is giving websites
-content and structure.
+- [ ] HTML is short for hyper text markup language.
+- [ ] It is not considered a programming language, as you can't write logic with it. But
+      nevertheless it is an extremely important part of the internet as we know it today.
+- [ ] It is giving websites content and structure. You can imagine HTML as the sceleton of a
+      website.
 
-### Section 2
+#### How to start out
 
-- [ ]
-- [ ]
+- [ ] open your VS Code and create an index.html
+- [ ] type ! `tab` and quickly explain what Emmet is (a tool that helps us to code faster by
+      autocompletion)
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+```
+
+- [ ] Go through the created HTML tags and explain briefly
+- [ ] Announce that the following deep dive into HTML will be taking place in pairings
 
 ---
 
 ## Process: Project / Assignment
 
-- [ ] Provide the [handout](session-name.md) for the students
+- [ ] Provide the [handout](html-and-the-web.md) for the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
+- [ ] Divide the students in pairings
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
       can ask the coaches for help at any time / Always help each other / Take a break when you need
       it in the next 1.5h/ Keep an eye on Slack)
@@ -109,6 +140,10 @@ content and structure.
 
 - Come back to the question that was raised in the beginning of the session and try and answer it in
   a few phrases.
+- Why do we WANT to write semantic HTML?
+- It helps other developers and ourselves in the future to understand our code
+- Its more accessible
+- It's SEO optimized
 
 ---
 

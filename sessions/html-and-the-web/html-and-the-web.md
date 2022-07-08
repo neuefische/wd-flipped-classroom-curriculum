@@ -5,7 +5,7 @@
 In this session you will learn:
 
 - [ ] about client/server dynamics
-- [ ] how HTML works
+- [ ] how to write HTML
 - [ ] what semantic HTML is
 
 ---
@@ -71,13 +71,13 @@ tag. Everything in between these two tags is considered the headline, even other
 ```
 
 Some element can't contain any other elements and therefore don't have a closing tag. These elements
-like images or inputs are called self closing and are closed immediatly at the end of the tag with a
-`/` forward slash (see `img` example below).
+like images or inputs are called self closing and are closed immediately at the end of the tag with
+a `/` forward slash (see `img` example below).
 
 ### HTML tag attributes
 
 Some elements require some more information in order to function properly. This information is
-specified via tag attributes. For example:
+specified via attributes. For example:
 
 - the source of an image
   ```html
@@ -121,7 +121,7 @@ A typical html website consists of two main parts:
 
 | element             | meaning                                                             |
 | ------------------- | ------------------------------------------------------------------- |
-| `<head></head>`     | only once per website, indludes meta data and linked files          |
+| `<head></head>`     | only once per website, includes meta data and linked files          |
 | `<body></body>`     | only once per website, includes the html website content            |
 | `<h1></h1>`         | only once per website, a level one heading                          |
 | `<h2></h2>`         | a level two heading                                                 |
@@ -158,7 +158,7 @@ Therefore, one should use semantic HTML elements whenever possible.
 
 | element                 | meaning                                                                                                             |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `<main></main>`         | only once per website, indludes the main content of the page                                                        |
+| `<main></main>`         | only once per website, includes the main content of the page                                                        |
 | `<section></section>`   | a generic standalone section of a document                                                                          |
 | `<ul></ul>`/`<ol></ol>` | a list of elements with the same structure, only has `<li>` elements as direct children                             |
 | `<nav></nav>`           | a navigation bar                                                                                                    |
@@ -212,7 +212,7 @@ see what happens:
 - ul>li.card\*10
 
 > 💡 You can learn about more emmet commands in
-> [this cheatsheet](https://coolcheatsheet.com/toolkit/emmet)
+> [this cheat-sheet](https://coolcheatsheet.com/toolkit/emmet)
 
 # Challenges
 
