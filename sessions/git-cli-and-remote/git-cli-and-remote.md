@@ -270,7 +270,7 @@ zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-
 
 # Challenges
 
-## Session Notebook
+## Session Notebook part 1
 
 In this project you will create a markdown based notebook for all your upcoming session notes. In
 this part you will create the folder structure and markdown files, in a future part we will fill up
