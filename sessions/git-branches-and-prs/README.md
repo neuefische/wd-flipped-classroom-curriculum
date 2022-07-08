@@ -4,9 +4,9 @@
 
 ## Learning objectives
 
-- [ ] why the following concepts are important for collaboration.
 - [ ] what git branches are and how to use them.
 - [ ] what Pull Requests are and how to use them.
+- [ ] how branches and pull requests facilitate collaboration.
 
 ---
 
