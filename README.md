@@ -28,14 +28,26 @@ to keep an eye on.
 
 ## Our workflow
 
-1. Go into the project `Curriculum Roadmap`
+1. Go into the project
+   [Curriculum Roadmap](https://github.com/neuefische/web-curriculum-new-format/projects/1)
 2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
    one from the 2 week milestone column)
-3. Assign yourself to the ticket..
-4. Once you are done with the task, unassign yourself and put the ticket into the next column
+3. Assign yourself to the ticket.
+4. Once you are done with the task, unassign yourself and put the ticket into the next column to the
+   right
 
 > Context: When a ticket is in a "In progress" column, but it has no assignee, it is a To-Do, so it
 > not really "in progress", but it is supposed to be, so go get it tiger 🐯
+
+> A ticket undergoes the following stages:
+>
+> 1. Write Handout
+> 2. Review Handout
+> 3. Write Challenge (same file as Handout, but on the bottom of the page)
+> 4. Review Challenge
+> 5. Write Sessionguide
+> 6. Review EVERYTHING! Are all 3 parts coherent? Are all parts well structured within the session?
+>    Is the time frame realistic?
 
 <br>
 
