@@ -2,8 +2,9 @@
 
 the lectures will take place after the lunchbreak for 30-45min, from 13:30 - max. 14:15
 
-Please add you name to the guest-column, if you can imagine giving one of these guest lectures every
-`(?)` means that the the Date is not fixed jet but the person is already involved.
+Please add you name to the guest-column, if you can imagine giving one of these guest lectures
+
+every `(?)` means that the the Date is not fixed jet but the person is already involved.
 
 every `(??)`means that the person is just an idear, and not contacted jet.
 
