@@ -40,10 +40,17 @@
 
 ## Inform: Sessionguide
 
-### Git Branches
+### Git Feature Branch Workflow
 
-- [ ] give an example where working with different versions of an application is very useful
-- [ ] sketch how git branches work <img src="assets/branches.png" width="450">
+- [ ] Explain why we need a more robust workflow
+- [ ] During the session, you can create the following sketch of the git feature branch workflow,
+      starting with step 1 and finishing with step 4. <br>
+      <img src="assets/git-basics-branching-workflow.png" width="450">
+
+### 1. Git Branches
+
+- [ ] highlight, that we can create different versions of our code in git.
+- [ ] sketch how git branches work <br> <img src="assets/branches.png" width="450">
 
 - [ ] highlight, that creating a new branch does not copy the whole git history, but creates just a
       new label for the current commit
@@ -57,19 +64,26 @@
 - [ ] highlight, that students can always create a test branch if they want to try out ideas in a
       save environment
 
-### Git Pull Requests
+### 2. Git Push
 
-- [ ]
-- [ ]
+- [ ] show how to push the new feature to the remote repository
+- [ ] highlight, that this is needed so that others can `review` the changes
+- [ ] `git push -u origin <feature branch name>`
 
-### Git Feature Branch Workflow
+### 3. Git Pull Requests
 
-- [ ] show the students how the basic git feature branch workflow works
-      <img src="assets/git-basics-branching-workflow.png" width="450">
-  - [ ] create git feature branch and work on the code
-  - [ ] push the result to a new remote feature branch
-  - [ ] `git push -u origin <feature branch name>`
-  - [ ] create a Pull Request and merge the
+- [ ] show, how a typical review process works
+- [ ] explain, what a pull request is, how to write comments and view the differences introduced by
+      the PR
+- [ ] explain, what `merging` means and merge the PR
+
+### 4. Git Pull
+
+- [ ] show, that the feature is now included in the main branch
+- [ ] tell the students, that the local main branch needs to be updated
+- [ ] switch to the main branch on the local machine
+- [ ] `git pull` / `git pull -u origin main`
+- [ ] finish the exalidraw sketch and show once more the workflow steps.
 
 ---
 
@@ -81,6 +95,9 @@
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
       can ask the coaches for help at any time / Always help each other / Take a break when you need
       it in the next 1.5h/ Keep an eye on Slack)
+- [ ] ❗️ Make sure that the students are not lost in the workflow
+- [ ] ❗️ You should perform one code review per group, so that the students learn how a good review
+      looks like.
 
 ---
 
@@ -88,6 +105,7 @@
 
 - Come back to the question that was raised in the beginning od the session and try and answer it in
   a few phrases.
+- Show the excalidraw sketch once more and ask the students why we do every step.
 
 ---
 
