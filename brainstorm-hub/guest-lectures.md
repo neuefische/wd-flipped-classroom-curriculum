@@ -14,10 +14,10 @@ every `(??)`means that the person is just an idea, and not contacted jet.
 | 2   | Our communication goals                                                                                 | Paul (?)                         |
 | 3   | How to ask good questions/How to work in a group effectively                                            |
 | 4   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     | Merle (?)                        |
-| 5   | wie gebe ich gutes Feedback                                                                             | Nele(?)                          |
+| 5   |	How to give constructive Feedback                                                                             | Nele(?)                          |
 | 6   | A11y Guest Session                                                                                      | Kontakt Gregor (??)              |
-| 7   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |                                  |
-| 8   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |                                  |
+| 7   | Habits for success: How you can support your body and brain when learning new skills (Nutrition edition) |                                  |
+| 8   | Habits for success: How you can support your body and brain when learning new skills (Movement edition)  |                                  |
 | 9   | How to give a high-quality code reviews                                                                 | Paul(?)                          |
 | 10  | Design Workshop 1/ 1                                                                                    | Sascha (?)                       |
 | 11  | Design Workshop 1/2                                                                                     | Sascha (?)                       |
@@ -31,7 +31,7 @@ every `(??)`means that the person is just an idea, and not contacted jet.
 | 19  | Open Source                                                                                             |                                  |
 | 20  | UX/UI (Nora Henkel)                                                                                     |                                  |
 | 21  | Einführung in Wireframes                                                                                |                                  |
-| 22  | Typische Coding Challenges in technical Interviews                                                      |                                  |
+| 22  | tipical coding challenges in technical interviews                                                      |                                  |
 | 23  | Diversity / biased Code (Lea Rosema)                                                                    |                                  |
 | 24  | Agile Workflow 1                                                                                        | Johannes(??)                     |
 | 25  | Agile Workflow 2                                                                                        | Johannes(??)                     |
@@ -40,7 +40,7 @@ every `(??)`means that the person is just an idea, and not contacted jet.
 | 28  | Agile Workflow 5                                                                                        | Johannes(??)                     |
 | 29  | Cyber security (Tim Adler, chefkoch.de)                                                                 | Tim Adler, chefkoch.de (??)      |
 | 30  | React Hook Forms (Ralf)                                                                                 | Ralf (?)                         |
-| 31  | Carrer Session 1/2                                                                                     | Sina                             |
+| 31  | Career Session 1/2                                                                                     | Sina                             |
 | 32  | Expectation management for capstone                                                                     |                                  |
 | 33  | Career Session 2/2                                                                                      | Sina                             |
 | 34  | headless CMS (Josefine Schäfer, storyblok)                                                              | Josefine Schäfer, storyblok (??) |
