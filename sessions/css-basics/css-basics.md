@@ -146,6 +146,22 @@ With CSS you can style the fonts of your website in many ways. Here are just som
 - `font-size`: Size of a font
 - `font-weight`: This property defines the weight of a font
 
+You can include custom fonts in two ways:
+
+- find a font on [google fonts](fonts.google.com) and use the `@import` snippet and paste it to the
+  top of your css file:
+  ```css
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;			400;500;700&display=swap');
+  ```
+- download any font and include it as a `font-family`
+
+  ```css
+  @font-face {
+  	font-family: 'Name of the font';
+  	src: url('path/to-the/font.woff');
+  }
+  ```
+
 ## Relative units
 
 There are two different types of units: `relative` and `absolute`.
