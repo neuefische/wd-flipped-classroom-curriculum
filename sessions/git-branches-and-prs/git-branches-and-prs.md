@@ -43,7 +43,7 @@ the name more comfortable to read.
 
 | command                        | functionality                                 |
 | ------------------------------ | --------------------------------------------- |
-| `git branch`                   | list branches                                 |
+| `git branch`                   | list your branches                                 |
 | `git branch -a`                | list all branches (local and remote)          |
 | `git branch <branchname>`      | create a new branch                           |
 | `git branch -d <branchname>`   | delete the branch                             |
@@ -54,7 +54,7 @@ the name more comfortable to read.
 
 ## Git Pull Requests
 
-It is important for developers to maintain a high code quality and to have other developers review
+It is important for developers to maintain high code quality and to have other developers review
 their work. Git offers us `pull requests` which we can use as a convenient way to request reviews of
 the work on a `feature branch`. A pull request is a request to `merge` one branch into another
 branch. We can create a pull request on GitHub and ask other developers to review all changes made
@@ -65,7 +65,7 @@ branch into the main branch.
 ### Basic Workflow for a Pull Request
 
 1. Create a new branch with `git branch <branchname>`
-2. Make changes to the code
+2. Make changes to the code / write your code fpr the feature
 3. Push the changes and the new branch with `git push -u origin <branchname>` (after you have done
    this once you can use `git push` for this branch)
 4. Create a pull request on GitHub from the new branch into `main`
@@ -92,9 +92,9 @@ Continue to work on your session notebook.
    repository (`git push -u origin notes/github-and-markdown`).
 5. On GitHub, go to the remote repository. A yellow action box should have appeared suggesting to
    create a pull request for the named branch. Create the pull request.
-6. Share the link to the pull request with your group so they can check your notes.
+6. Share the link to the pull request with your group so they can review your notes.
 7. Merge the pull request or add some suggestions of your group mates.
-8. Repeat this process with the other session notes.
+8. Repeat this workflow with the other session notes you created the last days.
 
 > 💡 This workflow is very fundamental to web developers in all of the industry. We will continue to
 > work in this way, especially in the capstone project. So try to get comfortable with each step, it
