@@ -83,7 +83,7 @@
 - [ ] tell the students, that the local main branch needs to be updated
 - [ ] switch to the main branch on the local machine
 - [ ] `git pull` / `git pull -u origin main`
-- [ ] finish the exalidraw sketch and show once more the workflow steps.
+- [ ] finish the excalidraw sketch and show once more the workflow steps.
 
 ---
 
@@ -120,6 +120,8 @@
 - [ ] Remind them to rest :)
 
 ## Keywords for Recap:
+
+branch, git switch, git checkout, pull request, code review, git branch
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
