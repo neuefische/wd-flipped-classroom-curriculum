@@ -6,7 +6,7 @@ Please add you name to the guest-column, if you can imagine giving one of these 
 
 every `(?)` means that the the Date is not fixed jet but the person is already involved.
 
-every `(??)`means that the person is just an idear, and not contacted jet.
+every `(??)`means that the person is just an idea, and not contacted jet.
 
 | day | topic                                                                                                   | guest                            |
 | --- | ------------------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -40,9 +40,9 @@ every `(??)`means that the person is just an idear, and not contacted jet.
 | 28  | Agile Workflow 5                                                                                        | Johannes(??)                     |
 | 29  | Cyber security (Tim Adler, chefkoch.de)                                                                 | Tim Adler, chefkoch.de (??)      |
 | 30  | React Hook Forms (Ralf)                                                                                 | Ralf (?)                         |
-| 31  | Carrer Session 2/1                                                                                      | Sina                             |
+| 31  | Carrer Session 1/2                                                                                     | Sina                             |
 | 32  | Expectation management for capstone                                                                     |                                  |
-| 33  | Carrer Session 2/2                                                                                      | Sina                             |
+| 33  | Career Session 2/2                                                                                      | Sina                             |
 | 34  | headless CMS (Josefine Schäfer, storyblok)                                                              | Josefine Schäfer, storyblok (??) |
 | 35  | neuefische Website als Beispielprojekt (Jan Henkel)                                                     | Jan Henkel(??)                   |
 | 36  | How to prioritize your tasks and reach your weekly goal                                                 |                                  |
@@ -53,7 +53,7 @@ every `(??)`means that the person is just an idear, and not contacted jet.
 
 CAPSTONE!!!
 
-more idears
+more ideas
 
 - [ ] How to read error messages - don't be afraid of the red wall
 - [ ] How to ask good questions/How to work in a group effectively
