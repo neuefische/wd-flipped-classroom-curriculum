@@ -20,6 +20,10 @@ There are two things to consider when assigning yourself to a ticket in the proj
   exercises of this session.
 - `Handouts` are usually the most time intensive, because we want them to be as complete as possible
   (but of course it still needs to be feasible).
+- `quiz.md` files need to be copied from our old curriculum. You can find them in the session folder
+  in the `web-pool-2022` repository. Make sure that the questions still fit the content of the
+  session. If there is no quiz.md or you work on a new session, just create a new quiz.md and add
+  new questions.
 
 ## To-Do's
 
