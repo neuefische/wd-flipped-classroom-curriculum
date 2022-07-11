@@ -63,8 +63,21 @@ h3 {
 There are different CSS selectors you can use to style elements. The most common ones are:
 
 - `Universal` selector `*` selects all elements.
-- `Element or Type` selector, like `h1`, selects all elements of a specific type.
+- `Element or Type` selector, like `article`, selects all elements of a specific type.
+  ```css
+  article {
+  	color: red;
+  }
+  ```
 - `Class` selector, like `.class-name`, selects all elements with the specified class.
+  ```css
+  .my-cool-class {
+  	color: hotpink;
+  }
+  ```
+  ```html
+  <aside class="my-cool-class">...</aside>
+  ```
 
 > ❗️ In theory you could also use element IDs as selectors, but this is bad practice and must be
 > avoided.
