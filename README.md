@@ -13,13 +13,13 @@ There are two things to consider when assigning yourself to a ticket in the proj
 ---
 
 - `Reviews` are usually the "quickest" task, when you have an hour in between.
-- `Session-guides` oftentimes can take advantage of existing session material. Remember: One session
-  should be max. 45min long! So think of which topics can be learned by reading the handout instead
-  of discussing it during the session.
+- `Session-guides` can in many cases take advantage of existing session material. Remember: One
+  session should be a maximum of 45min, so think of which topics can be learned by reading the
+  handout instead of discussing it during the session.
 - `Challenges` are nice tasks when you feel comfortable with a topic or have experience with
   exercises of this session.
 - `Handouts` are usually the most time intensive, because we want them to be as complete as possible
-  (but of course it still needs to be feasible).
+  (of course they still need to be feasible).
 - `quiz.md` files need to be copied from our old curriculum. You can find them in the session folder
   in the `web-pool-2022` repository. Make sure that the questions still fit the content of the
   session. If there is no quiz.md, or you work on a new session, just create a new quiz.md and add
