@@ -1,6 +1,6 @@
 # Welcome to the new curriculum!
 
-This is the working progress of the new curriculum of the bootcamp Web Development. <br> This update
+This is the work in progress of the new curriculum of the bootcamp Web Development. <br> This update
 is aiming to improve the way our students learn. <br>
 
 ## How to contribute
@@ -22,7 +22,7 @@ There are two things to consider when assigning yourself to a ticket in the proj
   (but of course it still needs to be feasible).
 - `quiz.md` files need to be copied from our old curriculum. You can find them in the session folder
   in the `web-pool-2022` repository. Make sure that the questions still fit the content of the
-  session. If there is no quiz.md or you work on a new session, just create a new quiz.md and add
+  session. If there is no quiz.md, or you work on a new session, just create a new quiz.md and add
   new questions.
 
 ## To-Do's
@@ -35,7 +35,7 @@ to keep an eye on.
 1. Go into the project
    [Curriculum Roadmap](https://github.com/neuefische/web-curriculum-new-format/projects/1)
 2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
-   one from the 2 week milestone column)
+   one from the 2-week milestone column)
 3. Assign yourself to the ticket.
 4. Once you are done with the task, unassign yourself and put the ticket into the next column to the
    right
@@ -49,8 +49,8 @@ to keep an eye on.
 > 2. Review Handout
 > 3. Write Challenge (same file as Handout, but on the bottom of the page)
 > 4. Review Challenge
-> 5. Write Sessionguide
-> 6. Review EVERYTHING! Are all 3 parts coherent? Are all parts well structured within the session?
+> 5. Write Session-guide
+> 6. Review EVERYTHING! Are all 3 parts coherent? Are all parts well-structured within the session?
 >    Is the time frame realistic?
 
 <br>
@@ -70,7 +70,7 @@ to keep an eye on.
 > 💡 **Balanced coders** to actively make time to process the content, this is to increase
 > motivation, productivity and focus for the students
 
-> 💡 **Guest lectures for a broad skillset** to teach a broad collection of soft- and hardskills
+> 💡 **Guest lectures for a broad skill-set** to teach a broad collection of soft- and hard-skills
 > that teach methodological approaches useful for the daily professional life
 
 > 💡 **Balanced coaches** to give more space for coaches to advance their personal development or
@@ -94,9 +94,9 @@ to keep an eye on.
 
 ## Sessions
 
-Sessions are structured not by week - but by days. It does not matter anymore which session is being
-held on which day of the week. This is the recommended order of sessions. Morning sessions should be
-the ones more challenging than afternoon sessions.
+Sessions are structured not by week - but by days. It does not matter which session is being held on
+which day of the week. This is the recommended order of sessions. Morning sessions should be the
+ones more challenging than afternoon sessions.
 
 | day | morning                      | afternoon                                     | project                                               | guest lecture                                                                                           |
 | --- | ---------------------------- | --------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
