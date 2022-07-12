@@ -13,7 +13,7 @@ There are two things to consider when assigning yourself to a ticket in the proj
 ---
 
 - `Reviews` are usually the "quickest" task, when you have an hour in between.
-- `Sessionguides` oftentimes can take advantage of existing session material. Remember: One session
+- `Session-guides` oftentimes can take advantage of existing session material. Remember: One session
   should be max. 45min long! So think of which topics can be learned by reading the handout instead
   of discussing it during the session.
 - `Challenges` are nice tasks when you feel comfortable with a topic or have experience with
