@@ -4,15 +4,23 @@
 
 ## Learning objectives
 
-- [ ] How HTML is structured
+- [ ] How to write HTML 
+- [ ] How HTML documents are structured
 - [ ] Understanding and applying semantic HTML
-- [ ] Understanding client/server dynamics
 
 ---
 
 ## Arrival: Motivate students and prepare them for the topic
 
 > 💡 Breathe and relax :)
+
+
+### Why is the content of todays block so important for the students?
+
+- You will get an understanding about the very basics / the foundation of how the web works.
+- You will have a solid foundation to build upon and expand your knowledge and skills.
+- You will create your first website today, a big step towards becoming a developer!
+
 
 ### Which important problem will we solve today?
 
@@ -21,15 +29,10 @@
   - it's SEO optimized
   - it's better understandable for other developers
 
-### Why is the content of todays block so important for the students?
-
-- You will get an understanding about the very basics / the foundation of how the web works.
-- You will have a solid foundation to build upon and expand your knowledge and skills.
-- You will create your first website today, a big step towards becoming a developer!
 
 ### Raise a question to be answered by the end of the block
 
-- Why do we WANT to write semantic HTML?
+- Why do we __want__ to write semantic HTML?
 
 ---
 
