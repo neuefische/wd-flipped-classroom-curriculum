@@ -59,10 +59,10 @@
 
 > `HTML = HyperText Markup Language, link a webpage to another webpage, syntax to structure and format documents, <button type="button">Click me!</button>, HTML Element, HTML Tag, </>, HTML Attribute <p>Click <strong>this</strong>!<p>), `
 
-- [ ] HTML is short for HyperText Markup Language.
-- [ ] It is not considered a programming language, as you can't write logic with it. But
+- [ ] HTML is short for `HyperText Markup Language`.
+- [ ] It is not considered a programming language, as `you can't write logic` with it. But
       nevertheless it is an extremely important part of the internet as we know it today.
-- [ ] It is giving content on websites meaning and structure. You can imagine HTML as the skeleton
+- [ ] It is giving content on websites `meaning and structure`. You can imagine HTML as the skeleton
       or the most basic building block of the Web. <br> <br> Let's analyze the word for more
       clarification:
 - [ ] `Hypertext`: Refers to the ability of HTML to create links that link one webpage to another.
@@ -81,13 +81,16 @@
 
 ### How to write HTML
 
-- [ ] every piece of content in a HTML document is placed inside of an `HTML element`
-- [ ] the elements are written in form of `HTML tags`, meaning surrounded by `<>` and `</>`
-- [ ] some HTML elements need additional information in order to work properly. This information is
-      given by `HTML attributes`
-- [ ] There are attributes that are specific to some HTML elements, for example `src', which only
-      makes sense if a resource is supposed to be embedded into the webpage (for example images or
-      videos)
+- [ ] `HTML element`: every piece of content in a HTML document is placed inside of an HTML element
+- [ ] `HTML tags`: the elements are written in form of HTML tags, meaning surrounded by `<>` and
+      `</>`
+- [ ] `HTML attributes`: some HTML elements need additional information in order to work properly.
+      This information is given by HTML attributes
+- [ ] `local attributes`: There are attributes that are specific to some HTML elements, for example
+      `src', which only makes sense if a resource is supposed to be embedded into the webpage (e.g.
+      images or videos)
+- [ ] `global attributes`: There are also attributes that can be added to any kind of element. (e.g.
+      class, id, style, hidden)
 
 > Your explanation in excalidraw could look like this:
 
@@ -95,7 +98,7 @@
 <br>
 <br>
 
-### Special HTML stuff
+### Nesting elements
 
 Two more interesting things to know about HTML:
 
@@ -103,7 +106,7 @@ Two more interesting things to know about HTML:
 - [ ] the element inside of another element is called `child element`
 - [ ] the wrapping element is called `parent element`
 
-<br>
+### Self-closing elements
 
 - [ ] some elements are `empty elements`, which means they contain no content.
 - [ ] those empty elements are always `self closing elements`, which means they don`t have a closing
@@ -114,13 +117,13 @@ Two more interesting things to know about HTML:
 
 > For this part of the session you can continue the demonstration in VS Code
 
-Start with a short explanation to Emmet.
+Start with a short explanation of Emmet.
 
-- [ ] Emmet is a tool, which is already integrated into VS Code. It autocompletes our code, which
+- [ ] `Emmet` is a tool, which is already integrated into VS Code. It autocompletes our code, which
       makes the workflow much faster.
 - [ ] By starting to type the name of the element and then clicking `tab`, Emmet does it's magic.
 
-Then type `! tab` and walk the students through the document flow:
+> Then type `! tab` and walk the students through the document flow:
 
 ```
 <!DOCTYPE html>
@@ -157,8 +160,8 @@ Writing Semantic HTML mean writing "meaningful" HTML
 > Copy this snippet into your body element from before
 
 ```
-<div>Hello World</div>
 <div>
+<div>Hello World</div>
   <div>
     <div>
       I am training to becoming a Web Dev. Therefore i love coding.
@@ -176,8 +179,8 @@ Writing Semantic HTML mean writing "meaningful" HTML
 > Change the tags to semantic HTML
 
 ```
-<h1>Hello World</h1>
 <main>
+<h1>Hello World</h1>
       <article>
             <p>I am training to becoming a Web Dev. Therefore of course i love coding. Other things i like are:</p>
             <ul>
@@ -189,16 +192,17 @@ Writing Semantic HTML mean writing "meaningful" HTML
 </main>
 ```
 
-The benefits of writing semantic HTMl are:
+#### The benefits of writing semantic HTMl are:
 
-- [ ] Accessibility: Screenreaders can function much better with semantic HTML, which can help e.g.
-      visually impaired users to navigate the webpage
-- [ ] It's relevant for SEO
-- [ ] It's easier for other developers to understand your code. And also for yourself in the future!
+- [ ] `Accessibility`: Screenreaders can function much better with semantic HTML, which can help
+      e.g. visually impaired users to navigate the webpage
+- [ ] `SEO`: It's relevant for SEO
+- [ ] `Readability`: It's easier for other developers to understand your code. And also for yourself
+      in the future!
 
 ---
 
-## Process: Project / Assignment
+## Process: Challenge
 
 - [ ] Provide the [handout](html-and-the-web.md) for the students
 - [ ] Open the handout and walk the students through the tasks
@@ -213,10 +217,8 @@ The benefits of writing semantic HTMl are:
 
 - Come back to the question that was raised in the beginning of the session and try and answer it in
   a few phrases.
-- Why do we WANT to write semantic HTML?
-- It helps other developers and ourselves in the future to understand our code
-- Its more accessible
-- It's SEO optimized
+- Why do we WANT to write semantic HTML? Click [here](#the-benefits-of-writing-semantic-html-are)for
+  the answer
 
 ---
 
@@ -232,51 +234,11 @@ The benefits of writing semantic HTMl are:
 
 ## Keywords for Recap:
 
+HTML = HyperText Markup Language, HTML Element, HTML Tag, HTML Attribute, Semantic HTML,
+
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
 > [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
-
-### How the web works
-
-- [ ] The internet is a large network of computers that communicate with each other.
-- [ ] The communication between these many computers follows specific rules, that we call
-      `protocols`
-- [ ] For us the `http` protocol is the most important one.
-
-Go to [excalidraw](https://excalidraw.com/) and draw the steps of communication that happen during
-the process of visiting a website via a browser. Explain step by step and draw the steps
-accordingly.
-
-Scenario: Say we have a user that uses a browser to visit a website. In that case the browser is the
-client and it communicates with a server that provides all necessary files (HTML, CSS, JS, images,
-fonts, etc.) to display the website. What happens there in detail, we will discuss now:
-
-1. The user types in the URL of a website, e.g.
-   [https://www.neuefische.de](https://www.neuefische.de)
-2. The browser talks to the DNS - sending a domain name and receiving an `IP address`
-3. The browser sends an `http GET request` to the server behind the IP address
-4. The server responds to the request sending back the HTML file
-5. The HTML file contains content with other resources (like images or fonts)
-6. The browser sends further http GET requests to the server to fetch all needed resources.
-7. The website is now fully loaded and being displayed in the browser.
-8. Lets say the user interacts with the website by filling out a contact form and pressing the send
-   button. That leads to a different kind of http request being sent to the server - an
-   `http POST request`.
-
-When you are done with your drawing it could look something like this:<br>
-<img src="./assets/request-response.png" width=500 />
-
-> 💡 Comment: This is a simplified example. It might very well be that the client needs to
-> communicate with multiple servers if some of the static resources (like fonts or images) are being
-> fetched from other domains.
-
-If you walked through these steps quickly there is an nice "real life example" you can show:
-
-- [ ] Open [wikipedia.de](https://www.wikipedia.de) and open the inspector.
-- [ ] In the network tab you can see that the browser first receives the html file.
-- [ ] By going through the html file, the browser receives more information about required resources
-      and sends more GET-requests for example for the style.css file and several .js files to the
-      server
