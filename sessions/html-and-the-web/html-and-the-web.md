@@ -253,11 +253,15 @@ Start working on the HTML markup of your personal website.
 
 Here is an example of a structure for a website that you can draw inspiration from:
 
-![Mobile Wireframe](assets/wireframe-desktop.png)
+![Desktop Wireframe](assets/wireframe-desktop.png)
 
 ---
 
-![Desktop Wireframe](assets/wireframe-mobile.png)
+![Mobile Wireframe](assets/wireframe-mobile.png)
+
+> ❗️ Your personal website won't look exactly like the wireframe for now, as many of the features
+> need to be styled (to align horizontally for example). We will improve this during the next days.
+> For now, don't focus on the looks, focus on including all relevant HTML elements.
 
 ---
 
