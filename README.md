@@ -148,12 +148,12 @@ ones more challenging than afternoon sessions.
 | 11  | HTML Forms                   | JS Strings and inputs                         | ...                                                   | Design Workshop 2                                                                                       |
 | 12  | JS Callback Functions (neu)  | JS Forms                                      | ...                                                   | Design Workshop 3                                                                                       |
 | 13  | JS createElement             | JS Forms 2                                    | ...                                                   | Design Workshop 3                                                                                       |
-| 14  | `Repetition Project`         | Linting Basics & Debugging (with console.log) | ...                                                   |
+| 14  | `Repetition Project`         | CSS Animations                                | ...                                                   |
 | 15  | JS Objects and Arrays        | JS Loops (neu)                                |                                                       |
 | 16  | JS Array Methods             | npm basics                                    |                                                       |
 | 17  | JS Array Methods 2           | JS Structure                                  |                                                       |
 | 18  | JS Fetch                     | Async Await (neu)                             |                                                       |
-| 19  | Git Advanced                 | CSS Animations                                |                                                       |
+| 19  | Git Advanced                 | Linting Basics & Debugging (with console.log) |                                                       |
 | 20  | `Repetition Project`         | ES Next                                       |                                                       |
 | 21  | JS Unit Testing              | Buffer                                        |                                                       |
 
