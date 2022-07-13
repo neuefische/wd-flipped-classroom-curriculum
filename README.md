@@ -143,19 +143,19 @@ ones more challenging than afternoon sessions.
 | 6   | `Repetition Project`         | A11y                                          | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     |
 | 7   | JS Basics                    | CSS Structure                                 | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |
 | 8   | JS Variables and Numbers     | CSS Grid                                      | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |
-| 9   | JS Loops (neu)               | CSS Responsive                                | ...                                                   | Why we love Open Source                                                                                 |
+| 9   | JS Conditions Booleans       | CSS Responsive                                | ...                                                   | Why we love Open Source                                                                                 |
 | 10  | JS Functions                 | JS Functions 2                                | ...                                                   | Design Workshop 1                                                                                       |
-| 11  | JS Conditions Booleans       | JS Strings and inputs                         | ...                                                   | Design Workshop 2                                                                                       |
-| 12  | JS Callback Functions (neu)  | JS EventListener and createElement            | ...                                                   | Design Workshop 3                                                                                       |
-| 13  | `Repetition Project`         | Linting Basics & Debugging (with console.log) | ...                                                   |
-| 14  | JS Objects and Arrays        | HTML Forms                                    |                                                       |
-| 15  | JS Array Methods             | JS Forms                                      |                                                       |
-| 16  | JS Array Methods 2           | JS Structure                                  |                                                       |
-| 17  | JS Fetch                     | Async Await (neu)                             |                                                       |
-| 18  | Git Advanced                 | CSS Animations                                |                                                       |
-| 19  | `Repetition Project`         | ES Next                                       |                                                       |
-| 20  | npm basics                   | JS Unit Testing                               |                                                       |
-| 21  | Buffer                       | Buffer                                        |                                                       |
+| 11  | HTML Forms                   | JS Strings and inputs                         | ...                                                   | Design Workshop 2                                                                                       |
+| 12  | JS Callback Functions (neu)  | JS Forms                                      | ...                                                   | Design Workshop 3                                                                                       |
+| 13  | JS createElement             | JS Forms 2                                    | ...                                                   | Design Workshop 3                                                                                       |
+| 14  | `Repetition Project`         | Linting Basics & Debugging (with console.log) | ...                                                   |
+| 15  | JS Objects and Arrays        | JS Loops (neu)                                |                                                       |
+| 16  | JS Array Methods             | npm basics                                    |                                                       |
+| 17  | JS Array Methods 2           | JS Structure                                  |                                                       |
+| 18  | JS Fetch                     | Async Await (neu)                             |                                                       |
+| 19  | Git Advanced                 | CSS Animations                                |                                                       |
+| 20  | `Repetition Project`         | ES Next                                       |                                                       |
+| 21  | JS Unit Testing              | Buffer                                        |                                                       |
 
 The following is unsorted and there for the sole purpose of showing how much time is left to be
 distributed:
