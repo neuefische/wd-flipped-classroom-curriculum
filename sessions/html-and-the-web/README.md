@@ -155,7 +155,8 @@ Start with a short explanation of Emmet.
 
 ### Semantic HTML
 
-Writing Semantic HTML mean writing "meaningful" HTML
+Writing semantic HTML means writing "meaningful" HTML, in the sense that the element itself provides
+information about its content.
 
 > Copy this snippet into your body element from before
 
@@ -217,8 +218,8 @@ Writing Semantic HTML mean writing "meaningful" HTML
 
 - Come back to the question that was raised in the beginning of the session and try and answer it in
   a few phrases.
-- Why do we WANT to write semantic HTML? Click [here](#the-benefits-of-writing-semantic-html-are)for
-  the answer
+- Why do we WANT to write semantic HTML? Click [here](#the-benefits-of-writing-semantic-html-are)
+  for the answer
 
 ---
 
@@ -234,7 +235,8 @@ Writing Semantic HTML mean writing "meaningful" HTML
 
 ## Keywords for Recap:
 
-HTML = HyperText Markup Language, HTML Element, HTML Tag, HTML Attribute, Semantic HTML,
+HTML = HyperText Markup Language, HTML Element, HTML Tag, HTML Attribute, Semantic HTML, <div>,
+<section>, <>, </>,
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
