@@ -57,9 +57,25 @@ This property is very useful for creating responsive layouts. With the property 
 
 # Challenges
 
-## Part 1
+## Flexbox Games
 
-## Part 2
+Try to master one of these two flexbox games:
+
+- [Flexbox Froggy](https://flexboxfroggy.com)
+- [Flexbox Defense](http://www.flexboxdefense.com/)
+
+> 💡 Both games provide you with most of the information that you need to win.
+
+## Flexbox Exercises
+
+Try to solve the following flexbox exercises
+
+- [Navigation Exercise](https://codesandbox.io/s/navigation-exercise-gp5owm?file=/styles.css)
+- [Profile Exercise](https://codesandbox.io/s/profile-exercise-fdqz61?file=/styles.css)
+
+## Apply Flexbox to your personal website
+
+- Where can you benefit from using flexbox in your app?
 
 ---
 
