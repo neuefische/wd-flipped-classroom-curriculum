@@ -111,6 +111,22 @@ to keep an eye on.
 | 0:30     | 16:30 - 17:00 | Recap                    |
 | 2:00     | 17:00 - 19:00 | Independent project time |
 
+### Alternative-2:
+
+| duration | time          | content                  |
+| -------- | ------------- | ------------------------ |
+| 0:15     | 9:00 - 9:15   | Student Recap            |
+| 0:45     | 9:15 - 10:00  | Session                  |
+| 1:30     | 10:00 - 11:30 | Active Learning          |
+| 0:30     | 11:30 - 12:00 | Recap                    |
+| 1:00     | 12:00 - 13:00 | Break                    |
+| 0:45     | 13:00 - 13:45 | Guest Lecture            |
+| 0:30     | 13:45 - 14:15 | Breather                 |
+| 0:45     | 14:15 - 15:00 | Session                  |
+| 1:30     | 15:00 - 16:30 | Active Learning          |
+| 0:30     | 16:30 - 17:00 | Recap                    |
+| 2:00     | 17:00 - 19:00 | Independent project time |
+
 ## Sessions
 
 Sessions are structured not by week - but by days. It does not matter which session is being held on
