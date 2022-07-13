@@ -59,23 +59,33 @@ This property is very useful for creating responsive layouts. With the property 
 
 ## Flexbox Games
 
-Try to master one of these two flexbox games:
+Master one of these two flexbox games:
 
 - [Flexbox Froggy](https://flexboxfroggy.com)
+
+  -- or if you know tower defense games --
+
 - [Flexbox Defense](http://www.flexboxdefense.com/)
 
 > 💡 Both games provide you with most of the information that you need to win.
 
 ## Flexbox Exercises
 
-Try to solve the following flexbox exercises
+Solve the following flexbox exercises
 
 - [Navigation Exercise](https://codesandbox.io/s/navigation-exercise-gp5owm?file=/styles.css)
 - [Profile Exercise](https://codesandbox.io/s/profile-exercise-fdqz61?file=/styles.css)
 
-## Apply Flexbox to your personal website
+## Personal website
 
-- Where can you benefit from using flexbox in your app?
+Where can you benefit from using flexbox on your personal website?
+
+You could:
+
+- Center content
+- Place multiple images next to each other
+- Display your tech-stack-list horizontally
+- Make content responsively wrap to the next line
 
 ---
 
