@@ -68,15 +68,26 @@ naming a variable:
 
 ## Math & Operators
 
-- Introduce math as part of Javascript
-- What are the different types of operators, how do we use them, and what do we use them for?
-  - `arithmetic operations`
-  - operators: `+, -, /, *, **`
-  - `remainder % `(caution: works correctly only with positive, not with negative numbers)
-  - operator precedence
-  - assignment operators: `+=, -=, *=, /=`
-  - increment and decrement operators: `++, --`
-  - type conversion
+As a programmer you sometimes have to use mathematical operations to calculate certain widths or
+positions of elements. You can perform math calculations by using operators. Operators calculate
+values based on one or two expressions. Usually they are written as `expression1` `operator`
+`expression2`. For example `3 + 2`, 3 is the first expression, + is the operator and 2 is the second
+expression. When this line of code is executed, the statement is replaced by the result of the
+operator, 5.
+
+| operator | effect                                                                                                                                                                                                                                                                                        |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `+`      | Adds two numbers together. ❗️ There is another + operator in JavaScript, that links two strings together: "a" + "b" -> "ab". When 'adding' a number and a string, the number is converted to a string: "a" + 6 -> "a6". Make sure that both variables are numbers if you want to add them.   |
+| `-`      | Subtracts two numbers                                                                                                                                                                                                                                                                         |
+| `*`      | Multiplies two numbers                                                                                                                                                                                                                                                                        |
+| `/`      | Divides two numbers                                                                                                                                                                                                                                                                           |
+| `**`     | Exponentiates two numbers: `2**4 -> 16`                                                                                                                                                                                                                                                       |
+| `%`      | The remainder or modulus. Gives you what remains after a whole number division: `15 % 12 -> 3`. A real live example for this is time on a clock. After noon you don't reach 13 am but you start over at 1pm. At midnight you don't have 15pm but but 3am. It is whatever hour we have mod 12. |
+
+- operator precedence
+- assignment operators: `+=, -=, *=, /=`
+- increment and decrement operators: `++, --`
+- type conversion
 - [Exercises 1 & 2](exercises.md#exercise-1)
 -
 
