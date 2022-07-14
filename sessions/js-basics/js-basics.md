@@ -14,13 +14,13 @@ In this session you will learn:
 
 ## Introduction
 
-[Some introduction goes here].
+To put it simple at the beginning: With JavaScript, we bring interaction to our website. That's
+enough for the moment, so let's click buttons and change colors!
 
 ## Connect a JavaScript file
 
-Let us bring some interaction to our website! In order to do this, we create an `index.js` file at
-the root of our project. Now, we need to link it with the `index.html` by adding a `script` tag to
-the head of the `index.html`:
+In order to do this, we create an `index.js` file at the root of our project. Now, we need to link
+it with the `index.html` by adding a `script` tag to the head of the `index.html`:
 
 ```
 <head>
@@ -149,11 +149,59 @@ You can be sure to only see the **output of your current code** - so be focussed
 
 ## Add Interaction: `.addEventListener()`
 
-- Define `events`
-- Explain `addEventListener`
-- Show in Codepen an example where you use a `click event` with `addEventListener`:
-  - Start with `console.log('click')`
-  - Introduce `classList` with `add()`, `remove()` and `toggle()`
+Events are, among other things, actions caused by the user when interacting with your application.
+You can react to these events. For example, if the user clicks a button on a webpage, you might want
+to react to that action by changing the color of a heading.
+
+Consider the following content of an HTML file:
+
+```
+<h1 data-js="heading">My color changes sometimes!</h1>
+<button data-js="button-color">Change color</button>
+```
+
+We want to change the color of the heading if the user clicks the button. First, we need to query
+both elements:
+
+```
+const heading = document.querySelector('[data-js="heading"]');
+const colorButton = document.querySelector('[data-js="button-color"]');
+```
+
+Second, we react to the `click event` of the button by adding an `event listener` with the help of
+`.addEventListener()`to the button:
+
+```
+colorButton.addEventListener('click', () => {
+  console.log('clicked');
+});
+```
+
+We need to specify the click event within the braces (`'click'`) and within the curly braces, we
+check that everything works via a `console.log()`. Now, when pressing the "Change color" button, the
+string "clicked" is logged to the console. Great work, our first event listener! 🎉
+
+The last step is to change the color of the heading. To do this, we write a new class in styles.css,
+e.g. `.highlight { color: hotpink; }`. Now, we add this class to the `h1` element when we click the
+button:
+
+```
+colorButton.addEventListener('click', () => {
+  heading.classList.add('highlight);
+});
+```
+
+We make use of two concepts here: The element behind the constant "heading" has a `classList`
+property we can reach via `heading.classList`. This `classList` has an `add()` method we can use to
+add another class to an HTML element. We need to pass the name of the class within the braces as a
+string with quotation marks.
+
+Congratulations, you are now able to add a class to any HTML element and change the styling!
+
+There are two other interesting methods here:
+
+- `heading.classList.remove('highlight')` removes the class called "highlight"
+- `heading.classList.toggle('highlight')` toggles the class called "highlight"
 
 ---
 
