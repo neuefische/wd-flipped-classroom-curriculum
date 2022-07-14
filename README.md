@@ -121,8 +121,8 @@ ones more challenging than afternoon sessions.
 | 16  | JS Array Methods             | npm basics                                    |                                                       |
 | 17  | JS Array Methods 2           | JS Structure                                  |                                                       |
 | 18  | JS Fetch                     | Async Await (neu)                             |                                                       |
-| 19  | Git Advanced                 | Linting Basics & Debugging (with console.log) |                                                       |
-| 20  | `Repetition Project`         | ES Next                                       |                                                       |
+| 19  | Git Advanced                 | ES Next                                       |                                                       |
+| 20  | `Repetition Project`         | Linting Basics & Debugging (with console.log) |                                                       |
 | 21  | JS Unit Testing              | Buffer                                        |                                                       |
 
 The following is unsorted and there for the sole purpose of showing how much time is left to be
