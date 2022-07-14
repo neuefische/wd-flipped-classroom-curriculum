@@ -238,8 +238,8 @@ information about its content.
 
 ## Keywords for Recap:
 
-HTML = HyperText Markup Language, HTML Element, HTML Tag, HTML Attribute, Semantic HTML, <div>,
-<section>, <>, </>,
+HTML = HyperText Markup Language, HTML Element, HTML Tag, HTML Attribute, Semantic HTML, `<div>`,
+`<section>`, <>, </>,
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
