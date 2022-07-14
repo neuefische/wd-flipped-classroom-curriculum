@@ -4,15 +4,20 @@
 
 In this session you will learn:
 
-- [ ]
+- [ ] what functions are
+- [ ] how to call functions
+- [ ] how to use function parameters
+- [ ] what scope is
 
 ---
 
-## Topic 1
+## Function Declarations
 
-### Sub Topic 1
+## Function Calls
 
-### Sub Topic 2
+## Scope
+
+## Function Input Parameters
 
 ---
 
