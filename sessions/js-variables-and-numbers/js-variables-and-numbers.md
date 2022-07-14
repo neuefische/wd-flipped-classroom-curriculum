@@ -159,3 +159,5 @@ and 1. You don't have to learn these systems by heart, but it is good if you hea
 ---
 
 ## Resources
+
+- [Operator Precedence MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
