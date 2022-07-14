@@ -69,27 +69,86 @@ naming a variable:
 ## Math & Operators
 
 As a programmer you sometimes have to use mathematical operations to calculate certain widths or
-positions of elements. You can perform math calculations by using operators. Operators calculate
-values based on one or two expressions. Usually they are written as `expression1` `operator`
-`expression2`. For example `3 + 2`, 3 is the first expression, + is the operator and 2 is the second
-expression. When this line of code is executed, the statement is replaced by the result of the
-operator, 5.
+positions of elements. Operators calculate values based on one or two expressions.
 
-| operator | effect                                                                                                                                                                                                                                                                                        |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `+`      | Adds two numbers together. ❗️ There is another + operator in JavaScript, that links two strings together: "a" + "b" -> "ab". When 'adding' a number and a string, the number is converted to a string: "a" + 6 -> "a6". Make sure that both variables are numbers if you want to add them.   |
-| `-`      | Subtracts two numbers                                                                                                                                                                                                                                                                         |
-| `*`      | Multiplies two numbers                                                                                                                                                                                                                                                                        |
-| `/`      | Divides two numbers                                                                                                                                                                                                                                                                           |
-| `**`     | Exponentiates two numbers: `2**4 -> 16`                                                                                                                                                                                                                                                       |
-| `%`      | The remainder or modulus. Gives you what remains after a whole number division: `15 % 12 -> 3`. A real live example for this is time on a clock. After noon you don't reach 13 am but you start over at 1pm. At midnight you don't have 15pm but but 3am. It is whatever hour we have mod 12. |
+| operator | precedence | effect                                                                                        |
+| -------- | ---------- | --------------------------------------------------------------------------------------------- |
+| `+`      | 11         | Adds two numbers together.                                                                    |
+| `-`      | 11         | Subtracts two numbers                                                                         |
+| `*`      | 12         | Multiplies two numbers                                                                        |
+| `/`      | 12         | Divides two numbers                                                                           |
+| `**`     | 13         | Exponentiates two numbers: `2 ** 4 -> 16`                                                     |
+| `%`      | 12         | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 -> 2`. |
 
-- operator precedence
-- assignment operators: `+=, -=, *=, /=`
-- increment and decrement operators: `++, --`
-- type conversion
-- [Exercises 1 & 2](exercises.md#exercise-1)
--
+The remainder is a very useful operator, but might be difficult to understand at first. A real live
+example for it is time on a clock. After noon you don't reach 13 am but you start over at 1pm. 3
+hours after midnight you don't have 15pm (or 27h in the 24h format) but but 3am. It is whatever hour
+we have mod 12.
+
+You can use this operator to determine if a number is even or odd:
+
+```js
+6 % 2 === 0;
+```
+
+This is always true for even numbers, because after dividing an even number by 2 nothing remains.
+
+```js
+5 % 2 === 1;
+```
+
+This is also true for all odd numbers, because after this division you have always 1 left over.
+
+## Operator Precedence
+
+In maths, some operators have a higher precedence than others. This means that they are performed
+before operators with a lower precedence. For example, multiplication comes before addition. You can
+look up the precedence of the operators in the table above.
+
+## Assignment Operators
+
+You already know the default assignment operator `=`. This operator just assigns the value on the
+right to the element on the left. There are more assignment operators for very common actions like
+increasing a variable by a fixed value.
+
+| operator | effect                                                                                                                 |
+| -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `+=`     | increases the value of the variable on the left about the value on the right: `count += 6` -> count is increased by 6. |
+| `-=`     | decreases the value of the variable on the left about the value on the right.                                          |
+| `*=`     | Multiplies the variable on the left with the value on the right.                                                       |
+| `/=`     | Divides the variable on the left with the value on the right.                                                          |
+| `++`     | Increments the value of a variable by one: `count++` -> count is increased by one                                      |
+| `--`     | Decrements the value of a variable by one: `count--` -> count is decreased by one                                      |
+
+> 💡 The precedence of each assignment operator is 2.
+
+## Type Conversion
+
+When you use an operator with a variable with an unfitting type, javascript will automatically
+convert this variable into a fitting type. For example:
+
+```js
+4 / "2" -> 4 / 2
+```
+
+There is no "/" operator for strings, so JavaScript converts the string into a number if possible.
+This is also true for boolean operators which we will cover in a later session.
+
+> ❗️ There is another + operator in JavaScript, that links two strings together: "a" + "b" -> "ab".
+> When 'adding' a number and a string, the number is converted to a string: "a" + 6 -> "a6". Make
+> sure that both variables are numbers if you want to add them.
+
+## Number Systems
+
+When working with computers it is sometimes useful to work with a different number system than the
+standard 10 digit system, since a computer only understands `binary` numbers composed of only 0
+and 1. You don't have to learn these systems by heart, but it is good if you heard about them.
+
+- `decimal system`: the standard numbers, has 10 symbols "0" to "9".
+- `binary system`: only has 2 symbols "0" and "1". If you want to write a bigger number than 1, you
+  add another digit: 2 -> "10" in binary.
+- `hexadecimal system`: has 16 symbols "0" to "9" and "a" to "f". If you want to write a number
+  bigger than 15 you add another digit: 12 -> "c" in hexadecimal.
 
 # Challenges
 
