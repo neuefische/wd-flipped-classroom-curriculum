@@ -84,7 +84,7 @@ There are different CSS selectors you can use to style elements. The most common
 
 ## CSS Properties
 
-There are a lot of CSS proporties and you will discover new ones every day. Therefore the following
+There are a lot of CSS properties and you will discover new ones every day. Therefore the following
 list shows only a few examples:
 
 | Property           | Effect                                           |
@@ -166,6 +166,17 @@ You can include custom fonts in two ways:
   ```css
   @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;			400;500;700&display=swap');
   ```
+- use the provided HTML code to add the font via the `link` element in the `head` of your HTML file:
+
+  ```html
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  	href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap"
+  	rel="stylesheet"
+  />
+  ```
+
 - download any font and include it as a `font-family`
 
   ```css
@@ -239,4 +250,5 @@ Start styling your personal website and make it absolutely fabulous. ✨
 - [MDN: CSS - First Steps](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
 - [Styling text](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text)
 - [CSS Tricks: Box-sizing](https://css-tricks.com/box-sizing/)
+- [Josh Comeau: Surprising truth about pixels and accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
 - [rem/px calculator](https://nekocalc.com/de/px-zu-rem-umrechner)
