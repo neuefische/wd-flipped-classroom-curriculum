@@ -152,7 +152,7 @@ The real advantage of arrow functions are possible shorter notations when certai
    	return input1;
    };
    ```
-2. implicit return statements: If the function only returns an expression, the curly brackets and
+2. implicit return statements: If the function only of a return statement, the curly brackets and
    the return keyword can be omitted:
    ```js
    const myFunction = (input1, input2) => {
