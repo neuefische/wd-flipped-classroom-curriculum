@@ -22,7 +22,7 @@ enough for the moment, so let's click buttons and change colors!
 In order to do this, we create an `index.js` file at the root of our project. Now, we need to link
 it with the `index.html` by adding a `script` tag to the head of the `index.html`:
 
-```
+```html
 <head>
 	...
 	<script src="./index.js" defer></script>
@@ -41,7 +41,7 @@ elements are loaded. Otherwise, the JavaScript we write would not work.
 In order to add some interaction to our website, we first need to make the relevant HTML element
 available for JavaScript. Have a look at the following example:
 
-```
+```html
 <body>
 	<h1>My color changes sometimes!</h1>
 	<button>Change color</button>
@@ -51,7 +51,7 @@ available for JavaScript. Have a look at the following example:
 We want the color of the `h1` to change if we click on the button. The first step is to grab the
 `h1` and the `button` element inside of our `index.js`:
 
-```
+```js
 const heading = document.querySelector('h1');
 const button = document.querySelector('button');
 ```
@@ -82,14 +82,13 @@ buttons and want to find the third one, this will not work.
 
 Luckily, you can search for attributes of HTML elements as well. Consider the following code:
 
-```
-<button>Change color</button>
-<button class="time-button" data-js="button-time">Change time</button>
+```html
+<button>Change color</button> <button class="time-button" data-js="button-time">Change time</button>
 ```
 
 If we want to find the second button, we can use this code:
 
-```
+```js
 const timeButton = document.querySelector('[data-js="button-time"]');
 ```
 
@@ -110,7 +109,7 @@ To log something to the console, we use the globally available `console` object 
 method. If we want to check whether the query for our `timeButton` was successful, we need to add
 this code **below our query**:
 
-```
+```js
 const timeButton = document.querySelector('[data-js="button-time"]');
 console.log(timeButton);
 ```
@@ -124,7 +123,7 @@ We need to open the console first:
 
 Now, we can see the following output in the console:
 
-```
+```html
 <button class="time-button" data-js="button-time">Change time</button>
 ```
 
@@ -155,7 +154,7 @@ to react to that action by changing the color of a heading.
 
 Consider the following content of an HTML file:
 
-```
+```html
 <h1 data-js="heading">My color changes sometimes!</h1>
 <button data-js="button-color">Change color</button>
 ```
@@ -163,7 +162,7 @@ Consider the following content of an HTML file:
 We want to change the color of the heading if the user clicks the button. First, we need to query
 both elements:
 
-```
+```js
 const heading = document.querySelector('[data-js="heading"]');
 const colorButton = document.querySelector('[data-js="button-color"]');
 ```
@@ -171,9 +170,9 @@ const colorButton = document.querySelector('[data-js="button-color"]');
 Second, we react to the `click event` of the button by adding an `event listener` with the help of
 `.addEventListener()`to the button:
 
-```
+```js
 colorButton.addEventListener('click', () => {
-  console.log('clicked');
+	console.log('clicked');
 });
 ```
 
@@ -185,9 +184,9 @@ The last step is to change the color of the heading. To do this, we write a new 
 e.g. `.highlight { color: hotpink; }`. Now, we add this class to the `h1` element when we click the
 button:
 
-```
+```js
 colorButton.addEventListener('click', () => {
-  heading.classList.add('highlight);
+	heading.classList.add('highlight');
 });
 ```
 
