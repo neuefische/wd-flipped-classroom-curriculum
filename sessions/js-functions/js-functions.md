@@ -14,12 +14,13 @@ In this session you will learn:
 ## Function Declarations and Function Calls
 
 Functions are an extremely useful tool whenever you want to perform the same task multiple times.
-They are blocks of code that can be executed multiple times. A good analogy for functions is a
-recipe: a task like baking a cake is written down in a recipe. This cake can then be baked simply by
-looking up that recipe and following the instructions.
+They are **blocks of code** that can be executed any number of times. A good analogy for functions
+is a recipe: a task like baking a cake is written down in a recipe. This cake can then be baked
+simply by looking up that recipe and following the instructions.
 
-A `function declaration` is exactly this set of instructions. You can then execute the instructions,
-aka baking the cake, by `calling the function`.
+A `function declaration` is exactly this set of instructions. But a declaration does nothing by
+itself (you cannot eat the recipe, but only the cake). You can then execute the instructions, aka
+baking the cake, by `calling the function`.
 
 A `function declaration` looks like this:
 
@@ -29,13 +30,14 @@ function aSuperUsefulFunction() {
 }
 ```
 
-Everything between the curly brackets will be executed on a function call:
+Everything between the curly brackets will be executed **whenever the function is called** in
+another part of the code:
 
 ```js
-aSuperUsefulFunction();
+aSuperUsefulFunction(); // executes whatever is specified in the function declaration.
 ```
 
-For example the function
+For example:
 
 ```js
 function logThreeTimes() {
@@ -43,13 +45,15 @@ function logThreeTimes() {
 	console.log('second');
 	console.log('third');
 }
-```
 
-can be called like this:
-
-```js
 logThreeTimes();
 // will log:
+// first
+// second
+// third
+
+logThreeTimes();
+// will log again:
 // first
 // second
 // third
