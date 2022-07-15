@@ -5,7 +5,7 @@
 In this session you will learn:
 
 - [ ] the difference between `var`, `let` and `const`
-- [ ] what data types exist in JavaScript
+- [ ] what kind of data types exist in JavaScript
 - [ ] how to use basic math operations in JavaScript
 
 ---
@@ -20,13 +20,14 @@ this variable. You can use three different keywords to declare a variable:
 - `let` - declares a variable, the value can be changed. Only used when reassigning a new value is
   necessary.
 
-Normally the keyword const is used to declare a value.
+Normally the keyword `const` is used to declare a value.
 
 ```js
 const aNewVariable = 1234;
 ```
 
-Only used when you need to reassign a value, for example when you want to increase a counter.
+The keyword `let` is only used when you need to reassign a value, for example when you want to
+increase a counter.
 
 ```js
 let counter = 0;
@@ -81,9 +82,9 @@ positions of elements. Operators calculate values based on one or two expression
 | `%`      | 12         | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 -> 2`. |
 
 The remainder is a very useful operator, but might be difficult to understand at first. A real live
-example for it is time on a clock. After noon you don't reach 13 am but you start over at 1pm. 3
-hours after midnight you don't have 15pm (or 27h in the 24h format) but but 3am. It is whatever hour
-we have mod 12.
+example would be time on a clock. After noon, you don't reach 13am but you start over at 1pm. 3
+hours after midnight you don't have 15pm (or 27h in the 24h format), but 3am. It is whatever hour we
+have mod 12.
 
 You can use this operator to determine if a number is even or odd:
 
@@ -140,7 +141,7 @@ This is also true for boolean operators which we will cover in a later session.
 
 ## Number Systems
 
-When working with computers it is sometimes useful to work with a different number system than the
+When working with computers, it is sometimes useful to work with a different number system than the
 standard 10 digit system, since a computer only understands `binary` numbers composed of only 0
 and 1. You don't have to learn these systems by heart, but it is good if you heard about them.
 
