@@ -33,8 +33,8 @@ The `script` tag has two attributes: `src="./index.js"` contains the relative pa
 file. The `defer` attribute tells the browser to delay the loading of the script until all HTML
 elements are loaded. Otherwise, the JavaScript we write would not work.
 
-> 💡 Alternative: You can also put the `script` tag after the body element; if doing so, the `defer`
-> attribute is not necessary.
+> 💡 Alternative: You can also put the `script` tag at the end of the body element; if doing so, the
+> `defer` attribute is not necessary.
 
 ## Grabbing HTML Elements: `.querySelector()`
 
@@ -77,13 +77,14 @@ so, the `h1` element becomes available in our JavaScript file.
 ### More specific queries are better
 
 Up to now, we used the HTML element name (e.g. `button`) for querying. In most cases, this is not
-useful, because ``querySelector` only finds **the first element** in your file. If you have multiple
+useful, because `querySelector` only finds **the first element** in your file. If you have multiple
 buttons and want to find the third one, this will not work.
 
 Luckily, you can search for attributes of HTML elements as well. Consider the following code:
 
 ```html
-<button>Change color</button> <button class="time-button" data-js="button-time">Change time</button>
+<button>Change color</button>
+<button class="time-button" data-js="button-time">Change t ime</button>
 ```
 
 If we want to find the second button, we can use this code:
@@ -96,9 +97,9 @@ We search for an attribute via square brackets `[]`. We use a
 [custom data-js attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 with the value `button-time` to find the second button.
 
-> 💡 We could also search for the class attribute via `.querySelector('[data-js="time-button"]')`.
-> However, it is a better practice to separate CSS and JS: use the `class` attribute for CSS and a
-> `data-js` attribute for JS.
+> 💡 We could also search for the class attribute via `.querySelector('.time-button')`. However, it
+> is a better practice to separate CSS and JS: use the `class` attribute for CSS and a `data-js`
+> attribute for JS.
 
 ## Check your JavaScript: `.console.log()`
 
@@ -134,6 +135,7 @@ mentioned above, the `querySelector` returns **the entire element** with both at
 > 💡 If you open the console in the browser (instead of Codesandbox), you will have a small arrow
 > next to the button output. If you click on this arrow, you will see a long list of all properties
 > which are also available. ![Properties of an HTML element](assets/console_element_properties.png)
+>
 > These "hidden" properties are the reason why we can do magic with JavaScript!
 
 ### Useful Addition: `console.clear()`
@@ -141,16 +143,16 @@ mentioned above, the `querySelector` returns **the entire element** with both at
 Have you noticed the `console.clear()` in the first line of the Codesandbox example above? This
 method clears the console, i.e. all outputs before this line are deleted.
 
-When put at the beginning of a file, you can be sure the console is cleared every time you reload
-the page. This is very useful when you practice JavaScript, because all "older" outputs are deleted.
-You can be sure to only see the **output of your current code** - so be focussed by using
+When you start your code with this line, you can be sure the console is cleared every time you
+reload the page. This is very useful when you practice JavaScript, because all "older" outputs are
+deleted. You can be sure to only see the **output of your current code** - so be focussed by using
 `console.clear()`!
 
 ## Add Interaction: `.addEventListener()`
 
 Events are, among other things, actions caused by the user when interacting with your application.
-You can react to these events. For example, if the user clicks a button on a webpage, you might want
-to react to that action by changing the color of a heading.
+You can link an action to these events. For example, if the user clicks a specific button on a
+webpage, you might want it to trigger a color change of a heading.
 
 Consider the following content of an HTML file:
 
