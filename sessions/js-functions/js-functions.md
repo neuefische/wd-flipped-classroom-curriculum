@@ -22,22 +22,28 @@ A `function declaration` is exactly this set of instructions. But a declaration 
 itself (you cannot eat the recipe, but only the cake). You can then execute the instructions, aka
 baking the cake, by `calling the function`.
 
-A `function declaration` looks like this:
+The declaration consists of 4 parts:
+
+1. the keyword function
+2. a name chosen by the programmer (must start with a lowercase letter) Everything between the
+3. a pair of round brackets (more about them later)
+4. the `function body`: a pair of curly brackets, containing one or more lines of code.
 
 ```js
 function aSuperUsefulFunction() {
-	... //lines of code that will be executed on a function call
+	... //the function body: lines of code that will be executed on a function call
 }
 ```
 
-Everything between the curly brackets will be executed **whenever the function is called** in
-another part of the code:
+The `function call` on the other hand is just the function name followed by a pair of round
+brackets.
 
 ```js
 aSuperUsefulFunction(); // executes whatever is specified in the function declaration.
 ```
 
-For example:
+Everything in the function body will be executed **whenever the function is called** in another part
+of the code. For example:
 
 ```js
 function logThreeTimes() {
