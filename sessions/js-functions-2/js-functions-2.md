@@ -35,8 +35,8 @@ const secondSum = add3Numbers(4, 123, 33);
 // the return value is now stored in "secondSum", namely 160
 ```
 
-> 💡 An expression is anything that evaluates to a value: a variable, a math operation like `2 + 3`
-> or even another function call!
+> 💡 An expression is anything that evaluates to a value: a variable, a hardcoded value like `true`
+> or `6`, a math operation like `2 + 3` or even another function call!
 
 By this, we can outsource computations and / or decision processes and continue using the returned
 value in the program.
