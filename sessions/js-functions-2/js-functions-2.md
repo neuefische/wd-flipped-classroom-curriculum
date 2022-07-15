@@ -10,7 +10,7 @@ In this session you will learn:
 
 ---
 
-## Return statements
+## Return Statements
 
 Functions are an incredibly versatile and central tool in any programming language. We already
 learned how to pass values into a function with input parameters. But a function can also return a
@@ -35,14 +35,16 @@ const secondSum = add3Numbers(4, 123, 33);
 // the return value is now stored in "secondSum", namely 160
 ```
 
-> 💡 An expression is anything that evaluates to a value: a variable, a hardcoded value like `true`
-> or `6`, a math operation like `2 + 3` or even another function call!
+> 💡 An expression is anything that produces a value: a variable, a hardcoded value like `true` or
+> `6`, a math operation like `2 + 3` or even another function call!
+> [This article](https://www.joshwcomeau.com/javascript/statements-vs-expressions/) explains this in
+> greater depth.
 
 By this, we can outsource computations and / or decision processes and continue using the returned
 value in the program.
 
-A function can return only one value, but can have multiple return statements, in combination with
-if else statements for example:
+A function can return only one expression value, but can have multiple return statements, in
+combination with if else statements for example:
 
 ```js
 function checkInputLength(inputString) {
@@ -54,9 +56,78 @@ function checkInputLength(inputString) {
 }
 ```
 
-### Sub Topic 1
+## Early Return Statements
 
-### Sub Topic 2
+As soon as a return statement is reached in a function call, the function execution is ended. The
+following console.log is therefore never reached:
+
+```js
+function testFunction() {
+	return 'a returned string';
+
+	console.log('I am never logged in the console.');
+}
+```
+
+This behavior can be used to our advantage as early return statements. Sometimes we want to execute
+certain parts of our code only if a condition applies. We can check this with an if else statement:
+
+```js
+function setBackgroundColor(color) {
+	if (color.startsWith('#')) {
+		body.style.backgroundColor = color;
+	}
+}
+```
+
+The problem with this style is, that as soon we have more conditions the code becomes heavily
+nested:
+
+```js
+function setBackgroundColor(color) {
+	if (typeof color === 'String') {
+		if (color.startsWith('#')) {
+			if (color.length >= 7) {
+				body.style.backgroundColor = color;
+			}
+		}
+	}
+}
+```
+
+This code gets really hard to read. We can prevent this nesting by terminating the function with an
+early return statement:
+
+```js
+function setBackgroundColor(color) {
+	// first condition
+	if(typeOf color !== 'String') {
+		return;
+	}
+
+	// second condition
+	if(!color.startsWith('#')) {
+		return;
+	}
+
+	// third condition
+	if(color.length < 7) {
+		return;
+	}
+
+	// only if all 3 conditions are passed the final line of code is executed.
+	body.style.backgroundColor = color;
+}
+
+```
+
+This way of writing the code is more readable
+
+💡 Hint: A return statement can be left empty, the returned value is then `undefined`.
+
+## Arrow Function Expressions
+
+## Implicit Return Statements
 
 ---
 
@@ -69,3 +140,5 @@ function checkInputLength(inputString) {
 ---
 
 ## Resources
+
+- [Statements vs Expressions by Josh Comeau](https://www.joshwcomeau.com/javascript/statements-vs-expressions/)
