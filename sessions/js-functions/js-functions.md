@@ -132,15 +132,20 @@ function printLetterToLisa() {
 }
 ```
 
-You can **generalize** this action by using `input parameters`. They function like variables, which
-get their value only when the function is called. For each function call the value is assigned anew.
-inputs are declared inside the round brackets:
+You can **generalize** this action by using `input parameters`. They function like variables, the
+name is chosen by the programmer and they are defined inside the round brackets of the function
+declaration:
 
 ```js
 function printLetter(name) {
 	console.log('Hi ' + name + ', hope you are fine. Love, Johnny');
 }
+```
 
+In the function declaration the value of a parameter is not defined yet. Their value is specified
+"on demand" when the function is called. For each function call the value is assigned anew:
+
+```js
 printLetter('Marc');
 // Hi Marc, hope you are fine. Love, Johnny
 
