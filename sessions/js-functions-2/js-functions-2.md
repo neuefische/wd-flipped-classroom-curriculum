@@ -127,7 +127,54 @@ This way of writing the code is more readable
 
 ## Arrow Function Expressions
 
-## Implicit Return Statements
+Next to the classic function declaration, JavaScript has a second way to write functions as
+`arrow function expressions`:
+
+```js
+const myFunction = (input1, input2) => {
+	console.log(input1);
+	return input1 + input2;
+};
+```
+
+The function is now saved like a variable with the keyword `const` and the name on the left side of
+an equals sign. The input arguments are then written normally in round brackets followed by an fat
+arrow `=>`. Then the function body is written in curly brackets.
+
+### Implicit Return Statements
+
+The real advantage of arrow functions are possible shorter notations when certain criteria apply:
+
+1. You can omit the round brackets with only one input:
+   ```js
+   const myFunction = input1 => {
+   	console.log(input1);
+   	return input1;
+   };
+   ```
+2. implicit return statements: If the function only returns an expression, the curly brackets and
+   the return keyword can be omitted:
+   ```js
+   const myFunction = (input1, input2) => {
+   	return input1 + input2;
+   };
+   ```
+   can be rewritten as:
+   ```js
+   const myFunction = (input1, input2) => input1 + input2;
+   ```
+
+> 💡 This shorthand notation comes in handy as soon as we work with callback functions in a few
+> days. So try to remember this feature.
+
+> 💡 Maybe you remember the syntax of the `addEventListener` method. We encountered these arrow
+> functions there already!
+>
+> ```js
+> element.addEventListener('click',() => {
+> 	...
+> })
+> ```
 
 ---
 
