@@ -4,10 +4,10 @@
 
 In this session you will learn:
 
-- [ ] what functions are
+- [ ] how to write functions in JavaScript
 - [ ] how to call functions
 - [ ] how to use function parameters
-- [ ] what scope is
+- [ ] what 'scope' is
 
 ---
 
@@ -24,10 +24,12 @@ baking the cake, by `calling the function`.
 
 The declaration consists of 4 parts:
 
-1. the keyword function
-2. a name chosen by the programmer (must start with a lowercase letter) Everything between the
-3. a pair of round brackets (more about them later)
+1. the keyword `function`
+2. a `name for the function`, that is chosen by the programmer (must start with a lowercase letter)
+3. a pair of `round brackets` (more about them later)
 4. the `function body`: a pair of curly brackets, containing one or more lines of code.
+
+A function declaration could look like this:
 
 ```js
 function aSuperUsefulFunction() {
@@ -36,7 +38,7 @@ function aSuperUsefulFunction() {
 ```
 
 The `function call` on the other hand is just the function name followed by a pair of round
-brackets.
+brackets. It could look like this:
 
 ```js
 aSuperUsefulFunction(); // executes whatever is specified in the function declaration.
@@ -70,34 +72,35 @@ executed.
 
 ## Scope
 
-The scope of a function / program determines the accessibility (visibility) of variables. There are
-3 types of scope in JavaScript:
+When learning about functions, it is also important to understand the scope of variables. The scope
+of a variable determines where it is accessible (visible). There are 3 types of scope in JavaScript:
 
 - global scope
 - block scope
 - function scope / local scope
 
-The global scope is the one we already know. Variables are declared on normally in the Javascript
-file, everything can access these variables.
+A variable has `global scope` when it is declared outside of any function, in a Javascript file.
+Global variables are visible and can be accessed from anywhere in a program.
 
-Block scope is when you wrap your code in curly brackets. Variables declared inside these brackets
-are sealed away from the rest of the program and only exist **locally** inside this block:
+The `block scope` applies to a variable when you wrap your code in curly brackets. Variables
+declared inside these brackets are sealed away from the rest of the program and only exist
+**locally** inside this block:
 
 ```js
 const count = 10;
 
 // starting a code block
 {
-	const count = 5; // new local variable, does not overwrite global variable
+	const count = 5; // new local variable, does not overwrite the global variable, but is valid within this code block
 	console.log(count); // 5
 }
 
 console.log(count); // 10 - not affected by code block
 ```
 
-The function scope is similar to the block scope, variables defined **inside a function** are not
-visible from the outside. But all variables **outside of the function** can be accessed inside the
-function body. It is a one way road:
+The `function scope`, also known as local scope, is similar to the block scope. Variables defined
+**inside a function** are not accessible from the outside. But all variables **outside of the
+function** can be accessed inside the function body. It is a one way road:
 
 ```js
 const globalVariable = 'some Text';
@@ -132,8 +135,8 @@ function printLetterToLisa() {
 }
 ```
 
-You can **generalize** this action by using `input parameters`. They function like variables, the
-name is chosen by the programmer and they are defined inside the round brackets of the function
+You can **generalize** this action by using `input parameters`. They work like variables. **The name
+is chosen by the programmer** and they are defined inside the round brackets of the function
 declaration:
 
 ```js
@@ -154,9 +157,13 @@ printLetter('Lisa');
 
 printLetter('1234abcd');
 // Hi 1234abcd, hope you are fine. Love, Johnny
+```
 
+You can pass down variables as well:
+
+```js
 const username = 'Eve';
-printLetter(username); // you can pass down variables as well!
+printLetter(username); //
 // Hi Eve, hope you are fine. Love, Johnny
 ```
 
@@ -187,13 +194,13 @@ With the second function call it is very different
 So with every function call we decide what the values of these parameters should be. This helps us
 to `reuse our code`:
 
-1. We define the logic of our code once in a function
-2. Every bit of the code that changes in different circumstances is turned into a parameter and used
-   just like a variable inside the function
-3. On calling the function the value of the parameter is defined
+1. We define the `logic` of our code **once** in a function.
+2. Every bit of the code that changes in different circumstances is turned into a `parameter` and is
+   used just like a variable inside the function.
+3. When calling the function, the value of the parameter is defined within the round brackets
 
 > ❗️ Be careful: The order matters when calling the function and assigning the values to the
-> individual parameters. The first value will be assigned to the first parameter and so on.
+> parameters. The first value will be assigned to the first parameter and so on.
 
 ---
 
