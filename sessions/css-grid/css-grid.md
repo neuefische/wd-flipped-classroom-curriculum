@@ -53,10 +53,13 @@ twice the width than the second one.
 
 ![grid-template](assets/grid-layout.png)
 
-## Cell Positioning
+## Element Positioning
 
-The elements are then inserted into the cells from left to right, starting a new row if the last one
-is filled up.
+After the grid is set up on the container element, its children are placed inside the grid cells
+from left to right, top to bottom. By default, the elements are stretched such that they take up all
+the available cell space.
+
+![grid-template](assets/element-positioning-1.png)
 
 ## Cell Aligning
 
