@@ -1,0 +1,34 @@
+{
+  "name": "web-curriculum-new-format",
+  "version": "1.0.0",
+  "description": "This is the working progress of the new curriculum of the bootcamp Web Development. <br> This update is aiming to improve the way our students learn. <br>",
+  "main": "n.a.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuefische/web-curriculum-new-format.git"
+  },
+  "author": "Thomas Földi",
+  "contributors": [
+    "Felix Kirchhoff",
+    "Merle Makoben",
+    "Marc Bendixen",
+    "Gregor Adams <greg@pixelass.com> (https://pixelass.com)"
+  ],
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/neuefische/web-curriculum-new-format/issues"
+  },
+  "homepage": "https://github.com/neuefische/web-curriculum-new-format#readme",
+  "dependencies": {
+    "husky": "^8.0.1"
+  },
+  "lint-staged": {
+    "*.md": [
+      "npx prettier --write"
+    ]
+  }
+}

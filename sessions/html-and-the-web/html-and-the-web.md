@@ -5,60 +5,79 @@
 In this session you will learn:
 
 - [ ] about client/server dynamics
-- [ ] how HTML works
+- [ ] how to write HTML
 - [ ] what semantic HTML is
 
 ---
 
 ## How the web works
 
-The world wide web is a network of computers that can communicate and exchange information with each other. There are many different protocols that define the rules on how two machines communicate with each other, for example:
+The world wide web is a network of computers that can communicate and exchange information with each
+other. There are many different protocols that define the rules on how two machines communicate with
+each other, for example:
 
 - requesting and displaying html files via `http` (e.g. opening websites with your browser)
-- accessing the shell of another computer via `ssh` or cloning repositories from GitHub via a ssh connection
+- accessing the shell of another computer via `ssh` or cloning repositories from GitHub via a ssh
+  connection
 - sending and receiving e-mails via `TLS/SSL`
 - Accessing files on a server via `FTP` (file transfer protocol)
 
-For now we are focusing on the most commonly used feature of the web: Displaying and interacting with websites. In order to view a specific website you have to:
+For now we are focusing on the most commonly used feature of the web: Displaying and interacting
+with websites. In order to view a specific website you have to:
 
-- get the `address` of the server that provides the html file, i.e. the `IP address` (internet protocol address).
+- get the `address` of the server that provides the html file, i.e. the `IP address` (internet
+  protocol address).
 - send a `GET request` to that address
 - request additional resources (CSS files, images, etc.)
 - `render` the received content (e.g. via a browser)
 
-Most computers connected to the internet can be reached via an `IPv4` address which consists of 4 numbers in a range from 0 to 255 separated by a dot.
+Most computers connected to the internet can be reached via an `IPv4` address which consists of 4
+numbers in a range from 0 to 255 separated by a dot.
 
-> 💡 Enter this IP address in the address bar of your browser and see what happens: `172.217.203.94`.
+> 💡 Enter this IP address in the address bar of your browser and see what happens:
+> `172.217.203.94`.
 
-> 💡 Execute following command in your terminal to get the current IP address of your computer: `curl ipinfo.io`.
+> 💡 Execute following command in your terminal to get the current IP address of your computer:
+> `curl ipinfo.io`.
 
-Just like remembering all the phone numbers of your friends is impractical, remembering the IP addresses of all the websites is not very user friendly. To solve this problem, websites can be reached via a `url` like `https://www.neuefische.de`. The browser then requests the IP address of this website from a `DNS` (domain name server), which is basically a phone book for domains.
+Just like remembering all the phone numbers of your friends is impractical, remembering the IP
+addresses of all the websites is not very user friendly. To solve this problem, websites can be
+reached via a `url` like `https://www.neuefische.de`. The browser then requests the IP address of
+this website from a `DNS` (domain name server), which is basically a phone book for domains.
 
-Then the browser fetches all necessary content for the website like the html file, CSS and JavaScript files, images, fonts, etc. As soon as all files have downloaded, the browser displays the html content, styles it as specified in the style sheet and executes JavaScript code. We can now interact with the website.
+Then the browser fetches all necessary content for the website like the html file, CSS and
+JavaScript files, images, fonts, etc. As soon as all files have downloaded, the browser displays the
+html content, styles it as specified in the style sheet and executes JavaScript code. We can now
+interact with the website.
 
-Below is a sketch of how a typical request of a web page looks like. <br>
-<br>
+Below is a sketch of how a typical request of a web page looks like. <br> <br>
 <img src="./assets/request-response.png" width=600 />
 
 ## HTML basics
 
-HTML (hyper text markup language) is a markup language - similar to markdown. It's a language to express text in a structured way. This structure is represented by html tags which indicate what kind of element is displayed on the website. For example, a headline element is written like this:
+HTML (hyper text markup language) is a markup language - similar to markdown. It's a language to
+express text in a structured way. This structure is represented by html tags which indicate what
+kind of element is displayed on the website. For example, a headline element is written like this:
 
 ```html
 <h1>I am a headline!</h1>
 ```
 
-As you can see, the html element is opened with an h1 tag and closed with a corresponding closing tag. Everything in between these two tags is considered the headline, even other html elements:
+As you can see, the html element is opened with an h1 tag and closed with a corresponding closing
+tag. Everything in between these two tags is considered the headline, even other html elements:
 
 ```html
 <h1>I am a <em>headline!</em></h1>
 ```
 
-Some element can't contain any other elements and therefore don't have a closing tag. These elements like images or inputs are called self closing and are closed immediatly at the end of the tag with a `/` forward slash (see `img` example below).
+Some element can't contain any other elements and therefore don't have a closing tag. These elements
+like images or inputs are called self closing and are closed immediately at the end of the tag with
+a `/` forward slash (see `img` example below).
 
 ### HTML tag attributes
 
-Some elements require some more information in order to function properly. This information is specified via tag attributes. For example:
+Some elements require some more information in order to function properly. This information is
+specified via attributes. For example:
 
 - the source of an image
   ```html
@@ -73,7 +92,8 @@ Some elements require some more information in order to function properly. This 
   <input type="date" />
   ```
 
-Which html element requires which kind of attribute can be looked up in the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
+Which html element requires which kind of attribute can be looked up in the
+[MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
 
 ### Layout of an HTML file
 
@@ -88,12 +108,12 @@ A typical html website consists of two main parts:
 
 ```html
 <html>
-  <head>
-    ...meta information, additional links to css / js files
-  </head>
-  <body>
-    ...elements displayed on the web page
-  </body>
+	<head>
+		...meta information, additional links to css / js files
+	</head>
+	<body>
+		...elements displayed on the web page
+	</body>
 </html>
 ```
 
@@ -101,7 +121,7 @@ A typical html website consists of two main parts:
 
 | element             | meaning                                                             |
 | ------------------- | ------------------------------------------------------------------- |
-| `<head></head>`     | only once per website, indludes meta data and linked files          |
+| `<head></head>`     | only once per website, includes meta data and linked files          |
 | `<body></body>`     | only once per website, includes the html website content            |
 | `<h1></h1>`         | only once per website, a level one heading                          |
 | `<h2></h2>`         | a level two heading                                                 |
@@ -114,7 +134,8 @@ A typical html website consists of two main parts:
 | `<input />`         | an input field, has no closing tag                                  |
 | `<button></button>` | a clickable element, often equipped with some kind of functionality |
 
-> 💡 A comprehensive list of all html elements can be found at the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics).
+> 💡 A comprehensive list of all html elements can be found at the
+> [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics).
 
 ## Structuring a Website
 
@@ -125,7 +146,8 @@ Developers have two main tools to express a meaningful structure in a website:
 
 ### Semantic HTML
 
-Semantic HTML elements not only divide the content of the web page into distinct parts, but also describe the function or purpose of the elements. This has two major benefits:
+Semantic HTML elements not only divide the content of the web page into distinct parts, but also
+describe the function or purpose of the elements. This has two major benefits:
 
 - the HTML becomes more understandable for other developers
 - accessibility tools and search engines can interpret the website
@@ -136,7 +158,7 @@ Therefore, one should use semantic HTML elements whenever possible.
 
 | element                 | meaning                                                                                                             |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `<main></main>`         | only once per website, indludes the main content of the page                                                        |
+| `<main></main>`         | only once per website, includes the main content of the page                                                        |
 | `<section></section>`   | a generic standalone section of a document                                                                          |
 | `<ul></ul>`/`<ol></ol>` | a list of elements with the same structure, only has `<li>` elements as direct children                             |
 | `<nav></nav>`           | a navigation bar                                                                                                    |
@@ -145,30 +167,34 @@ Therefore, one should use semantic HTML elements whenever possible.
 | `<header></header>`     | representing introductory content, typically a group of introductory or navigational aids                           |
 | `<footer></footer>`     | typically contains information about the author of the section, copyright data or links to related documents        |
 
-> 💡 You can find a comprehensive list of semantic html elements in the [MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
+> 💡 You can find a comprehensive list of semantic html elements in the
+> [MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
 
 ### Nesting HTML elements
 
-In general, html elements can include other elements as shown above. This is used to group elements together in a meaningful way. The element containing the other elements is called the `parent element`, which contains one or more `child elements`. The following cases are typical examples of nested elements:
+In general, html elements can include other elements as shown above. This is used to group elements
+together in a meaningful way. The element containing the other elements is called the
+`parent element`, which contains one or more `child elements`. The following cases are typical
+examples of nested elements:
 
 - ```html
   <ul>
-    <li>first item</li>
-    <li>second item</li>
-    <li>third item</li>
+  	<li>first item</li>
+  	<li>second item</li>
+  	<li>third item</li>
   </ul>
   ```
 - ```html
   <article>
-    <h2>Some headline</h2>
-    <p>I am a paragraph...</p>
-    <a href="https://www.github.com"> link to another website. </a>
+  	<h2>Some headline</h2>
+  	<p>I am a paragraph...</p>
+  	<a href="https://www.github.com"> link to another website. </a>
   </article>
   ```
 - ```html
   <button>
-    <img src="arrow.svg" />
-    <span> submit </span>
+  	<img src="arrow.svg" />
+  	<span> submit </span>
   </button>
   ```
   Below is a sketch of how semantic elements can be nested in a web page. <br><br>
@@ -176,46 +202,66 @@ In general, html elements can include other elements as shown above. This is use
 
 ## Emmet
 
-VSCode has a useful tool called Emmet which lets you autocomplete a lot of code by just typing certain snippets and pressing the `Tab` key afterwards. Try these snippets inside an html file and see what happens:
+VSCode has a useful tool called Emmet which lets you autocomplete a lot of code by just typing
+certain snippets and pressing the `Tab` key afterwards. Try these snippets inside an html file and
+see what happens:
 
 - `!`
 - `.highlight`
 - `button#red`
 - ul>li.card\*10
 
-> 💡 You can learn about more emmet commands in [this cheatsheet](https://coolcheatsheet.com/toolkit/emmet)
+> 💡 You can learn about more emmet commands in
+> [this cheat-sheet](https://coolcheatsheet.com/toolkit/emmet)
 
 # Challenges
 
 In this challenge you will start creating your own personal website.
 
-## Personal Website part 1
+## Personal Website: Git Workflow
 
 Setup a local and a remote repository for your project:
 
-1. Create a local git repository. Make your initial commit with an empty HTML file.
-2. Create a remote repository on GitHub and connect your local repository. Use the commands on your GitHub repository page found under `..or push an existing repository from the command line` to push your work.
+1. Create a local git repository. Make your initial commit with an empty HTML file, named
+   index.html.
+2. Create a remote repository on GitHub and connect your local repository. Use the commands on your
+   GitHub repository page found under `..or push an existing repository from the command line` to
+   push your work.
 
-## Personal Website part 2
+## Personal Website: Get started with HTML
 
 Start working on the HTML markup of your personal website.
 
 1. Create and switch to a new feature branch locally.
-   > ❗️ Be careful never to work on your main branch. You should always introduce new features through a feature branch and a pull request.
-2. Think about the content you want to put on your website and its structure. Don't worry about the styling - we will take care of that later.
-3. Start writing your markup, giving your website structure and content. Use semantic HTML whenever possible.
-4. Commit your work on the new feature branch whenever a new part of your website is done.
-5. Create a pull request on GitHub. Send a link to the pull request the course slack channel and request a review.
-6. After committing requested changes and getting an approval for your pull request, merge your feature branch into the main branch.
-   > 💡 Not getting an approval right away for your pull request is absolutely normal. Don't let it discourage you and take it as a chance to learn!
+   > ❗️ Be careful never to work on your main branch. You should always introduce new features
+   > through a feature branch and a pull request.
+2. Think about the content you want to put on your website and its structure. You can use
+   [excalidraw](https://excalidraw.com/) to make a rough draft of your personal website. Don't worry
+   about the styling - we will take care of that later. If you need some ideas, refer to the
+   wireframe down below. Don't spend too long on this task, it more important to start coding. You
+   can always add new features to your draft later.
+3. Start to put your ideas into code, giving your website structure and content. Use semantic HTML
+   whenever possible. Work on one feature (on their respective branch) after another.
+4. Commit your work on the feature branch whenever a new part of your website is done.
+5. Create a pull request on GitHub. Send a link to the pull request the course slack channel and
+   request a review. While you wait, review someone elses pull request.
+6. After committing requested changes and getting an approval for your pull request, merge your
+   feature branch into the main branch.
+   > 💡 Not getting an approval right away for your pull request is absolutely normal. Add or change
+   > your code according to the suggestions. Don't let it discourage you and take it as a chance to
+   > learn!
 
 Here is an example of a structure for a website that you can draw inspiration from:
 
-![Mobile Wireframe](assets/wireframe-desktop.png)
+![Desktop Wireframe](assets/wireframe-desktop.png)
 
 ---
 
-![Desktop Wireframe](assets/wireframe-mobile.png)
+![Mobile Wireframe](assets/wireframe-mobile.png)
+
+> ❗️ Your personal website won't look exactly like the wireframe for now, as many of the features
+> need to be styled (to align horizontally for example). We will improve this during the next days.
+> For now, don't focus on the looks, focus on including all relevant HTML elements.
 
 ---
 
