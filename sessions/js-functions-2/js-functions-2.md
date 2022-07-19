@@ -4,7 +4,7 @@
 
 In this session you will learn:
 
-- [ ] how to return values from a function
+- [ ] what a return statement of a function is and how to use it in your JavaScript functions
 - [ ] what an `early return` is
 - [ ] how to write functions with the `fat arrow notation`
 
