@@ -16,12 +16,4 @@ In this session you will learn:
 
 ---
 
-# Challenges
-
-## Part 1
-
-## Part 2
-
----
-
 ## Resources
