@@ -39,8 +39,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! A numbered list is created with
-`<ol></ol>`.
+Feedback_correct: That's right, "ol" stands for ordered list. Feedback_incorrect: Nope! A numbered
+list is created with `<ol></ol>`.
 
 type: multiple_choice
 
@@ -141,8 +141,8 @@ type: multiple_choice
 
 ### What is the difference between an opening tag and a closing tag?
 
-- [ ] The opening tag has a `/` in front
-- [x] The closing tag has a `/` in front
+- [ ] The opening tag has a `/` in front of the element name
+- [x] The closing tag has a `/` in front of the element name
 - [ ] There is no difference
 - [ ] Closing tags do not exist
 

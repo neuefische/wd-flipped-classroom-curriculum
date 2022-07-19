@@ -44,7 +44,7 @@
 
 - [ ] Provide the [handout](session-name.md) for the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
+- [ ] Divide the students in groups of \_\_\_
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
       can ask the coaches for help at any time / Always help each other / Take a break when you need
       it in the next 1.5h/ Keep an eye on Slack)
