@@ -61,6 +61,21 @@ the available cell space.
 
 ![grid-template](assets/element-positioning-1.png)
 
+Elements can be stretched over multiple cells by using element positioning properties. Each element
+can be set explicit on the columns and rows by using the `column / row index` (see picture above).
+Each grid line can be referenced by two indexes, one positive counting from left to right, and one
+negative counting from right to left.
+
+| Property    | Effect                                                                                                                                            |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| grid-column | Takes two values separated by a '/' defining the starting and ending column line. Can also be defined by `grid-column-start` / `grid-column-end`. |
+| grid-row    | Takes two values separated by a '/' defining the starting and ending row line. Can also be defined by `grid-row-start` / `grid-row-end`.          |
+| grid-area   | Takes 4 values separated by'/' defining the starting and ending row and column lines. Combines `grid-column` and `grid-rows`.                     |
+
+![grid-positioning](assets/element-positioning-2.png)
+
+> ❗️ Positioning properties are set on the individual elements, not on the container!
+
 ## Cell Aligning
 
 ## `Auto-Fill` and `Minmax`
