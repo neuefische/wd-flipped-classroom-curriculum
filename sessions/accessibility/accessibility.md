@@ -107,12 +107,11 @@ labelling element use the aria-labelledby attribute:
 - Make sure all your interactive elements have an accessible name
 - Use plain and simple language
 
-# Challenges
-
-## Part 1
-
-## Part 2
-
 ---
 
 ## Resources
+
+- [MDN: Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+- [The A11y Project: Checklist ](https://www.a11yproject.com/checklist/)
+- [Web Accessibility Initiative: Introduction to Web Accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/)
+- [Web Accessibility for Designers](https://webaim.org/resources/designers/)
