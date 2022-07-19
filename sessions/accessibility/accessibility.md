@@ -65,9 +65,47 @@ expressed by HTML alone you can add the ARIA role attribute like in the followin
 ### ARIA States and Properties
 
 ARIA states and properties refer to similar features. They provide specific information on elements,
-their state and relationship to other elements.
+their state and relationship to other elements. Assistive technology like screen readers use them to
+present content to users.
 
----
+You can find a list of ARIA states and properties in the
+[mdn ARIA Attributes docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes).
+
+Let us look at two important ARIA attributes that you should use to ensure that all interactive
+elements have an accessible name:
+
+`aria-label`: Defines a label for an interactive element. Use it when the accessible name of an
+element is missing, for example when a button contains no text but only an icon:
+
+```
+<button aria-label="Close" onclick="...">
+  <svg ...><path .../></svg>
+</button>
+```
+
+`aria-labelledby`: Identifies which element labels the element it is applied to. Some elements have
+a native way of referencing another element with its label (for example input elements and label
+elements which we will come to at a later point in time). If there is no native way to reference a
+labelling element use the aria-labelledby attribute:
+
+```
+<nav aria-labelledby="title">
+  <h2 id="title">Products</h2>
+  ...
+</nav>
+```
+
+### Accessibility Quick Wins
+
+- Use alt attributes on your images:
+
+```
+<img src="..." alt="funny looking cat with hat">
+```
+
+- Use high contrast colors so your content is shown clearly on all devices.
+- Make sure all your interactive elements have an accessible name
+- Use plain and simple language
 
 # Challenges
 
