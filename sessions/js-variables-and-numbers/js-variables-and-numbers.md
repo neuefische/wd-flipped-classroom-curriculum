@@ -151,12 +151,6 @@ and 1. You don't have to learn these systems by heart, but it is good if you hea
 - `hexadecimal system`: has 16 symbols "0" to "9" and "a" to "f". If you want to write a number
   bigger than 15 you add another digit: 12 -> "c" in hexadecimal.
 
-# Challenges
-
-## Part 1
-
-## Part 2
-
 ---
 
 ## Resources
