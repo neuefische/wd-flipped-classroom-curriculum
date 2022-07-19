@@ -13,13 +13,12 @@ There are two things to consider when assigning yourself to a ticket in the proj
 ---
 
 - `Reviews` are usually the "quickest" task, when you have an hour in between.
+- `Handouts` are usually the most time intensive, because we want them to be as complete as possible
+- `Challenges` are nice tasks when you feel comfortable with a topic or have experience with
 - `Session-guides` can in many cases take advantage of existing session material. Remember: One
   session should be a maximum of 45min, so think of which topics can be learned by reading the
-  handout instead of discussing it during the session.
-- `Challenges` are nice tasks when you feel comfortable with a topic or have experience with
-  exercises of this session.
-- `Handouts` are usually the most time intensive, because we want them to be as complete as possible
-  (of course they still need to be feasible).
+  handout instead of discussing it during the session. exercises of this session. (of course they
+  still need to be feasible).
 - `quiz.md` files need to be copied from our old curriculum. You can find them in the session folder
   in the `web-pool-2022` repository. Make sure that the questions still fit the content of the
   session. If there is no quiz.md, or you work on a new session, just create a new quiz.md and add
@@ -35,10 +34,16 @@ to keep an eye on.
 1. Go into the project
    [Curriculum Roadmap](https://github.com/neuefische/web-curriculum-new-format/projects/1)
 2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
-   one from the 2-week milestone column)
+   one from the 2-week milestone column). You have two options there:
+   1. Review a part of the session (handout, challenges or session guide). For this, go to the
+      linked Pull Request and review the text. Add changes with the `suggest changes` function.
+   2. Write a part yourself. Go into the respective branch of the session, e.g. css-basics, and work
+      on the topic that needs to be done next. Create a PR when finished and wait for a review.
+      Include changes and merge afterwards, but _do not delete the branch_.
 3. Assign yourself to the ticket.
 4. Once you are done with the task, unassign yourself and put the ticket into the next column to the
-   right
+   right. We always write the handout first, then create the challenges and finally write the
+   session guide.
 
 > Context: When a ticket is in a "In progress" column, but it has no assignee, it is a To-Do, so it
 > not really "in progress", but it is supposed to be, so go get it tiger 🐯
@@ -50,8 +55,11 @@ to keep an eye on.
 > 3. Write Challenge (same file as Handout, but on the bottom of the page)
 > 4. Review Challenge
 > 5. Write Session-guide
-> 6. Review EVERYTHING! Are all 3 parts coherent? Are all parts well-structured within the session?
->    Is the time frame realistic?
+> 6. Review Session-guide
+
+With this workflow we stay on one feature branch per session, it will be merged into main three
+times: after the handout review, after the challenges review and finally after the session guide
+review.
 
 <br>
 
