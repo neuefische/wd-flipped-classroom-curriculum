@@ -34,7 +34,7 @@ attribute selectors written inside `[...]` square brackets. Here are some exampl
   }
   ```
 
-- all inputs with the attribute type="text"
+- all links which open a new tab every time:
 
   ```css
   [target='_blank'] {
