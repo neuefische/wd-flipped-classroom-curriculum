@@ -120,18 +120,16 @@ classes they are written with `::` double colons directly after the original sel
 - this creates pseudo elements as the first child of the selected elements
 
   ```css
-  a[href^='https']::before {
-  	content: '🌍';
-  	margin-right: 5px;
+  a::before {
+  	content: '🌍'; // property needed, can be empty
   }
   ```
 
 - this creates pseudo elements as the last child of the selected elements
 
   ```css
-  a:hover::after {
-  	content: '📎';
-  	margin-left: 5px;
+  a::after {
+  	content: '📎'; // property needed, can be empty
   }
   ```
 
