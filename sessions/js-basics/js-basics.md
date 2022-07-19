@@ -2,216 +2,186 @@
 
 ## Learning Objectives
 
-In this session you will learn:
-
-- [ ] what JavaScript is and does in comparison to HTML and CSS
-- [ ] how to integrate JavaScript with `<script>`
-- [ ] how you select an element wih `querySelector`
-- [ ] how to add, remove and toggle CSS classes on `click` with `addEventListener`
-- [ ] what the console is and how to work with `console.log()` and `console.clear()`
+- Connect a JavaScript file with `<script>`
+- Log to the console
+- Select elements with `querySelector`
+- Add, remove and toggle CSS classes on `click` with `addEventListener`
 
 ---
 
-## Introduction
-
-To put it simple at the beginning: With JavaScript, we bring interaction to our website. That's
-enough for the moment, so let's click buttons and change colors!
-
 ## Connect a JavaScript file
-
-In order to do this, we create an `index.js` file at the root of our project. Now, we need to link
-it with the `index.html` by adding a `script` tag to the head of the `index.html`:
 
 ```html
 <head>
 	...
 	<script src="./index.js" defer></script>
 </head>
-```
-
-The `script` tag has two attributes: `src="./index.js"` contains the relative path to the `index.js`
-file. The `defer` attribute tells the browser to delay the loading of the script until all HTML
-elements are loaded. Otherwise, the JavaScript we write would not work.
-
-> 💡 Alternative: You can also put the `script` tag at the end of the body element; if doing so, the
-> `defer` attribute is not necessary.
-
-## Grabbing HTML Elements: `.querySelector()`
-
-In order to add some interaction to our website, we first need to make the relevant HTML element
-available for JavaScript. Have a look at the following example:
-
-```html
 <body>
-	<h1>My color changes sometimes!</h1>
-	<button>Change color</button>
+	...
 </body>
 ```
 
-We want the color of the `h1` to change if we click on the button. The first step is to grab the
-`h1` and the `button` element inside of our `index.js`:
+The `script` tag has two attributes:
 
-```js
-const heading = document.querySelector('h1');
-const button = document.querySelector('button');
-```
+`src="./index.js"` sets the URL to our JavaScript file
 
-To put it short: We create two constants (`const`) with the name `heading` and `button`. Their
-content is the entire HTML element, i.e. the `h1` and the `button`, respectively.
+`defer` tells the browser to delay the loading of the script until all HTML elements are loaded.
 
-Let's have a closer look and start on the right side of the equals sign:
-
-We use the global `document` object which represents the entire web page and its content. This
-object provides us with a method called `querySelector`. Note that we make use of this method by
-adding it with a `.` after `document`. Within the brackets `()` after `querySelector`, we hand over
-a search term in quotation marks. This search term equals the HTML element's name used in the
-`index.html` above.
-
-> 💡 Quotation marks represent the type string. We will cover strings in a later session.
-
-So, `document.querySelector('h1')` finds the entire `h1` element (we will further explore what this
-means in the next chapter [Check your JavaScript](#check-your-javascript-consolelog)). On the left
-side of the equals sign, we save this `h1` element in a constant with the name `heading`. By doing
-so, the `h1` element becomes available in our JavaScript file.
-
-### More specific queries are better
-
-Up to now, we used the HTML element name (e.g. `button`) for querying. In most cases, this is not
-useful, because `querySelector` only finds **the first element** in your file. If you have multiple
-buttons and want to find the third one, this will not work.
-
-Luckily, you can search for attributes of HTML elements as well. Consider the following code:
+> 💡 Alternative: `script` tag at the end of the body element, so `defer` attribute is not
+> necessary. Less modern.
 
 ```html
-<button>Change color</button>
-<button class="time-button" data-js="button-time">Change t ime</button>
+<head>
+	...
+</head>
+<body>
+	...
+	<script src="./index.js"></script>
+</body>
 ```
-
-If we want to find the second button, we can use this code:
-
-```js
-const timeButton = document.querySelector('[data-js="button-time"]');
-```
-
-We search for an attribute via square brackets `[]`. We use a
-[custom data-js attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
-with the value `button-time` to find the second button.
-
-> 💡 We could also search for the class attribute via `.querySelector('.time-button')`. However, it
-> is a better practice to separate CSS and JS: use the `class` attribute for CSS and a `data-js`
-> attribute for JS.
-
-## Check your JavaScript: `.console.log()`
-
-Every browser has a debugging console. We can use JavaScript and log something to the console. Most
-often, we use this to check whether our code has the correct value at a specific point.
-
-To log something to the console, we use the globally available `console` object and its `.log()`
-method. If we want to check whether the query for our `timeButton` was successful, we need to add
-this code **below our query**:
-
-```js
-const timeButton = document.querySelector('[data-js="button-time"]');
-console.log(timeButton);
-```
-
-We need to open the console first:
-
-- in Firefox, use <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>K</kbd>
-- in Chrome, use <kbd>F12</kbd> or the shortcut <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>J</kbd>
-- in a Codesandbox, you find the console at the bottom of your Browser's tab (note the blue "1"
-  right next to the word "Console"): ![Console in Codesandbox](assets/codesandbox_console.png)
-
-Now, we can see the following output in the console:
-
-```html
-<button class="time-button" data-js="button-time">Change time</button>
-```
-
-Congratulations, you have grabbed your first HTML element to use it in a JavaScript file! 🎉 As
-mentioned above, the `querySelector` returns **the entire element** with both attributes `class` and
-`data-js`. We will use this to add interaction in the next chapter!
-
-> 💡 If you open the console in the browser (instead of Codesandbox), you will have a small arrow
-> next to the button output. If you click on this arrow, you will see a long list of all properties
-> which are also available. ![Properties of an HTML element](assets/console_element_properties.png)
->
-> These "hidden" properties are the reason why we can do magic with JavaScript!
-
-### Useful Addition: `console.clear()`
-
-Have you noticed the `console.clear()` in the first line of the Codesandbox example above? This
-method clears the console, i.e. all outputs before this line are deleted.
-
-When you start your code with this line, you can be sure the console is cleared every time you
-reload the page. This is very useful when you practice JavaScript, because all "older" outputs are
-deleted. You can be sure to only see the **output of your current code** - so be focussed by using
-`console.clear()`!
-
-## Add Interaction: `.addEventListener()`
-
-Events are, among other things, actions caused by the user when interacting with your application.
-You can link an action to these events. For example, if the user clicks a specific button on a
-webpage, you might want it to trigger a color change of a heading.
-
-Consider the following content of an HTML file:
-
-```html
-<h1 data-js="heading">My color changes sometimes!</h1>
-<button data-js="button-color">Change color</button>
-```
-
-We want to change the color of the heading if the user clicks the button. First, we need to query
-both elements:
-
-```js
-const heading = document.querySelector('[data-js="heading"]');
-const colorButton = document.querySelector('[data-js="button-color"]');
-```
-
-Second, we react to the `click event` of the button by adding an `event listener` with the help of
-`.addEventListener()`to the button:
-
-```js
-colorButton.addEventListener('click', () => {
-	console.log('clicked');
-});
-```
-
-We need to specify the click event within the braces (`'click'`) and within the curly braces, we
-check that everything works via a `console.log()`. Now, when pressing the "Change color" button, the
-string "clicked" is logged to the console. Great work, our first event listener! 🎉
-
-The last step is to change the color of the heading. To do this, we write a new class in styles.css,
-e.g. `.highlight { color: hotpink; }`. Now, we add this class to the `h1` element when we click the
-button:
-
-```js
-colorButton.addEventListener('click', () => {
-	heading.classList.add('highlight');
-});
-```
-
-We make use of two concepts here: The element behind the constant "heading" has a `classList`
-property we can reach via `heading.classList`. This `classList` has an `add()` method we can use to
-add another class to an HTML element. We need to pass the name of the class within the braces as a
-string with quotation marks.
-
-Congratulations, you are now able to add a class to any HTML element and change the styling!
-
-There are two other interesting methods here:
-
-- `heading.classList.remove('highlight')` removes the class called "highlight"
-- `heading.classList.toggle('highlight')` toggles the class called "highlight"
 
 ---
 
-# Challenges
+## Hello World: `console.log()`
 
-## Part 1
+```js
+console.log('Hello World!'); // logs into console
+console.clear(); // clears console
+console.error('Error!'); // logs as error into console
+```
 
-## Part 2
+---
+
+## Selecting HTML Elements: `.querySelector()`
+
+Before we can add interactivity, we need to select the HTML-Elements we want to apply it to:
+
+```html
+<body>
+	<main class="main" id="main" data-js="main">...</main>
+</body>
+```
+
+There are multiple ways to select the above main section within our JavaScript
+
+```js
+// Use this:
+// data-js attribute as identifier -> '[data-js=""]'
+const mainDataAttribute = document.querySelector('[data-js="main"]');
+
+// Don't use the following:
+// tag as identifier
+const mainTag = document.querySelector('main');
+// class as identifier -> .
+const mainClass = document.querySelector('.main');
+// id as identifier -> #
+const mainId = document.querySelector('#main');
+```
+
+> 💡 We try to separate our concerns: Classes are for CSS and data-js attributes are for JavaScript
+
+---
+
+## Add Interaction: `.addEventListener()`
+
+We can listen to `events` like `clicks` on an Element
+
+```html
+<button type="button" data-js="button">Log into console</button>
+```
+
+Select button and add an `event listener`.
+
+```js
+const button = document.querySelector('[data-js="button"]');
+button.addEventListener('click', () => {});
+```
+
+Perform a `console.log()` on click
+
+```js
+const button = document.querySelector('[data-js="button"]');
+button.addEventListener('click', () => {
+	console.log('Yeah');
+});
+```
+
+### Also see:
+
+```js
+something.addEventListener('mouseover', () => {});
+```
+
+```js
+something.addEventListener('mouseout', () => {});
+```
+
+---
+
+## Add/remove & toggle classes: `.classList.`
+
+You can add, remove and toggle classes
+
+```html
+<main data-js="main">
+	<button type="button" data-js="button">toggle a class</button>
+</main>
+```
+
+Toggle `myClass` class to the above main section
+
+```js
+const main = document.querySelector('[data-js="main"]');
+const button = document.querySelector('[data-js="button"]');
+button.addEventListener('click', () => {
+	main.classList.toggle('myClass');
+});
+```
+
+On click `button` toggles a class to main section:
+
+```html
+<main data-js="main" class="myClass">
+	<button type="button" data-js="button">toggle a class</button>
+</main>
+```
+
+### Also try:
+
+```js
+main.classList.add('myClass');
+```
+
+```js
+main.classList.remove('myClass');
+```
 
 ---
 
 ## Resources
+
+### Connect a JavaScript file
+
+[The Script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+
+### Hello World
+
+[Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
+
+### Selecting HTML Elements
+
+[Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+
+[Using data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+
+[document.querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+
+### Add Interaction
+
+[.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+[Event reference](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+### Add/remove & toggle classes
+
+[classList](https://developer.mozilla.org/de/docs/Web/API/Element/classList)
