@@ -1,29 +1,28 @@
-# CSS Grid
+# CSS Grid Layout
 
 ## Learning Objectives
 
-In this session you learn:
-
-- [ ] what css grid is and how to use it
-- [ ] how to position grid cells
-- [ ] how to align cells
+- What CSS Grid Layout is and how to use it
+- How to position grid cells
+- How to align cells
 
 ---
 
-## CSS Grid
+## CSS Grid Layout
 
-With CSS grid, you can position html elements in a grid structure, reposition individual elements,
-stretch items across multiple cells and much more. it is a very powerful layout tool.
+With [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), you can
+position HTML elements in a grid structure, reposition individual elements, stretch items across
+multiple cells and much more. It's a very powerful layout tool.
 
-Working with CSS grid contains two major parts:
+Working with CSS Grid Layout contains two major parts:
 
-1. defining the layout on a container element
-1. positioning the children on the grid cells
+1. Defining the layout on a container element
+1. Positioning the children on the grid cells
 
-## Grid Layout
+## Grid container
 
 Just like CSS flexbox, the layout is defined on a container element which holds all elements which
-will be positioned in the grid.
+will be positioned in the grid as direct children.
 
 ```css
 .container {
@@ -32,21 +31,17 @@ will be positioned in the grid.
 ```
 
 The grid is then defined by the number and size of it's rows and columns. By default, the grid
-consists of one column. The properties for defining the columns and rows are `grid-template-columns`
-and `grid-template-rows`
+consists of one column. The properties for defining the columns and rows are
+[grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) and
+[grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows). With the
+[gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) property you can define a space between
+the grid cells.
 
-| Property                | Effect                                                                                                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `grid-template-columns` | Sets the layout of the grid columns by defining the width of each column. Example: `30px 200px`                                                              |
-| `grid-template-rows`    | Sets the layout of the grid rows by defining the height of each row. Example: `10% 500px 10%`                                                                |
-| `gap`                   | Sets the gap between columns and rows. Accepts one value for the column gap and on for the row gap. If given only one value both gaps are set to that value. |
+### `fr` Unit
 
-## `fr` Unit
+The grid layout has the fraction unit `fr` as a special sizing unit (next to `px`, `rem` or `%`)
 
-The grid layout has a special sizing unit next to px, rem or %: `fr`. This fraction unit works as
-follows:
-
-1. it splits the remaining space in a grid into equally sized fractions. The number of these parts
+1. It splits the remaining space in a grid into equally sized fractions. The number of these parts
    is determined by the total amount of fraction units distributed in the row/column template.
 2. The individual rows / columns then take up the assigned number of fractions.
 
@@ -63,39 +58,44 @@ the available cell space.
 
 ![grid-template](assets/element-positioning-1.png)
 
-Elements can be stretched over multiple cells by using element positioning properties. Each element
-can be set on the columns and rows by using:
+You can change an element's positioning by using the the CSS properties
+[grid-column](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column),
+[grid-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row) or
+[grid-area](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area), which combines the former
+into a single CSS shorthand property. Elements can also be stretched over multiple cells.
+
+Each element can be positioned on the columns and rows by using these values:
 
 1. `Column / row index` (see picture above).
 2. Negative `index`. Indexing the lines from the other side.
 3. The `span` value. Defines how many cells the item should stretch across.
 
-| Property      | Effect                                                                                                                                            |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `grid-column` | Takes two values separated by a '/' defining the starting and ending column line. Can also be defined by `grid-column-start` / `grid-column-end`. |
-| `grid-row`    | Takes two values separated by a '/' defining the starting and ending row line. Can also be defined by `grid-row-start` / `grid-row-end`.          |
-| `grid-area`   | Takes 4 values separated by '/' defining the starting and ending row and column lines. Combines `grid-column` and `grid-rows`.                    |
+Here is an example:
 
 ![grid-positioning](assets/element-positioning-2.png)
 
 > ❗️ Positioning properties are set on the child elements, not on the container!
 
+## Column and Row Alignment
+
+The combined size of the grid columns/rows you defined might be less than a given height/width of
+the grid container. In this case you can distribute the columns or rows inside the grid container.
+
+| Property                                                                            | Effect                                          |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------- |
+| [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | Sets the alignment of the `columns`.            |
+| [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)     | Sets the alignment of the `rows`.               |
+| [place-content](https://developer.mozilla.org/en-US/docs/Web/CSS/place-content)     | Sets the alignment of the `rows` and `columns`. |
+
 ## Cell Aligning
 
-The distribution of columns / rows and the position of the elements _inside_ their cells can be
-specified on the grid container.
+The position of the elements _inside_ their cells can be specified on the grid container.
 
-| Property          | Effect                                                                                                                   |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `justify-content` | Sets the alignment of the `columns`, e.g. start, center, space-evenly.                                                   |
-| `align-content`   | Sets the alignment of the `rows`, e.g. start, center, space-evenly.                                                      |
-| `place-content`   | Sets the alignment of the `rows` and `columns`, can take two values, e.g. start, center, space-evenly.                   |
-| `justify-items`   | Sets the `horizontal` alignment of elements inside their cell, e.g. start, center, end. Default: stretch.                |
-| `align-items`     | Sets the `vertical` alignment of elements inside their cell, e.g. start, center, end. Default: stretch.                  |
-| `place-items`     | Sets the `vertical` and `horizontal` alignment of elements inside their cell, e.g. start, center, end. Default: stretch. |
-
-> 💡 This [complete guide to css grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-> covers everything you need to know about the grid property.
+| Property                                                                        | Effect                                          |
+| ------------------------------------------------------------------------------- | ----------------------------------------------- |
+| [justify-items](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items) | Sets the `horizontal` alignment.                |
+| [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)     | Sets the `vertical` alignment.                  |
+| [place-items](https://developer.mozilla.org/en-US/docs/Web/CSS/place-items)     | Sets the `vertical` and `horizontal` alignment. |
 
 ---
 
