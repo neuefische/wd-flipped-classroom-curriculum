@@ -99,14 +99,6 @@ specified on the grid container.
 
 ---
 
-# Challenges
-
-## Part 1
-
-## Part 2
-
----
-
 ## Resources
 
 - [Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
