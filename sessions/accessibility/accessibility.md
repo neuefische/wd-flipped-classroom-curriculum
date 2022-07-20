@@ -52,7 +52,6 @@ elements. There are six different categories of roles. Let us briefly look at tw
 > 💡 A comprehensive list of Roles and their categories can be found in the
 > [mdn ARIA Roles docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
-
 ### ARIA States and Properties
 
 ARIA states and properties refer to similar features. They provide specific information on elements,
@@ -64,26 +63,26 @@ present content to users.
 
 Two important ARIA attributes are:
 
-`aria-label`: Defines a label for an interactive element. Use it when the accessible name of an
-element is missing, for example when a button contains no text but only an icon:
+- `aria-label`: Defines a label for an interactive element. Use it when the accessible name of an
+  element is missing, for example when a button contains no text but only an icon:
 
-```
-<button aria-label="Close" onclick="...">
-  <svg ...><path .../></svg>
-</button>
-```
+  ```
+  <button aria-label="Close" onclick="...">
+    <svg ...><path .../></svg>
+  </button>
+  ```
 
-`aria-labelledby`: Identifies which element labels the element it is applied to. Some elements have
-a native way of referencing another element with its label (for example input elements and label
-elements which we will come to at a later point in time). If there is no native way to reference a
-labelling element use the aria-labelledby attribute:
+- `aria-labelledby`: Identifies which element labels the element it is applied to. Some elements
+  have a native way of referencing another element with its label (for example input elements and
+  label elements which we will come to at a later point in time). If there is no native way to
+  reference a labelling element use the aria-labelledby attribute:
 
-```
-<nav aria-labelledby="title">
-  <h2 id="title">Products</h2>
-  ...
-</nav>
-```
+  ```
+  <nav aria-labelledby="title">
+    <h2 id="title">Products</h2>
+    ...
+  </nav>
+  ```
 
 ### Accessibility Quick Wins
 
