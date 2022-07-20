@@ -11,16 +11,16 @@ In this session you learn:
 
 ---
 
-## Inline Callback Functions
+## Callback Functions
 
 A callback function is a function that is passed `as an argument` into another function.
 
-The outer function can execute this callback function in the correct moment or multiple times, for
+The outer function can execute this callback function at the correct moment or multiple times, for
 example:
 
 - when an event is triggered
 - when the fetched data arrived on your computer
-- execute the function for each element in an array.
+- for each element in an array.
 
 Callback functions are used, whenever the program itself needs to figure out `when` or
 `how many times` the function needs to be executed. We already used callback functions in
@@ -43,8 +43,7 @@ Here the structure is as follows:
   };
   ```
 
-This type of callback function is called `inline callback function`, since it is
-`declared inside the outer function call`.
+This type of function is called `anonymous function`, since it is declared without giving it a name.
 
 ## Named Callback Functions
 
