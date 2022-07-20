@@ -27,7 +27,7 @@ business case for adapting accessible design:
 ## Semantic HTML
 
 Semantic HTML helps screen readers and other assistive technology get useful information on the
-structure of a Web site. It is also important for SEO and improves readability of our markdown.
+structure of a Web site. It is also important for SEO and improves readability of our HTML.
 
 - Use elements like `header`, `nav`, `main`, `article`, `aside`, `footer` to structure every page.
 - Use only one `h1` heading per page.
@@ -49,18 +49,9 @@ elements. There are six different categories of roles. Let us briefly look at tw
 - Document structure Roles like `note` or `tooltip` describe the structure of a section of content.
 - Widget Roles like `slider` or `menu` describe the type of element presented on a Web site.
 
-A comprehensive list of Roles and their categories can be found in the
-[mdn ARIA Roles docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
+> 💡 A comprehensive list of Roles and their categories can be found in the
+> [mdn ARIA Roles docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
-Many semantic HTML elements have a role by default. A form element has the `role="form"`. All
-headings from `h1` to `h6` have the `role="heading"`.
-
-It is best to use semantic HTML whenever possible. If you want to describe something that cannot be
-expressed by HTML alone you can add the ARIA role attribute like in the following example:
-
-```
-<button role="tab">Tab</button>
-```
 
 ### ARIA States and Properties
 
@@ -68,11 +59,10 @@ ARIA states and properties refer to similar features. They provide specific info
 their state and relationship to other elements. Assistive technology like screen readers use them to
 present content to users.
 
-You can find a list of ARIA states and properties in the
-[mdn ARIA Attributes docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes).
+> 💡 You can find a list of ARIA states and properties in the
+> [mdn ARIA Attributes docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes).
 
-Let us look at two important ARIA attributes that you should use to ensure that all interactive
-elements have an accessible name:
+Two important ARIA attributes are:
 
 `aria-label`: Defines a label for an interactive element. Use it when the accessible name of an
 element is missing, for example when a button contains no text but only an icon:
