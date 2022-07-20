@@ -2,17 +2,18 @@
 
 ## Learning Objectives
 
-In this session you will learn:
-
-- [ ]
+- [ ] hot to use conditions to control the program flow
+- [ ] what booleans and truthy / falsy values are
 
 ---
 
-## Topic 1
+## Boolean Values
 
-### Sub Topic 1
+## Control Flow: `if / else`
 
-### Sub Topic 2
+## Ternary operator: `? :`
+
+## Control Flow: Switch statements
 
 ---
 
