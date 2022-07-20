@@ -1,5 +1,53 @@
 # Challenges: Git CLI and Remote
 
+## Setup Visual Studio Code
+
+Please install one of the most popular editors:
+[Visual Studio Code](https://code.visualstudio.com/). This editor from Microsoft is a free, open
+source and available for all platforms, even on the browser, e.g. on GitHub.
+
+Normally you would go to the website and download the software. But as you may already know, we can
+use `Homebrew` to install things we need.
+
+```shell
+brew install --cask visual-studio-code
+```
+
+You can find more details on this installation here:
+[visual-studio-code — Homebrew Formulae](https://formulae.brew.sh/cask/visual-studio-code)
+
+## Setup SSH Key
+
+In order to communicate safely between your local machine and GitHub, we use a protocoll called
+`SSH` (Secure Shell). This protocoll allows you to connect to GitHub and authenticate yourself
+without using your username and password every time.
+
+Therefore we generate a `SSH key` on your local machine and add it to GitHub. These steps are
+necessary once on every machine you want to work with.
+
+#### Step 1: GitHub CLI
+
+Install the GitHub command-line tool via Homebrew:
+
+```
+brew install gh
+```
+
+#### Step 2: Git config and SSH key
+
+We created a script for you to easily set your git config, generate a SSH key and add it to GitHub.
+Follow the instructions in your Terminal.
+
+- Pleaser enter the requested inputs
+- Press `Enter` (default) when asked about which file to save the key and your passphrase (leave it
+  empty).
+- Choose `ssh` as your preferred connection method when asked.
+- Login and authenticate with the browser. (The device code is found in the Terminal.)
+
+```
+zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)
+```
+
 ## Session Notebook part 1
 
 In this project you will create a markdown based notebook for all your upcoming session notes. In
