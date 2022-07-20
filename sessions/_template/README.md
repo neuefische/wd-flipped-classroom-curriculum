@@ -42,7 +42,8 @@
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](session-name.md) for the students
+- [ ] Provide the [handout](session-name.md) and the [challenges](challenges-session-name.md) for
+      the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students in groups of \_\_\_
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
