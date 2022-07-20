@@ -65,7 +65,7 @@ button.addEventListener('click', sayHello);
 
 ## Higher Order Functions
 
-A higher order function is a function that takes a `callback function as an argument.` and
+A higher order function is a function that takes a `callback function as an argument` and
 `calls the callback function` inside their body, e.g. the `addEventListener` method.
 
 ```js
