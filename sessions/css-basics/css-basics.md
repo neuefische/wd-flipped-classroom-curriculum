@@ -15,10 +15,7 @@ In this session you will learn:
 
 ## What is CSS?
 
-You already learned what HTML is and how it works. Basically HTML is the skeleton of our Website.
-But how can we give it a dress or in other words style our Website? Therefore we can use `CSS`
-(Cascading Style Sheets). CSS is a style sheet language that allows us to change the presentation of
-a document written in HTML.
+With CSS you can add styling to your HMTL elements.
 
 ![Comparison of HTML, CSS and JavaScript](assets/animated-gif-for-comparison.gif)
 
@@ -34,9 +31,6 @@ The structure of how to write CSS is also called `ruleset`. It consists of four 
 - `Property`: This is the name of the element's property we want to change.
 - `Property Value`: This is the value we assign to the property, e.g for the property `color` we use
   the property value `blue`.
-
-> 💡 Hint: The property and property value are separated by a colon (`:`), each declaration is
-> separated by a semicolon (`;`) and the declaration itself is wrapped in curly braces (`{ }`).
 
 A ruleset can have `multiple declarations`:
 
@@ -116,9 +110,7 @@ of an element. There are four different parts: `content`, `padding`, `border` an
 
 The property `box-sizing` changes the way how the `width` and `height` of an element is calculated.
 The default value is `content-box`. The values of `width` and `height` set the size of the content
-box; padding, border-with and margin are then added on top. This can lead to unintended effects
-where an element becomes larger than originally planned and overflows the screen. To avoid this, the
-`box-sizing` of all elements is often set to `border-box`.
+box. With the value `border-box`, the size of the border box is set instead.
 
 ```css
 * {
@@ -133,9 +125,11 @@ subtracted to calculate the available space for the content.
 
 ## Inline and block elements
 
-There are basically two types of elements: inline-level and block-level elements. `Inline elements`
-occupy the space as required by the element itself and are placed inside the text lines.
-`Block elements` occupy the full horizontal space of the parent element and begin a new line.
+There are basically two types of elements: inline-level and block-level elements.
+
+- `Inline elements` occupy the space as required by the element itself and are placed inside the
+  text lines.
+- `Block elements` occupy the full horizontal space of the parent element and begin a new line.
 
 Example:
 
@@ -215,32 +209,6 @@ HTML file by placing a `<link>` tag in the `<head>` of your HTML document.
 	<link rel="stylesheet" href="styles.css" />
 </head>
 ```
-
----
-
-# Challenges
-
-## Social Card
-
-Open
-[this codesandbox](https://githubbox.com/neuefische/web-exercises/tree/feature/css-basics/sessions/css-basics/social-card).
-You find there an unstyled html page. Your task is to recreate the following social card.
-![social card example](./assets/social-card.png)
-
-- [ ] [Add the link](#linking-stylesheets) to the styles.css stylesheet in the head of the
-      index.html file.
-- [ ] Style all elements on the page to recreate these social card styles.
-- [ ] Use type selectors as well as classes to target the correct elements.
-- [ ] Find a fitting font on fonts.google.com and [import it into your project](#styling-fonts).
-
-## Personal Website Part 3
-
-Start styling your personal website and make it absolutely fabulous. ✨
-
-- [ ] Add a style.css file to your project and [link it correctly](#linking-stylesheets) in your
-      index.html file.
-- [ ] Get creative and find your very own style for your personal website.
-- [ ] [Include a font](#styling-fonts) into your website.
 
 ---
 
