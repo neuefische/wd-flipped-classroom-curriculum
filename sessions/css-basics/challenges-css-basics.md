@@ -13,7 +13,7 @@ You find there an unstyled html page. Your task is to recreate the following soc
 - [ ] Use type selectors as well as classes to target the correct elements.
 - [ ] Find a fitting font on fonts.google.com and [import it into your project](#styling-fonts).
 
-## Personal Website Part 3
+## Personal Website Styling
 
 Start styling your personal website and make it absolutely fabulous. ✨
 
