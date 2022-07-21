@@ -9,7 +9,7 @@
 
 ---
 
-## Boolean
+## Boolean Values
 
 A boolean value, named after George Boole, only has two states. It can either be `true` or `false`. 
 Booleans are often used in conditional statements which can execute different code depending on their value.
