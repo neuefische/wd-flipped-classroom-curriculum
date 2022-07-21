@@ -16,7 +16,7 @@ every `(??)`means that the person is just an idea, and not contacted jet.
 | 4   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     | Merle (?)                        |
 | 5   |	How to give constructive Feedback                                                                             | Nele(?)                          |
 | 6   | A11y Guest Session                                                                                      | Kontakt Gregor (??)              |
-| 7   | Habits for success: How you can support your body and brain when learning new skills (Nutrition edition) |                                  |
+| 7   | Habits for success: How you can support your body and brain when learning new skills (Nutrition edition) | Alex                                  |
 | 8   | Habits for success: How you can support your body and brain when learning new skills (Movement edition)  |                                  |
 | 9   | How to give a high-quality code reviews                                                                 | Paul(?)                          |
 | 10  | Design Workshop 1/ 1                                                                                    | Sascha (?)                       |
