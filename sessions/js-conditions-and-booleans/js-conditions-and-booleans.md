@@ -120,7 +120,7 @@ if (name) {
 
 ---
 
-## Ternary operator: `? :`
+## Ternary Operator: `? :`
 
 With if / else statements whole blocks of code can be controlled. The ternary operator can be used
 if you want to decide between two _expressions_, e.g. which value should be stored in a value:
