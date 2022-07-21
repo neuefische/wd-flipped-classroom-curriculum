@@ -100,8 +100,8 @@ Explain `z-index`:
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](css-positioning.md) for the students
-- [ ] Provide the [challenges](challenges-css-positioning.md) for the students
+- [ ] Provide the [handout](css-positioning.md) and the [challenges](challenges-css-positioning.md)
+      for the students
 - [ ] Open the challenges and walk the students through the tasks
 - [ ] Divide the students in groups
 - [ ] Remind them of the ground rules (Meet again 30min before lunch-break in the classroom / They
