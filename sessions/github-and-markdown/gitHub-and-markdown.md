@@ -60,9 +60,12 @@ project files. Many people can have access to (and work on) the same repository.
 ### Commits
 
 A commit is a _snapshot of your repository_ at a specific point in time. Creating a commit in your
-project is similar to hitting the _save_ button in a video game. The process you have made so far
-won't be lost. You can always _go back to any prior commit_ and will have all the project
-files as they were when you made the commit. Each commit contains a message which should include a
+project is similar to hitting the _save_ button in a video game.
+
+You can always _go back to any prior commit_ and will have all the project
+files as they were when you made the commit.
+
+Each commit has a message which should include a
 descriptive text, so that you and other developers will know what changes the commit includes.
 
 ### Good commit messages
@@ -77,9 +80,8 @@ Writing good commit message is an artform in itself. Try to stick to the followi
 - Do not end your commit message with a period
 - When in doubt, describe _why_ you did something instead of _how_: "fix typo" instead of "replaced the letter a with an e in the second word"
 
-All commit messages combined should form a protocol or log of all features and changes made to the
-code base. Other developers should be able to understand what happened at each step of the
-development process only by reading the commit messages.
+Your commit messages are a protocol of all changes made to the code base.
+Other developers should be able to understand what happened by reading the commit messages.
 
 ---
 
