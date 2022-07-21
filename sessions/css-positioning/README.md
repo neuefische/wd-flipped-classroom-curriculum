@@ -42,8 +42,8 @@ case we use positioning.
 ### 1. Exposition
 
 Show examples of a `sticky` navbar (Google) or `fixed` feedback button (DuckDuckGo - enter some
-search tag or use this [Fixed-example](<(https://davidwalsh.name/demo/css-fixed-position.php)>)) and
-that they do not fit into the document flow.
+search tag or use this [Fixed-example](https://davidwalsh.name/demo/css-fixed-position.php) and that
+they do not fit into the document flow.
 
 ### 2. `position: static`
 
@@ -101,7 +101,8 @@ Explain `z-index`:
 ## Process: Challenges
 
 - [ ] Provide the [handout](css-positioning.md) for the students
-- [ ] Open the handout and walk the students through the tasks
+- [ ] Provide the [challenges](challenges-css-positioning.md) for the students
+- [ ] Open the challenges and walk the students through the tasks
 - [ ] Divide the students in groups
 - [ ] Remind them of the ground rules (Meet again 30min before lunch-break in the classroom / They
       can ask the coaches for help at any time / Always help each other / Take a break when you need

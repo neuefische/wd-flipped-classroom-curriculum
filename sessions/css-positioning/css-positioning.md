@@ -2,11 +2,9 @@
 
 ## Learning Objectives
 
-In this session you will learn:
-
-- [ ] types of positioning
-- [ ] all positioning values
-- [ ] the basic usage of z-index
+- Using the different types of positioning
+- Knowing the CSS properties to define a position
+- Understanding the basics of z-index
 
 ---
 
@@ -15,21 +13,25 @@ In this session you will learn:
 The position property comes in handy if you want to place an HTML element manually. There are 5
 different values to define the position:
 
-- `position: static (default)` - the position of the element is determined by the document flow
-- `position: relative` - position the element relative to where the element would be placed normally
-- `position: absolute` - position the element absolutely inside the
-  `nearest non-static ancestor element`.
-- `position: fixed` - position the element on a fixed position on the screen.
-- `position: sticky` - the element is placed normally in the document flow, but keeps an offset
-  relative to its nearest scrolling ancestor
+| Type                 | Description                                                                                                         |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `position: static`   | The position of the element is determined by the document flow (default)                                            |
+| `position: relative` | Position the element relative to where the element would be placed normally                                         |
+| `position: absolute` | Position the element absolutely inside the `nearest non-static ancestor element`                                    |
+| `position: fixed`    | Position the element on a fixed position on the screen.                                                             |
+| `position: sticky`   | The element is placed normally in the document flow, but keeps an offset relative to its nearest scrolling ancestor |
 
 The position is then specified by the four position properties `top`, `bottom`, `right`, `left`.
 These work differently depending on the positioning method.
+
+---
 
 ## position: static
 
 Elements are positioned according to the normal document flow. The properties `top`, `bottom`,
 `right`, `left` have no effect. This is the default value.
+
+---
 
 ## position: relative
 
@@ -45,13 +47,19 @@ this element.
 Elements are removed from the normal document flow and no space is created for them - so they leave
 no gap in the page. With position absolute you place an element (with the `top`, `bottom`, `right`,
 `left` properties) relative to a reference frame. The reference frame is the view-box of the closest
-ancestor element that does not have `position: static` (default). In the picture below you can see
-two examples. In the first, no non-static ancestor element exists, therefore the reference frame
-falls back to the page. In the second example, the element is inside another element with
-`position: relative`. Therefore, the element is placed absolutely towards this element and not the
-entire page.
+ancestor element that does not have `position: static` (default).
+
+In the picture below you can see two examples.
+
+In the first, no non-static ancestor element exists, therefore the reference frame falls back to the
+page.
+
+In the second example, the element is inside another element with `position: relative`. Therefore,
+the element is placed absolutely towards this element and not the entire page.
 
 ![example for position absolute](assets/position-absolute.png)
+
+---
 
 ## Position Fixed
 
@@ -60,6 +68,8 @@ no gap in the page. An element with position fixed is not influenced by scrollin
 stays at the specified position. This is often used for navigation bars or "back to top" buttons.
 
 ![example for position absolute](assets/position-fixed.png)
+
+---
 
 ## Position Sticky
 
@@ -83,3 +93,10 @@ position value.
 ---
 
 ## Resources
+
+- [MDN web docs: position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+- [MDN web docs: Using positioning](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning)
+- [MDN web docs: z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+- [MDN web docs: Using z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index)
+- [MDN web docs: Stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
+- [`z-index` and stacking context by Josh W. Comeau](https://www.joshwcomeau.com/css/stacking-contexts/)
