@@ -2,14 +2,12 @@
 
 ## Learning Objectives
 
-In this session you will learn:
-
-- [ ] what is CSS
-- [ ] the meaning behind the name CSS (`Cascading Style Sheets`)
-- [ ] the fundamentals of CSS, like `CSS syntax`, `selectors`, `box model`,
-      `inline & block elements`
-- [ ] styling fonts & working with relative units
-- [ ] how to link stylesheets
+- Having a general understanding about the purpose of CSS
+- Knowing the meaning behind the name CSS (`Cascading Style Sheets`)
+- Understanding the fundamentals of CSS: `CSS syntax`, `selectors`, `box model`, `inline & block
+  elements`
+- Using stylings for fonts & working with relative units
+- Linking stylesheets to the HTML document
 
 ---
 
@@ -19,18 +17,20 @@ With CSS you can add styling to your HMTL elements.
 
 ![Comparison of HTML, CSS and JavaScript](assets/animated-gif-for-comparison.gif)
 
+---
+
 ## CSS syntax
 
 The structure of how to write CSS is also called `ruleset`. It consists of four parts:
 
 ![CSS syntax](assets/css-syntax.png)
 
-- `Selector`: This defines what element(s) we want to style.
-- `Declaration`: This defines what we want to change and contains pairs of `property` and
-  `property value`.
-- `Property`: This is the name of the element's property we want to change.
-- `Property Value`: This is the value we assign to the property, e.g for the property `color` we use
-  the property value `blue`.
+| Part           | Description                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------- |
+| Selector       | Addresses the element(s) to style                                                                 |
+| Declaration    | Defines what to change and contains pairs of `property` and `property value`                      |
+| Property       | The name of the property to change                                                                |
+| Property Value | The value assigned to the property, e.g for the property `color` we use the property value `blue` |
 
 A ruleset can have `multiple declarations`:
 
@@ -51,6 +51,8 @@ h3 {
 	color: red;
 }
 ```
+
+---
 
 ## Basic Selectors
 
@@ -76,6 +78,8 @@ There are different CSS selectors you can use to style elements. The most common
 > ❗️ In theory you could also use element IDs as selectors, but this is bad practice and must be
 > avoided.
 
+---
+
 ## CSS Properties
 
 There are a lot of CSS properties and you will discover new ones every day. Therefore the following
@@ -96,6 +100,8 @@ list shows only a few examples:
 > [CSS Properties Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) on
 > MDN.
 
+---
+
 ## Box Model
 
 All elements of a website are wrapped in a `box model`. It's a way to define the size and position
@@ -109,8 +115,8 @@ of an element. There are four different parts: `content`, `padding`, `border` an
 | `margin`       | The space around the border and other elements.          |
 
 The property `box-sizing` changes the way how the `width` and `height` of an element is calculated.
-The default value is `content-box`. The values of `width` and `height` set the size of the content
-box. With the value `border-box`, the size of the border box is set instead.
+The default value is `content-box`. The values of `width` and `height` set the size of the "content
+box". With the value `border-box`, the size of the "border box" is set instead.
 
 ```css
 * {
@@ -123,6 +129,8 @@ subtracted to calculate the available space for the content.
 
 <img src="./assets/box-model.png" width="500" alt="Box model">
 
+---
+
 ## Inline and block elements
 
 There are basically two types of elements: inline-level and block-level elements.
@@ -134,9 +142,9 @@ There are basically two types of elements: inline-level and block-level elements
 Example:
 
 ```html
-// h2 is a block-level element
+<!-- "h2" is a block-level element -->
 <h2>Coding Bootcamp</h2>
-// inside the paragraph, the a tag is an inline-level element
+<!-- "p" is a block-level element. The "a" inside is an inline-level element -->
 <p>
 	If you want to participate in a bootcamp, visit
 	<a href="https://www.neuefische.de">neuefische.de</a>
@@ -144,6 +152,8 @@ Example:
 ```
 
 You can change this behavior by using the CSS `display` property.
+
+---
 
 ## Styling fonts
 
@@ -180,6 +190,8 @@ You can include custom fonts in two ways:
   }
   ```
 
+---
+
 ## Relative units
 
 There are two different types of units: `relative` and `absolute`.
@@ -197,6 +209,8 @@ There are two different types of units: `relative` and `absolute`.
 | `rem` | Relative to the font size of the root element       |
 | `vw`  | Relative to the viewport width                      |
 | `vh`  | Relative to the viewport height                     |
+
+---
 
 ## Linking Stylesheets
 
