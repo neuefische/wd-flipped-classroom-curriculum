@@ -1,4 +1,4 @@
-# Session name
+# CSS Flexbox
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
@@ -40,8 +40,8 @@
 
 ### Raise a question to be answered by the end of the block!
 
-How can we create a vertical navigation bar that adjusts to the viewport's width by increasing the
-space between the navigation buttons?
+How can we create a horizontal navigation bar that adjusts to the viewport's width by increasing the
+space between the navigation links?
 
 ---
 
@@ -64,8 +64,9 @@ You can ask these questions:
 
 ### Document Normal Flow
 
-- Show an example with default layouts.
-- [(Click here for an example.)](https://codepen.io/neuefische/pen/KKQZRMo?editors=1100)
+Show an example with default layouts.
+
+- You can use [this example](https://codepen.io/neuefische/pen/KKQZRMo?editors=1100)
 - In the CSS remove/add `display: flex` to toggle between normal flow and the desired result
 
 ### Understanding the purpose of flexbox
@@ -101,7 +102,7 @@ Introduce the following flexbox properties and show the effect of different valu
 - `gap`
   - Creates visual space between flex items
 - `flex-wrap`
-  - Elements can wrap into another row instead of being squashed into one row
+  - Flex items can wrap into another row instead of being squashed into one row
   - Values:
     - `nowrap` (default)
     - `wrap`
@@ -117,7 +118,7 @@ Introduce the following flexbox properties and show the effect of different valu
 
 ### Axis and direction
 
-- Introduce the `flex-direction` property and explain that it switched the axis.
+- Introduce the `flex-direction` property and explain that it switches the axis.
 - Values:
   - `row` (default)
   - `column`
