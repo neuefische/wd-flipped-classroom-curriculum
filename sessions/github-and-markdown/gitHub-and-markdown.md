@@ -15,11 +15,10 @@ In this session you will learn:
 
 ## Markdown
 
-Markdown is a plain text formatting syntax. It makes writing formatted text (bold headlines,
-blockquotes, lists, etc.) much easier. You can get nicely formatted results by writing Markdown
-only instead of using a program like Word. You can view the formatted result of your Markdown in
-your Code Editor. It is also used by many tools and websites like GitHub or Slack. It uses specific
-characters to display parts of the text in a certain way.
+The Markdown syntax allows writing formatted text (headlines,
+blockquotes, lists, etc.) that can be stored plain text.
+It is used by tools and websites like GitHub or Slack.
+It uses specific characters to format parts of the text in a certain way.
 
 ### Markdown Examples
 
