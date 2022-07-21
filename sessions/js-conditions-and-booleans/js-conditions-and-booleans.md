@@ -9,12 +9,14 @@
 
 ---
 
-## Booleans
+## Truthy and Falsy Values
 
 Boolean variables can either be `true` or `false`. Booleans are often used in conditional statements
 which can execute different code depending whether the conditional statement is either `truthy` or
-`falsy`. Since JavaScript can transform any value into a boolean value with type coersion, each
-value must either be `truthy` or `falsy`:
+`falsy`.
+
+JavaScript can transform any value into a boolean with type coersion. `Truthy` values become `true`,
+`falsy` values become `false`.
 
 - `truthy` values:
 
@@ -29,21 +31,37 @@ value must either be `truthy` or `falsy`:
   - undefined
   - empty string ""
 
-## Logical Operators
+## Comparison Operators
 
-Logical operators produce boolean values by comparing up to two values:
+Logical operators produce boolean values by comparing up to two expressions:
 
-| Operator  | Effect                                               |
-| --------- | ---------------------------------------------------- |
-| a `===` b | strict equality: is `true` if both values are equal. |
+| Operator  | Effect                                                            |
+| --------- | ----------------------------------------------------------------- |
+| A `===` B | strict equal: is `true` if both values are equal.                 |
+| A `!==` B | strict not equal: is `true` if both values are not equal.         |
+| A `>` B   | strictly greater than: is `true` if A is greater than B.          |
+| A `<` B   | strictly less than: is `true` if A is less than B.                |
+| A `>=` B  | greater than or equal: is `true` if A is greater than or equal B. |
+| A `<=` B  | less than or equal: is `true` if A is less than or equal B.       |
+| `!`A      | `not`: is `true` if a is `falsy`, and `false` if A is `truthy`.   |
 
 ## Control Flow: `if / else`
 
-With an if / else statement we can control whether a part of our code is executed or not, based on a
+With an if statement we can control whether a part of our code is executed or not, based on a
 condition.
 
 ```js
 const isSunShining = true;
+
+if (isSunShining) {
+	// code that is executed only if condition "isSunShining" is true
+}
+```
+
+The else statement is executed only if the condition is `false`.
+
+```js
+const isSunShining = false;
 
 if (isSunShining) {
 	// code that is executed only if condition "isSunShining" is true
@@ -56,12 +74,14 @@ The condition expression between the `()` brackets can be composed of logical op
 can distinguish between more cases by chaining `else if` statements:
 
 ```js
-if (age > 60) {
-	console.log('You should go home.');
-} else if (age > 18) {
-	console.log('You can enter.');
+if (hour < 12) {
+	console.log('Good Morning.');
+} else if (hour < 18) {
+	console.log('Good afternoon.');
+} else if (hour === 24) {
+	console.log('Good night.');
 } else {
-	console.log('You must leave.');
+	console.log('Good evening.');
 }
 ```
 
@@ -77,7 +97,32 @@ if (name) {
 
 ## Ternary operator: `? :`
 
-## Control Flow: `switch` statements
+With if / else statements whole blocks of code can be controlled. The ternary operator can be used
+if you want to decide between two `expressions`, e.g. which value should be stored in a value:
+
+```js
+const greetingText = time > 12 ? 'Good morning.' : 'Good afternoon.';
+```
+
+The ternary operator has the following structure:
+
+condition `?` truthy case expression `:` falsy case expression.
+
+The ternary operator can be used to decide which function should be called:
+
+```js
+isUserLoggedIn ? logoutUser() : loginUser();
+```
+
+It can also distinguish which value should be passed as an argument to a function:
+
+```js
+moveElement(xPos > 300 ? 300 : xPos); // the element can't be moved further than 300.
+```
+
+> ❗️ The operator can only distinguish between two `expressions` like values, math / logical
+> operations or function calls, not between `statements` like variable declarations, if / else
+> statements or multi-line code blocks.
 
 ---
 
