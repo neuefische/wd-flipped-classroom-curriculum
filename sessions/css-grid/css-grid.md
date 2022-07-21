@@ -2,8 +2,8 @@
 
 ## Learning Objectives
 
-- What CSS Grid Layout is and how to use it
-- How to position grid cells
+- How to layout Webpages with CSS Grid
+- How to position elements in Grid cells
 - How to align cells
 
 ---
