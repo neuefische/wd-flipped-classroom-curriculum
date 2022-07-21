@@ -5,7 +5,8 @@
 Follow the link to this [CodeSandbox](https://codesandbox.io/s/html-basics-start-np39nv)
 
 1. Fork the CodeSandbox
-2. Replace all the <div> tags in the code with semantic HTML.
+2. Replace all the <div> tags in the code with semantic HTML. In case you need some ideas, you can
+   refer to the [handout](html-and-the-web.md/#layout-of-a-html-file)
 
 ## Part 2: Personal Website
 
