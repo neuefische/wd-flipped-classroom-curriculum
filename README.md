@@ -1,31 +1,91 @@
 # Welcome to the new curriculum!
 
-This is the working progress of the new curriculum of the bootcamp Web Development. <br>
-This update is aiming to improve the way our students learn. <br>
+This is the work in progress of the new curriculum of the bootcamp Web Development. <br> This update
+is aiming to improve the way our students learn. <br>
 
-#### To-Do's
+## How to contribute
 
-There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new-format/issues/41) to keep an eye on.
+There are two things to consider when assigning yourself to a ticket in the project:
 
-#### Our goals are:
+- How much time do you have?
+- How comfortable are you with your chosen topic?
 
-> 💡 **Self-sufficient learning** <br>
+---
+
+- `Reviews` are usually the "quickest" task, when you have an hour in between.
+- `Handouts` are usually the most time intensive, because we want them to be as complete as possible
+- `Challenges` are nice tasks when you feel comfortable with a topic or have experience with
+- `Session-guides` can in many cases take advantage of existing session material. Remember: One
+  session should be a maximum of 45min, so think of which topics can be learned by reading the
+  handout instead of discussing it during the session. exercises of this session. (of course they
+  still need to be feasible).
+- `quiz.md` files need to be copied from our old curriculum. You can find them in the session folder
+  in the `web-pool-2022` repository. Make sure that the questions still fit the content of the
+  session. If there is no quiz.md, or you work on a new session, just create a new quiz.md and add
+  new questions.
+
+## To-Do's
+
+There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new-format/issues/41)
+to keep an eye on.
+
+## Our workflow
+
+1. Go into the project
+   [Curriculum Roadmap](https://github.com/neuefische/web-curriculum-new-format/projects/1)
+2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
+   one from the 2-week milestone column). You have two options there:
+   1. Review a part of the session (handout, challenges or session guide). For this, go to the
+      linked Pull Request and review the text. Add changes with the `suggest changes` function.
+   2. Write a part yourself. Go into the respective branch of the session, e.g. css-basics, and work
+      on the topic that needs to be done next. Create a PR when finished and wait for a review.
+      Include changes and merge afterwards, but _do not delete the branch_.
+3. Assign yourself to the ticket.
+4. Once you are done with the task, unassign yourself and put the ticket into the next column to the
+   right. We always write the handout first, then create the challenges and finally write the
+   session guide.
+
+> Context: When a ticket is in a "In progress" column, but it has no assignee, it is a To-Do, so it
+> not really "in progress", but it is supposed to be, so go get it tiger 🐯
+
+> A ticket undergoes the following stages:
+>
+> 1. Write Handout
+> 2. Review Handout
+> 3. Write Challenge (same file as Handout, but on the bottom of the page)
+> 4. Review Challenge
+> 5. Write Session-guide
+> 6. Review Session-guide
+
+With this workflow we stay on one feature branch per session, it will be merged into main three
+times: after the handout review, after the challenges review and finally after the session guide
+review.
+
+<br>
+
+## Our goals are:
+
+> 💡 **Self-sufficient learning**  
 > to prepare the students for their learning path and entry into their professional life
 
-> 💡 **Active and problem-based learning** <br>
-> to offer a practical approach of learning according to [research](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
+> 💡 **Active and problem-based learning**  
+> to offer a practical approach of learning according to
+> [research](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
 
-> 💡 **Integration of a "safety net"/"backup"** <br>
+> 💡 **Integration of a "safety net"/"backup"**  
 > to make sure the students are following along with the content of the course
 
-> 💡 **Balanced coders**
-> to actively make time to process the content, this is to increase motivation, productivity and focus for the students
+> 💡 **Balanced coders**  
+> to actively make time to process the content, this is to increase motivation, productivity and
+> focus for the students
 
-> 💡 **Guest lectures for a broad skillset**
-> to teach a broad collection of soft- and hardskills that teach methodological approaches useful for the daily professional life
+> 💡 **Guest lectures for a broad skill-set**  
+> to teach a broad collection of soft- and hard-skills that teach methodological approaches useful
+> for the daily professional life
 
-> 💡 **Balanced coaches**
-> to give more space for coaches to advance their personal development or contribute to in-house projects
+> 💡 **Balanced coaches**  
+> to give more space for coaches to advance their personal development or contribute to in-house
+> projects
 
 ## Daily routine
 
@@ -35,18 +95,19 @@ There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new
 | 0:45     | 9:15 - 10:00  | Session                  |
 | 1:30     | 10:00 - 11:30 | Active Learning          |
 | 0:30     | 11:30 - 12:00 | Recap                    |
-| 0:30     | 12:00 - 12:30 | Breather                 |
-| 1:00     | 12:30 - 13:30 | Break                    |
-| 0:45     | 13:30 - 14:15 | Guest Lecture            |
-| 0:45     | 14:15 - 15:00 | Session                  |
-| 1:30     | 15:00 - 16:30 | Active Learning          |
-| 0:30     | 16:30 - 17:00 | Recap                    |
-| 2:00     | 17:00 - 19:00 | Independent project time |
+| 1:00     | 12:00 - 13:00 | Break                    |
+| 0:45     | 13:00 - 13:45 | Guest Lecture            |
+| 0:45     | 13:45 - 14:30 | Breather                 |
+| 0:45     | 14:30 - 15:15 | Session                  |
+| 1:30     | 15:15 - 16:45 | Active Learning          |
+| 0:30     | 16:45 - 17:15 | Recap                    |
+| 2:00     | 17:15 - 19:15 | Independent project time |
 
 ## Sessions
 
-Sessions are structured not by week - but by days. It does not matter anymore which session is being held on which day of the week. This is the recommended order of sessions.
-Morning sessions should be the ones more challenging than afternoon sessions.
+Sessions are structured not by week - but by days. It does not matter which session is being held on
+which day of the week. This is the recommended order of sessions. Morning sessions should be the
+ones more challenging than afternoon sessions.
 
 | day | morning                      | afternoon                                     | project                                               | guest lecture                                                                                           |
 | --- | ---------------------------- | --------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -58,21 +119,22 @@ Morning sessions should be the ones more challenging than afternoon sessions.
 | 6   | `Repetition Project`         | A11y                                          | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     |
 | 7   | JS Basics                    | CSS Structure                                 | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |
 | 8   | JS Variables and Numbers     | CSS Grid                                      | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |
-| 9   | JS Loops (neu)               | CSS Responsive                                | ...                                                   | Why we love Open Source                                                                                 |
+| 9   | JS Conditions Booleans       | CSS Responsive                                | ...                                                   | Why we love Open Source                                                                                 |
 | 10  | JS Functions                 | JS Functions 2                                | ...                                                   | Design Workshop 1                                                                                       |
-| 11  | JS Conditions Booleans       | JS Strings and inputs                         | ...                                                   | Design Workshop 2                                                                                       |
-| 12  | JS Callback Functions (neu)  | JS EventListener and createElement            | ...                                                   | Design Workshop 3                                                                                       |
-| 13  | `Repetition Project`         | Linting Basics & Debugging (with console.log) | ...                                                   |
-| 14  | JS Objects and Arrays        | HTML Forms                                    |                                                       |
-| 15  | JS Array Methods             | JS Forms                                      |                                                       |
-| 16  | JS Array Methods 2           | JS Structure                                  |                                                       |
-| 17  | JS Fetch                     | Async Await (neu)                             |                                                       |
-| 18  | Git Advanced                 | CSS Animations                                |                                                       |
-| 19  | `Repetition Project`         | ES Next                                       |                                                       |
-| 20  | npm basics                   | JS Unit Testing                               |                                                       |
-| 21  | Buffer                       | Buffer                                        |                                                       |
+| 11  | HTML Forms                   | JS Strings and inputs                         | ...                                                   | Design Workshop 2                                                                                       |
+| 12  | JS Callback Functions (neu)  | JS Forms                                      | ...                                                   | Design Workshop 3                                                                                       |
+| 13  | JS createElement             | JS Forms 2                                    | ...                                                   | Design Workshop 3                                                                                       |
+| 14  | `Repetition Project`         | CSS Animations                                | ...                                                   |
+| 15  | JS Objects and Arrays        | JS Loops (neu)                                |                                                       |
+| 16  | JS Array Methods             | npm basics                                    |                                                       |
+| 17  | JS Array Methods 2           | JS Structure                                  |                                                       |
+| 18  | JS Fetch                     | Async Await (neu)                             |                                                       |
+| 19  | Git Advanced                 | ES Next                                       |                                                       |
+| 20  | `Repetition Project`         | Linting Basics & Debugging (with console.log) |                                                       |
+| 21  | JS Unit Testing              | Buffer                                        |                                                       |
 
-The following is unsorted and there for the sole purpose of showing how much time is left to be distributed:
+The following is unsorted and there for the sole purpose of showing how much time is left to be
+distributed:
 
 | day | morning                          | afternoon                      |
 | --- | -------------------------------- | ------------------------------ |

@@ -103,7 +103,7 @@
 
 ## Evaluate: Recap of the assignment / Discussion of MVP / Solution
 
-- Come back to the question that was raised in the beginning od the session and try and answer it in
+- Come back to the question that was raised in the beginning of the session and try and answer it in
   a few phrases.
 - Show the excalidraw sketch once more and ask the students why we do every step.
 

@@ -2,25 +2,20 @@
 
 ## Learning Objectives
 
-In this session you will learn:
-
-- [ ]
-
----
-
-## Topic 1
-
-### Sub Topic 1
-
-### Sub Topic 2
+- understanding concept 1
+- working with tool 2
 
 ---
 
-# Challenges
+## Concept 1
 
-## Part 1
+---
 
-## Part 2
+## Concept 2
+
+---
+
+## Concept 3
 
 ---
 
