@@ -11,17 +11,17 @@
 ## How the web works
 
 The world wide web is a network of computers that can exchange information with each other. There
-are many different protocols that define the rules on how machines communicate. Browsers use the
-"HTTP" protocol to communicate with "web servers".
+are many different protocols that define the rules on how machines communicate. Browsers use
+HTTP (_Hypertext Transfer Protocol_) to communicate with web servers.
 
-- The unique address of a resource on the web (URL) contains a human readable domain name, that
-  needs to be resolved to the technical address (IP) of the web server
-- The browser sends a "GET request" to load the HTML "document" from a web server
-- The web server sends a "response" containing the document
-- Often the HTML code contains references to additional resources (CSS files, images, etc.), which
-  the browser also requests from the server
-- The browser "renders" the received content to the screen and makes it interactive
-- Browsers might send "POST requests" containing additional data
+- The URL (_Uniform Resource Locator_) is the unique address of a resource on the web contains a human readable domain name, that
+  needs to be resolved to the technical IP (_Internet Protocol_) address of the web server via a DNS (_Domain Name Server_)
+- The browser sends a `GET` (that's an HTTP method) _request_ to load a HTML (_Hyper Text Markup Language_) document from a web server
+- The web server sends a _response_ containing the document
+- Often the HTML code contains references to additional resources (CSS (_Cascading Style Sheet_) files, images, etc.), which
+  the browser then also _requests_ from the server
+- The browser _renders_ the received content to the screen and makes it interactive
+- Browsers might also _request_ additional data from servers later via subsequent `GET` or `POST` requests
 
 <img src="./assets/request-response.png" width=600 />
 
@@ -29,15 +29,15 @@ are many different protocols that define the rules on how machines communicate. 
 
 ## HTML basics
 
-HTML (hyper text markup language) is used to express text in a structured way. HTML tags indicate
+HTML (_Hyper Text Markup Language_) is used to express text in a structured way. HTML tags indicate
 what kind of element is displayed on the website. For example, a headline is written like this:
 
 ```html
 <h1>I am a headline!</h1>
 ```
 
-The content considered as headline is wrapped within an "opening tag" and a "closing tag". This is
-called an "element".
+The content considered as headline is wrapped within an _opening tag_ and a _closing tag_. The whole thing is
+called an _element_.
 
 Elements are nested into each other to create structure and hierarchy.
 
@@ -46,10 +46,10 @@ Elements are nested into each other to create structure and hierarchy.
 ```
 
 Some elements can't contain any other elements and therefore don't have a closing tag. They are
-"self-closing".
+self-closing and called [_empty elements_](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element).
 
 ```html
-<hr />
+<hr> or <hr />
 ```
 
 ### HTML tag attributes
@@ -59,15 +59,15 @@ specified via attributes. For example:
 
 - the source of an image
   ```html
-  <img src="logo.png" alt="The logo of the company." />
+  <img src="logo.png" alt="The logo of the company.">
   ```
 - the destination of an anchor element
   ```html
-  <a href="example-url.com"> click me </a>
+  <a href="https://example.com"> click me </a>
   ```
 - the type of an input element
   ```html
-  <input type="date" />
+  <input type="date">
   ```
 
 > 💡 The [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) contain
@@ -82,18 +82,18 @@ element, which consists of two main parts:
 - The `<head>` contains important meta information for the browser like
   - the charset (utf-8)
   - the favicon displayed in the tab
-  - the title of the website,
-  - stylesheets and java script files needed for the website.
+  - the title of the website
+  - CSS and JavaScript files needed for the website
 - The `<body>` contains the visible content of the website structured by html elements
 
 ```html
 <!DOCTYPE html>
 <html>
 	<head>
-		...meta information, additional links to css / js files
+		… meta information, additional links to CSS / JavaScript files …
 	</head>
 	<body>
-		...elements displayed on the web page
+		… elements displayed on the web page …
 	</body>
 </html>
 ```
@@ -108,9 +108,9 @@ element, which consists of two main parts:
 | `<h2></h2>`         | a level two heading                                          |
 | `<p></p>`           | a paragraph                                                  |
 | `<a></a>`           | an anchor (link)                                             |
-| `<img />`           | an image (self-closing)                                      |
+| `<img>`             | an image (self-closing / empty)                              |
 | `<form></form>`     | a form element                                               |
-| `<input />`         | an input field (self-closing)                                |
+| `<input>`           | an input field (self-closing / empty)                        |
 | `<button></button>` | a clickable element equipped with some kind of functionality |
 
 > 💡 A comprehensive list of all html elements can be found at the
@@ -154,7 +154,7 @@ Therefore, one should use semantic HTML elements whenever possible.
 ### Nesting HTML elements
 
 Nesting groups elements together in a meaningful way. The element containing the other elements is
-called the "parent element", which contains one or more "child elements".
+called the _parent element_, which contains one or more _child elements_.
 
 The following cases are typical examples of nested elements:
 
@@ -168,8 +168,8 @@ The following cases are typical examples of nested elements:
 - ```html
   <article>
   	<h2>Some headline</h2>
-  	<p>I am a paragraph...</p>
-  	<a href="https://www.github.com"> link to another website. </a>
+  	<p>I am a paragraph…</p>
+  	<a href="https://www.github.com">a link to another website</a>
   </article>
   ```
 - ```html
@@ -178,13 +178,14 @@ The following cases are typical examples of nested elements:
   	<span> submit </span>
   </button>
   ```
-  Below is a sketch of how semantic elements can be nested in a web page. <br><br>
-  <img src="./assets/sectioning-elements.png" width=700 />
+	
+Below is a sketch of how semantic elements can be nested in a web page.<br><br>
+<img src="./assets/sectioning-elements.png" width=700 />
 
 ## Emmet
 
-VSCode has a useful tool called Emmet which lets you autocomplete a lot of code by just typing
-certain snippets and pressing the `Tab` key afterwards. Try these snippets inside an html file and
+Visual Studio Code has a useful tool called Emmet which lets you autocomplete a lot of code by just typing
+certain snippets and pressing the <kbd>Tab</kbd> key afterwards. Try these snippets inside an HTML file and
 see what happens:
 
 - `!`
@@ -192,7 +193,7 @@ see what happens:
 - `button#red`
 - ul>li.card\*10
 
-> 💡 You can learn about more emmet commands in
+> 💡 You can learn about more Emmet commands in
 > [this cheat-sheet](https://coolcheatsheet.com/toolkit/emmet)
 
 ---
