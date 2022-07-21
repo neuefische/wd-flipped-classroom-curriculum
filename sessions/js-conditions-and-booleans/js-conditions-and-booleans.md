@@ -129,7 +129,9 @@ const greetingText = time > 12 ? 'Good morning.' : 'Good afternoon.';
 
 The ternary operator has the following structure:
 
-> condition `?` truthy case expression `:` falsy case expression.
+```
+condition ? expressionIfTrue : expressionIfFalse.
+```
 
 If the condition is true, the first expression is evaluated, otherwise the second expression. The
 ternary operator can be used to decide which function should be called:
@@ -151,3 +153,17 @@ moveElement(xPos > 300 ? 300 : xPos); // the element can't be moved further than
 ---
 
 ## Resources
+
+### Operators
+
+[MDN Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators)
+
+[MDN Logical Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators)
+
+### if / else statements
+
+[MDN about if else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+
+### Ternary Operator
+
+[MDN Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
