@@ -1,8 +1,17 @@
 # Challenges: HTML and the Web
 
+## Part 1: Div-Salad
+
+Follow the link to this [CodeSandbox](https://codesandbox.io/s/html-basics-start-np39nv)
+
+1. Fork the CodeSandbox
+2. Replace all the <div> tags in the code with semantic HTML.
+
+## Part 2: Personal Website
+
 In this challenge you will start creating your own personal website.
 
-## Personal Website: Git Workflow
+### Git Workflow
 
 Setup a local and a remote repository for your project:
 
@@ -12,7 +21,7 @@ Setup a local and a remote repository for your project:
    GitHub repository page found under `..or push an existing repository from the command line` to
    push your work.
 
-## Personal Website: Get started with HTML
+### Get started with HTML
 
 Start working on the HTML markup of your personal website.
 
