@@ -2,18 +2,16 @@
 
 ## Learning Objectives
 
-In this session you will learn:
-
-- [ ] how to style elements dynamically, e.g. when hovering over them or setting focus on them
-- [ ] about more complex css selectors like pseudo classes and pseudo elements
-- [ ] how to combine selectors into complex rulesets
+- Style elements based on their state, e.g. when hovering over them or setting focus on them
+- Understanding more complex CSS selectors like `pseudo classes` and `pseudo elements`
+- Combining selectors into complex rulesets
 
 ---
 
 ## Id Selectors
 
-Select one element based on its id. We recommend not using id selectors but class selectors instead.
-Id selectors aren't resuable like class selectors and they are hard to overwrite.
+Selects one element based on its `id`. Id selectors aren't reusable like class selectors and they
+are hard to overwrite.
 
 ```css
 #title {
@@ -21,10 +19,12 @@ Id selectors aren't resuable like class selectors and they are hard to overwrite
 }
 ```
 
+> ❗️ We recommend not using Id selectors but class selectors instead.
+
 ## Attribute Selectors
 
-You can style elements depending on whether they have certain attributes. This can be achieved with
-attribute selectors written inside `[...]` square brackets. Here are some examples:
+You can style elements depending on whether they have certain HTML attributes. This can be achieved
+with attribute selectors written inside `[...]` square brackets. Here are some examples:
 
 - any element with the attribute hidden
 
@@ -34,7 +34,7 @@ attribute selectors written inside `[...]` square brackets. Here are some exampl
   }
   ```
 
-- all links which open a new tab every time:
+- all links which open a new tab:
 
   ```css
   [target='_blank'] {
@@ -42,7 +42,7 @@ attribute selectors written inside `[...]` square brackets. Here are some exampl
   }
   ```
 
-- all elements with the class "card" and the attribute role="list"
+- all elements with the class `card` and the attribute `role="list"`
 
   ```css
   .card[role='list'] {
@@ -51,7 +51,7 @@ attribute selectors written inside `[...]` square brackets. Here are some exampl
   ```
 
 > 💡 There are many more of these attribute selectors which can be looked up
-> [in the MDN dev docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors).
+> [in the MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors).
 
 ## Pseudo Classes
 
@@ -75,10 +75,18 @@ some examples of states that can be styled with pseudo classes:
   }
   ```
 
-- focused elements
+- links that have been visited
 
   ```css
   a:visited {
+  	...;
+  }
+  ```
+
+- form input that has received focus.
+
+  ```css
+  input:focus {
   	...;
   }
   ```
@@ -101,11 +109,11 @@ some examples of states that can be styled with pseudo classes:
   ```
 
 > 💡 There are many more of these pseudo classes which can be looked up
-> [in the MDN dev docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes).
+> [in the MDN web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes).
 
 ## Pseudo Elements
 
-In comparison to pseudo classes, pseudo elements let you style a specific part of the selected
+In comparison to `pseudo classes`, `pseudo elements` let you style a specific part of the selected
 elements like the first line of a paragraph, the first-letter, the selection etc. Similar to pseudo
 classes they are written with `::` double colons directly after the original selector.
 
@@ -138,15 +146,16 @@ classes they are written with `::` double colons directly after the original sel
 
 ## Combinators
 
-Sometimes it is more efficient to combine multiple selectors instead of defining yet another css
-class. You can chain together multiple selectors to form rather complex css selectors which apply
+Sometimes it is more efficient to combine multiple selectors instead of defining yet another CSS
+class. You can chain together multiple selectors to form rather complex CSS selectors which apply
 only in specific cases. In the example above we already combined three selectors: `a`, `:hover` and
 `::after`. But there are also other ways to combine selectors:
 
-- `(space)` : a specific element somewhere inside another specific element
+- `(space)` : a specific element somewhere inside another specific element (regardless of nesting
+  level)
   - `h2 span`: any span inside an h2
   - `.card button`: all buttons inside an element with the class "card"
-- `>` : targeting a direct decendant of another element
+- `>` : targeting a direct descendant of another element
   - `h2>span`: all spans which are direct children of an h2
   - `.card>button`: all buttons which are direct children of an element with the class "card"
 - `~` : any later sibling element after another element
@@ -167,6 +176,6 @@ body section > ul[role='list'] > li::before {
 
 ## Resources
 
-- [Attribute-selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
-- [Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
-- [Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+- [MDN web docs: Attribute-selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+- [MDN web docs: Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+- [MDN web docs: Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)

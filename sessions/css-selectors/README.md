@@ -124,7 +124,7 @@ button:active {
 
 ## Pseudo Elements
 
-With pseudo elements you can select parts of an element and add content before or after an element:
+With pseudo elements you can select parts of an element or add content before or after an element:
 
 ```css
 p::first-line {
@@ -146,8 +146,9 @@ a[href^='https']::before {
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](session-name.md) for the students
-- [ ] Open the handout and walk the students through the tasks
+- [ ] Provide the [handout](css-selectors.md) and the [challenges](challenges-css-selectors.md) for
+      the students
+- [ ] Open the challenges and walk the students through the tasks
 - [ ] Divide the students in groups
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
       can ask the coaches for help at any time / Always help each other / Take a break when you need

@@ -14,7 +14,7 @@ Solve the puzzles from the [CSS Diner game](https://flukeout.github.io/).
 Continue to build your personal website. Include some of the selectors you learned today. For
 example:
 
-- create a decorator element with a ::before selector
+- create a decorator element with a `::before` selector
 - style the `:link`, `:visited`, `:active`, `:hover` state of your links
 - use combinators instead of classes if possible: `footer ul > li` instead of `.footer-list-item`
 
