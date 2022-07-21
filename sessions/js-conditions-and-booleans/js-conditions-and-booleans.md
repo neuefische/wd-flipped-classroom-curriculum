@@ -4,8 +4,8 @@
 
 - [ ] hot to use conditions to control the program flow
 - [ ] what booleans and truthy / falsy values are
+- [ ] how comparison and logical operators work
 - [ ] how to write a ternary expression
-- [ ] what a switch statement is
 
 ---
 
@@ -31,6 +31,8 @@ JavaScript can transform any value into a boolean with type coersion. `Truthy` v
   - undefined
   - empty string ""
 
+---
+
 ## Comparison Operators
 
 Logical operators produce boolean values by comparing up to two expressions:
@@ -43,7 +45,26 @@ Logical operators produce boolean values by comparing up to two expressions:
 | A `<` B   | strictly less than: is `true` if A is less than B.                |
 | A `>=` B  | greater than or equal: is `true` if A is greater than or equal B. |
 | A `<=` B  | less than or equal: is `true` if A is less than or equal B.       |
-| `!`A      | `not`: is `true` if a is `falsy`, and `false` if A is `truthy`.   |
+
+---
+
+## Logical Operators
+
+Logical operators combine up to two booleans into a new boolean.
+
+| Operator                      | Effect                                                 |
+| ----------------------------- | ------------------------------------------------------ |
+| `!`A                          | `not`: flips a `true` value to `false` and vice versa. |
+| A <code>&#124;&#124;</code> B | `or`: is `true` if either A `or` B is true.            |
+| A `&&` B                      | `and`: is `true` if both A `and` B is true.            |
+
+> 💡 You can combine logical operators with brackets to define which operator should be evaluated
+> first, e.g:
+>
+> - (A `||` B) && (C `||` D)
+> - `!`(A `||` B)
+
+---
 
 ## Control Flow: `if / else`
 
@@ -58,7 +79,7 @@ if (isSunShining) {
 }
 ```
 
-The else statement is executed only if the condition is `false`.
+The else block is executed only if the condition is `false`.
 
 ```js
 const isSunShining = false;
@@ -70,8 +91,8 @@ if (isSunShining) {
 }
 ```
 
-The condition expression between the `()` brackets can be composed of logical operators as well. You
-can distinguish between more cases by chaining `else if` statements:
+The condition expression between the `()` brackets can be composed of logical or comparison
+operators as well. You can distinguish between more cases by chaining `else if` statements:
 
 ```js
 if (hour < 12) {
@@ -85,8 +106,8 @@ if (hour < 12) {
 }
 ```
 
-If the condition is not a boolean, it is converted into one by the `truthy` / `falsy` property of
-that value. An if statement does not need an else statement.
+If the condition is not a boolean, it is converted into one by type coersion. This can be used to
+check whether a value is not 0 or an empty string:
 
 ```js
 const name = 'Alex';
@@ -94,6 +115,8 @@ if (name) {
 	console.log('Hi ' + name + '!'); // only executed if name is not an empty string
 }
 ```
+
+---
 
 ## Ternary operator: `? :`
 
@@ -106,9 +129,10 @@ const greetingText = time > 12 ? 'Good morning.' : 'Good afternoon.';
 
 The ternary operator has the following structure:
 
-condition `?` truthy case expression `:` falsy case expression.
+> condition `?` truthy case expression `:` falsy case expression.
 
-The ternary operator can be used to decide which function should be called:
+If the condition is true, the first expression is evaluated, otherwise the second expression. The
+ternary operator can be used to decide which function should be called:
 
 ```js
 isUserLoggedIn ? logoutUser() : loginUser();
@@ -127,44 +151,3 @@ moveElement(xPos > 300 ? 300 : xPos); // the element can't be moved further than
 ---
 
 ## Resources
-
-Booleans
-
-    Explain what a boolean is
-    Show example booleans like these
-    Show falsy example values:
-        0 / -0
-        null
-        false
-        undefined
-        empty string ""
-    Show truthy example values:
-        1, 2, -3, etc.
-        "hello"
-        true
-    Show how to use booleans with comparison operators
-        === strictly equal to / == equal to
-        !== strictly not equal to / != not equal to
-        > Greater than
-        < Less than
-        <= Less than or equal to
-        >= Greater than or equal to
-    Let students solve exercise 1 + 2
-
-Logical operators
-
-    Explain the basic logical operators to the students
-        &&
-        ||
-        !
-        combined operators with brackets
-        Let the students solve exercise 7
-
-Conditions
-
-    Show the generic structure:
-        if / if...else / if...else if...else
-    Show an example function that uses the if-statement like this one
-    Show an example project that uses the if-statement like this one. You can delete the JS part here and live re-code it.
-    mention the ternary operator and how it works
-    Let students solve exercises 3-6
