@@ -2,18 +2,18 @@
 
 ## Learning Objectives
 
-- Having a general understanding about the purpose of CSS
-- Knowing the meaning behind the name CSS (`Cascading Style Sheets`)
-- Understanding the fundamentals of CSS: `CSS syntax`, `selectors`, `box model`,
+- having a general understanding about the purpose of CSS
+- knowing the meaning behind the name CSS (`Cascading Style Sheets`)
+- understanding the fundamentals of CSS: `CSS syntax`, `selectors`, `box model`,
   `inline & block elements`
-- Using stylings for fonts & working with relative units
-- Linking stylesheets to the HTML document
+- using stylings for fonts & working with relative units
+- linking stylesheets to the HTML document
 
 ---
 
 ## What is CSS?
 
-With CSS you can add styling to your HMTL elements.
+With CSS you can add styling to your HTML elements.
 
 ![Comparison of HTML, CSS and JavaScript](assets/animated-gif-for-comparison.gif)
 
@@ -21,7 +21,7 @@ With CSS you can add styling to your HMTL elements.
 
 ## CSS syntax
 
-The structure of how to write CSS is also called `ruleset`. It consists of four parts:
+The structure of how to write CSS is also called **ruleset**. It consists of four parts:
 
 ![CSS syntax](assets/css-syntax.png)
 
@@ -58,14 +58,14 @@ h3 {
 
 There are different CSS selectors you can use to style elements. The most common ones are:
 
-- `Universal` selector `*` selects all elements.
-- `Element or Type` selector, like `article`, selects all elements of a specific type.
+- **Universal selector** `*` selects all elements.
+- **Element or Type selector**, like `article`, selects all elements of a specific type.
   ```css
   article {
   	color: red;
   }
   ```
-- `Class` selector, like `.class-name`, selects all elements with the specified class.
+- **Class selector**, like `.class-name`, selects all elements with the specified class.
   ```css
   .my-cool-class {
   	color: hotpink;
@@ -104,7 +104,7 @@ list shows only a few examples:
 
 ## Box Model
 
-All elements of a website are wrapped in a `box model`. It's a way to define the size and position
+All elements of a website are wrapped in a **box model**. It's a way to define the size and position
 of an element. There are four different parts: `content`, `padding`, `border` and `margin`.
 
 | box model part | Function                                                 |
@@ -135,9 +135,9 @@ subtracted to calculate the available space for the content.
 
 There are basically two types of elements: inline-level and block-level elements.
 
-- `Inline elements` occupy the space as required by the element itself and are placed inside the
+- **Inline elements** occupy the space as required by the element itself and are placed inside the
   text lines.
-- `Block elements` occupy the full horizontal space of the parent element and begin a new line.
+- **Block elements** occupy the full horizontal space of the parent element and begin a new line.
 
 Example:
 
@@ -196,10 +196,10 @@ You can include custom fonts in two ways:
 
 There are two different types of units: `relative` and `absolute`.
 
-- `Relative units` are relative to something else, like the size of the viewport or the size of the
-  parents elements font.
-- `Absolute units` are fixed and aren't relative to anything else. The most common absolute unit is
-  `px` (Pixels).
+- **Relative units** are relative to something else, like the size of the viewport or the size of
+  the parents elements font.
+- **Absolute units** are fixed and aren't relative to anything else. The most common absolute unit
+  is `px` (Pixels).
 
 **Relative units examples**
 
@@ -214,8 +214,8 @@ There are two different types of units: `relative` and `absolute`.
 
 ## Linking Stylesheets
 
-To separate your HTML and CSS code, you can create a new file, like `styles.css` and link it to your
-HTML file by placing a `<link>` tag in the `<head>` of your HTML document.
+To separate your HTML and CSS code, you can create a new file, like **styles.css** and link it to
+your HTML file by placing a `<link>` tag in the `<head>` of your HTML document.
 
 ```html
 <head>
