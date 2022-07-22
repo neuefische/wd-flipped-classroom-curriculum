@@ -2,9 +2,9 @@
 
 ## Learning Objectives
 
-- [ ] learning what the terminal and the shell are.
-- [ ] learning to navigate the file system inside unsing the shell and the terminal.
-- [ ] learning to create, rename, remove and move files and folders in the filesystem.
+- Learning what the terminal and the shell are.
+- Learning to navigate the file system using the shell and the terminal.
+- Learning to create, rename, remove and move files and folders in the filesystem.
 
 ---
 
