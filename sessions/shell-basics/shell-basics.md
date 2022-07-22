@@ -12,7 +12,7 @@
 
 You are probably used to using GUIs (_[Graphical User Interfaces](https://en.wikipedia.org/wiki/Graphical_user_interface)_) to interact with computers.
 
-Often times developers interact with computers using CLIs (_Command Line Interfaces_) which are text
+Often times developers interact with computers using CLIs (Command Line Interfaces) which are text
 based user interfaces. That means that you type commands to interact with the computer
 (create / move / delete / edit files, install software, change system settings...).
 
