@@ -2,16 +2,16 @@
 
 ## Learning Objectives
 
-- Using version control locally to create repositories and commits
-- Understanding different states of files
-- Synchronizing local repositories with remote repositories
+- using version control locally to create repositories and commits
+- understanding different states of files
+- synchronizing local repositories with remote repositories
 
 ---
 
 ## Git CLI
 
 After installing Git on your machine, you can create repositories and commits locally. You can also
-synchronize your local repository with a "remote" repository (i.e. on GitHub).
+synchronize your local repository with a **remote** repository (i.e. on GitHub).
 
 ### Creating local repositories
 
