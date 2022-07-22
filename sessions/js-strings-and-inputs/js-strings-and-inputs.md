@@ -14,10 +14,10 @@ There are three ways to create strings using _string literals_:
 
 1. `'string'`: single quotes
 2. `"string"`: double quotes
-3. `` `string` ``: back ticks or `template literals`.
+3. `` `string` ``: back ticks or **template literals**.
 
 Strings can by chained together by using the `+` operator (yes, the same as the maths operator).
-This is called `string concatination`:
+This is called **string concatination**:
 
 ```js
 const name = 'Alex';
@@ -27,8 +27,13 @@ const stringConcatination = 'Hello ' + name + ', good to see you!';
 ## Template Literals
 
 The third method to write strings has the useful property that you can insert variables into the
+<<<<<<< HEAD
 string by wrapping placeholders with a dollar sign and curly brackets `${}`. This is also called
 `string interpolation`.
+=======
+string by wrapping placeholders with a dollar sign and curly brackets `${}` . This is also called
+**string interpolation**.
+>>>>>>> 43cb2d0 (style: change code blocks to bold text)
 
 By this, you don't have to concat multiple strings together if you want to use a variable in your
 string:
@@ -39,13 +44,13 @@ const stringConcatination = 'Hello ' + name + ', good to see you!';
 const withTemplateString = `Hello ${name}, good to see you!`;
 ```
 
-Any `expression` can be placed into these placeholders:
+Any **expression** can be placed into these placeholders:
 
 ```js
 const greeting = `Hello ${name !== null ? name : 'mysterious person'}, good to see you!`;
 ```
 
-With template literals you can also write `multi-line strings`:
+With template literals you can also write **multi-line strings**:
 
 ```js
 `Hello,
@@ -55,8 +60,8 @@ Good bye!`;
 
 ## String Properties and Methods
 
-Strings in JavaScript have some build-in `properties` and functionalities called `methods`. You can
-call them with the dot notation followed by the name of the property / method.
+Strings in JavaScript have some build-in **properties** and functionalities called **methods**. You
+can call them with the dot notation followed by the name of the property / method.
 
 ```js
 'A normal string'.length; // evaluates to 15
@@ -85,7 +90,7 @@ call them with the dot notation followed by the name of the property / method.
 
 ## Input Fields
 
-Every input field in HTML holds a `value` in form of a string. You can access the value by using
+Every input field in HTML holds a **value** in form of a string. You can access the value by using
 `.value` on the input Element:
 
 ```html
