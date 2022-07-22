@@ -27,13 +27,8 @@ const stringConcatination = 'Hello ' + name + ', good to see you!';
 ## Template Literals
 
 The third method to write strings has the useful property that you can insert variables into the
-<<<<<<< HEAD
-string by wrapping placeholders with a dollar sign and curly brackets `${}`. This is also called
-`string interpolation`.
-=======
 string by wrapping placeholders with a dollar sign and curly brackets `${}` . This is also called
 **string interpolation**.
->>>>>>> 43cb2d0 (style: change code blocks to bold text)
 
 By this, you don't have to concat multiple strings together if you want to use a variable in your
 string:
@@ -68,8 +63,8 @@ can call them with the dot notation followed by the name of the property / metho
 'A normal string'.toUpperCase(); // evaluates to "A NORMAL STRING"
 ```
 
-> 💡 Methods are functions, thus they need to be invoked by placing `()` brackets after the name of the
-> method.
+> 💡 Methods are functions, thus they need to be invoked by placing `()` brackets after the name of
+> the method.
 
 | Property / Method                   | Effect                                                                   |
 | ----------------------------------- | ------------------------------------------------------------------------ |
