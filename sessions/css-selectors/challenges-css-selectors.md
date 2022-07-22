@@ -4,7 +4,7 @@
 
 Solve the puzzles from the [CSS Diner game](https://flukeout.github.io/).
 
-**Important:** It is currently not possible to select the `table` in the game.
+**Important:** It is currently not possible to select the **table** in the game.
 
 > 💡 Hint: Don't worry, some puzzles are based on really special selectors, you don't have to learn
 > all of them.

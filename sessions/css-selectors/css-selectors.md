@@ -2,15 +2,15 @@
 
 ## Learning Objectives
 
-- Style elements based on their state, e.g. when hovering over them or setting focus on them
-- Understanding more complex CSS selectors like `pseudo classes` and `pseudo elements`
-- Combining selectors into complex rulesets
+- style elements based on their state, e.g. when hovering over them or setting focus on them
+- understanding more complex CSS selectors like `pseudo classes` and `pseudo elements`
+- combining selectors into complex rulesets
 
 ---
 
 ## Id Selectors
 
-Selects one element based on its `id`. Id selectors aren't reusable like class selectors and they
+Selects one element based on its **id**. Id selectors aren't reusable like class selectors and they
 are hard to overwrite.
 
 ```css
@@ -56,8 +56,8 @@ with attribute selectors written inside `[...]` square brackets. Here are some e
 ## Pseudo Classes
 
 Sometimes we want to style an HTML element differently when it is in a specific state. This can be
-accomplished by `pseudo classes`. These are added to a selector and start with a `:` colon. Here are
-some examples of states that can be styled with pseudo classes:
+accomplished by **pseudo classes**. These are added to a selector and start with a **:** colon. Here
+are some examples of states that can be styled with pseudo classes:
 
 - hovered elements
 
@@ -99,8 +99,8 @@ some examples of states that can be styled with pseudo classes:
   }
   ```
 
-- elements which are the nth child in another element. `n` is the argument that you can replace for
-  example with a number or the words `even` and `odd`.
+- elements which are the nth child in another element. **n** is the argument that you can replace
+  for example with a number or the words **even** and **odd**.
 
   ```css
   li:nth-child(n) {
@@ -113,9 +113,9 @@ some examples of states that can be styled with pseudo classes:
 
 ## Pseudo Elements
 
-In comparison to `pseudo classes`, `pseudo elements` let you style a specific part of the selected
-elements like the first line of a paragraph, the first-letter, the selection etc. Similar to pseudo
-classes they are written with `::` double colons directly after the original selector.
+In comparison to **pseudo classes**, **pseudo elements** let you style a specific part of the
+selected elements like the first line of a paragraph, the first-letter, the selection etc. Similar
+to pseudo classes they are written with **::** double colons directly after the original selector.
 
 - this selects the first line of paragraphs
 
