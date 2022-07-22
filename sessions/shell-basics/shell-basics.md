@@ -26,7 +26,7 @@ On macOS we are using zsh (z shell) as the command interpreter.[^1]
 
 By default it is run within the Terminal app. For this course we'll use iTerm and Visual Studio Code as alternative terminal emulators.
 
-- A shell (like _zsh_) is the command interpreter that runs and executes commands on your computer and
+- A shell (like zsh) is the command interpreter that runs and executes commands on your computer and
 outputs results.
 - A terminal (like _Terminal_, _iTerm_, _Visual Studio Code_) is a text input and output environment (emulating a [hardware computer terminal](https://en.wikipedia.org/wiki/Computer_terminal)) that sends commands to the shell and displays its output.
 
