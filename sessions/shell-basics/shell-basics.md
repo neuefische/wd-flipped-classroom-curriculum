@@ -28,7 +28,7 @@ By default it is run within the Terminal app. For this course we'll use iTerm an
 
 - A shell (like _zsh_) is the command interpreter that runs and executes commands on your computer and
 outputs results.
-- A terminal (like _Terminal_, _iTerm_, _Visual Studio Code_) is a text input and output environment (emulating a [hardware computer terminal](https://en.wikipedia.org/wiki/Computer_terminal) that sends commands to the shell and displays its output.
+- A terminal (like _Terminal_, _iTerm_, _Visual Studio Code_) is a text input and output environment (emulating a [hardware computer terminal](https://en.wikipedia.org/wiki/Computer_terminal)) that sends commands to the shell and displays its output.
 
 ### Basic Shell commands
 
