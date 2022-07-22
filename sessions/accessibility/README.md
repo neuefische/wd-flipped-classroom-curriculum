@@ -20,17 +20,51 @@
 
 ---
 
+
 ## Activate prior knowledge of students
 
+- Ask students: "Do you know of any examples of accessibility outside the digital world?"
+  - Answers could include (you might give hints):
+    - orientation systems for blind people using tactile pavement
+    - wheelchair ramps
+    - audible signals or countdowns for traffic lights
+    - high contrast road signs
+
+- Ask students: "Did you (or your parents/grandparents) ever had any problems to use websites or apps?"
+  - Discuss and explore some stories. Maybe have your own Ally horror story prepared.
+
+- Ask students: "Why should **you** care about accessibility?"
+  - Just collect some answers and tell them that's what you'll discuss now.
+
 ### Which prior knowledge will be used for this session?
+
+- Semantic HTML
 
 ---
 
 ## Inform: Sessionguide
 
-### Section 1
+### Why should I care about accessibility?
 
-- [ ]
+- [ ] Eplain web accessibility (short [a11y](https://en.wikipedia.org/wiki/Numeronym)): websites, tools and technologies are designed and developed that people with disabilities can use them
+
+- [ ] Explain what disabilities that affect interaction/access: auditory, cognitive, neurological, physical, speech, visual
+
+- [ ] Show how that benefits **all** people: different screen sizes, changing abilities due to aging, temporary disabilities, situational limitations, slow Internet connection
+
+- [ ] Show [this chart from Microsoft](https://user-images.githubusercontent.com/5230863/180420356-992fb11b-8834-47b6-92a6-90ba59dbf93d.png) to explain how disablities can be very situational.  
+(Full pdf [here](https://www.microsoft.com/design) -> scroll down -> Inclusive 101)
+
+- [ ] Explain that a11y is required by law in many situations (e.g. for [public sector bodies in the EU](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016L2102&from=de))
+
+
+
+Web as an increasingly important resource
+Access to information and communications technologies, including the Web, is defined as a basic human right in the United Nations Convention on the Rights of Persons with Disabilities Quote
+Inclusivity
+Business potential (job chances, SEO)
+
+
 - [ ]
 
 ### Section 2
