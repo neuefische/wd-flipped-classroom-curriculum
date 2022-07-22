@@ -78,6 +78,11 @@ myNewButton.textContent = 'Click me!';
 
 ## `.innerHTML`
 
+> ❗️ innerHTML can be unsafe when user input is passed into the template literal. Use it with
+> caution. Read
+> [this article](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#replacing_the_contents_of_an_element)
+> for more information about it.
+
 The `innerHTML` property can be used to create the entire html layout of an element by passing the
 html code as a string. By using **template literals** the content of the html can be dynamically
 created.
@@ -135,10 +140,6 @@ const cardContainer.innerHTML = "";
 ```html
 <ul data-js="cardContainer"></ul>
 ```
-
-> ❗️ innerHTML can be unsafe when user input is passed into the template literal. Read
-> [this article](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#replacing_the_contents_of_an_element)
-> for more information about it.
 
 ---
 
