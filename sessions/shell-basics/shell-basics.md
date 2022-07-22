@@ -22,7 +22,7 @@ This has the following reasons / advantages:
 - You can write scripts (which consist of a number of commands) to automize processes and repetitive
   tasks and ensure they are being run exactly the same way every time they are executed.
 
-On macOS we are using zsh (_z shell_) as the command interpreter.[^1]
+On macOS we are using zsh (z shell) as the command interpreter.[^1]
 
 By default it is run within the Terminal app. For this course we'll use iTerm and Visual Studio Code as alternative terminal emulators.
 
