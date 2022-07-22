@@ -18,7 +18,7 @@ based user interfaces. That means that you type commands to interact with the co
 
 This has the following reasons / advantages:
 
-- Many tools don't have GUI (_graphical user interfaces_) and can only be run over a CLI.
+- Many tools don't have GUI (_graphical user interfaces_) and can only be used as a CLI.
 - You can write scripts (which consist of a number of commands) to automize processes and repetitive
   tasks and ensure they are being run exactly the same way every time they are executed.
 
