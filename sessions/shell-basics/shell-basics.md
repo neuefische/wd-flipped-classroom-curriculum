@@ -18,17 +18,17 @@ based user interfaces. That means that you type commands to interact with the co
 
 This has the following reasons / advantages:
 
-- Many tools don't have GUI (_graphical user interfaces_) and can only be run over a CLI
+- Many tools don't have GUI (_graphical user interfaces_) and can only be run over a CLI.
 - You can write scripts (which consist of a number of commands) to automize processes and repetitive
   tasks and ensure they are being run exactly the same way every time they are executed.
 
-On macOS we are using zsh (_z shell_) as the command interpreter. (Before 2019 (v10.15) macOS' shell was called _bash_. Keep that in mind when googling).
+On macOS we are using zsh (_z shell_) as the command interpreter. (Before 2019 (v10.15) macOS' shell was called _bash_. Most bash commands will work with zsh as well. Keep that in mind when googling.)
 
 By default it is run within the Terminal app. For this course we'll use iTerm and Visual Studio Code as alternative terminal emulators.
 
 - A shell (like _zsh_) is the command interpreter that runs and executes commands on your computer and
-outputs results
-- A terminal emulator (like _Terminal_, _iTerm_, _Visual Studio Code_) is a text input and output environment that sends commands to the shell and displays its output
+outputs results.
+- A terminal (like _Terminal_, _iTerm_, _Visual Studio Code_) is a text input and output environment (emulating a [hardware computer terminal](https://en.wikipedia.org/wiki/Computer_terminal) that sends commands to the shell and displays its output.
 
 ### Basic Shell commands
 
