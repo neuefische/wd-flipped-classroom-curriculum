@@ -4,7 +4,7 @@
 
 ## Learning objectives
 
-- [ ] How to write HTML 
+- [ ] How to write HTML
 - [ ] How HTML documents are structured
 - [ ] Understanding and applying semantic HTML
 
@@ -14,13 +14,11 @@
 
 > 💡 Breathe and relax :)
 
-
 ### Why is the content of todays block so important for the students?
 
 - You will get an understanding about the very basics / the foundation of how the web works.
 - You will have a solid foundation to build upon and expand your knowledge and skills.
 - You will create your first website today, a big step towards becoming a developer!
-
 
 ### Which important problem will we solve today?
 
@@ -29,10 +27,9 @@
   - it's SEO optimized
   - it's better understandable for other developers
 
-
 ### Raise a question to be answered by the end of the block
 
-- Why do we __want__ to write semantic HTML?
+- Why do we **want** to write semantic HTML?
 
 ---
 
@@ -168,7 +165,7 @@ information about its content.
 <div>Hello World</div>
   <div>
     <div>
-      I am training to becoming a Web Dev. Therefore i love coding.
+      I am training to becoming a Web Dev. Therefore I love coding.
       Other things i like are:
     </div>
     <div>
@@ -180,13 +177,14 @@ information about its content.
 </div>
 ```
 
-> Change the tags to semantic HTML
+> Change the tags to semantic HTML, if you have time you can make this part interactive by asking
+> the students for their ideas
 
 ```
 <main>
 <h1>Hello World</h1>
       <article>
-            <p>I am training to becoming a Web Dev. Therefore of course i love coding. Other things i like are:</p>
+            <p>I am training to becoming a Web Dev. Therefore I love coding. Other things i like are:</p>
             <ul>
                   <li>good food</li>
                   <li>hanging out with my friends</li>
@@ -199,8 +197,9 @@ information about its content.
 #### The benefits of writing semantic HTMl are:
 
 - [ ] `Accessibility`: Screenreaders can function much better with semantic HTML, which can help
-      e.g. visually impaired users to navigate the webpage
-- [ ] `SEO`: It's relevant for SEO
+      e.g. visually impaired users to navigate the webpage and have a better user experience
+- [ ] `SEO`: It's relevant for search engines to evaluate the importance and the context of the
+      different parts of a web page
 - [ ] `Readability`: It's easier for other developers to understand your code. And also for yourself
       in the future!
 
