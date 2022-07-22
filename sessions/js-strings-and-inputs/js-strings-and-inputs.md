@@ -10,7 +10,7 @@
 
 ## Strings
 
-Strings can be written in 3 different ways:
+There are three ways to create strings using _string literals_:
 
 1. `'string'`: single quotes
 2. `"string"`: double quotes
@@ -27,7 +27,7 @@ const stringConcatination = 'Hello ' + name + ', good to see you!';
 ## Template Literals
 
 The third method to write strings has the useful property that you can insert variables into the
-string by wrapping placeholders with a dollar sign and curly brackets `${}` . This is also called
+string by wrapping placeholders with a dollar sign and curly brackets `${}`. This is also called
 `string interpolation`.
 
 By this, you don't have to concat multiple strings together if you want to use a variable in your
@@ -59,11 +59,11 @@ Strings in JavaScript have some build-in `properties` and functionalities called
 call them with the dot notation followed by the name of the property / method.
 
 ```js
-'A normal string'.length; // equals 15
-'A normal string'.toUpperCase(); // => "A NOARMAL STRING"
+'A normal string'.length; // evaluates to 15
+'A normal string'.toUpperCase(); // evaluates to "A NORMAL STRING"
 ```
 
-> 💡 Just like functions, methods need to be invoked by placing `()` brackets after the name of the
+> 💡 Methods are functions, thus they need to be invoked by placing `()` brackets after the name of the
 > method.
 
 | Property / Method                   | Effect                                                                   |
@@ -99,8 +99,8 @@ Every input field in HTML holds a `value` in form of a string. You can access th
 const textInput = document.querySelector('[data-js="textInput"]');
 const numberInput = document.querySelector('[data-js="numberInput"]');
 
-textInput.value; // === 'test 123'
-numberInput.value; // === '42' (still a string!)
+textInput.value; // evaluates to 'test 123'
+numberInput.value; // evaluates to '42' (still a string!)
 ```
 
 You can also change the value of the input by assigning a new value to this input property:
