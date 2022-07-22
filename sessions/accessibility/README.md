@@ -70,7 +70,7 @@
 
 - [ ] Show the [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) (Web Content Accessibility Guidelines) and give a broad overview:
   - `Color contrast` using this [contrast checker](https://webaim.org/resources/contrastchecker/) (important, take your time here!)
-	- `Keyboard` accessibility (built-in via link, button, etc.)
+  - `Keyboard` accessibility (built-in via link, button, etc.)
   - Accessible `Pagelayout` (landmarks, headings, etc.)
   - `Alt` texts for images
   - Understandable `content` (language alà simplified english, complexity) 
@@ -98,7 +98,7 @@
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](session-name.md) for the students
+- [ ] Provide the [handout](accessibility.md) for the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students in groups
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
