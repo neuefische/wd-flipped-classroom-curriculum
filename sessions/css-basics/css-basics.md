@@ -4,8 +4,8 @@
 
 - Having a general understanding about the purpose of CSS
 - Knowing the meaning behind the name CSS (`Cascading Style Sheets`)
-- Understanding the fundamentals of CSS: `CSS syntax`, `selectors`, `box model`, `inline & block
-  elements`
+- Understanding the fundamentals of CSS: `CSS syntax`, `selectors`, `box model`,
+  `inline & block elements`
 - Using stylings for fonts & working with relative units
 - Linking stylesheets to the HTML document
 
@@ -85,16 +85,16 @@ There are different CSS selectors you can use to style elements. The most common
 There are a lot of CSS properties and you will discover new ones every day. Therefore the following
 list shows only a few examples:
 
-| Property           | Effect                                           |
-| ------------------ | ------------------------------------------------ |
-| `color`            | Color of an element                              |
-| `font-size`        | Defines the size of a font                       |
-| `text-align`       | This property defines the alignment of text      |
-| `background-color` | Background color of an element                   |
-| `border`           | Defines the border of an element.                |
-| `padding`          | This property defines the padding of an element. |
-| `margin`           | Defines the margin of an element.                |
-| `width`            | This property defines the width of an element.   |
+| Property           | Effect                                         |
+| ------------------ | ---------------------------------------------- |
+| `color`            | Color of an element´s text                     |
+| `font-size`        | Defines the size of a font                     |
+| `text-align`       | Defines the alignment of text                  |
+| `background-color` | Background color of an element                 |
+| `border`           | Defines the border of an element.              |
+| `padding`          | Defines the padding of an element.             |
+| `margin`           | Defines the margin of an element.              |
+| `width`            | This property defines the width of an element. |
 
 > 💡 You can find more properties in the
 > [CSS Properties Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index) on
@@ -196,8 +196,8 @@ You can include custom fonts in two ways:
 
 There are two different types of units: `relative` and `absolute`.
 
-- `Relative units` are relative to another length. With relative units we can scale from different
-  output environments to another more easily.
+- `Relative units` are relative to something else, like the size of the viewport or the size of the
+  parents elements font.
 - `Absolute units` are fixed and aren't relative to anything else. The most common absolute unit is
   `px` (Pixels).
 
@@ -207,8 +207,8 @@ There are two different types of units: `relative` and `absolute`.
 | ----- | --------------------------------------------------- |
 | `em`  | Relative to the font size of the the parent element |
 | `rem` | Relative to the font size of the root element       |
-| `vw`  | Relative to the viewport width                      |
-| `vh`  | Relative to the viewport height                     |
+| `vw`  | % of the viewport width                             |
+| `vh`  | % of the viewport height                            |
 
 ---
 
