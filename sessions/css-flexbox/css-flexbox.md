@@ -2,12 +2,12 @@
 
 ## Learning Objectives
 
-- Understanding the purpose of flexbox:
-  - Let items fill out the possible space in their container
-  - Distributing elements for different screen sizes
-  - Make the website more responsive with flexbox
-- Understanding the most important flexbox properties
-- Knowing the difference between `main-axis` and `cross-axis`
+- understanding the purpose of flexbox:
+  - letting items fill out the possible space in their container
+  - distributing elements for different screen sizes
+  - making the website more responsive with flexbox
+- understanding the most important flexbox properties
+- knowing the difference between **main-axis** and **cross-axis**
 
 ---
 
@@ -25,8 +25,8 @@ position will be determined by the flexbox rules. You define it as follows:
 
 Flexbox does the following:
 
-- All child elements will be displayed next to each other along the `main axis`, the horizontal axis
-  by default. The perpendicular axis is called `cross axis`.
+- All child elements will be displayed next to each other along the main axis, the horizontal axis
+  by default. The perpendicular axis is called cross axis.
 - If the width of all child elements exceeds the container's width, the child elements will be
   shrunk such that they all fit into the available space.
 
@@ -37,13 +37,13 @@ properties are listed in the following table.
 
 ## Important Flex Properties
 
-| property                                                                            | effect                                                                                                                                         |
-| ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | Defines the positioning of elements along the `main axis`. Useful values: `flex-start`, `flex-end`, `center` , `space-between`, `space-evenly` |
-| [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)         | Defines the positioning of elements along the `cross axis`. Useful values: `flex-start`, `flex-end`, `center`                                  |
-| [gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)                         | Defines the minimum spacing between elements.                                                                                                  |
-| [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)   | Sets the direction of the main axis. Useful values: `row`, `column`                                                                            |
-| [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)             | Modifies how elements can wrap into another row instead of being squashed into one row. Useful values: `wrap`, `no-wrap`                       |
+| property                                                                            | effect                                                                                                                                       |
+| ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content) | Defines the positioning of elements along the main axis. Useful values: `flex-start`, `flex-end`, `center` , `space-between`, `space-evenly` |
+| [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)         | Defines the positioning of elements along the cross axis. Useful values: `flex-start`, `flex-end`, `center`                                  |
+| [gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)                         | Defines the minimum spacing between elements.                                                                                                |
+| [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)   | Sets the direction of the main axis. Useful values: `row`, `column`                                                                          |
+| [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)             | Modifies how elements can wrap into another row instead of being squashed into one row. Useful values: `wrap`, `no-wrap`                     |
 
 > 💡 [This very detailed cheatsheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 > includes everything you will ever need when working with flexbox.
