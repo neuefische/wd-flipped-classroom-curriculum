@@ -73,7 +73,7 @@ specified via attributes. For example:
 > 💡 The [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) contain
 > detailed information about elements and corresponding attributes.
 
-### Layout of a HTML file
+### Layout of an HTML file
 
 Every HTML document starts with a
 [doctype](https://developer.mozilla.org/en-US/docs/Glossary/Doctype) followed by the `<html>`
