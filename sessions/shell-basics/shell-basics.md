@@ -4,35 +4,33 @@
 
 In this session you will learn:
 
-- [ ] what the terminal and the shell are.
-- [ ] to navigate the file system inside the shell.
-- [ ] to create, rename, remove and move files and folders in the filesystem.
+- [ ] what the terminal and the shell are
+- [ ] to navigate the file system inside unsing the shell and the terminal
+- [ ] to create, rename, remove and move files and folders in the filesystem
 
 ---
 
-## Shell
+## Shell and Terminal
 
-You are probably used to using graphical user interfaces (GUI) to interact with computers, for
-example:
+You are probably used to using GUIs (_[Graphical User Interfaces](https://en.wikipedia.org/wiki/Graphical_user_interface)_) to interact with computers.
 
-- Windows Explorer to search for files / rename / delete them
-- Your operating systems UI for changing the time zone via mouse clicks
-- Using "installation wizards" to install software via mouse clicks
-
-Often times developers interact with computers over CLIs (Command line interfaces) which are text
-based user interfaces. That means that developers type commands to interact with the computer
+Often times developers interact with computers over CLIs (_Command Line Interfaces_) which are text
+based user interfaces. That means that you type commands to interact with the computer
 (create / move / delete / edit files, install software, change system settings...).
 
 This has the following reasons / advantages:
 
-- Many tools don't have GUI (graphical user interfaces) and can only be run over a CLI
+- Many tools don't have GUI (_graphical user interfaces_) and can only be run over a CLI
 - You can write scripts (which consist of a number of commands) to automize processes and repetitive
   tasks and ensure they are being run exactly the same way every time they are executed.
 
-We are using the shell and in particular the zsh (z shell) - which is the default shell on macOS -
-to run commands. The shell is the application that runs and executes commands on your computer and
-outputs results. A terminal is a text input and output environment. It sends commands to the shell
-and displays its output.
+On macOS we are using zsh (_z shell_) as the command interpreter. (Before 2019 (v10.15) macOS' shell was called _bash_. Keep that in mind when googling).
+
+By default it is run within the Terminal app. For this course we'll use iTerm and Visual Studio Code as alternative terminal emulators.
+
+- A shell (like _zsh_) is the command interpreter that runs and executes commands on your computer and
+outputs results
+- A terminal emulator (like _Terminal_, _iTerm_, _Visual Studio Code_) is a text input and output environment that sends commands to the shell and displays its output
 
 ### Basic Shell commands
 
