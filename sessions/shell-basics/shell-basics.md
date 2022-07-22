@@ -56,4 +56,4 @@ outputs results.
 - [terminal basics](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/)
 - [command line cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet#english-version)
 
-[^1]: Before 2019 (v10.15) macOS' shell was called _bash_. Most bash commands will still work with zsh as well. Because it was so widespread, the word bash also became a [metonym](https://en.wikipedia.org/wiki/Metonymy) for any shell. Keep that in mind when googling.
+[^1]: Before 2019 (v10.15) macOS' shell was called bash. Most bash commands will still work with zsh as well. Because it was so widespread, the word bash also became a [metonym](https://en.wikipedia.org/wiki/Metonymy) for any shell. Keep that in mind when googling.
