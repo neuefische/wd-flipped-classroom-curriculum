@@ -81,7 +81,7 @@
 - [ ] Explain that [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) (Accessible Rich Internet Applications) is an extension to HTML (and other web technologies), that can be used if the built-in HTML features are not enough to describe what something is or does semantically.
   - Whenever possible, use semantic HTML elements
   - `aria-label` example:
-    - `<button><img src="/edit-icon.png" alt="" /><button>` Inaccessible. Will be read by a screen reader alà: "button with content, image"
+    - `<button><img src="/edit-icon.png" /><button>` Inaccessible. Will be read by a screen reader alà: "button with content, image"
     - `<button><img src="/edit-icon.png" alt="Edit text" /><button>` Better. Will be read by a screen reader alà: "button with content, image, edit text"
     - `<button aria-label="Click to edit text"><img src="/edit-icon.png" alt="" /><button>` Good. Will be read by a screen reader alà: "button with label, click to edit text"
 
