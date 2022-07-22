@@ -66,13 +66,13 @@ You can ask these questions:
 
 Show an example with default layouts.
 
-- You can use [this example](https://codepen.io/neuefische/pen/KKQZRMo?editors=1100)
-- In the CSS remove/add `display: flex` to toggle between normal flow and the desired result
+- [ ] You can use [this example](https://codepen.io/neuefische/pen/KKQZRMo?editors=1100)
+- [ ] In the CSS remove/add `display: flex` to toggle between normal flow and the desired result
 
 ### Understanding the purpose of flexbox
 
-- Explain the purpose of flexbox regarding the motivation described above.
-- Apply flexbox to a given structure of elements.
+- [ ] Explain the purpose of flexbox regarding the motivation described above.
+- [ ] Apply flexbox to a given structure of elements.
 
 See these examples for inspiration:
 
@@ -80,65 +80,44 @@ See these examples for inspiration:
 - [Example 2](https://codepen.io/neuefische/pen/rNJOBwK)
 - [Example 3](https://codepen.io/neuefische/pen/VwQyxze)
 
-### Important CSS properties for flexbox
-
 If you want to, you can
 [use this Codepen starter demo](https://codepen.io/neuefische/pen/xxYWBXr?editors=1010)
 
-- Explain that `display: flex` is assigned to the `container` element
-- Explain that all `direct child` elements are the flexbox items
-
-Introduce the following flexbox properties and show the effect of different values:
-
-- `justify-content`
-  - Alignment on the `main-axis` (more on this later)
-  - Values:
-    - `flex-start` (default)
-    - `flex-end`
-    - `center`
-    - `space-between`
-    - `space-around`
-    - `space-evenly`
-- `gap`
-  - Creates visual space between flex items
-- `flex-wrap`
-  - Flex items can wrap into another row instead of being squashed into one row
-  - Values:
-    - `nowrap` (default)
-    - `wrap`
-    - `wrap-reverse`
-- `align-items`
-  - Alignment on the `cross-axis` (more on this later)
-  - Make sure to set the `height` property on the flex container to demonstrate this behavior
-  - Values:
-    - `stretch` (default)
-    - `flex-start`
-    - `flex-end`
-    - `center`
+- [ ] Explain that `display: flex` is assigned to the `container` element
+- [ ] Explain that all `direct child` elements are the flexbox items
 
 ### Axis and direction
 
-- Introduce the `flex-direction` property and explain that it switches the axis.
-- Values:
-  - `row` (default)
-  - `column`
-  - `row-reverse`
-  - `column-reverse`
+- [ ] Introduce the `flex-direction` property and explain that it switches the axis.
+- [ ] `row` (default)
+- [ ] `column`
 
-Show and explain this two images:
+Show and explain this image:
 
-`flex-direction:row`
+- [ ] The `flex-direction` property defines the `main-axis`
+- [ ] The `cross-axis` is perpendicular
 
-![flex-direction-row](./assets/flex-direction-row.png)
+![flex-direction-row](./assets/flex-direction.png)
 
-`flex-direction:column`
+### Important CSS properties for flexbox
 
-![flex-direction-column](./assets/flex-direction-column.png)
+Introduce the following flexbox properties and show the effect of different values:
 
-- The `flex-direction` property defines the `main-axis`
-- The `cross-axis` is perpendicular
-- `justify-content` distributes items along the `main-axis`
-- `align-items` distributes items along the `cross-axis`
+- [ ] `justify-content`: Alignment on the `main-axis`
+  - [ ] `flex-start` (default)
+  - [ ] `center`
+  - [ ] `space-between`
+  - [ ] `space-evenly`
+- [ ] `align-items`: Alignment on the `cross-axis`
+  - [ ] ❗️ Make sure to set the `height` property on the flex container to show behavior
+  - [ ] `stretch` (default)
+  - [ ] `flex-start`
+  - [ ] `flex-end`
+  - [ ] `center`
+- [ ] `gap`: Creates visual space between flex items
+- [ ] `flex-wrap`: Flex items can wrap into another row instead of being squashed into one row
+  - [ ] `nowrap` (default)
+  - [ ] `wrap`
 
 ---
 
