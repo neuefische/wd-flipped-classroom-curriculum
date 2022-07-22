@@ -4,21 +4,22 @@
 
 Your Github Profile is generally the first impression that other developers and future employers
 will get of you. There is a simple way to enhance this profile with your individual style, namely
-the so called `profile readme markdown file`. So let's build our very own personal profile page!
+the so called **profile readme markdown file**. So let's build our very own personal profile page!
 
 ### Part 1
 
 First we need a
 [special repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)
-containing a file called `README.md`. This markdown file will later be displayed on your profile
+containing a file called **README.md**. This markdown file will later be displayed on your profile
 page.
 
-1. If not already done: create a GitHub account with a professional username (dont: superH4x0r_1337,
-   do: mary-smith)
+1. If not already done: create a GitHub account with a professional username (don't:
+   superH4x0r_1337, do: mary-smith)
 2. Create a new repository **with the same name as your GitHub username**. Choose not to include a
    README.md file.
-3. Add a new README.md file and include a `level one heading` which welcomes visitors to your page.
-   Commit your results directly to the main branch (we will explore later what that actually means).
+3. Add a new README.md file and include a **level one heading** which welcomes visitors to your
+   page. Commit your results directly to the main branch (we will explore later what that actually
+   means).
 
 Our setup is done. Let's see if it worked. Go to your profile page and check if the readme is
 displayed there.
