@@ -18,11 +18,11 @@ based user interfaces. That means that you type commands to interact with the co
 
 This has the following reasons / advantages:
 
-- Many tools don't have GUI (_graphical user interfaces_) and can only be used as a CLI.
+- Many tools don't have a GUI and can only be used as a CLI.
 - You can write scripts (which consist of a number of commands) to automize processes and repetitive
   tasks and ensure they are being run exactly the same way every time they are executed.
 
-On macOS we are using zsh (_z shell_) as the command interpreter. (Before 2019 (v10.15) macOS' shell was called _bash_. Most bash commands will work with zsh as well. Keep that in mind when googling.)
+On macOS we are using zsh (_z shell_) as the command interpreter.[^1]
 
 By default it is run within the Terminal app. For this course we'll use iTerm and Visual Studio Code as alternative terminal emulators.
 
@@ -55,3 +55,5 @@ outputs results.
 
 - [terminal basics](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/)
 - [command line cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet#english-version)
+
+[^1]: Before 2019 (v10.15) macOS' shell was called _bash_. Most bash commands will still work with zsh as well. Because it was so widespread, the word bash also became a [metonym](https://en.wikipedia.org/wiki/Metonymy) for any shell. Keep that in mind when googling.
