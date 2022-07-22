@@ -174,7 +174,7 @@ in the terminal, outside of any other repository:
 ## Keywords for Recap:
 
 git add ., git commit -m "cmsg", git status, git push, git restore ., ssh key, stage untracked
-files, commited files,
+files, committed files,
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

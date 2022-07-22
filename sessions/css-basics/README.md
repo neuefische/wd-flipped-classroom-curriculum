@@ -80,7 +80,7 @@ Explain what CSS is based on an example.
 ### Syntax
 
 Explain the syntax of a CSS rule/ruleset. You don't need to declare each part in deep, but you
-shoudl cover the following terms:
+should cover the following terms:
 
 - [ ] **Selector**: A CSS selector is used to specify the elements to which CSS rules apply.
 - [ ] **Property**: Name for a particular property to which a value is attributed.
@@ -218,6 +218,8 @@ There are three possibilities:
 - [ ] Remind them to rest :)
 
 ## Keywords for Recap:
+
+ruleset, type selector, class selector, box model, stylesheet
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

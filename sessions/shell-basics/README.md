@@ -149,7 +149,7 @@ also delete things irreversibily or other things that you didn't intend to so. S
 
 ## Keywords for Recap:
 
-shell, terminal, CLI, cd,
+shell, terminal, CLI, cd, touch, ls
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
