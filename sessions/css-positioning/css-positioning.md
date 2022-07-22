@@ -2,9 +2,9 @@
 
 ## Learning Objectives
 
-- Using the different types of positioning
-- Knowing the CSS properties to define a position
-- Understanding the basics of z-index
+- using the different types of positioning
+- knowing the CSS properties to define a position
+- understanding the basics of z-index
 
 ---
 
@@ -17,7 +17,7 @@ different values to define the position:
 | -------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | `position: static`   | The position of the element is determined by the document flow (default)                                            |
 | `position: relative` | Position the element relative to where the element would be placed normally                                         |
-| `position: absolute` | Position the element absolutely inside the `nearest non-static ancestor element`                                    |
+| `position: absolute` | Position the element absolutely inside the **nearest non-static ancestor element**                                  |
 | `position: fixed`    | Position the element on a fixed position on the screen.                                                             |
 | `position: sticky`   | The element is placed normally in the document flow, but keeps an offset relative to its nearest scrolling ancestor |
 
