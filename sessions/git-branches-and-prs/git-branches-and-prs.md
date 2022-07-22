@@ -4,15 +4,15 @@
 
 - Git branches and how to use them
 - Pull Requests and how to use them
-- How branches and pull requests facilitate collaboration
+- how branches and pull requests facilitate collaboration
 
 ---
 
 ## Git Branches
 
 When working on a project, especially as a team, you want to work on features independently, so they
-never affect anyone else's work. Git offers us "branches" to keep our current work away from a teams
-common codebase until completion.
+never affect anyone else's work. Git offers us **branches** to keep our current work away from a
+teams common codebase until completion.
 
 A branch lets you split from the main line of development. The new branch shares a part of its
 commit history with the main branch. At a certain commit the new branch branches off and the commit
@@ -22,11 +22,11 @@ histories differ.
 
 The teams common codebase is typically kept in the "main" branch. If you work on a new feature you:
 
-1. create a new "feature branch" and work on that new branch.
+1. create a new **feature branch** and work on that new branch.
 2. commit your work on the new branch - the main branch is not effected.
 3. finish work on the new feature, test the new functionality and have other developers review your
    work.
-4. "merge" your feature branch into the main branch, so all your work is included in the main
+4. **merge** your feature branch into the main branch, so all your work is included in the main
    branch.
 
 ## Naming branches
@@ -49,11 +49,11 @@ We recommend using hyphens as separators as they make the name more comfortable 
 
 ## Git Pull Requests
 
-GitHub offers us "pull requests" (PR) which we can use as a convenient way to request reviews of the
-work on a "feature branch".
+GitHub offers us **pull requests** (PR) which we can use as a convenient way to request reviews of
+the work on a feature branch.
 
-A pull request is a request to "merge" one branch into another branch. Other developers review the
-PR and suggest changes. If a pull request is approved we can merge the feature branch into the main
+A pull request is a request to merge one branch into another branch. Other developers review the PR
+and suggest changes. If a pull request is approved we can merge the feature branch into the main
 branch.
 
 ### Basic Workflow for a Pull Request

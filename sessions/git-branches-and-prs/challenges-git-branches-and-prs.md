@@ -4,10 +4,10 @@
 
 Continue to work on your session notebook.
 
-1. First create a new branch called `notes/github-and-markdown`.
+1. First create a new branch called "notes/github-and-markdown".
 2. Switch on that branch and start working on the respective session note. Fill the session note
    with short hints and command collections you find helpful.
-3. Commit regularly after each step and use `good commit messages`.
+3. Commit regularly after each step and use **good commit messages**.
 4. When you are satisfied with the session note, push the content of the branch to the remote
    repository (`git push -u origin notes/github-and-markdown`).
 5. On GitHub, go to the remote repository. A yellow action box should have appeared suggesting to
