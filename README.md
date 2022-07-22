@@ -23,6 +23,14 @@ There are two things to consider when assigning yourself to a ticket in the proj
   in the `web-pool-2022` repository. Make sure that the questions still fit the content of the
   session. If there is no quiz.md, or you work on a new session, just create a new quiz.md and add
   new questions.
+	
+### Formatting
+
+- In session guides (mis-)use `code`-blocks to highlight important words
+- In all material that is handed out to students use proper markdown semantics:
+  - hightlight words using **bold** text `**bold**`
+	- use code block only for code
+	- do not highlight written-out abbreviations (keep them as plain text): HTML (Hypertext Markup Language)
 
 ## To-Do's
 
