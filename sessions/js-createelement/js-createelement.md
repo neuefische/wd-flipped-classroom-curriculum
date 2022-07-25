@@ -40,13 +40,12 @@ The result looks like this:
 
 ## Element Properties and Methods
 
-Usually, we don't want pure HTML elements on our website. We can add classes, event listeners and
-more just like with queried elements.
+As well as with queried HTML elements (via `querySelector`), we can add classes, event listeners and more to the created HTML elements. 
 
 ```js
-myNewElement.classList.add('card');
+article.classList.add('card');
 
-myNewButton.addEventListener('click', () => {
+button.addEventListener('click', () => {
 	console.log('It works!');
 });
 ```
