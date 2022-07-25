@@ -13,16 +13,16 @@ You can generate an HTML element with Javascript by using the `document.createEl
 expects the type of element as an argument.
 
 ```js
-const myNewElement = document.createElement('article');
-const myNewButton = document.createElement('button');
+const article = document.createElement('article');
+const button = document.createElement('button');
 ```
 
 After generating an element, you need to place the element into the DOM. For this, you can use the
 `.append` method. It places the element as the **last child** into the respective element.
 
 ```js
-body.append(myNewElement); // placing myNewElement at the end of the body.
-myNewElement.append(myNewButton); // placing the created button into the article
+body.append(article); // placing myNewElement at the end of the body.
+article.append(button); // placing the created button into the article
 ```
 
 The result looks like this:
@@ -40,7 +40,8 @@ The result looks like this:
 
 ## Element Properties and Methods
 
-As well as with queried HTML elements (via `querySelector`), we can add classes, event listeners and more to the created HTML elements. 
+As well as with queried HTML elements (via `querySelector`), we can add classes, event listeners and
+more to the created HTML elements.
 
 ```js
 article.classList.add('card');
@@ -53,23 +54,22 @@ button.addEventListener('click', () => {
 The text of an element can be changed by reassigning the `.textContent` property:
 
 ```js
-myNewButton.textContent = 'Click me!';
+button.textContent = 'Click me!';
 ```
 
 ### Common Element Properties and Methods
 
-| Property       | Effect                                                             |
-| -------------- | ------------------------------------------------------------------ |
-| `classList`    | add, toggle or remove classes from element                         |
-| `textContent`  | get or set text inside element                                     |
-| `style`        | define inline style, e.g. `element.style.backgroundColor = "red" ` |
-| `type`         | get or set the type of a button or input                           |
-| `hidden`       | boolean whether element is hidden or not                           |
-| `clientHeight` | the inner height of the element                                    |
-| `clientWidth`  | the inner width of the element                                     |
-| `focus()`      | focusses the element on the website                                |
+| Property          | Effect                                                             |
+| ----------------- | ------------------------------------------------------------------ |
+| `classList`       | add, toggle or remove classes from element                         |
+| `textContent`     | get or set text inside element                                     |
+| `style`           | define inline style, e.g. `element.style.backgroundColor = "red" ` |
+| `hidden`          | boolean whether element is hidden or not                           |
+| `focus()`         | focusses the element on the website                                |
+| `hasAttribute()`  | returns true if the element has the given attribute                |
+| `querySelector()` | returns the first child that matches the given CSS selector        |
 
-> 💡 You can assign every HTML attribute by using the element properties. Go to the
+> 💡 You can assign HTML attributes by using the element properties. Go to the
 > [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element#properties) for a
 > comprehensive list of element properties.
 
@@ -89,7 +89,7 @@ created.
 ```js
 const cityName = 'Lissabon';
 
-myNewElement.innerHTML = `
+article.innerHTML = `
 	<h2> ${cityName} </h2>
 	<p class="card__content">
 		${cityName} is a very beautiful city in Portugal. 
@@ -118,7 +118,7 @@ This HTML code is rendered then **inside** the article element:
 
 ### Resetting Element Content
 
-`.innterHTML` can also be used to **reset** the content of an element, e.g. a container:
+`.innerHTML` can also be used to **reset** the content of an element, e.g. a container:
 
 HTML before:
 
@@ -133,8 +133,11 @@ HTML before:
 By setting the innerHTML to an empty string, the content is deleted:
 
 ```js
-const cardContainer.innerHTML = "";
+const cardContainer = document.querySelector("ul[data-js='cardContainer']");
+cardContainer.innerHTML = '';
 ```
+
+The result:
 
 ```html
 <ul data-js="cardContainer"></ul>
