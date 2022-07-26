@@ -26,6 +26,6 @@ selector).
 Please add these mechanics to your Quiz App:
 
 - Clicking on the "bookmark" button should toggle the button's visual state from being inactive to
-  active an otherwise. (The card should not yet be displayed on the "Bookmarks" page)
+  active and vice versa. (The card should not yet be displayed on the "Bookmarks" page)
 - Clicking on the button labeled "Show Answer" should make the answer text visible, which was hidden
   before. Another click should hide the answer text again.
