@@ -2,7 +2,8 @@
 
 ## Learning Objectives
 
-- understanding how the browser decides which CSS property to use when there are conflicting rules, regarding CSS cascade and CSS specificity
+- understanding how the browser decides which CSS property to use when there are conflicting rules,
+  regarding CSS cascade and CSS specificity
 - structuring CSS to improve maintainability and readability
 - organizing and naming CSS classes with BEM method
 - creating and reusing Custom CSS properties, also called CSS variables
@@ -11,7 +12,8 @@
 
 ## CSS Cascade
 
-The cascade is the algorithm that defines which CSS rules are being applied when there are conflicting rules.
+The cascade is the algorithm that defines which CSS rules are being applied when there are
+conflicting rules.
 
 When styling an element the browser:
 
@@ -19,8 +21,10 @@ When styling an element the browser:
 2. Sorts the rules by their importance taking into account:
    - Whether the rule is followed by **!important**
    - The rules origin (Browser stylesheet, User stylesheet, Author stylesheet)
-3. Sorts rules by their [specificity](#specificity), if there are multiple rules with the same importance according to no. 2.
-4. Chooses the last declaration over previous ones, if there are multiple rules with the same importance and the same specificity.
+3. Sorts rules by their [specificity](#specificity), if there are multiple rules with the same
+   importance according to no. 2.
+4. Chooses the last declaration over previous ones, if there are multiple rules with the same
+   importance and the same specificity.
 
 You can read about the details in the
 [CSS Cascade mdn docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade).
@@ -50,11 +54,12 @@ specificity.
 
 ## CSS Structure best practices
 
-- keep your CSS consistent throughout a project. In collaborative projects, there are often coding style guidelines.
+- keep your CSS consistent throughout a project. In collaborative projects, there are often coding
+  style guidelines.
 - separate global and local styles into different files (or sections of files)
 - create multiple stylesheets for different parts of your application
-  - structure your code by thinking in reusable **components**. You can write your
-    CSS for every component in its own CSS file.
+  - structure your code by thinking in reusable **components**. You can write your CSS for every
+    component in its own CSS file.
 
 ### How to import one stylesheet or multiple stylesheets into another stylesheet
 
@@ -93,6 +98,26 @@ A **modifier** is a flag on your block (or component) that is used to change its
 behavior. E.g. disabled, checked, bright, etc. .
 
 You can find an [introduction to BEM here](http://getbem.com/introduction/).
+
+### Kebab Case naming convention
+
+The kebab case naming convention defines to use hyphens to separate words in variables. Many
+developers use the kebab case convention to write css classes. In BEM we also use kebab case, for
+example:
+
+```css
+.customer-card {
+	...;
+}
+
+.customer-card__button {
+	...;
+}
+
+.customer-card--disabled {
+	...;
+}
+```
 
 ---
 
