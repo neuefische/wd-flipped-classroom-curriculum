@@ -16,7 +16,7 @@ app has some bugs. Can you fix all errors in the JavaScript Code?
 
 ## Quiz App interactivity
 
-Your Quiz App project contains various buttons, which are not connected with functionality yet.
+Your Quiz App project contains various buttons, which are not connected to functionality yet.
 Let's add some interactivity!
 
 This challenge is only interested in the first question card in your Quiz App. We'll deal with the
