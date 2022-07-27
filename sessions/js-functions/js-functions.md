@@ -11,9 +11,9 @@
 
 ## Functions
 
-Functions are a fundamental concept in Javascript. They consist of a set of statements - in other
-words: They consist of Javascript code. Functions have to be defined. When a function is defined it
-can be called multiple times.
+Functions are a fundamental concept in Javascript. They contain a set of statements - in other
+words: They contain Javascript code. Functions have to be defined. When a function is defined it can
+be called multiple times.
 
 ---
 
