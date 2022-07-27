@@ -37,7 +37,7 @@
 
 ---
 
-## Inform: Sessionguide
+## Inform: Session guide
 
 ### Functions
 

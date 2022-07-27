@@ -13,7 +13,7 @@
 
 Functions are a fundamental concept in Javascript. They contain a set of statements - in other
 words: They contain Javascript code. Functions have to be defined. When a function is defined it can
-be called multiple times.
+be called an arbitrary number of times.
 
 ---
 
@@ -38,8 +38,8 @@ function greet() {
 ### Parameters
 
 Functions can accept parameters. Parameters can be used like predefined variables inside the
-function body. When declaring a function we are free to choose a name for the parameters
-, but descriptive, short names should be chosen.
+function body. When declaring a function we are free to choose a name for the parameters , but
+descriptive, short names should be chosen.
 
 ```js
 function printLetter(name) {
@@ -56,8 +56,9 @@ function printSum(first, second, third) {
 
 ## Function Calls
 
-When functions are defined you can call them by writing their name, followed by parentheses ("rounded brackets"). If the
-functions consume parameters you can pass them as arguments in the brackets.
+When functions are defined you can call them by writing their name, followed by parentheses
+("rounded brackets"). If the functions consume parameters you can pass them as arguments in the
+brackets.
 
 ```js
 greet();
@@ -119,8 +120,8 @@ console.log(localVariable); // Error! Variable not available outside of function
 
 ### Global scope
 
-A variable has **global scope** when it is declared outside of any function, in a Javascript file.
-Global variables are visible and can be accessed from anywhere in that Javascript file after
+A variable is in the **global scope** when it is declared outside of any function, in a Javascript
+file. Global variables are visible and can be accessed from anywhere in that Javascript file after
 declaration.
 
 ---
