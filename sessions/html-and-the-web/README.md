@@ -10,11 +10,11 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 - You will get an understanding about the very basics / the foundation of how the web works.
 - You will have a solid foundation to build upon and expand your knowledge and skills.
@@ -27,7 +27,7 @@
   - it's SEO optimized
   - it's better understandable for other developers
 
-### Raise a question to be answered by the end of the block
+### Pose a question to be answered by the end of the block!
 
 - Why do we **want** to write semantic HTML?
 
@@ -35,7 +35,7 @@
 
 ## Activate prior knowledge of students
 
-### Which prior knowledge will be used for this session?
+### Which previously learned concepts will be utilized in this session?
 
 - You will use git and GitHub for your project.
 - You will use a workflow that is based on best practices and done in the same way in many
@@ -45,7 +45,7 @@
 
 ---
 
-## Inform: Sessionguide
+## Inform: Session Guide
 
 > ❗️ Before diving into the depths of HTML, ask the students how many of them already have prior
 > knowledge of HTML and how comfortable they are with it. If all of the students have some
@@ -207,19 +207,22 @@ information about its content.
 
 ## Process: Challenge
 
-- [ ] Provide the [handout](html-and-the-web.md) for the students
+- [ ] Provide the [handout](html-and-the-web.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in pairings
-- [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
-      can ask the coaches for help at any time / Always help each other / Take a break when you need
-      it in the next 1.5h/ Keep an eye on Slack)
+- [ ] Divide the students into pairs
+- [ ] Remind them of the ground rules:
+  - meet again 30 min before lunch break in the class room
+  - they can ask the coaches for help at any time
+  - always try to help each other
+  - take a break within the next 1.5 hrs
+  - keep an eye on Slack
 
 ---
 
-## Evaluate: Recap of the assignment / Discussion of MVP / Solution
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in
-  a few phrases.
+- Revisit the question that was posed in the beginning of the session and try to answer it with a
+  few phrases.
 - Why do we WANT to write semantic HTML? Click [here](#the-benefits-of-writing-semantic-html-are)
   for the answer
 
@@ -230,8 +233,8 @@ information about its content.
 > 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
 > how far they have come already) :)
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest :)
 

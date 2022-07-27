@@ -14,7 +14,7 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
@@ -25,7 +25,7 @@
   - How would you "go back" to previous code versions (and serve previous software versions) when
     there is a bug in production?
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 - You are starting your professional developer career today. After today you will have your own
   presence & presentation on one of the the worlds biggest platforms for code sharing.
@@ -46,7 +46,7 @@
 
 ---
 
-## Inform: Sessionguide
+## Inform: Session Guide
 
 ### Git Workflow:
 
@@ -122,11 +122,11 @@ learn new things every day.
 - [ ] Explain the process in general (Breakoutrooms / They can ask the coaches for help at any time
       / Where to find the project tasks / Tell them to help each other / Take a break when you need
       it in the next 1.5h / Keep and eye on Slack...)
-- [ ] Provide the [handout](handout.md) for the students
+- [ ] Provide the [handout](handout.md) to the students
 - [ ] Open the handout and walk the students through the structure (summary on top and tasks on the
       bottom of the handout)
-- [ ] Divide the students in groups of 3-4
-- [ ] Tell students to meet again 30min before lunchbreak in the classroom
+- [ ] Divide the students into groups of 3-4
+- [ ] Tell students to meet again 30min before lunch break in the classroom
 
 ---
 
@@ -143,8 +143,8 @@ learn new things every day.
 
 ## Checkout
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest, as its just the first day :)
 

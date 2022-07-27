@@ -18,7 +18,7 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
@@ -30,7 +30,7 @@
 - In addition elements should be distributed on the page based on the viewport size to make use of
   the available space.
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 - It is possible to distribute elements on the page with traditional ways of styling (e.g. float,
   position, margin).
@@ -38,7 +38,7 @@
   sizes.
 - This would be hard to implement with such tools and leads to very complex and inflexible code.
 
-### Raise a question to be answered by the end of the block!
+### Pose a question to be answered by the end of the block!
 
 How can we create a horizontal navigation bar that adjusts to the viewport's width by increasing the
 space between the navigation links?
@@ -47,7 +47,7 @@ space between the navigation links?
 
 ## Activate prior knowledge of students
 
-### Which prior knowledge will be used for this session?
+### Which previously learned concepts will be utilized in this session?
 
 - [ ] HTML Basics
 - [ ] CSS Basics
@@ -60,7 +60,7 @@ You can ask these questions:
 
 ---
 
-## Inform: Sessionguide
+## Inform: Session Guide
 
 ### Document Normal Flow
 
@@ -123,20 +123,23 @@ Introduce the following flexbox properties and show the effect of different valu
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](css-flexbox.md) and the [challenges](challenges-css-flexbox.md) for the
+- [ ] Provide the [handout](css-flexbox.md) and the [challenges](challenges-css-flexbox.md) to the
       students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
-- [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
-      can ask the coaches for help at any time / Always help each other / Take a break when you need
-      it in the next 1.5h/ Keep an eye on Slack)
+- [ ] Divide the students into groups
+- [ ] Remind them of the ground rules:
+  - meet again 30 min before lunch break in the class room
+  - they can ask the coaches for help at any time
+  - always try to help each other
+  - take a break within the next 1.5 hrs
+  - keep an eye on Slack
 
 ---
 
-## Evaluate: Recap of the assignment / Discussion of MVP / Solution
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in
-  a few phrases.
+- Revisit the question that was posed in the beginning of the session and try to answer it with a
+  few phrases.
 
 ---
 
@@ -145,8 +148,8 @@ Introduce the following flexbox properties and show the effect of different valu
 > 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
 > how far they have come already) :)
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest :)
 

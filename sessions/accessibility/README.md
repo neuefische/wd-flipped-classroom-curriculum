@@ -10,7 +10,7 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
@@ -19,12 +19,12 @@
 - You will be aware of the importance of accessibility
 - You will learn how to build accessible web applications
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 > Why this topic is imporant is [part of the session itself](#why-should-i-care-about-accessibility)
 > :)
 
-### Raise a question to be answered by the end of the block!
+### Pose a question to be answered by the end of the block!
 
 ---
 
@@ -46,13 +46,13 @@
 - Ask students: "Why should **you** care about accessibility?"
   - Just collect some answers and tell them that's what you'll discuss now.
 
-### Which prior knowledge will be used for this session?
+### Which previously learned concepts will be utilized in this session?
 
 - Semantic HTML
 
 ---
 
-## Inform: Sessionguide
+## Inform: Session Guide
 
 ### Why should I care about accessibility?
 
@@ -120,19 +120,22 @@
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](accessibility.md) for the students
+- [ ] Provide the [handout](accessibility.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
-- [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
-      can ask the coaches for help at any time / Always help each other / Take a break when you need
-      it in the next 1.5h/ Keep an eye on Slack)
+- [ ] Divide the students into groups
+- [ ] Remind them of the ground rules:
+  - meet again 30 min before lunch break in the class room
+  - they can ask the coaches for help at any time
+  - always try to help each other
+  - take a break within the next 1.5 hrs
+  - keep an eye on Slack
 
 ---
 
-## Evaluate: Recap of the assignment / Discussion of MVP / Solution
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in
-  a few phrases: Why should we care about accessibility?: We want to include as many people as
+- Revisit the question that was posed in the beginning of the session and try to answer it with a
+  few phrases: Why should we care about accessibility?: We want to include as many people as
   possible, good for business, good for SEO, improves overall user experience of our web
   applications.
 
@@ -143,8 +146,8 @@
 > 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
 > how far they have come already) :)
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest :)
 

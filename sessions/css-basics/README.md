@@ -17,7 +17,7 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
@@ -25,13 +25,13 @@
 
 How can we style our HTML elements as efficiently as possible.
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 We often need to change the look of our HTML elements to make them fit to a design. And we want to
 be able to apply these stylings to different elements to have a common look and to avoid repetitive
 code.
 
-### Raise a question to be answered by the end of the block!
+### Pose a question to be answered by the end of the block!
 
 How can I make it that the same stylings apply to multiple elements?
 
@@ -43,13 +43,13 @@ We should not assume that students already have prior knowledge for CSS. But you
 knowing that we've already learned how to structure our web page with HTML and will now understand
 how to style those elements.
 
-### Which prior knowledge will be used for this session?
+### Which previously learned concepts will be utilized in this session?
 
 - HTML Basics
 
 ---
 
-## Inform: Session guide
+## Inform: Session Guide
 
 **Notes:**
 
@@ -191,19 +191,22 @@ There are three possibilities:
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](css-basics.md) for the students
+- [ ] Provide the [handout](css-basics.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
-- [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
-      can ask the coaches for help at any time / Always help each other / Take a break when you need
-      it in the next 1.5h/ Keep an eye on Slack)
+- [ ] Divide the students into groups
+- [ ] Remind them of the ground rules:
+  - meet again 30 min before lunch break in the class room
+  - they can ask the coaches for help at any time
+  - always try to help each other
+  - take a break within the next 1.5 hrs
+  - keep an eye on Slack
 
 ---
 
-## Evaluate: Recap of the assignment / Discussion of MVP / Solution
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in
-  a few phrases.
+- Revisit the question that was posed in the beginning of the session and try to answer it with a
+  few phrases.
 
 ---
 
@@ -212,8 +215,8 @@ There are three possibilities:
 > 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
 > how far they have come already) :)
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest :)
 
