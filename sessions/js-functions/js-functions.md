@@ -37,9 +37,9 @@ function greet() {
 
 ### Parameters
 
-Functions can consume parameters. Parameters can be used like predefined variables inside the
+Functions can accept parameters. Parameters can be used like predefined variables inside the
 function body. When declaring a function we are free to choose a name for the parameters
-(descriptive, short names should be chosen).
+, but descriptive, short names should be chosen.
 
 ```js
 function printLetter(name) {
@@ -56,8 +56,8 @@ function printSum(first, second, third) {
 
 ## Function Calls
 
-When functions are defined you can call them by writing their name, followed by round braces. If the
-functions consume parameters you can pass them as arguments in the braces.
+When functions are defined you can call them by writing their name, followed by parentheses ("rounded brackets"). If the
+functions consume parameters you can pass them as arguments in the brackets.
 
 ```js
 greet();

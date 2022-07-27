@@ -33,7 +33,7 @@
 ### Which prior knowledge will be used for this session?
 
 - We will use all prior Javascript knowledge.
-- We will specifically talk about variables in the context of functions
+- We will talk about variables in the context of functions specifically
 
 ---
 
@@ -41,7 +41,7 @@
 
 ### Functions
 
-- Ask students whether they have an idea about what a function is
+- Ask students whether they have an idea what a function is
 - Explain functions: They contain a set of statements - in other words: They contain Javascript code
   to be executed when the function is called.
 - Functions have to be defined and called.
@@ -102,7 +102,7 @@ greet();
 - Explain that variables should be named short and descriptive
 - Explain that parameters have to be passed in as arguments when calling the function.
 - When defining a function it is called parameters, when calling a function it is called arguments
-- Show some examples, like:
+- Show some examples, such as:
 
 ```js
 function printLetter(name) {
@@ -158,7 +158,7 @@ console.log(localAge); // Error! Variable not available outside of function
 
 - [ ] Provide the [handout](js-functions-exercises.md) for the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
+- [ ] Divide the students into groups
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
       can ask the coaches for help at any time / Always help each other / Take a break when you need
       it in the next 1.5h/ Keep an eye on Slack)
