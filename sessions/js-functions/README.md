@@ -20,7 +20,7 @@
 - We don't want to write identical or similar code multiple times. => Which leads to more workload,
   more bugs, less maintainability
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 - We will learn one of the most important core concepts of programming languages.
 
@@ -30,7 +30,7 @@
 
 ## Activate prior knowledge of students
 
-### Which prior knowledge will be used for this session?
+### Which previously learned concepts will be utilized in this session?
 
 - We will use all prior Javascript knowledge.
 - We will talk about variables in the context of functions specifically
