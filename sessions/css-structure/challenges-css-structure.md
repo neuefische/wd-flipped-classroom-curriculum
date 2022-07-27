@@ -2,7 +2,15 @@
 
 ## Fix cascading bugs
 
-===TODO===
+Please open
+[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-structure/selectors-and-cascading?file=/css/styles.css)
+and have a look at the `styles.css` file.
+
+There are various CSS rule sets with `FIX_ME` as selector. Your task is to replace this placeholder
+with a proper selector according to the description above the rule set.
+
+The declaration using the `outline` property is a guidance to check, if you addressed the correct
+elements. After you are finished with a rule set, you can remove this declaration.
 
 ## Apply BEM to your Quiz App
 
@@ -14,7 +22,7 @@ Bring more structure to your Quiz App code by using BEM to name all classes!
 The desired result: One should be able to see which HTML elements belong together to a logical group
 (a BEM "block" / a "component"), by reading the HTML code and paying attention to the classnames.
 
-## Separate the Quiz Code CSS code into different files
+## Separate the Quiz App CSS code into different files
 
 You created a structure of individual components in the previous exercise.
 
@@ -40,7 +48,7 @@ quiz-app
 └── styles.css
 ```
 
-## Identify global values in your Quiz-App
+## Identify global values in your Quiz App
 
 Within the CSS code of your Quiz App are probably a lot of redundant values. Typical cases are:
 

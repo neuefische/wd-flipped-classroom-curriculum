@@ -2,11 +2,11 @@
 
 ## Learning Objectives
 
-- understanding how the browser decides which CSS property to use when there are conflicting rules,
+- Understanding how the browser decides which CSS property to use when there are conflicting rules,
   regarding CSS cascade and CSS specificity
-- structuring CSS to improve maintainability and readability
-- organizing and naming CSS classes with BEM method
-- creating and reusing Custom CSS properties, also called CSS variables
+- Structuring CSS to improve maintainability and readability
+- Organizing and naming CSS classes with BEM method
+- Creating and reusing Custom CSS properties, also called CSS variables
 
 ---
 
