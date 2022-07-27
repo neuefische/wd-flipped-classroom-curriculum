@@ -11,7 +11,7 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
@@ -24,7 +24,7 @@
 
 - We will learn one of the most important core concepts of programming languages.
 
-### Raise a question to be answered by the end of the block!
+### Pose a question to be answered by the end of the block!
 
 ---
 
@@ -37,7 +37,7 @@
 
 ---
 
-## Inform: Session guide
+## Inform: Session Guide
 
 ### Functions
 
@@ -156,19 +156,22 @@ console.log(localAge); // Error! Variable not available outside of function
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](js-functions-exercises.md) for the students
+- [ ] Provide the [handout](js-functions-exercises.md) to the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
-- [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
-      can ask the coaches for help at any time / Always help each other / Take a break when you need
-      it in the next 1.5h/ Keep an eye on Slack)
+- [ ] Remind them of the ground rules:
+  - meet again 30 min before lunch break in the class room
+  - they can ask the coaches for help at any time
+  - always try to help each other
+  - take a break within the next 1.5 hrs
+  - keep an eye on Slack
 
 ---
 
-## Evaluate: Recap of the assignment / Discussion of MVP / Solution
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in
-  a few phrases.
+- Revisit the question that was posed in the beginning of the session and try to answer it with a
+  few phrases.
 
 ---
 
@@ -177,8 +180,8 @@ console.log(localAge); // Error! Variable not available outside of function
 > 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
 > how far they have come already) :)
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest :)
 
