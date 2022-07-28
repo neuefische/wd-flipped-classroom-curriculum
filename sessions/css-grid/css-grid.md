@@ -21,8 +21,8 @@ Working with CSS Grid Layout contains two major parts:
 
 ## Grid container
 
-Just like CSS flexbox, the layout is defined on a container element which holds all elements which
-will be positioned in the grid as direct children.
+Just like CSS flexbox, the display mode is defined on a container element that contains all the
+elements to be positioned as direct children in the grid.
 
 ```css
 .container {
@@ -30,8 +30,8 @@ will be positioned in the grid as direct children.
 }
 ```
 
-The grid is then defined by the number and size of it's rows and columns. By default, the grid
-consists of one column. The properties for defining the columns and rows are
+The grid is defined by the number and size of it's rows and columns. By default, the grid consists
+of one column. The properties for defining the columns and rows are
 [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) and
 [grid-template-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows). With the
 [gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) property you can define a space between
@@ -43,10 +43,10 @@ The grid layout has the fraction unit `fr` as a special sizing unit (next to `px
 
 1. It splits the remaining space in a grid into equally sized fractions. The number of these parts
    is determined by the total amount of fraction units distributed in the row/column template.
-2. The individual rows / columns then take up the assigned number of fractions.
+2. The individual rows / columns take up the assigned number of fractions.
 
 In the following picture, the last two columns are sized with fraction units. The first of them has
-twice the width than the second one.
+twice the width of the second one.
 
 ![grid-template](assets/grid-layout.png)
 
@@ -66,9 +66,9 @@ into a single CSS shorthand property. Elements can also be stretched over multip
 
 Each element can be positioned on the columns and rows by using these values:
 
-1. `Column / row index` (see picture above).
-2. Negative `index`. Indexing the lines from the other side.
-3. The `span` value. Defines how many cells the item should stretch across.
+1. **Column / row index** (see picture above).
+2. Negative **index**. Indexing the lines from the other side.
+3. The **`span`** value. Defines how many cells the item should stretch across.
 
 Here is an example:
 
@@ -87,7 +87,7 @@ the grid container. In this case you can distribute the columns or rows inside t
 | [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)     | Sets the alignment of the `rows`.               |
 | [place-content](https://developer.mozilla.org/en-US/docs/Web/CSS/place-content)     | Sets the alignment of the `rows` and `columns`. |
 
-## Cell Aligning
+## Cell Alignment
 
 The position of the elements _inside_ their cells can be specified on the grid container.
 

@@ -28,15 +28,100 @@
 
 ## Inform: Session Guide
 
-### Section 1
+### Introduction to Grid
 
-- [ ]
-- [ ]
+- grid is complicated and has many aspects
+- this session will cover some ways to use grid, but they are many others since it is such a
+  powerful tool
 
-### Section 2
+### A simple grid demo
 
-- [ ]
-- [ ]
+- [ ] Start with this
+      [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
+  - Use the
+    [final result](https://codesandbox.io/s/css-grid-demo-result-y9yt1u?file=/css/styles.css) as
+    guide for yourselves _or_ use it to show students the result we're working towards:
+  - ![Result](assets/grid-bootcamp-demo-result.png)
+- [ ] Set `display: grid` on the `.bootcamp-grid` container and explain that nothing much changes
+      visually.
+- [ ] Open the dev tools and enable grid overlay for the container.
+- [ ] Add `gap: 1rem` to the container and explain how thats far easier to work with than margins.
+- [ ] Show the layout that we're trying to achieve and explain how to read columns and rows from it.
+- [ ] Add `grid-template-columns` to the container:
+  - set it to `200px` → You get **1** column that is 200px wide
+  - set it to `200px 200px 200px` → You get **3** columns each 200px wide
+  - set it to `20% 20% 20%` → You get **3** columns each 20% (of the container) wide
+  - Explain that there is very cool grid specific unit: `1fr` means "evenly divide between all
+    `1fr`s"
+  - set it to `1fr 1fr 1fr` → You get **3** columns evenly devided
+  - Explain that `fr` unit can do other values than 1, but thats in the handout.
+  - set it to `1fr 1fr 1fr 1fr` → That is annoying to type out!
+  - set it to `repeat(4, 1fr)` → You get **4** evenly sized columns - way nicer 😮‍💨
+- [ ] Explain that we do not need to define grid-template-columns here (and in fact most of the
+      time). Grid automatically creates new rows when they are needed. For now it's one less thing
+      to think about.
+  - Auto-rows have no explicit height, they match the height of the tallest item per row.
+- [ ] We want `.bootcamp--1` and `.bootcamp--4` (Web und Java Development) to span two columns.
+      Select them and add `grid-column: span 2`.
+- [ ] Now we want to position `.bootcamp--5` (Data Analytics) in the last column spanning two rows:
+  - Explain that `grid-column` is shorthand for `grid-column-start` and `grid-column-end`.
+  - Introduce students to `grid line numbers` in the dev tools overlay.
+  - Add `grid-column-start: 4`, show that it is the same as `grid-column: 4`.
+  - Now to make it start in the correct row, add `grid-row-start: 1`. Point out that it
+    automatically pushes other elements out of the way into other grid cells.
+  - Add `grid-row-end: span 2`. ✨
+  - You can shorten it to: `grid-row: 1 / span 2`
+
+---
+
+### Working with `grid-template-area`
+
+- [ ] Start with a fresh copy of the
+      [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
+      Explain that there is a way to "draw" the grid in CSS using "ASCII art". Add the following
+      code into the CSS:
+
+```css
+.bootcamp-grid {
+	display: grid;
+	gap: 1rem;
+	grid-template-areas:
+		'web web  ux   da'
+		'ds  java java da';
+}
+```
+
+- [ ] Explain why we're not seeing the layout yet: The template is defined, but the children don't
+      know their names yet.
+- [ ] Show the named areas in the dev tools
+- [ ] Add the `grid-area` property to place children inside the areas:
+
+```css
+.bootcamp--1 {
+	grid-area: web;
+}
+.bootcamp--2 {
+	grid-area: ux;
+}
+.bootcamp--3 {
+	grid-area: ds;
+}
+.bootcamp--4 {
+	grid-area: java;
+}
+.bootcamp--5 {
+	grid-area: da;
+}
+```
+
+- [ ] Explain how `grid-template-areas` can be very visual.
+- [ ] Point out that the columns are not equal width anymore and that we want 4 columns that all
+      have the same width.
+- [ ] Add `grid-auto-columns: 1fr` to the container.
+  - Remind students, that grid automatically creates columns and rows.
+  - Using the `grid-auto-columns` property we can specify the size of automatically created columns
+    (or rows with `grid-auto-rows`)
+- [ ] Explain that these were just some ways to use grid, but that there are more ways.
 
 ---
 
