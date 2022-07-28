@@ -8,24 +8,26 @@ This one is an optional home work:
 
 - [Grid Attack](https://codingfantasy.com/games/css-grid-attack/play)
 
-> 💡 Both games provide you with most of the information that you need to win.
+> 💡 Both games provide you with useful information that you need to win.
 
 
 ## Grid Challenges
 
 Solve the following Grid Challenges
+> 💡 Not all challenges have to be solved during session time. Use the remaining challenges as
+> practice for your independent learning time after class.
 
-[Image Gallery Challenge]()
+[Image Gallery Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/image-gallery?file=/css/styles.css)
 ![](assets/grid-challenge_image-gallery.png)
 
-[Service Gallery Challenge]()
+[Service Gallery Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/service-gallery?file=/css/styles.css)
 ![](assets/grid-challenge_service-gallery.png)
 
-[Payment Cards Challenge]()
+[Payment Cards Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/payment-cards?file=/css/styles.css)
  ![](assets/grid-challenge_payment-cards.png)
 
-[Fishes Cards Challenge]()
+[Fishes Cards Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/fishes-cards)
  ![](assets/grid-challenge_fishes-cards.png)
 
-[Place The Elements Challenge]()
+[Place The Elements Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/place-elements?file=/css/styles.css)
  ![](assets/grid-challenge_place-elements.png)
