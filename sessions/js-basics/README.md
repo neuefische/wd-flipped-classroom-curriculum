@@ -4,11 +4,11 @@ Javascript Basics
 
 ## Learning objectives
 
-- [ ] Understand (client-side) Javascript core principles (window, document, elements), focus on DOM
-      manipulation.
-- [ ] Understand how to use `querySelector`
-- [ ] Understand events and how to use `addEventListener`
-- [ ] Get to know the JS console, work with `console.log()` / `console.clear()`
+- [ ] understand what JavaScript is
+- [ ] understand how to use `querySelector`
+- [ ] add, remove and toggle CSS classes
+- [ ] understand events and how to use `addEventListener`
+- [ ] get to know the JS console, work with `console.log()` / `console.clear()`
 
 ## Arrival: Motivate students and prepare them for today's topic(s)
 
@@ -43,13 +43,100 @@ Javascript Basics
 
 ## Inform: Session Guide
 
-### Short excursion to history of Javascript (5 min max)
+### Short introduction of what Javascript is (5 min max)
 
-- Explain ECMAScript and how (and why) it began:
-  - "browser wars" IE vs. Netscape, Livescript vs. JScript...
-  - raised the need for a unfified specification
+- Explain why JavaScript is needed: **Makes web pages interactive**
+- Explain **ECMAScript 6**:
+  - ECMAScript is the Javascript standard
+  - ECMAScript 6 is the second major revision to JavaScript and was published in 2015
+- Optional: Historical background to the `naming of JavaScript` (JavaScript is not Java), for
+  reference:
+  [The history of Javascript](https://www.springboard.com/blog/data-science/history-of-javascript/)
 
-###
+### Console
+
+- Explain that the console is a CLI in your browser. Show how to log into the console:
+
+```js
+console.log('Hello World!'); // logs into console
+console.clear(); // clears console
+console.error('Error!'); // logs as error into console
+```
+
+- Explain that we can use the console for debugging or error logging
+
+### QuerySelector
+
+- Explain that you can manipulate the DOM in JavaScript, e.g.: Change the CSS classes on HTML
+  elements.
+- Explain that you need to select the respective HTML element.
+- Show how this works with an example:
+
+```html
+<body>
+	<main class="main" id="main" data-js="main">...</main>
+</body>
+```
+
+```js
+const mainElement = document.querySelector('[data-js="main"]');
+```
+
+- Explain that you can use ordinary CSS selectors with querySelector
+- Explain that querySelector only selects the first element matching the selector
+
+- Optional: Log the element to the console and show the students what kind of Object it is, which
+  properties it has, e.g. classList
+
+### Adding, removing, and toggling CSS classes with classList
+
+- Explain with examples that you can add, remove, and toggle css classes:
+
+```css
+.dark {
+	background-color: black;
+}
+```
+
+```js
+const mainElement = document.querySelector('[data-js="main"]');
+mainElement.classList.add('dark');
+// mainElement.classList.remove('dark');
+// mainElement.classList.toggle('dark');
+```
+
+### Acting on events with addEventListener
+
+- Explain that events are actions or occurrences, for example:
+  - a click on a button
+  - hovering over an element
+  - pressing a key on the keyboard
+  - resizing the browser window
+
+Show how to add an event listener to a button and react to a click:
+
+```html
+<button type="button" data-js="logging-button">Log into console</button>
+```
+
+```js
+const button = document.querySelector('[data-js="logging-button"]');
+button.addEventListener('click', () => {
+	console.log('You clicked a button');
+});
+```
+
+Demonstrate that the code works. Explain the different parts of the code:
+
+- we select the button element with the querySelector and "save it under the name button"
+- we use the method addEventListener on the button. It's something we don't have to fully understand
+  now - we have to know that we have to write addEventListener with brackets and have to use the
+  syntax in this exact way.
+- the `click` tells us that we listen to the click event
+- the "function body" (the thing we write in the curly braces) is the Javascript that is being
+  executed when the event is triggered.
+
+Explain that we can listen to other events like `mouseover` or `keydown`.
 
 ---
 
