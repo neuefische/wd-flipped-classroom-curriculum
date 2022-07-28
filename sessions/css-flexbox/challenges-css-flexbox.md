@@ -10,11 +10,13 @@ Master one of these two flexbox games:
 
 - [Flexbox Defense](http://www.flexboxdefense.com/)
 
-> 💡 Both games provide you with most of the information that you need to win.
+> 💡 Both games provide you with useful information that you need to win.
 
 ## Flexbox Exercises
 
 Solve the following flexbox exercises
+> 💡 Not all challenges have to be solved during session time. Use the remaining challenges as
+> practice for your independent learning time after class.
 
 - [Navigation Exercise](https://codesandbox.io/s/navigation-exercise-gp5owm?file=/styles.css)
 - [Profile Exercise](https://codesandbox.io/s/profile-exercise-fdqz61?file=/styles.css)
