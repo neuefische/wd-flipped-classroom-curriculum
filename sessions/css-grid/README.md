@@ -39,11 +39,20 @@ Why do we need another layout algorithm for the web?
 
 ## Inform: Session Guide
 
+- Grid is very versatile layout mechanism with many properties.
+- This session only shows one possible way of approaching the subject.
+
 ### Introduction to Grid
 
-- grid is complicated and has many aspects
-- this session will cover some ways to use grid, but they are many others since it is such a
-  powerful tool
+- Grid can be compared to Flexbox, in that it is another way to `layout items within a container`.
+- Grid `items are placed in a grid of rows and columns`.
+- We can `define a template` of rows and or columns on the container.
+- We can then `place the items` inside these rows or columns.
+- Grid has very powerful algorithms for automatically creating rows and columns (`grid-auto-rows`,
+  `grid-auto-columns`), as well as automatically placing items.
+  - That means that you can sometimes get away with defining just a few things and the rest will
+    just fall in place. → _Ask students to keep this in mind when doing the demo._
+- Grid supports `gap` just like Flexbox.
 
 ### Flexbox vs. Grid
 
@@ -54,7 +63,7 @@ Why do we need another layout algorithm for the web?
       bit limiting)
   - 🧘‍♀️ **Flexbox** works great for more linear designs, when layout is mostly determined by content
     order. (`content first`)
-    - (Yes, there is `order` and `reverse`, but _mostly_…)
+    - (Yes, there is `order` and `reverse`, but still…)
   - 🗓 **Grid** can be used for non-linear layouts that can be quite independent from content order.
     (`layout first`)
   - 🧘‍♀️ **Flexbox** is great for lists or `smaller layouts`.
@@ -66,8 +75,10 @@ Why do we need another layout algorithm for the web?
   [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
   - Use the
     [final result](https://codesandbox.io/s/css-grid-demo-result-y9yt1u?file=/css/styles.css) as
-    guide for yourselves _or_ use it to show students the result we're working towards:
+    guide for yourself _or_ use it to show students the result we're working towards (or just show
+    the image):
   - ![Result](assets/grid-bootcamp-demo-result.png)
+- Start at the bottom of the style sheet.
 - Set `display: grid` on the `.bootcamp-grid` container and explain that nothing much changes
   visually.
 - Just like with Flexbox the container is now the `grid container` and all of it's direct children
