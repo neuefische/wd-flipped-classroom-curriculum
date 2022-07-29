@@ -207,6 +207,8 @@ Why do we need another layout algorithm for the web?
 
 ## Keywords for Recap:
 
+grid, grid-template, 1fr, span 2
+
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
 > [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
