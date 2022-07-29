@@ -86,7 +86,8 @@ Why do we need another layout algorithm for the web?
 - Open the dev tools and enable grid overlay for the container.
 - Add `gap: 1rem` to the container and explain how gap is far easier to work with than margins.
 - Show the layout that we're trying to achieve and explain how to read columns and rows from it.
-- Add `grid-template-columns` to the container:
+- Add `grid-template-columns` to the container (**We're now defining the template, and let grid
+  automatically place items!**):
   - set it to `200px` → You get **1** column that is 200px wide
   - set it to `200px 200px 200px` → You get **3** columns each 200px wide
   - set it to `20% 20% 20%` → You get **3** columns each 20% (of the container) wide
@@ -100,14 +101,16 @@ Why do we need another layout algorithm for the web?
   Grid automatically creates new rows when they are needed. For now it's one less thing to think
   about.
   - Auto-rows have no explicit height, they match the height of the tallest item per row.
-- We want `.bootcamp--1` and `.bootcamp--4` (Web und Java Development) to span two columns. Select
-  them and add `grid-column: span 2`.
+- We want `.bootcamp--1` and `.bootcamp--4` (Web und Java Development) to span two columns. (**We
+  therefore need to tell grid explicitly how and where to place items!**) Select them and add
+  `grid-column: span 2`.
 - Now we want to position `.bootcamp--5` (Data Analytics) in the last column spanning two rows:
   - Explain that `grid-column` is shorthand for `grid-column-start` and `grid-column-end`.
   - Introduce students to `grid line numbers` in the dev tools overlay.
   - Add `grid-column-start: 4`, show that it is the same as `grid-column: 4`.
   - Now to make it start in the correct row, add `grid-row-start: 1`. Point out that it
-    automatically pushes other elements out of the way into other grid cells.
+    automatically pushes other elements out of the way into other grid cells. (That is the auto
+    placing algorithm at work.)
   - Add `grid-row-end: span 2`. ✨
   - You can shorten it to: `grid-row: 1 / span 2`
 
