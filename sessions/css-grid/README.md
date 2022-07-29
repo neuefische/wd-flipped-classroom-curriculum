@@ -4,7 +4,9 @@
 
 ## Learning objectives
 
-- [ ]
+- using CSS Grid to layout Webpages
+- positioning elements in Grid cells
+- aligning cells in a Grid
 
 ---
 
@@ -14,15 +16,24 @@
 
 ### Which important problem will we solve today?
 
+Some layouts are hard (if not impossible) to create with the layout methods we already know. Grid is
+another way to create more complex two-dimensional layouts.
+
 ### Why is the content of today's block that important for the students?
 
+You need to know the most important layout methods, to decide what method to use when and why.
+
 ### Pose a question to be answered by the end of the block!
+
+Why do we need another layout algorithm for the web?
 
 ---
 
 ## Activate prior knowledge of students
 
 ### Which previously learned concepts will be utilized in this session?
+
+- Some flexbox
 
 ---
 
@@ -34,20 +45,37 @@
 - this session will cover some ways to use grid, but they are many others since it is such a
   powerful tool
 
-### A simple grid demo
+### Flexbox vs. Grid
 
-- [ ] Start with this
-      [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
+- Explain that:
+  - 🧘 **Flexbox** works on `one dimension` (either rows _or_ columns).
+  - 🗓 **Grid** works on `two dimensions` (rows _and_ columns).
+    - (You can do two dimensional layouts with nested or wrapping flexbox-layouts, but it's still a
+      bit limiting)
+  - 🧘‍♀️ **Flexbox** works great for more linear designs, when layout is mostly determined by content
+    order. (`content first`)
+    - (Yes, there is `order` and `reverse`, but _mostly_…)
+  - 🗓 **Grid** can be used for non-linear layouts that can be quite independent from content order.
+    (`layout first`)
+  - 🧘‍♀️ **Flexbox** is great for lists or `smaller layouts`.
+  - 🗓 **Grid** is designed for `larger-scale layouts`.
+
+### A Simple Grid Demo
+
+- Start with this
+  [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
   - Use the
     [final result](https://codesandbox.io/s/css-grid-demo-result-y9yt1u?file=/css/styles.css) as
     guide for yourselves _or_ use it to show students the result we're working towards:
   - ![Result](assets/grid-bootcamp-demo-result.png)
-- [ ] Set `display: grid` on the `.bootcamp-grid` container and explain that nothing much changes
-      visually.
-- [ ] Open the dev tools and enable grid overlay for the container.
-- [ ] Add `gap: 1rem` to the container and explain how thats far easier to work with than margins.
-- [ ] Show the layout that we're trying to achieve and explain how to read columns and rows from it.
-- [ ] Add `grid-template-columns` to the container:
+- Set `display: grid` on the `.bootcamp-grid` container and explain that nothing much changes
+  visually.
+- Just like with Flexbox the container is now the `grid container` and all of it's direct children
+  are `grid items`.
+- Open the dev tools and enable grid overlay for the container.
+- Add `gap: 1rem` to the container and explain how gap is far easier to work with than margins.
+- Show the layout that we're trying to achieve and explain how to read columns and rows from it.
+- Add `grid-template-columns` to the container:
   - set it to `200px` → You get **1** column that is 200px wide
   - set it to `200px 200px 200px` → You get **3** columns each 200px wide
   - set it to `20% 20% 20%` → You get **3** columns each 20% (of the container) wide
@@ -57,13 +85,13 @@
   - Explain that `fr` unit can do other values than 1, but thats in the handout.
   - set it to `1fr 1fr 1fr 1fr` → That is annoying to type out!
   - set it to `repeat(4, 1fr)` → You get **4** evenly sized columns - way nicer 😮‍💨
-- [ ] Explain that we do not need to define grid-template-columns here (and in fact most of the
-      time). Grid automatically creates new rows when they are needed. For now it's one less thing
-      to think about.
+- Explain that we do not need to define grid-template-columns here (and in fact most of the time).
+  Grid automatically creates new rows when they are needed. For now it's one less thing to think
+  about.
   - Auto-rows have no explicit height, they match the height of the tallest item per row.
-- [ ] We want `.bootcamp--1` and `.bootcamp--4` (Web und Java Development) to span two columns.
-      Select them and add `grid-column: span 2`.
-- [ ] Now we want to position `.bootcamp--5` (Data Analytics) in the last column spanning two rows:
+- We want `.bootcamp--1` and `.bootcamp--4` (Web und Java Development) to span two columns. Select
+  them and add `grid-column: span 2`.
+- Now we want to position `.bootcamp--5` (Data Analytics) in the last column spanning two rows:
   - Explain that `grid-column` is shorthand for `grid-column-start` and `grid-column-end`.
   - Introduce students to `grid line numbers` in the dev tools overlay.
   - Add `grid-column-start: 4`, show that it is the same as `grid-column: 4`.
@@ -76,10 +104,10 @@
 
 ### Working with `grid-template-area`
 
-- [ ] Start with a fresh copy of the
-      [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
-      Explain that there is a way to "draw" the grid in CSS using "ASCII art". Add the following
-      code into the CSS:
+- Start with a fresh copy of the
+  [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
+  Explain that there is a way to "draw" the grid in CSS using "ASCII art". Add the following code
+  into the CSS:
 
 ```css
 .bootcamp-grid {
@@ -91,10 +119,10 @@
 }
 ```
 
-- [ ] Explain why we're not seeing the layout yet: The template is defined, but the children don't
-      know their names yet.
-- [ ] Show the named areas in the dev tools
-- [ ] Add the `grid-area` property to place children inside the areas:
+- Explain why we're not seeing the layout yet: The template is defined, but the children don't yet
+  know in which area (slot) they should be placed.
+- Show the named areas in the dev tools.
+- Add the `grid-area` property to place children inside the areas:
 
 ```css
 .bootcamp--1 {
@@ -114,23 +142,30 @@
 }
 ```
 
-- [ ] Explain how `grid-template-areas` can be very visual.
-- [ ] Point out that the columns are not equal width anymore and that we want 4 columns that all
-      have the same width.
-- [ ] Add `grid-auto-columns: 1fr` to the container.
+- Explain how `grid-template-areas` can be very visual.
+- Point out that the columns are not equal width anymore and that we want 4 columns that all have
+  the same width.
+- Add `grid-auto-columns: 1fr` to the container.
   - Remind students, that grid automatically creates columns and rows.
   - Using the `grid-auto-columns` property we can specify the size of automatically created columns
     (or rows with `grid-auto-rows`)
-- [ ] Explain that these were just some ways to use grid, but that there are more ways.
+- Explain that these were just some ways to use grid, but that there are more ways.
+
+---
+
+> 💡 This guide attempts to give a simple introduction into CSS grid. It is only one possible way of
+> approaching the subject and intentionally ignores many grid properties (such as alignment,
+> auto-fit/fill, minmax, named lines, etc.). Most of what is not covered here is part of the
+> handout.
 
 ---
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](session-name.md) to the students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
-- [ ] Remind them of the ground rules:
+- Provide the [handout](css-grid.md) to the students
+- Open the handout and walk the students through the tasks
+- Divide the students into groups of 2
+- Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
   - they can ask the coaches for help at any time
   - always try to help each other
@@ -151,10 +186,10 @@
 > 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
 > how far they have come already) :)
 
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
+- Summarize the day by repeating all of the topics that were discussed
+- Highlight the progress made that day
+- Encourage the students to repeat what they learned with practical exercises
+- Remind them to rest :)
 
 ## Keywords for Recap:
 
