@@ -97,7 +97,7 @@ Why do we need another layout algorithm for the web?
   - Explain that `fr` unit can do other values than 1, but thats in the handout.
   - set it to `1fr 1fr 1fr 1fr` → That is annoying to type out!
   - set it to `repeat(4, 1fr)` → You get **4** evenly sized columns - way nicer 😮‍💨
-- Explain that we do not need to define grid-template-columns here (and in fact most of the time).
+- Explain that we do not need to define `grid-template-rows` here (and in fact most of the time).
   Grid automatically creates new rows when they are needed. For now it's one less thing to think
   about.
   - Auto-rows have no explicit height, they match the height of the tallest item per row.
