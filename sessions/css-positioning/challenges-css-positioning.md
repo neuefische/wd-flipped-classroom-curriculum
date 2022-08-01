@@ -18,7 +18,7 @@ provided as comments.
 
 **1. Challenge**
 
-[![Codesandbox](../../assets/open-in-codesandbox.svg)](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-positioning/absolute-top-right-bottom-left?file=/css/styles.css)
+[![Codesandbox](../../assets/open-in-codesandbox.svg)](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-positioning/absolute-no-advanced-requirements?file=/css/styles.css)
 
 **2. Challenge**
 
