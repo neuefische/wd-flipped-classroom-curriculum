@@ -47,11 +47,11 @@ Javascript Basics
 
 - Explain why JavaScript is needed: **Makes web pages interactive**
 - Explain **ECMAScript 6**:
-  - ECMAScript is the Javascript standard
+  - ECMAScript is the JavaScript standard
   - ECMAScript 6 is the second major revision to JavaScript and was published in 2015
 - Optional: Historical background to the `naming of JavaScript` (JavaScript is not Java), for
   reference:
-  [The history of Javascript](https://www.springboard.com/blog/data-science/history-of-javascript/)
+  [The history of JavaScript](https://www.springboard.com/blog/data-science/history-of-javascript/)
 
 ### Console
 
@@ -85,7 +85,7 @@ const mainElement = document.querySelector('[data-js="main"]');
 - Explain that you can use ordinary CSS selectors with querySelector
 - Explain that querySelector only selects the first element matching the selector
 
-- Optional: Log the element to the console and show the students what kind of Object it is, which
+- Optional: Log the element to the console and show the students what kind of object it is, which
   properties it has, e.g. classList
 
 ### Adding, removing, and toggling CSS classes with classList
@@ -120,20 +120,20 @@ Show how to add an event listener to a button and react to a click:
 ```
 
 ```js
-const button = document.querySelector('[data-js="logging-button"]');
-button.addEventListener('click', () => {
+const myLoggingButton = document.querySelector('[data-js="logging-button"]');
+myLoggingButton.addEventListener('click', () => {
 	console.log('You clicked a button');
 });
 ```
 
 Demonstrate that the code works. Explain the different parts of the code:
 
-- we select the button element with the querySelector and "save it under the name button"
-- we use the method addEventListener on the button. It's something we don't have to fully understand
+- we select the button element with the `querySelector` and "save it as a variable with the name `myLoggingButton`"
+- we use the method `addEventListener` on the button. It's something we don't have to fully understand
   now - we have to know that we have to write addEventListener with brackets and have to use the
   syntax in this exact way.
 - the `click` tells us that we listen to the click event
-- the "function body" (the thing we write in the curly braces) is the Javascript that is being
+- the "function body" (the thing we write in the curly braces) is the JavaScript that is being
   executed when the event is triggered.
 
 Explain that we can listen to other events like `mouseover` or `keydown`.
