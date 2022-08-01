@@ -39,7 +39,7 @@ Why do we need another layout algorithm for the web?
 
 ## Inform: Session Guide
 
-- Grid is very versatile layout mechanism with many properties.
+- Grid is a very versatile layout mechanism with many properties.
 - This session only shows one possible way of approaching the subject.
 
 ### Introduction to Grid
