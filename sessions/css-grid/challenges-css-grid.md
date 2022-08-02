@@ -19,22 +19,22 @@ Solve the following Grid Challenges
 > 💡 Not all challenges have to be solved during session time. Use the remaining challenges as
 > practice for your independent learning time after class.
 
-### [Image Gallery Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/image-gallery?file=/css/styles.css)
+### [Image Gallery Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/image-gallery?file=/css/styles.css)
 
 ![](assets/grid-challenge_image-gallery.png)
 
-### [Service Gallery Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/service-gallery?file=/css/styles.css)
+### [Service Gallery Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/service-gallery?file=/css/styles.css)
 
 ![](assets/grid-challenge_service-gallery.png)
 
-### [Payment Cards Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/payment-cards?file=/css/styles.css)
+### [Payment Cards Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/payment-cards?file=/css/styles.css)
 
 ![](assets/grid-challenge_payment-cards.png)
 
-### [Fishes Cards Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/fishes-cards)
+### [Fishes Cards Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/fishes-cards)
 
 ![](assets/grid-challenge_fishes-cards.png)
 
-### [Place The Elements Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-grid/place-elements?file=/css/styles.css)
+### [Place The Elements Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/place-elements?file=/css/styles.css)
 
 ![](assets/grid-challenge_place-elements.png)
