@@ -9,6 +9,10 @@ and have a look at the `styles.css` file.
 There are various CSS rule sets with `FIX_ME` as selector. Your task is to replace this placeholder
 with a proper selector according to the description above the rule set.
 
+Use regular selectors, you're not using BEM just yet. You do not need to touch the HTML file.
+
+Try to get a sense of how you might encounter ambiguities or issues when choosing the right selectors.
+
 The declaration using the `outline` property is a guidance to check, if you addressed the correct
 elements. After you are finished with a rule set, you can remove this declaration.
 
