@@ -63,8 +63,6 @@ Within the CSS code of your Quiz App are probably a lot of redundant values. Typ
 
 Analyze your code and find redundant values.
 
-The is no need to define a e.g. certain hex value for color in multiple places. You can define such
-redundant values in a single place (like the `global.css` file).
+It is not necessary, for example, to define a specific hex value for a color in several places. You can define these kinds of redundant values in a single place (like the `global.css` or even a `variables.css` file).
 
-Use Custom Properties (CSS Variables) to store such values at a central place und reuse them across
-the code.
+Use custom properties (CSS variables) to store such values in a central location and reuse them throughout the code.
