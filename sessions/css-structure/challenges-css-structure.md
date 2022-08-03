@@ -35,7 +35,7 @@ Now create a separate CSS file for each component. The file name should match th
 Move all styles that are used across multiple components to a `global.css` file.
 (e.g. type selectors like `body` or the universal selector `*`)
 
-Your main CSS file (e.g. `styles.css`) should use multiple `@import` statements.
+Your main CSS file (e.g. `styles.css`) should have several `@import` statements.
 
 The file structure might look something like this afterwards:
 
