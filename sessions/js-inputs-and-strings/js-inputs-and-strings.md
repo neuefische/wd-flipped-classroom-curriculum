@@ -1,4 +1,4 @@
-# JS Strings and Inputs
+# JS Inputs and Strings
 
 ## Learning Objectives
 
