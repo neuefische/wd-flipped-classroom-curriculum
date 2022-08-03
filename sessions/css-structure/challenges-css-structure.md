@@ -53,7 +53,7 @@ quiz-app
 
 ## Identify global values in your Quiz App
 
-Within the CSS code of your Quiz App are probably a lot of redundant values. Typical cases are:
+There are probably a lot of redundant values in the CSS code of your Quiz App. Typical cases are:
 
 - colors / background colors
 - borders
