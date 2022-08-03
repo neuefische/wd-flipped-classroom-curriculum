@@ -1,4 +1,4 @@
-# Challenges: Session-Name
+# Challenges: CSS Structure
 
 ## Selectors and cascading bugs
 
