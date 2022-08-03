@@ -18,8 +18,8 @@ elements. After you are finished with a rule set, you can remove this declaratio
 
 ## Apply BEM to your Quiz App
 
-When writing Code for your Quiz App, you might have asked yourself how to choose classnames. The BEM
-methods gives you guidance on this topic.
+When writing code for your Quiz App, you might have asked yourself how to choose class names. The BEM
+methodology specifies a predefined pattern for adding class names to your HTML elements.
 
 Bring more structure to your Quiz App code by using BEM to name all classes!
 
