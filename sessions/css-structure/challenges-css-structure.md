@@ -30,8 +30,7 @@ The desired result: One should be able to see which HTML elements belong togethe
 
 You created a structure of individual components in the previous exercise.
 
-Now let's create a separated CSS file for each component. The filename should correspond with the
-component name.
+Now create a separate CSS file for each component. The file name should match the name of the component.
 
 In addition all styles used across multiple components should be moved into a `global.css` file.
 (e.g. type selectors as `body` or the universal selector `*`)
