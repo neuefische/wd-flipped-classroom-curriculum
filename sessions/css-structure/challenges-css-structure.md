@@ -1,6 +1,6 @@
 # Challenges: Session-Name
 
-## Fix cascading bugs
+## Selectors and cascading bugs
 
 Please open
 [this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-structure/selectors-and-cascading?file=/css/styles.css)
