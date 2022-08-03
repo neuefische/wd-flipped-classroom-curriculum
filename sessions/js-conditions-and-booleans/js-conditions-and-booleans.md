@@ -2,26 +2,27 @@
 
 ## Learning Objectives
 
-- [ ] how to use conditions to control the program flow
-- [ ] what are booleans and truthy/falsy values 
-- [ ] how comparison and logical operators work
-- [ ] how to write a ternary expression
+- using conditions to control the program flow
+- understanding what booleans and truthy/falsy values are
+- working with comparison and logical operators
+- writing ternary expressions
 
 ---
 
 ## Boolean Values
 
-A boolean value, named after George Boole, only has two states. It can either be `true` or `false`. 
-Booleans are often used in conditional statements which can execute different code depending on their value.
+A boolean value, named after George Boole, only has two states. It can either be **true** or
+**false**. Booleans are often used in conditional statements which can execute different code
+depending on their value.
 
 ## Truthy and Falsy Values
 
-Sometimes you want to have a condition depending on another type of value.
-JavaScript can transform any value into a boolean with _type coersion_.
-That means that some values act as if they were `true` and others as if they were `false`: 
-_Truthy_ values become `true`, _falsy_ values become `false`.
+Sometimes you want to have a condition depending on another type of value. JavaScript can transform
+any value into a boolean with _type coersion_. That means that some values act as if they were true
+and others as if they were false: _Truthy_ values become true, _falsy_ values become false.
 
 - _truthy_ values:
+
   - non zero numbers: `1`, `2`, `-3`, etc.
   - non empty strings: `"hello"`
   - `true`
@@ -37,16 +38,16 @@ _Truthy_ values become `true`, _falsy_ values become `false`.
 
 ## Comparison Operators
 
-Logical operators produce boolean values by comparing up to two expressions:
+Comparison operators produce boolean values by comparing two expressions:
 
-| Operator  | Effect                                                                            |
-| --------- | --------------------------------------------------------------------------------- |
-| A `===` B | strict equal: is `true` if both values are equal (including their type).          |
-| A `!==` B | strict not equal: is `true` if both values are not equal  (including their type). |
-| A `>` B   | strictly greater than: is `true` if A is greater than B.                          |
-| A `<` B   | strictly less than: is `true` if A is less than B.                                |
-| A `>=` B  | greater than or equal: is `true` if A is greater than or equal B.                 |
-| A `<=` B  | less than or equal: is `true` if A is less than or equal B.                       |
+| Operator  | Effect                                                                           |
+| --------- | -------------------------------------------------------------------------------- |
+| A `===` B | strict equal: is `true` if both values are equal (including their type).         |
+| A `!==` B | strict not equal: is `true` if both values are not equal (including their type). |
+| A `>` B   | strictly greater than: is `true` if A is greater than B.                         |
+| A `<` B   | strictly less than: is `true` if A is less than B.                               |
+| A `>=` B  | greater than or equal: is `true` if A is greater than or equal B.                |
+| A `<=` B  | less than or equal: is `true` if A is less than or equal B.                      |
 
 ---
 
@@ -132,10 +133,10 @@ const greetingText = time > 12 ? 'Good morning.' : 'Good afternoon.';
 The ternary operator has the following structure:
 
 ```js
-condition ? expressionIfTrue : expressionIfFalse
+condition ? expressionIfTrue : expressionIfFalse;
 ```
 
-If the condition is `true`, the first expression is evaluated, otherwise the second expression. The
+If the condition is true, the first expression is evaluated, otherwise the second expression. The
 ternary operator can be used to decide which function should be called:
 
 ```js
