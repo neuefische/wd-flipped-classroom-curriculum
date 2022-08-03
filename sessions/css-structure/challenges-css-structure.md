@@ -32,8 +32,8 @@ You created a structure of individual components in the previous exercise.
 
 Now create a separate CSS file for each component. The file name should match the name of the component.
 
-In addition all styles used across multiple components should be moved into a `global.css` file.
-(e.g. type selectors as `body` or the universal selector `*`)
+Move all styles that are used across multiple components to a `global.css` file.
+(e.g. type selectors like `body` or the universal selector `*`)
 
 Your main CSS file (e.g. `styles.css`) should use multiple `@import` statements.
 
