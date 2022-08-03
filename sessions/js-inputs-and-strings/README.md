@@ -1,4 +1,4 @@
-# JS Strings and Inputs
+# JS Inputs and Strings
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
@@ -16,7 +16,7 @@
 
 ### Why is the content of today's block that important for the students?
 
-### pose a question to be answered by the end of the block!
+### Pose a question to be answered by the end of the block!
 
 ---
 
@@ -42,8 +42,8 @@
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](js-strings-and-inputs.md) and the
-      [challenges](challenges-js-strings-and-inputs.md) to the students
+- [ ] Provide the [handout](js-inputs-and-strings.md) and the
+      [challenges](challenges-js-inputs-and-strings.md) to the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups of \_\_\_
 - [ ] Remind them of the ground rules:
