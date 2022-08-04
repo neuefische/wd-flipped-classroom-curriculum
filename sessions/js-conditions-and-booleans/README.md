@@ -69,7 +69,7 @@ carrots = carrots + 2;
 Ask students if this code does what the story describes. You should come to the conclusion, that
 this code `unconditionally` adds two carrots.
 
-Tell students, that you can write an `if-statement` in JavaScript, that kinda works like the
+Tell students, that you can write an `if-statement` in JavaScript, that can kinda be read like a
 sentence.
 
 Change the code to:
@@ -84,10 +84,12 @@ if (kidDidHelpCleaningTheKitchen) {
 
 Discuss that this code `conditionally` executes the that code block defined the curly brackets.
 
+Show students the the code throws an error.
+
 Ask students what the type of `kidDidHelpCleaningTheKitchen` might be in this case.
 
 - You can give the hint that it is some kind of variable.
-- We are using the variable, but we have not declared it yet
+- We are using the variable, but we have not declared it yet.
 - It must be some kind of variable that contains either a `yes` or a `no`.
 
 Explain that the JavaScript equivalents of `yes` and `no` are `true` and `false`. [^1]
@@ -104,21 +106,21 @@ if (kidDidHelpCleaningTheKitchen) {
 }
 ```
 
-This code actually runs, so feel free to add a `console.log(carrots)` and experiment with different
-values.
+Feel free to add a `console.log(carrots)` and experiment with different values.
 
 Explain that this is called a Boolean value (after George Bool) and that it only has two states:
 `true` or `false`.
 
 ### Else case
 
-Now let's persume, that you'd want to take away carrots from the kid if it in fact did not help
-cleaning the kitchen.
+Suppose you wanted to take the carrots away from the child, when in fact it would _not_ help clean
+the kitchen.
 
-Formulate this sentence: `If` the kid did help cleaning the kitchen, add two carrots, `else`
-subtract one carrot.
+Modify the story from above like this:
 
-Make it in code:
+> `If` the kid did help cleaning the kitchen, add two carrots, `else` subtract one carrot.
+
+Adjust the code:
 
 ```js
 let carrots = 2;
@@ -132,16 +134,19 @@ if (kidDidHelpCleaningTheKitchen) {
 }
 ```
 
-Explain that `else` does not have a condition and always follows after an `if` block.
+Explain that the optional `else` block does not have a condition (`()`) and always follows after an
+`if` block.
 
 Explain that executing different code based on a `condition` is called `branching`. And that we just
-make our first `if/else-statement`.
+make our first full `if/else-statement`.
 
-### Creating booleans
+### Creating booleans from other values
 
 Explain that a static `true` or `false` by itself is seldomly helpful.
 
-Present this scenario: If the kid cleaned more that 3 dishes, it gets the extra carrots.
+Modify the scenario again:
+
+> If the kid cleaned more that 3 dishes, it gets the extra carrots.
 
 Explain that you now need a variable to track how many dishes have been cleaned and that from that
 we have to create a boolean variable.
@@ -169,7 +174,7 @@ boolean (`true` or `false`).
 Two very important operators are `equals to` and it's counterpart `not equals to`. In JavaScript
 they are written as `===` and `!==` respectively.
 
-If we were to say the the kid only helped if it cleand `exactly 3` dishes we could write:
+If we were to say the the kid only helped if it cleaned `exactly 3` dishes we could write:
 
 ```js
 let carrots = 2;
@@ -184,7 +189,9 @@ if (kidDidHelpCleaningTheKitchen) {
 }
 ```
 
-Other comparison operators will be in the handout.
+More comparison operators will be in the handout.
+
+> This is a good place to ask for questions or take a quick 1 min break.
 
 ### The ternary operator
 
