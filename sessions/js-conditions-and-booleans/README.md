@@ -191,7 +191,7 @@ if (kidDidHelpCleaningTheKitchen) {
 
 More comparison operators will be in the handout.
 
-> This is a good place to ask for questions or take a quick 1 min break.
+> 💡 This is a good place to ask for questions or take a quick 1 min break.
 
 ### The ternary operator
 
