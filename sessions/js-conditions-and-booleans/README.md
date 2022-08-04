@@ -17,9 +17,19 @@
 
 ### Which important problem will we solve today?
 
+Most of the time when programming you want do to different things, depending on some kind of
+condition. In this session we will learn how to do that in JavaScript.
+
 ### Why is the content of today's block that important for the students?
 
+- Almost all computational problems require some kind of branching or conditional programming.
+- Booleans are the most fundamental building block of all computer science.
+
 ### Pose a question to be answered by the end of the block!
+
+Computers are electronics. Electronis are build on the principles of zeros and ones that are
+combined using circuts that perform logical operations on them (And-Gate, Or-Gate, etc.). How does
+this concept translate into a higher level languague like JavaScript?
 
 ---
 
@@ -27,20 +37,24 @@
 
 ### Which previously learned concepts will be utilized in this session?
 
+- JS Basics
+- Variables
+- Variable Types
+
 ---
 
 ## Inform: Session Guide
 
-### A basic example
+### Conditional programming
 
 Tell students a story:
 
-- Imagine having a child that loves to snack carrots (all kids do, right? 🥕).
-- Therefore you're using it as a treat.
-- Your kid gets two carrots as a baseline.
-- _If_ it helps cleaning the kitchen it can get two more.
-
-> 👶 By the way: this is not parenting advice!
+> - Imagine having a child that loves to snack carrots (all kids do, right? 🥕).
+> - Therefore you're using it as a treat.
+> - Your kid gets two carrots as a baseline.
+> - _If_ it helps cleaning the kitchen it can get two more.
+>
+> 👶 By the way: none of this is parenting advice!
 
 Ask students about the meaning of the word `if` in this story.
 
@@ -234,6 +248,60 @@ Compare this with the last version were we used an `if/else-statement` and ask s
 version seems more readable to them. Explain that readabilty is much more important that short and
 clever solutions.
 
+### Type coersion and truthy / falsy
+
+Explain that in places where JavaScript needs a boolean variable but we give it any other variable
+type it tries to guess what boolean value would best describe whatever we specified.
+
+This is called `type coersion` in general. Show students this example:
+
+```js
+let carrots = 4;
+
+if (carrots) {
+	console.log('Hand out the carrots already! 🥕');
+}
+```
+
+Here `carrots` has the value `4`, so we basically are telling JavaScript `if(4)`.
+
+The value `4` is coersed to `true`. In fact any number that is not `0` will interpreted as `true`.  
+The set of values that is interpreted as `true` is called "truthy".
+
+If `carrots` were `0` (change the code to show students) it's value would coerse to `false`.  
+The set of values that is interpreted as `false` is called "falsy".
+
+A more complete list of values that are truthy and falsy can be found in the handout.
+
+Explain that this concept can be very helpful, for example when checking if a value "exists". (Just
+like in the example.) But you have to be careful, because as far as JavaScript is concerend all of
+these are falsy: `if(false)`, `if(0)`, `if(null)`, `if(undefined)`. Sometimes that is not what you
+want.
+
+If you actucally wan't to check if a variable is not defined (meaning it's value is `null` or
+`undefined`) you can do this:
+
+```js
+if (carrots != null) {
+	console.log('carrots is not defined 😥');
+}
+```
+
+Ask students if they can see anything strange with this code, or if they can imagine why this will
+be true if carrots is either `null` _or_ `undefined`.
+
+Keep this question open for students to discover in the handout. You can discuss the anwser after
+the exersises.
+
+> 💡 For you: It's a non-strict comparison (`!=` instead of `!==`) meaning that JavaScript tries to
+> coerse the compared values into the same type.
+>
+> And just like `"3" == 3` is `true`, `undefined == null` is also `true`. This also works with `!=`
+> instead of `==`.
+>
+> ⚠️ Remember that this is an exception for using non-strict equality. Strict equality should
+> otherwise always be preferred.
+
 ---
 
 ## Process: Challenges
@@ -241,7 +309,7 @@ clever solutions.
 - [ ] Provide the [handout](js-conditions-and-booleans.md) and the
       [challenges](challenges-js-conditions-and-booleans.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
+- [ ] Divide the students into groups of 2
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
   - they can ask the coaches for help at any time
@@ -270,6 +338,8 @@ clever solutions.
 
 ## Keywords for Recap:
 
+George Bool, truthy, falsy, strict equality, type coersion, ternary operator, if statement
+
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
 > [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
@@ -278,5 +348,5 @@ clever solutions.
 > included in the structure.
 
 [^1]:
-    Fun fact: Some languages like Objective-C actually use `YES` and `NO` instead of `true` and
+    Fun fact: Some languages, like Objective-C, actually use `YES` and `NO` instead of `true` and
     `false`. ([Source](https://riptutorial.com/objective-c/example/16004/bool))

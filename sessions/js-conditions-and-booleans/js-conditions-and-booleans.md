@@ -49,6 +49,16 @@ Comparison operators produce boolean values by comparing two expressions:
 | A `>=` B  | greater than or equal: is `true` if A is greater than or equal B.                |
 | A `<=` B  | less than or equal: is `true` if A is less than or equal B.                      |
 
+> 💡 You might notice that JavaScript uses three equal signs (`===`) to check for equality. This can
+> seem very strange at first.
+>
+> - `=` (`const x = 0`) is the assignment operator and has nothing to do with comparison.
+> - `==` and `!=` are non-strict equality operators. You should **avoid them 99% of the time**.  
+>   Non-strict equality tries to use type coersion to convert both values to the same type:
+>   `"3" == 3` is `true`. Which is seldomly what you want.
+> - `===` and `!==` are strict equality operators. **This is what you need almost always**.  
+>   Strict equality checks if type _and_ value are the same: `"3" === 3` is `false`.
+
 ---
 
 ## Logical Operators
@@ -66,6 +76,16 @@ Logical operators combine up to two booleans into a new boolean.
 >
 > - `(A || B) && (C || D)`
 > - `!(A || B)`
+
+> 💡 Be careful when using `&&` or `||` with non-boolean values. They actually return one of the
+> original values. That can be useful, but can also quickly lead to confusion. This behaviour is
+> called
+> [short-circut evaluation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation)
+> and is a more advanced topic.
+>
+> - `"some string" || "some other string"` evaluates to `"some string"`
+> - `0 || 100` evaluates to `100`
+> - `null && "yet another string"` evaluates to `null`
 
 ---
 
