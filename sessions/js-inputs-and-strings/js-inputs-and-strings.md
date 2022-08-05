@@ -30,8 +30,7 @@ The third method to write strings has the useful property that you can insert va
 string by wrapping placeholders with a dollar sign and curly brackets `${}` . This is also called
 **string interpolation**.
 
-By this, you don't have to concat multiple strings together if you want to use a variable in your
-string:
+This way you don't have to concat multiple strings if you want to use a variable in your string:
 
 ```js
 const stringConcatination = 'Hello ' + name + ', good to see you!';
