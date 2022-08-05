@@ -3,7 +3,7 @@
 ## Toast Messages
 
 Open this
-[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/feat/js-createelement/sessions/js-createelement/toast-messages?file=/js/index.js)
+[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-createelement/toast-messages?file=/js/index.js)
 
 In the bottom right corner you can find a toast messages container with one entry.
 
@@ -17,19 +17,23 @@ Afterwards you should still be able to add new toast messages and clear them aga
 ## Social Media Post
 
 Open this
-[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/feat/js-createelement/sessions/js-createelement/social-media-post?file=/js/index.js)
+[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-createelement/social-media-post?file=/js/index.js)
 
 This page shows an example of a social media post. Your task is to replicate the social media post
-with JavaScript. Use `document.createElement()` to generate all HTML elements. The `index.html`
-demonstrates the required HTML tags, structure and class names.
+with JavaScript. Use `document.createElement()` to generate all HTML elements separately.
+
+Don't use `.innerHTML` to create the HTML in one instance, but use multiple calls of
+`document.createElement()` instead.
+
+The `index.html` demonstrates the required HTML tags, structure and class names.
 
 Append the second social media post to the body. Don't forget to add the event listener to the like
-button.
+button. You can use the function `handleLikeButtonClick` for the event listener.
 
 ## Product teaser
 
 Open this
-[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/js-createelement/product-teaser?file=/js/index.js)
+[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-createelement/product-teaser?file=/js/index.js)
 
 This exercise includes an example of a product teaser for an online shop. Please append a second
 product teaser to the page with JavaScript based on the data given in the `index.js` file.
