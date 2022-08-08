@@ -19,8 +19,8 @@ When styling an element the browser:
 
 1. Searches for all rules with matching selectors
 2. Sorts the rules by their importance taking into account:
-   - Whether the rule is followed by **!important**
-   - The rules origin (Browser stylesheet, User stylesheet, Author stylesheet)
+   - Whether the declaration is followed by **!important**
+   - The rule's origin (Browser stylesheet, User stylesheet, Author stylesheet)
 3. Sorts rules by their [specificity](#specificity), if there are multiple rules with the same
    importance according to no. 2.
 4. Chooses the last declaration over previous ones, if there are multiple rules with the same

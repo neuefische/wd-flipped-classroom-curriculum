@@ -1,10 +1,14 @@
-# Session name
+# CSS Structure
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
 ## Learning objectives
 
-- [ ]
+- [ ] Understanding cascading in CSS
+- [ ] Structuring CSS to improve maintainability and readability
+- [ ] `@import` to import different CSS stylesheets in one file
+- [ ] BEM method
+- [ ] CSS custom properties (CSS variables)
 
 ---
 
@@ -14,9 +18,17 @@
 
 ### Which important problem will we solve today?
 
+- When writing CSS code things get messy really fast
+- We need methods to organize our CSS code to avoid bugs and improve maintainability
+
 ### Why is the content of today's block that important for the students?
 
+- You need a basic understanding on how different CSS declarations are applied all together
+- Working with today's methods will clearly improve your code
+
 ### Pose a question to be answered by the end of the block!
+
+How can we write well-structured, more readable and maintainable CSS code with fewer bugs?
 
 ---
 
@@ -24,28 +36,165 @@
 
 ### Which previously learned concepts will be utilized in this session?
 
+- HTML Basics
+- CSS Basics
+
+You can ask these questions:
+
+- When you wrote CSS code before, which questions did you ask yourself while doing it?
+  - How should I name this class?
+  - Where should I put the code within the CSS file?
+  - Why gets this styles declaration overwritten?
+  - Can I avoid changing a certain color in different places manually?
+
 ---
 
 ## Inform: Session Guide
 
-### Section 1
+### CSS Cascade
 
-- [ ]
-- [ ]
+- [ ] Introduce the students to the concept of "cascading" styles
+  - Algorithm that defines which CSS rules are being applied when there are conflicting rules.
+  - Important concepts: specificity, order, inheritance
+- [ ] Show an example for overwritten styles because of "cascading"
+  - accidentally
+  - on purpose
 
-### Section 2
+#### Specificity
 
-- [ ]
-- [ ]
+- [ ] Explain CSS specificity
+  - The specificity of a CSS selector tells the browser which rule is most relevant for an element.
+  - More specific rules win over less specific ones.
+- [ ] Explain common types of selectors
+  - Type selector
+  - Class selector
+  - ID selector
+- [ ] Show an example for CSS specificity
+- [ ] Explain to avoid the `!important` flag
+
+```css
+h1 {
+	color: red;
+}
+
+.headline {
+	color: blue;
+}
+
+#main-headline {
+	color: green;
+}
+```
+
+#### Order
+
+- [ ] Explain CSS order
+  - When specificity is equal the order of CSS rules is relevant
+  - CSS rules written further down in the document may overwrite
+- [ ] Show an example for CSS order
+
+```css
+h1 {
+	color: red;
+}
+
+h1 {
+	color: blue;
+}
+```
+
+#### Inheritance
+
+- [ ] Explain CSS inheritance
+  - Some CSS properties get inherited from the parent element
+- [ ] Show an example for CSS inheritance
+
+```css
+body {
+	color: red;
+}
+```
+
+### CSS Structure best practices
+
+- [ ] Explain why we need a consistent CSS structure
+  - Code is more readable / easier to find code for a specific element
+  - Important in a team of developers
+- [ ] Explain concepts on how to create a structure
+  - Create multiple CSS files (helps to improve overview)
+  - Separate global and local styles
+  - Create multiple stylesheets for different parts of your application
+  - Separated, reusable components
+- [ ] Show an example of a possible structure s
+  - create a `css` directory
+    - `styles.css`
+    - `global.css`
+    - `pages/home.css`
+    - `components/quiz-card.css`
+- [ ] Show the `@import` statement
+  - `@import 'components/quiz-card.css';`
+
+### BEM
+
+- [ ] Explain the idea of the BEM method
+  - Independent blocks and CSS selectors
+  - Make your code reusable and modular
+  - Code is easier to read and understand
+  - Easier to scale, more robust and explicit
+- [ ] Show website with [BEM introduction](http://getbem.com/introduction/)
+- [ ] Explain the concept of BEM
+  - **Blocks**:
+    - Standalone entity that is meaningful on its own
+    - Component
+  - **Elements**:
+    - A part of a block that has no standalone meaning
+    - Is semantically tied to its block
+  - **Modifier**
+    - A flag on a block or element
+    - Change appearance or behavior
+    - (Visual) variant of something
+- [ ] Show an example for BEM
+
+```css
+.quiz-card {
+	...;
+}
+
+.quiz-card__question {
+	...;
+}
+
+.quiz-card__question--visible {
+	...;
+}
+```
+
+### Custom Properties
+
+- [ ] Discuss the concept of variables
+  - A value stored with a name that is reusable
+  - The name is a reference to the value
+  - Example: contacts in an address book (remember a person's name instead of the phone number)
+- [ ] Complex websites have a lot of repeating values
+  - colors, fonts, border radius size, shadows, spacing size
+- [ ] Define custom properties:
+  - Example: `--primary-color: #ff00ff;`
+  - Important: naming is case sensitive
+- [ ] Access custom properties:
+  - Example: `color: var(--primary-color);`
+- [ ] Common practice:
+  - Define custom properties with the `:root` pseudo-class as selector
+  - Makes the values available globally
+- [ ] Optional: discuss inheritance and how to overwrite custom properties
 
 ---
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](session-name.md) and the [challenges](challenges-session-name.md) to the
-      students
+- [ ] Provide the [handout](css-structure.md) and the [challenges](challenges-css-structure.md) to
+      the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
+- [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
   - they can ask the coaches for help at any time
@@ -73,6 +222,8 @@
 - [ ] Remind them to rest :)
 
 ## Keywords for Recap:
+
+cascading, specificity, BEM, @import, custom properties
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
