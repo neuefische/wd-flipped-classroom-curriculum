@@ -2,11 +2,9 @@
 
 ## Learning Objectives
 
-In this session you will learn:
-
-- [ ] the difference between `var`, `let` and `const`
-- [ ] what kind of data types exist in JavaScript
-- [ ] how to use basic math operations in JavaScript
+- Knowing the difference between `var`, `let` and `const`
+- Understanding the kinds of data types
+- Using basic math operations
 
 ---
 
@@ -15,10 +13,10 @@ In this session you will learn:
 Variables are a `reference` or `alias` for data stored in memory. You can access this data by using
 this variable. You can use three different keywords to declare a variable:
 
-- `var` - outdated, not used anymore.
 - `const` - declares a constant, the value can't be changed. Default way to declare variables.
 - `let` - declares a variable, the value can be changed. Only used when reassigning a new value is
   necessary.
+- `var` - outdated, not used anymore.
 
 Normally the keyword `const` is used to declare a value.
 
@@ -62,7 +60,7 @@ Expressive variable names are very important for the `readability of the code`. 
 easier to understand and needs less comments. There are some key guidelines you should follow when
 naming a variable:
 
-- use camel case: `aNewVariable` instead of `anewvariable`
+- use camel case: `socialFeedEntry` instead of `socialfeedentry`
 - write out all words: `error` instead of `e`, `followerButton` instead of `flBtn`
 - be very specific, longer names are better than shorter: `updatedFollowerCounter` instead of
   `counter`.
@@ -72,14 +70,14 @@ naming a variable:
 As a programmer you sometimes have to use mathematical operations to calculate certain widths or
 positions of elements. Operators calculate values based on one or two expressions.
 
-| operator | precedence | effect                                                                                        |
-| -------- | ---------- | --------------------------------------------------------------------------------------------- |
-| `+`      | 11         | Adds two numbers together.                                                                    |
-| `-`      | 11         | Subtracts two numbers                                                                         |
-| `*`      | 12         | Multiplies two numbers                                                                        |
-| `/`      | 12         | Divides two numbers                                                                           |
-| `**`     | 13         | Exponentiates two numbers: `2 ** 4 -> 16`                                                     |
-| `%`      | 12         | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 -> 2`. |
+| operator | precedence | effect                                                                                       |
+| -------- | ---------- | -------------------------------------------------------------------------------------------- |
+| `+`      | 11         | Adds two numbers together.                                                                   |
+| `-`      | 11         | Subtracts two numbers                                                                        |
+| `*`      | 12         | Multiplies two numbers                                                                       |
+| `/`      | 12         | Divides two numbers                                                                          |
+| `**`     | 13         | Exponentiates two numbers: `2 ** 4 → 16`                                                     |
+| `%`      | 12         | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 → 2`. |
 
 The remainder is a very useful operator, but might be difficult to understand at first. A real live
 example would be time on a clock. After noon, you don't reach 13am but you start over at 1pm. 3
@@ -112,14 +110,14 @@ You already know the default assignment operator `=`. This operator just assigns
 right to the element on the left. There are more assignment operators for very common actions like
 increasing a variable by a fixed value.
 
-| operator | effect                                                                                                                 |
-| -------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `+=`     | increases the value of the variable on the left about the value on the right: `count += 6` -> count is increased by 6. |
-| `-=`     | decreases the value of the variable on the left about the value on the right.                                          |
-| `*=`     | Multiplies the variable on the left with the value on the right.                                                       |
-| `/=`     | Divides the variable on the left with the value on the right.                                                          |
-| `++`     | Increments the value of a variable by one: `count++` -> count is increased by one                                      |
-| `--`     | Decrements the value of a variable by one: `count--` -> count is decreased by one                                      |
+| operator | effect                                                                                                                |
+| -------- | --------------------------------------------------------------------------------------------------------------------- |
+| `+=`     | Increases the value of the variable on the left about the value on the right: `count += 6` → count is increased by 6. |
+| `-=`     | Decreases the value of the variable on the left about the value on the right.                                         |
+| `*=`     | Multiplies the variable on the left with the value on the right.                                                      |
+| `/=`     | Divides the variable on the left with the value on the right.                                                         |
+| `++`     | Increments the value of a variable by one: `count++` → count is increased by one                                      |
+| `--`     | Decrements the value of a variable by one: `count--` → count is decreased by one                                      |
 
 > 💡 The precedence of each assignment operator is 2.
 
@@ -129,15 +127,15 @@ When you use an operator with a variable with an unfitting type, javascript will
 convert this variable into a fitting type. For example:
 
 ```js
-4 / "2" -> 4 / 2
+4 / "2" → 4 / 2
 ```
 
 There is no "/" operator for strings, so JavaScript converts the string into a number if possible.
 This is also true for boolean operators which we will cover in a later session.
 
-> ❗️ There is another + operator in JavaScript, that links two strings together: "a" + "b" -> "ab".
-> When 'adding' a number and a string, the number is converted to a string: "a" + 6 -> "a6". Make
-> sure that both variables are numbers if you want to add them.
+> ❗️ There is another `+` operator in JavaScript, that links two strings together: "a" + "b" →
+> "ab". When 'adding' a number and a string, the number is converted to a string: "a" + 6 → "a6".
+> Make sure that both variables are numbers if you want to add them.
 
 ## Number Systems
 
@@ -147,9 +145,9 @@ and 1. You don't have to learn these systems by heart, but it is good if you hea
 
 - `decimal system`: the standard numbers, has 10 symbols "0" to "9".
 - `binary system`: only has 2 symbols "0" and "1". If you want to write a bigger number than 1, you
-  add another digit: 2 -> "10" in binary.
+  add another digit: 2 → "10" in binary.
 - `hexadecimal system`: has 16 symbols "0" to "9" and "a" to "f". If you want to write a number
-  bigger than 15 you add another digit: 12 -> "c" in hexadecimal.
+  bigger than 15 you add another digit: 12 → "c" in hexadecimal.
 
 ---
 
