@@ -21,7 +21,7 @@ After generating an element, you need to place the element into the DOM. For thi
 `.append` method. It places the element as the **last child** into the respective element.
 
 ```js
-body.append(article); // placing myNewElement at the end of the body.
+body.append(article); // placing the created article at the end of the body
 article.append(button); // placing the created button into the article
 ```
 
@@ -133,7 +133,7 @@ HTML before:
 By setting the innerHTML to an empty string, the content is deleted:
 
 ```js
-const cardContainer = document.querySelector("ul[data-js='cardContainer']");
+const cardContainer = document.querySelector('ul[data-js="cardContainer"]');
 cardContainer.innerHTML = '';
 ```
 
