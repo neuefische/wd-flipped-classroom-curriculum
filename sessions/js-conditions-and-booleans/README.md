@@ -261,7 +261,7 @@ clever solutions.
 Explain that in places where JavaScript needs a boolean variable but we give it any other variable
 type it tries to guess what boolean value would best describe whatever we specified.
 
-This is called `type coersion` in general. Show students this example:
+This is called `type coercion` in general. Show students this example:
 
 ```js
 let carrots = 4;
@@ -284,32 +284,7 @@ A more complete list of values that are truthy and falsy can be found in the han
 
 Explain that this concept can be very helpful, for example when checking if a value "exists". (Just
 like in the example.) But you have to be careful, because as far as JavaScript is concerned all of
-these are falsy: `if(false)`, `if(0)`, `if(null)`, `if(undefined)`. Sometimes that is not what you
-want.
-
-If you actucally wan't to check if a variable is not defined (meaning it's value is `null` or
-`undefined`) you can do this:
-
-```js
-if (carrots != null) {
-	console.log('carrots is not defined 😥');
-}
-```
-
-Ask students if they can see anything strange with this code, or if they can imagine why this will
-be true if carrots is either `null` _or_ `undefined`.
-
-Keep this question open for students to discover in the handout. You can discuss the anwser after
-the exersises.
-
-> 💡 For you: It's a non-strict comparison (`!=` instead of `!==`) meaning that JavaScript tries to
-> coerce the compared values into the same type.
->
-> And just like `"3" == 3` is `true`, `undefined == null` is also `true`. This also works with `!=`
-> instead of `==`.
->
-> ⚠️ Remember that this is an exception for using non-strict equality. Strict equality should
-> otherwise always be preferred.
+these are falsy: `if(false)`, `if(0)`, `if('')`, `if(null)`, `if(undefined)`.
 
 ---
 

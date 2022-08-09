@@ -18,7 +18,7 @@ depending on their value.
 ## Truthy and Falsy Values
 
 Sometimes you want to have a condition depending on another type of value. JavaScript can transform
-any value into a boolean with _type coersion_. That means that some values act as if they were true
+any value into a boolean with _type coercion_. That means that some values act as if they were true
 and others as if they were false: _Truthy_ values become true, _falsy_ values become false.
 
 - _truthy_ values:
@@ -172,6 +172,45 @@ moveElement(xPos > 300 ? 300 : xPos); // the element can't be moved further than
 > ❗️ The operator can only distinguish between two _expressions_ like values, math / logical
 > operations or function calls, not between _statements_ like variable declarations, if / else
 > statements or multi-line code blocks.
+
+---
+
+## Advanced: The strangeness of boolean coercion and making use of non-strict equality
+
+<details>
+<summary>🫣 This is an advanced topic and not important for the challenges. Click to expand if you're curious.</summary>
+
+Assume you want to check if a varaible has a useful value for us to work with. `if(variable)` does
+in fact not check if `variable` is defined but rather if it is truthy. Take a look at these
+examples:
+
+- `if(undefined)` → falsy, won't execute
+- `if(null)` → falsy, won't execute
+- `if("")` → falsy, won't execute, but might still be a useful variable  
+  (e.g. when user clears an input field)
+- `if(0)` → falsy, won't execute, but might still be a useful variable  
+  (e.g. when user wants to set the volume to `0`)
+- `if(" ")` → truthy, will execute
+- `if(-1)` → truthy, will execute
+
+It's useful to define a variable as not having a value when it's `undefined` or `null`. We can check
+for that like this:
+
+```js
+if (variable != null) {
+	console.log('This will be logged even if variable is 0 or ""');
+}
+```
+
+This is one of the rare valid use cases for non-strict comparison (`!=` instead of `!==`).
+
+JavaScript tries to coerce the compared values into the same type. And just like `"3" == 3` is
+`true`, `undefined == null` is also `true`. This also works with `!=` instead of `==`.
+
+> ⚠️ Remember that this is an exception for using non-strict equality. **Strict equality should
+> otherwise always be preferred.**
+
+</details>
 
 ---
 
