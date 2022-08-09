@@ -4,7 +4,9 @@
 
 ## Learning objectives
 
-- [ ]
+- [ ] learning how to generate HTML in JavaScript
+- [ ] using HTML element object properties and methods
+- [ ] how to use .innerHTML
 
 ---
 
@@ -14,9 +16,12 @@
 
 ### Which important problem will we solve today?
 
-### Why is the content of today's block that important for the students?
+How to generate parts of your HTML code with JavaScript. How to automatically create similar
+elements like posts from our data.
 
 ### Pose a question to be answered by the end of the block!
+
+How can we write JavaScript code that generates parts of our webpage for us?
 
 ---
 
@@ -24,14 +29,28 @@
 
 ### Which previously learned concepts will be utilized in this session?
 
+- DOM representations of HTML elements
+- classList and eventListeners
+
 ---
 
 ## Inform: Session Guide
 
-### Section 1
+### createElement and append
 
-- [ ]
-- [ ]
+- [ ] Show why we want to generate HTML from JavaScript:
+  - [ ] open a website with similar posts like reddit or twitter
+  - [ ] highlight, that these elements are generated automatically from data
+  - [ ] show that we need to learn how to do this to build a modern web app
+- [ ] create a simple **article** element in the dom
+  - [ ] `const newArticle = document.createElement('article')`
+  - [ ] sketch the following diagram in excalidraw:
+        ![dom and createElement](assets/appendElement.png)
+- [ ] explain that additionally to create an Element you have to **place it** somewhere in the DOM
+      tree.
+  - [ ] `body.append(newArticle)`
+  - [ ] show the effect in your example webpage
+  - [ ] explain that append puts the element as the **last child** in the respective element
 
 ### Section 2
 
