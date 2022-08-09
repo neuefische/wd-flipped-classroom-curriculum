@@ -345,7 +345,7 @@ the exersises.
 
 ## Keywords for Recap:
 
-George Bool, truthy, falsy, strict equality, type coersion, ternary operator, if statement
+George Bool, truthy, falsy, strict equality, type coercion, ternary operator, if statement
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
