@@ -4,7 +4,7 @@
 
 ## Learning objectives
 
-- [ ] Understanding cascading in CSS
+- [ ] Understanding the CSS cascade
 - [ ] Structuring CSS to improve maintainability and readability
 - [ ] `@import` to import different CSS stylesheets in one file
 - [ ] BEM method
