@@ -82,7 +82,7 @@ if (kidDidHelpCleaningTheKitchen) {
 }
 ```
 
-Discuss that this code `conditionally` executes the that code block defined the curly brackets.
+Discuss that this code `conditionally` executes the code block defined within the curly brackets.
 
 Show students the the code throws an error.
 
