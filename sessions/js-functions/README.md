@@ -156,7 +156,8 @@ console.log(localAge); // Error! Variable not available outside of function
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](js-functions-exercises.md) to the students
+- [ ] Provide the [handout](js-functions.md) and the [challenges](challenges-js-functions.md) to the
+      students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
