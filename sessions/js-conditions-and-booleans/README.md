@@ -281,7 +281,7 @@ The set of values that is interpreted as `false` is called "falsy".
 A more complete list of values that are truthy and falsy can be found in the handout.
 
 Explain that this concept can be very helpful, for example when checking if a value "exists". (Just
-like in the example.) But you have to be careful, because as far as JavaScript is concerend all of
+like in the example.) But you have to be careful, because as far as JavaScript is concerned all of
 these are falsy: `if(false)`, `if(0)`, `if(null)`, `if(undefined)`. Sometimes that is not what you
 want.
 
