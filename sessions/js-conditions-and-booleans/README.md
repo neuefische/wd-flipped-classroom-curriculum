@@ -252,7 +252,7 @@ carrots = carrots + (dishesCleaned > 3 ? 2 : -1);
 ```
 
 Compare this with the last version were we used an `if/else-statement` and ask students which
-version seems more readable to them. Explain that readabilty is much more important that short and
+version seems more readable to them. Explain that readability is much more important than short and
 clever solutions.
 
 ### Type coersion and truthy / falsy
