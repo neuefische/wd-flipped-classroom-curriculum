@@ -55,7 +55,7 @@ Comparison operators produce boolean values by comparing two expressions:
 > - `=` (`const x = 0`) is the assignment operator and has nothing to do with comparison.
 > - `==` and `!=` are non-strict equality operators. You should **avoid them 99% of the time**.  
 >   Non-strict equality tries to use type coercion to convert both values to the same type:
->   `"3" == 3` is `true`. Which is seldomly what you want.
+>   `"3" == 3` is `true`, which is seldomly what you want.
 > - `===` and `!==` are strict equality operators. **This is what you need almost always**.  
 >   Strict equality checks if type _and_ value are the same: `"3" === 3` is `false`.
 
