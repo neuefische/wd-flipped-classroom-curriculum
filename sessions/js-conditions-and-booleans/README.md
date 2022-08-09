@@ -138,7 +138,7 @@ Explain that the optional `else` block does not have a condition (`()`) and alwa
 `if` block.
 
 Explain that executing different code based on a `condition` is called `branching`. And that we just
-make our first full `if/else-statement`.
+made our first full `if/else-statement`.
 
 ### Creating booleans from other values
 
