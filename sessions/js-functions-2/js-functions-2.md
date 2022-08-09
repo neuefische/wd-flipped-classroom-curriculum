@@ -176,16 +176,6 @@ The real advantage of arrow functions are possible shorter notations when certai
 > })
 > ```
 
----
-
-# Challenges
-
-## Part 1
-
-## Part 2
-
----
-
 ## Resources
 
 - [Statements vs Expressions by Josh Comeau](https://www.joshwcomeau.com/javascript/statements-vs-expressions/)
