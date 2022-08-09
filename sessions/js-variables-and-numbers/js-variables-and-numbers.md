@@ -3,7 +3,7 @@
 ## Learning Objectives
 
 - Knowing the difference between `var`, `let` and `const`
-- Understanding the kinds of data types
+- Understanding different kinds of data types
 - Using basic math operations
 
 ---
