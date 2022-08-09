@@ -238,7 +238,7 @@ carrots = carrots + extraCarrots;
 The ternary expression always follows the formula: `condition ? value if true : value if false`. It
 evaluates to one of the values. And it can be assigned just like any other expression.
 
-Now our code looks much smaller. Bit it is important to acknologde that it is not always more
+Now our code looks much smaller. But it is important to acknowledge that it is not always more
 readable than using an `if/else-statement`.
 
 Since expressions can be composed together, our code can be even shorter by using less intermediate
