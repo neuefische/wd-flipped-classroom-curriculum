@@ -29,33 +29,80 @@ How can we write JavaScript code that generates parts of our webpage for us?
 
 ### Which previously learned concepts will be utilized in this session?
 
-- DOM representations of HTML elements
+- querySelector
 - classList and eventListeners
 
 ---
 
 ## Inform: Session Guide
 
-### createElement and append
+### Motivation
 
 - [ ] Show why we want to generate HTML from JavaScript:
-  - [ ] open a website with similar posts like reddit or twitter
-  - [ ] highlight, that these elements are generated automatically from data
-  - [ ] show that we need to learn how to do this to build a modern web app
-- [ ] create a simple **article** element in the dom
-  - [ ] `const newArticle = document.createElement('article')`
-  - [ ] sketch the following diagram in excalidraw:
-        ![dom and createElement](assets/appendElement.png)
+- [ ] open a website with similar posts like reddit or twitter
+- [ ] highlight, that these elements are generated automatically from data
+- [ ] show that we need to learn how to do this to build a modern web app
+- [ ] During the session, show an example of how to generate HTML by creating a card component from
+      a simple form. You can use this demo:
+  - starter code:
+    [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/js-createelement/demo-start?file=/js/index.js)
+  - final code:
+    [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/js-createelement/demo-end?file=/js/index.js)
+
+### The DOM
+
+- [ ] explain, that JavaScript can access and change the HTML document via the **DOM**
+- [ ] **Document Object Model**: A data representation of the HTML website. Each tag is modelled as
+      a **node** in the document tree.
+- [ ] access the DOM via the `document` object, e.g. `document.querySelector`
+- [ ] sketch a quick DOM representation of the demo HTML ![dom and createElement](assets/DOM.png)
+
+### `document.createElement` and `append`
+
+- [ ] create a simple **li** element in the DOM
+  - [ ] `const newCard = document.createElement('li')`
+  - [ ] extend the diagram in excalidraw: ![dom and createElement](assets/createElement.png)
 - [ ] explain that additionally to create an Element you have to **place it** somewhere in the DOM
       tree.
   - [ ] `body.append(newArticle)`
   - [ ] show the effect in your example webpage
   - [ ] explain that append puts the element as the **last child** in the respective element
 
-### Section 2
+### Element Properties and EventListeners
 
-- [ ]
-- [ ]
+- [ ] highlight, that new created elements behave the same way as queried elements
+- [ ] show, that the element don't have to be queried to be manipulated. They already are saved in a
+      variable, e.g. `newCard`.
+- [ ] quickly recap how to add properties to an element
+  ```js
+  newCard.classList.add('card');
+  newCard.textContent = 'This text is displayed in the element';
+  ```
+- [ ] add this code to an event listener on the form element:
+  ```js
+  form.addEventListener('submit', event => {
+  	event.preventDefault();
+  	const newCard = document.createElement('li');
+  	newCard.classList.add('card');
+  	newCard.textContent = 'This text is displayed in the element';
+  	cardContainer.append(newCard);
+  });
+  ```
+
+### `innerHTML`
+
+- [ ] `innerHTML`: the given string is parsed to HTML and becomes the content of the element.
+- [ ] useful to generate many HTML elements from a single string, e.g.
+  ```js
+  const cardText = textInput.value;
+  newCard.innerHTML = `
+  	<h2>Card</h2>
+  	<p>${cardText}</p>
+  `;
+  ```
+- [ ] highlight, that the previous content of the element is overwritten
+- [ ] can be used to clear the content of an element: `newCard.innerHTML = ""`
+- [ ] mention, that `innerHTML` might be dangerous and should not be used with user input.
 
 ---
 
