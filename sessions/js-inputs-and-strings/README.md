@@ -49,7 +49,7 @@ Invite students to think about what that would require to create such a program:
 
 - We need a way for the user to input stuff
 - We need a function that is executed to create the story
-- In that function the user input needs to be put in to the story
+- In that function the user input needs to be put into the story
 
 Start with
 [this CodeSandbox](https://codesandbox.io/s/js-inputs-and-strings-demo-7rioxt?file=/js/index.js).
