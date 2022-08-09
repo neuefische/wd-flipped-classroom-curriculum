@@ -255,7 +255,7 @@ Compare this with the last version were we used an `if/else-statement` and ask s
 version seems more readable to them. Explain that readability is much more important than short and
 clever solutions.
 
-### Type coersion and truthy / falsy
+### Type coercion and truthy / falsy
 
 Explain that in places where JavaScript needs a boolean variable but we give it any other variable
 type it tries to guess what boolean value would best describe whatever we specified.
