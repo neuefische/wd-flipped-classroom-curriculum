@@ -113,8 +113,8 @@ Explain that this is called a Boolean value (after George Bool) and that it only
 
 ### Else case
 
-Suppose you wanted to take the carrots away from the child, when in fact it would _not_ help to clean
-the kitchen.
+Suppose you wanted to take the carrots away from the child, when in fact it would _not_ help to
+clean the kitchen.
 
 Modify the story from above like this:
 
@@ -172,7 +172,8 @@ Explain that comparison operators like larger than (`>`) etc. compare two values
 boolean (`true` or `false`).
 
 Two very important operators are `equals to` and it's counterpart `not equals to`. In JavaScript
-they are written as `===` and `!==` respectively.
+they are written as `===` and `!==` respectively. (It is not necessary to explain strict vs.
+non-strict equality here. There is a brief explanation in the handout.)
 
 If we were to say the the kid only helped if it cleaned `exactly 3` dishes we could write:
 
@@ -272,7 +273,8 @@ if (carrots) {
 
 Here `carrots` has the value `4`, so we basically are telling JavaScript `if(4)`.
 
-The value `4` is coerced to `true`. In fact any number that is not `0` will be interpreted as `true`.  
+The value `4` is coerced to `true`. In fact any number that is not `0` will be interpreted as
+`true`.  
 The set of values that is interpreted as `true` is called "truthy".
 
 If `carrots` were `0` (change the code to show students) it's value would coerce to `false`.  

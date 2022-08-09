@@ -129,7 +129,7 @@ if (hour < 12) {
 }
 ```
 
-If the condition is not a boolean, it is converted into one by type coersion. This can be used to
+If the condition is not a boolean, it is converted into one by type coercion. This can be used to
 check whether a value is not 0 or an empty string:
 
 ```js
@@ -144,10 +144,10 @@ if (name) {
 ## Ternary Operator: `? :`
 
 With if / else statements whole blocks of code can be controlled. The ternary operator can be used
-if you want to decide between two _expressions_, e.g. which value should be stored in a value:
+if you want to decide between two _expressions_, e.g. which value should be stored in a variable:
 
 ```js
-const greetingText = time > 12 ? 'Good morning.' : 'Good afternoon.';
+const greetingText = time < 12 ? 'Good morning.' : 'Good afternoon.';
 ```
 
 The ternary operator has the following structure:
