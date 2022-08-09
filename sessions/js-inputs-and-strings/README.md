@@ -6,7 +6,7 @@
 
 - learning different ways of writing strings
 - using string properties and methods
-- working with Input elements
+- working with input elements
 
 ---
 
