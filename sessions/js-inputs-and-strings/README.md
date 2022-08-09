@@ -175,7 +175,7 @@ Now for the last one:
   6. now that `hours` is a number, everything should work
   7. you can ask students to investigate what the `10` means during the challenges
 
-### Correct grammer bonus (if there is time)
+### Correct grammar bonus (if there is time)
 
 If the value of the hours input is `"1"` our text reads: "1 hours".
 
