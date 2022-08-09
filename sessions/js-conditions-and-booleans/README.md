@@ -146,7 +146,7 @@ Explain that a static `true` or `false` by itself is seldomly helpful.
 
 Modify the scenario again:
 
-> If the kid cleaned more that 3 dishes, it gets the extra carrots.
+> If the kid cleaned more than 3 dishes, it gets the extra carrots.
 
 Explain that you now need a variable to track how many dishes have been cleaned and that from that
 we have to create a boolean variable.
