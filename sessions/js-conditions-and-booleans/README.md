@@ -235,7 +235,7 @@ let extraCarrots = kidDidHelpCleaningTheKitchen ? 2 : -1;
 carrots = carrots + extraCarrots;
 ```
 
-The ternary expression always follow the formula: `condition ? value if true : value if false`. It
+The ternary expression always follows the formula: `condition ? value if true : value if false`. It
 evaluates to one of the values. And it can be assigned just like any other expression.
 
 Now our code looks much smaller. Bit it is important to acknologde that it is not always more
