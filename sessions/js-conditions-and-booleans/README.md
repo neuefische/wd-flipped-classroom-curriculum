@@ -84,7 +84,7 @@ if (kidDidHelpCleaningTheKitchen) {
 
 Discuss that this code `conditionally` executes the code block defined within the curly brackets.
 
-Show students the the code throws an error.
+Show students that the code throws an error.
 
 Ask students what the type of `kidDidHelpCleaningTheKitchen` might be in this case.
 
