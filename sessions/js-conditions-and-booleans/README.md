@@ -301,7 +301,7 @@ Keep this question open for students to discover in the handout. You can discuss
 the exersises.
 
 > 💡 For you: It's a non-strict comparison (`!=` instead of `!==`) meaning that JavaScript tries to
-> coerse the compared values into the same type.
+> coerce the compared values into the same type.
 >
 > And just like `"3" == 3` is `true`, `undefined == null` is also `true`. This also works with `!=`
 > instead of `==`.
