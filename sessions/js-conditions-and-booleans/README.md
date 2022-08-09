@@ -113,7 +113,7 @@ Explain that this is called a Boolean value (after George Bool) and that it only
 
 ### Else case
 
-Suppose you wanted to take the carrots away from the child, when in fact it would _not_ help clean
+Suppose you wanted to take the carrots away from the child, when in fact it would _not_ help to clean
 the kitchen.
 
 Modify the story from above like this:
