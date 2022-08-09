@@ -125,7 +125,7 @@ body {
   - Separate global and local styles
   - Create multiple stylesheets for different parts of your application
   - Separated, reusable components
-- [ ] Show an example of a possible structure s
+- [ ] Show an example of a possible structure
   - create a `css` directory
     - `styles.css`
     - `global.css`
