@@ -115,25 +115,6 @@ body {
 }
 ```
 
-### CSS Structure best practices
-
-- [ ] Explain why we need a consistent CSS structure
-  - Code is more readable / easier to find code for a specific element
-  - Important in a team of developers
-- [ ] Explain concepts on how to create a structure
-  - Create multiple CSS files (helps to improve overview)
-  - Separate global and local styles
-  - Create multiple stylesheets for different parts of your application
-  - Separated, reusable components
-- [ ] Show an example of a possible structure
-  - create a `css` directory
-    - `styles.css`
-    - `global.css`
-    - `pages/home.css`
-    - `components/quiz-card.css`
-- [ ] Show the `@import` statement
-  - `@import 'components/quiz-card.css';`
-
 ### BEM
 
 - [ ] Explain the idea of the BEM method
@@ -168,6 +149,25 @@ body {
 	...;
 }
 ```
+
+### CSS Structure best practices
+
+- [ ] Explain why we need a consistent CSS structure
+  - Code is more readable / easier to find code for a specific element
+  - Important in a team of developers
+- [ ] Explain concepts on how to create a structure
+  - Create multiple CSS files (helps to improve overview)
+  - Separate global and local styles
+  - Create multiple stylesheets for different parts of your application
+  - Separated, reusable components
+- [ ] Show an example of a possible structure
+  - create a `css` directory
+    - `styles.css`
+    - `global.css`
+    - `pages/home.css`
+    - `components/quiz-card.css`
+- [ ] Show the `@import` statement
+  - `@import 'components/quiz-card.css';`
 
 ### Custom Properties
 
