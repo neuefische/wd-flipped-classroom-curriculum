@@ -275,7 +275,7 @@ Here `carrots` has the value `4`, so we basically are telling JavaScript `if(4)`
 The value `4` is coerced to `true`. In fact any number that is not `0` will be interpreted as `true`.  
 The set of values that is interpreted as `true` is called "truthy".
 
-If `carrots` were `0` (change the code to show students) it's value would coerse to `false`.  
+If `carrots` were `0` (change the code to show students) it's value would coerce to `false`.  
 The set of values that is interpreted as `false` is called "falsy".
 
 A more complete list of values that are truthy and falsy can be found in the handout.
