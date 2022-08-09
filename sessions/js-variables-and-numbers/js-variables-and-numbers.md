@@ -76,7 +76,7 @@ positions of elements. Operators calculate values based on one or two expression
 | `-`      | 11         | Subtracts two numbers                                                                        |
 | `*`      | 12         | Multiplies two numbers                                                                       |
 | `/`      | 12         | Divides two numbers                                                                          |
-| `**`     | 13         | Exponentiates two numbers: `2 ** 4 → 16`                                                     |
+| `**`     | 13         | potentiates two numbers: `2 ** 4 → 16`                                                       |
 | `%`      | 12         | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 → 2`. |
 
 The remainder is a very useful operator, but might be difficult to understand at first. A real live
