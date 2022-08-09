@@ -103,7 +103,7 @@ Explain what `${}` does and that this is still a string literal, specifically a
 > arrow (<kbd>◀︎</kbd>). Otherwise macOS sometimes thinks that we're trying to write an accented
 > character like à.
 
-Explain that template literals have one more feature that different from the other string literals:
+Explain that template literals have one more feature that is different from the other string literals:
 They supports line breaks!
 
 Copy in the following code and show what it does:
