@@ -28,7 +28,7 @@ condition. In this session we will learn how to do that in JavaScript.
 ### Pose a question to be answered by the end of the block!
 
 Computers are electronics. Electronis are build on the principles of zeros and ones that are
-combined using circuts that perform logical operations on them (And-Gate, Or-Gate, etc.). How does
+combined using circuits that perform logical operations on them (And-Gate, Or-Gate, etc.). How does
 this concept translate into a higher level languague like JavaScript?
 
 ---
