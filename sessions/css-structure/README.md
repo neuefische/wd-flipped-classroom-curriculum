@@ -179,7 +179,7 @@ body {
   - colors, fonts, border radius size, shadows, spacing size
 - [ ] Define custom properties:
   - Example: `--primary-color: #ff00ff;`
-  - Important: naming is case sensitive
+  - Important: custom property must start with two dashes & naming is case sensitive
 - [ ] Access custom properties:
   - Example: `color: var(--primary-color);`
 - [ ] Common practice:
