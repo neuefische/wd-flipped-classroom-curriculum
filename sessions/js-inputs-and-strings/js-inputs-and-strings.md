@@ -4,7 +4,7 @@
 
 - learning different ways of writing strings
 - using string properties and methods
-- working with Input elements
+- working with input elements
 
 ---
 
@@ -16,7 +16,15 @@ There are three ways to create strings using _string literals_:
 2. `"string"`: double quotes
 3. `` `string` ``: back ticks or **template literals**.
 
-Strings can by chained together by using the `+` operator (yes, the same as the maths operator).
+> 💡 In general there is no preference for using single or double quotes, except for stylistic
+> reasons. Tools like prettier convert all strings to use the same style quotes. We have configured
+> prettier to use single quotes by default. One reason to prefer one style of quotes over another on
+> a case-by-case basis is when a quotation mark is part of the string:
+>
+> - `"It's such a nice day!"`
+> - `'"Nice work", they said.'`
+
+Strings can be chained together by using the `+` operator (yes, the same as the maths operator).
 This is called **string concatination**:
 
 ```js
@@ -30,8 +38,7 @@ The third method to write strings has the useful property that you can insert va
 string by wrapping placeholders with a dollar sign and curly brackets `${}` . This is also called
 **string interpolation**.
 
-By this, you don't have to concat multiple strings together if you want to use a variable in your
-string:
+This way you don't have to concat multiple strings if you want to use a variable in your string:
 
 ```js
 const stringConcatination = 'Hello ' + name + ', good to see you!';
