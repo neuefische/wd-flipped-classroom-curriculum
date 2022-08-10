@@ -180,7 +180,7 @@ moveElement(xPos > 300 ? 300 : xPos); // the element can't be moved further than
 <details>
 <summary>🫣 This is an advanced topic and not important for the challenges. Click to expand if you're curious.</summary>
 
-Assume you want to check if a varaible has a useful value for us to work with. `if(variable)` does
+Assume you want to check if a variable has a useful value for us to work with. `if(variable)` does
 in fact not check if `variable` is defined but rather if it is truthy. Take a look at these
 examples:
 
