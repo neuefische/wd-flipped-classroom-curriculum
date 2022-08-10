@@ -32,7 +32,7 @@ How can we write JavaScript code that generates parts of our webpage for us?
 
 - querySelector
 - classList and eventListeners
-- js forms
+- JS forms
 
 ---
 
