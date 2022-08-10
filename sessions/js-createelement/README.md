@@ -32,6 +32,7 @@ How can we write JavaScript code that generates parts of our webpage for us?
 
 - querySelector
 - classList and eventListeners
+- js forms
 
 ---
 
@@ -39,7 +40,7 @@ How can we write JavaScript code that generates parts of our webpage for us?
 
 ### Motivation
 
-- [ ] Show why we want to generate HTML from JavaScript:
+- [ ] show why we want to generate HTML from JavaScript:
 - [ ] open a website with similar posts like reddit or twitter
 - [ ] highlight that these elements are generated automatically from data
 - [ ] show that we need to learn how to do this to build a modern web app
