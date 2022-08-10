@@ -18,7 +18,7 @@ depending on their value.
 ## Truthy and Falsy Values
 
 Sometimes you want to have a condition depending on another type of value. JavaScript can transform
-any value into a boolean with _type coersion_. That means that some values act as if they were true
+any value into a boolean with _type coercion_. That means that some values act as if they were true
 and others as if they were false: _Truthy_ values become true, _falsy_ values become false.
 
 - _truthy_ values:
@@ -49,6 +49,16 @@ Comparison operators produce boolean values by comparing two expressions:
 | A `>=` B  | greater than or equal: is `true` if A is greater than or equal B.                |
 | A `<=` B  | less than or equal: is `true` if A is less than or equal B.                      |
 
+> 💡 You might notice that JavaScript uses three equal signs (`===`) to check for equality. This can
+> seem very strange at first.
+>
+> - `=` (`const x = 0`) is the assignment operator and has nothing to do with comparison.
+> - `==` and `!=` are non-strict equality operators. You should **avoid them 99% of the time**.  
+>   Non-strict equality tries to use type coercion to convert both values to the same type:
+>   `"3" == 3` is `true`, which is seldomly what you want.
+> - `===` and `!==` are strict equality operators. **This is what you need almost always**.  
+>   Strict equality checks if type _and_ value are the same: `"3" === 3` is `false`.
+
 ---
 
 ## Logical Operators
@@ -66,6 +76,16 @@ Logical operators combine up to two booleans into a new boolean.
 >
 > - `(A || B) && (C || D)`
 > - `!(A || B)`
+
+> 💡 Be careful when using `&&` or `||` with non-boolean values. They actually return one of the
+> original values. That can be useful, but can also quickly lead to confusion. This behaviour is
+> called
+> [short-circut evaluation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation)
+> and is a more advanced topic.
+>
+> - `"some string" || "some other string"` evaluates to `"some string"`
+> - `0 || 100` evaluates to `100`
+> - `null && "yet another string"` evaluates to `null`
 
 ---
 
@@ -109,7 +129,7 @@ if (hour < 12) {
 }
 ```
 
-If the condition is not a boolean, it is converted into one by type coersion. This can be used to
+If the condition is not a boolean, it is converted into one by type coercion. This can be used to
 check whether a value is not 0 or an empty string:
 
 ```js
@@ -124,10 +144,10 @@ if (name) {
 ## Ternary Operator: `? :`
 
 With if / else statements whole blocks of code can be controlled. The ternary operator can be used
-if you want to decide between two _expressions_, e.g. which value should be stored in a value:
+if you want to decide between two _expressions_, e.g. which value should be stored in a variable:
 
 ```js
-const greetingText = time > 12 ? 'Good morning.' : 'Good afternoon.';
+const greetingText = time < 12 ? 'Good morning.' : 'Good afternoon.';
 ```
 
 The ternary operator has the following structure:
@@ -152,6 +172,45 @@ moveElement(xPos > 300 ? 300 : xPos); // the element can't be moved further than
 > ❗️ The operator can only distinguish between two _expressions_ like values, math / logical
 > operations or function calls, not between _statements_ like variable declarations, if / else
 > statements or multi-line code blocks.
+
+---
+
+## Advanced: The strangeness of boolean coercion and making use of non-strict equality
+
+<details>
+<summary>🫣 This is an advanced topic and not important for the challenges. Click to expand if you're curious.</summary>
+
+Assume you want to check if a variable has a useful value for us to work with. `if(variable)` does
+in fact not check if `variable` is defined but rather if it is truthy. Take a look at these
+examples:
+
+- `if(undefined)` → falsy, won't execute
+- `if(null)` → falsy, won't execute
+- `if("")` → falsy, won't execute, but might still be a useful variable  
+  (e.g. when user clears an input field)
+- `if(0)` → falsy, won't execute, but might still be a useful variable  
+  (e.g. when user wants to set the volume to `0`)
+- `if(" ")` → truthy, will execute
+- `if(-1)` → truthy, will execute
+
+It's useful to define a variable as not having a value when it's `undefined` or `null`. We can check
+for that like this:
+
+```js
+if (variable != null) {
+	console.log('This will be logged even if variable is 0 or ""');
+}
+```
+
+This is one of the rare valid use cases for non-strict comparison (`!=` instead of `!==`).
+
+JavaScript tries to coerce the compared values into the same type. And just like `"3" == 3` is
+`true`, `undefined == null` is also `true`. This also works with `!=` instead of `==`.
+
+> ⚠️ Remember that this is an exception for using non-strict equality. **Strict equality should
+> otherwise always be preferred.**
+
+</details>
 
 ---
 
