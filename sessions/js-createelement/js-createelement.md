@@ -2,9 +2,11 @@
 
 ## Learning Objectives
 
-- what the DOM is
+- knowing what the DOM is
 - learning how to generate HTML in JavaScript
 - using HTML element object properties and methods
+- learning how to use `.innerHTML`
+
 
 ---
 
