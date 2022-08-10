@@ -2,10 +2,20 @@
 
 ## Learning Objectives
 
+- knowing what the DOM is
 - learning how to generate HTML in JavaScript
 - using HTML element object properties and methods
+- learning how to use `.innerHTML`
+
 
 ---
+
+## The DOM
+
+The **Document Object Model** is a representation of the HTML document. Each HTML Tag is modelled as
+a **node** in a tree structure, which shows how HTML elements are nested. A computer program such as
+your JavaScript file can access and manipulate the HTML website by changing the DOM via the
+`document` object. ![the DOM](assets/DOM.png)
 
 ## `document.createElement`
 
