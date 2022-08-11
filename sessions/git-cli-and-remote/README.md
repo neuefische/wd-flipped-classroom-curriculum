@@ -10,7 +10,7 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
@@ -20,7 +20,7 @@
 - How return to the latest version of a project / file when something goes wrong.
 - You will learn how to share your code with the world on GitHub.
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 - git is an industry standard, it is a requirement for most almost all open positions as a
   developer.
@@ -39,14 +39,14 @@
 - tell the students that they will learn today how to do these steps on their local machine and
   connect their progress to the remote version of their code on github
 
-### Which prior knowledge will be used for this session?
+### Which previously learned concepts will be utilized in this session?
 
 - git terminology (repository, commit)
 - basic markdown syntax (later in the challenges)
 
 ---
 
-## Inform: Sessionguide
+## Inform: Session Guide
 
 ### Git init
 
@@ -145,16 +145,19 @@ in the terminal, outside of any other repository:
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](session-name.md) for the students
+- [ ] Provide the [handout](session-name.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups of 2 - 3
-- [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
-      can ask the coaches for help at any time / Always help each other / Take a break when you need
-      it in the next 1.5h/ Keep an eye on Slack)
+- [ ] Divide the students into groups of 2 - 3
+- [ ] Remind them of the ground rules:
+  - meet again 30 min before lunch break in the class room
+  - they can ask the coaches for help at any time
+  - always try to help each other
+  - take a break within the next 1.5 hrs
+  - keep an eye on Slack
 
 ---
 
-## Evaluate: Recap of the assignment / Discussion of MVP / Solution
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
 
 - [ ] Ask the students how easy or difficult this workflow was for them
 - [ ] If it was difficult you can calm them and say that we will do it so many times during the
@@ -166,15 +169,15 @@ in the terminal, outside of any other repository:
 
 ## Checkout
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest (preferably sleep) after -latest- 10 p.m.:)
 
 ## Keywords for Recap:
 
 git add ., git commit -m "cmsg", git status, git push, git restore ., ssh key, stage untracked
-files, commited files,
+files, committed files,
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

@@ -19,11 +19,11 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 Elements on a web page are positioned according to the normal document flow, i.e. the order in the
 HTML document. Sometimes, we want to position certain elements out of the document flow. In this
@@ -33,17 +33,17 @@ case we use positioning.
 
 ## Activate prior knowledge of students
 
-### Which prior knowledge will be used for this session?
+### Which previously learned concepts will be utilized in this session?
 
 ---
 
-## Inform: Session guide
+## Inform: Session Guide
 
 ### 1. Exposition
 
 Show examples of a `sticky` navbar (Google) or `fixed` feedback button (DuckDuckGo - enter some
-search tag or use this [Fixed-example](<(https://davidwalsh.name/demo/css-fixed-position.php)>)) and
-that they do not fit into the document flow.
+search tag or use this [Fixed-example](https://davidwalsh.name/demo/css-fixed-position.php) and that
+they do not fit into the document flow.
 
 ### 2. `position: static`
 
@@ -100,19 +100,23 @@ Explain `z-index`:
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](css-positioning.md) for the students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
-- [ ] Remind them of the ground rules (Meet again 30min before lunch-break in the classroom / They
-      can ask the coaches for help at any time / Always help each other / Take a break when you need
-      it in the next 1.5h/ Keep an eye on Slack)
+- [ ] Provide the [handout](css-positioning.md) and the [challenges](challenges-css-positioning.md)
+      to the students
+- [ ] Open the challenges and walk the students through the tasks
+- [ ] Divide the students into groups
+- [ ] Remind them of the ground rules:
+  - meet again 30 min before lunch break in the class room
+  - they can ask the coaches for help at any time
+  - always try to help each other
+  - take a break within the next 1.5 hrs
+  - keep an eye on Slack
 
 ---
 
-## Evaluate: Recap of the assignment / Discussion of MVP / Solution
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in
-  a few phrases.
+- Revisit the question that was posed in the beginning of the session and try to answer it with a
+  few phrases.
 
 ---
 
@@ -121,8 +125,8 @@ Explain `z-index`:
 > 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
 > how far they have come already) :)
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest :)
 

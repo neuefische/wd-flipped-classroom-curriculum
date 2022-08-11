@@ -11,7 +11,7 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for the topic
+## Arrival: Motivate students and prepare them for today's topic(s)
 
 > 💡 Breathe and relax :)
 
@@ -22,13 +22,13 @@
 - We want to learn how to interact with these tools through the CLI to get access to them and use
   them to write amazing code.
 
-### Why is the content of todays block so important for the students?
+### Why is the content of today's block that important for the students?
 
 - Being able to navigate in the Shell and interact with programs via CLI is an essential skill for
   every developer and required for any job in the field.
 - It's the first step to feel like a hacker.
 
-### Raise a question to be answered by the end of the block!
+### Pose a question to be answered by the end of the block!
 
 - What is the shell / the terminal and why is it useful?
 
@@ -44,7 +44,7 @@ students:
 - This is to start with a little bit more interactivity, in case the students are still shy to
   speak.
 
-### Which prior knowledge will be used for this session?
+### Which previously learned concepts will be utilized in this session?
 
 You can ask these questions:
 
@@ -54,7 +54,7 @@ You can ask these questions:
 
 ---
 
-## Inform: Sessionguide
+## Inform: Session Guide
 
 ### Terminal
 
@@ -114,20 +114,23 @@ also delete things irreversibily or other things that you didn't intend to so. S
 
 ## Process: Project / Assignment
 
-- [ ] Provide the [handout](shell-basics.md) for the students
+- [ ] Provide the [handout](shell-basics.md) to the students
 - [ ] Create a `zip` file from the `treasure-hunt` directory and give it to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students in groups
-- [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
-      can ask the coaches for help at any time / Always help each other / Take a break when you need
-      it in the next 1.5h/ Keep an eye on Slack)
+- [ ] Divide the students into groups
+- [ ] Remind them of the ground rules:
+  - meet again 30 min before lunch break in the class room
+  - they can ask the coaches for help at any time
+  - always try to help each other
+  - take a break within the next 1.5 hrs
+  - keep an eye on Slack
 
 ---
 
-## Evaluate: Recap of the assignment / Discussion of MVP / Solution
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
 
-- Come back to the question that was raised in the beginning of the session and try and answer it in
-  a few phrases: <br>
+- Revisit the question that was posed in the beginning of the session and try to answer it with a
+  few phrases: <br>
 - **What is the shell / the terminal and why is it useful?**
   - The shell is a program that runs in our terminal.
   - It can access the services of the operating system of our computer (e.g. macOS). This means we
@@ -142,14 +145,14 @@ also delete things irreversibily or other things that you didn't intend to so. S
 > 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
 > how far they have come already) :)
 
-- [ ] Summarize the day by repeating all the topics that were discussed
-- [ ] Highlight the progress of the day
+- [ ] Summarize the day by repeating all of the topics that were discussed
+- [ ] Highlight the progress made that day
 - [ ] Encourage the students to repeat what they learned with practical exercises
 - [ ] Remind them to rest :)
 
 ## Keywords for Recap:
 
-shell, terminal, CLI, cd,
+shell, terminal, CLI, cd, touch, ls
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

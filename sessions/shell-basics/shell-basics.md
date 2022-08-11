@@ -2,37 +2,38 @@
 
 ## Learning Objectives
 
-In this session you will learn:
-
-- [ ] what the terminal and the shell are.
-- [ ] to navigate the file system inside the shell.
-- [ ] to create, rename, remove and move files and folders in the filesystem.
+- learning what the terminal and the shell are
+- learning to navigate the file system using the shell and the terminal
+- learning to create, rename, remove and move files and folders in the filesystem
 
 ---
 
-## Shell
+## Shell and Terminal
 
-You are probably used to using graphical user interfaces (GUI) to interact with computers, for
-example:
+You are probably used to using GUIs
+([Graphical User Interfaces](https://en.wikipedia.org/wiki/Graphical_user_interface)) to interact
+with computers.
 
-- Windows Explorer to search for files / rename / delete them
-- Your operating systems UI for changing the time zone via mouse clicks
-- Using "installation wizards" to install software via mouse clicks
-
-Often times developers interact with computers over CLIs (Command line interfaces) which are text
-based user interfaces. That means that developers type commands to interact with the computer
-(create / move / delete / edit files, install software, change system settings...).
+Often times developers interact with computers using CLIs (Command Line Interfaces) which are text
+based user interfaces. That means that you type commands to interact with the computer (create /
+move / delete / edit files, install software, change system settings...).
 
 This has the following reasons / advantages:
 
-- Many tools don't have GUI (graphical user interfaces) and can only be run over a CLI
-- You can write scripts (which consist of a number of commands) to automize processes and repetitive
+- Many tools don't have a GUI and can only be used as a CLI.
+- You can write scripts (which consist of a number of commands) to automate processes and repetitive
   tasks and ensure they are being run exactly the same way every time they are executed.
 
-We are using the shell and in particular the zsh (z shell) - which is the default shell on macOS -
-to run commands. The shell is the application that runs and executes commands on your computer and
-outputs results. A terminal is a text input and output environment. It sends commands to the shell
-and displays its output.
+On macOS we are using zsh (z shell) as the command interpreter.[^1]
+
+By default it is run within the Terminal app. For this course we'll use iTerm and Visual Studio Code
+as alternative terminal emulators.
+
+- A shell (like zsh) is the command interpreter that runs and executes commands on your computer and
+  outputs results.
+- A terminal (like Terminal, iTerm, Visual Studio Code) is a text input and output environment
+  (emulating a [hardware computer terminal](https://en.wikipedia.org/wiki/Computer_terminal)) that
+  sends commands to the shell and displays its output.
 
 ### Basic Shell commands
 
@@ -53,43 +54,15 @@ and displays its output.
 > 💡 There are a lot of commands for any sort of action you want to perform check out
 > [this cheat cheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet) to look up important commands.
 
-# Challenges
-
-## Treasure Hunt
-
-In this challenge you have to find the lost diamond of the ancient king of treasure island! Open the
-`treasure-hunt.zip` that you received. Navigate through treasure island only with the terminal and
-find the treasure! Use the following commands:
-
-- use `cd` to change directories
-- use `cd ..` to move out of the current folder
-- use `ls` to look what is in the current folder
-- use `cat` to see what is inside a markdown file
-- use `pwd` to see your current directory path
-
-Good luck!
-
-## Enhance your terminal
-
-Something that developers do all the time via the terminal is installing new software or tools, just
-as we will in this exercise. One of the many features of our shell `zsh` is its extensibility. We
-can install plugins which will improve our developer experience significantly. You can install all
-necessary programs by following the installation steps on the respective websites. So let's get
-started!
-
-1. install the zsh framework [oh my zsh](https://ohmyz.sh/#install) (follow the instructions on
-   their installation page). This framework helps us to manage the zsh configuration.
-2. install [homebrew](https://brew.sh/), the package manager for MacOS. With homebrew we can install
-   packages (e.g. programs, extensions, tools,...) via the command line.
-3. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew), a powerful zsh theme.
-   Follow the installation instructions under `Homebrew`. Please don't forget to install the
-   recommended font as described under `Getting Started`
-4. run the following command to download a configuration for powerlevel10k theme: <br>
-   `curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/configs/.p10k.zsh > ~/.p10k.zsh;`
-5. if you feel very confident in the terminal, you can adjust the powerlevel10k configuration with
-   this command: <br> `p10k configure`
+---
 
 ## Resources
 
 - [terminal basics](https://mrkaluzny.com/blog/terminal-101-getting-started-with-terminal/)
 - [command line cheat sheet](https://github.com/0nn0/terminal-mac-cheatsheet#english-version)
+
+[^1]:
+    Before 2019 (v10.15) macOS' shell was called bash. Most bash commands will still work with zsh
+    as well. Because it was so widespread, the word bash also became a
+    [metonym](https://en.wikipedia.org/wiki/Metonymy) for any shell. Keep that in mind when
+    googling.
