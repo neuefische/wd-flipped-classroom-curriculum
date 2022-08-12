@@ -2,9 +2,9 @@
 
 ## Learning Objectives
 
-- Knowing the difference between `var`, `let` and `const`
-- Understanding different kinds of data types
-- Using basic math operations
+- knowing the difference between `var`, `let` and `const`
+- understanding the different data types
+- using basic math operations
 
 ---
 
@@ -79,7 +79,7 @@ positions of elements. Operators calculate values based on one or two expression
 | `**`     | 13         | potentiates two numbers: `2 ** 4 → 16`                                                       |
 | `%`      | 12         | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 → 2`. |
 
-The remainder is a very useful operator, but might be difficult to understand at first. A real live
+The remainder is a very useful operator, but might be difficult to understand at first. A real life
 example would be time on a clock. After noon, you don't reach 13am but you start over at 1pm. 3
 hours after midnight you don't have 15pm (or 27h in the 24h format), but 3am. It is whatever hour we
 have mod 12.

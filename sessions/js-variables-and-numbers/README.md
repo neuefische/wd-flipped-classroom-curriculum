@@ -4,9 +4,9 @@
 
 ## Learning objectives
 
-- [ ] Knowing the difference between `var`, `let` and `const`
-- [ ] Understanding the kinds of data types
-- [ ] Using basic math operations
+- [ ] knowing the difference between `var`, `let` and `const`
+- [ ] understanding the different data types
+- [ ] using basic math operations
 
 ---
 
@@ -16,11 +16,11 @@
 
 ### Which important problem will we solve today?
 
-- How to "remember" values in JavaScript so we can use them later on
+- how to "remember" values in JavaScript, so that we can use them later on
 
 ### Why is the content of today's block that important for the students?
 
-- Variables are a basic building block for writing reusable logic. Write code once and use it as
+Variables are a basic building block for writing reusable logic. Write code once and use it as
   often as you need to.
 
 ### Pose a question to be answered by the end of the block!
@@ -31,8 +31,8 @@
 
 ### Which previously learned concepts will be utilized in this session?
 
-- JS basics
-- Math knowledge from everyone's time as a student in school
+- JS Basics
+- math knowledge from everyone's time as a student in school
 
 ---
 
@@ -40,13 +40,13 @@
 
 ### Variables
 
-- [ ] Variables are a storage for values
-- [ ] We can declare variables and then use them as if they were values
-  - We don't have to remember the values
-  - Different parts of our application can exchange the values behind variables so the code works
-    for every value (we don't have to write new code only if a value changes (for example some user
-    input))
-- [ ] We can declare a variable using the **const** keyword:
+- [ ] variables are a storage for values
+- [ ] we can declare variables and then use them as if they were values
+  - we don't have to remember the values
+  - different parts of our application can exchange the values behind variables, so the code works
+    for every value (we don't have to write new code, only if a value changes e.g. some user
+    input)
+- [ ] we can declare a variable using the **const** keyword:
 
 ```js
 const myNumber = 42;
