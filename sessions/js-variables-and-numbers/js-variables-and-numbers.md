@@ -18,7 +18,7 @@ this variable. You can use three different keywords to declare a variable:
   necessary.
 - `var` - outdated, not used anymore.
 
-Normally the keyword `const` is used to declare a value.
+Normally the keyword `const` is used to declare a variable.
 
 ```js
 const aNewVariable = 1234;
@@ -72,10 +72,10 @@ positions of elements. Operators calculate values based on one or two expression
 
 | operator | precedence | effect                                                                                       |
 | -------- | ---------- | -------------------------------------------------------------------------------------------- |
-| `+`      | 11         | Adds two numbers together.                                                                   |
-| `-`      | 11         | Subtracts two numbers                                                                        |
-| `*`      | 12         | Multiplies two numbers                                                                       |
-| `/`      | 12         | Divides two numbers                                                                          |
+| `+`      | 11         | adds two numbers together.                                                                   |
+| `-`      | 11         | subtracts two numbers                                                                        |
+| `*`      | 12         | multiplies two numbers                                                                       |
+| `/`      | 12         | divides two numbers                                                                          |
 | `**`     | 13         | potentiates two numbers: `2 ** 4 → 16`                                                       |
 | `%`      | 12         | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 → 2`. |
 
