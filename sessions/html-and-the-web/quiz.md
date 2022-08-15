@@ -2,10 +2,10 @@
 
 ### What does the abbreviation HTML stand for?
 
-- [ ] Hypertext Master Language
-- [x] Hypertext Markup Language
-- [ ] Hypertransfer Markup Language
-- [ ] Hypertext Markup Location
+* [ ] Hypertext Master Language
+* [x] Hypertext Markup Language
+* [ ] Hypertransfer Markup Language
+* [ ] Hypertext Markup Location
 
 Points: 1
 
@@ -17,10 +17,10 @@ type: multiple_choice
 
 ### Which is not an HTML tag?
 
-- [x] `<alt></alt>`
-- [ ] `<div></div>`
-- [ ] `<p></p>`
-- [ ] `<h6></h6>`
+* [x] `<alt></alt>`
+* [ ] `<div></div>`
+* [ ] `<p></p>`
+* [ ] `<h6></h6>`
 
 Points: 1
 
@@ -32,10 +32,10 @@ type: multiple_choice
 
 ### What element do you need to create a numbered list?
 
-- [x] `<ol></ol>`
-- [ ] `<ul></ul>`
-- [ ] `<li></li>`
-- [ ] `<nl></nl>`
+* [x] `<ol></ol>`
+* [ ] `<ul></ul>`
+* [ ] `<li></li>`
+* [ ] `<nl></nl>`
 
 Points: 1
 
@@ -48,10 +48,10 @@ type: multiple_choice
 
 ### What does a DNS do?
 
-- [x] translating the http address to the respective IP address
-- [ ] encrypting the http connection
-- [ ] automatically refreshing a website
-- [ ] testing the speed of a website
+* [x] translating the http address to the respective IP address
+* [ ] encrypting the http connection
+* [ ] automatically refreshing a website
+* [ ] testing the speed of a website
 
 Points: 1
 
@@ -64,10 +64,10 @@ type: multiple_choice
 
 ### What type of HTML element do you need to create a link?
 
-- [ ] `<link>`
-- [x] `<a>`
-- [ ] `<anchor>`
-- [ ] `<ref>`
+* [ ] `<link>`
+* [x] `<a>`
+* [ ] `<anchor>`
+* [ ] `<ref>`
 
 Points: 1
 
@@ -79,10 +79,10 @@ type: multiple_choice
 
 ### Which one of the following is a semantic HTML element?
 
-- [ ] `<structure>`
-- [ ] `<block>`
-- [ ] `<border>`
-- [x] `<section>`
+* [ ] `<structure>`
+* [ ] `<block>`
+* [ ] `<border>`
+* [x] `<section>`
 
 Points: 1
 
@@ -94,10 +94,10 @@ type: multiple_choice
 
 ### How do you write an HTML comment?
 
-- [ ] `// This is an HTML comment`
-- [ ] `/* This is an HTML comment */`
-- [x] `<!-- This is an HTML comment -->`
-- [ ] `/** This is an HTML comment **/`
+* [ ] `// This is an HTML comment`
+* [ ] `/* This is an HTML comment */`
+* [x] `<!-- This is an HTML comment -->`
+* [ ] `/** This is an HTML comment **/`
 
 Points: 1
 
@@ -110,10 +110,10 @@ type: multiple_choice
 
 ### The `<title>` element must be located inside ... ?
 
-- [ ] the `<footer>` element
-- [x] the `<head>` element
-- [ ] the `<body>` element
-- [ ] the `<main>` element
+* [ ] the `<footer>` element
+* [x] the `<head>` element
+* [ ] the `<body>` element
+* [ ] the `<main>` element
 
 Points: 1
 
@@ -126,10 +126,10 @@ type: multiple_choice
 
 ### Which of the following is not an HTML attribute?
 
-- [ ] `alt`
-- [ ] `href`
-- [x] `fontSize`
-- [ ] `id`
+* [ ] `alt`
+* [ ] `href`
+* [x] `fontSize`
+* [ ] `id`
 
 Points: 1
 
@@ -141,10 +141,10 @@ type: multiple_choice
 
 ### What is the difference between an opening tag and a closing tag?
 
-- [ ] The opening tag has a `/` in front of the element name
-- [x] The closing tag has a `/` in front of the element name
-- [ ] There is no difference
-- [ ] Closing tags do not exist
+* [ ] The opening tag has a `/` in front of the element name
+* [x] The closing tag has a `/` in front of the element name
+* [ ] There is no difference
+* [ ] Closing tags do not exist
 
 Points: 1
 

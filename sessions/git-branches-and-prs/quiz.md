@@ -2,10 +2,10 @@
 
 ### To make a new git branch, the git command is?
 
-- [x] `git branch [branchname]`
-- [ ] `git -b [branchname]`
-- [ ] `git new branch [branchname]`
-- [ ] `git create branch [branchname]`
+* [x] `git branch [branchname]`
+* [ ] `git -b [branchname]`
+* [ ] `git new branch [branchname]`
+* [ ] `git create branch [branchname]`
 
 Points: 1
 
@@ -18,10 +18,10 @@ type: multiple_choice
 
 ### Which of the following commands is used to switch between branches?
 
-- [ ] `git branch [branchname]`
-- [ ] `git branch switch [branchname]`
-- [x] `git switch [branchname]`
-- [ ] `git merge [branchname]`
+* [ ] `git branch [branchname]`
+* [ ] `git branch switch [branchname]`
+* [x] `git switch [branchname]`
+* [ ] `git merge [branchname]`
 
 Points: 1
 
@@ -34,10 +34,10 @@ type: multiple_choice
 
 ### With which command can you delete a branch?
 
-- [ ] `git delete [branchname]`
-- [ ] `git cancel [branchname]`
-- [x] `git branch -d [branchname]`
-- [ ] `git revert [branchname]`
+* [ ] `git delete [branchname]`
+* [ ] `git cancel [branchname]`
+* [x] `git branch -d [branchname]`
+* [ ] `git revert [branchname]`
 
 Points: 1
 

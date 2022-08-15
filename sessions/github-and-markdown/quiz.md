@@ -9,8 +9,8 @@
 
 Points: 1
 
-Feedback_correct: That's right.
-Feedback_incorrect: No, `.md` is the correct file ending for markdown.
+Feedback_correct: That's right. Feedback_incorrect: No, `.md` is the correct file ending for
+markdown.
 
 type: multiple_choice
 
@@ -25,8 +25,7 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right.
-Feedback_incorrect: No, you can use `#`.
+Feedback_correct: That's right. Feedback_incorrect: No, you can use `#`.
 
 type: multiple_choice
 
@@ -40,8 +39,7 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right.
-Feedback_incorrect: No, you can use `**` or `__`.
+Feedback_correct: That's right. Feedback_incorrect: No, you can use `**` or `__`.
 
 type: multiple_choice
 
@@ -55,8 +53,7 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right.
-Feedback_incorrect: No, you can use `*` or `_`.
+Feedback*correct: That's right. Feedback_incorrect: No, you can use `*` or `*`.
 
 type: multiple_choice
 
@@ -66,12 +63,11 @@ type: multiple_choice
 
 * [ ] `___` or `+++`
 * [ ] `---` or `###`
-* [x] `---` or `***` 
+* [x] `---` or `***`
 
 Points: 1
 
-Feedback_correct: That's right.
-Feedback_incorrect: No, you can use `---` or `***`.
+Feedback_correct: That's right. Feedback_incorrect: No, you can use `---` or `***`.
 
 type: multiple_choice
 
@@ -79,14 +75,13 @@ type: multiple_choice
 
 ### What character(s) can be used to create an unordered list?
 
-* [x] `-` or `*` 
+* [x] `-` or `*`
 * [ ] `_` or `+`
 * [ ] `-` or `#`
 
 Points: 1
 
-Feedback_correct: That's right.
-Feedback_incorrect: No, you can use `-` or `*`.
+Feedback_correct: That's right. Feedback_incorrect: No, you can use `-` or `*`.
 
 type: multiple_choice
 
@@ -100,8 +95,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right.
-Feedback_incorrect: No, you can use `[neuefische](https://www.neuefische.de)`.
+Feedback_correct: That's right. Feedback_incorrect: No, you can use
+`[neuefische](https://www.neuefische.de)`.
 
 type: multiple_choice
 
@@ -115,8 +110,7 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right.
-Feedback_incorrect: No, you can use `![](fish.jpg)`.
+Feedback_correct: That's right. Feedback_incorrect: No, you can use `![](fish.jpg)`.
 
 type: multiple_choice
 

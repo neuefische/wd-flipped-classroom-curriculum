@@ -2,9 +2,9 @@
 
 ### What does CSS stand for?
 
-- [x] Cascading Style Sheet
-- [ ] Creative Style Sheet
-- [ ] Computer Style Sheet
+* [x] Cascading Style Sheet
+* [ ] Creative Style Sheet
+* [ ] Computer Style Sheet
 
 Points: 1
 
@@ -16,9 +16,9 @@ type: multiple_choice
 
 ### Which of the following selectors is a type selector?
 
-- [ ] `.teaser`
-- [x] `p`
-- [ ] `*`
+* [ ] `.teaser`
+* [x] `p`
+* [ ] `*`
 
 Points: 1
 
@@ -30,9 +30,9 @@ type: multiple_choice
 
 ### What does the universal selector do (`*`)?
 
-- [ ] Selects only the top level `html` element.
-- [ ] Selects only one HTML element.
-- [x] Selects all HTML elements matching any type.
+* [ ] Selects only the top level `html` element.
+* [ ] Selects only one HTML element.
+* [x] Selects all HTML elements matching any type.
 
 Points: 1
 
@@ -45,10 +45,10 @@ type: multiple_choice
 
 ### Why should the id selector (`#`) _not_ be used for styling?
 
-- [x] An id is a unique identifier and can only be used once per HTML document. Thus, it does not
+* [x] An id is a unique identifier and can only be used once per HTML document. Thus, it does not
       scale and the CSS is less maintainable.
-- [ ] It should not be used because id is not a global attribute.
-- [ ] The id selector does not allow certain CSS properties.
+* [ ] It should not be used because id is not a global attribute.
+* [ ] The id selector does not allow certain CSS properties.
 
 Points: 1
 
@@ -61,10 +61,10 @@ type: multiple_choice
 
 ### What is the advantage of using a class (`.`) selector?
 
-- [ ] There are certain CSS properties which can only be used when using the class selector.
-- [x] Classes can be used multiple times on different HTML elements. It makes it easy to maintain
+* [ ] There are certain CSS properties which can only be used when using the class selector.
+* [x] Classes can be used multiple times on different HTML elements. It makes it easy to maintain
       styles.
-- [ ] The class selector has default styles which help to get started with CSS.
+* [ ] The class selector has default styles which help to get started with CSS.
 
 Points: 1
 
@@ -77,11 +77,11 @@ type: multiple_choice
 
 ### Which of the following statements is not true about the CSS Box Model?
 
-- [ ] The default setting for `box-sizing` is `content-box`.
-- [ ] A box includes four areas: content, border, padding, margin.
-- [ ] Each HTML element which is rendered by a browser represents a rectangular box according to the
+* [ ] The default setting for `box-sizing` is `content-box`.
+* [ ] A box includes four areas: content, border, padding, margin.
+* [ ] Each HTML element which is rendered by a browser represents a rectangular box according to the
       standard CSS box model.
-- [x] The CSS Box Model is depricated.
+* [x] The CSS Box Model is depricated.
 
 Points: 1
 
@@ -94,9 +94,9 @@ type: multiple_choice
 
 ### What is the actual width if an element has following styles: `box-sizing: content-box; width: 200px; padding: 10px;`?
 
-- [ ] The width of the element is `200px`.
-- [x] The width of the element is `220px`.
-- [ ] The width of the element is `210px`.
+* [ ] The width of the element is `200px`.
+* [x] The width of the element is `220px`.
+* [ ] The width of the element is `210px`.
 
 Points: 1
 
@@ -108,10 +108,10 @@ type: multiple_choice
 
 ### What is the correct way to write CSS?
 
-- [x] `p { color: green; }`
-- [ ] `p < color: green; >`
-- [ ] `p [ color: green; ]`
-- [ ] `p { green = color }`
+* [x] `p { color: green; }`
+* [ ] `p < color: green; >`
+* [ ] `p [ color: green; ]`
+* [ ] `p { green = color }`
 
 Points: 1
 
@@ -124,9 +124,9 @@ type: multiple_choice
 
 ### What is the correct HTML for referring to an external style sheet?
 
-- [ ] Using the `<style></style>` element.
-- [ ] Using the `style` attribute.
-- [x] Using the `<link rel="stylesheet" href="styles.css">` element.
+* [ ] Using the `<style></style>` element.
+* [ ] Using the `style` attribute.
+* [x] Using the `<link rel="stylesheet" href="styles.css">` element.
 
 Points: 1
 
@@ -139,10 +139,10 @@ type: multiple_choice
 
 ### Which are the two most common default `display` values of HTML elements?
 
-- [ ] `block` and `grid`
-- [ ] `inline` and `flex`
-- [x] `block` and `inline`
-- [ ] `flex` and `grid`
+* [ ] `block` and `grid`
+* [ ] `inline` and `flex`
+* [x] `block` and `inline`
+* [ ] `flex` and `grid`
 
 Points: 1
 
