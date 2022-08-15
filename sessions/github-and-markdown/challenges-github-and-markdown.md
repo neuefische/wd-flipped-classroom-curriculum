@@ -34,7 +34,8 @@ people can reach out to you for help. Include at least:
 2. a link to a picture / gif,
 3. a list or table.
 
-> ❗️ Commit after each step with a [good commit message](#good-commit-messages).
+> ❗️ Commit after each step with a good commit message (see handout for how to write good commit
+> messages).
 
 ### Part 3
 
