@@ -9,7 +9,8 @@
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, `.md` is the correct file ending for
+Feedback_correct: That's right. 
+Feedback_incorrect: No, `.md` is the correct file ending for
 markdown.
 
 type: multiple_choice
@@ -25,7 +26,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, you can use `#`.
+Feedback_correct: That's right. 
+Feedback_incorrect: No, you can use `#`.
 
 type: multiple_choice
 
@@ -39,7 +41,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, you can use `**` or `__`.
+Feedback_correct: That's right. 
+Feedback_incorrect: No, you can use `**` or `__`.
 
 type: multiple_choice
 
@@ -53,7 +56,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback*correct: That's right. Feedback_incorrect: No, you can use `*` or `*`.
+Feedback*correct: That's right. 
+Feedback_incorrect: No, you can use `*` or `*`.
 
 type: multiple_choice
 
@@ -67,7 +71,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, you can use `---` or `***`.
+Feedback_correct: That's right. 
+Feedback_incorrect: No, you can use `---` or `***`.
 
 type: multiple_choice
 
@@ -81,7 +86,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, you can use `-` or `*`.
+Feedback_correct: That's right. 
+Feedback_incorrect: No, you can use `-` or `*`.
 
 type: multiple_choice
 
@@ -95,7 +101,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, you can use
+Feedback_correct: That's right. 
+Feedback_incorrect: No, you can use
 `[neuefische](https://www.neuefische.de)`.
 
 type: multiple_choice
@@ -110,7 +117,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, you can use `![](fish.jpg)`.
+Feedback_correct: That's right. 
+Feedback_incorrect: No, you can use `![](fish.jpg)`.
 
 type: multiple_choice
 

@@ -8,7 +8,8 @@
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, CSS is short for Cascading Style Sheet.
+Feedback_correct: That's right. 
+Feedback_incorrect: No, CSS is short for Cascading Style Sheet.
 
 type: multiple_choice
 
@@ -22,7 +23,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, `p` is the type selector.
+Feedback_correct: That's right. 
+Feedback_incorrect: No, `p` is the type selector.
 
 type: multiple_choice
 
@@ -36,7 +38,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: No, the universal selector (`*`) selects all
+Feedback_correct: That's right. 
+Feedback_incorrect: No, the universal selector (`*`) selects all
 HTML elements matching any type.
 
 type: multiple_choice

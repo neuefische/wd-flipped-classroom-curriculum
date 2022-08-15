@@ -9,7 +9,8 @@
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! To make a new git branch use
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! To make a new git branch use
 `git branch [branchname]`.
 
 type: multiple_choice
@@ -25,7 +26,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! You can switch with `git switch` between
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! You can switch with `git switch` between
 branches.
 
 type: multiple_choice
@@ -41,7 +43,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope, sorry! Use `git branch -d [branchname]` to
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope, sorry! Use `git branch -d [branchname]` to
 delete a branch.
 
 type: multiple_choice

@@ -9,7 +9,8 @@
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! HTML stands for Hypertext Markup Language.
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! HTML stands for Hypertext Markup Language.
 
 type: multiple_choice
 
@@ -24,7 +25,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! `<alt></alt>` is not a valid HTML tag.
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! `<alt></alt>` is not a valid HTML tag.
 
 type: multiple_choice
 
@@ -39,7 +41,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right, "ol" stands for ordered list. Feedback_incorrect: Nope! A numbered
+Feedback_correct: That's right, "ol" stands for ordered list. 
+Feedback_incorrect: Nope! A numbered
 list is created with `<ol></ol>`.
 
 type: multiple_choice
@@ -55,7 +58,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! A DNS server translates the http address
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! A DNS server translates the http address
 to the respective IP address.
 
 type: multiple_choice
@@ -71,7 +75,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! The `<a>` tag is used to create a link.
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! The `<a>` tag is used to create a link.
 
 type: multiple_choice
 
@@ -86,7 +91,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! `<section>` is a semantic HTML element.
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! `<section>` is a semantic HTML element.
 
 type: multiple_choice
 
@@ -101,7 +107,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! You can write an HTML comment with
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! You can write an HTML comment with
 `<!-- ... -->`.
 
 type: multiple_choice
@@ -117,7 +124,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! The `<title>` element must be located
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! The `<title>` element must be located
 inside the `<head>` element.
 
 type: multiple_choice
@@ -133,7 +141,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! `fontSize` is not an HTML attribute.
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! `fontSize` is not an HTML attribute.
 
 type: multiple_choice
 
@@ -148,7 +157,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! The closing tag has a `/` in front, e.g.
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! The closing tag has a `/` in front, e.g.
 `</body>`.
 
 type: multiple_choice

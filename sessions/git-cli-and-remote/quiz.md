@@ -9,7 +9,8 @@
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! Git is a distributed version control
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! Git is a distributed version control
 system.
 
 type: multiple_choice
@@ -25,7 +26,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! With `git init` you can initialize a new
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! With `git init` you can initialize a new
 git repository.
 
 type: multiple_choice
@@ -41,7 +43,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! `git add .` will add all modified files of
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! `git add .` will add all modified files of
 the current directory to the stage.
 
 type: multiple_choice
@@ -57,7 +60,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! Use `git pull` to get the latest changes
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! Use `git pull` to get the latest changes
 from your remote repository.
 
 type: multiple_choice
@@ -73,7 +77,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! With `git clone`you can copy a remote
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! With `git clone`you can copy a remote
 repository to your computer.
 
 type: multiple_choice
@@ -89,7 +94,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope! The correct order to submit changes from
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope! The correct order to submit changes from
 the working directory is: `git add`, `git status`, `git commit`, `git push`
 
 type: multiple_choice
@@ -105,7 +111,8 @@ type: multiple_choice
 
 Points: 1
 
-Feedback_correct: That's right. Feedback_incorrect: Nope, sorry! With `git status` you can check the
+Feedback_correct: That's right. 
+Feedback_incorrect: Nope, sorry! With `git status` you can check the
 state of your local git repository since your last commit.
 
 type: multiple_choice
