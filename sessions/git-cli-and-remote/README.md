@@ -2,6 +2,14 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+Recommended schedule for this session:
+
+| duration | time          | content         |
+| -------- | ------------- | --------------- |
+| 1:30     | 14:30 - 16:00 | Session         |
+| 1:00     | 16:00 - 17:00 | Active Learning |
+| 0:15     | 17:00 - 17:15 | Recap           |
+
 ## Learning objectives
 
 - [ ] to use version control locally to create repositories and commits.
@@ -60,7 +68,7 @@
 - [ ] create a `.gitignore` file and add `.DS_Store` to the file. Explain that inside the DS_Store
       file are listed display configurations by macOS, that are not interesting for our remote
       repository. This is why we want git to ignore it.
-- [ ] explain that everything we add to the `.gitignore` file will not be commited to our remote
+- [ ] explain that everything we add to the `.gitignore` file will not be committed to our remote
       repository
 
 ### Git commit
@@ -78,6 +86,8 @@
 <img src="assets/untracked.png" alt="untracked" width="400">
 
 **2. Show how to commit changes made to a file in the repository.**
+
+> 💡 Use Excalidraw to explain the git workflow while making commits
 
 - [ ] `git status` - see what the current state of the files in your repository are
 - [ ] `git add file` - put the changed file on the stage
@@ -99,6 +109,8 @@ the first place)**
 ### Git remote repositories
 
 **1. Show how students can connect a remote repository to their local repository.**
+
+> 💡 Use Excalidraw to explain how commit histories differ between local and remote repository
 
 - [ ] mention that the ssh connection needs to be setup, which we will do later in the session.
 - [ ] For now they just need to watch and try to understand the necessary steps.
@@ -132,28 +144,31 @@ in the terminal, outside of any other repository:
       cloning a repository while being in another repository.
 - [ ] when using this command the local repository will be named exactly like the remote repository
 
-### SSH configuration
+### VS Code, GIT CLI installation & SSH configuration
 
-**Guide the students through the ssh configuration.**
+**Guide the students through installation & configuration steps.**
 
-- [ ] let them install the `git cli` via brew: `brew install gh`
-- [ ] let them execute the `git ssh script`: `<insert link to script here :)>`
-- [ ] make sure the students fill in the prompts of the script correctly (correct mail used on
-      GitHub and username).
+- [ ] let them install VS Code: `brew install --cask visual-studio-code`
+- [ ] let them install the GIT Cli via brew: `brew install gh`
+- [ ] let them execute the **git ssh script**:
+      `zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)` -
+      [ ] make sure the students fill in the prompts of the script correctly (correct mail used on
+      GitHub and username). Let them choose no passphrase for their key.
 
 ---
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](session-name.md) to the students
+- [ ] Provide the [handout](git-cli-and-remote.md) and the
+      [challenges](challenges-git-cli-and-remote.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of 2 - 3
+- [ ] Divide the students into groups of 3
 - [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
+  - meet again in one hour (at 5pm) in the class room
   - they can ask the coaches for help at any time
   - always try to help each other
-  - take a break within the next 1.5 hrs
   - keep an eye on Slack
+  - go through the rooms and check how the students are doing
 
 ---
 
