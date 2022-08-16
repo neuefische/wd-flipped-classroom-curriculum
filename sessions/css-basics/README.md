@@ -2,6 +2,14 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+Recommended schedule for this session:
+
+| duration | content         |
+| -------- | --------------- |
+| 1:00     | Session         |
+| 1:30     | Active Learning |
+| 0:15     | Recap           |
+
 ## Learning objectives
 
 - [ ] What is CSS?
@@ -12,7 +20,6 @@
   - [ ] `selectors`: `universal` selector, `type` selectors, `class` selectors
   - [ ] `box model`: `border box` vs `content box` and the property `box-sizing`
   - [ ] `inline & block elements`
-- [ ] styling fonts & working with relative units
 - [ ] how to link stylesheets
 
 ---
@@ -181,11 +188,24 @@ Explain what a stylesheet is and create a separate CSS stylesheet
 
 ### **Optional:** Show [Google-Fonts](https://fonts.google.com/) and how to import a Google font
 
-There are three possibilities:
+Mention that there are three possibilities:
 
 - use `@import` in your css file
 - use `link` element in the html file
 - download the font and add it to the project by using `@font-face`
+
+> ❗️ For legal reasons we only want to show the option of downloading and hosting fonts yourself.
+> This is the only option we want to encourage the students to use.
+
+- Show how to download and add a google font using the
+  [google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts)
+- Explain that you can create a rules for your body that will be handed down through inheritance. We
+  recommend defining font rules on the body of your page.
+  ```css
+  body {
+  	font-family: ...;
+  }
+  ```
 
 ---
 

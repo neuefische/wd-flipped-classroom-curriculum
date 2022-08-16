@@ -1,20 +1,16 @@
 # CSS Basics: Challenges
 
-## Social Card
+## Button styles
 
-Open
-[this CodeSandbox](https://githubbox.com/neuefische/web-exercises/tree/main/sessions/css-basics/social-card).
-You will find an unstyled HTML page. Your task is to recreate the following social card.
-![social card example](./assets/social-card.png)
+Solve this
+[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/button-styles?file=/css/styles.css)
 
-- [ ] Fork the CodeSandbox.
-- [ ] [Add the link](#linking-stylesheets) to the styles.css stylesheet in the head of the
-      index.html file.
-- [ ] Style all elements on the page to recreate these social card styles.
-- [ ] Use type selectors as well as class selectors to target the correct elements.
-- [ ] Find a fitting font on fonts.google.com and [import it into your project](#styling-fonts).
+## Pokemon page
 
-## Personal Website Styling
+Solve this
+[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page?file=/css/styles.css:980-1001)
+
+## Homework: Personal Website Styling
 
 Start styling your personal website to make it absolutely fabulous. ✨
 

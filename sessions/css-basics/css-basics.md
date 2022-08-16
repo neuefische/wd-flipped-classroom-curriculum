@@ -6,7 +6,7 @@
 - knowing the meaning behind the name CSS (`Cascading Style Sheets`)
 - understanding the fundamentals of CSS: `CSS syntax`, `selectors`, `box model`,
   `inline & block elements`
-- using stylings for fonts & working with relative units
+- using stylings for fonts
 - linking stylesheets to the HTML document
 
 ---
@@ -163,7 +163,7 @@ With CSS you can style the fonts of your website in many ways. Here are just som
 - `font-size`: Size of a font
 - `font-weight`: This property defines the weight of a font
 
-You can include custom fonts in two ways:
+You can include custom fonts in different ways:
 
 - find a font on [google fonts](fonts.google.com) and use the `@import` snippet and paste it to the
   top of your css file:
@@ -190,25 +190,11 @@ You can include custom fonts in two ways:
   }
   ```
 
----
+  You can use the [google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts) which
+  will provide you with the fonts file and create the necessary css rules for you.
 
-## Relative units
-
-There are two different types of units: `relative` and `absolute`.
-
-- **Relative units** are relative to something else, like the size of the viewport or the size of
-  the parents elements font.
-- **Absolute units** are fixed and aren't relative to anything else. The most common absolute unit
-  is `px` (Pixels).
-
-**Relative units examples**
-
-| Unit  | Description                                         |
-| ----- | --------------------------------------------------- |
-| `em`  | Relative to the font size of the the parent element |
-| `rem` | Relative to the font size of the root element       |
-| `vw`  | % of the viewport width                             |
-| `vh`  | % of the viewport height                            |
+> ❗️ For legal reasons you should choose the option to download the font and include it as a
+> font-family.
 
 ---
 
