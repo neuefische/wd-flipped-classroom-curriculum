@@ -6,9 +6,9 @@ Recommended schedule for this session:
 
 | duration | content         |
 | -------- | --------------- |
-| 1:00      | Session         |
-| 1:30      | Active Learning |
-| 0:15      | Recap           |
+| 1:00     | Session         |
+| 1:30     | Active Learning |
+| 0:15     | Recap           |
 
 ## Learning objectives
 
@@ -114,13 +114,6 @@ Show and explain the most basic selectors based on the example with which you st
 
   - Selects all elements of a specific type.
   - Syntax: `elementName` like `article`, `section` or `body`
-  - Explain that you can create a rules for your body that will be handed down through inheritance.
-    We recommend defining font rules on the body of your page.
-    ```css
-    body {
-    	font-family: ...;
-    }
-    ```
 
 - [ ] `class` selector:
 
@@ -206,6 +199,13 @@ Mention that there are three possibilities:
 
 - Show how to download and add a google font using the
   [google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts)
+- Explain that you can create a rules for your body that will be handed down through inheritance. We
+  recommend defining font rules on the body of your page.
+  ```css
+  body {
+  	font-family: ...;
+  }
+  ```
 
 ---
 
