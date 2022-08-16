@@ -144,22 +144,38 @@ in the terminal, outside of any other repository:
       cloning a repository while being in another repository.
 - [ ] when using this command the local repository will be named exactly like the remote repository
 
-### VS Code, GIT CLI installation & SSH configuration
+### GIT CLI installation & SSH configuration
+
+- [ ] Provide the [handout](git-cli-and-remote.md) and the
+      [challenges](challenges-git-cli-and-remote.md) to the students
 
 **Guide the students through installation & configuration steps.**
 
 - [ ] let them install the GIT Cli via brew: `brew install gh`
 - [ ] let them execute the **git ssh script**:
       `zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)` -
-      [ ] make sure the students fill in the prompts of the script correctly (correct mail used on
-      GitHub and username). Let them choose no passphrase for their key.
+- [ ] make sure the students fill in the prompts of the script correctly (correct mail used on
+      GitHub and username). Let them choose **no** passphrase for their key. 1. enter the correct
+      information:
+  - enter your name: your full name
+  - enter your email: your mail address you use in your **github account**
+  - save the ssh key pair in the default folder (simply press `Enter`)
+  - add a passphrase: leave the passphrase empty and press `Enter` twice
+  - choose the GitHub account type: `GitHub.com`
+  - choose a protocol: `SSH`
+  - upload your SSH public key to your GitHub account: `Users/<username>/.ssh/id_ed25519.pub`
+  - choose a descriptive SSH key name: e.g. "Mac" or "Personal Laptop"
+  - authenticate to GitHub CLI: `Login with a web browser`
+  - ❗️ copy the one time code
+  - press `Enter`
+  - paste the one time code
+  - allow the access for the GitHub CLI
+  - done!
 
 ---
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](git-cli-and-remote.md) and the
-      [challenges](challenges-git-cli-and-remote.md) to the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups of 3
 - [ ] Remind them of the ground rules:

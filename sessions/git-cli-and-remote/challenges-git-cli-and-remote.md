@@ -1,5 +1,30 @@
 # Challenges: Git CLI and Remote
 
+## Git Setup
+
+1. install the GIT Cli via brew: `brew install gh`
+1. execute the **git ssh script**
+
+   ```bash
+   zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)
+   ```
+
+1. enter the correct information:
+   - enter your name: your full name
+   - enter your email: your mail address you use in your **github account**
+   - save the ssh key pair in the default folder (simply press `Enter`)
+   - add a passphrase: leave the passphrase empty and press `Enter` twice
+   - choose the GitHub account type: `GitHub.com`
+   - choose a protocol: `SSH`
+   - upload your SSH public key to your GitHub account: `Users/<username>/.ssh/id_ed25519.pub`
+   - choose a descriptive SSH key name: e.g. "Mac" or "Personal Laptop"
+   - authenticate to GitHub CLI: `Login with a web browser`
+   - ❗️ copy the one time code
+   - press `Enter`
+   - paste the one time code
+   - allow the access for the GitHub CLI
+   - done!
+
 ## Session Notebook part 1
 
 In this project you will create a markdown based notebook for all your upcoming session notes. In
@@ -22,7 +47,7 @@ You already created a folder and file structure for your session notes. Now we w
 **session-notebook** to your GitHub account as a repository. Therefore we need to connect the local
 repository with a remote repository.
 
-### Step 1
+### Part 1
 
 The first step is to initialize a new repository based on the folder you created for the session
 notes.
