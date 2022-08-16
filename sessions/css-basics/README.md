@@ -12,7 +12,6 @@
   - [ ] `selectors`: `universal` selector, `type` selectors, `class` selectors
   - [ ] `box model`: `border box` vs `content box` and the property `box-sizing`
   - [ ] `inline & block elements`
-- [ ] styling fonts & working with relative units
 - [ ] how to link stylesheets
 
 ---
@@ -107,6 +106,13 @@ Show and explain the most basic selectors based on the example with which you st
 
   - Selects all elements of a specific type.
   - Syntax: `elementName` like `article`, `section` or `body`
+  - Explain that you can create a rules for your body that will be handed down through inheritance.
+    We recommend defining font rules on the body of your page.
+    ```css
+    body {
+    	font-family: ...;
+    }
+    ```
 
 - [ ] `class` selector:
 
