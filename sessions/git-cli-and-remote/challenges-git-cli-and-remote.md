@@ -1,52 +1,29 @@
 # Challenges: Git CLI and Remote
 
-## Setup Visual Studio Code
+## Git Setup
 
-Please install one of the most popular editors:
-[Visual Studio Code](https://code.visualstudio.com/). This editor from Microsoft is a free, open
-source and available for all platforms, even on the browser, e.g. on GitHub.
+1. install the GIT Cli via brew: `brew install gh`
+1. execute the **git ssh script**
 
-Normally you would go to the website and download the software. But as you may already know, we can
-use **Homebrew** to install things we need.
+   ```bash
+   zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)
+   ```
 
-```shell
-brew install --cask visual-studio-code
-```
-
-You can find more details on this installation here:
-[visual-studio-code — Homebrew Formulae](https://formulae.brew.sh/cask/visual-studio-code)
-
-## Setup SSH Key
-
-In order to communicate safely between your local machine and GitHub, we use a protocol called
-**SSH** (Secure Shell). This protocol allows you to connect to GitHub and authenticate yourself
-without using your username and password every time.
-
-Therefore we generate a **SSH key** on your local machine and add it to GitHub. These steps are
-necessary once on every machine you want to work with.
-
-#### Step 1: GitHub CLI
-
-Install the GitHub command-line tool via Homebrew:
-
-```
-brew install gh
-```
-
-#### Step 2: Git config and SSH key
-
-We created a script for you to easily set your git config, generate a SSH key and add it to GitHub.
-Follow the instructions in your Terminal.
-
-- Pleaser enter the requested inputs
-- Press **Enter** (default) when asked about which file to save the key and your passphrase (leave
-  it empty).
-- Choose **ssh** as your preferred connection method when asked.
-- Login and authenticate with the browser. (The device code is found in the Terminal.)
-
-```
-zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)
-```
+1. enter the correct information:
+   - enter your name: your full name
+   - enter your email: your mail address you use in your **github account**
+   - save the ssh key pair in the default folder (simply press `Enter`)
+   - add a passphrase: leave the passphrase empty and press `Enter` twice
+   - choose the GitHub account type: `GitHub.com`
+   - choose a protocol: `SSH`
+   - upload your SSH public key to your GitHub account: `Users/<username>/.ssh/id_ed25519.pub`
+   - choose a descriptive SSH key name: e.g. "Mac" or "Personal Laptop"
+   - authenticate to GitHub CLI: `Login with a web browser`
+   - ❗️ copy the one time code
+   - press `Enter`
+   - paste the one time code
+   - allow the access for the GitHub CLI
+   - done!
 
 ## Session Notebook part 1
 
@@ -70,7 +47,7 @@ You already created a folder and file structure for your session notes. Now we w
 **session-notebook** to your GitHub account as a repository. Therefore we need to connect the local
 repository with a remote repository.
 
-### Step 1
+### Part 1
 
 The first step is to initialize a new repository based on the folder you created for the session
 notes.
