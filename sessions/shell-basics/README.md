@@ -142,7 +142,7 @@ Guide the students through the Terminal Setup:
    ```
 1. install the prettier extension **Prettier - Code formatter** and explain what a code formatter
    does
-1. Go the VS Code settings and:
+1. Go to the VS Code settings and:
    - search for "default formatter" and set to prettier
    - search for "format on save" and hit checkbox
 1. install the extension `Auto Rename Tag`
