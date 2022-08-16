@@ -133,6 +133,18 @@ Guide the students through the Terminal Setup:
    p10k configure
    ```
 
+### VS Code installation
+
+1. install VS Code and explain what in IDE is:
+   ```bash
+   brew install --cask visual-studio-code
+   ```
+2. install the prettier extension **Prettier - Code formatter** and explain what a code formatter
+   does
+3. Go the VS Code settings and:
+   - search for "default formatter" and set to prettier
+   - search for "format on save" and hit checkbox
+
 ---
 
 ## Process: Project / Assignment
