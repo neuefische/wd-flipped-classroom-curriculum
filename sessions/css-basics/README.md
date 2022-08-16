@@ -4,11 +4,11 @@
 
 Recommended schedule for this session:
 
-| duration | time          | content         |
-| -------- | ------------- | --------------- |
-| 1:00     | 9:15 - 10:15  | Session         |
-| 1:30     | 10:15 - 11:45 | Active Learning |
-| 0:15     | 11:45 - 12:00 | Recap           |
+| duration | content         |
+| -------- | --------------- |
+| 1:00      | Session         |
+| 1:30      | Active Learning |
+| 0:15      | Recap           |
 
 ## Learning objectives
 
