@@ -114,21 +114,16 @@ also delete things irreversibily or other things that you didn't intend to so. S
 
 Guide the students through the Terminal Setup:
 
-1. install [homebrew](https://brew.sh/)
-2. update git via brew:
-   ```bash
-    brew upgrade git
-   ```
-3. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via homebrew:
+1. open the **spotlight search**: `cmd` `space`
+2. open the terminal: `terminal`
+3. install [homebrew](https://brew.sh/)
+4. (accept installing Xcode Command Line Tools, takes some minutes to install)
+5. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via homebrew:
    ```bash
    brew install romkatv/powerlevel10k/powerlevel10k
    echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
    ```
-4. run the following command to download a configuration for powerlevel10k theme: <br>
-   ```
-    curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/configs/.p10k.zsh > ~/.p10k.zsh;
-   ```
-5. as a challenge: configure powerlevel10k:
+6. as a challenge: configure powerlevel10k:
    ```bash
    p10k configure
    ```
