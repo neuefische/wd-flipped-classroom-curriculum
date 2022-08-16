@@ -130,7 +130,8 @@ Guide the students through the Terminal Setup:
    ```bash
    p10k configure
    ```
-7. change the font size of the terminal to 18px: `Terminal` -> `preferences` -> `Profiles` -> `Font`
+7. configure the zsh theme as you like
+8. change the font size of the terminal to 18px: `Terminal` -> `preferences` -> `Profiles` -> `Font`
    -> `Change...`
 
 ### VS Code installation
