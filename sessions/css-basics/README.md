@@ -2,6 +2,14 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+Recommended schedule for this session:
+
+| duration | time          | content         |
+| -------- | ------------- | --------------- |
+| 1:00     | 9:15 - 10:15  | Session         |
+| 1:30     | 10:15 - 11:45 | Active Learning |
+| 0:15     | 11:45 - 12:00 | Recap           |
+
 ## Learning objectives
 
 - [ ] What is CSS?
