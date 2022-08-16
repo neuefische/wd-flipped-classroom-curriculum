@@ -1,4 +1,4 @@
-# Challenges: Git CLI and Remote
+d# Challenges: Git CLI and Remote
 
 ## Setup Visual Studio Code
 

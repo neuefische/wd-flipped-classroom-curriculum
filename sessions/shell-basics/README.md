@@ -112,6 +112,9 @@ also delete things irreversibily or other things that you didn't intend to so. S
 
 ### Terminal Setup
 
+- [ ] Provide the [handout](shell-basics.md) and [challenges](challenges-shell-basics.md) to the
+      students
+
 Guide the students through the Terminal Setup:
 
 1. open the **spotlight search**: `cmd` `space`
@@ -123,10 +126,12 @@ Guide the students through the Terminal Setup:
    brew install romkatv/powerlevel10k/powerlevel10k
    echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
    ```
-6. as a challenge: configure powerlevel10k:
+6. restart the terminal to enter the configuration or type
    ```bash
    p10k configure
    ```
+7. change the font size of the terminal to 18px: `Terminal` -> `preferences` -> `Profiles` -> `Font`
+   -> `Change...`
 
 ### VS Code installation
 
@@ -134,21 +139,24 @@ Guide the students through the Terminal Setup:
    ```bash
    brew install --cask visual-studio-code
    ```
-2. install the prettier extension **Prettier - Code formatter** and explain what a code formatter
+1. install the prettier extension **Prettier - Code formatter** and explain what a code formatter
    does
-3. Go the VS Code settings and:
+1. Go the VS Code settings and:
    - search for "default formatter" and set to prettier
    - search for "format on save" and hit checkbox
+1. install the extension `Auto Rename Tag`
+1. install the extension `Live Preview`
+
+### Challenges Preparations
+
+- [ ] ❗️ Create a `zip` file from the `treasure-hunt` directory and give it to the students
+  - [ ] Make sure that everybody extracted the folder `treasure hunt` and changed into that folder
+        with the terminal.
 
 ---
 
 ## Process: Project / Assignment
 
-- [ ] Provide the [handout](shell-basics.md) and [challenges](challenges-shell-basics.md) to the
-      students
-- [ ] ❗️ Create a `zip` file from the `treasure-hunt` directory and give it to the students
-  - [ ] Make sure that everybody extracted the folder `treasure hunt` and changed into that folder
-        with the terminal.
 - [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
