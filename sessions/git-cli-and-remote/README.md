@@ -148,7 +148,6 @@ in the terminal, outside of any other repository:
 
 **Guide the students through installation & configuration steps.**
 
-- [ ] let them install VS Code: `brew install --cask visual-studio-code`
 - [ ] let them install the GIT Cli via brew: `brew install gh`
 - [ ] let them execute the **git ssh script**:
       `zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)` -
