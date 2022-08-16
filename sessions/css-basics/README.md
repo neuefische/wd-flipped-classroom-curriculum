@@ -181,11 +181,17 @@ Explain what a stylesheet is and create a separate CSS stylesheet
 
 ### **Optional:** Show [Google-Fonts](https://fonts.google.com/) and how to import a Google font
 
-There are three possibilities:
+Mention that there are three possibilities:
 
 - use `@import` in your css file
 - use `link` element in the html file
 - download the font and add it to the project by using `@font-face`
+
+> ❗️ For legal reasons we only want to show the option of downloading and hosting fonts yourself.
+> This is the only option we want to encourage the students to use.
+
+- Show how to download and add a google font using the
+  [google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts)
 
 ---
 
