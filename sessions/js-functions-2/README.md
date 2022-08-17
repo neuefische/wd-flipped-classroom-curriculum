@@ -130,6 +130,10 @@ const addOne = number => {
 
 2. omit curly braces `{}` and `return` keyword if there is only one return statement
 
+- Note: In this case, the expression after `=>` becomes the implicit return value.
+- Note: Use this implicit return only if there really is a value to return, and not for a void
+  function.
+
 ```js
 const addNumbers = (first, second) => first + second;
 ```
@@ -137,8 +141,6 @@ const addNumbers = (first, second) => first + second;
 ---
 
 ## Process: Challenges
-
-To Do: check process and update
 
 - [ ] Provide the [handout](./js-functions-2.md) and the [challenges](challenges-js-functions-2.md)
       to the students
