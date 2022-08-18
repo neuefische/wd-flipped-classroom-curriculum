@@ -1,5 +1,38 @@
 # Challenges: Shell Basics
 
+## Terminal Setup
+
+1. open the **spotlight search**: `cmd` `space`
+2. open the terminal: `terminal`
+3. install [homebrew](https://brew.sh/)
+4. (accept installing Xcode Command Line Tools, takes some minutes to install)
+5. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via homebrew:
+   ```bash
+   brew install romkatv/powerlevel10k/powerlevel10k
+   echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+   ```
+6. restart the terminal to enter the configuration or type
+   ```bash
+   p10k configure
+   ```
+7. configure the zsh theme as you like
+8. change the font size of the terminal to 18px: `Terminal` -> `preferences` -> `Profiles` -> `Font`
+   -> `Change...`
+
+## VS Code installation
+
+1. install VS Code and explain what in IDE is:
+   ```bash
+   brew install --cask visual-studio-code
+   ```
+1. install the prettier extension **Prettier - Code formatter** and explain what a code formatter
+   does
+1. Go to the VS Code settings and:
+   - search for "default formatter" and set to prettier
+   - search for "format on save" and hit checkbox
+1. install the extension `Auto Rename Tag`
+1. install the extension `Live Preview`
+
 ## Treasure Hunt
 
 In this challenge you have to find the lost diamond of the ancient king of treasure island! Open the
@@ -13,23 +46,3 @@ find the treasure! Use the following commands:
 - use `pwd` to see your current directory path
 
 Good luck!
-
-## Enhance your terminal
-
-Something that developers do all the time via the terminal is installing new software or tools, just
-as we will in this exercise. One of the many features of our shell **zsh** is its extensibility. We
-can install plugins which will improve our developer experience significantly. You can install all
-necessary programs by following the installation steps on the respective websites. So let's get
-started!
-
-1. install the zsh framework [oh my zsh](https://ohmyz.sh/#install) (follow the instructions on
-   their installation page). This framework helps us to manage the zsh configuration.
-2. install [homebrew](https://brew.sh/), the package manager for MacOS. With homebrew we can install
-   packages (e.g. programs, extensions, tools,...) via the command line.
-3. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew), a powerful zsh theme.
-   Follow the installation instructions under **Homebrew**. Please don't forget to install the
-   recommended font as described under **Getting Started**
-4. run the following command to download a configuration for powerlevel10k theme: <br>
-   `curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/configs/.p10k.zsh > ~/.p10k.zsh;`
-5. if you feel very confident in the terminal, you can adjust the powerlevel10k configuration with
-   this command: <br> `p10k configure`

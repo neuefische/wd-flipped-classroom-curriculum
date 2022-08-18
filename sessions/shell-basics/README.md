@@ -117,13 +117,54 @@ You can ask these questions:
 But: With great power comes great responsibility! <br> You can do almost anything in the terminal,
 also delete things irreversibily or other things that you didn't intend to so. So be cautious!
 
+### Terminal Setup
+
+- [ ] Provide the [handout](shell-basics.md) and [challenges](challenges-shell-basics.md) to the
+      students
+
+Guide the students through the Terminal Setup:
+
+1. open the **spotlight search**: `cmd` `space`
+2. open the terminal: `terminal`
+3. install [homebrew](https://brew.sh/)
+4. (accept installing Xcode Command Line Tools, takes some minutes to install)
+5. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via homebrew:
+   ```bash
+   brew install romkatv/powerlevel10k/powerlevel10k
+   echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+   ```
+6. restart the terminal to enter the configuration or type
+   ```bash
+   p10k configure
+   ```
+7. configure the zsh theme as you like
+8. change the font size of the terminal to 18px: `Terminal` -> `preferences` -> `Profiles` -> `Font`
+   -> `Change...`
+
+### VS Code installation
+
+1. install VS Code and explain what in IDE is:
+   ```bash
+   brew install --cask visual-studio-code
+   ```
+1. install the prettier extension **Prettier - Code formatter** and explain what a code formatter
+   does
+1. Go to the VS Code settings and:
+   - search for "default formatter" and set to prettier
+   - search for "format on save" and hit checkbox
+1. install the extension `Auto Rename Tag`
+1. install the extension `Live Preview`
+
+### Challenges Preparations
+
+- [ ] ❗️ Create a `zip` file from the `treasure-hunt` directory and give it to the students
+  - [ ] Make sure that everybody extracted the folder `treasure hunt` and changed into that folder
+        with the terminal.
+
 ---
 
 ## Process: Project / Assignment
 
-- [ ] Provide the [handout](shell-basics.md) to the students
-- [ ] Create a `zip` file from the `treasure-hunt` directory and give it to the students
-- [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
