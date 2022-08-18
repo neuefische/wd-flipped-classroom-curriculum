@@ -4,9 +4,9 @@
 
 | duration | content         |
 | -------- | --------------- |
-| 9:59     | Session         |
-| 9:59     | Active Learning |
-| 9:59     | Recap           |
+| 0:45     | Session         |
+| 1:30     | Active Learning |
+| 0:30     | Recap           |
 
 ## Learning objectives
 
@@ -44,6 +44,9 @@ case we use positioning.
 ---
 
 ## Inform: Session Guide
+
+You can use the following [CodeSandbox](https://codesandbox.io/s/css-positioning-starter-ulu0vz) to
+demonstrate the different kinds of positioning.
 
 ### 1. Exposition
 
