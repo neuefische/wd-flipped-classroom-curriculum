@@ -165,7 +165,7 @@ information about its content.
 <div>Hello World</div>
   <div>
     <div>
-      I am training to becoming a Web Dev. Therefore I love coding.
+      I am training to become a Web Dev. Therefore I love coding.
       Other things i like are:
     </div>
     <div>
@@ -184,7 +184,7 @@ information about its content.
 <main>
 <h1>Hello World</h1>
       <article>
-            <p>I am training to becoming a Web Dev. Therefore I love coding. Other things i like are:</p>
+            <p>I am training to become a Web Dev. Therefore I love coding. Other things i like are:</p>
             <ul>
                   <li>good food</li>
                   <li>hanging out with my friends</li>
@@ -202,6 +202,16 @@ information about its content.
       different parts of a web page
 - [ ] `Readability`: It's easier for other developers to understand your code. And also for yourself
       in the future!
+
+## Personal Website - Project Setup
+
+Setup a local and a remote repository with the students. Make sure that everybody is ready to start
+with the project. When a student is finished with the setup they can start with the challenges.
+
+- [ ] let them create a local git repository named "personal-website"
+- [ ] let them create a initial commit with an empty HTML file, named index.html
+- [ ] let them create a remote repository on GitHub and connect your local repository
+- [ ] let them push the first commit to the remote repository
 
 ---
 
