@@ -2,6 +2,12 @@ Javascript Basics
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+| duration | content         |
+| -------- | --------------- |
+| 9:59     | Session         |
+| 9:59     | Active Learning |
+| 9:59     | Recap           |
+
 ## Learning objectives
 
 - [ ] understand what JavaScript is
@@ -128,10 +134,11 @@ myLoggingButton.addEventListener('click', () => {
 
 Demonstrate that the code works. Explain the different parts of the code:
 
-- we select the button element with the `querySelector` and "save it as a variable with the name `myLoggingButton`"
-- we use the method `addEventListener` on the button. It's something we don't have to fully understand
-  now - we have to know that we have to write addEventListener with brackets and have to use the
-  syntax in this exact way.
+- we select the button element with the `querySelector` and "save it as a variable with the name
+  `myLoggingButton`"
+- we use the method `addEventListener` on the button. It's something we don't have to fully
+  understand now - we have to know that we have to write addEventListener with brackets and have to
+  use the syntax in this exact way.
 - the `click` tells us that we listen to the click event
 - the "function body" (the thing we write in the curly braces) is the JavaScript that is being
   executed when the event is triggered.

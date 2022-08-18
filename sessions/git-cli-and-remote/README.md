@@ -4,8 +4,8 @@
 
 Recommended schedule for this session:
 
-| duration        | content         |
-| --------  | --------------- |
+| duration | content         |
+| -------- | --------------- |
 | 1:30     | Session         |
 | 1:00     | Active Learning |
 | 0:15     | Recap           |

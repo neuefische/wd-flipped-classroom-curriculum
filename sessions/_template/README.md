@@ -2,6 +2,14 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+Recommended schedule for this session:
+
+| duration | content         |
+| -------- | --------------- |
+| 9:59     | Session         |
+| 9:59     | Active Learning |
+| 9:59     | Recap           |
+
 ## Learning objectives
 
 - [ ]

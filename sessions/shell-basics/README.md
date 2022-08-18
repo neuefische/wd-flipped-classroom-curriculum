@@ -2,6 +2,13 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+| duration | content         |
+| -------- | --------------- |
+| 0:45     | Session         |
+| 0:30     | Shell Setup     |
+| 1:00     | Active Learning |
+| 0:30     | Recap           |
+
 ## Learning objectives
 
 - [ ] Understanding what the terminal and the shell are and why they are used.

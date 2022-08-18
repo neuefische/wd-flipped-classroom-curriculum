@@ -2,6 +2,12 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+| duration | content         |
+| -------- | --------------- |
+| 9:59     | Session         |
+| 9:59     | Active Learning |
+| 9:59     | Recap           |
+
 ## Learning objectives
 
 - learning different ways of writing strings
@@ -103,8 +109,8 @@ Explain what `${}` does and that this is still a string literal, specifically a
 > arrow (<kbd>◀︎</kbd>). Otherwise macOS sometimes thinks that we're trying to write an accented
 > character like à.
 
-Explain that template literals have one more feature that is different from the other string literals:
-They supports line breaks!
+Explain that template literals have one more feature that is different from the other string
+literals: They supports line breaks!
 
 Copy in the following code and show what it does:
 

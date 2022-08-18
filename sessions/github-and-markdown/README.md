@@ -2,6 +2,12 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+| duration | content         |
+| -------- | --------------- |
+| 1:15     | Session         |
+| 1:00     | Active Learning |
+| 0:30     | Recap           |
+
 ## Learning objectives
 
 - [ ] Understanding version control and why is it so useful / important?

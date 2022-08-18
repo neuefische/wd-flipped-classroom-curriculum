@@ -2,6 +2,13 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+| duration | content                  |
+| -------- | ------------------------ |
+| 1:15     | Session                  |
+| 0:15     | Project Repository Setup |
+| 0:45     | Active Learning          |
+| 0:30     | Recap                    |
+
 ## Learning objectives
 
 - [ ] How to write HTML

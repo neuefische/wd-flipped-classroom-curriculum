@@ -2,6 +2,12 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+| duration | content         |
+| -------- | --------------- |
+| 9:59     | Session         |
+| 9:59     | Active Learning |
+| 9:59     | Recap           |
+
 ## Learning objectives
 
 - [ ] knowing the difference between `var`, `let` and `const`
@@ -20,8 +26,8 @@
 
 ### Why is the content of today's block that important for the students?
 
-Variables are a basic building block for writing reusable logic. Write code once and use it as
-  often as you need to.
+Variables are a basic building block for writing reusable logic. Write code once and use it as often
+as you need to.
 
 ### Pose a question to be answered by the end of the block!
 
@@ -44,8 +50,7 @@ Variables are a basic building block for writing reusable logic. Write code once
 - [ ] we can declare variables and then use them as if they were values
   - we don't have to remember the values
   - different parts of our application can exchange the values behind variables, so the code works
-    for every value (we don't have to write new code, only if a value changes e.g. some user
-    input)
+    for every value (we don't have to write new code, only if a value changes e.g. some user input)
 - [ ] we can declare a variable using the **const** keyword:
 
 ```js

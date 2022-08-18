@@ -2,6 +2,12 @@
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
+| duration | content         |
+| -------- | --------------- |
+| 9:59     | Session         |
+| 9:59     | Active Learning |
+| 9:59     | Recap           |
+
 ## Learning objectives
 
 - [ ]
@@ -42,7 +48,8 @@
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](js-callback-functions.md) and [challenges](challenges-js-callback-functions.md) for the students
+- [ ] Provide the [handout](js-callback-functions.md) and
+      [challenges](challenges-js-callback-functions.md) for the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students in groups of \_\_\_
 - [ ] Remind them of the ground rules (Meet again 30min before lunchbreak in the classroom / They
