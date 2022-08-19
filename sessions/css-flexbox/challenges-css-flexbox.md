@@ -15,6 +15,7 @@ Master one of these two flexbox games:
 ## Flexbox Exercises
 
 Solve the following flexbox exercises
+
 > 💡 Not all challenges have to be solved during session time. Use the remaining challenges as
 > practice for your independent learning time after class.
 

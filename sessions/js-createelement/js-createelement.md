@@ -7,7 +7,6 @@
 - using HTML element object properties and methods
 - learning how to use `.innerHTML`
 
-
 ---
 
 ## The DOM

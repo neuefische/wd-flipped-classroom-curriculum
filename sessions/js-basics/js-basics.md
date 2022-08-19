@@ -44,7 +44,8 @@ The `script` tag has two attributes:
 
 ## Hello World: `console.log()`
 
-In Javascript we can print text to the console of the web browser. We can use this for debugging or error logging for example.
+In Javascript we can print text to the console of the web browser. We can use this for debugging or
+error logging for example.
 
 ```js
 console.log('Hello World!'); // logs into console
