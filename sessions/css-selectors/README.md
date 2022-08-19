@@ -27,12 +27,8 @@
 
 ### Why is the content of today's block that important for the students?
 
-There are a variety of CSS selectors that students can use for their projects. Getting an idea of
-when they can use which selectors will help them work more specifically and have fewer problems with
-competing stylings. Because of this, we should contextualize the CSS selectors that are still
-unknown and teach the students that the crucial thing is not to use complex CSS selectors when there
-are simpler solutions. The goal should be to know that in most cases classes are the best solution,
-but in certain cases that classes cannot cover, it is good to use the other selectors.
+- to understand why a style is chosen over another competing style => fewer problems with competing
+  styles
 
 ### Pose a question to be answered by the end of the block!
 
@@ -56,6 +52,11 @@ but in certain cases that classes cannot cover, it is good to use the other sele
 This is likely a short session. It is a topic that is supposedly best learned by doing exercises.
 Give a short overview of the different kind of selectors with one or two examples here.
 
+You can use the following CodeSandbox to demonstrate the different kinds of selectors:
+
+- [demo start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-start?file=/css/styles.css)
+- [demo end](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-end?file=/css/styles.css)
+
 ### Recap
 
 - The universal selector matches elements of any kind:
@@ -69,17 +70,21 @@ Give a short overview of the different kind of selectors with one or two example
 - Type selectors match all elements of the specified type:
 
 ```css
-p {
-	color: blue;
+h1,
+h2 {
+	background-color: midnightblue;
+	color: white;
+	padding: 5px;
 }
 ```
 
 - Class selectors match all elements with the specified css class:
 
 ```css
-.box {
-	padding: 1em;
-	border: 1px solid black;
+.question-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 ```
 
@@ -89,7 +94,7 @@ Select one element based on its id. We recommend not using id selectors but clas
 Id selectors aren't resuable like class selectors and they are hard to overwrite.
 
 ```css
-#title {
+#submit {
 	color: blue;
 }
 ```
@@ -100,14 +105,16 @@ Select elements based on the presence of an attribute. If a value is specified i
 elements with the attribute and the specified values are selected:
 
 ```css
-[target='_blank'] {
-	font-style: italic;
+[role='list'] {
+	list-style: none;
 }
 ```
 
 ```css
-[role='list'] {
-	list-style: none;
+a[href^='/'] {
+	color: hotpink;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 ```
 
@@ -117,8 +124,10 @@ With pseudo classes you can select elements based on their state. You add them t
 select elements which also match the state condition:
 
 ```css
-h2:hover {
-	color: blue;
+a:hover {
+	background-color: indigo;
+	color: white;
+	font-size: 1.4rem;
 }
 ```
 
@@ -134,7 +143,7 @@ With pseudo elements you can select parts of an element or add content before or
 
 ```css
 p::first-line {
-	font-size: 1.5em;
+	font-size: 2em;
 }
 ```
 
