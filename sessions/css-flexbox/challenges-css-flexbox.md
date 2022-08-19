@@ -6,23 +6,25 @@ Master one of these two flexbox games:
 
 - [Flexbox Froggy](https://flexboxfroggy.com)
 
-  -- or if you know tower defense games --
+  -- or if you like tower defense games --
 
 - [Flexbox Defense](http://www.flexboxdefense.com/)
 
 > 💡 Both games provide you with useful information that you need to win.
 
-## Flexbox Exercises
+## Flexbox Navigation
 
-Solve the following flexbox exercises
 
-> 💡 Not all challenges have to be solved during session time. Use the remaining challenges as
-> practice for your independent learning time after class.
+Use this
+[codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/navigation?file=/css/styles.css).
 
-- [Navigation Exercise](https://codesandbox.io/s/navigation-exercise-gp5owm?file=/styles.css)
-- [Profile Exercise](https://codesandbox.io/s/profile-exercise-fdqz61?file=/styles.css)
 
-## Personal website
+## Flexbox Profile
+
+Use this
+[codesandbox](<[codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/profile?file=/css/styles.css)>).
+
+## Personal Website
 
 Where can you benefit from using flexbox on your personal website?
 
@@ -32,3 +34,6 @@ You could:
 - Place multiple images next to each other
 - Display your tech-stack-list horizontally
 - Make content responsively wrap to the next line
+
+> 💡 You don't have to solve all challenges right away. Use the remaining challenges as practice for
+> your independent learning time after class.

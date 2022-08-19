@@ -4,9 +4,9 @@
 
 | duration | content         |
 | -------- | --------------- |
-| 9:59     | Session         |
-| 9:59     | Active Learning |
-| 9:59     | Recap           |
+| 0:45     | Session         |
+| 1:30     | Active Learning |
+| 0:30     | Recap           |
 
 ## Learning objectives
 
@@ -82,13 +82,11 @@ Show an example with default layouts.
 
 See these examples for inspiration:
 
-- [Example 1](https://codepen.io/neuefische/pen/YzeaKvx)
-- [Example 2](https://codepen.io/neuefische/pen/rNJOBwK)
-- [Example 3](https://codepen.io/neuefische/pen/VwQyxze)
-
-If you want to, you can
-[use this Codepen starter demo](https://codepen.io/neuefische/pen/xxYWBXr?editors=1010)
-
+- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-start?file=/css/styles.css)
+- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-end?file=/css/styles.css)
+- Older Examples (Move to Codepen first!)
+  - [Example 2](https://codepen.io/neuefische/pen/rNJOBwK)
+  - [Example 3](https://codepen.io/neuefische/pen/VwQyxze)
 - [ ] Explain that `display: flex` is assigned to the `container` element
 - [ ] Explain that all `direct child` elements are the flexbox items
 
