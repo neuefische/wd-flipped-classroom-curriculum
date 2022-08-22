@@ -12,13 +12,26 @@ There are two things to consider when assigning yourself to a ticket in the proj
 
 ---
 
+Even with limited time, you can support us very well in this way:
+
+- `Accompany a team` during a session and e.g. work on individual exercises.
+- `Conduct reviews`
+  - either entire sessions or parts, e.g. only the session guide
+  - new challenges in neuefische/web-exercises
+
+---
+
+### Explanation of Tasks
+
 - `Reviews` are usually the "quickest" task, when you have an hour in between.
-- `Handouts` are usually the most time intensive, because we want them to be as complete as possible
-- `Challenges` are nice tasks when you feel comfortable with a topic or have experience with
-- `Session-guides` can in many cases take advantage of existing session material. Remember: One
-  session should be a maximum of 45min, so think of which topics can be learned by reading the
-  handout instead of discussing it during the session. exercises of this session. (of course they
-  still need to be feasible).
+- `Handouts` are usually the most time intensive, because we want them to be as complete as
+  possible.
+- `Challenges` are nice tasks when you feel comfortable with a topic or have experience with it.
+- `Session guides` can in many cases take advantage of existing session material.
+  - **Remember:** According to the new format, we want the students to spend more time with active
+    learning than with listening to us, so think about which topics can be learned by reading the
+    handout and doing the exercises instead of discussing them during the session (of course both
+    still need to be feasible).
 - `quiz.md` files need to be copied from our old curriculum. You can find them in the session folder
   in the `web-pool-2022` repository. Make sure that the questions still fit the content of the
   session. If there is no quiz.md, or you work on a new session, just create a new quiz.md and add
@@ -26,12 +39,23 @@ There are two things to consider when assigning yourself to a ticket in the proj
 
 ### Formatting
 
-- In session guides (mis-)use `code`-blocks to highlight important words
-- In all material that is handed out to students use proper markdown semantics:
-  - hightlight words using **bold** text `**bold**`
-  - use code block only for code
-  - do not highlight written-out abbreviations (keep them as plain text): HTML (Hypertext Markup
-    Language)
+#### In Session Guides
+
+- (mis-)use `code`-blocks to highlight important words
+- use the schedule at the beginning of the file to describe the course of the session, e.g.
+  - 45 min session / 90 min active learning / 30 min recap
+  - 30 min object session / 45 min object exercises / 30 min array session / 45 min array exercises
+    / 15 min recap
+  - ...
+
+#### In all material which is handed out to students
+
+Use proper markdown semantics:
+
+- hightlight words using **bold** text `**bold**`
+- use code block only for code
+- do not highlight written-out abbreviations (keep them as plain text): HTML (Hypertext Markup
+  Language)
 
 ## To-Do's
 
@@ -41,34 +65,35 @@ to keep an eye on.
 ## Our workflow
 
 1. Go into the project
-   [Curriculum Roadmap](https://github.com/neuefische/web-curriculum-new-format/projects/1)
+   [Curriculum Roadmap](https://github.com/neuefische/web-curriculum-new-format/projects/1).
 2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
-   one from the 2-week milestone column). You have two options there:
-   1. Review a part of the session (handout, challenges or session guide). For this, go to the
-      linked Pull Request and review the text. Add changes with the `suggest changes` function.
-   2. Write a part yourself. Go into the respective branch of the session, e.g. css-basics, and work
-      on the topic that needs to be done next. Create a PR when finished and wait for a review.
-      Include changes and merge afterwards, but _do not delete the branch_.
+   one from the "Ready for Work" column). <br /> You have three options here:
+   1. `Review a session` (session guide, handout, and challenges).
+      1. For this, go to the linked Pull Request and review the text. Add changes with the
+         `suggest changes` function.
+   2. If you are short of time, `review a challenge in web-exercises`.
+      1. Go to the linked Pull Request and look for a linked PR in neuefische/web-exercises.
+      2. If necessary, plesae link both PRs via a comment.
+      3. As soon as you are done and left a solution in web-exercises, comment on the new-format-PR
+         to let us know how you've supported us.
+   3. `Write a part yourself`.
+      1. Ask the team how you can support.
+      2. Go into the respective branch of the session, e.g. css-basics, and work on the topic that
+         needs to be done next.
+      3. When you are finished, commit and push your changes.
 3. Assign yourself to the ticket.
 4. Once you are done with the task, unassign yourself and put the ticket into the next column to the
-   right. We always write the handout first, then create the challenges and finally write the
-   session guide.
-
-> Context: When a ticket is in a "In progress" column, but it has no assignee, it is a To-Do, so it
-> not really "in progress", but it is supposed to be, so go get it tiger 🐯
+   right. We always write the challenges first, then create the session guide and finally create the
+   handout.
 
 > A ticket undergoes the following stages:
 >
-> 1. Write Handout
-> 2. Review Handout
-> 3. Write Challenge (same file as Handout, but on the bottom of the page)
-> 4. Review Challenge
-> 5. Write Session-guide
-> 6. Review Session-guide
+> 1. In Progress: <br /> a) Challenges <br /> b) Session Guide <br /> c) Handout
+> 2. Review
+> 3. Done 🎉
 
-With this workflow we stay on one feature branch per session, it will be merged into main three
-times: after the handout review, after the challenges review and finally after the session guide
-review.
+With this workflow we stay on one feature branch per session, it will be merged into main after the
+final review and adjustments.
 
 <br>
 
