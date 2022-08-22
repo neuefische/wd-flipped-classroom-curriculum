@@ -143,29 +143,29 @@ Sessions are structured not by week - but by days. It does not matter which sess
 which day of the week. This is the recommended order of sessions. Morning sessions should be the
 ones more challenging than afternoon sessions.
 
-| day | morning                      | afternoon                                     | project                                               | guest lecture                                                                                           |
-| --- | ---------------------------- | --------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| 1   | Welcome                      | Github and Markdown                           | profile README                                        | Meet your teammates                                                                                     |
-| 2   | Shell Basics & Setup         | Git CLI & remote & ssh Setup                  | Treasure hunt & Session Notes / Learnings Collection  | Our communication goals                                                                                 |
-| 3   | Git branches & pull requests | HTML Basics and the Web                       | Session Notes / Learnings & Personal Website (part 1) | How to ask good questions                                                                               |
-| 4   | CSS Basics                   | CSS Selectors                                 | TBD Personal Website (part 2) & ...                   | How to work in a group effectively                                                                      |
-| 5   | CSS Flexbox                  | CSS Positioning                               | TBD Personal Website (part 3) & flexbox game.         | How to google fast and smart & A Dev's best friends: MDN & Stackoverflow introduction                   |
-| 6   | `Repetition Project`         | A11y                                          | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     |
-| 7   | JS Basics                    | CSS Structure                                 | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |
-| 8   | JS Variables and Numbers     | CSS Grid                                      | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |
-| 9   | JS Conditions Booleans       | CSS Responsive                                | ...                                                   | Why we love Open Source                                                                                 |
-| 10  | JS Functions                 | JS Functions 2                                | ...                                                   | Design Workshop 1                                                                                       |
-| 11  | HTML Forms                   | JS Inputs and Strings                         | ...                                                   | Design Workshop 2                                                                                       |
-| 12  | JS Callback Functions (neu)  | JS Forms                                      | ...                                                   | Design Workshop 3                                                                                       |
-| 13  | JS createElement             | JS Forms 2                                    | ...                                                   | Design Workshop 3                                                                                       |
-| 14  | `Repetition Project`         | CSS Animations                                | ...                                                   |
-| 15  | JS Objects and Arrays        | JS Loops (neu)                                |                                                       |
-| 16  | JS Array Methods             | npm basics                                    |                                                       |
-| 17  | JS Array Methods 2           | JS Structure                                  |                                                       |
-| 18  | JS Fetch                     | Async Await (neu)                             |                                                       |
-| 19  | Git Advanced                 | ES Next                                       |                                                       |
-| 20  | `Repetition Project`         | Linting Basics & Debugging (with console.log) |                                                       |
-| 21  | JS Unit Testing              | Buffer                                        |                                                       |
+| day | morning                      | afternoon                    | project                                               | guest lecture                                                                                           |
+| --- | ---------------------------- | ---------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| 1   | Welcome                      | Github and Markdown          | profile README                                        | Meet your teammates                                                                                     |
+| 2   | Shell Basics & Setup         | Git CLI & remote & ssh Setup | Treasure hunt & Session Notes / Learnings Collection  | Our communication goals                                                                                 |
+| 3   | Git branches & pull requests | HTML Basics and the Web      | Session Notes / Learnings & Personal Website (part 1) | How to ask good questions                                                                               |
+| 4   | CSS Basics                   | CSS Selectors                | TBD Personal Website (part 2) & ...                   | How to work in a group effectively                                                                      |
+| 5   | CSS Flexbox                  | CSS Positioning              | TBD Personal Website (part 3) & flexbox game.         | How to google fast and smart & A Dev's best friends: MDN & Stackoverflow introduction                   |
+| 6   | `Repetition Project`         | A11y                         | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     |
+| 7   | JS Basics                    | CSS Structure                | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |
+| 8   | JS Variables and Numbers     | CSS Grid                     | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |
+| 9   | JS Conditions Booleans       | CSS Responsive               | ...                                                   | Why we love Open Source                                                                                 |
+| 10  | JS Functions                 | JS Functions 2               | ...                                                   | Design Workshop 1                                                                                       |
+| 11  | HTML Forms                   | JS Inputs and Strings        | ...                                                   | Design Workshop 2                                                                                       |
+| 12  | JS Callback Functions (neu)  | JS Forms                     | ...                                                   | Design Workshop 3                                                                                       |
+| 13  | JS createElement             | JS Forms 2                   | ...                                                   | Design Workshop 3                                                                                       |
+| 14  | `Repetition Project`         | CSS Animations               | ...                                                   |
+| 15  | JS Objects and Arrays        | JS Loops (neu)               |                                                       |
+| 16  | JS Array Methods             | npm and Linting Basics       |                                                       |
+| 17  | JS Array Methods 2           | JS Structure                 |                                                       |
+| 18  | JS Fetch                     | Async Await (neu)            |                                                       |
+| 19  | Git Advanced                 | ES Next                      |                                                       |
+| 20  | `Repetition Project`         | Linting Advanced             |                                                       |
+| 21  | JS Unit Testing              | Buffer                       |                                                       |
 
 The following is unsorted and there for the sole purpose of showing how much time is left to be
 distributed:
