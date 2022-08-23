@@ -105,16 +105,16 @@ final review and adjustments.
 git switch -c my-awesome-session
 ```
 
-3. Create a new session folder based on the session template. Use this script to do this:
+4. Create a new session folder based on the session template. Use this script to do this:
 
 ```
 npm run create-session
 ```
 
-4. Add the results of the meeting to the README.md in bullet form.
-5. Push the new branch to GitHub
-6. Move the ticket to "Read to work" in the board.
-7. Repeat this for each topic you want to prepare.
+5. Add the results of the meeting to the README.md in bullet form.
+6. Push the new branch to GitHub
+7. Move the ticket to "Read to work" in the board.
+8. Repeat this for each topic you want to prepare.
 
 <br>
 
