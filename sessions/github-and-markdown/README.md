@@ -71,8 +71,8 @@
 
 - [ ] `version control system` : a system for managing the files of a project and its different
       versions (i.e. source code, text files, pictures). Two most relevant use cases:
-  - It enables developers to "go back" to earlier versions of the source code. - It facilitates
-    collaboration (sharing / synchronizing different versions of files).
+  - It enables developers to "go back" to earlier versions of the source code.
+  - It facilitates collaboration (sharing / synchronizing different versions of files).
 - [ ] `repository` : a centralized storage for a project with a record of all different versions
       (historisation).
 - [ ] `git` : a version control system that enables developers to create commits and a history of

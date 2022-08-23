@@ -83,7 +83,7 @@ with the remote repository.
 
 ### Part 3
 
-For now on you are able to push your local changes to the remote repository.
+From now on you are able to push your local changes to the remote repository.
 
 1. Create new files, add new content to them, remove content, etc.
 2. **Commit** your changes. (Make multiple commits)
