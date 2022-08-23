@@ -2,8 +2,10 @@
 +------------------+
 |                  |
 |    use ls -la    |
-|   in the sacred  |
-|       room.      |
+|       near       |
+|   the altar in   |
+|    the sacred    |
+|       halls.     |
 |                  |
 +------------------+
 ```
