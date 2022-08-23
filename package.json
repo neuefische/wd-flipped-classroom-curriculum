@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "This is the working progress of the new curriculum of the bootcamp Web Development. <br> This update is aiming to improve the way our students learn. <br>",
   "main": "n.a.",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "create-session": "node scripts/create-session.js",
     "prepare": "husky install"
   },
   "repository": {
@@ -30,5 +32,12 @@
     "*.md": [
       "npx prettier --write"
     ]
+  },
+  "devDependencies": {
+    "branch-name": "^1.0.0",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^9.1.0",
+    "slugify": "^1.6.5",
+    "title-case": "^3.0.3"
   }
 }

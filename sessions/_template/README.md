@@ -1,4 +1,4 @@
-# Session name
+# Session Name
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 

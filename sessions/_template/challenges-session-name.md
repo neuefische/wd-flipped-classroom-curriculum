@@ -1,4 +1,4 @@
-# Challenges: Session-Name
+# Challenges: Session Name
 
 ## Part 1
 

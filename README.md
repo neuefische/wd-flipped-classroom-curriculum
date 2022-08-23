@@ -95,6 +95,27 @@ to keep an eye on.
 With this workflow we stay on one feature branch per session, it will be merged into main after the
 final review and adjustments.
 
+### Making tickets "Ready to work"
+
+1. Find a new topic from the Backlog.
+2. Discuss with a group of coaches how we want to teach the topic.
+3. Create a new branch for the session:
+
+```
+git switch -c my-awesome-session
+```
+
+3. Create a new session folder based on the session template. Use this script to do this:
+
+```
+npm run create-session
+```
+
+4. Add the results of the meeting to the README.md in bullet form.
+5. Push the new branch to GitHub
+6. Move the ticket to "Read to work" in the board.
+7. Repeat this for each topic you want to prepare.
+
 <br>
 
 ## Our goals are:
