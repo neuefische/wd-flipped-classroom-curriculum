@@ -14,15 +14,13 @@ Master one of these two flexbox games:
 
 ## Flexbox Navigation
 
-
 Use this
 [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/navigation?file=/css/styles.css).
-
 
 ## Flexbox Profile
 
 Use this
-[codesandbox](<[codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/profile?file=/css/styles.css)>).
+[codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/profile?file=/css/styles.css).
 
 ## Personal Website
 
