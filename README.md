@@ -171,7 +171,7 @@ ones more challenging than afternoon sessions.
 | 3   | Git branches & pull requests | HTML Basics and the Web      | Session Notes / Learnings & Personal Website (part 1) | How to ask good questions                                                                               |
 | 4   | CSS Basics                   | CSS Selectors                | TBD Personal Website (part 2) & ...                   | How to work in a group effectively                                                                      |
 | 5   | CSS Flexbox                  | CSS Positioning              | TBD Personal Website (part 3) & flexbox game.         | How to google fast and smart & A Dev's best friends: MDN & Stackoverflow introduction                   |
-| 6   | `Repetition Project`         | A11y                         | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     |
+| 6   | **Recap Project 1**          | A11y                         | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Sleep edition)     |
 | 7   | JS Basics                    | CSS Structure                | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Nutrition edition) |
 | 8   | JS Variables and Numbers     | CSS Grid                     | ...                                                   | Habits for sucess: How you can support your body and brain when learning new skills (Movement edition)  |
 | 9   | JS Conditions Booleans       | CSS Responsive               | ...                                                   | Why we love Open Source                                                                                 |
@@ -179,13 +179,13 @@ ones more challenging than afternoon sessions.
 | 11  | HTML Forms                   | JS Inputs and Strings        | ...                                                   | Design Workshop 2                                                                                       |
 | 12  | JS Callback Functions (neu)  | JS Forms                     | ...                                                   | Design Workshop 3                                                                                       |
 | 13  | JS createElement             | JS Forms 2                   | ...                                                   | Design Workshop 3                                                                                       |
-| 14  | `Repetition Project`         | CSS Animations               | ...                                                   |
+| 14  | **Recap Project 2**          | CSS Animations               | ...                                                   |
 | 15  | JS Objects and Arrays        | JS Loops (neu)               |                                                       |
 | 16  | JS Array Methods             | npm and Linting Basics       |                                                       |
 | 17  | JS Array Methods 2           | JS Structure                 |                                                       |
 | 18  | JS Fetch                     | Async Await (neu)            |                                                       |
 | 19  | Git Advanced                 | ES Next                      |                                                       |
-| 20  | `Repetition Project`         | Linting Advanced             |                                                       |
+| 20  | **Recap Project 3**          | Linting Advanced             |                                                       |
 | 21  | JS Unit Testing              | Buffer                       |                                                       |
 
 The following is unsorted and there for the sole purpose of showing how much time is left to be
@@ -197,19 +197,19 @@ distributed:
 | 23  | React props #2                   | React useState and events #1   |
 | 23  | React arrays                     | React useState and events #2   |
 | 24  | React useState and events #3     | React useEffect and fetch      |
-| 25  | React useEffect and localStorage | `Repetition Project`           |
+| 25  | React useEffect and localStorage | **Recap Project 4**            |
 | 26  | React Storybook                  | React Styled Components        |
 | 27  | React Router                     | React PropTypes                |
 | 28  | React Component Testing          | React custom hooks             |
 | 29  | React error handling             | React helpful libraries        |
-| 30  | React global state               | `Large Repetition Project`     |
-| 31  | `Large Repetition Project`       | `Large Repetition Project`     |
+| 30  | React global state               | **Recap Project 4** (large)    |
+| 31  | **Recap Project 4** (large)      | **Recap Project 4** (large)    |
 | 32  | Node basics                      | Node CLIs                      |
 | 33  | Node basics                      | MongoDB basics                 |
 | 34  | Mongoose                         | MongoDB Atlas                  |
 | 35  | Express #1                       | Express #2                     |
 | 36  | Vercel Serverless Functions #1   | Vercel Serverless Functions #2 |
-| 37  | `Repetition Project`             | Buffer                         |
+| 37  | **Recap Project 5**              | Buffer                         |
 | 38  | Buffer                           | Buffer                         |
 | 39  | Capstone Forum / Agile week      | Capstone Forum / Agile week    |
 | 40  | Capstone Forum / Agile week      | Capstone Forum / Agile week    |
