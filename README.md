@@ -191,28 +191,28 @@ ones more challenging than afternoon sessions.
 The following is unsorted and there for the sole purpose of showing how much time is left to be
 distributed:
 
-| day | morning                          | afternoon                      |
-| --- | -------------------------------- | ------------------------------ |
-| 22  | React basics                     | React props #1                 |
-| 23  | React props #2                   | React useState and events #1   |
-| 23  | React arrays                     | React useState and events #2   |
-| 24  | React useState and events #3     | React useEffect and fetch      |
-| 25  | React useEffect and localStorage | **Recap Project 4**            |
-| 26  | React Storybook                  | React Styled Components        |
-| 27  | React Router                     | React PropTypes                |
-| 28  | React Component Testing          | React custom hooks             |
-| 29  | React error handling             | React helpful libraries        |
-| 30  | React global state               | **Recap Project 4** (large)    |
-| 31  | **Recap Project 4** (large)      | **Recap Project 4** (large)    |
-| 32  | Node basics                      | Node CLIs                      |
-| 33  | Node basics                      | MongoDB basics                 |
-| 34  | Mongoose                         | MongoDB Atlas                  |
-| 35  | Express #1                       | Express #2                     |
-| 36  | Vercel Serverless Functions #1   | Vercel Serverless Functions #2 |
-| 37  | **Recap Project 5**              | Buffer                         |
-| 38  | Buffer                           | Buffer                         |
-| 39  | Capstone Forum / Agile week      | Capstone Forum / Agile week    |
-| 40  | Capstone Forum / Agile week      | Capstone Forum / Agile week    |
+| day | morning                          | afternoon                     |
+| --- | -------------------------------- | ----------------------------- |
+| 22  | React basics                     | React props 1                 |
+| 23  | React props 2                    | React useState and events 1   |
+| 23  | React arrays                     | React useState and events 2   |
+| 24  | React useState and events 3      | React useEffect and fetch     |
+| 25  | React useEffect and localStorage | **Recap Project 4**           |
+| 26  | React Storybook                  | React Styled Components       |
+| 27  | React Router                     | React PropTypes               |
+| 28  | React Component Testing          | React custom hooks            |
+| 29  | React error handling             | React helpful libraries       |
+| 30  | React global state               | **Recap Project 4** (large)   |
+| 31  | **Recap Project 4** (large)      | **Recap Project 4** (large)   |
+| 32  | Node basics                      | Node CLIs                     |
+| 33  | Node basics                      | MongoDB basics                |
+| 34  | Mongoose                         | MongoDB Atlas                 |
+| 35  | Express 1                        | Express 2                     |
+| 36  | Vercel Serverless Functions 1    | Vercel Serverless Functions 2 |
+| 37  | **Recap Project 5**              | Buffer                        |
+| 38  | Buffer                           | Buffer                        |
+| 39  | Capstone Forum / Agile week      | Capstone Forum / Agile week   |
+| 40  | Capstone Forum / Agile week      | Capstone Forum / Agile week   |
 
 ## Further Reading
 
