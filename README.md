@@ -185,7 +185,7 @@ ones more challenging than afternoon sessions.
 | 17  | JS Array Methods 2           | JS Structure                 |                                                       |
 | 18  | JS Fetch                     | Async Await (neu)            |                                                       |
 | 19  | Git Advanced                 | ES Next                      |                                                       |
-| 20  | **Recap Project 3**          | Linting Advanced             |                                                       |
+| 20  | Linting Advanced             | **Recap Project 3**          |                                                       |
 | 21  | JS Unit Testing              | Buffer                       |                                                       |
 
 The following is unsorted and there for the sole purpose of showing how much time is left to be
