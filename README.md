@@ -202,14 +202,14 @@ distributed:
 | 27  | React Router                     | React PropTypes               |
 | 28  | React Component Testing          | React custom hooks            |
 | 29  | React error handling             | React helpful libraries       |
-| 30  | React global state               | **Recap Project 4** (large)   |
-| 31  | **Recap Project 4** (large)      | **Recap Project 4** (large)   |
+| 30  | React global state               | **Recap Project 5** (large)   |
+| 31  | **Recap Project 5** (large)      | **Recap Project 5** (large)   |
 | 32  | Node basics                      | Node CLIs                     |
 | 33  | Node basics                      | MongoDB basics                |
 | 34  | Mongoose                         | MongoDB Atlas                 |
 | 35  | Express 1                        | Express 2                     |
 | 36  | Vercel Serverless Functions 1    | Vercel Serverless Functions 2 |
-| 37  | **Recap Project 5**              | Buffer                        |
+| 37  | **Recap Project 6**              | Buffer                        |
 | 38  | Buffer                           | Buffer                        |
 | 39  | Capstone Forum / Agile week      | Capstone Forum / Agile week   |
 | 40  | Capstone Forum / Agile week      | Capstone Forum / Agile week   |
