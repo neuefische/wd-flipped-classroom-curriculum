@@ -49,7 +49,7 @@ after submit as well! This is where JavaScript comes into play:
 
 You can use the following
 [Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms/demo-start?file=/js/index.js)
-to demonstrate the different kinds of positioning.
+to demonstrate the following steps.
 
 You can
 [find the final version here](https://codesandbox.io/s/github/neuefische/web-exercises/main/sessions/js-forms/demo-end?file=/js/index.js).
