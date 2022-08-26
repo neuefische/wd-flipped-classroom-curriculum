@@ -51,6 +51,11 @@ Draft:
 - [ ]
 - [ ]
 
+### Resetting a form
+
+- Use form.reset() to reset a form
+- Use input.focus() or even event.target.elements[0].focus() to focus the first input
+
 ---
 
 ## Process: Challenges

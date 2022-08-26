@@ -4,21 +4,20 @@
 
 | duration | content         |
 | -------- | --------------- |
-| 9:59     | Session         |
-| 9:59     | Active Learning |
-| 9:59     | Recap           |
+| 0:45     | Session         |
+| 1:30     | Active Learning |
+| 0:30     | Recap           |
 
 ## Learning objectives
 
-Draft:
-
-- [ ] students should be able to add names to input fields
-- [ ] students should know what the default behaviour of a form submit is (GET to current document
-      with params: `?name1=value1&name2=value2`)
-- [ ] students should be able to listen for submit events
+- [ ] knowing the default behaviour of form submit
+  - [ ] prevent this behaviour with `.preventDefault()`
+- [ ] listening to submit events
   - learn what `event` and `event.target` is
-  - learn what `preventDefault()` does
-  - reading input values via their names `event.target.elements.inputName.value`
+  - reading input values via their names:
+    - `.elements`
+    - `FormData` / `Object.fromEntries()`
+    - the `name` attribute of a form field
 
 ---
 
@@ -28,9 +27,11 @@ Draft:
 
 ### Which important problem will we solve today?
 
-### Why is the content of today's block that important for the students?
+After building a form with accessible HTML, our job is not done - we want to access the user input
+after submit as well! This is where JavaScript comes into play:
 
-### Pose a question to be answered by the end of the block!
+- How do we handle the default behaviour of our forms?
+- How do we access the data after form submit in order to use it?
 
 ---
 
@@ -38,19 +39,127 @@ Draft:
 
 ### Which previously learned concepts will be utilized in this session?
 
+- HTML Forms
+- JS Functions
+- JS Callback Functions
+
 ---
 
 ## Inform: Session Guide
 
-### Section 1
+You can use the following
+[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms/demo-start?file=/js/index.js)
+to demonstrate the different kinds of positioning.
 
-- [ ]
-- [ ]
+You can
+[find the final version here](https://codesandbox.io/s/github/neuefische/web-exercises/main/sessions/js-forms/demo-end?file=/js/index.js).
 
-### Section 2
+### Handle the Default Behaviour
 
-- [ ]
-- [ ]
+- [ ] Fill in and submit the form to show the default behaviour in the network tab:
+
+- Form tries to send a GET request with names and their values as prop inside a URL like
+  `/?firstName=value1&lastName=value2&...`
+- One _could_ handle this request on the server side, but _we_ don't want to.
+- The page is reloaded => the data is lost for us.
+
+- [ ] Note that we always want to prevent this default (no GET request, no page reload).
+
+### Listening to the submit event
+
+- [ ] Remind the students that we need to query the form first in order to add some interactivity
+      with JS:
+
+```js
+const form = document.querySelector('[data-js="form"]');
+```
+
+- [ ] Add an event listener for the submit event:
+
+- is called on form submit
+- triggers a submit event which provides us with an `event` object
+- the `event` object has a method called `preventDefault()`
+
+- [ ] Use `console.log(event)` to show its methods and properties (especially `preventDefault()` and
+      `.target`).
+
+```js
+form.addEventListener('submit', event => {
+	event.preventDefault();
+
+	console.log(event);
+});
+```
+
+- [ ] Use the network tab again to show that there is no GET request anymore.
+
+### The Event Object and `event.target`
+
+- [ ] Explain the event object:
+
+- is created when an event is triggered
+- we can access it as an argument of our callback function
+- important method: `event.preventDefault()`
+- important property: `event.target`
+
+- [ ] Show that `event.target` is a reference to the entire form:
+
+```js
+form.addEventListener('submit', event => {
+	event.preventDefault();
+
+	console.log(event.target);
+});
+// Output:
+// <form data-js="form">
+//		<fieldset>...</fieldset>
+//		...
+//		<button type="submit">Submit</button>
+//	</form>
+```
+
+### Accessing Interactive Fields: `event.target.elements` and the `name` Attribute
+
+- [ ] Explain the `.elements` property of `event.target`:
+
+- represents a collection of all form controls
+- form controls are accessible via dot notation and the `name` key:
+  - `elements.firstName` returns the input element where attribute `name="firstName"`
+  - `elements.firstName.value` returns only the value of the input element with attribute
+    `name="firstName"`
+- remind students that the `name` attribute is crucial at this point
+- for readability, it's useful to save `event.target.elements` in a variable
+
+```js
+form.addEventListener('submit', event => {
+	event.preventDefault();
+
+	const formElements = event.target.elements;
+
+	console.log(formElements.firstName);
+	console.log(formElements.firstName.value);
+});
+```
+
+### Using Input Values
+
+- [ ] Show how to access the input values with the `FormData`
+
+- [ ] Explain the `FormData` interface:
+
+- `new FormData(event.target)` creates a `FormData` object using the entire form via `event.target`
+- `Object.fromEntries()` transforms the `FormData` object into a usable object
+
+```js
+form.addEventListener('submit', event => {
+	event.preventDefault();
+
+	const formData = new FormData(event.target);
+	const data = Object.fromEntries(formData);
+
+	console.log(data);
+});
+```
 
 ---
 
