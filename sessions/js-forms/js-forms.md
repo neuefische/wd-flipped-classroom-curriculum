@@ -119,8 +119,8 @@ form.addEventListener('submit', event => {
 This is very useful to easily access the input data of an entire form.
 
 > 💡 Despite the fact that using `FormData` is much less verbose, `event.target.elements` is very
-> useful if you want to access single form elements. [Spoiler alert: In case you want to focus a > >
-> > specific field after resetting the form, for example.]
+> useful if you want to access single form elements. (Spoiler alert: In case you want to focus a 
+> specific field after resetting the form, for example.)
 
 ### Exception: Reading Values from Checkboxes
 
