@@ -4,9 +4,9 @@ Javascript Basics
 
 | duration | content         |
 | -------- | --------------- |
-| 9:59     | Session         |
-| 9:59     | Active Learning |
-| 9:59     | Recap           |
+| 1:15     | Session         |
+| 1:15     | Active Learning |
+| 0:15     | Recap           |
 
 ## Learning objectives
 
@@ -149,7 +149,7 @@ Explain that we can listen to other events like `mouseover` or `keydown`.
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](session-name.md) to the students
+- [ ] Provide the [handout](js-basics.md) and [challenges](challenges-js-basics.md) to the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
