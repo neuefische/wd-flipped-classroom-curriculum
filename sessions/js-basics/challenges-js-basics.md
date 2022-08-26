@@ -8,7 +8,7 @@ Practice your knowledge about console methods by solving the tasks in
 ## Fix the errors in a Survey App
 
 When you open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-basics/survey-error-fixing)
+[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-basics/survey-error-fixing?file=/js/index.js)
 you will find a rough draft implementation of a Survey App. The developer made some errors and the
 app has some bugs. Can you fix all errors in the JavaScript Code?
 
