@@ -168,7 +168,7 @@ form.addEventListener('submit', event => {
 - [ ] Provide the [handout](js-forms.md) and the [challenges](challenges-js-forms.md) to the
       students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
+- [ ] Divide the students into groups of 3
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
   - they can ask the coaches for help at any time
@@ -196,6 +196,8 @@ form.addEventListener('submit', event => {
 - [ ] Remind them to rest :)
 
 ## Keywords for Recap:
+
+event.preventDefault(), new FormData(), Object.fromEntries(), event.target.elements
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
