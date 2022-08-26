@@ -76,3 +76,4 @@ Depending on the screen width, the content can align itself, as shown in the fol
 
 - [Flexbox Cheat Sheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [MDN web docs: Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [CSS Battle](https://cssbattle.dev/)
