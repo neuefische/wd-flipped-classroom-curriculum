@@ -3,7 +3,7 @@
 ## Selectors and cascading bugs
 
 Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/sessions/css-structure/selectors-and-cascading?file=/css/styles.css)
+[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading?file=/css/styles.css)
 and have a look at the `styles.css` file.
 
 There are various CSS rule sets with `FIX_ME` as selector. Your task is to replace this placeholder
