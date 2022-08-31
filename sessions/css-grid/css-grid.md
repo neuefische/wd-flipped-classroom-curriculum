@@ -76,6 +76,35 @@ Here is an example:
 
 > ❗️ Positioning properties are set on the child elements, not on the container!
 
+## `grid-template-areas`
+
+A completely different approach to position elements inside a grid is to use `grid-template-areas`.
+
+- First the template cells are grouped into named areas. Every created cell is assigned an **area
+  name**. Cells with the same name are grouped together to one area. This is done on the container
+  element:
+  ```css
+  grid-template-areas:
+  	'a a b c'
+  	'd d d c'
+  	'e e e e';
+  ```
+- Then the grid elements are assigned to one of these areas with the `grid-area` property:
+  ```css
+  .element-a {
+  	grid-area: a;
+  }
+  .element-b {
+  	grid-area: b;
+  }
+  ...
+  ```
+
+This will result in the same layout as shown above.
+
+> ❗️ Make sure that the named areas are geometrically possible in the defined grid, otherwise your
+> grid won't work.
+
 ## Column and Row Alignment
 
 The combined size of the grid columns/rows you defined might be less than a given height/width of
