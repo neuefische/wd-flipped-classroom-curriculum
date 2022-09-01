@@ -64,3 +64,13 @@ is larger than 0.9
 ## Bonus For Loop
 
 a two dimensional array of colors creating an image of a cute dog
+
+## Quiz App Bonus
+
+- Revisit the quiz app
+- There is a form to add a new card
+- As of "recap project 2" the form can only add a single tag to each card
+- Task:
+  - Add possibility to add multiple tags separated by `,`
+  - Split and trim
+  - Loop array an call `createElement()` for each tag
