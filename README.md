@@ -26,7 +26,13 @@ Even with limited time, you can support us very well in this way:
 - `Reviews` are usually the "quickest" task, when you have an hour in between.
 - `Handouts` are usually the most time intensive, because we want them to be as complete as
   possible.
-- `Challenges` are nice tasks when you feel comfortable with a topic or have experience with it.
+- `Challenges` are nice tasks when you feel comfortable with a topic or have experience with it. You
+  can start by using one of the following templates on codesandbox:
+  - [static HTML + CSS](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/templates/static-html-css)
+  - [static HTML + CSS + JS](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/templates/static-html-css-js)
+  - [pure JS](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/templates/javascript)
+  - [React](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/templates/react)
+  - [React + Styled Components](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/templates/styled-components)
 - `Session guides` can in many cases take advantage of existing session material.
   - **Remember:** According to the new format, we want the students to spend more time with active
     learning than with listening to us, so think about which topics can be learned by reading the
