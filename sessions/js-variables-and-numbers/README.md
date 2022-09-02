@@ -217,6 +217,8 @@ console.log(sum);
 
 ## Keywords for Recap:
 
+const, let, boolean, number, string, undefined, null, +=, ++,
+
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
 > [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure

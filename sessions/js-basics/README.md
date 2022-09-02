@@ -180,6 +180,8 @@ Explain that we can listen to other events like `mouseover` or `keydown`.
 
 ## Keywords for Recap:
 
+console, document, event listener, classList.toggle, document.querySelector
+
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
 > [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
