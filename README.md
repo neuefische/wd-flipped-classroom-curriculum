@@ -150,19 +150,21 @@ npm run create-session
 
 ## Daily routine
 
-| duration | time          | content                  |
-| -------- | ------------- | ------------------------ |
-| 0:15     | 9:00 - 9:15   | Student Recap            |
-| 0:45     | 9:15 - 10:00  | Session                  |
-| 1:30     | 10:00 - 11:30 | Active Learning          |
-| 0:30     | 11:30 - 12:00 | Recap                    |
-| 1:00     | 12:00 - 13:00 | Break                    |
-| 0:45     | 13:00 - 13:45 | Guest Lecture            |
-| 0:45     | 13:45 - 14:30 | Breather                 |
-| 0:45     | 14:30 - 15:15 | Session                  |
-| 1:30     | 15:15 - 16:45 | Active Learning          |
-| 0:30     | 16:45 - 17:15 | Recap                    |
-| 2:00     | 17:15 - 19:15 | Independent project time |
+We have a target of 540 teaching minutes (= 9 hours or 12 teaching units (45 min)) per day.
+
+| duration | teaching minutes | time          | content                  |
+| -------- | ---------------- | ------------- | ------------------------ |
+| 0:30     | 30               | 9:00 - 9:30   | Student Recap            |
+| 0:45     | 45               | 9:30 - 10:15  | Session                  |
+| 1:30     | 90               | 10:15 - 11:45 | Active Learning          |
+| 0:30     | 30               | 11:45 - 12:15 | Recap                    |
+| 0:45     | 45               | 12:15 - 13:00 | Guest Lecture / Breather |
+| 1:00     | –                | 13:00 - 14:00 | Break                    |
+| 0:30     | 30               | 14:00 - 14:30 | Recap / Q&A              |
+| 0:45     | 45               | 14:30 - 15:15 | Session                  |
+| 1:30     | 90               | 15:15 - 16:45 | Active Learning          |
+| 0:30     | 30               | 16:45 - 17:15 | Recap                    |
+| 1:45     | 105              | 17:15 - 19:00 | Independent project time |
 
 ## Sessions
 
