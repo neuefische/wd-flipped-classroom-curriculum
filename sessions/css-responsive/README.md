@@ -14,7 +14,7 @@ Recommended schedule for this session:
 
 - [ ] Understanding the concept of responsive design
 - [ ] Understanding why we work mobile first (in design and CSS)
-- [ ] Understanding responsive units
+- [ ] Understanding relative units
 - [ ] Understanding media queries
 
 ---
@@ -30,7 +30,7 @@ need to make sure that our websites are responsive to the size of the screen the
 on. There are also accessibility features than can affect how a website should be displayed, like
 high contrast mode, or reducing animations.
 
-Media queries and responsive units help to accomplish this.
+Media queries and relative units help to accomplish this.
 
 ### Why is the content of today's block that important for the students?
 
@@ -58,8 +58,8 @@ How can we use CSS to react to different features of the medium that our website
 
 ### Responsive Design
 
-- [ ] Open this
-      [static example](https://iujmks.csb.app/) ([source](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/example-static))
+- [ ] Open this [static example](https://iujmks.csb.app/)
+      ([source](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/example-static))
       and show how it behaves on different screen sizes
 - [ ] Explain that this site does not respond to different screen sizes
 - [ ] Open this [responsive example](https://r4djc5.csb.app/)
@@ -69,15 +69,15 @@ How can we use CSS to react to different features of the medium that our website
       being viewed on
 - [ ] It can also mean adapting to other factors like orientation, color scheme, or accessibility
       needs
-- [ ] Explain that it is a design principle that is very imporant as most people use mobile devices to
-      access the web
+- [ ] Explain that it is a design principle that is very important as most people use mobile devices
+      to access the web
 
 ### Responsive Units
 
-- [ ] Explain that responsive units are units that are relative to the size of the screen, the font
+- [ ] Explain that relative units are units that are relative to the size of the screen, the font
       size, or the size of the parent element
-- [ ] Explain that the most common responsive units are `vh`, `vw`, `em`, `rem`, and `%`. The
-      `calc()` function can help combine multiple units and do math
+- [ ] Explain that the most common relative units are `vh`, `vw`, `em`, `rem`, and `%`. The `calc()`
+      function can help combine multiple units and do math
 - [ ] Open the
       [demo on CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/demo-start)
       and go through the different units and explain their behavior.

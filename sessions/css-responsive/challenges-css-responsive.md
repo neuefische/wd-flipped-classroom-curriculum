@@ -2,7 +2,7 @@
 
 ## Part 1: Playground
 
-In this challenge you'll get to play around a bit with some responsive features such as responsive
+In this challenge you'll get to play around a bit with some responsive features such as relative
 units and different types of media queries.
 
 - open this
@@ -13,7 +13,7 @@ units and different types of media queries.
 
 ## Part 2: Responsive Website
 
-This challenges revolves around making a website responsive.
+This challenges revolves around making a website responsive via media queries and breakpoints.
 
 - open this
   [CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/responsive-website)
