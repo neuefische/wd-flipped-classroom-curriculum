@@ -82,8 +82,7 @@ Why do we need another layout algorithm for the web?
   - Use the
     [final result](https://codesandbox.io/s/css-grid-demo-result-y9yt1u?file=/css/styles.css) as
     guide for yourself _or_ use it to show students the result we're working towards (or just show
-    the image):
-  - ![Result](assets/grid-bootcamp-demo-result.png)
+    the image): ![Result](assets/grid-bootcamp-demo-result.png)
 - Start at the bottom of the style sheet.
 - Set `display: grid` on the `.bootcamp-grid` container and explain that nothing much changes
   visually.
@@ -99,7 +98,7 @@ Why do we need another layout algorithm for the web?
   - set it to `20% 20% 20%` → You get **3** columns each 20% (of the container) wide
   - Explain that there is very cool grid specific unit: `1fr` means "evenly divide between all
     `1fr`s"
-  - set it to `1fr 1fr 1fr` → You get **3** columns evenly devided
+  - set it to `1fr 1fr 1fr` → You get **3** columns evenly divided
   - Explain that `fr` unit can do other values than 1, but thats in the handout.
   - set it to `1fr 1fr 1fr 1fr` → That is annoying to type out!
   - set it to `repeat(4, 1fr)` → You get **4** evenly sized columns - way nicer 😮‍💨
@@ -182,7 +181,7 @@ Why do we need another layout algorithm for the web?
 
 ## Process: Challenges
 
-- Provide the [handout](css-grid.md) to the students
+- Provide the [handout](css-grid.md) and [challenges](challenges-css-grid.md) to the students
 - Open the handout and walk the students through the tasks
 - Divide the students into groups of 2
 - Remind them of the ground rules:
