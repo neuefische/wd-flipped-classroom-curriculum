@@ -19,7 +19,19 @@ const sessionFileNames = ['session-name.md', 'challenges-session-name.md', 'READ
 				default:
 					currentBranch === 'main' || !currentBranch
 						? undefined
-						: titleCase(currentBranch.replaceAll('-', ' ')),
+						: titleCase(currentBranch.replaceAll('-', ' '))
+								// fix some common terms
+								.replace(/Js/g, 'JS')
+								.replace(/Es\s/g, 'ES ')
+								.replace(/Css/g, 'CSS')
+								.replace(/Html/g, 'HTML')
+								.replace(/Dom/g, 'DOM')
+								.replace(/Mongodb/g, 'MongoDB')
+								.replace(/Npm/g, 'npm')
+								.replace(/Usestate/g, 'useState')
+								.replace(/Useeffect/g, 'useEffect')
+								.replace(/Github/g, 'GitHub')
+								.replace(/Cli/g, 'CLI'),
 			},
 		]);
 
