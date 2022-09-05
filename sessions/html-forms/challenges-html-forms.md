@@ -3,7 +3,7 @@
 ## Personal Profile Form
 
 Solve this
-[Codesandbox Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/feat/main/sessions/html-forms/personal-profile/personal-profile-form-start?file=/README.md).
+[Codesandbox Challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/html-forms/personal-profile/personal-profile-form-start?file=/README.md).
 
 ## Forms and A11y
 
