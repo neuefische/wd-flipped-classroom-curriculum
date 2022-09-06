@@ -4,9 +4,11 @@
 
 | duration | content         |
 | -------- | --------------- |
-| 9:59     | Session         |
-| 9:59     | Active Learning |
-| 9:59     | Recap           |
+| 0:45     | Session         |
+| 1:30     | Active Learning |
+| 0:30     | Recap           |
+
+_The "Active Learning" portion of the session may require less time._
 
 ## Learning objectives
 
@@ -54,8 +56,8 @@ Give a short overview of the different kind of selectors with one or two example
 
 You can use the following CodeSandbox to demonstrate the different kinds of selectors:
 
-- [demo start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-start?file=/css/styles.css)
-- [demo end](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-end?file=/css/styles.css)
+- [demo start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-start_alternative)
+- [demo end](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-end_alternative)
 
 ### Recap
 
