@@ -1,76 +1,31 @@
 # Challenges: JS Loops
 
-## Part 1
+## For Loop and `console.log`
 
-for
+Solve this
+[CodeSandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/js-loops/for-console?file=/README.md).
 
-log number 0 to 100 into console
+## Star Rating
 
-## Part 2
+Solve this
+[CodeSandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/js-loops/for-stars?file=/README.md).
 
-for
+## Creating a list
 
-for loop that uses create element to create 1 to 5 stars (based on an input)
+Solve this
+[CodeSandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/js-loops/forof-list?file=/README.md).
 
-## Part 3
+## Select and Navigation Bar
 
-for in
+Solve this
+[CodeSandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/js-loops/forin-select-nav?file=/README.md).
 
-```js
-const languages = {
-	DE: 'German',
-	EN: 'English',
-	ES: 'Spanish',
-	FR: 'French',
-	IT: 'Italian',
-	NL: 'Dutch',
-	PT: 'Portuguese',
-	RU: 'Russian',
-	ZH: 'Chinese',
-};
-```
+## `while`
 
-create a select input with all languages as options (keys should be used as values)
+Solve this
+[CodeSandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/js-loops/while-random-number?file=/README.md).
 
-## Part 3.5
+## Bonus Challenge: Nested For Loop
 
-for in
-
-create a navigation bar
-
-```js
-const nav = {
-	home: {href: '/home', text: 'Home'},
-	about: {href: '/about', text: 'About'},
-	contact: {href: '/contact', text: 'Contact'},
-};
-```
-
-## Part 4
-
-for of
-
-```js
-const programmingLanguages = ['JavaScript', 'Python', 'Java', 'C#', 'C++', 'PHP', 'Ruby'];
-```
-
-givin an array of prgamming languages, use createElement to create a list of language tags
-
-# Part 5 while
-
-create a while loop that generates and logs random numbers between 0 and 1 and exits when the number
-is larger than 0.9
-
-## Bonus For Loop
-
-a two dimensional array of colors creating an image of a cute dog
-
-## Quiz App Bonus
-
-- Revisit the quiz app
-- There is a form to add a new card
-- As of "recap project 2" the form can only add a single tag to each card
-- Task:
-  - Add possibility to add multiple tags separated by `,`
-  - Split and trim
-  - Loop array an call `createElement()` for each tag
+Solve this
+[CodeSandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/js-loops/pixels?file=/README.md).
