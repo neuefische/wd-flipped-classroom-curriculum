@@ -39,7 +39,7 @@ You will learn to read string values from inputs as well as manipulating and out
 
 ### Which previously learned concepts will be utilized in this session?
 
-- JS Functions (the string concat part)
+- JS Functions (the string concatenate part)
 - HTML Forms
 - A tiny bit of JS Math
 - Ternary operator (for the bonus)
