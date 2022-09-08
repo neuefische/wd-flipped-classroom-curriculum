@@ -25,7 +25,7 @@ None of them is useful. You can prevent this behavior with a method called `.pre
 
 ---
 
-### Listening to the `submit` event and preventing the Default
+### Listening to the `submit` event and preventing the Default Behavior
 
 In order to prevent this behavior of the `submit` event, you need to
 
@@ -76,9 +76,9 @@ form.addEventListener('submit', event => {
 ### Accessing Interactive Fields: `event.target.elements` and the `name` Attribute
 
 While `event.target` represents the entire form, `event.target.elements` is a collection of all form
-elements.
+elements (form fields, field sets and buttons).
 
-You get access to a specific element via its `name` attribute and dot notation:
+You get access to a specific form field via its `name` attribute and dot notation:
 
 ```js
 form.addEventListener('submit', event => {
@@ -119,7 +119,7 @@ form.addEventListener('submit', event => {
 This is very useful to easily access the input data of an entire form.
 
 > 💡 Despite the fact that using `FormData` is much less verbose, `event.target.elements` is very
-> useful if you want to access single form elements. (Spoiler alert: In case you want to focus a 
+> useful if you want to access single form field. (Spoiler alert: In case you want to focus a
 > specific field after resetting the form, for example.)
 
 ### Exception: Reading Values from Checkboxes

@@ -10,7 +10,7 @@
 
 ## Learning objectives
 
-- [ ] students should be able to create a html form with different types of inputs
+- [ ] students should be able to create a html form with different types of form fields
   - input: text, number, etc.
   - select
   - textarea
@@ -18,7 +18,7 @@
   - radio, checkbox
   - various types of inputs and buttons (definitions found in the handout document)
 - [ ] form structure: fieldset, legend
-- [ ] form inputs have labels (connected via id)
+- [ ] form fields have labels (connected via id)
 - [ ] form semantics
 
 ---
@@ -85,8 +85,8 @@
 <form>
 	<label for="input-name">Name:</label>
 	<input id="input-name" type="text" name="name" />
-	<label for="input-date">Your favourite date:</label>
-	<input id="input-date" type="date" name="favourite-date" />
+	<label for="input-date">Your favorite date:</label>
+	<input id="input-date" type="date" name="favorite-date" />
 	<label for="select-guests">How many friends will join you?</label>
 	<select id="select-guests" name="friends-to-join">
 		<option value="">--Please choose an option--</option>

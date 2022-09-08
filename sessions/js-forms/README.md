@@ -10,8 +10,8 @@
 
 ## Learning objectives
 
-- [ ] knowing the default behaviour of form submit
-  - [ ] prevent this behaviour with `.preventDefault()`
+- [ ] knowing the default behavior of form submit
+  - [ ] prevent this behavior with `.preventDefault()`
 - [ ] listening to submit events
   - learn what `event` and `event.target` is
   - reading input values via their names:
@@ -30,7 +30,7 @@
 After building a form with accessible HTML, our job is not done - we want to access the user input
 after submit as well! This is where JavaScript comes into play:
 
-- How do we handle the default behaviour of our forms?
+- How do we handle the default behavior of our forms?
 - How do we access the data after form submit in order to use it?
 
 ---
@@ -54,9 +54,9 @@ to demonstrate the following steps.
 You can
 [find the final version here](https://codesandbox.io/s/github/neuefische/web-exercises/main/sessions/js-forms/demo-end?file=/js/index.js).
 
-### Handle the Default Behaviour
+### Handle the Default Behavior
 
-- [ ] Fill in and submit the form to show the default behaviour in the network tab:
+- [ ] Fill in and submit the form to show the default behavior in the network tab:
 
 - Form tries to send a GET request with names and their values as prop inside a URL like
   `/?firstName=value1&lastName=value2&...`
@@ -124,8 +124,8 @@ form.addEventListener('submit', event => {
 
 - represents a collection of all form controls
 - form controls are accessible via dot notation and the `name` key:
-  - `elements.firstName` returns the input element where attribute `name="firstName"`
-  - `elements.firstName.value` returns only the value of the input element with attribute
+  - `elements.firstName` returns the form field where attribute `name="firstName"`
+  - `elements.firstName.value` returns only the value of the form field with attribute
     `name="firstName"`
 - remind students that the `name` attribute is crucial at this point
 - for readability, it's useful to save `event.target.elements` in a variable
@@ -143,7 +143,7 @@ form.addEventListener('submit', event => {
 
 ### Using Input Values
 
-- [ ] Show how to access the input values with the `FormData`
+- [ ] Show how to access all input values with the `FormData`
 
 - [ ] Explain the `FormData` interface:
 

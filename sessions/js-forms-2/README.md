@@ -4,20 +4,16 @@
 
 | duration | content         |
 | -------- | --------------- |
-| 9:59     | Session         |
-| 9:59     | Active Learning |
-| 9:59     | Recap           |
+| 0:45     | Session         |
+| 1:30     | Active Learning |
+| 0:30     | Recap           |
 
 ## Learning objectives
 
-Draft:
-
-- [ ] students should know about html form validation (required, min, max, mail, etc.)
-- [ ] students should know about the `"input"` event
-  - control input value: e.g. slugify on input or uppercase on input
-  - build a live calculation of two inputs alá inputA `*` inputB
-- [ ] they should know how to focus inputs programatically
-- [ ] they should know how to reset the form programatically
+- [ ] understanding client-side form validation
+- [ ] understanding the input event
+- [ ] know how to focus inputs programmatically
+- [ ] know how to reset the form programmatically
 
 ---
 
@@ -25,11 +21,17 @@ Draft:
 
 > 💡 Breathe and relax :)
 
-### Which important problem will we solve today?
-
 ### Why is the content of today's block that important for the students?
 
+Forms are a crucial element of user interaction with a modern web application. As developers we
+should make efforts to improve the user experience by providing forms with useful support for users.
+
+The includes verifying the entered data, reacting to inputs and defining the behavior after a form
+was submitted.
+
 ### Pose a question to be answered by the end of the block!
+
+How can we guide the user to enter valid data into a form?
 
 ---
 
@@ -37,24 +39,79 @@ Draft:
 
 ### Which previously learned concepts will be utilized in this session?
 
+- HTML Forms
+- JS Functions
+- JS Callback Functions
+- JS Forms 1
+
 ---
 
 ## Inform: Session Guide
 
-### Section 1
+- During the session, show an example of how to apply the topics to an example form. You can use
+  this demo:
+- starter code:
+  [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/demo-start?file=/index.html)
+- final code:
+  [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/demo-end?file=/index.html)
 
-- [ ]
-- [ ]
+### HTML Form Validation
 
-### Section 2
+- [ ] Explain the idea of form validation
+  - Search for errors or inconsistency in the input data
+  - Before the data gets processed
+  - Provides a direct feedback for users to improve user experience
+  - Avoid errors in the app logic
+- [ ] Show and introduce the demo app
+- [ ] Show errors in the demo that occur after submitting an empty form without validation
+- [ ] Explain the concept of form validation
+  - Form fields can be enriched with various attributes
+  - The attributes define rules for the expected input
+  - The browser read this attributes and validates the user's input
+  - The validation must be successful to trigger the `submit` event
+- [ ] Explain the concept of fields marked with `required`
+  - A form cannot be submitted, when field is left empty
+  - Add the `required` attribute to fields in demo
+  - Show the error message displayed by the browser if a required field is empty on form submit
+  - Show that the submit works if required field is not empty
+- [ ] Explain the concept of validation by `type`
+  - Browsers can check data based on the `type` attribute (e.g. `email`, `number`)
+  - Add the attribute `type="email"` to a field in the demo
+  - Show the error message displayed by the browser if the input data doesn't match the email syntax
+  - Show that the submit works if a valid email address is entered (like "your@mail.xyz")
+- [ ] Explain the concept of an additional validation attribute (like `minlength`)
+  - Add the attribute to the field in the demo
+  - Show the error message displayed by the browser, if the defined criteria is not met
+  - Show that the submit works if the criteria is met
 
-- [ ]
-- [ ]
+### Input Event
+
+- [ ] Explain the `input` event
+  - Is triggered with every keystroke in a field
+  - Useful if you want to process every update of input data for a specific field
+- [ ] Show an example for the `input` event in the demo
+  - Demonstrate with `console.log()` that the event is triggered with every keystroke
+  - Implement a useful example for the `input` event in the demo to give some context:
+
+```js
+passwordInput.addEventListener('input', event => {
+	updatePasswordStrength(event.target.value);
+});
+```
 
 ### Resetting a form
 
-- Use form.reset() to reset a form
-- Use input.focus() or even event.target.elements[0].focus() to focus the first input
+- [ ] Explain why it is a good idea to reset a form
+  - After the form was submitted successfully and the data was processed
+  - Reset the form so that a new set of data can be entered
+- [ ] Show an example of a form reset in the demo
+  - Add `form.reset()` at the end of the submit handler function
+- [ ] Explain why it is a good idea to focus the a field
+  - Users are enabled to enter multiple set of data one after the other
+  - Focussing the field after submit improves the user experience (hands can stay at the keyboard)
+  - Give a common example: e.g. message input for a chat app
+- [ ] Show an example in the demo app
+  - Use `input.focus()` or `even event.target.elements[0].focus()` to focus the first input
 
 ---
 
@@ -63,7 +120,7 @@ Draft:
 - [ ] Provide the [handout](js-forms-2.md) and the [challenges](challenges-js-forms-2.md) to the
       students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
+- [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
   - they can ask the coaches for help at any time
@@ -91,6 +148,8 @@ Draft:
 - [ ] Remind them to rest :)
 
 ## Keywords for Recap:
+
+validation, required, input event, form.reset(), input.focus(),
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

@@ -172,8 +172,8 @@ You can target specific color schemes with the `prefers-color-scheme` media feat
 
 ### Reduced Motion
 
-You can target users who are sensitive to animations and movement (and set up their system accordingly)
-with the `prefers-reduced-motion` media feature.
+You can target users who are sensitive to animations and movement (and set up their system
+accordingly) with the `prefers-reduced-motion` media feature.
 
 ```css
 @media (prefers-reduced-motion: reduce) {
