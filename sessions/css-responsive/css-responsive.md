@@ -193,7 +193,7 @@ accordingly) with the `prefers-reduced-motion` media feature.
 You can target users who prefer a higher contrast with the `prefers-contrast` media feature.
 
 ```css
-@media (prefers-contrast: high) {
+@media (prefers-contrast: more) {
 	/* CSS rules that are only applied when the user prefers a higher contrast */
 }
 ```
