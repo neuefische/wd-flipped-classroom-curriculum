@@ -140,7 +140,7 @@ You can use this demo to explain the topic:
 
 ## Keywords for Recap:
 
-Callback, Higher Order Function, Event
+Callback, Higher Order Function,
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

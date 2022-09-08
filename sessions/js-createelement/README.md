@@ -147,6 +147,8 @@ How can we write JavaScript code that generates parts of our webpage for us?
 
 ## Keywords for Recap:
 
+createElement, append, innerHTML, textContent
+
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
 > [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
