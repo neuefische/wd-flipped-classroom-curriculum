@@ -29,10 +29,14 @@ the size of their parent element.
 
 - `vh` (viewport height): 1vh is 1% of the viewport height
 - `vw` (viewport width): 1vw is 1% of the viewport width
-- `em`: 1em is the current font size
+- `em`: 1em is the font size of the current element
 - `rem`: 1rem is the font size of the root element
-- `%`: 1% is 1% of the size of the parent element (this is calculated for width and height
-  separately)
+- `%`: is relative to the related property of the parent or current element - every property has
+  it's own rules what it is relative to:
+  - `width: 1%` is set relative to the parents element width
+  - `padding-top: 10%` means 10% of the parents height
+  - `font-size: 50%` means half as big as the parent font-size
+  - `transform: translateX(50%)` means translate on the x axis by 50% of the current elements width
 - `calc()`: allows you to combine multiple units and do math
   - e.g. `calc(100vh - 100px)`
   - or `calc(50% - 10rem)`
@@ -214,6 +218,17 @@ You can combine multiple media features with `and`.
 }
 ```
 
+### Testing for multiple Media Features
+
+You can use a comma-separated list to apply styles when the user's device matches any one of various
+media types using `,`
+
+```css
+@media (min-width: 600px), (orientation: portrait) {
+	/* CSS rules that are only applied when the screen is either at least 680px high or in portrait orientation */
+}
+```
+
 ### Simulating Media Features
 
 You can simulate media features in the browser devtools. For example, you can change your screen
@@ -224,16 +239,16 @@ size in the devtools by clicking the device icon in the top left corner of the d
 When using `min-width` media queries it can be helpful to use common breakpoints.
 
 - no media query (default): extra-small, xs, mobile
-- `(min-width: 640px)`: small, sm, large mobile
-- `(min-width: 768px)`: medium, md, tablet
-- `(min-width: 1024px)`: large, lg, desktop
-- `(min-width: 1280px)`: extra-large, xl, large desktop
-- `(min-width: 1536px)`: extra-extra-large, 2xl, very large desktop
+- `(min-width: 600px)`: small, sm, large mobile
+- `(min-width: 900px)`: medium, md, tablet
+- `(min-width: 1200px)`: large, lg, desktop
+- `(min-width: 1536px)`: extra-large, xl, large desktop
 
 > 💡 These breakpoints are based on the
-> [Tailwind CSS breakpoints](https://tailwindcss.com/docs/breakpoints). Other frameworks and
+> [MUI breakpoints](https://mui.com/material-ui/customization/breakpoints/). Other frameworks and
 > projects might define a completely different set of breakpoints. Mostly they are defined to be
-> between the most common screen sizes.
+> between the most common screen sizes. Another example for common breakpoints are
+> [the ones from Tailwind CSS](https://tailwindcss.com/docs/breakpoints).
 
 🪄 **Pro Tip**: You can use media queries to redefine the values of CSS custom properties. This way
 you can use the property as a value that dynamically changes based on the media query.
@@ -243,13 +258,13 @@ you can use the property as a value that dynamically changes based on the media 
 	--font-size: 12px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 600px) {
 	:root {
 		--font-size: 16px;
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 	:root {
 		--font-size: 20px;
 	}
@@ -274,8 +289,8 @@ The `img` element is required, so that there is always a fallback.
 
 ```html
 <picture>
-	<source media="(min-width: 1280px)" srcset="https://source.unsplash.com/random/1400x1050" />
-	<source media="(min-width: 768px)" srcset="https://source.unsplash.com/random/800x600" />
+	<source media="(min-width: 1200px)" srcset="https://source.unsplash.com/random/1400x1050" />
+	<source media="(min-width: 900px)" srcset="https://source.unsplash.com/random/800x600" />
 	<img src="https://source.unsplash.com/random/400x300" alt="" />
 </picture>
 ```
@@ -287,6 +302,7 @@ The `img` element is required, so that there is always a fallback.
 
 ## Resources
 
+- [Using Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
 - [Responsive Design on mdn](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 - [Responsive Web Design Basics on web.dev](https://web.dev/responsive-web-design-basics/)
 - [Values and Units on mdn](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
