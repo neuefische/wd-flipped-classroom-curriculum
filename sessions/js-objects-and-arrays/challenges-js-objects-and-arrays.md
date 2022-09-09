@@ -18,5 +18,5 @@ and read the instructions given in the `README.md` file.
 ## Challenge 3: Objects and Arrays
 
 Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays-and-objects?file=/md/README.md)
+[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays?file=/md/README.md)
 and read the instructions given in the `README.md` file.
