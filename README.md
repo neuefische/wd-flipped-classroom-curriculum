@@ -105,6 +105,9 @@ final review and adjustments.
 
 1. Find a new topic from the Backlog.
 2. Discuss with a group of coaches how we want to teach the topic.
+
+> 💡 There is an [issue in web-exercises that has unmerged but already prepared exercises](https://github.com/neuefische/web-exercises/issues/102). Always check there if we can use an of those challenges.
+
 3. Create a new branch for the session:
 
 ```
