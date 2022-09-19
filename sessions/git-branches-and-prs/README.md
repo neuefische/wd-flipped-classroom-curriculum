@@ -62,8 +62,8 @@
       new label for the current commit
 - [ ] show how to create a new branch
 
-  - [ ] `git branch <branch name>` / `git switch -c <branch name>`
-  - [ ] `git checkout <branch name>` / `git switch <branch name>`
+  - [ ] `git switch -c <branch name>`
+  - [ ] `git switch <branch name>`
 
 - [ ] create some commits on the feature branch
 - [ ] show how you can now switch between different versions of the code by switching branches
