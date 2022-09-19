@@ -74,7 +74,7 @@ The data entered into the form by users should be used to create a new question,
 displayed as a **card** like the other questions.
 
 - Listen the form's `submit` event
-- Prevent the default submit behavior to handle everything within Javascript
+- Prevent the default submit behavior to handle everything within JavaScript
 - Read all entered data from the input fields (question, answer, tags)
 - Generate all DOM element for a **card** with `createElement()`
 - Insert the form's data as text into the DOM elements

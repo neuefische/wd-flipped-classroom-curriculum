@@ -79,7 +79,7 @@ of a variable determines where it is accessible (visible). There are 3 types of 
 - block scope
 - function scope / local scope
 
-A variable has `global scope` when it is declared outside of any function, in a Javascript file.
+A variable has `global scope` when it is declared outside of any function, in a JavaScript file.
 Global variables are visible and can be accessed from anywhere in a program.
 
 The `block scope` applies to a variable when you wrap your code in curly brackets. Variables

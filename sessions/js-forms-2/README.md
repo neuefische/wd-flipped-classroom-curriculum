@@ -41,7 +41,6 @@ How can we guide the user to enter valid data into a form?
 
 - HTML Forms
 - JS Functions
-- JS Callback Functions
 - JS Forms 1
 
 ---

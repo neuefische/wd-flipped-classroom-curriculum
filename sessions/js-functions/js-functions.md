@@ -11,8 +11,8 @@
 
 ## Functions
 
-Functions are a fundamental concept in Javascript. They contain a set of statements - in other
-words: They contain Javascript code. Functions have to be defined. When a function is defined it can
+Functions are a fundamental concept in JavaScript. They contain a set of statements - in other
+words: They contain JavaScript code. Functions have to be defined. When a function is defined it can
 be called an arbitrary number of times.
 
 ---
@@ -23,7 +23,7 @@ You can define a function using a **function declaration** which consists of:
 
 - the function keyword
 - the function name
-- the function body (Javascript statements / Javascript code)
+- the function body (JavaScript statements / JavaScript code)
 
 ```js
 function greet() {
@@ -32,7 +32,7 @@ function greet() {
 }
 ```
 
-> ❗️ Defining a function does not cause the Javascript code in the function body to be executed.
+> ❗️ Defining a function does not cause the JavaScript code in the function body to be executed.
 > You have to call the function for the code to be executed.
 
 ### Parameters
@@ -89,7 +89,7 @@ The sum of your numbers is: 12
 
 ## Scope
 
-The scope defines where variables are visible and where they can be referenced. In Javascript there
+The scope defines where variables are visible and where they can be referenced. In JavaScript there
 are different kinds of scope, for example:
 
 - global scope
@@ -120,8 +120,8 @@ console.log(localVariable); // Error! Variable not available outside of function
 
 ### Global scope
 
-A variable is in the **global scope** when it is declared outside of any function, in a Javascript
-file. Global variables are visible and can be accessed from anywhere in that Javascript file after
+A variable is in the **global scope** when it is declared outside of any function, in a JavaScript
+file. Global variables are visible and can be accessed from anywhere in that JavaScript file after
 declaration.
 
 ---

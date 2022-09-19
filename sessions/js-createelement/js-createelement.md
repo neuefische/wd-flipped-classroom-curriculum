@@ -18,7 +18,7 @@ your JavaScript file can access and manipulate the HTML website by changing the 
 
 ## `document.createElement`
 
-You can generate an HTML element with Javascript by using the `document.createElement` method. It
+You can generate an HTML element with JavaScript by using the `document.createElement` method. It
 expects the type of element as an argument.
 
 ```js

@@ -64,8 +64,9 @@ You can use this demo to explain the topic:
 ### Section 1: Callback functions and button click events
 
 - [ ] Explain the concept of callback functions
-  - A function that is passed `as an argument` into another function.
-- [ ] Show callback functions in a known context: button event handlers
+  - A function that is passed `as an argument` into another function
+- [ ] Show callback functions in a known context: event handlers
+  - We have seen that many times already
 - [ ] Show an anonymous function as callback
 - [ ] Show a named function as callback
 

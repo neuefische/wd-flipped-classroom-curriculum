@@ -39,7 +39,7 @@ saved afterwards.
 
 ## Primitive Data Types
 
-Javascript is a dynamically typed language, which means, that you don't have to specify what kind of
+JavaScript is a dynamically typed language, which means, that you don't have to specify what kind of
 value you want to store, JavaScript detects this automatically.
 
 There are 7 primitive data types:
@@ -123,7 +123,7 @@ increasing a variable by a fixed value.
 
 ## Type Conversion
 
-When you use an operator with a variable with an unfitting type, javascript will automatically
+When you use an operator with a variable with an unfitting type, JavaScript will automatically
 convert this variable into a fitting type. For example:
 
 ```js

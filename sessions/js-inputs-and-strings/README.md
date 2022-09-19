@@ -41,7 +41,7 @@ You will learn to read string values from inputs as well as manipulating and out
 
 - JS Functions (the string concatenate part)
 - HTML Forms
-- A tiny bit of JS Math
+- A tiny bit of JavaScript Math
 - Ternary operator (for the bonus)
 
 ---

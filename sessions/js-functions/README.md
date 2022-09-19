@@ -38,7 +38,7 @@
 
 ### Which previously learned concepts will be utilized in this session?
 
-- We will use all prior Javascript knowledge.
+- We will use all prior JavaScript knowledge.
 - We will talk about variables in the context of functions specifically
 
 ---
@@ -48,7 +48,7 @@
 ### Functions
 
 - Ask students whether they have an idea what a function is
-- Explain functions: They contain a set of statements - in other words: They contain Javascript code
+- Explain functions: They contain a set of statements - in other words: They contain JavaScript code
   to be executed when the function is called.
 - Functions have to be defined and called.
 - Explain functions as **reusable code packages**. Possible analogy: A function is like a recipe.
@@ -70,9 +70,9 @@ Explain that the function declaration consists of:
 
 - the function keyword
 - the function name
-- the function body (Javascript statements / Javascript code)
+- the function body (JavaScript statements / JavaScript code)
 
-Explain that you can write any Javascript statement in a function body (e.g. declaring variables):
+Explain that you can write any JavaScript statement in a function body (e.g. declaring variables):
 
 ```js
 function printPersonalData() {
@@ -130,7 +130,7 @@ printSum(3, 4, 5);
 ### Scope
 
 - Explain that scope defines where variables are visible and where they can be referenced.
-- Explain that there are different kinds of scopes in Javascript and that there are two scopes which
+- Explain that there are different kinds of scopes in JavaScript and that there are two scopes which
   are most important for us:
 
   - Function scope
@@ -139,7 +139,7 @@ printSum(3, 4, 5);
 - Function scope: Explain that the variables defined inside a function can not be referenced from
   outside the function. Explain that parameters behave in the same way.
 - Global scope: Explain that variables defined outside of a function (or Block) are visible (can be
-  referenced) from anywhere in the same Javascript file after the definition.
+  referenced) from anywhere in the same JavaScript file after the definition.
 - Show an example to make the two concepts clear:
 
 ```js

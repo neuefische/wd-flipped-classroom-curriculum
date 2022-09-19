@@ -79,7 +79,7 @@ console.log(myMutableNumber);
 
 ### Primitive Data Types
 
-- [ ] In Javascript there are 7 different primitive data types:
+- [ ] In JavaScript there are 7 different primitive data types:
 
 - [ ] **string**: A sequence of characters, for example: `const name="max";`
 - [ ] **number**: A number, for example: `const length=42;` or `const price=4.95;`

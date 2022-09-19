@@ -1,4 +1,4 @@
-Javascript Basics
+JavaScript Basics
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
@@ -25,14 +25,14 @@ Javascript Basics
 ### Which important problem will we solve today?
 
 - Bringing action and dynamics to a website
-- get an idea of the power (and the pitfalls) of Javascript
+- get an idea of the power (and the pitfalls) of JavaScript
 - get an insight on its importance as a fundamental development skill
 
 ### Why is the content of today's block that important for the students?
 
-- Javascript is among the first three most in-demand programming languages, knowledge is mandatory
+- JavaScript is among the first three most in-demand programming languages, knowledge is mandatory
   for fullstack web developers
-- The most used development libraries and frameworks are based on Javascript, from backend to
+- The most used development libraries and frameworks are based on JavaScript, from backend to
   frontend
 
 ---
@@ -49,7 +49,7 @@ Javascript Basics
 
 ## Inform: Session Guide
 
-### Short introduction of what Javascript is (5 min max)
+### Short introduction of what JavaScript is (5 min max)
 
 - Explain why JavaScript is needed: **Makes web pages interactive**
 - Explain **ECMAScript 6**:

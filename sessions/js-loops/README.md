@@ -54,8 +54,8 @@ You can use this demo to explain the topic:
 - [ ] Explain loops in general:
 
   - [ ] offer a quick and easy way to do something repeatedly
-  - [ ] at the very beginning (and NOT in JS), you could only go to a specific line in order to
-        repeat it
+  - [ ] at the very beginning (and NOT in JavaScript), you could only go to a specific line in order
+        to repeat it
         [like in this example picture](https://regmedia.co.uk/2012/04/27/basic2_336x204.png)
 
 - [ ] Loops in JavaScript:

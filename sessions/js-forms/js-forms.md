@@ -21,7 +21,8 @@ writing _any_ JavaScript):
   `/?firstName=value1&lastName=value2&...`.
 - The page is reloaded and thus the data is lost for us.
 
-None of them is useful. You can prevent this behavior with a method called `.preventDefault()`.
+None of that is useful, if we want to do something with the submitted data in our frontend code. You
+can prevent this behavior with a method called `.preventDefault()`.
 
 ---
 
@@ -29,8 +30,7 @@ None of them is useful. You can prevent this behavior with a method called `.pre
 
 In order to prevent this behavior of the `submit` event, you need to
 
-- inside the event listener: receive the event object as the first input parameter to the callback
-  function
+- receive the event object as an argument of the event listener arrow function
 - call `event.preventDefault()`
 
 ```js
@@ -41,8 +41,8 @@ form.addEventListener('submit', event => {
 });
 ```
 
-By calling `event.preventDefault()`, there won't be a GET request nor is the page reloaded on
-submit.
+By calling `event.preventDefault()` the browser will not perform a GET request that would cause the
+page to reload on submit.
 
 ---
 
