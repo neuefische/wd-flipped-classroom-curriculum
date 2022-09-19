@@ -38,14 +38,11 @@ We recommend using hyphens as separators as they make the name more comfortable 
 
 | command                        | functionality                                 |
 | ------------------------------ | --------------------------------------------- |
+| `git switch -c <branchname>`   | create a new branch and switch to it          |
+| `git switch <branchname>`      | switch branches                               |
 | `git branch`                   | list your branches                            |
 | `git branch -a`                | list all branches (local and remote)          |
-| `git branch <branchname>`      | create a new branch                           |
 | `git branch -d <branchname>`   | delete a branch                               |
-| `git switch -c <branchname>`   | create a new branch with the switch command   |
-| `git checkout -b <branchname>` | create a new branch with the checkout command |
-| `git switch <branchname>`      | switch branches                               |
-| `git checkout <branchname>`    | another way to switch branches                |
 
 ## Git Pull Requests
 
@@ -58,7 +55,7 @@ branch.
 
 ### Basic Workflow for a Pull Request
 
-1. Create a new branch with `git branch <branchname>`.
+1. Create a new branch with `git switch -c <branchname>`.
 2. Make changes to the code / write your code fpr the feature.
 3. Push the changes and the new branch with `git push -u origin <branchname>` (after you have done
    this once you can use `git push` for this branch)
