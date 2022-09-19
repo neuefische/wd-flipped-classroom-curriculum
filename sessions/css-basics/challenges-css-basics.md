@@ -1,5 +1,10 @@
 # CSS Basics: Challenges
 
+## Social Card
+
+Solve this
+[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/social-card?file=/README.md)
+
 ## Button styles
 
 Solve this
