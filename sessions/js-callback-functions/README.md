@@ -112,7 +112,7 @@ You can use this demo to explain the topic:
 - [ ] Provide the [handout](js-callback-functions.md) and
       [challenges](challenges-js-callback-functions.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of
+- [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
   - they can ask the coaches for help at any time
@@ -141,7 +141,7 @@ You can use this demo to explain the topic:
 
 ## Keywords for Recap:
 
-Callback, Higher Order Function,
+Callback, Higher Order Function
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

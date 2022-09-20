@@ -48,41 +48,42 @@ You will learn to read string values from inputs as well as manipulating and out
 
 ## Inform: Session Guide
 
-Explain to students that we're about to build a "story generator" that based on user input, will
-output a short story that includes the user input.
+- [ ] Explain to students that we're about to build a "story generator" that based on user input,
+      will output a short story that includes the user input.
 
-Invite students to think about what that would require to create such a program:
+- [ ] Invite students to think about what would be required to create such a program:
 
-- We need a way for the user to input stuff
-- We need a function that is executed to create the story
-- In that function the user input needs to be put into the story
+  - [ ] We need a way for the user to input stuff
+  - [ ] We need a function that is executed to create the story
+  - [ ] In that function the user input needs to be put into the story
 
 Start with
 [this CodeSandbox](https://codesandbox.io/s/js-inputs-and-strings-demo-7rioxt?file=/js/index.js).
-Everything this session will be done within the submit event handler.
+Everything in this session will be done within the submit event handler.
 
-A
-[finished version can be found here](https://codesandbox.io/s/js-inputs-and-strings-demo-final-k2c0ig?file=/js/index.js).
+[A finished version can be found here](https://codesandbox.io/s/js-inputs-and-strings-demo-final-k2c0ig?file=/js/index.js).
 
-Show that we currently log `"Hello, World!"` to the console, when the "Create story" button is
-clicked. Recap the input fields that are present in the example.
+- [ ] Show that we currently log `"Hello, World!"` to the console, when the "Create story" button is
+      clicked.
+- [ ] Recap the input fields that are present in the example.
 
-Explain that `"Hello, World!"` is in fact a string.
+- [ ] Explain that `"Hello, World!"` is in fact a string.
 
-Explain that a string is a `sequence of characters` that is `represented in text` form.
+- [ ] Explain that a string is a `sequence of characters` that is `represented in text` form.
 
-Show that you can use either `""` or `''` to define a string. This is a string literal.
+- [ ] Show that you can use either `""` or `''` to define a string. This is a string literal.
 
-Remove the `console.log`, set `output.textContent = "Hello, World!"` and show that we can
-modifiy/overwrite the text content of HTML elements.
+- [ ] Remove the `console.log`, set `output.textContent = "Hello, World!"` and show that we can
+      modifiy/overwrite the text content of HTML elements.
 
 ### Combining variables and strings
 
-We already know how to combine variables and strings into longer string from the JavaScript
+We already know how to combine variables and strings into a longer string from the JavaScript
 Functions sessions.
 
-Ask students how we'd have to change the code to greet the name from the input field instead of the
-world. You might need to give the hint that we need to access the `.value` property of the input:
+- [ ] Ask students how we'd have to change the code to greet the name from the input field instead
+      of the world.
+  - [ ] You might need to give the hint that we need to access the `.value` property of the input:
 
 ```js
 output.textContent = 'Hello, ' + nameInput.value + '!';
@@ -90,17 +91,17 @@ output.textContent = 'Hello, ' + nameInput.value + '!';
 
 ### Template strings
 
-Explain that there is an even nicer way to interpolate (meaning to put into) values into a string
-using `template strings`.
+- [ ] Explain that there is an even nicer way to interpolate (meaning to put into) values into a
+      string using `template strings`.
 
-Change the code to:
+- [ ] Change the code to:
 
 ```js
 output.textContent = `Hello, ${nameInput.value}!`;
 ```
 
-Explain what `${}` does and that this is still a string literal, specifically a
-`template string literal`.
+- [ ] Explain what `${}` does and that this is still a string literal, specifically a
+      `template string literal`.
 
 > 💡 Show how to type the backtick character "`` ` ``" using <kbd>⇧</kbd><kbd>´</kbd> (next to the
 > backspace key).
@@ -109,10 +110,10 @@ Explain what `${}` does and that this is still a string literal, specifically a
 > arrow (<kbd>◀︎</kbd>). Otherwise macOS sometimes thinks that we're trying to write an accented
 > character like à.
 
-Explain that template literals have one more feature that is different from the other string
-literals: They supports line breaks!
+- [ ] Explain that template literals have one more feature that is different from the other string
+      literals: They supports line breaks!
 
-Copy in the following code and show what it does:
+- [ ] Copy in the following code and show what it does:
 
 ```js
 const story = `
@@ -127,33 +128,36 @@ const story = `
 output.textContent = story;
 ```
 
-Show students that line breaks and double spaces do not show up in the rendered DOM.
+- [ ] Show students that line breaks and double spaces do not show up in the rendered DOM.
 
 ### Template string interpolation
 
-Begin interpolating in the values from the input fields. Assign values to variables before
-interpolating for a cleaner look. Let students help you do this!
+- [ ] Before interpolating, assign values to variables for a cleaner look.
+- [ ] Begin interpolating in the values from the input fields.
 
-- **`<name>`** should be replaced by the value of the name input.
+  > 💡 Let students help you do this!
+
+- [ ] **`<name>`** should be replaced by the value of the name input.
 
   1. add `const name = nameInput.value;`
   2. replace `<name>` with `${name}`
 
-- **`<color>`** should be replaced by the value of the color input.
+- [ ] **`<color>`** should be replaced by the value of the color input.
 
   1. add `const color = colorInput.value;`
   2. replace `<color>` with `${color}`
 
-- **`<hours>`** should be replaced by the value of the hours input.
+- [ ] **`<hours>`** should be replaced by the value of the hours input.
   1. `const hours = hoursInput.value;`
   2. replace `<hours>` with `${hours}`
 
 ### String methods
 
-Now explain that:
+- [ ] Now explain that:
 
-- **`<NAME>`** (the all caps one) should be replaced by the value of the name input but as uppercase
-  letters.
+  - [ ] **`<NAME>`** (the all caps one) should be replaced by the value of the name input but as
+        uppercase letters.
+
   1. explain that strings have properties and methods
   2. open
      [the mdn docs for string instance methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#instance_methods)
@@ -167,7 +171,7 @@ Other properties and methods for strings will be in the handout.
 
 Now for the last one:
 
-- **`<hours + 1>`** should be replaced by values of the hours input plus one.
+- [ ] **`<hours + 1>`** should be replaced by values of the hours input plus one.
 
   1. replace `<hours + 1>` with `${hours + 1}`
   2. show that it breaks (e.g. `"14" + 1` → `"141"`)
@@ -183,12 +187,12 @@ Now for the last one:
 
 ### Correct grammar bonus (if there is time)
 
-If the value of the hours input is `"1"` our text reads: "1 hours".
+- [ ] If the value of the hours input is `"1"` our text reads: "1 hours".
 
-Ask students if they can think of a way to change it to be "1 hour" without also changing it for
-values larger than 1.
+- [ ] Ask students if they can think of a way to change it to be "1 hour" without also changing it
+      for values larger than 1.
 
-The ternary operator might come in handy here.
+> 💡The ternary operator might come in handy here.
 
 ---
 

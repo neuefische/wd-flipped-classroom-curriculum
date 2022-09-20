@@ -106,7 +106,9 @@ final review and adjustments.
 1. Find a new topic from the Backlog.
 2. Discuss with a group of coaches how we want to teach the topic.
 
-> 💡 There is an [issue in web-exercises that has unmerged but already prepared exercises](https://github.com/neuefische/web-exercises/issues/102). Always check there if we can use an of those challenges.
+> 💡 There is an
+> [issue in web-exercises that has unmerged but already prepared exercises](https://github.com/neuefische/web-exercises/issues/102).
+> Always check there if we can use an of those challenges.
 
 3. Create a new branch for the session:
 
@@ -175,29 +177,29 @@ Sessions are structured not by week - but by days. It does not matter which sess
 which day of the week. This is the recommended order of sessions. Morning sessions should be the
 ones more challenging than afternoon sessions.
 
-| day | morning                    | afternoon              |
-| --- | -------------------------- | ---------------------- |
-| 1   | Welcome                    | Github and Markdown    |
-| 2   | Shell Basics               | Git CLI & Remote       |
-| 3   | Git Branches and PRs       | HTML and the Web       |
-| 4   | CSS Basics                 | CSS Selectors          |
-| 5   | CSS Flexbox                | CSS Positioning        |
-| 6   | **Recap Project 1**        | Accessibility          |
-| 7   | JS Basics                  | CSS Structure          |
-| 8   | JS Variables and Numbers   | CSS Grid               |
-| 9   | JS Conditions and Booleans | CSS Responsive         |
-| 10  | JS Functions               | JS Functions 2         |
-| 11  | HTML Forms                 | JS Inputs and Strings  |
-| 12  | JS Objects and Arrays      | JS Forms               |
-| 13  | JS createElement           | JS Forms 2             |
-| 14  | **Recap Project 2**        | CSS Animations         |
-| 15  | JS Loops                   | JS Callback Functions  |
-| 16  | JS Array Methods           | npm and Linting Basics |
-| 17  | JS Structure               | JS Array Methods 2     |
-| 18  | JS Async Functions         | JS Fetch               |
-| 19  | Git Advanced               | JS Modern Syntax       |
-| 20  | Linting Advanced           | **Recap Project 3**    |
-| 21  | JS Unit Testing            | Buffer                 |
+| day | morning                       | afternoon                 |
+| --- | ----------------------------- | ------------------------- |
+| 1   | Welcome ✅                    | Github and Markdown ✅    |
+| 2   | Shell Basics ✅               | Git CLI & Remote ✅       |
+| 3   | Git Branches and PRs ✅       | HTML and the Web ✅       |
+| 4   | CSS Basics ✅                 | CSS Selectors ✅          |
+| 5   | CSS Flexbox ✅                | CSS Positioning ✅        |
+| 6   | **Recap Project 1** ✅        | Accessibility ✅          |
+| 7   | JS Basics ✅                  | CSS Structure ✅          |
+| 8   | JS Variables and Numbers ✅   | CSS Grid ✅               |
+| 9   | JS Conditions and Booleans ✅ | CSS Responsive ✅         |
+| 10  | JS Functions ✅               | JS Functions 2 ✅         |
+| 11  | HTML Forms ✅                 | JS Inputs and Strings ✅  |
+| 12  | JS Objects and Arrays ✅      | JS Forms ✅               |
+| 13  | JS createElement ✅           | JS Forms 2 ✅             |
+| 14  | **Recap Project 2** ✅        | CSS Animations ✅         |
+| 15  | JS Loops ✅                   | JS Callback Functions ✅  |
+| 16  | JS Array Methods              | npm and Linting Basics ✅ |
+| 17  | JS Structure                  | JS Array Methods 2        |
+| 18  | JS Async Functions            | JS Fetch                  |
+| 19  | Git Advanced                  | JS Modern Syntax          |
+| 20  | Linting Advanced              | **Recap Project 3**       |
+| 21  | JS Unit Testing               | Buffer                    |
 
 The following is unsorted and there for the sole purpose of showing how much time is left to be
 distributed:

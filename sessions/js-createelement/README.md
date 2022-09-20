@@ -4,9 +4,9 @@
 
 | duration | content         |
 | -------- | --------------- |
-| 9:59     | Session         |
-| 9:59     | Active Learning |
-| 9:59     | Recap           |
+| 0:45     | Session         |
+| 1:30     | Active Learning |
+| 0:30     | Recap           |
 
 ## Learning objectives
 
@@ -118,7 +118,7 @@ How can we write JavaScript code that generates parts of our webpage for us?
 - [ ] Provide the [handout](js-createelement.md) and the
       [challenges](challenges-js-createelement.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
+- [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
   - they can ask the coaches for help at any time
@@ -147,7 +147,7 @@ How can we write JavaScript code that generates parts of our webpage for us?
 
 ## Keywords for Recap:
 
-createElement, append, innerHTML, textContent
+createElement, append, innerHTML, textContent, classList
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

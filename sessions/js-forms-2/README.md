@@ -57,31 +57,31 @@ How can we guide the user to enter valid data into a form?
 ### HTML Form Validation
 
 - [ ] Explain the idea of form validation
-  - Search for errors or inconsistency in the input data
-  - Before the data gets processed
-  - Provides a direct feedback for users to improve user experience
-  - Avoid errors in the app logic
+  - [ ] Search for errors or inconsistency in the input data **before** the data gets processed
+  - [ ] Provides a direct feedback for users to improve user experience
+  - [ ] Avoid errors in the app logic
 - [ ] Show and introduce the demo app
 - [ ] Show errors in the demo that occur after submitting an empty form without validation
 - [ ] Explain the concept of form validation
-  - Form fields can be enriched with various attributes
-  - The attributes define rules for the expected input
-  - The browser read this attributes and validates the user's input
-  - The validation must be successful to trigger the `submit` event
+  - [ ] Form fields can be enriched with various attributes
+  - [ ] The attributes define rules for the expected input
+  - [ ] The browser read this attributes and validates the user's input
+  - [ ] The validation must be successful to trigger the `submit` event
 - [ ] Explain the concept of fields marked with `required`
-  - A form cannot be submitted, when field is left empty
-  - Add the `required` attribute to fields in demo
-  - Show the error message displayed by the browser if a required field is empty on form submit
-  - Show that the submit works if required field is not empty
+  - [ ] A form cannot be submitted, when field is left empty
+  - [ ] Add the `required` attribute to fields in demo
+  - [ ] Show the error message displayed by the browser if a required field is empty on form submit
+  - [ ] Show that the submit works if required field is not empty
 - [ ] Explain the concept of validation by `type`
-  - Browsers can check data based on the `type` attribute (e.g. `email`, `number`)
-  - Add the attribute `type="email"` to a field in the demo
-  - Show the error message displayed by the browser if the input data doesn't match the email syntax
-  - Show that the submit works if a valid email address is entered (like "your@mail.xyz")
+  - [ ] Browsers can check data based on the `type` attribute (e.g. `email`, `number`)
+  - [ ] Add the attribute `type="email"` to a field in the demo
+  - [ ] Show the error message displayed by the browser if the input data doesn't match the email
+        syntax
+  - [ ] Show that the submit works if a valid email address is entered (like "your@mail.xyz")
 - [ ] Explain the concept of an additional validation attribute (like `minlength`)
-  - Add the attribute to the field in the demo
-  - Show the error message displayed by the browser, if the defined criteria is not met
-  - Show that the submit works if the criteria is met
+  - [ ] Add the attribute to the field in the demo
+  - [ ] Show the error message displayed by the browser, if the defined criteria is not met
+  - [ ] Show that the submit works if the criteria is met
 
 ### Input Event
 
@@ -101,16 +101,17 @@ passwordInput.addEventListener('input', event => {
 ### Resetting a form
 
 - [ ] Explain why it is a good idea to reset a form
-  - After the form was submitted successfully and the data was processed
-  - Reset the form so that a new set of data can be entered
+  - [ ] After the form was submitted successfully and the data was processed
+  - [ ] Reset the form so that a new set of data can be entered
 - [ ] Show an example of a form reset in the demo
   - Add `form.reset()` at the end of the submit handler function
 - [ ] Explain why it is a good idea to focus the a field
-  - Users are enabled to enter multiple set of data one after the other
-  - Focussing the field after submit improves the user experience (hands can stay at the keyboard)
-  - Give a common example: e.g. message input for a chat app
+  - [ ] Users are enabled to enter multiple set of data one after the other
+  - [ ] Focussing the field after submit improves the user experience (hands can stay at the
+        keyboard)
+  - [ ] Give a common example: e.g. message input for a chat app
 - [ ] Show an example in the demo app
-  - Use `input.focus()` or `even event.target.elements[0].focus()` to focus the first input
+  - [ ] Use `input.focus()` or `even event.target.elements[0].focus()` to focus the first input
 
 ---
 

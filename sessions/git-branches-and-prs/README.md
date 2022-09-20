@@ -4,9 +4,9 @@
 
 | duration | content         |
 | -------- | --------------- |
-| 9:59     | Session         |
-| 9:59     | Active Learning |
-| 9:59     | Recap           |
+| 1:00     | Session         |
+| 1:15     | Active Learning |
+| 0:30     | Recap           |
 
 ## Learning objectives
 
