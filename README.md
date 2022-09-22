@@ -194,7 +194,7 @@ ones more challenging than afternoon sessions.
 | 13  | JS createElement ✅           | JS Forms 2 ✅             |
 | 14  | **Recap Project 2** ✅        | CSS Animations ✅         |
 | 15  | JS Loops ✅                   | JS Callback Functions ✅  |
-| 16  | JS Array Methods              | npm and Linting Basics ✅ |
+| 16  | JS Array Methods ✅           | npm and Linting Basics ✅ |
 | 17  | JS Structure ✅               | JS Array Methods 2        |
 | 18  | JS Async Functions            | JS Fetch                  |
 | 19  | Git Advanced                  | JS Modern Syntax          |
