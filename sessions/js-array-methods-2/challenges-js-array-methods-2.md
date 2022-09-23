@@ -3,14 +3,14 @@
 ## Array of Animal Strings
 
 Solve this
-[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/feat/js-array-methods-2/animal-strings-challenge/sessions/js-array-methods-2/animal-strings?file=/README.md).
+[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/main/sessions/js-array-methods-2/animal-strings?file=/README.md).
 
 ---
 
 ## Array of Animal Objects
 
 Solve this
-[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/feat/js-array-methods-2/animal-objects-challenge/sessions/js-array-methods-2/animal-objects?file=/README.md).
+[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/main/sessions/js-array-methods-2/animal-objects?file=/README.md).
 
 ---
 
@@ -24,4 +24,4 @@ Solve this
 ## Fun with Flags
 
 Solve this
-[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/feat/js-array-methods-2/flags/sessions/js-array-methods-2/fun-with-flags?file=/README.md).
+[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/main/sessions/js-array-methods-2/fun-with-flags?file=/README.md).
