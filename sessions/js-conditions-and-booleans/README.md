@@ -23,7 +23,7 @@
 
 ### Which important problem will we solve today?
 
-Most of the time when programming you want do to different things, depending on some kind of
+Most of the time when programming you want to do different things, depending on some kind of
 condition. In this session we will learn how to do that in JavaScript.
 
 ### Why is the content of today's block that important for the students?
@@ -181,7 +181,7 @@ Two very important operators are `equals to` and it's counterpart `not equals to
 they are written as `===` and `!==` respectively. (It is not necessary to explain strict vs.
 non-strict equality here. There is a brief explanation in the handout.)
 
-If we were to say the the kid only helped if it cleaned `exactly 3` dishes we could write:
+If we were to say that the kid only helped if it cleaned `exactly 3` dishes we could write:
 
 ```js
 let carrots = 2;
