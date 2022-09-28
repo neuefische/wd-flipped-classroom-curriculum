@@ -174,7 +174,7 @@ console.log(sum);
   price++;
   console.log(price); // will log 9
   ```
-- [ ] `++`: Decrements the value of the variable by 1
+- [ ] `--`: Decrements the value of the variable by 1
   ```js
   let price = 8;
   price--;
