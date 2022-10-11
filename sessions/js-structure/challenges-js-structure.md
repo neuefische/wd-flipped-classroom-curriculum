@@ -9,4 +9,4 @@ and launch the rocket! 🚀
 ## Quiz App
 
 Solve this
-[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/feat/js-structure-quiz-app/sessions/js-structure/quiz-app?file=/README.md).
+[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-structure/quiz-app?file=/README.md).
