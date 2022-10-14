@@ -201,7 +201,7 @@ ones more challenging than afternoon sessions.
 | 20  | JS Unit Testing                 | _Buffer_                  |
 | 21  | **Recap Project 3**             | **Recap Project 3**       |
 | 22  | React Basics                    | React Props               |
-| 23  | React Props 2                   | React State               |
+| 23  | React Nesting                   | React State               |
 | 24  | React with Arrays               | React State 2             |
 | 25  | React State 3                   | React Effects and fetch   |
 | 26  | React Effects and localStorage  | React Custom Hooks        |
