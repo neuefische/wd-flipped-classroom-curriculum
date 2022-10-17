@@ -82,7 +82,7 @@ You can ask these questions:
 
 - [ ] `the shell` is a program that runs in a terminal.
 - [ ] It's used to actually execute the commands that we type and returns the results.
-- [ ] Oftentimes the words shell and terminal are used interchangably, even though they are not
+- [ ] Oftentimes the words shell and terminal are used interchangeably, even though they are not
       exactly the same thing.
 
 #### Basic shell commands
@@ -97,11 +97,11 @@ You can ask these questions:
 - [ ] `open .`: open the current folder in Finder
 - [ ] `cat`: print the contents of a file to the terminal
 
-### Why do develpers need to complicate everything and use the terminal instead of a graphical user interface (GUI)?
+### Why do developers need to complicate everything and use the terminal instead of a graphical user interface (GUI)?
 
 - [ ] The terminal also is a user interface, it just not graphical, meaning no pretty buttons or
       hamburger menus. It's a text based user interface.
-- [ ] With a text based user interface you can **send/recieve information much faster**, because
+- [ ] With a text based user interface you can **send/receive information much faster**, because
       there is no additional (beautiful) layer that needs to process the information.
 - [ ] It takes a lot of time to code a GUI, therefore **some programs don't use one**.
 - [ ] Most of the people that ever get into the position to use a terminal, are technical and do
@@ -115,7 +115,7 @@ You can ask these questions:
 > mistakes.**
 
 But: With great power comes great responsibility! <br> You can do almost anything in the terminal,
-also delete things irreversibily or other things that you didn't intend to so. So be cautious!
+also delete things irreversibly or other things that you didn't intend to so. So be cautious!
 
 ### Terminal Setup
 
@@ -124,36 +124,49 @@ also delete things irreversibily or other things that you didn't intend to so. S
 
 Guide the students through the Terminal Setup:
 
-1. open the **spotlight search**: `cmd` `space`
-2. open the terminal: `terminal`
-3. install [homebrew](https://brew.sh/)
-4. (accept installing Xcode Command Line Tools, takes some minutes to install)
-5. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via homebrew:
+1. Open the **spotlight search**: <kbd>command</kbd><kbd>space</kbd>
+2. Type "terminal" into the search bar and press <kbd>Enter</kbd> to open the terminal
+3. Install [Homebrew](https://brew.sh/)
+   - Accept installing Xcode Command Line Tools. It takes some minutes to install.
+4. Install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via Homebrew:
+
    ```bash
    brew install romkatv/powerlevel10k/powerlevel10k
    echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
    ```
-6. restart the terminal to enter the configuration or type
+
+   > ❗️Let the students copy the command from the [challenges](challenges-shell-basics.md) or
+   > directly from the [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) site.
+   > Sharing the command with the students via Slack can cause issues due to unexpected formatting
+   > while copying and pasting.
+
+5. Restart the terminal to enter the configuration or type
    ```bash
    p10k configure
    ```
-7. configure the zsh theme as you like
-8. change the font size of the terminal to 18px: `Terminal` -> `preferences` -> `Profiles` -> `Font`
+6. Configure the zsh theme as you like
+7. Change the font size of the terminal to 18px: `Terminal` -> `Preferences` -> `Profiles` -> `Font`
    -> `Change...`
 
-### VS Code installation
+### VS Code Installation
 
-1. install VS Code and explain what in IDE is:
+1. Install VS Code and explain what an IDE is:
    ```bash
    brew install --cask visual-studio-code
    ```
-1. install the prettier extension **Prettier - Code formatter** and explain what a code formatter
-   does
-1. Go to the VS Code settings and:
+2. Install the extension `Prettier - Code formatter` and explain what a code formatter does
+3. Go to the VS Code settings and:
    - search for "default formatter" and set to prettier
    - search for "format on save" and hit checkbox
-1. install the extension `Auto Rename Tag`
-1. install the extension `Live Preview`
+4. Install the extension `Auto Rename Tag`
+5. Install the extension `Live Preview`
+
+To be able to launch VS Code directly from the command line, students need to do the following:
+
+1. In VS Code open the command palette by pressing <kbd>command</kbd><kbd>shift</kbd><kbd>p</kbd>
+2. This will open a prompt near the top of the code window. Type `shell command` into the prompt.
+3. Select `Shell Command: Install 'code' command in PATH` and confirm the installation by pressing
+   <kbd>Enter</kbd>.
 
 ### Challenges Preparations
 

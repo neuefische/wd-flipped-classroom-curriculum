@@ -2,36 +2,45 @@
 
 ## Terminal Setup
 
-1. open the **spotlight search**: `cmd` `space`
-2. open the terminal: `terminal`
-3. install [homebrew](https://brew.sh/)
-4. (accept installing Xcode Command Line Tools, takes some minutes to install)
-5. install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via homebrew:
+1. Open the **spotlight search**:  <kbd>command</kbd><kbd>space</kbd>
+2. Type "terminal" into the search bar and press <kbd>Enter</kbd> to open the terminal
+3. Install [Homebrew](https://brew.sh/)
+   - Accept installing Xcode Command Line Tools. It takes some minutes to install.
+4. Install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via Homebrew:
    ```bash
    brew install romkatv/powerlevel10k/powerlevel10k
    echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
    ```
-6. restart the terminal to enter the configuration or type
+5. Restart the terminal to enter the configuration or type
    ```bash
    p10k configure
    ```
-7. configure the zsh theme as you like
-8. change the font size of the terminal to 18px: `Terminal` -> `preferences` -> `Profiles` -> `Font`
+6. Configure the zsh theme as you like
+7. Change the font size of the terminal to 18px: `Terminal` -> `Preferences` -> `Profiles` -> `Font`
    -> `Change...`
 
-## VS Code installation
+## VS Code Installation
 
-1. install VS Code and explain what in IDE is:
+1. Install VS Code:
    ```bash
    brew install --cask visual-studio-code
    ```
-1. install the prettier extension **Prettier - Code formatter** and explain what a code formatter
-   does
-1. Go to the VS Code settings and:
+2. Install the extension **Prettier - Code formatter**
+3. Go to the VS Code settings and:
    - search for "default formatter" and set to prettier
    - search for "format on save" and hit checkbox
-1. install the extension `Auto Rename Tag`
-1. install the extension `Live Preview`
+4. Install the extension **Auto Rename Tag**
+5. Install the extension **Live Preview**
+
+To be able to launch VS Code directly from the command line, do the following:
+
+1. In VS Code open the command palette by pressing <kbd>command</kbd><kbd>shift</kbd><kbd>p</kbd>.
+2. This will open a prompt near the top of the code window. Type "shell command" into the prompt.
+3. Select _"Shell Command: Install 'code' command in PATH"_ and confirm the installation by pressing
+   <kbd>Enter</kbd>.
+
+You now have the `code` command line command installed. To open VS Code directly from the terminal,
+navigate to your project folder and type `code .` .
 
 ## Treasure Hunt
 
