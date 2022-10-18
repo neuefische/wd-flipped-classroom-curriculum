@@ -203,7 +203,7 @@ ones more challenging than afternoon sessions.
 | 22  | React Basics                    | React Props               |
 | 23  | React Nesting                   | React State               |
 | 24  | React with Arrays               | React State 2             |
-| 25  | React State 3                   | React Effects and fetch   |
+| 25  | React State 3                   | React Effects and Fetch   |
 | 26  | React Effects and localStorage  | React Custom Hooks        |
 | 27  | **Recap Project 4**             | **Recap Project 4**       |
 | 28  | Next.js Basics and Routing      | Next.js Dynamic Routes    |
