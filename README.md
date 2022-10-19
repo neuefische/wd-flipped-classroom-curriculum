@@ -195,9 +195,9 @@ ones more challenging than afternoon sessions.
 | 14  | **Recap Project 2** ✅          | CSS Animations ✅              |
 | 15  | JS Loops ✅                     | JS Callback Functions ✅       |
 | 16  | JS Array Methods ✅             | npm and Linting Basics ✅      |
-| 17  | JS Structure ✅                 | JS Array Methods 2             |
-| 18  | JS Async Functions              | JS Fetch                       |
-| 19  | Git Advanced                    | JS Modern Syntax               |
+| 17  | JS Structure ✅                 | JS Array Methods 2 ✅          |
+| 18  | JS Async Functions ✅           | JS Fetch ✅                    |
+| 19  | Git Advanced ✅                 | JS Modern Syntax ✅            |
 | 20  | JS Unit Testing                 | _Buffer_                       |
 | 21  | **Recap Project 3**             | **Recap Project 3**            |
 | 22  | React Basics                    | React Props                    |
