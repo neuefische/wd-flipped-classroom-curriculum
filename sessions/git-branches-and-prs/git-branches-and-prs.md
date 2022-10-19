@@ -3,7 +3,7 @@
 ## Learning Objectives
 
 - Git branches and how to use them
-- Pull Requests and how to use them
+- pull requests and how to use them
 - how branches and pull requests facilitate collaboration
 
 ---
@@ -44,7 +44,7 @@ We recommend using hyphens as separators as they make the name more comfortable 
 | `git branch -a`              | list all branches (local and remote) |
 | `git branch -d <branchname>` | delete a branch                      |
 
-## Git Pull Requests
+## Git pull requests
 
 GitHub offers us **pull requests** (PR) which we can use as a convenient way to request reviews of
 the work on a feature branch.
@@ -53,7 +53,7 @@ A pull request is a request to merge one branch into another branch. Other devel
 and suggest changes. If a pull request is approved we can merge the feature branch into the main
 branch.
 
-### Basic Workflow for a Pull Request
+### Basic Workflow for a pull request
 
 1. Create a new branch with `git switch -c <branchname>`.
 2. Make changes to the code / write your code fpr the feature.

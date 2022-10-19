@@ -11,7 +11,7 @@
 ## Learning objectives
 
 - [ ] what git branches are and how to use them.
-- [ ] what Pull Requests are and how to use them.
+- [ ] what pull requests are and how to use them.
 - [ ] how branches and pull requests facilitate collaboration.
 
 ---
@@ -76,7 +76,7 @@
 - [ ] highlight, that this is needed so that others can `review` the changes
 - [ ] `git push -u origin <feature branch name>`
 
-### 3. Git Pull Requests
+### 3. Git pull requests
 
 - [ ] show, how a typical review process works
 - [ ] explain, what a pull request is, how to write comments and view the differences introduced by

@@ -75,10 +75,10 @@ to keep an eye on.
 2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
    one from the "Ready for Work" column). <br /> You have three options here:
    1. `Review a session` (session guide, handout, and challenges).
-      1. For this, go to the linked Pull Request and review the text. Add changes with the
+      1. For this, go to the linked pull request and review the text. Add changes with the
          `suggest changes` function.
    2. If you are short of time, `review a challenge in web-exercises`.
-      1. Go to the linked Pull Request and look for a linked PR in neuefische/web-exercises.
+      1. Go to the linked pull request and look for a linked PR in neuefische/web-exercises.
       2. If necessary, plesae link both PRs via a comment.
       3. As soon as you are done and left a solution in web-exercises, comment on the new-format-PR
          to let us know how you've supported us.
