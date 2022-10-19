@@ -12,9 +12,9 @@ Recommended schedule for this session:
 
 ## Learning objectives
 
-  - [ ] understanding JS as a developing programming language
-  - [ ] destructuring assignment
-  - [ ] rest and spread syntax
+- [ ] understanding JS as a developing programming language
+- [ ] destructuring assignment
+- [ ] rest and spread syntax
 
 ---
 
@@ -29,8 +29,8 @@ JS is evolving on a regular basis. There are modern syntax additions which come 
 
 ### Why is the content of today's block that important for the students?
 
-The `destructuring assignment`, the `rest syntax` and the `spread syntax` are very useful
-features to make the code more readable. Besides, they are widely used in modern JavaScript and, in
+The `destructuring assignment`, the `rest syntax` and the `spread syntax` are very useful features
+to make the code more readable. Besides, they are widely used in modern JavaScript and, in
 particular, React projects.
 
 ### Pose a question to be answered by the end of the block!
@@ -103,8 +103,8 @@ const {keepsLeavesInWinter = false} = tree;
 
 #### Rest syntax in object destructuring
 
-- [ ] Explain that the rest syntax(`...`) can be used to collect all other properties and
-      extract them into one variable:
+- [ ] Explain that the rest syntax(`...`) can be used to collect all other properties and extract
+      them into one variable:
 
 ```js
 const {name, ...information} = tree;
@@ -140,8 +140,8 @@ console.log(tiger); // not defined
 
 #### Rest syntax in array destructuring
 
-- [ ] Explain that the rest syntax (`...`) can be used to collect all other values and extract
-      them into one variable:
+- [ ] Explain that the rest syntax (`...`) can be used to collect all other values and extract them
+      into one variable:
 
 ```js
 const [lion, tiger, penguin, ...rest] = animals;
@@ -155,8 +155,9 @@ console.log(rest[1]); // 'Whale'
 
 ### Rest Syntax when Declaring Functions
 
-- [ ] The rest syntax (`...`) collects all values given and returns an array
-      containing these values. E.g. `(...args) => console.log(args)` → `args` is an array with all arguments passed to the function.
+- [ ] The rest syntax (`...`) collects all values given and returns an array containing these
+      values. E.g. `(...args) => console.log(args)` → `args` is an array with all arguments passed
+      to the function.
 - [ ] Note that it's used for `destructuring assignments` or declaring function parameters.
 
 ```js
@@ -213,8 +214,8 @@ console.log(showZooAnimals(...allMyAnimals));
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](js-modern-syntax.md) and the [challenges](challenges-js-modern-syntax.md) to the
-      students
+- [ ] Provide the [handout](js-modern-syntax.md) and the
+      [challenges](challenges-js-modern-syntax.md) to the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:

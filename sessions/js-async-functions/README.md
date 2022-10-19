@@ -149,7 +149,9 @@ console.log('soccerAnimation', soccerAnimation);
         resulting value
   - [ ] has three `state`s: `"pending"` (waiting for the answer), `"resolved"` (sucess), and
         `"rejected"`(failure)
-  - [ ] has a `then()` function (on the Prototype) that takes a callback function as an argument (Notice: we don't teach about Prototype inheritance. The students should just accept, that it is displayed like this in the console.)
+  - [ ] has a `then()` function (on the Prototype) that takes a callback function as an argument
+        (Notice: we don't teach about Prototype inheritance. The students should just accept, that
+        it is displayed like this in the console.)
   - [ ] while "waiting" for a Promise, other code can be executed
 
 - [ ] Show that the `then()` function is called when the Promise is resolved:
@@ -214,7 +216,8 @@ soccerAnimation.finished.then(() => {
   - [ ] `await` "waits" (without blocking) for the following Promise to be resolved before the
         execution continues
   - [ ] `await` is syntactic sugar for `.then()`
-  - [ ] Note that `await` can only be used **inside** an `async` function: Whenever we use `await` the enclosing function must be marked with `async`.
+  - [ ] Note that `await` can only be used **inside** an `async` function: Whenever we use `await`
+        the enclosing function must be marked with `async`.
 
 - [ ] Adapt the code to wait for each animation to finish:
   - [ ] Add the `async` keyword before the callback function.

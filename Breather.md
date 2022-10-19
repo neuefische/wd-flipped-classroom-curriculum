@@ -13,7 +13,9 @@ Tuesday: Relaxation with Iris(?)
 Thursday: Workout with Philip
 
 ## Todos
+
 @Merle (delete when done!)
+
 - [ ] Discuss monthly budget with Klaus (Breather ~800€)
 - [ ] (For Guest Sessions we might need around ~1000€ per cohort)
 - [ ] Let Mareike create a Breakout Room

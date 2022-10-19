@@ -10,9 +10,9 @@
 
 ## JavaScript Modules
 
-JavaScript modules (sometimes also called "ECMAScript Modules" or "ESM") are a way to organize code into separate files. To use modules you have to let
-the browser know that you are using modules. This is done by adding the `type="module"` attribute to
-the `<script>` tag.
+JavaScript modules (sometimes also called "ECMAScript Modules" or "ESM") are a way to organize code
+into separate files. To use modules you have to let the browser know that you are using modules.
+This is done by adding the `type="module"` attribute to the `<script>` tag.
 
 ```html
 <script type="module" src="./my-module.js"></script>

@@ -25,7 +25,8 @@ Recommended schedule for this session:
 
 ### Which important problem will we solve today?
 
-Animations aren't just fun, they're also useful! CSS Animations are a powerful tool. They allow you to create apps that are more interactive and engaging, and sometimes even more accessible.
+Animations aren't just fun, they're also useful! CSS Animations are a powerful tool. They allow you
+to create apps that are more interactive and engaging, and sometimes even more accessible.
 
 ### Why is the content of today's block that important for the students?
 
@@ -71,12 +72,12 @@ How can you improve the user experience of your website by adding animations?
 - [ ] Explain that you have to define two states for a property you want to animate like this:
 
 ```css
-.box {
-	background-color: lightblue;
+.button--color {
+	background-color: var(--granite);
 }
 
-.box:hover {
-	background-color: lightcoral;
+.button--color:hover {
+	background-color: var(--nemo);
 }
 ```
 
@@ -84,13 +85,13 @@ How can you improve the user experience of your website by adding animations?
       `transition` property to the box:
 
 ```css
-.box {
-	background-color: lightblue;
-	transition: background-color 1s;
+.button--color {
+	background-color: var(--granite);
+	transition: 0.3s ease;
 }
 
-.box:hover {
-	background-color: lightcoral;
+.button--color:hover {
+	background-color: var(--nemo);
 }
 ```
 
@@ -99,20 +100,36 @@ How can you improve the user experience of your website by adding animations?
       curves. You can also show [cubic-bezier.com](https://cubic-bezier.com) to play with easing
       curves.
 
-- [ ] Add another property to the transition, to show that you can animate multiple properties at
-      once (with different durations and easings):
+- [ ] Go to the next button and animate 2 properties with transition, to show that you can animate
+      multiple properties at once:
 
 ```css
-.box {
-	background-color: lightblue;
-	transition: background-color 1s, opacity 2s ease-in-out;
+.button--scale {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
+	transition: 0.2s ease;
 }
 
-.box:hover {
-	background-color: lightcoral;
-	opacity: 0.5;
+.button--scale:active {
+	transform: scale(0.9);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 ```
+
+- [ ] Sometimes you want to animate properties differently, show how to do that with the next button
+
+  ```css
+  .button--shadow {
+  	background-color: var(--nemo);
+  	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  	transition: background-color 0.5s ease-out, box-shadow 1s ease 0.5s;
+  	/* add transition here */
+  }
+
+  .button--shadow:hover {
+  	background-color: var(--granite);
+  	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  ```
 
 ### Animatable properties
 
@@ -122,10 +139,55 @@ How can you improve the user experience of your website by adding animations?
 
 - [ ] Explain that some properties can have negative performance implications. For example,
       animating `width` and `height` can cause the browser to recalculate the layout of the page for
-      each frame (usally 60 times per second). Tell students to avoid animating these properties.
+      each frame (usually 60 times per second). Tell students to avoid animating these properties.
 
-- [ ] Show some properties that are safe and cheap to animate: `color`s, `opacity`, `transform`,
+- [ ] Show some properties that are safe and cheap to animate: `color`, `opacity`, `transform`,
       `box-shadow` etc.
+
+### Animating between multiple states
+
+- [ ] If you want to transition between multiple stages you need to use extra classes which are
+      added / removed by javascript
+
+  ```css
+  .position--0 {
+  	left: 0;
+  	/* add transition 'into state 0' here */
+  }
+
+  .position--1 {
+  	left: 200px;
+  	/* add transition 'into state 1' here */
+  }
+
+  .position--2 {
+  	left: 70%;
+  	/* add transition 'into state 2' here */
+  }
+  ```
+
+- [ ] Use the third button which already has this implemented
+- [ ] Show how to add different transitions between these stages by adding a transition property to
+      each stage
+- [ ] highlight, that these transitions can be interpreted as "transition to this state", as the
+      transition will take place only when this class is on the element.
+
+  ```css
+  .position--0 {
+  	left: 0;
+  	transition: left 0.4s cubic-bezier(0.68, -0.55, 0.12, 0.93);
+  }
+
+  .position--1 {
+  	left: 200px;
+  	transition: left 0.4s ease;
+  }
+
+  .position--2 {
+  	left: 70%;
+  	transition: left 0.8s ease-out;
+  }
+  ```
 
 ---
 

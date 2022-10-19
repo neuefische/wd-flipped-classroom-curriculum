@@ -27,13 +27,13 @@ asynchronous operation.
 
 The Promise object has the following properties and methods:
 
-| Property / Method | Description |
-| -- | -- |
-| `state` | the state of the Promise object, can be `"pending"`, `"resolved"` or `"rejected"`|
-| `result` | the result of the asynchronous operation (you'll almost never need to access this directly)|
-| `then()` | a method that takes a callback function that will be called when the asynchronous operation is complete|
-| `catch()` | a method that takes a callback function that will be called when the asynchronous operation fails|
-| `finally()` | a method that takes a callback function that will be called when the asynchronous operation is complete, regardless of whether it was successful or not |
+| Property / Method | Description                                                                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `state`           | the state of the Promise object, can be `"pending"`, `"resolved"` or `"rejected"`                                                                       |
+| `result`          | the result of the asynchronous operation (you'll almost never need to access this directly)                                                             |
+| `then()`          | a method that takes a callback function that will be called when the asynchronous operation is complete                                                 |
+| `catch()`         | a method that takes a callback function that will be called when the asynchronous operation fails                                                       |
+| `finally()`       | a method that takes a callback function that will be called when the asynchronous operation is complete, regardless of whether it was successful or not |
 
 ```js
 functionThatReturnsAPromise().then(value => {

@@ -25,7 +25,8 @@ finished proposals over [here](https://github.com/tc39/proposals/blob/main/finis
 ## Destructuring Assignment
 
 The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack
-values from arrays, or properties from objects, into distinct variables. Destructuring doesn't mutate the original array or object.
+values from arrays, or properties from objects, into distinct variables. Destructuring doesn't
+mutate the original array or object.
 
 ### Destructuring Arrays
 
@@ -33,8 +34,8 @@ values from arrays, or properties from objects, into distinct variables. Destruc
 const greekLetters = ['alpha', 'beta', 'gamma', 'delta'];
 ```
 
-If we want to declare the values of `greekLetters` as distinct variables, accessing them might turn out
-to be quite tedious.
+If we want to declare the values of `greekLetters` as distinct variables, accessing them might turn
+out to be quite tedious.
 
 _Without_ Destructuring
 
@@ -169,7 +170,7 @@ logLetters('alpha', 'beta', 'gamma', 'delta');
 
 ### Spread Syntax (`...`)
 
-The spread syntax allows you to say: "spread everything inside this variable into here" when 
+The spread syntax allows you to say: "spread everything inside this variable into here" when
 declaring array or object literals or calling functions.
 
 It works like this with array literal declarations:

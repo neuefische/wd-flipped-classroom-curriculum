@@ -2,7 +2,7 @@
 
 ## Terminal Setup
 
-1. Open the **spotlight search**:  <kbd>command</kbd><kbd>space</kbd>
+1. Open the **spotlight search**: <kbd>command</kbd><kbd>space</kbd>
 2. Type "terminal" into the search bar and press <kbd>Enter</kbd> to open the terminal
 3. Install [Homebrew](https://brew.sh/)
    - Accept installing Xcode Command Line Tools. It takes some minutes to install.
