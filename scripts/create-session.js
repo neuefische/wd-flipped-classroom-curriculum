@@ -37,7 +37,7 @@ const sessionFileNames = ['session-name.md', 'challenges-session-name.md', 'READ
 		]);
 
 		// convert session name to slug
-		const slug = slugify(input.sessionName, {lower: true});
+		const slug = slugify(input.sessionName, {lower: true}).replaceAll('.', '');
 
 		const sessionPath = `./sessions/${slug}`;
 
