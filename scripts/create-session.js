@@ -27,6 +27,7 @@ const sessionFileNames = ['session-name.md', 'challenges-session-name.md', 'READ
 								.replace(/Html/g, 'HTML')
 								.replace(/Dom/g, 'DOM')
 								.replace(/Mongodb/g, 'MongoDB')
+								.replace(/Nextjs/g, 'Next.js')
 								.replace(/Npm/g, 'npm')
 								.replace(/Usestate/g, 'useState')
 								.replace(/Useeffect/g, 'useEffect')
