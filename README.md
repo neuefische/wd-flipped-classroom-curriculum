@@ -177,48 +177,48 @@ Sessions are structured not by week - but by days. It does not matter which sess
 which day of the week. This is the recommended order of sessions. Morning sessions should be the
 ones more challenging than afternoon sessions.
 
-| day | morning                         | afternoon                 |
-| --- | ------------------------------- | ------------------------- |
-| 1   | Welcome ✅                      | Github and Markdown ✅    |
-| 2   | Shell Basics ✅                 | Git CLI & Remote ✅       |
-| 3   | Git Branches and PRs ✅         | HTML and the Web ✅       |
-| 4   | CSS Basics ✅                   | CSS Selectors ✅          |
-| 5   | CSS Flexbox ✅                  | CSS Positioning ✅        |
-| 6   | **Recap Project 1** ✅          | Accessibility ✅          |
-| 7   | JS Basics ✅                    | CSS Structure ✅          |
-| 8   | JS Variables and Numbers ✅     | CSS Grid ✅               |
-| 9   | JS Conditions and Booleans ✅   | CSS Responsive ✅         |
-| 10  | JS Functions ✅                 | JS Functions 2 ✅         |
-| 11  | HTML Forms ✅                   | JS Inputs and Strings ✅  |
-| 12  | JS Objects and Arrays ✅        | JS Forms ✅               |
-| 13  | JS createElement ✅             | JS Forms 2 ✅             |
-| 14  | **Recap Project 2** ✅          | CSS Animations ✅         |
-| 15  | JS Loops ✅                     | JS Callback Functions ✅  |
-| 16  | JS Array Methods ✅             | npm and Linting Basics ✅ |
-| 17  | JS Structure ✅                 | JS Array Methods 2        |
-| 18  | JS Async Functions              | JS Fetch                  |
-| 19  | Git Advanced                    | JS Modern Syntax          |
-| 20  | JS Unit Testing                 | _Buffer_                  |
-| 21  | **Recap Project 3**             | **Recap Project 3**       |
-| 22  | React Basics                    | React Props               |
-| 23  | React Nesting                   | React State               |
-| 24  | React with Arrays               | React State 2             |
-| 25  | React State 3                   | React Effects and Fetch   |
-| 26  | React Effects and localStorage  | React Custom Hooks        |
-| 27  | **Recap Project 4**             | **Recap Project 4**       |
-| 28  | Next.js Basics and Routing      | Next.js Dynamic Routes    |
-| 29  | React Styled Components         | Storybook                 |
-| 30  | React Component Testing         | React Global State        |
-| 31  | React Immutable State           | Next.js Data Fetching     |
-| 32  | **Recap Project 5**             | **Recap Project 5**       |
-| 33  | **Recap Project 5**             | **Recap Project 5**       |
-| 34  | MongoDB Basics                  | Node Server               |
-| 35  | Next.js API Routes              | Mongoose                  |
-| 36  | Next.js Rest API                | Next.js Data Fetching 2   |
-| 37  | MongoDB Atlas                   | **Recap Project 6**       |
-| 38  | _Design Workshop_               | _Design Workshop_         |
-| 39  | Agile Workflow and User Stories | _Agile Workshop_          |
-| 40  | _Capstone Forum_                | _Capstone Forum_          |
+| day | morning                         | afternoon                      |
+| --- | ------------------------------- | ------------------------------ |
+| 1   | Welcome ✅                      | Github and Markdown ✅         |
+| 2   | Shell Basics ✅                 | Git CLI & Remote ✅            |
+| 3   | Git Branches and PRs ✅         | HTML and the Web ✅            |
+| 4   | CSS Basics ✅                   | CSS Selectors ✅               |
+| 5   | CSS Flexbox ✅                  | CSS Positioning ✅             |
+| 6   | **Recap Project 1** ✅          | Accessibility ✅               |
+| 7   | JS Basics ✅                    | CSS Structure ✅               |
+| 8   | JS Variables and Numbers ✅     | CSS Grid ✅                    |
+| 9   | JS Conditions and Booleans ✅   | CSS Responsive ✅              |
+| 10  | JS Functions ✅                 | JS Functions 2 ✅              |
+| 11  | HTML Forms ✅                   | JS Inputs and Strings ✅       |
+| 12  | JS Objects and Arrays ✅        | JS Forms ✅                    |
+| 13  | JS createElement ✅             | JS Forms 2 ✅                  |
+| 14  | **Recap Project 2** ✅          | CSS Animations ✅              |
+| 15  | JS Loops ✅                     | JS Callback Functions ✅       |
+| 16  | JS Array Methods ✅             | npm and Linting Basics ✅      |
+| 17  | JS Structure ✅                 | JS Array Methods 2             |
+| 18  | JS Async Functions              | JS Fetch                       |
+| 19  | Git Advanced                    | JS Modern Syntax               |
+| 20  | JS Unit Testing                 | _Buffer_                       |
+| 21  | **Recap Project 3**             | **Recap Project 3**            |
+| 22  | React Basics                    | React Props                    |
+| 23  | React Nesting                   | React Project Setup            |
+| 24  | React State                     | React with Arrays              |
+| 25  | React State 2                   | React State 3                  |
+| 26  | React Effects and Fetch         | React Effects and localStorage |
+| 27  | React Custom Hooks              | **Recap Project 4**            |
+| 28  | Next.js Basics and Routing      | Next.js Dynamic Routes         |
+| 29  | React Styled Components         | Storybook                      |
+| 30  | React Component Testing         | React Global State             |
+| 31  | React Immutable State           | Next.js Data Fetching          |
+| 32  | **Recap Project 5**             | **Recap Project 5**            |
+| 33  | **Recap Project 5**             | **Recap Project 5**            |
+| 34  | MongoDB Basics                  | Node Server                    |
+| 35  | Next.js API Routes              | Mongoose                       |
+| 36  | Next.js Rest API                | Next.js Data Fetching 2        |
+| 37  | MongoDB Atlas                   | **Recap Project 6**            |
+| 38  | _Design Workshop_               | _Design Workshop_              |
+| 39  | Agile Workflow and User Stories | _Agile Workshop_               |
+| 40  | _Capstone Forum_                | _Capstone Forum_               |
 
 ## Further Reading
 
