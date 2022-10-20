@@ -209,12 +209,12 @@ ones more challenging than afternoon sessions.
 | 28  | Next.js Basics and Routing      | Next.js Dynamic Routes         |
 | 29  | React Styled Components         | Storybook                      |
 | 30  | React Component Testing         | React Global State             |
-| 31  | React Immutable State           | Next.js Data Fetching          |
+| 31  | React Immutable State           | React Data Fetching            |
 | 32  | **Recap Project 5**             | **Recap Project 5**            |
 | 33  | **Recap Project 5**             | **Recap Project 5**            |
 | 34  | MongoDB Basics                  | Node Server                    |
 | 35  | Next.js API Routes              | Mongoose                       |
-| 36  | Next.js Rest API                | Next.js Data Fetching 2        |
+| 36  | Next.js Rest API                | React Data Fetching 2          |
 | 37  | MongoDB Atlas                   | **Recap Project 6**            |
 | 38  | _Design Workshop_               | _Design Workshop_              |
 | 39  | Agile Workflow and User Stories | _Agile Workshop_               |
