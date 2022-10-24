@@ -212,10 +212,10 @@ ones more challenging than afternoon sessions.
 | 31  | React Immutable State           | React Data Fetching            |
 | 32  | **Recap Project 5**             | **Recap Project 5**            |
 | 33  | **Recap Project 5**             | **Recap Project 5**            |
-| 34  | MongoDB Basics                  | Node Server                    |
-| 35  | Next.js API Routes              | Mongoose                       |
-| 36  | Next.js Rest API                | React Data Fetching 2          |
-| 37  | MongoDB Atlas                   | **Recap Project 6**            |
+| 34  | Backend Basics                  | Backend API Routes             |
+| 35  | Backend MongoDB                 | Backend Read                   |
+| 36  | Backend Create                  | Backend Update and Delete      |
+| 37  | Backend MongoDB Atlas           | **Recap Project 6**            |
 | 38  | _Design Workshop_               | _Design Workshop_              |
 | 39  | Agile Workflow and User Stories | _Agile Workshop_               |
 | 40  | _Capstone Forum_                | _Capstone Forum_               |
