@@ -110,6 +110,8 @@ We have a target of 540 teaching minutes (= 9 hours or 12 teaching units (45 min
 | 0:30     | 30               | 16:45 - 17:15 | Recap                    |
 | 1:45     | 105              | 17:15 - 19:00 | Independent project time |
 
+## Workflow
+
 ### How to contribute
 
 There are two things to consider when assigning yourself to a ticket in the project:
@@ -175,7 +177,7 @@ Use proper markdown semantics:
 There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new-format/issues/41)
 to keep an eye on.
 
-## Our workflow
+## Detailed workflow
 
 1. Go into the project
    [Curriculum Roadmap](https://github.com/neuefische/web-curriculum-new-format/projects/1).
