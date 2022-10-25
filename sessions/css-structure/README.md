@@ -50,7 +50,7 @@ You can ask these questions:
 - When you wrote CSS code before, which questions did you ask yourself while doing it?
   - How should I name this class?
   - Where should I put the code within the CSS file?
-  - Why gets this styles declaration overwritten?
+  - Why is this style declaration overwritten?
   - Can I avoid changing a certain color in different places manually?
 
 ---
