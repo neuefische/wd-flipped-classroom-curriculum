@@ -131,27 +131,23 @@ npm run create-session
 
 ## Our goals are:
 
-> 💡 **Self-sufficient learning**  
-> to prepare the students for their learning path and entry into their professional life
+> 💡 **Self-sufficient learning** to prepare the students for their learning path and entry into
+> their professional life
 
-> 💡 **Active and problem-based learning**  
-> to offer a practical approach of learning according to
+> 💡 **Active and problem-based learning** to offer a practical approach of learning according to
 > [research](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
 
-> 💡 **Integration of a "safety net"/"backup"**  
-> to make sure the students are following along with the content of the course
+> 💡 **Integration of a "safety net"/"backup"** to make sure the students are following along with
+> the content of the course
 
-> 💡 **Balanced coders**  
-> to actively make time to process the content, this is to increase motivation, productivity and
-> focus for the students
+> 💡 **Balanced coders** to actively make time to process the content, this is to increase
+> motivation, productivity and focus for the students
 
-> 💡 **Guest lectures for a broad skill-set**  
-> to teach a broad collection of soft- and hard-skills that teach methodological approaches useful
-> for the daily professional life
+> 💡 **Guest lectures for a broad skill-set** to teach a broad collection of soft- and hard-skills
+> that teach methodological approaches useful for the daily professional life
 
-> 💡 **Balanced coaches**  
-> to give more space for coaches to advance their personal development or contribute to in-house
-> projects
+> 💡 **Balanced coaches** to give more space for coaches to advance their personal development or
+> contribute to in-house projects
 
 ## Daily routine
 
@@ -177,48 +173,88 @@ Sessions are structured not by week - but by days. It does not matter which sess
 which day of the week. This is the recommended order of sessions. Morning sessions should be the
 ones more challenging than afternoon sessions.
 
-| day | morning                         | afternoon                      |
-| --- | ------------------------------- | ------------------------------ |
-| 1   | Welcome ✅                      | Github and Markdown ✅         |
-| 2   | Shell Basics ✅                 | Git CLI & Remote ✅            |
-| 3   | Git Branches and PRs ✅         | HTML and the Web ✅            |
-| 4   | CSS Basics ✅                   | CSS Selectors ✅               |
-| 5   | CSS Flexbox ✅                  | CSS Positioning ✅             |
-| 6   | **Recap Project 1** ✅          | Accessibility ✅               |
-| 7   | JS Basics ✅                    | CSS Structure ✅               |
-| 8   | JS Variables and Numbers ✅     | CSS Grid ✅                    |
-| 9   | JS Conditions and Booleans ✅   | CSS Responsive ✅              |
-| 10  | JS Functions ✅                 | JS Functions 2 ✅              |
-| 11  | HTML Forms ✅                   | JS Inputs and Strings ✅       |
-| 12  | JS Objects and Arrays ✅        | JS Forms ✅                    |
-| 13  | JS createElement ✅             | JS Forms 2 ✅                  |
-| 14  | **Recap Project 2** ✅          | CSS Animations ✅              |
-| 15  | JS Loops ✅                     | JS Callback Functions ✅       |
-| 16  | JS Array Methods ✅             | npm and Linting Basics ✅      |
-| 17  | JS Structure ✅                 | JS Array Methods 2 ✅          |
-| 18  | JS Async Functions ✅           | JS Fetch ✅                    |
-| 19  | Git Advanced ✅                 | JS Modern Syntax ✅            |
-| 20  | JS Unit Testing                 | _Buffer_                       |
-| 21  | **Recap Project 3**             | **Recap Project 3**            |
-| 22  | React Basics                    | React Props                    |
-| 23  | React Nesting                   | React Project Setup            |
-| 24  | React State                     | React with Arrays              |
-| 25  | React State 2                   | React State 3                  |
-| 26  | React Effects and Fetch         | React Effects and localStorage |
-| 27  | React Custom Hooks              | **Recap Project 4**            |
-| 28  | Next.js Basics and Routing      | Next.js Dynamic Routes         |
-| 29  | React Styled Components         | Storybook                      |
-| 30  | React Component Testing         | React Global State             |
-| 31  | React Immutable State           | React Data Fetching            |
-| 32  | **Recap Project 5**             | **Recap Project 5**            |
-| 33  | **Recap Project 5**             | **Recap Project 5**            |
-| 34  | Backend Basics                  | Backend API Routes             |
-| 35  | Backend MongoDB                 | Backend Read                   |
-| 36  | Backend Create                  | Backend Update and Delete      |
-| 37  | Backend MongoDB Atlas           | **Recap Project 6**            |
-| 38  | _Design Workshop_               | _Design Workshop_              |
-| 39  | Agile Workflow and User Stories | _Agile Workshop_               |
-| 40  | _Capstone Forum_                | _Capstone Forum_               |
+| Day | Session                         | Guide                                                 | Status |
+| --- | ------------------------------- | ----------------------------------------------------- | ------ |
+| 1   | Welcome                         | -                                                     | ✅     |
+|     | Github and Markdown             | [link](sessions/github-and-markdown/README.md)        | ✅     |
+| 2   | Shell Basics                    | [link](sessions/shell-basics/README.md)               | ✅     |
+|     | Git CLI & Remote                | [link](sessions/git-cli-and-remote/README.md)         | ✅     |
+| 3   | Git Branches and PRs            | [link](sessions/git-branches-and-prs/README.md)       | ✅     |
+|     | HTML and the Web                | [link](sessions/html-and-the-web/README.md)           | ✅     |
+| 4   | CSS Basics                      | [link](sessions/css-basics/README.md)                 | ✅     |
+|     | CSS Selectors                   | [link](sessions/css-selectors/README.md)              | ✅     |
+| 5   | CSS Flexbox                     | [link](sessions/css-flexbox/README.md)                | ✅     |
+|     | CSS Positioning                 | [link](sessions/css-positioning/README.md)            | ✅     |
+| 6   | **Recap Project 1**             | [link](sessions/recap-project-1/README.md)            | ✅     |
+|     | Accessibility  + Recap Project 1                 | [link](sessions/accessibility/README.md)              | ✅     |
+| 7   | JS Basics                       | [link](sessions/js-basics/README.md)                  | ✅     |
+|     | CSS Structure                   | [link](sessions/css-structure/README.md)              | ✅     |
+| 8   | JS Variables and Numbers        | [link](sessions/js-variables-and-numbers/README.md)   | ✅     |
+|     | CSS Grid                        | [link](sessions/css-grid/README.md)                   | ✅     |
+| 9   | JS Conditions and Booleans      | [link](sessions/js-conditions-and-booleans/README.md) | ✅     |
+|     | CSS Responsive                  | [link](sessions/css-responsive/README.md)             | ✅     |
+| 10  | JS Functions                    | [link](sessions/js-functions/README.md)               | ✅     |
+|     | JS Functions 2                  | [link](sessions/js-functions-2/README.md)             | ✅     |
+| 11  | HTML Forms                      | [link](sessions/html-forms/README.md)                 | ✅     |
+|     | JS Inputs and Strings           | [link](sessions/js-inputs-and-strings/README.md)      | ✅     |
+| 12  | JS Objects and Arrays           | [link](sessions/js-objects-and-arrays/README.md)      | ✅     |
+|     | JS Forms                        | [link](sessions/js-forms/README.md)                   | ✅     |
+| 13  | JS createElement                | [link](sessions/js-createelement/README.md)           | ✅     |
+|     | JS Forms 2                      | [link](sessions/js-forms-2/README.md)                 | ✅     |
+| 14  | **Recap Project 2**             | [link](sessions/recap-project-2/README.md)            | ✅     |
+|     | CSS Animations   + Recap Project 2               | [link](sessions/css-animations/README.md)             | ✅     |
+| 15  | JS Loops                        | [link](sessions/js-loops/README.md)                   | ✅     |
+|     | JS Callback Functions           | [link](sessions/js-callback-functions/README.md)      | ✅     |
+| 16  | JS Array Methods                | [link](sessions/js-array-methods/README.md)           | ✅     |
+|     | npm and Linting Basics          | [link](sessions/npm-and-linting-basics/README.md)     | ✅     |
+| 17  | JS Structure                    | [link](sessions/js-structure/README.md)               | ✅     |
+|     | JS Array Methods 2              | [link](sessions/js-array-methods-2/README.md)         | ✅     |
+| 18  | JS Async Functions              | [link](sessions/js-async-functions/README.md)         | ✅     |
+|     | JS Fetch                        | [link](sessions/js-fetch/README.md)                   | ✅     |
+| 19  | Git Advanced                    | [link](sessions/git-advanced/README.md)               | ✅     |
+|     | JS Modern Syntax                | [link](sessions/js-modern-syntax/README.md)           | ✅     |
+| 20  | JS Unit Testing                 | -                                                     | 💭     |
+|     | _Buffer_                        | -                                                     | 💭     |
+| 21  | **Recap Project 3**             | -                                                     | 💭     |
+|     | **Recap Project 3**             | -                                                     | 💭     |
+| 22  | React Basics                    | -                                                     | 💭     |
+|     | React Props                     | -                                                     | 💭     |
+| 23  | React Nesting                   | -                                                     | 💭     |
+|     | React Project Setup             | -                                                     | 💭     |
+| 24  | React State                     | -                                                     | 💭     |
+|     | React with Arrays               | -                                                     | 💭     |
+| 25  | React State 2                   | -                                                     | 💭     |
+|     | React State 3                   | -                                                     | 💭     |
+| 26  | React Effects and Fetch         | -                                                     | 💭     |
+|     | React Effects and localStorage  | -                                                     | 💭     |
+| 27  | React Custom Hooks              | -                                                     | 💭     |
+|     | **Recap Project 4**             | -                                                     | 💭     |
+| 28  | Next.js Basics and Routing      | -                                                     | 💭     |
+|     | Next.js Dynamic Routes          | -                                                     | 💭     |
+| 29  | React Styled Components         | -                                                     | 💭     |
+|     | Storybook                       | -                                                     | 💭     |
+| 30  | React Component Testing         | -                                                     | 💭     |
+|     | React Global State              | -                                                     | 💭     |
+| 31  | React Immutable State           | -                                                     | 💭     |
+|     | React Data Fetching             | -                                                     | 💭     |
+| 32  | **Recap Project 5**             | -                                                     | 💭     |
+|     | **Recap Project 5**             | -                                                     | 💭     |
+| 33  | **Recap Project 5**             | -                                                     | 💭     |
+|     | **Recap Project 5**             | -                                                     | 💭     |
+| 34  | Backend Basics                  | -                                                     | 💭     |
+|     | Backend API Routes              | -                                                     | 💭     |
+| 35  | Backend MongoDB                 | -                                                     | 💭     |
+|     | Backend Read                    | -                                                     | 💭     |
+| 36  | Backend Create                  | -                                                     | 💭     |
+|     | Backend Update and Delete       | -                                                     | 💭     |
+| 37  | Backend MongoDB Atlas           | -                                                     | 💭     |
+|     | **Recap Project 6**             | -                                                     | 💭     |
+| 38  | _Design Workshop_               | -                                                     | 💭     |
+|     | _Design Workshop_               | -                                                     | 💭     |
+| 39  | Agile Workflow and User Stories | -                                                     | 💭     |
+|     | _Agile Workshop_                | -                                                     | 💭     |
+| 40  | _Capstone Forum_                | -                                                     | 💭     |
+|     | _Capstone Forum_                | -                                                     | 💭     |
 
 ## Further Reading
 
