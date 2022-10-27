@@ -198,6 +198,6 @@ Linters:
 
 VSCode Plugins for Linters:
 
-- [HTMLHint](https://marketplace.visualstudio.com/items?itemName=ctf0.htmlhint)
+- [HTMLHint](https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
