@@ -90,9 +90,9 @@ Recommended schedule for this session:
 > 💡 Use Excalidraw to explain the git workflow while making commits
 
 - [ ] `git status` - see what the current state of the files in your repository are
-- [ ] `git add file` - put the changed file on the stage
+- [ ] `git add <filename>` - put the changed file on the stage
 - [ ] `git status`
-- [ ] `git commit -m 'Commit message'` - create a new savepoint including every change on the stage
+- [ ] `git commit -m "add foo"` - create a new savepoint including every change on the stage
 - [ ] `git status`
 - [ ] `git log --oneline` - show the latest git history
 
@@ -102,7 +102,7 @@ the first place)**
 - [ ] create some more commits (add some more content to the file you are working on)
 - [ ] now simulate an massive error, e.g. deleting the content of a file and save it.
 - [ ] `git status` - you will see the untracked changes
-- [ ] `git restore <file name>` - reset the file to the last committed state.
+- [ ] `git restore <filename>` - reset the file to the last committed state.
 - [ ] `git restore .` show that you can reset the whole repository to the state of the last commit
       if necessary.
 
@@ -144,33 +144,12 @@ in the terminal, outside of any other repository:
       cloning a repository while being in another repository.
 - [ ] when using this command the local repository will be named exactly like the remote repository
 
-### GIT CLI installation & SSH configuration
+### Git Setup and Challenge Preparation
 
 - [ ] Provide the [handout](git-cli-and-remote.md) and the
       [challenges](challenges-git-cli-and-remote.md) to the students
 
-**Guide the students through installation & configuration steps.**
-
-- [ ] let them install the GIT Cli via brew: `brew install gh`
-- [ ] let them execute the **git ssh script**:
-      `zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)` -
-- [ ] make sure the students fill in the prompts of the script correctly (correct mail used on
-      GitHub and username). Let them choose **no** passphrase for their key. 1. enter the correct
-      information:
-  - enter your name: your full name
-  - enter your email: your mail address you use in your **github account**
-  - save the ssh key pair in the default folder (simply press `Enter`)
-  - add a passphrase: leave the passphrase empty and press `Enter` twice
-  - choose the GitHub account type: `GitHub.com`
-  - choose a protocol: `SSH`
-  - upload your SSH public key to your GitHub account: `Users/<username>/.ssh/id_ed25519.pub`
-  - choose a descriptive SSH key name: e.g. "Mac" or "Personal Laptop"
-  - authenticate to GitHub CLI: `Login with a web browser`
-  - ❗️ copy the one time code
-  - press `Enter`
-  - paste the one time code
-  - allow the access for the GitHub CLI
-  - done!
+Guide the students through the Setting up git and GitHub step as described in the challenges file.
 
 ---
 
@@ -206,7 +185,7 @@ in the terminal, outside of any other repository:
 
 ## Keywords for Recap:
 
-git add ., git commit -m "cmsg", git status, git push, git restore ., ssh key, stage untracked
+git add ., git commit -m "add foo", git status, git push, git restore ., ssh key, stage untracked
 files, committed files,
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically

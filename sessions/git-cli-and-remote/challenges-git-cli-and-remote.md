@@ -1,29 +1,13 @@
 # Challenges: Git CLI and Remote
 
-## Git Setup
+## Setting up git and GitHub
 
-1. install the GIT Cli via brew: `brew install gh`
-1. execute the **git ssh script**
+💡 This will configure git on your machine and connect it to your GitHub account.
 
-   ```bash
-   zsh <(curl -s https://raw.githubusercontent.com/neuefische/zsh-setup/main/setup-git-and-ssh)
-   ```
+Carefully read and follow the
+[instructions in the web-setup repository](https://github.com/neuefische/web-setup#-setting-up-git-and-github).
 
-1. enter the correct information:
-   - enter your name: your full name
-   - enter your email: your mail address you use in your **github account**
-   - save the ssh key pair in the default folder (simply press `Enter`)
-   - add a passphrase: leave the passphrase empty and press `Enter` twice
-   - choose the GitHub account type: `GitHub.com`
-   - choose a protocol: `SSH`
-   - upload your SSH public key to your GitHub account: `Users/<username>/.ssh/id_ed25519.pub`
-   - choose a descriptive SSH key name: e.g. "Mac" or "Personal Laptop"
-   - authenticate to GitHub CLI: `Login with a web browser`
-   - ❗️ copy the one time code
-   - press `Enter`
-   - paste the one time code
-   - allow the access for the GitHub CLI
-   - done!
+Run the _Setting up git and GitHub_ script as described.
 
 ## Session Notebook part 1
 

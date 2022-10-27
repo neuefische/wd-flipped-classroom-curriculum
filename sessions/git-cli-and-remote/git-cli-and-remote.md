@@ -10,8 +10,8 @@
 
 ## Git CLI
 
-After installing Git on your machine, you can create repositories and commits locally. You can also
-synchronize your local repository with a **remote** repository (i.e. on GitHub).
+You can create git repositories and commits locally. You can also synchronize your local repository
+with a **remote** repository (i.e. on GitHub).
 
 ### Creating local repositories
 
@@ -73,12 +73,12 @@ We recommend executing the following git commands for every completed task:
 > Commit early, commit often.  
 > Make sure, that your code works as expected.
 
-| Git command                      | Git task                                         |
-| -------------------------------- | ------------------------------------------------ |
-| `git status`                     | List all files that have changed and their state |
-| `git add <filename>`             | Add a file to the stage                          |
-| `git commit -m "Commit message"` | Create a commit including all staged files       |
-| `git log --oneline`              | Show the commit history                          |
+| Git command               | Git task                                         |
+| ------------------------- | ------------------------------------------------ |
+| `git status`              | List all files that have changed and their state |
+| `git add <filename>`      | Add a file to the stage                          |
+| `git commit -m "add foo"` | Create a commit including all staged files       |
+| `git log --oneline`       | Show the commit history                          |
 
 <img src="assets/untracked-to-committed.png" alt="untracked to committed" width="400">
 <img src="assets/modified-to-committed.png" alt="modified to committed" width="400">
@@ -96,7 +96,7 @@ git restore .
 You can also restore individual files:
 
 ```sh
-git restore <file name>
+git restore <filename>
 ```
 
 ---
