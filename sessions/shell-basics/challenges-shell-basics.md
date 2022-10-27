@@ -1,57 +1,98 @@
 # Challenges: Shell Basics
 
-## Terminal Setup
+## macOS Setup using zsh
 
-1. Open the **spotlight search**: <kbd>command</kbd><kbd>space</kbd>
-2. Type "terminal" into the search bar and press <kbd>Enter</kbd> to open the terminal
-3. Install [Homebrew](https://brew.sh/)
-   - Accept installing Xcode Command Line Tools. It takes some minutes to install.
-4. Install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via Homebrew:
-   ```bash
-   brew install romkatv/powerlevel10k/powerlevel10k
-   echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
-   ```
-5. Restart the terminal to enter the configuration or type
-   ```bash
-   p10k configure
-   ```
-6. Configure the zsh theme as you like
-7. Change the font size of the terminal to 18px: `Terminal` -> `Preferences` -> `Profiles` -> `Font`
-   -> `Change...`
+> 💡 This will install and configure the software you'll be using during this bootcamp.
 
-## VS Code Installation
+Carefully read and follow the
+[instructions in the `web-setup` repository](https://github.com/neuefische/web-setup#readme).
 
-1. Install VS Code:
-   ```bash
-   brew install --cask visual-studio-code
-   ```
-2. Install the extension **Prettier - Code formatter**
-3. Go to the VS Code settings and:
-   - search for "default formatter" and set to prettier
-   - search for "format on save" and hit checkbox
-4. Install the extension **Auto Rename Tag**
-5. Install the extension **Live Preview**
+Run the _General Setup_ script as described.
 
-To be able to launch VS Code directly from the command line, do the following:
+## Visual Studio Code Setup
 
-1. In VS Code open the command palette by pressing <kbd>command</kbd><kbd>shift</kbd><kbd>p</kbd>.
-2. This will open a prompt near the top of the code window. Type "shell command" into the prompt.
-3. Select _"Shell Command: Install 'code' command in PATH"_ and confirm the installation by pressing
-   <kbd>Enter</kbd>.
+> 💡 Following these steps you will install some basic extensions for Visual Studio Code and do some
+> required setup for the course.
 
-You now have the `code` command line command installed. To open VS Code directly from the terminal,
-navigate to your project folder and type `code .` .
+1. Open **Visual Studio Code**
+2. Open the Extensions Panel (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>X</kbd>)
+3. Install the following extensions
+   - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+   - [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
+   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+4. Open the Visual Studio Code settings (<kbd>⌘</kbd><kbd>,</kbd>)
+   - Search for "Default Formatter" and set to "Prettier - Code formatter"
+   - Search for "Format On Save" and check the checkbox
+   - > 💡 This will set up Visual Studio Code to automatically format your code on save using
+     > Prettier.
+5. Open the command palette by pressing <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>.
+   - Type "shell command" into the prompt.
+   - Select _"Shell Command: Install 'code' command in PATH"_ and confirm the installation by
+     pressing <kbd>Enter</kbd>.
+   - > 💡 This allows you to open a folder Visual Studio Code from the command line with the
+     > `code .` command.
 
 ## Treasure Hunt
 
-In this challenge you have to find the lost diamond of the ancient king of treasure island! Open the
-**treasure-hunt.zip** that you received. Navigate through treasure island only with the terminal and
-find the treasure! Use the following commands:
+Open **iTerm** and navigate to the folder you want to use for all your projects (create it if
+nessesary). Use the following command to download the challange files:
 
-- use `cd` to change directories
-- use `cd ..` to move out of the current folder
-- use `ls` to look what is in the current folder
-- use `cat` to see what is inside a markdown file
-- use `pwd` to see your current directory path
+> 💡 This command will ask you for permission to download ghcd. This is a tool that we use to
+> download challenges from GitHub to your computer. Press <kbd>Enter</kbd> to confirm the download.
 
-Good luck!
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/shell-basics/treasure-hunt
+```
+
+Once the download is complete, navigate into the `treasure-hunt` folder using the `cd` command. Now
+the real challenge begins.
+
+**Find the lost diamond of the ancient monarch of treasure island!** Navigate through treasure
+island only with the terminal and find the treasure.
+
+Use the following commands:
+
+- `cd` to change directories
+- `cd ..` to move up one folder
+- `ls` to list files the current folder
+- `cat <filename>` to see contents of a file
+- `pwd` to see your current directory path
+
+Good luck! 💎
+
+## Notes Project
+
+Create the following file structure in a new folder inside your projects folder (using `mkdir`,
+`touch` and `cd`):
+
+```
+notes
+├── released
+│   └── public
+│   │   └── trash.txt
+│   ├── announcement1.txt
+│   └── announcement2.txt
+└── unreleased
+    ├── announcement3.txt
+    └── private
+        ├── notes1.txt
+        └── notes2.txt
+```
+
+Update the structure to the following (using `mv`, `rm` and `cd`):
+
+```
+notes
+├── private
+│   ├── notes1.txt
+│   └── notes2.txt
+└── public
+    ├── released
+    │   ├── announcement1.txt
+    │   └── announcement2.txt
+    └── unreleased
+        └── announcement3.txt
+```
+
+> 💡 You can use the `tree` command to see the file structure in the terminal. The `tree` command
+> line tool was installed with the `web-setup` script.

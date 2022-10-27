@@ -67,35 +67,35 @@ You can ask these questions:
 
 **Explain what the terminal is and what it's used for:**
 
-- [ ] `the terminal` is a command line interface (CLI) that allows us to interact with the operation
+- [ ] The terminal is a command line interface (CLI) that allows us to interact with the operation
       system of our computer.
 - [ ] It's used to run programs and perform actions. As a developer we use the terminal for a lot of
       tasks, like creating files, installing programs, start or stop a server and many more.
-- [ ] It's the program to have access to `the shell` and interact with it.
-- [ ] `the terminal` is the text based input/output environment. It accepts keystrokes as input and
+- [ ] It's the program to have access to the shell and interact with it.
+- [ ] The terminal is the text based input/output environment. It accepts keystrokes as input and
       paints pixels on the screen as visual output.
-- [ ] On macOS we can use the integrated program `Terminal`.
+- [ ] On macOS we can use the integrated program Terminal.
 
 ### Shell
 
 **Explain what the shell is and what it's used for:**
 
-- [ ] `the shell` is a program that runs in a terminal.
+- [ ] The shell is a program that runs in a terminal.
 - [ ] It's used to actually execute the commands that we type and returns the results.
 - [ ] Oftentimes the words shell and terminal are used interchangeably, even though they are not
       exactly the same thing.
 
 #### Basic shell commands
 
-- [ ] `cd folder_name` / `cd ..` / `cd`: change directory
+- [ ] `cd <foldername>` / `cd ..` / `cd`: change directory
 - [ ] `ls`: list files
 - [ ] `pwd`: print working directory
-- [ ] `mkdir folder_name`: create a directory
-- [ ] `touch file.md`: create a file
-- [ ] `rm file.md`: remove a file
-- [ ] `mv`: move or rename a file
+- [ ] `mkdir <foldername>`: create a directory
+- [ ] `touch <filename>`: create a file
+- [ ] `rm <filename>`: remove a file
+- [ ] `mv <oldname> <newname>`: move or rename a file
 - [ ] `open .`: open the current folder in Finder
-- [ ] `cat`: print the contents of a file to the terminal
+- [ ] `cat <filename>`: print the contents of a file to the terminal
 
 ### Why do developers need to complicate everything and use the terminal instead of a graphical user interface (GUI)?
 
@@ -114,65 +114,16 @@ You can ask these questions:
 > **It's much faster, you can copy and paste the commands you need, and you will probably make less
 > mistakes.**
 
-But: With great power comes great responsibility! <br> You can do almost anything in the terminal,
-also delete things irreversibly or other things that you didn't intend to so. So be cautious!
+But with great power comes great responsibility. You can do almost anything in the terminal, also
+delete things irreversibly or other things that you didn't intend to so. So be cautious!
 
-### Terminal Setup
+### Setup and Challenge Preparation
 
-- [ ] Provide the [handout](shell-basics.md) and [challenges](challenges-shell-basics.md) to the
-      students
+Provide the [handout](shell-basics.md) and [challenges](challenges-shell-basics.md) to the students.
 
-Guide the students through the Terminal Setup:
+Guide the students through the setup by follwing the instructions in the challenges.
 
-1. Open the **spotlight search**: <kbd>command</kbd><kbd>space</kbd>
-2. Type "terminal" into the search bar and press <kbd>Enter</kbd> to open the terminal
-3. Install [Homebrew](https://brew.sh/)
-   - Accept installing Xcode Command Line Tools. It takes some minutes to install.
-4. Install [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) via Homebrew:
-
-   ```bash
-   brew install romkatv/powerlevel10k/powerlevel10k
-   echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
-   ```
-
-   > ❗️Let the students copy the command from the [challenges](challenges-shell-basics.md) or
-   > directly from the [powerlevel10k](https://github.com/romkatv/powerlevel10k#homebrew) site.
-   > Sharing the command with the students via Slack can cause issues due to unexpected formatting
-   > while copying and pasting.
-
-5. Restart the terminal to enter the configuration or type
-   ```bash
-   p10k configure
-   ```
-6. Configure the zsh theme as you like
-7. Change the font size of the terminal to 18px: `Terminal` -> `Preferences` -> `Profiles` -> `Font`
-   -> `Change...`
-
-### VS Code Installation
-
-1. Install VS Code and explain what an IDE is:
-   ```bash
-   brew install --cask visual-studio-code
-   ```
-2. Install the extension `Prettier - Code formatter` and explain what a code formatter does
-3. Go to the VS Code settings and:
-   - search for "default formatter" and set to prettier
-   - search for "format on save" and hit checkbox
-4. Install the extension `Auto Rename Tag`
-5. Install the extension `Live Preview`
-
-To be able to launch VS Code directly from the command line, students need to do the following:
-
-1. In VS Code open the command palette by pressing <kbd>command</kbd><kbd>shift</kbd><kbd>p</kbd>
-2. This will open a prompt near the top of the code window. Type `shell command` into the prompt.
-3. Select `Shell Command: Install 'code' command in PATH` and confirm the installation by pressing
-   <kbd>Enter</kbd>.
-
-### Challenges Preparations
-
-- [ ] ❗️ Create a `zip` file from the `treasure-hunt` directory and give it to the students
-  - [ ] Make sure that everybody extracted the folder `treasure hunt` and changed into that folder
-        with the terminal.
+Let students to the actual treasure hunt challenge on their own.
 
 ---
 
