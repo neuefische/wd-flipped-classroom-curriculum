@@ -20,6 +20,7 @@ Run the _General Setup_ script as described.
    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
    - [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
    - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 4. Open the Visual Studio Code settings (<kbd>⌘</kbd><kbd>,</kbd>)
    - Search for "Default Formatter" and set to "Prettier - Code formatter"
    - Search for "Format On Save" and check the checkbox
