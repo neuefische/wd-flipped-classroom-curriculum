@@ -30,7 +30,7 @@ Run the _General Setup_ script as described.
    - Type "shell command" into the prompt.
    - Select _"Shell Command: Install 'code' command in PATH"_ and confirm the installation by
      pressing <kbd>Enter</kbd>.
-   - > 💡 This allows you to open a folder Visual Studio Code from the command line with the
+   - > 💡 This allows you to open a folder in Visual Studio Code from the command line with the
      > `code .` command.
 
 ## Treasure Hunt
