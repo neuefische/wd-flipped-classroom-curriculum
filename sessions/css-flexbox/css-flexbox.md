@@ -19,7 +19,7 @@ position will be determined by the flexbox rules. You define it as follows:
 
 ```css
 .container-element {
-	display: flex;
+  display: flex;
 }
 ```
 

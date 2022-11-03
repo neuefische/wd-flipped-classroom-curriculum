@@ -18,7 +18,7 @@ form controls to the user.
 
 ```html
 <form>
-	<!-- All form elements inside -->
+  <!-- All form elements inside -->
 </form>
 ```
 
@@ -41,7 +41,8 @@ It is required to define, which label and form field belong together. Use the `f
 `<label>` and the `id` attribute on the form field. Their values needs to match.
 
 ```html
-<label for="first-name">First name</label> <input name="first-name" id="first-name" />
+<label for="first-name">First name</label>
+<input name="first-name" id="first-name" />
 ```
 
 > ❗️ Always add a label to a form field. Otherwise users won't understand the purpose of a field,
@@ -59,7 +60,8 @@ The default `type` for `<input>` elements is `text`. Choose the `type` based on 
 user is requested to enter. Use `type="text"` when none of the other types is a better fit.
 
 ```html
-<label for="first-name">First name</label> <input type="text" name="first-name" id="first-name" />
+<label for="first-name">First name</label>
+<input type="text" name="first-name" id="first-name" />
 ```
 
 ### Email
@@ -121,9 +123,9 @@ defined between the opening and closing tag
 ```html
 <label for="billing-plan">Billing plan</label>
 <select name="billing-plan" id="billing-plan">
-	<option value="weekly">Weekly billing</option>
-	<option value="monthly">Monthly billing</option>
-	<option value="yearly">Monthly billing</option>
+  <option value="weekly">Weekly billing</option>
+  <option value="monthly">Monthly billing</option>
+  <option value="yearly">Monthly billing</option>
 </select>
 ```
 
@@ -133,13 +135,28 @@ The `<input type="radio" />` element is another way of presenting a choice with 
 the user. In many situations it can be used as an alternative to `<select>`.
 
 ```html
-<input type="radio" name="billing-plan" id="billing-plan-weekly" value="weekly" />
+<input
+  type="radio"
+  name="billing-plan"
+  id="billing-plan-weekly"
+  value="weekly"
+/>
 <label for="billing-plan-weekly">Weekly billing</label>
 
-<input type="radio" name="billing-plan" id="billing-plan-monthly" value="monthly" />
+<input
+  type="radio"
+  name="billing-plan"
+  id="billing-plan-monthly"
+  value="monthly"
+/>
 <label for="billing-plan-monthly">Monthly billing</label>
 
-<input type="radio" name="billing-plan" id="billing-plan-yearly" value="yearly" />
+<input
+  type="radio"
+  name="billing-plan"
+  id="billing-plan-yearly"
+  value="yearly"
+/>
 <label for="billing-plan-yearly">Yearly billing</label>
 ```
 
@@ -155,7 +172,11 @@ not related to each other. Each choice can either be "on" ("true") or "off" ("fa
 <input type="checkbox" name="accept-data-privacy" id="accept-data-privacy" />
 <label for="accept-data-privacy">I accept the data privacy agreement </label>
 
-<input type="checkbox" name="accept-terms-conditions" id="accept-terms-conditions" />
+<input
+  type="checkbox"
+  name="accept-terms-conditions"
+  id="accept-terms-conditions"
+/>
 <label for="accept-terms-conditions">I accept the terms and conditions </label>
 ```
 
@@ -215,13 +236,13 @@ provide a caption for such a group.
 
 ```html
 <fieldset>
-	<legend>Personal information</legend>
+  <legend>Personal information</legend>
 
-	<label for="first-name">First name</label>
-	<input type="text" name="first-name" id="first-name" />
+  <label for="first-name">First name</label>
+  <input type="text" name="first-name" id="first-name" />
 
-	<label for="email">Email address</label>
-	<input type="email" name="email" id="email" />
+  <label for="email">Email address</label>
+  <input type="email" name="email" id="email" />
 </fieldset>
 ```
 
@@ -235,7 +256,7 @@ name is missing and there is no content visible in the DOM that can be reference
 
 ```html
 <button aria-label="Close form" onClick="...">
-	<svg ...><path ... /></svg>
+  <svg ...><path ... /></svg>
 </button>
 ```
 
@@ -256,8 +277,8 @@ attribute to create the connection:
 
 ```html
 <p id="description">
-	We need some personal information about you in order to proceed. Please fill in this form so that
-	we can help you.
+  We need some personal information about you in order to proceed. Please fill
+  in this form so that we can help you.
 </p>
 <fieldset aria-describedby="description">...</fieldset>
 ```

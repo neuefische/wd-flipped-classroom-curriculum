@@ -25,8 +25,8 @@ times** the function needs to be executed. We already used callback functions in
 listeners**:
 
 ```js
-button.addEventListener('click', () => {
-	console.log('Inside the callback function.');
+button.addEventListener("click", () => {
+  console.log("Inside the callback function.");
 });
 ```
 
@@ -37,7 +37,7 @@ Here the structure is as follows:
 - second argument: callback function
   ```js
   () => {
-  	console.log('Inside the callback function.');
+    console.log("Inside the callback function.");
   };
   ```
 
@@ -52,10 +52,10 @@ function:
 
 ```js
 function sayHello() {
-	console.log('Hey Dude!');
+  console.log("Hey Dude!");
 }
 
-button.addEventListener('click', sayHello);
+button.addEventListener("click", sayHello);
 ```
 
 > ❗️ Note that we do not call the function here (we wrote `sayHello` instead of `sayHello()`). We
@@ -69,9 +69,9 @@ the callback function** inside their body, e.g. the `addEventListener` method.
 ```js
 // this function calls its callback function 3 times!
 function myHigherOrderFunction(callback) {
-	callback();
-	callback();
-	callback();
+  callback();
+  callback();
+  callback();
 }
 ```
 
@@ -94,8 +94,8 @@ In this example the callback function can accept a parameter to retrieve informa
 occurred event:
 
 ```js
-button.addEventListener('click', event => {
-	console.log('This button was clicked:', event.target);
+button.addEventListener("click", (event) => {
+  console.log("This button was clicked:", event.target);
 });
 ```
 

@@ -3,20 +3,32 @@
 > 💡 Hint: Don't worry if you don't finish all challenges in the lesson time. Use the remaining
 > challenges to exercise in your free learning time.
 
-## Challenge 1: Arrays
+## Arrays
 
-Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays?file=/md/README.md)
-and read the instructions given in the `README.md` file.
+Solve the _Arrays_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays?file=/md/README.md)
+or locally by running this command in your Terminal:
 
-## Challenge 2: Objects
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays -i
+```
 
-Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects?file=/md/README.md)
-and read the instructions given in the `README.md` file.
+## Objects
 
-## Challenge 3: Objects and Arrays
+Solve the _Objects_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects?file=/md/README.md)
+or locally by running this command in your Terminal:
 
-Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays?file=/md/README.md)
-and read the instructions given in the `README.md` file.
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects -i
+```
+
+## Objects and Arrays
+
+Solve the _Objects and Arrays_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays?file=/md/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays -i
+```

@@ -106,17 +106,19 @@ You can use the following demo:
 
 ```js
 async function getJoke() {
-	// Clear the joke section
-	jokeSection.innerHTML = '';
+  // Clear the joke section
+  jokeSection.innerHTML = "";
 
-	try {
-		const response = await fetch('https://example-apis.vercel.app/api/bad-jokes/random');
-		console.log(response);
+  try {
+    const response = await fetch(
+      "https://example-apis.vercel.app/api/bad-jokes/random"
+    );
+    console.log(response);
 
-		// Failure (Error during fetch)
-	} catch (error) {
-		console.error('An Error occurred.');
-	}
+    // Failure (Error during fetch)
+  } catch (error) {
+    console.error("An Error occurred.");
+  }
 }
 
 getJoke();
@@ -161,10 +163,10 @@ Before using the received data, elaborate on HTTP responses and how to handle th
 ```js
 // Failure (Bad response)
 if (!response.ok) {
-	console.error('Bad Response');
+  console.error("Bad Response");
 } else {
-	// Success
-	console.log('Great, the fetch worked!');
+  // Success
+  console.log("Great, the fetch worked!");
 }
 ```
 
@@ -183,11 +185,11 @@ if (!response.ok) {
 ```js
 // Failure (Bad response)
 if (!response.ok) {
-	console.error('Bad Response');
+  console.error("Bad Response");
 } else {
-	// Success
-	const jokeData = await response.json();
-	console.log(jokeData);
+  // Success
+  const jokeData = await response.json();
+  console.log(jokeData);
 }
 ```
 
@@ -202,15 +204,15 @@ To finish the demo, we still need to display a random joke in the UI.
 
 ```js
 if (!response.ok) {
-	console.error('Bad Response');
+  console.error("Bad Response");
 } else {
-	// Success
-	const jokeData = await response.json();
+  // Success
+  const jokeData = await response.json();
 
-	// Assemble DOM for the joke
-	const joke = Joke();
-	joke.textContent = jokeData.joke;
-	jokeSection.append(joke);
+  // Assemble DOM for the joke
+  const joke = Joke();
+  joke.textContent = jokeData.joke;
+  jokeSection.append(joke);
 }
 ```
 
@@ -234,21 +236,21 @@ Follow these steps to finish the demo:
 - [ ] Append the DOM element to the `jokeSection`
 
 ```js
-const response = await fetch('https://example-apis.vercel.app/api/bad-jokes');
+const response = await fetch("https://example-apis.vercel.app/api/bad-jokes");
 
 // Failure (Bad response)
 if (!response.ok) {
-	console.error('Bad Response');
+  console.error("Bad Response");
 } else {
-	// Success
-	const jokesData = await response.json();
+  // Success
+  const jokesData = await response.json();
 
-	// Assemble DOM for the jokes
-	jokesData.forEach(jokeData => {
-		const joke = Joke();
-		joke.textContent = jokeData.joke;
-		jokeSection.append(joke);
-	});
+  // Assemble DOM for the jokes
+  jokesData.forEach((jokeData) => {
+    const joke = Joke();
+    joke.textContent = jokeData.joke;
+    jokeSection.append(joke);
+  });
 }
 ```
 

@@ -28,11 +28,11 @@ This way you can write code and apply it to each element within an array
 The array method `forEach` executes some logic for each element within an array.
 
 ```js
-const pets = ['bird', 'cat', 'dog', 'ferret', 'fish'];
-pets.forEach(pet => {
-	const petElement = document.createElement('p');
-	petElement.textContent = pet;
-	document.body.append(petElement);
+const pets = ["bird", "cat", "dog", "ferret", "fish"];
+pets.forEach((pet) => {
+  const petElement = document.createElement("p");
+  petElement.textContent = pet;
+  document.body.append(petElement);
 });
 ```
 
@@ -58,9 +58,9 @@ You can define the kind of transformation applied to each element in the callbac
 The created and the original array have the same length.
 
 ```js
-const pets = ['bird', 'cat', 'dog', 'ferret', 'fish'];
-const uppercasePets = pets.map(pet => {
-	return pet.toUpperCase();
+const pets = ["bird", "cat", "dog", "ferret", "fish"];
+const uppercasePets = pets.map((pet) => {
+  return pet.toUpperCase();
 });
 console.log(uppercasePets); // ['BIRD', 'CAT', 'DOG', 'FERRET', 'FISH']
 ```
@@ -85,9 +85,9 @@ the resulting array or not. The original array is not being altered.
 The created array is likely to have a shorter length than the original array.
 
 ```js
-const pets = ['bird', 'cat', 'dog', 'ferret', 'fish'];
-const petsWithF = pets.filter(pet => {
-	return pet.startsWith('f');
+const pets = ["bird", "cat", "dog", "ferret", "fish"];
+const petsWithF = pets.filter((pet) => {
+  return pet.startsWith("f");
 });
 console.log(petsWithF); // ['ferret', 'fish']
 ```
@@ -107,14 +107,14 @@ in a separated variable, the methods can be called directly after another. This 
 of code and improves readable.
 
 ```js
-const pets = ['bird', 'cat', 'dog', 'ferret', 'fish'];
+const pets = ["bird", "cat", "dog", "ferret", "fish"];
 const uppercasePetsWithF = pets
-	.filter(pet => {
-		return pet.startsWith('f');
-	})
-	.map(pet => {
-		return pet.toUpperCase();
-	});
+  .filter((pet) => {
+    return pet.startsWith("f");
+  })
+  .map((pet) => {
+    return pet.toUpperCase();
+  });
 console.log(uppercasePetsWithF); // ['FERRET', 'FISH']
 ```
 
@@ -136,10 +136,10 @@ The `NodeList` returned by `document.querySelectorAll` is an array-like object. 
 
 ```js
 const pets = document.querySelectorAll('[data-js="pet"]');
-pets.forEach(pet => {
-	pet.addEventListener('click', () => {
-		// [...]
-	});
+pets.forEach((pet) => {
+  pet.addEventListener("click", () => {
+    // [...]
+  });
 });
 ```
 

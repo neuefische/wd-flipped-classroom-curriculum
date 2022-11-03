@@ -61,8 +61,8 @@ Function declarations are a way of defining functions. Show this example:
 
 ```js
 function greet() {
-	console.log('Hi Friends!');
-	console.log('Nice to be here.');
+  console.log("Hi Friends!");
+  console.log("Nice to be here.");
 }
 ```
 
@@ -76,9 +76,9 @@ Explain that you can write any JavaScript statement in a function body (e.g. dec
 
 ```js
 function printPersonalData() {
-	const name = Alex;
-	const age = 24;
-	console.log(name + ' is ' + age + ' years old');
+  const name = Alex;
+  const age = 24;
+  console.log(name + " is " + age + " years old");
 }
 ```
 
@@ -112,15 +112,15 @@ greet();
 
 ```js
 function printLetter(name) {
-	console.log('Hi ' + name + ', hope you are fine. Love, Johnny');
+  console.log("Hi " + name + ", hope you are fine. Love, Johnny");
 }
 
-printLetter('Max');
-printLetter('Jordan');
+printLetter("Max");
+printLetter("Jordan");
 
 function printSum(first, second, third) {
-	const sum = first + second + third;
-	console.log('The sum of your numbers is: ' + sum);
+  const sum = first + second + third;
+  console.log("The sum of your numbers is: " + sum);
 }
 
 printSum(1, 2, 3);
@@ -146,9 +146,9 @@ printSum(3, 4, 5);
 let globalAge = 24;
 
 function myFunction() {
-	const localAge = 36;
-	console.log(globalAge);
-	console.log(localAge);
+  const localAge = 36;
+  console.log(globalAge);
+  console.log(localAge);
 }
 
 myFunction();

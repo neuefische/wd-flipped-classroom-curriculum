@@ -36,9 +36,9 @@ A ruleset can have `multiple declarations`:
 
 ```css
 h1 {
-	color: blue;
-	font-size: 3rem;
-	text-align: center;
+  color: blue;
+  font-size: 3rem;
+  text-align: center;
 }
 ```
 
@@ -48,7 +48,7 @@ You could also select multiple elements and style them with the same ruleset:
 h1,
 h2,
 h3 {
-	color: red;
+  color: red;
 }
 ```
 
@@ -62,13 +62,13 @@ There are different CSS selectors you can use to style elements. The most common
 - **Element or Type selector**, like `article`, selects all elements of a specific type.
   ```css
   article {
-  	color: red;
+    color: red;
   }
   ```
 - **Class selector**, like `.class-name`, selects all elements with the specified class.
   ```css
   .my-cool-class {
-  	color: hotpink;
+    color: hotpink;
   }
   ```
   ```html
@@ -120,7 +120,7 @@ box". With the value `border-box`, the size of the "border box" is set instead.
 
 ```css
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 ```
 
@@ -146,8 +146,8 @@ Example:
 <h2>Coding Bootcamp</h2>
 <!-- "p" is a block-level element. The "a" inside is an inline-level element -->
 <p>
-	If you want to participate in a bootcamp, visit
-	<a href="https://www.neuefische.de">neuefische.de</a>
+  If you want to participate in a bootcamp, visit
+  <a href="https://www.neuefische.de">neuefische.de</a>
 </p>
 ```
 
@@ -168,7 +168,7 @@ You can include custom fonts in different ways:
 - find a font on [google fonts](fonts.google.com) and use the `@import` snippet and paste it to the
   top of your css file:
   ```css
-  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;			400;500;700&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;			400;500;700&display=swap");
   ```
 - use the provided HTML code to add the font via the `link` element in the `head` of your HTML file:
 
@@ -176,8 +176,8 @@ You can include custom fonts in different ways:
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-  	href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap"
-  	rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap"
+    rel="stylesheet"
   />
   ```
 
@@ -185,8 +185,8 @@ You can include custom fonts in different ways:
 
   ```css
   @font-face {
-  	font-family: 'Name of the font';
-  	src: url('path/to-the/font.woff');
+    font-family: "Name of the font";
+    src: url("path/to-the/font.woff");
   }
   ```
 
@@ -205,8 +205,8 @@ your HTML file by placing a `<link>` tag in the `<head>` of your HTML document.
 
 ```html
 <head>
-	...
-	<link rel="stylesheet" href="styles.css" />
+  ...
+  <link rel="stylesheet" href="styles.css" />
 </head>
 ```
 

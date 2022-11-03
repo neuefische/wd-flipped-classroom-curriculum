@@ -44,23 +44,23 @@ Usally named exports are created by using the keyword `export` dircectly before 
 `function`.
 
 ```js
-export const name = 'Alex';
+export const name = "Alex";
 export const age = 26;
 export function sayHello() {
-	console.log('Hello');
+  console.log("Hello");
 }
 ```
 
 It is also possible to export functions or variables after they have been declared.
 
 ```js
-const name = 'Alex';
+const name = "Alex";
 const age = 26;
 function sayHello() {
-	console.log('Hello');
+  console.log("Hello");
 }
 
-export {name, age, sayHello};
+export { name, age, sayHello };
 ```
 
 ### `default` Exports
@@ -72,7 +72,7 @@ Before a function declaration the syntax is similar to named exports.
 
 ```js
 export default function sayHello() {
-	console.log('Hello');
+  console.log("Hello");
 }
 ```
 
@@ -80,14 +80,14 @@ For directly exporting variables as default you only declare the value of the th
 exporting.
 
 ```js
-export default 'Alex';
+export default "Alex";
 ```
 
 This is the same for arrow functions.
 
 ```js
 export default () => {
-	console.log('Hello');
+  console.log("Hello");
 };
 ```
 
@@ -97,7 +97,7 @@ export default () => {
 Just like with named exports you can export the default export after it has been declared.
 
 ```js
-const name = 'Alex';
+const name = "Alex";
 
 export default name;
 ```
@@ -110,9 +110,9 @@ export default name;
 You can mix named and default exports.
 
 ```js
-export const name = 'Alex';
+export const name = "Alex";
 export default function sayHello() {
-	console.log('Hello');
+  console.log("Hello");
 }
 ```
 
@@ -129,7 +129,7 @@ imported from another module.
 If another module exports a named export you can import it as such.
 
 ```js
-import {name, age} from './my-module.js';
+import { name, age } from "./my-module.js";
 ```
 
 Now `name` and `age` are available in the current module.
@@ -139,7 +139,7 @@ Now `name` and `age` are available in the current module.
 If another module exports a `default` export you have to give it a name when importing it.
 
 ```js
-import myModule from './my-module.js';
+import myModule from "./my-module.js";
 ```
 
 > 💡 Notice that the name you give it does not nessesarily have to match the name of the module or
@@ -153,7 +153,7 @@ import myModule from './my-module.js';
 You can mix named and default imports.
 
 ```js
-import myModule, {name, age} from './my-module.js';
+import myModule, { name, age } from "./my-module.js";
 ```
 
 ### Renaming Named Imports
@@ -161,7 +161,7 @@ import myModule, {name, age} from './my-module.js';
 You can rename named imports explicitly by using the `as` syntax.
 
 ```js
-import {name as firstName, age as yearsSinceBorn} from './my-module.js';
+import { name as firstName, age as yearsSinceBorn } from "./my-module.js";
 ```
 
 The variables `firstName` and `yearsSinceBorn` are now available in the current module. This can be
@@ -223,41 +223,41 @@ Here is an example of a component that creates a button:
 
 ```js
 export function Button(props) {
-	const button = document.createElement('button');
-	button.classList.add('button');
-	button.textContent = props.text;
-	return button;
+  const button = document.createElement("button");
+  button.classList.add("button");
+  button.textContent = props.text;
+  return button;
 }
 ```
 
 An advanced use case are components that call other components (composition):
 
 ```js
-import {Button} from '../Button/Button.js';
+import { Button } from "../Button/Button.js";
 
 export function ButtonGroup(props) {
-	const buttonGroup = document.createElement('div');
-	buttonGroup.classList.add('button-group');
-	for (const buttonProps of props.buttons) {
-		const button = Button(buttonProps);
-		buttonGroup.append(button);
-	}
-	return buttonGroup;
+  const buttonGroup = document.createElement("div");
+  buttonGroup.classList.add("button-group");
+  for (const buttonProps of props.buttons) {
+    const button = Button(buttonProps);
+    buttonGroup.append(button);
+  }
+  return buttonGroup;
 }
 ```
 
 Here is how these components could be used in another file:
 
 ```js
-import {ButtonGroup} from './ButtonGroup/ButtonGroup.js';
-import {Button} from './Button/Button.js';
+import { ButtonGroup } from "./ButtonGroup/ButtonGroup.js";
+import { Button } from "./Button/Button.js";
 
 const myButtonGroup = ButtonGroup({
-	buttons: [{text: 'Button 1'}, {text: 'Button 2'}, {text: 'Button 3'}],
+  buttons: [{ text: "Button 1" }, { text: "Button 2" }, { text: "Button 3" }],
 });
 document.body.append(myButtonGroup);
 
-const myButton = Button({text: 'Button'});
+const myButton = Button({ text: "Button" });
 document.body.append(myButton);
 ```
 

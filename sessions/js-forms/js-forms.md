@@ -36,8 +36,8 @@ In order to prevent this behavior of the `submit` event, you need to
 ```js
 const form = document.querySelector('[data-js="form"]');
 
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 });
 ```
 
@@ -58,10 +58,10 @@ For now, the most important method of the `event` object is `.preventDefault()`.
 form.
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	console.log(event.target);
+  console.log(event.target);
 });
 // Output:
 // <form data-js="form">
@@ -81,13 +81,13 @@ elements (form fields, field sets and buttons).
 You get access to a specific form field via its `name` attribute and dot notation:
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	const formElements = event.target.elements;
+  const formElements = event.target.elements;
 
-	console.log(formElements.firstName);
-	console.log(formElements.firstName.value);
+  console.log(formElements.firstName);
+  console.log(formElements.firstName.value);
 });
 ```
 
@@ -106,13 +106,13 @@ You can access all input values of the form by using `FormData()`. This construc
 `event.target` and can be transformed into a usable object afterwards:
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	const formData = new FormData(event.target);
-	const data = Object.fromEntries(formData);
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
 
-	console.log(data);
+  console.log(data);
 });
 ```
 

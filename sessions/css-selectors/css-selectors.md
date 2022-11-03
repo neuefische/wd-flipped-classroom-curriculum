@@ -15,7 +15,7 @@ are hard to overwrite.
 
 ```css
 #title {
-	color: blue;
+  color: blue;
 }
 ```
 
@@ -30,23 +30,23 @@ with attribute selectors written inside `[...]` square brackets. Here are some e
 
   ```css
   [hidden] {
-  	...;
+    ...;
   }
   ```
 
 - all links which open a new tab:
 
   ```css
-  [target='_blank'] {
-  	...;
+  [target="_blank"] {
+    ...;
   }
   ```
 
 - all elements with the class `card` and the attribute `role="list"`
 
   ```css
-  .card[role='list'] {
-  	...;
+  .card[role="list"] {
+    ...;
   }
   ```
 
@@ -63,7 +63,7 @@ are some examples of states that can be styled with pseudo classes:
 
   ```css
   h2:hover {
-  	...;
+    ...;
   }
   ```
 
@@ -71,7 +71,7 @@ are some examples of states that can be styled with pseudo classes:
 
   ```css
   button:active {
-  	...;
+    ...;
   }
   ```
 
@@ -79,7 +79,7 @@ are some examples of states that can be styled with pseudo classes:
 
   ```css
   a:visited {
-  	...;
+    ...;
   }
   ```
 
@@ -87,7 +87,7 @@ are some examples of states that can be styled with pseudo classes:
 
   ```css
   input:focus {
-  	...;
+    ...;
   }
   ```
 
@@ -95,7 +95,7 @@ are some examples of states that can be styled with pseudo classes:
 
   ```css
   li:first-child {
-  	...;
+    ...;
   }
   ```
 
@@ -104,7 +104,7 @@ are some examples of states that can be styled with pseudo classes:
 
   ```css
   li:nth-child(n) {
-  	...;
+    ...;
   }
   ```
 
@@ -121,7 +121,7 @@ to pseudo classes they are written with **::** double colons directly after the 
 
   ```css
   p::first-line {
-  	...;
+    ...;
   }
   ```
 
@@ -129,7 +129,7 @@ to pseudo classes they are written with **::** double colons directly after the 
 
   ```css
   a::before {
-  	content: '🌍'; // property needed, can be empty
+    content: "🌍"; // property needed, can be empty
   }
   ```
 
@@ -137,7 +137,7 @@ to pseudo classes they are written with **::** double colons directly after the 
 
   ```css
   a::after {
-  	content: '📎'; // property needed, can be empty
+    content: "📎"; // property needed, can be empty
   }
   ```
 
@@ -167,8 +167,8 @@ Many combinators can be chained. Can you figure out which element would be style
 selector?
 
 ```css
-body section > ul[role='list'] > li::before {
-	...;
+body section > ul[role="list"] > li::before {
+  ...;
 }
 ```
 

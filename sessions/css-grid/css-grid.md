@@ -26,7 +26,7 @@ elements to be positioned as direct children in the grid.
 
 ```css
 .container {
-	display: grid;
+  display: grid;
 }
 ```
 
@@ -85,9 +85,9 @@ A completely different approach to position elements inside a grid is to use `gr
   element:
   ```css
   grid-template-areas:
-  	'a a b c'
-  	'd d d c'
-  	'e e e e';
+    "a a b c"
+    "d d d c"
+    "e e e e";
   ```
 - Then the grid elements are assigned to one of these areas with the `grid-area` property:
   ```css

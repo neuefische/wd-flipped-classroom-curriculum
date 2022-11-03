@@ -5,8 +5,13 @@
 
 ## Truthy and Falsy values
 
-Solve this
-[CodeSandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/truthy-and-falsy?file=/js/index.js)
+Solve the _Truthy and Falsy values_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/truthy-and-falsy?file=/js/index.js)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/truthy-and-falsy -i
+```
 
 ## Converting boolean values to strings
 
@@ -26,5 +31,10 @@ Solve this [Kata](https://www.codewars.com/kata/56170e844da7c6f647000063/train/j
 
 ## Teenager check
 
-Solve this
-[CodeSandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check?file=/js/index.js)
+Solve the _Teenager check_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check?file=/js/index.js)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check -i
+```

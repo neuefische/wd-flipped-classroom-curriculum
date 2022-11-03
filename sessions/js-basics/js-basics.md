@@ -13,11 +13,11 @@
 
 ```html
 <head>
-	...
-	<script src="./index.js" defer></script>
+  ...
+  <script src="./index.js" defer></script>
 </head>
 <body>
-	...
+  ...
 </body>
 ```
 
@@ -32,11 +32,11 @@ The `script` tag has two attributes:
 
 ```html
 <head>
-	...
+  ...
 </head>
 <body>
-	...
-	<script src="./index.js"></script>
+  ...
+  <script src="./index.js"></script>
 </body>
 ```
 
@@ -48,9 +48,9 @@ In JavaScript we can print text to the console of the web browser. We can use th
 error logging for example.
 
 ```js
-console.log('Hello World!'); // logs into console
+console.log("Hello World!"); // logs into console
 console.clear(); // clears console
-console.error('Error!'); // logs as error into console
+console.error("Error!"); // logs as error into console
 ```
 
 ---
@@ -61,7 +61,7 @@ Before we can add interactivity, we need to select the necessary HTML-Elements:
 
 ```html
 <body>
-	<main class="main" id="main" data-js="main">...</main>
+  <main class="main" id="main" data-js="main">...</main>
 </body>
 ```
 
@@ -78,11 +78,11 @@ Other css selectors work as well, but the data-\* attribute selectors should be 
 
 ```js
 // tag as identifier
-const mainElement = document.querySelector('main');
+const mainElement = document.querySelector("main");
 // class as identifier -> .
-const mainElement = document.querySelector('.main');
+const mainElement = document.querySelector(".main");
 // id as identifier -> #
-const mainElement = document.querySelector('#main');
+const mainElement = document.querySelector("#main");
 ```
 
 > 💡 We try to separate our concerns: Classes are for CSS and data-\* attributes are for JavaScript
@@ -100,7 +100,7 @@ triggered. The method `addEventListener` is used to react to events.
 
 ```js
 const button = document.querySelector('[data-js="button"]');
-button.addEventListener('click', () => {});
+button.addEventListener("click", () => {});
 ```
 
 First you specify the kind of event, e.g. **click**, then you define what code should be executed
@@ -108,19 +108,19 @@ when the event is triggered. You write that code between the `{}` brackets, e.g.
 
 ```js
 const button = document.querySelector('[data-js="button"]');
-button.addEventListener('click', () => {
-	console.log('Yeah');
+button.addEventListener("click", () => {
+  console.log("Yeah");
 });
 ```
 
 There different events you can listen to, for example:
 
 ```js
-button.addEventListener('mouseover', () => {});
+button.addEventListener("mouseover", () => {});
 ```
 
 ```js
-button.addEventListener('keydown', () => {});
+button.addEventListener("keydown", () => {});
 ```
 
 > 💡 Here you can find a
@@ -136,7 +136,7 @@ You can add, remove and toggle classes, e.g. to change the styling of an element
 
 ```html
 <main data-js="main">
-	<button type="button" data-js="button">Add a class</button>
+  <button type="button" data-js="button">Add a class</button>
 </main>
 ```
 
@@ -147,8 +147,8 @@ method:
 const main = document.querySelector('[data-js="main"]');
 const button = document.querySelector('[data-js="button"]');
 
-button.addEventListener('click', () => {
-	main.classList.add('page--primary');
+button.addEventListener("click", () => {
+  main.classList.add("page--primary");
 });
 ```
 
@@ -156,18 +156,18 @@ A click on the button adds the class **page--primary** to the main element:
 
 ```html
 <main data-js="main" class="page--primary">
-	<button type="button" data-js="button">Add a class</button>
+  <button type="button" data-js="button">Add a class</button>
 </main>
 ```
 
 You can also remove or toggle a class in the same way:
 
 ```js
-main.classList.remove('page--primary');
+main.classList.remove("page--primary");
 ```
 
 ```js
-main.classList.toggle('page--primary');
+main.classList.toggle("page--primary");
 ```
 
 ---

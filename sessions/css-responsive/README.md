@@ -59,11 +59,11 @@ How can we use CSS to react to different features of the medium that our website
 ### Responsive Design
 
 - [ ] Open this [static example](https://iujmks.csb.app/)
-      ([source](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/example-static))
+      ([source](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/demo-example-static))
       and show how it behaves on different screen sizes
 - [ ] Explain that this site does not respond to different screen sizes
 - [ ] Open this [responsive example](https://r4djc5.csb.app/)
-      ([source](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/example-responsive))
+      ([source](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/demo-example-responsive))
       and compare how _it_ behaves on different screen sizes
 - [ ] Explain that responsive design is a design that adapts to the screen size of the device it is
       being viewed on

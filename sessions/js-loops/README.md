@@ -72,11 +72,11 @@ Start with the `while` loop as most fundamental loop:
 - [ ] stops when the criteria changes to `false`
 
 ```js
-let string = 'a';
+let string = "a";
 
 while (string.length <= 8) {
-	console.log(string);
-	string = string + string;
+  console.log(string);
+  string = string + string;
 }
 
 // 'a'
@@ -98,7 +98,7 @@ Eplain the `for` loop:
 
 ```js
 for (let counter = 0; counter < 4; counter++) {
-	console.log(counter);
+  console.log(counter);
 }
 // 0
 // 1
@@ -115,13 +115,13 @@ Explain the `for...in` loop:
 
 ```js
 const user = {
-	name: 'Alex',
-	age: 28,
-	email: 'alex@mail.com',
+  name: "Alex",
+  age: 28,
+  email: "alex@mail.com",
 };
 
 for (const key in user) {
-	console.log(user[key]);
+  console.log(user[key]);
 }
 
 // 'Alex'
@@ -139,10 +139,10 @@ Explain the `for...of` loop:
 - [ ] the iterator variable (here: `fruit`) is assigned the respective array item in each iteration.
 
 ```js
-const fruits = ['apple', 'banana', 'melon'];
+const fruits = ["apple", "banana", "melon"];
 
 for (const fruit of fruits) {
-	console.log(fruit);
+  console.log(fruit);
 }
 
 // 'apple'

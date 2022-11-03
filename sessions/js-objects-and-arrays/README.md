@@ -51,7 +51,7 @@
 - [ ] You can declare an array using array literals:
 
   ```js
-  const shoppingList = ['apple', 'tomato'];
+  const shoppingList = ["apple", "tomato"];
   console.log(shoppingList);
   ```
 
@@ -72,8 +72,8 @@
 - [ ] Arrays can contain different types of values:
 
   ```js
-  const diverseArray = [1, 2, 'hello', false];
-  const complexArray = [1, 2, ['hello', false], true];
+  const diverseArray = [1, 2, "hello", false];
+  const complexArray = [1, 2, ["hello", false], true];
   ```
 
 - [ ] ❗️ Highlight, that this is bad practice and an array should always contain the same data
@@ -89,15 +89,15 @@
 - [ ] You can overwrite individual values in an array:
 
   ```js
-  const shoppingList = ['apple', 'tomato'];
-  shoppingList[0] = 'banana';
+  const shoppingList = ["apple", "tomato"];
+  shoppingList[0] = "banana";
   console.log(shoppingList);
   ```
 
 - [ ] You can add an element (or multiple elements) to the end of an array:
 
   ```js
-  shoppingList.push('orange');
+  shoppingList.push("orange");
   console.log(shoppingList);
   ```
 
@@ -131,9 +131,9 @@
 
   ```js
   const person = {
-  	name: 'Max Blub',
-  	age: 21,
-  	isStudent: false,
+    name: "Max Blub",
+    age: 21,
+    isStudent: false,
   };
   ```
 
@@ -146,22 +146,22 @@
 - [ ] You can access the properties using the bracket notation:
 
   ```js
-  console.log(person['name']);
+  console.log(person["name"]);
   ```
 
 - [ ] Objects can be nested:
 
   ```js
   const person = {
-  	name: 'Max Blub',
-  	age: 21,
-  	isStudent: false,
-  	address: {
-  		street: 'Berliner Str.',
-  		houseNumber: 42,
-  		city: 'Leipzig',
-  		zipCode: '12345',
-  	},
+    name: "Max Blub",
+    age: 21,
+    isStudent: false,
+    address: {
+      street: "Berliner Str.",
+      houseNumber: 42,
+      city: "Leipzig",
+      zipCode: "12345",
+    },
   };
   ```
 
@@ -177,9 +177,9 @@
       notation:
 
   ```js
-  person.name = 'Max Bla';
+  person.name = "Max Bla";
   console.log(person.name);
-  person['name'] = 'Max Blub'; // omit
+  person["name"] = "Max Blub"; // omit
   console.log(person.name); // omit
   ```
 
@@ -203,22 +203,22 @@
 
   ```js
   const peopleArray = [
-  	{
-  		name: 'John',
-  		age: 22,
-  	},
-  	{
-  		name: 'Alex',
-  		age: 33,
-  	},
+    {
+      name: "John",
+      age: 22,
+    },
+    {
+      name: "Alex",
+      age: 33,
+    },
   ];
   ```
 
   ```js
   const user = {
-  	userId: '1234',
-  	mail: 'test@mail.com',
-  	shoppingCart: ['tomato', 'banana', 'chocolate'],
+    userId: "1234",
+    mail: "test@mail.com",
+    shoppingCart: ["tomato", "banana", "chocolate"],
   };
   ```
 

@@ -18,10 +18,10 @@ Use `array.includes()` to check whether the array contains the specified value. 
 is returned, otherwise `false`.
 
 ```js
-const colors = ['hotpink', 'aquamarine', 'granite'];
+const colors = ["hotpink", "aquamarine", "granite"];
 
-colors.includes('aquamarine'); // true
-colors.includes('nemo'); // false
+colors.includes("aquamarine"); // true
+colors.includes("nemo"); // false
 ```
 
 ---
@@ -32,20 +32,20 @@ Use `find()` to receive **the first element** of the array that satisfies the pr
 function. Otherwise, it returns `undefined`.
 
 ```js
-const colors = ['hotpink', 'aquamarine', 'granite', 'grey'];
+const colors = ["hotpink", "aquamarine", "granite", "grey"];
 
-colors.find(color => color.startsWith('g')); // 'granite'
-colors.find(color => color.startsWith('b')); // undefined
+colors.find((color) => color.startsWith("g")); // 'granite'
+colors.find((color) => color.startsWith("b")); // undefined
 ```
 
 Use `findIndex()` to receive the index **of the first element** of the array that satisfies the
 provided testing function. If there is no such element, `-1` is returned.
 
 ```js
-const colors = ['hotpink', 'aquamarine', 'granite', 'grey'];
+const colors = ["hotpink", "aquamarine", "granite", "grey"];
 
-colors.findIndex(color => color.startsWith('g')); // 'granite'
-colors.findIndex(color => color.startsWith('b')); // -1
+colors.findIndex((color) => color.startsWith("g")); // 'granite'
+colors.findIndex((color) => color.startsWith("b")); // -1
 ```
 
 ---
@@ -85,18 +85,18 @@ function:
   (`nameA < nameB` and `nameA > nameB`)
 
 ```js
-const strings = ['Xbox', 'PlayStation', 'GameBoy'];
+const strings = ["Xbox", "PlayStation", "GameBoy"];
 
 strings.sort((a, b) => {
-	const nameA = a.toLowerCase();
-	const nameB = b.toLowerCase();
-	if (nameA < nameB) {
-		return -1;
-	}
-	if (nameA > nameB) {
-		return 1;
-	}
-	return 0;
+  const nameA = a.toLowerCase();
+  const nameB = b.toLowerCase();
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+  return 0;
 });
 
 console.log(strings); // ['GameBoy', 'PlayStation', 'Xbox']
@@ -165,19 +165,19 @@ console.log(numbers); // [4, 42, 23, 1]
 Use `some()` to test whether **at least one element** in the array passes the provided test.
 
 ```js
-const colors = ['hotpink', 'aquamarine', 'granite'];
+const colors = ["hotpink", "aquamarine", "granite"];
 
-colors.some(color => color.startsWith('g')); // true
-colors.some(color => color.startsWith('i')); // false
+colors.some((color) => color.startsWith("g")); // true
+colors.some((color) => color.startsWith("i")); // false
 ```
 
 In order to check if **all elements** pass the test, use `every()`.
 
 ```js
-const colors = ['hotpink', 'aquamarine', 'granite'];
+const colors = ["hotpink", "aquamarine", "granite"];
 
-colors.every(color => color.length > 5); // true
-colors.every(color => color.length < 3); // false
+colors.every((color) => color.length > 5); // true
+colors.every((color) => color.length < 3); // false
 ```
 
 ---
@@ -211,13 +211,13 @@ console.log(numbers); // 70
 >
 > ```js
 > const myArray = [
-> 	{foo: 1, bar: 'hi'},
-> 	{foo: 4, bar: 'hey'},
-> 	{foo: 2, bar: 'ho'},
+>   { foo: 1, bar: "hi" },
+>   { foo: 4, bar: "hey" },
+>   { foo: 2, bar: "ho" },
 > ];
 > const myObject = {};
-> myArray.forEach(element => {
-> 	myObject[element.bar] = element.foo;
+> myArray.forEach((element) => {
+>   myObject[element.bar] = element.foo;
 > });
 >
 > console.log(myObject); // {hi: 1, hey: 4, ho: 2}

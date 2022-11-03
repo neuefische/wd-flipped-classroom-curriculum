@@ -31,7 +31,7 @@ mutate the original array or object.
 ### Destructuring Arrays
 
 ```js
-const greekLetters = ['alpha', 'beta', 'gamma', 'delta'];
+const greekLetters = ["alpha", "beta", "gamma", "delta"];
 ```
 
 If we want to declare the values of `greekLetters` as distinct variables, accessing them might turn
@@ -81,17 +81,17 @@ Skipping values with extra commas can quickly become unreadable. Imagine wanting
 
 ```js
 const coachObject = {
-	name: 'Sam',
-	mood: 'great',
-	skills: 'amazing',
-	score: 9999,
+  name: "Sam",
+  mood: "great",
+  skills: "amazing",
+  score: 9999,
 };
 ```
 
 You can use destructuring assignment like this:
 
 ```js
-const {name, mood, skills, score} = coachObject;
+const { name, mood, skills, score } = coachObject;
 // name → 'Sam'
 // mood → 'great'
 // etc.
@@ -105,7 +105,7 @@ order. Here the names of the variables have to match the keys of the object prop
 You can rename the variable while destructuring:
 
 ```js
-const {name: firstName} = coachObject;
+const { name: firstName } = coachObject;
 // firstName → 'Sam'
 // name → undefined
 ```
@@ -113,7 +113,7 @@ const {name: firstName} = coachObject;
 You can also set a default value of a property in case it does not exist:
 
 ```js
-const {isAdmin = true} = coachObject;
+const { isAdmin = true } = coachObject;
 // isAdmin → true
 ```
 
@@ -132,7 +132,7 @@ assignment or declaring function parameters.
 You can use it with arrays:
 
 ```js
-const greekLetters = ['alpha', 'beta', 'gamma', 'delta'];
+const greekLetters = ["alpha", "beta", "gamma", "delta"];
 const [firstLetter, ...allTheOtherLetters] = greekLetters;
 // firstLetter → "alpha"
 // allTheOtherLetters → ["beta", "gamma", "delta"]
@@ -142,13 +142,13 @@ Or with objects:
 
 ```js
 const coachObject = {
-	name: 'Sam',
-	mood: 'great',
-	skills: 'amazing',
-	score: 9999,
+  name: "Sam",
+  mood: "great",
+  skills: "amazing",
+  score: 9999,
 };
 
-const {name, score, ...theRestOfTheCoachObject} = coachObject;
+const { name, score, ...theRestOfTheCoachObject } = coachObject;
 // name → "Sam"
 // score → 9999
 // theRestOfTheCoachObject → { mood: 'great', skills: 'amazing' }
@@ -158,11 +158,11 @@ And even with function parameters:
 
 ```js
 function logLetters(firstLetter, ...moreLetters) {
-	console.log('the first letter is', firstLetter);
-	console.log('even more letters', moreLetters);
+  console.log("the first letter is", firstLetter);
+  console.log("even more letters", moreLetters);
 }
 
-logLetters('alpha', 'beta', 'gamma', 'delta');
+logLetters("alpha", "beta", "gamma", "delta");
 // logs:
 // the first letter is alpha
 // even more letters (3) ['beta', 'gamma', 'delta']
@@ -176,16 +176,16 @@ declaring array or object literals or calling functions.
 It works like this with array literal declarations:
 
 ```js
-const greekLetters = ['alpha', 'beta', 'gamma', 'delta'];
-const moreGreekLetters = [...greekLetters, 'epsilon', 'zeta'];
+const greekLetters = ["alpha", "beta", "gamma", "delta"];
+const moreGreekLetters = [...greekLetters, "epsilon", "zeta"];
 // moreGreekLetters → ['alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta']
 ```
 
 You can spread two (or more) arrays into another array ...
 
 ```js
-const redColors = ['crimson', 'pink', 'purple'];
-const blueColors = ['navy', 'teal', 'sky'];
+const redColors = ["crimson", "pink", "purple"];
+const blueColors = ["navy", "teal", "sky"];
 const mixedColors = [...redColors, ...blueColors];
 // mixedColors → ['crimson', 'pink', 'purple', 'navy', 'teal', 'sky']
 ```
@@ -193,8 +193,8 @@ const mixedColors = [...redColors, ...blueColors];
 ... and it matters where respectively you spread one array into another:
 
 ```js
-const cats = ['cat', 'cat', 'cat'];
-const dogs = ['dog', 'dog', 'dog'];
+const cats = ["cat", "cat", "cat"];
+const dogs = ["dog", "dog", "dog"];
 
 const catsAndDogs = [...cats, ...dogs];
 // catsAndDogs → ['cat', 'cat', 'cat', 'dog', 'dog', 'dog']
@@ -202,44 +202,44 @@ const catsAndDogs = [...cats, ...dogs];
 const dogsAndCats = [...dogs, ...cats];
 // dogsAndCats → ['dog', 'dog', 'dog', 'cat', 'cat', 'cat']
 
-const catsBetweenBirds = ['bird', ...cats, 'bird'];
+const catsBetweenBirds = ["bird", ...cats, "bird"];
 // catsBetweenBirds → ['bird', 'cat', 'cat', 'cat', 'bird']
 ```
 
 Here is how the spread syntax works with object declarations:
 
 ```js
-const circle = {radius: 5, shape: 'circle'};
+const circle = { radius: 5, shape: "circle" };
 
-const greenCircle = {...circle, color: 'green'};
+const greenCircle = { ...circle, color: "green" };
 // greenCircle → { radius: 5, shape: 'circle', color: 'green' }
 ```
 
 Notice that the order of spread operations matters because you can override properties:
 
 ```js
-const circle = {radius: 5, shape: 'circle'};
+const circle = { radius: 5, shape: "circle" };
 
-const largeCircle = {...circle, radius: 20};
+const largeCircle = { ...circle, radius: 20 };
 // largeCircle → { radius: 20, shape: 'circle' }
 
-const notALargeCircle = {radius: 20, ...circle};
+const notALargeCircle = { radius: 20, ...circle };
 // notALargeCircle → { radius: 5, shape: 'circle' }
 ```
 
 The spread syntax is very helpful for creating a shallow copy of arrays and objects:
 
 ```js
-const book = {title: 'Ulysses', author: 'James Joyce'};
-const shallowCopyOfBook = {...book};
-shallowCopyOfBook.year = '1920';
+const book = { title: "Ulysses", author: "James Joyce" };
+const shallowCopyOfBook = { ...book };
+shallowCopyOfBook.year = "1920";
 
 // book → { title: 'Ulysses', author: 'James Joyce' }
 // shallowCopyOfBook → { title: 'Ulysses', author: 'James Joyce', year: '1920' }
 ```
 
 ```js
-const greekLetters = ['alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta'];
+const greekLetters = ["alpha", "beta", "gamma", "delta", "epsilon", "zeta"];
 const sortedGreekLetters = [...greekLetters].sort((a, b) => a.localeCompare(b));
 // this is an alternative to greekLetters.slice() which also creates a shallow copy
 
@@ -266,10 +266,10 @@ exists or if something is callable.
 
 ```js
 function feedCats(cats) {
-	return cats.forEach(cat => console.log(cat, 'says meow'));
+  return cats.forEach((cat) => console.log(cat, "says meow"));
 }
 
-feedCats(['Garfield', 'Tom', 'Grumpy Cat']);
+feedCats(["Garfield", "Tom", "Grumpy Cat"]);
 // logs:
 // Garfield says meow
 // Tom says meow
@@ -282,7 +282,7 @@ feedCats();
 
 ```js
 function feedCats(cats) {
-	return cats?.forEach(cat => console.log(cat, 'says meow'));
+  return cats?.forEach((cat) => console.log(cat, "says meow"));
 }
 
 feedCats();
@@ -297,23 +297,23 @@ Optional chaining is useful when targeting a property in an object with a deeply
 
 ```js
 const person = {
-	name: 'Sam',
-	skills: [
-		{
-			name: 'HTML',
-			level: 9999,
-			category: {
-				name: 'coding',
-			},
-		},
-		{
-			name: 'Agile',
-			level: 1337,
-			category: {
-				name: 'projects',
-			},
-		},
-	],
+  name: "Sam",
+  skills: [
+    {
+      name: "HTML",
+      level: 9999,
+      category: {
+        name: "coding",
+      },
+    },
+    {
+      name: "Agile",
+      level: 1337,
+      category: {
+        name: "projects",
+      },
+    },
+  ],
 };
 
 console.log(person.skills[1].category.name);
@@ -344,7 +344,7 @@ operand.
 const chocolate = true;
 
 function chocolateCheck() {
-	return chocolate ?? 'No chocolate :(';
+  return chocolate ?? "No chocolate :(";
 }
 
 const result = chocolateCheck();
@@ -357,7 +357,7 @@ instance: `true`), because the value of `chocolate` is neither `null` or `undefi
 const chocolate = undefined;
 
 function chocolateCheck() {
-	return chocolate ?? 'No chocolate :(';
+  return chocolate ?? "No chocolate :(";
 }
 
 const result = chocolateCheck();
@@ -373,11 +373,11 @@ Written as an `if/else` statement, the code would look like this:
 const chocolate = true;
 
 function chocolateCheck() {
-	if (chocolate === null || chocolate === undefined) {
-		return 'No chocolate :(';
-	}
+  if (chocolate === null || chocolate === undefined) {
+    return "No chocolate :(";
+  }
 
-	return true;
+  return true;
 }
 
 const result = chocolateCheck();

@@ -49,9 +49,9 @@ of the code. For example:
 
 ```js
 function logThreeTimes() {
-	console.log('first');
-	console.log('second');
-	console.log('third');
+  console.log("first");
+  console.log("second");
+  console.log("third");
 }
 
 logThreeTimes();
@@ -91,8 +91,8 @@ const count = 10;
 
 // starting a code block
 {
-	const count = 5; // new local variable, does not overwrite the global variable, but is valid within this code block
-	console.log(count); // 5
+  const count = 5; // new local variable, does not overwrite the global variable, but is valid within this code block
+  console.log(count); // 5
 }
 
 console.log(count); // 10 - not affected by code block
@@ -103,13 +103,13 @@ The `function scope`, also known as local scope, is similar to the block scope. 
 function** can be accessed inside the function body. It is a one way road:
 
 ```js
-const globalVariable = 'some Text';
+const globalVariable = "some Text";
 
 function myFunction() {
-	const localVariable = true;
+  const localVariable = true;
 
-	console.log(globalVariable);
-	console.log(localVariable);
+  console.log(globalVariable);
+  console.log(localVariable);
 }
 
 myFunction();
@@ -127,11 +127,11 @@ writing a group letter and addressing each person individually:
 
 ```js
 function printLetterToMarc() {
-	console.log('Hi Marc, hope you are fine. Love, Johnny');
+  console.log("Hi Marc, hope you are fine. Love, Johnny");
 }
 
 function printLetterToLisa() {
-	console.log('Hi Lisa, hope you are fine. Love, Johnny');
+  console.log("Hi Lisa, hope you are fine. Love, Johnny");
 }
 ```
 
@@ -141,7 +141,7 @@ declaration:
 
 ```js
 function printLetter(name) {
-	console.log('Hi ' + name + ', hope you are fine. Love, Johnny');
+  console.log("Hi " + name + ", hope you are fine. Love, Johnny");
 }
 ```
 
@@ -149,20 +149,20 @@ In the function declaration the value of a parameter is not defined yet. Their v
 "on demand" when the function is called. For each function call the value is assigned anew:
 
 ```js
-printLetter('Marc');
+printLetter("Marc");
 // Hi Marc, hope you are fine. Love, Johnny
 
-printLetter('Lisa');
+printLetter("Lisa");
 // Hi Lisa, hope you are fine. Love, Johnny
 
-printLetter('1234abcd');
+printLetter("1234abcd");
 // Hi 1234abcd, hope you are fine. Love, Johnny
 ```
 
 You can pass down variables as well:
 
 ```js
-const username = 'Eve';
+const username = "Eve";
 printLetter(username); //
 // Hi Eve, hope you are fine. Love, Johnny
 ```
@@ -171,8 +171,8 @@ A function can have multiple input parameters separated by commas:
 
 ```js
 function add3Numbers(first, second, third) {
-	const sum = first + second + third;
-	console.log(sum);
+  const sum = first + second + third;
+  console.log(sum);
 }
 
 add3Numbers(1, 2, 3); // 6

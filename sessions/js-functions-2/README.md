@@ -55,8 +55,8 @@ Remind the students of their knowledge about functions:
 
 ```js
 function add3Numbers(first, second, third) {
-	const sum = first + second + third;
-	console.log(sum);
+  const sum = first + second + third;
+  console.log(sum);
 }
 
 add3Numbers(1, 2, 3);
@@ -74,8 +74,8 @@ Explain its use and advantage:
 
 ```js
 function add3Numbers(first, second, third) {
-	const sum = first + second + third;
-	return sum;
+  const sum = first + second + third;
+  return sum;
 }
 
 const firstSum = add3Numbers(1, 2, 3);
@@ -86,11 +86,11 @@ statements:
 
 ```js
 function checkInputLength(inputString) {
-	if (inputString.length > 3) {
-		return true;
-	} else {
-		return false;
-	}
+  if (inputString.length > 3) {
+    return true;
+  } else {
+    return false;
+  }
 }
 ```
 
@@ -100,13 +100,13 @@ Point out that the execution of a function ends as soon as a `return` statement 
 
 ```js
 function checkInputLength(inputString) {
-	if (inputString.length > 3) {
-		return true;
-		console.log('I am never logged in the console.');
-	} else {
-		return false;
-		console.log('Me neither.');
-	}
+  if (inputString.length > 3) {
+    return true;
+    console.log("I am never logged in the console.");
+  } else {
+    return false;
+    console.log("Me neither.");
+  }
 }
 ```
 
@@ -120,7 +120,7 @@ In contrast to the classic `function declaration`, explain the `arrow function e
 
 ```js
 const addNumbers = (first, second) => {
-	return first + second;
+  return first + second;
 };
 ```
 
@@ -129,8 +129,8 @@ Explain the critera for a short notation with arrow syntax:
 1. omit round brackets `()` if it is only one parameter
 
 ```js
-const addOne = number => {
-	return number + 1;
+const addOne = (number) => {
+  return number + 1;
 };
 ```
 

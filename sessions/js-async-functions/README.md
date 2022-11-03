@@ -140,7 +140,7 @@ There are three demos for this session:
 
 ```js
 const soccerAnimation = soccer.animate(ballKeyframes, ballAnimation);
-console.log('soccerAnimation', soccerAnimation);
+console.log("soccerAnimation", soccerAnimation);
 ```
 
 - [ ] Explain the Promise object:
@@ -164,7 +164,7 @@ console.log('soccerAnimation', soccerAnimation);
 
 ```js
 soccerAnimation.finished.then(() => {
-	console.log('soccer animation finished');
+  console.log("soccer animation finished");
 });
 ```
 
@@ -173,8 +173,8 @@ soccerAnimation.finished.then(() => {
 
 ```js
 soccerAnimation.finished.then(() => {
-	console.log('soccer animation finished');
-	const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
+  console.log("soccer animation finished");
+  const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
 });
 ```
 
@@ -184,20 +184,20 @@ soccerAnimation.finished.then(() => {
 ```js
 const soccerAnimation = soccer.animate(ballKeyframes, ballAnimation);
 soccerAnimation.finished.then(() => {
-	console.log('soccer animation finished');
-	const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
-	basketballAnimation.finished.then(() => {
-		console.log('basketball animation finished');
-		const footballAnimation = football.animate(ballKeyframes, ballAnimation);
-		footballAnimation.finished.then(() => {
-			console.log('football animation finished');
-			const tennisAnimation = tennis.animate(ballKeyframes, ballAnimation);
-			tennisAnimation.finished.then(() => {
-				console.log('tennis animation finished');
-				animateButton.removeAttribute('disabled');
-			});
-		});
-	});
+  console.log("soccer animation finished");
+  const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
+  basketballAnimation.finished.then(() => {
+    console.log("basketball animation finished");
+    const footballAnimation = football.animate(ballKeyframes, ballAnimation);
+    footballAnimation.finished.then(() => {
+      console.log("football animation finished");
+      const tennisAnimation = tennis.animate(ballKeyframes, ballAnimation);
+      tennisAnimation.finished.then(() => {
+        console.log("tennis animation finished");
+        animateButton.removeAttribute("disabled");
+      });
+    });
+  });
 });
 ```
 
@@ -225,26 +225,26 @@ soccerAnimation.finished.then(() => {
   - [ ] Use `await` for the other animations as well and untangle the "callback hell".
 
 ```js
-animateButton.addEventListener('click', async () => {
-	animateButton.setAttribute('disabled', 'disabled');
+animateButton.addEventListener("click", async () => {
+  animateButton.setAttribute("disabled", "disabled");
 
-	const soccerAnimation = soccer.animate(ballKeyframes, ballAnimation);
-	await soccerAnimation.finished;
-	console.log('soccer animation finished');
+  const soccerAnimation = soccer.animate(ballKeyframes, ballAnimation);
+  await soccerAnimation.finished;
+  console.log("soccer animation finished");
 
-	const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
-	await basketballAnimation.finished;
-	console.log('basketball animation finished');
+  const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
+  await basketballAnimation.finished;
+  console.log("basketball animation finished");
 
-	const footballAnimation = football.animate(ballKeyframes, ballAnimation);
-	await footballAnimation.finished;
-	console.log('football animation finished');
+  const footballAnimation = football.animate(ballKeyframes, ballAnimation);
+  await footballAnimation.finished;
+  console.log("football animation finished");
 
-	const tennisAnimation = tennis.animate(ballKeyframes, ballAnimation);
-	await tennisAnimation.finished;
-	console.log('tennis animation finished');
+  const tennisAnimation = tennis.animate(ballKeyframes, ballAnimation);
+  await tennisAnimation.finished;
+  console.log("tennis animation finished");
 
-	animateButton.removeAttribute('disabled');
+  animateButton.removeAttribute("disabled");
 });
 ```
 

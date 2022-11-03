@@ -16,8 +16,8 @@ value back to the place where it was called. This is done via a `return statemen
 
 ```js
 function add3Numbers(first, second, third) {
-	const sum = first + second + third;
-	return sum;
+  const sum = first + second + third;
+  return sum;
 }
 ```
 
@@ -46,11 +46,11 @@ combination with if else statements for example:
 
 ```js
 function checkInputLength(inputString) {
-	if (inputString.length > 3) {
-		return true;
-	} else {
-		return false;
-	}
+  if (inputString.length > 3) {
+    return true;
+  } else {
+    return false;
+  }
 }
 ```
 
@@ -61,9 +61,9 @@ following `console.log()` is therefore never reached:
 
 ```js
 function testFunction() {
-	return 'a returned string';
+  return "a returned string";
 
-	console.log('I am never logged in the console.');
+  console.log("I am never logged in the console.");
 }
 ```
 
@@ -73,13 +73,13 @@ When multiple conditions are in place, the code becomes harder to read and to un
 
 ```js
 function setBackgroundColor(color) {
-	if (typeof color === 'String') {
-		if (color.startsWith('#')) {
-			if (color.length >= 7) {
-				body.style.backgroundColor = color;
-			}
-		}
-	}
+  if (typeof color === "String") {
+    if (color.startsWith("#")) {
+      if (color.length >= 7) {
+        body.style.backgroundColor = color;
+      }
+    }
+  }
 }
 ```
 
@@ -119,7 +119,7 @@ Next to the classic function declaration, JavaScript has a second way to write f
 
 ```js
 const addNumbers = (first, second) => {
-	return first + second;
+  return first + second;
 };
 ```
 
@@ -133,15 +133,15 @@ The advantage of arrow functions are possible shorter notations when certain cri
 
 1. Omit the round brackets around the parameters: This is possible, if there is only one input:
    ```js
-   const addOne = number => {
-   	return number + 1;
+   const addOne = (number) => {
+     return number + 1;
    };
    ```
 2. Implicit return statements: If the function consists only of a return statement, the curly
    brackets and the return keyword can be omitted:
    ```js
    const addNumbers = (first, second) => {
-   	return first + second;
+     return first + second;
    };
    ```
    can be rewritten as:

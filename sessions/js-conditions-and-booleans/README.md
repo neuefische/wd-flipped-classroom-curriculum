@@ -84,7 +84,7 @@ Change the code to:
 let carrots = 2;
 
 if (kidDidHelpCleaningTheKitchen) {
-	carrots = carrots + 2;
+  carrots = carrots + 2;
 }
 ```
 
@@ -108,7 +108,7 @@ let carrots = 2;
 const kidDidHelpCleaningTheKitchen = true;
 
 if (kidDidHelpCleaningTheKitchen) {
-	carrots = carrots + 2;
+  carrots = carrots + 2;
 }
 ```
 
@@ -134,9 +134,9 @@ let carrots = 2;
 const kidDidHelpCleaningTheKitchen = false;
 
 if (kidDidHelpCleaningTheKitchen) {
-	carrots = carrots + 2;
+  carrots = carrots + 2;
 } else {
-	carrots = carrots - 1;
+  carrots = carrots - 1;
 }
 ```
 
@@ -168,9 +168,9 @@ const dishesCleaned = 4;
 const kidDidHelpCleaningTheKitchen = dishesCleaned > 3;
 
 if (kidDidHelpCleaningTheKitchen) {
-	carrots = carrots + 2;
+  carrots = carrots + 2;
 } else {
-	carrots = carrots - 1;
+  carrots = carrots - 1;
 }
 ```
 
@@ -190,9 +190,9 @@ const dishesCleaned = 4;
 const kidDidHelpCleaningTheKitchen = dishesCleaned === 3;
 
 if (kidDidHelpCleaningTheKitchen) {
-	carrots = carrots + 2;
+  carrots = carrots + 2;
 } else {
-	carrots = carrots - 1;
+  carrots = carrots - 1;
 }
 ```
 
@@ -217,9 +217,9 @@ const kidDidHelpCleaningTheKitchen = dishesCleaned === 3;
 let extraCarrots = 0;
 
 if (kidDidHelpCleaningTheKitchen) {
-	extraCarrots = 2;
+  extraCarrots = 2;
 } else {
-	extraCarrots = -1;
+  extraCarrots = -1;
 }
 
 carrots = carrots + extraCarrots;
@@ -273,7 +273,7 @@ This is called `type coercion` in general. Show students this example:
 let carrots = 4;
 
 if (carrots) {
-	console.log('Hand out the carrots already! 🥕');
+  console.log("Hand out the carrots already! 🥕");
 }
 ```
 

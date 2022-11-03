@@ -73,11 +73,11 @@ How can you improve the user experience of your website by adding animations?
 
 ```css
 .button--color {
-	background-color: var(--granite);
+  background-color: var(--granite);
 }
 
 .button--color:hover {
-	background-color: var(--nemo);
+  background-color: var(--nemo);
 }
 ```
 
@@ -86,12 +86,12 @@ How can you improve the user experience of your website by adding animations?
 
 ```css
 .button--color {
-	background-color: var(--granite);
-	transition: 0.3s ease;
+  background-color: var(--granite);
+  transition: 0.3s ease;
 }
 
 .button--color:hover {
-	background-color: var(--nemo);
+  background-color: var(--nemo);
 }
 ```
 
@@ -105,13 +105,13 @@ How can you improve the user experience of your website by adding animations?
 
 ```css
 .button--scale {
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
-	transition: 0.2s ease;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
+  transition: 0.2s ease;
 }
 
 .button--scale:active {
-	transform: scale(0.9);
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 ```
 
@@ -119,15 +119,15 @@ How can you improve the user experience of your website by adding animations?
 
   ```css
   .button--shadow {
-  	background-color: var(--nemo);
-  	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  	transition: background-color 0.5s ease-out, box-shadow 1s ease 0.5s;
-  	/* add transition here */
+    background-color: var(--nemo);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: background-color 0.5s ease-out, box-shadow 1s ease 0.5s;
+    /* add transition here */
   }
 
   .button--shadow:hover {
-  	background-color: var(--granite);
-  	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: var(--granite);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
   ```
 
@@ -151,18 +151,18 @@ How can you improve the user experience of your website by adding animations?
 
   ```css
   .position--0 {
-  	left: 0;
-  	/* add transition 'into state 0' here */
+    left: 0;
+    /* add transition 'into state 0' here */
   }
 
   .position--1 {
-  	left: 200px;
-  	/* add transition 'into state 1' here */
+    left: 200px;
+    /* add transition 'into state 1' here */
   }
 
   .position--2 {
-  	left: 70%;
-  	/* add transition 'into state 2' here */
+    left: 70%;
+    /* add transition 'into state 2' here */
   }
   ```
 
@@ -174,18 +174,18 @@ How can you improve the user experience of your website by adding animations?
 
   ```css
   .position--0 {
-  	left: 0;
-  	transition: left 0.4s cubic-bezier(0.68, -0.55, 0.12, 0.93);
+    left: 0;
+    transition: left 0.4s cubic-bezier(0.68, -0.55, 0.12, 0.93);
   }
 
   .position--1 {
-  	left: 200px;
-  	transition: left 0.4s ease;
+    left: 200px;
+    transition: left 0.4s ease;
   }
 
   .position--2 {
-  	left: 70%;
-  	transition: left 0.8s ease-out;
+    left: 70%;
+    transition: left 0.8s ease-out;
   }
   ```
 

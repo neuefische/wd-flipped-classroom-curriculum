@@ -16,20 +16,22 @@ There are three ways to create strings using _string literals_:
 2. `"string"`: double quotes
 3. `` `string` ``: back ticks or **template literals**.
 
-> 💡 In general there is no preference for using single or double quotes, except for stylistic
+> 💡 In general there is no preference for using either single or double quotes, except for stylistic
 > reasons. Tools like prettier convert all strings to use the same style quotes. We have configured
-> prettier to use single quotes by default. One reason to prefer one style of quotes over another on
+> prettier to use double quotes by default. One reason to prefer one style of quotes over another on
 > a case-by-case basis is when a quotation mark is part of the string:
 >
 > - `"It's such a nice day!"`
-> - `'"Nice work", they said.'`
+> - `'"Nice work", they said.'` or `'[data-js="foo"]'`
+>
+> Prettier detects these cases automatically.
 
 Strings can be chained together by using the `+` operator (yes, the same as the maths operator).
 This is called **string concatination**:
 
 ```js
-const name = 'Alex';
-const stringConcatination = 'Hello ' + name + ', good to see you!';
+const name = "Alex";
+const stringConcatination = "Hello " + name + ", good to see you!";
 ```
 
 ## Template Literals
@@ -41,7 +43,7 @@ string by wrapping placeholders with a dollar sign and curly brackets `${}` . Th
 This way you don't have to concat multiple strings if you want to use a variable in your string:
 
 ```js
-const stringConcatination = 'Hello ' + name + ', good to see you!';
+const stringConcatination = "Hello " + name + ", good to see you!";
 
 const withTemplateString = `Hello ${name}, good to see you!`;
 ```
@@ -49,7 +51,9 @@ const withTemplateString = `Hello ${name}, good to see you!`;
 Any **expression** can be placed into these placeholders:
 
 ```js
-const greeting = `Hello ${name !== null ? name : 'mysterious person'}, good to see you!`;
+const greeting = `Hello ${
+  name !== null ? name : "mysterious person"
+}, good to see you!`;
 ```
 
 With template literals you can also write **multi-line strings**:
@@ -66,8 +70,8 @@ Strings in JavaScript have some build-in **properties** and functionalities call
 can call them with the dot notation followed by the name of the property / method.
 
 ```js
-'A normal string'.length; // evaluates to 15
-'A normal string'.toUpperCase(); // evaluates to "A NORMAL STRING"
+"A normal string".length; // evaluates to 15
+"A normal string".toUpperCase(); // evaluates to "A NORMAL STRING"
 ```
 
 > 💡 Methods are functions, thus they need to be invoked by placing `()` brackets after the name of
@@ -97,8 +101,8 @@ Every input field in HTML holds a **value** in form of a string. You can access 
 
 ```html
 <form>
-	<input data-js="textInput" type="text" value="test 123" />
-	<input data-js="numberInput" type="number" value="42" />
+  <input data-js="textInput" type="text" value="test 123" />
+  <input data-js="numberInput" type="number" value="42" />
 </form>
 ```
 
@@ -113,7 +117,7 @@ numberInput.value; // evaluates to '42' (still a string!)
 You can also change the value of the input by assigning a new value to this input property:
 
 ```js
-textInput.value = 'changed value!';
+textInput.value = "changed value!";
 ```
 
 This change is immediately visible on the website.
@@ -123,10 +127,10 @@ For example, you can enforce all uppercase letters in a form by combining this f
 
 ```js
 // transform on every change the input value to uppercase letters
-textInput.addEventListener('input', () => {
-	const oldValue = textInput.value;
-	const newValue = oldValue.toUpperCase();
-	textInput.value = newValue;
+textInput.addEventListener("input", () => {
+  const oldValue = textInput.value;
+  const newValue = oldValue.toUpperCase();
+  textInput.value = newValue;
 });
 ```
 

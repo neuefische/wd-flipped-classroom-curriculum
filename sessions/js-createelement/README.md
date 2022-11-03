@@ -82,17 +82,17 @@ How can we write JavaScript code that generates parts of our webpage for us?
       variable, e.g. `newCard`.
 - [ ] quickly recap how to add properties to an element
   ```js
-  newCard.classList.add('card');
-  newCard.textContent = 'This text is displayed in the element';
+  newCard.classList.add("card");
+  newCard.textContent = "This text is displayed in the element";
   ```
 - [ ] add this code to an event listener on the form element:
   ```js
-  form.addEventListener('submit', event => {
-  	event.preventDefault();
-  	const newCard = document.createElement('li');
-  	newCard.classList.add('card');
-  	newCard.textContent = 'This text is displayed in the element';
-  	cardContainer.append(newCard);
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const newCard = document.createElement("li");
+    newCard.classList.add("card");
+    newCard.textContent = "This text is displayed in the element";
+    cardContainer.append(newCard);
   });
   ```
 

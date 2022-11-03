@@ -97,7 +97,7 @@ console.log(myMutableNumber);
       unwanted behavior in our application), for example:
 
 ```js
-const oneTimeFee = '5';
+const oneTimeFee = "5";
 const monthlyFee = 12;
 const amountToBeCharged = oneTimeFee + monthlyFee; // result will be "512"
 console.log(sum);

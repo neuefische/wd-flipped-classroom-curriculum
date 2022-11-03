@@ -44,9 +44,9 @@ approach are REST-APIs, which is explained later in this document.
 
 ```js
 async function fetchData() {
-	const response = await fetch('/url/to/something');
-	const data = await response.json();
-	return data;
+  const response = await fetch("/url/to/something");
+  const data = await response.json();
+  return data;
 }
 ```
 
@@ -90,31 +90,31 @@ JSON. It looks like this:
 
 ```json
 {
-	"groupName": "Students",
-	"groupSize": 100,
-	"students": [
-		{
-			"name": "John Doe",
-			"age": 42,
-			"location": "Pleasantville",
-			"member": true,
-			"groups": ["students", "citizens", "new"]
-		},
-		{
-			"name": "Jane Doe",
-			"age": 44,
-			"location": "Pleasantville",
-			"member": true,
-			"groups": ["students", "citizens", "new"]
-		},
-		{
-			"name": "Sam Doe",
-			"age": 24,
-			"location": "Pleasantville",
-			"member": true,
-			"groups": ["students", "citizens", "new"]
-		}
-	]
+  "groupName": "Students",
+  "groupSize": 100,
+  "students": [
+    {
+      "name": "John Doe",
+      "age": 42,
+      "location": "Pleasantville",
+      "member": true,
+      "groups": ["students", "citizens", "new"]
+    },
+    {
+      "name": "Jane Doe",
+      "age": 44,
+      "location": "Pleasantville",
+      "member": true,
+      "groups": ["students", "citizens", "new"]
+    },
+    {
+      "name": "Sam Doe",
+      "age": 24,
+      "location": "Pleasantville",
+      "member": true,
+      "groups": ["students", "citizens", "new"]
+    }
+  ]
 }
 ```
 
@@ -163,9 +163,9 @@ status, e.g. client or server errors.
 
 ```js
 async function fetchSomething() {
-	const response = await fetch('/bad/url/oops');
-	const something = await response.json();
-	return something;
+  const response = await fetch("/bad/url/oops");
+  const something = await response.json();
+  return something;
 }
 ```
 
@@ -189,21 +189,21 @@ Any production `fetch` call should be inside a `try...catch` block:
 
 ```js
 async function fetchSomething() {
-	try {
-		const response = await fetch('/bad/url/oops');
-		const data = await response.json();
+  try {
+    const response = await fetch("/bad/url/oops");
+    const data = await response.json();
 
-		if (response.ok) {
-			// Success (Good Response)
-			return data;
-		} else {
-			// Failure (Bad Response)
-			console.error('Bad Response');
-		}
-	} catch (error) {
-		// Failure (Network error, etc)
-		console.error('An Error occurred');
-	}
+    if (response.ok) {
+      // Success (Good Response)
+      return data;
+    } else {
+      // Failure (Bad Response)
+      console.error("Bad Response");
+    }
+  } catch (error) {
+    // Failure (Network error, etc)
+    console.error("An Error occurred");
+  }
 }
 ```
 

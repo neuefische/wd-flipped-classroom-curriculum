@@ -24,8 +24,8 @@ it with the `index.html` by adding a `script` tag to the head of the `index.html
 
 ```html
 <head>
-	...
-	<script src="./index.js" defer></script>
+  ...
+  <script src="./index.js" defer></script>
 </head>
 ```
 
@@ -43,8 +43,8 @@ available for JavaScript. Have a look at the following example:
 
 ```html
 <body>
-	<h1>My color changes sometimes!</h1>
-	<button>Change color</button>
+  <h1>My color changes sometimes!</h1>
+  <button>Change color</button>
 </body>
 ```
 
@@ -52,8 +52,8 @@ We want the color of the `h1` to change if we click on the button. The first ste
 `h1` and the `button` element inside of our `index.js`:
 
 ```js
-const heading = document.querySelector('h1');
-const button = document.querySelector('button');
+const heading = document.querySelector("h1");
+const button = document.querySelector("button");
 ```
 
 To put it short: We create two constants (`const`) with the name `heading` and `button`. Their
@@ -173,8 +173,8 @@ Second, we react to the `click event` of the button by adding an `event listener
 `.addEventListener()`to the button:
 
 ```js
-colorButton.addEventListener('click', () => {
-	console.log('clicked');
+colorButton.addEventListener("click", () => {
+  console.log("clicked");
 });
 ```
 
@@ -187,8 +187,8 @@ e.g. `.highlight { color: hotpink; }`. Now, we add this class to the `h1` elemen
 button:
 
 ```js
-colorButton.addEventListener('click', () => {
-	heading.classList.add('highlight');
+colorButton.addEventListener("click", () => {
+  heading.classList.add("highlight");
 });
 ```
 

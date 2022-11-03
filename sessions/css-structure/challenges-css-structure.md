@@ -2,9 +2,15 @@
 
 ## Selectors and cascading bugs
 
-Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading?file=/css/styles.css)
-and have a look at the `styles.css` file.
+Solve the _Selectors and cascading bugs_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading?file=/css/styles.css)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading -i
+```
+
+Have a look at the `styles.css` file.
 
 There are various CSS rule sets with `FIX_ME` as selector. Your task is to replace this placeholder
 with a proper selector according to the description above the rule set.

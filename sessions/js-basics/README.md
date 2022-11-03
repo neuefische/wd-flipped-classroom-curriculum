@@ -64,9 +64,9 @@ JavaScript Basics
 - Explain that the console is a CLI in your browser. Show how to log into the console:
 
 ```js
-console.log('Hello World!'); // logs into console
+console.log("Hello World!"); // logs into console
 console.clear(); // clears console
-console.error('Error!'); // logs as error into console
+console.error("Error!"); // logs as error into console
 ```
 
 - Explain that we can use the console for debugging or error logging
@@ -80,7 +80,7 @@ console.error('Error!'); // logs as error into console
 
 ```html
 <body>
-	<main class="main" id="main" data-js="main">...</main>
+  <main class="main" id="main" data-js="main">...</main>
 </body>
 ```
 
@@ -100,13 +100,13 @@ const mainElement = document.querySelector('[data-js="main"]');
 
 ```css
 .dark {
-	background-color: black;
+  background-color: black;
 }
 ```
 
 ```js
 const mainElement = document.querySelector('[data-js="main"]');
-mainElement.classList.add('dark');
+mainElement.classList.add("dark");
 // mainElement.classList.remove('dark');
 // mainElement.classList.toggle('dark');
 ```
@@ -127,8 +127,8 @@ Show how to add an event listener to a button and react to a click:
 
 ```js
 const myLoggingButton = document.querySelector('[data-js="logging-button"]');
-myLoggingButton.addEventListener('click', () => {
-	console.log('You clicked a button');
+myLoggingButton.addEventListener("click", () => {
+  console.log("You clicked a button");
 });
 ```
 

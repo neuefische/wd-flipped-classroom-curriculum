@@ -15,7 +15,7 @@ Arrays are a structured data type which can store multiple values in one variabl
 You can declare an array using `[]` square brackets (array literals):
 
 ```js
-const shoppingList = ['apple', 'tomato'];
+const shoppingList = ["apple", "tomato"];
 ```
 
 Each item in the array has an index, which starts at 0. You can access individual items using the
@@ -31,15 +31,15 @@ nested arrays can be accessed by choosing the index of the nested array first an
 index of the element inside the nested array.
 
 ```js
-const nestedArray = ['a', 1, ['a', 'new', 'sentence'], false];
+const nestedArray = ["a", 1, ["a", "new", "sentence"], false];
 nestedArray[2][1]; // "new"
 ```
 
 You can overwrite individual values in an array:
 
 ```js
-const shoppingList = ['apple', 'tomato'];
-shoppingList[0] = 'banana';
+const shoppingList = ["apple", "tomato"];
+shoppingList[0] = "banana";
 shoppingList; // ["banana","tomato"];
 ```
 
@@ -68,9 +68,9 @@ You can declare an object using `{}` curly brackets (object initializer):
 
 ```js
 const person = {
-	name: 'Max Blub',
-	age: 21,
-	isStudent: false,
+  name: "Max Blub",
+  age: 21,
+  isStudent: false,
 };
 ```
 
@@ -83,22 +83,22 @@ person.name; //"Max Blub"
 You can also access the properties using the bracket notation:
 
 ```js
-person['age']; // 21
+person["age"]; // 21
 ```
 
 Objects can be nested:
 
 ```js
 const person = {
-	name: 'Max Blub',
-	age: 21,
-	isStudent: false,
-	address: {
-		street: 'Berliner Str.',
-		houseNumber: 42,
-		city: 'Leipzig',
-		zipCode: '12345',
-	},
+  name: "Max Blub",
+  age: 21,
+  isStudent: false,
+  address: {
+    street: "Berliner Str.",
+    houseNumber: 42,
+    city: "Leipzig",
+    zipCode: "12345",
+  },
 };
 ```
 
@@ -106,14 +106,14 @@ Nested values can be accessed by chaining the dot notation and/or the bracket no
 
 ```js
 person.address.street; // "Berliner Str."
-person.address['city']; // "Leipzig"
+person.address["city"]; // "Leipzig"
 ```
 
 You can change values of object properties by reassigning them using the dot or bracket notation:
 
 ```js
-person.name = 'Max Bla';
-person['age'] = 33;
+person.name = "Max Bla";
+person["age"] = 33;
 ```
 
 You can add new properties in the same way:
@@ -134,22 +134,22 @@ Arrays can contain objects and vice versa:
 
 ```js
 const peopleArray = [
-	{
-		name: 'John',
-		age: 22,
-	},
-	{
-		name: 'Alex',
-		age: 33,
-	},
+  {
+    name: "John",
+    age: 22,
+  },
+  {
+    name: "Alex",
+    age: 33,
+  },
 ];
 ```
 
 ```js
 const user = {
-	userId: '1234',
-	mail: 'test@mail.com',
-	shoppingCart: ['tomato', 'banana', 'chocolate'],
+  userId: "1234",
+  mail: "test@mail.com",
+  shoppingCart: ["tomato", "banana", "chocolate"],
 };
 ```
 

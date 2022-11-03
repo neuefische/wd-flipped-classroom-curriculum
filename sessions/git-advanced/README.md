@@ -68,7 +68,7 @@ handle merge conflicts?
   - `code .` and add the content:
 
 ```js
-console.log('Hello World');
+console.log("Hello World");
 ```
 
 > 💡 It's easiest to work with the integrated terminal in VS Code from here on. You can open it with
@@ -94,7 +94,7 @@ console.log('Hello World');
 - [ ] Change the `index.js` file to greet a coach:
 
   - ```js
-    console.log('Hello Max');
+    console.log("Hello Max");
     ```
 
 - [ ] Commit the changes and push the new branch to GitHub
@@ -108,7 +108,7 @@ console.log('Hello World');
 
   - `git switch main`
   - ```js
-    console.log('Hi World');
+    console.log("Hi World");
     ```
   - `git add index.js`
   - `git commit -m "change greeting to Hi"`
@@ -158,7 +158,7 @@ console.log('Hello World');
     shows a UI to resolve the conflict.
   - For the example combine the changes from both branches:
   - ```js
-    console.log('Hi Max');
+    console.log("Hi Max");
     ```
 
 - [ ] Explain that we now need to stage, commit and push the resolved merge conflict

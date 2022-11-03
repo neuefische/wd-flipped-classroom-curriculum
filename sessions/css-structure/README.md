@@ -80,15 +80,15 @@ You can ask these questions:
 
 ```css
 h1 {
-	color: red;
+  color: red;
 }
 
 .headline {
-	color: blue;
+  color: blue;
 }
 
 #main-headline {
-	color: green;
+  color: green;
 }
 ```
 
@@ -101,11 +101,11 @@ h1 {
 
 ```css
 h1 {
-	color: red;
+  color: red;
 }
 
 h1 {
-	color: blue;
+  color: blue;
 }
 ```
 
@@ -117,7 +117,7 @@ h1 {
 
 ```css
 body {
-	color: red;
+  color: red;
 }
 ```
 
@@ -144,15 +144,15 @@ body {
 
 ```css
 .quiz-card {
-	...;
+  ...;
 }
 
 .quiz-card__question {
-	...;
+  ...;
 }
 
 .quiz-card__question--visible {
-	...;
+  ...;
 }
 ```
 

@@ -27,22 +27,22 @@ A `package.json` may look something like this:
 
 ```json
 {
-	"name": "my-app",
-	"version": "1.0.0",
-	"description": "A description of my app",
-	"scripts": {
-		"test": "npm run …"
-	},
-	"author": "Alex Newfish",
-	"license": "UNLICENSED",
-	"dependencies": {
-		"my-dependency": "^10.4.1",
-		"my-other-dependency": "^2.0.0"
-	},
-	"devDependencies": {
-		"my-dev-dependency": "^8.0.105",
-		"my-other-dev-dependency": "^0.1.6"
-	}
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A description of my app",
+  "scripts": {
+    "test": "npm run …"
+  },
+  "author": "Alex Newfish",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "my-dependency": "^10.4.1",
+    "my-other-dependency": "^2.0.0"
+  },
+  "devDependencies": {
+    "my-dev-dependency": "^8.0.105",
+    "my-other-dev-dependency": "^0.1.6"
+  }
 }
 ```
 

@@ -2,18 +2,40 @@
 
 ## Basic functions
 
-Practice your knowledge about functions by solving the tasks in
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/basic-functions?file=/js/index.js)
+Solve the _Basic functions_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/basic-functions?file=/js/index.js)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/basic-functions -i
+```
 
 ## Functions with parameters
 
-Practice your knowledge about functions with parameters by solving the tasks in:
+Solve the _Functions with parameters_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters?file=/js/index.js)
+or locally by running this command in your Terminal:
 
-1.  [this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters?file=/js/index.js)
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters -i
+```
 
-2.  [this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters-extra?file=/js/index.js)
+## Functions with parameters extra
+
+Solve the _Functions with parameters extra_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters-extra?file=/js/index.js)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters-extra -i
+```
 
 ## Functions and DOM manipulation
 
-Combine your knowledge of DOM manipulation and functions by solving the tasks in:
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/dom-manipulation?file=/js/index.js)
+Solve the _Functions and DOM manipulation_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/dom-manipulation?file=/js/index.js)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/dom-manipulation -i
+```

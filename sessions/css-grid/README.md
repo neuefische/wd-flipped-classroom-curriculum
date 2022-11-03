@@ -130,11 +130,11 @@ Why do we need another layout algorithm for the web?
 
 ```css
 .bootcamp-grid {
-	display: grid;
-	gap: 1rem;
-	grid-template-areas:
-		'web web  ux   da'
-		'ds  java java da';
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "web web  ux   da"
+    "ds  java java da";
 }
 ```
 
@@ -145,19 +145,19 @@ Why do we need another layout algorithm for the web?
 
 ```css
 .bootcamp--1 {
-	grid-area: web;
+  grid-area: web;
 }
 .bootcamp--2 {
-	grid-area: ux;
+  grid-area: ux;
 }
 .bootcamp--3 {
-	grid-area: ds;
+  grid-area: ds;
 }
 .bootcamp--4 {
-	grid-area: java;
+  grid-area: java;
 }
 .bootcamp--5 {
-	grid-area: da;
+  grid-area: da;
 }
 ```
 

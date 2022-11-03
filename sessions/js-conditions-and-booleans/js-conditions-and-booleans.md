@@ -98,7 +98,7 @@ condition.
 const isSunShining = true;
 
 if (isSunShining) {
-	// code that is executed only if condition "isSunShining" is true
+  // code that is executed only if condition "isSunShining" is true
 }
 ```
 
@@ -108,9 +108,9 @@ The else block is executed only if the condition is `false`.
 const isSunShining = false;
 
 if (isSunShining) {
-	// code that is executed only if condition "isSunShining" is true
+  // code that is executed only if condition "isSunShining" is true
 } else {
-	// code that is executed only if condition "isSunShining" is false
+  // code that is executed only if condition "isSunShining" is false
 }
 ```
 
@@ -119,13 +119,13 @@ operators as well. You can distinguish between more cases by chaining `else if` 
 
 ```js
 if (hour < 12) {
-	console.log('Good Morning.');
+  console.log("Good Morning.");
 } else if (hour < 18) {
-	console.log('Good afternoon.');
+  console.log("Good afternoon.");
 } else if (hour === 24) {
-	console.log('Good night.');
+  console.log("Good night.");
 } else {
-	console.log('Good evening.');
+  console.log("Good evening.");
 }
 ```
 
@@ -133,9 +133,9 @@ If the condition is not a boolean, it is converted into one by type coercion. Th
 check whether a value is not 0 or an empty string:
 
 ```js
-const name = 'Alex';
+const name = "Alex";
 if (name) {
-	console.log('Hi ' + name + '!'); // only executed if name is not an empty string
+  console.log("Hi " + name + "!"); // only executed if name is not an empty string
 }
 ```
 
@@ -147,7 +147,7 @@ With if / else statements whole blocks of code can be controlled. The ternary op
 if you want to decide between two _expressions_, e.g. which value should be stored in a variable:
 
 ```js
-const greetingText = time < 12 ? 'Good morning.' : 'Good afternoon.';
+const greetingText = time < 12 ? "Good morning." : "Good afternoon.";
 ```
 
 The ternary operator has the following structure:
@@ -198,7 +198,7 @@ for that like this:
 
 ```js
 if (variable != null) {
-	console.log('This will be logged even if variable is 0 or ""');
+  console.log('This will be logged even if variable is 0 or ""');
 }
 ```
 

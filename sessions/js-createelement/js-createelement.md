@@ -22,8 +22,8 @@ You can generate an HTML element with JavaScript by using the `document.createEl
 expects the type of element as an argument.
 
 ```js
-const article = document.createElement('article');
-const button = document.createElement('button');
+const article = document.createElement("article");
+const button = document.createElement("button");
 ```
 
 After generating an element, you need to place the element into the DOM. For this, you can use the
@@ -38,10 +38,10 @@ The result looks like this:
 
 ```html
 <body>
-	...
-	<article>
-		<button></button>
-	</article>
+  ...
+  <article>
+    <button></button>
+  </article>
 </body>
 ```
 
@@ -53,17 +53,17 @@ As well as with queried HTML elements (via `querySelector`), we can add classes,
 more to the created HTML elements.
 
 ```js
-article.classList.add('card');
+article.classList.add("card");
 
-button.addEventListener('click', () => {
-	console.log('It works!');
+button.addEventListener("click", () => {
+  console.log("It works!");
 });
 ```
 
 The text of an element can be changed by reassigning the `.textContent` property:
 
 ```js
-button.textContent = 'Click me!';
+button.textContent = "Click me!";
 ```
 
 ### Common Element Properties and Methods
@@ -96,7 +96,7 @@ html code as a string. By using **template literals** the content of the html ca
 created.
 
 ```js
-const cityName = 'Lissabon';
+const cityName = "Lissabon";
 
 article.innerHTML = `
 	<h2> ${cityName} </h2>
@@ -114,14 +114,15 @@ This HTML code is rendered then **inside** the article element:
 
 ```html
 <body>
-	...
-	<article>
-		<h2>Lissabon</h2>
-		<p class="card__content">
-			Lissabon is a very beautiful city in Portugal. Go there and enjoy the stay!
-		</p>
-		<button type="button" class="card__booking-button">Book Trip</button>
-	</article>
+  ...
+  <article>
+    <h2>Lissabon</h2>
+    <p class="card__content">
+      Lissabon is a very beautiful city in Portugal. Go there and enjoy the
+      stay!
+    </p>
+    <button type="button" class="card__booking-button">Book Trip</button>
+  </article>
 </body>
 ```
 
@@ -133,9 +134,9 @@ HTML before:
 
 ```html
 <ul data-js="cardContainer">
-	<li class="card">...</li>
-	<li class="card">...</li>
-	<li class="card">...</li>
+  <li class="card">...</li>
+  <li class="card">...</li>
+  <li class="card">...</li>
 </ul>
 ```
 
@@ -143,7 +144,7 @@ By setting the innerHTML to an empty string, the content is deleted:
 
 ```js
 const cardContainer = document.querySelector('ul[data-js="cardContainer"]');
-cardContainer.innerHTML = '';
+cardContainer.innerHTML = "";
 ```
 
 The result:

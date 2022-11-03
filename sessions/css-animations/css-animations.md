@@ -106,28 +106,28 @@ properties should be applied where `0%` is the start of the animation and `100%`
 
 ```css
 @keyframes my-animation {
-	0% {
-		opacity: 0;
-		transform: scale(1);
-	}
-	30% {
-		opacity: 1;
-		transform: scale(1.2);
-	}
-	50% {
-		opacity: 1;
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 ```
 
 > 💡 You can also use the `from` and `to` keywords instead of percentages. `from` is the same as
 > `0%` and `to` is the same as `100%`. You can also define percentage amounts between `from` and `to`, such as:
 
-```css
+````css
 @keyframes animationName {
   from { opacity: 0 }
   50% { opacity: 1 }
@@ -146,7 +146,7 @@ comma.
 animation: my-animation 2s;
 /* apply the animation my-animation to the element with a delay of 1s and an ease-in-out easing curve */
 animation: my-animation 2s ease-in-out 1s;
-```
+````
 
 These are the properties you can use with `animation` (you can combine them all into the shorthand
 but it becomes hard to read):
@@ -168,15 +168,15 @@ You can use any mix of shorthand and longhand properties:
 
 ```css
 .element {
-	/* apply the animation my-animation to the element with an ease-in-out easing curve, infinitely alternating  */
-	animation: my-animation 2s ease-in-out;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+  /* apply the animation my-animation to the element with an ease-in-out easing curve, infinitely alternating  */
+  animation: my-animation 2s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .element:hover {
-	/* pause the animation when the element is hovered */
-	animation-play-state: paused;
+  /* pause the animation when the element is hovered */
+  animation-play-state: paused;
 }
 ```
 
@@ -199,18 +199,18 @@ requested to reduce the amount of motion on their device.
 ```css
 /* only add animations or transitions if the user has no preference for prefers-reduced-motion */
 @media (prefers-reduced-motion: no-preference) {
-	.element {
-		animation: my-animation;
-		transition: color 2s;
-	}
+  .element {
+    animation: my-animation;
+    transition: color 2s;
+  }
 }
 
 /* or the other way around, remove transitions and animations if the user prefers reduced motion */
 @media (prefers-reduced-motion: reduce) {
-	.element {
-		animation: none;
-		transition: none;
-	}
+  .element {
+    animation: none;
+    transition: none;
+  }
 }
 ```
 

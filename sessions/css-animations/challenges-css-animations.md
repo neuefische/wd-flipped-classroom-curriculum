@@ -2,8 +2,13 @@
 
 ## Toast Animations
 
-Solve
-[this codesandbox challenge](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-animations/toast-animations?file=/README.md).
+Solve the _Toast Animations_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-animations/toast-animations?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-animations/toast-animations -i
+```
 
 ## Quiz App project continuation
 

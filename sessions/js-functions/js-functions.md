@@ -27,8 +27,8 @@ You can define a function using a **function declaration** which consists of:
 
 ```js
 function greet() {
-	console.log('Hi Friends!');
-	console.log('Nice to be here.');
+  console.log("Hi Friends!");
+  console.log("Nice to be here.");
 }
 ```
 
@@ -43,12 +43,12 @@ descriptive, short names should be chosen.
 
 ```js
 function printLetter(name) {
-	console.log('Hi ' + name + ', hope you are fine. Love, Johnny');
+  console.log("Hi " + name + ", hope you are fine. Love, Johnny");
 }
 
 function printSum(first, second, third) {
-	const sum = first + second + third;
-	console.log('The sum of your numbers is: ' + sum);
+  const sum = first + second + third;
+  console.log("The sum of your numbers is: " + sum);
 }
 ```
 
@@ -68,8 +68,8 @@ Hi Friends!
 Nice to be here.
 */
 
-printLetter('Max');
-printLetter('Jordan');
+printLetter("Max");
+printLetter("Jordan");
 /*
 This will cause the following to be logged into the console:
 Hi Max, hope you are fine. Love, Johnny
@@ -101,13 +101,13 @@ Variables defined **inside a function** are not accessible from outside. But all
 of the function** can be accessed from inside the function body:
 
 ```js
-const globalVariable = 'some Text';
+const globalVariable = "some Text";
 
 function myFunction() {
-	const localVariable = true;
+  const localVariable = true;
 
-	console.log(globalVariable);
-	console.log(localVariable);
+  console.log(globalVariable);
+  console.log(localVariable);
 }
 
 myFunction();

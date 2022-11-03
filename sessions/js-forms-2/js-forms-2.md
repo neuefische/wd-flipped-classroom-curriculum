@@ -28,7 +28,14 @@ The following input field is valid if its value exists and it is a string betwee
 characters:
 
 ```html
-<input id="input-name" type="text" name="name" minlength="3" maxlength="30" required />
+<input
+  id="input-name"
+  type="text"
+  name="name"
+  minlength="3"
+  maxlength="30"
+  required
+/>
 ```
 
 > ❗️ If the `required` attribute is omitted, the field is valid if it is empty or has a content
@@ -53,8 +60,8 @@ a `<textarea />` will fire this event with every keystroke.
 ```js
 const messageField = document.querySelector('[data-js="message"]');
 
-messageField.addEventListener('input', event => {
-	console.log(event.target.value);
+messageField.addEventListener("input", (event) => {
+  console.log(event.target.value);
 });
 ```
 
@@ -71,10 +78,10 @@ experience after submitting a form.
 ```js
 const messageField = document.querySelector('[data-js="message"]');
 
-form.addEventListener('submit', event => {
-	event.preventDefault();
-	// [...] handle form data
-	messageField.focus();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // [...] handle form data
+  messageField.focus();
 });
 ```
 
@@ -82,10 +89,10 @@ Instead of querying the input element using `querySelector`, it can also be obta
 `event.target.elements` collection:
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
-	// [...] handle form data
-	event.target.elements.message.focus();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // [...] handle form data
+  event.target.elements.message.focus();
 });
 ```
 
@@ -98,10 +105,10 @@ This will focus a form field with the attribute `name="message"`.
 You can reset all form fields to their default value with the `.reset()` method.
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
-	// [...] handle form data
-	event.target.reset();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // [...] handle form data
+  event.target.reset();
 });
 ```
 

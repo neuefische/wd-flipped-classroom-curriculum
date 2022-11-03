@@ -70,8 +70,8 @@ Use the demo to show the problem:
   - [ ] with each call to the function, the current array element gets passed as first argument
 
 ```js
-games.forEach(game => {
-	console.log(game.name);
+games.forEach((game) => {
+  console.log(game.name);
 });
 ```
 
@@ -91,15 +91,15 @@ games.forEach(game => {
   - [ ] the created and the original array have the same length (in contrast to `.filter()`).
 
 ```js
-const uppercaseNames = games.map(game => {
-	return game.name.toUpperCase();
+const uppercaseNames = games.map((game) => {
+  return game.name.toUpperCase();
 });
 ```
 
 - [ ] Show the shorthand syntax for a single return:
 
 ```js
-const uppercaseNames = games.map(game => game.name.toUpperCase());
+const uppercaseNames = games.map((game) => game.name.toUpperCase());
 ```
 
 ### `filter`
@@ -115,7 +115,7 @@ const uppercaseNames = games.map(game => game.name.toUpperCase());
   - [ ] the created array is likely to have a shorter length than the original array.
 
 ```js
-const gamesBefore2000 = games.filter(game => game.publishingYear < 2000);
+const gamesBefore2000 = games.filter((game) => game.publishingYear < 2000);
 ```
 
 - [ ] Recap the common features of `forEach`, `map`, and `filter`:
@@ -133,8 +133,8 @@ const gamesBefore2000 = games.filter(game => game.publishingYear < 2000);
 
 ```js
 const uppercaseNamesBefore2000 = games
-	.filter(game => game.publishingYear < 2000)
-	.map(game => game.name.toUpperCase());
+  .filter((game) => game.publishingYear < 2000)
+  .map((game) => game.name.toUpperCase());
 ```
 
 ---

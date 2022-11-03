@@ -26,11 +26,11 @@ The while loop is the most fundamental type of loop. It repeats a code block as 
 criteria is `true`.
 
 ```js
-let string = 'a';
+let string = "a";
 
 while (string.length <= 8) {
-	console.log(string);
-	string = string + string;
+  console.log(string);
+  string = string + string;
 }
 
 // 'a'
@@ -56,7 +56,7 @@ internal parts:
 
 ```js
 for (let counter = 0; counter < 4; counter++) {
-	console.log(counter);
+  console.log(counter);
 }
 // 0
 // 1
@@ -76,13 +76,13 @@ The `for...in` is a shorthand notation to loop through all keys of an object:
 
 ```js
 const user = {
-	name: 'Alex',
-	age: 28,
-	email: 'alex@mail.com',
+  name: "Alex",
+  age: 28,
+  email: "alex@mail.com",
 };
 
 for (const key in user) {
-	console.log(user[key]);
+  console.log(user[key]);
 }
 
 // 'Alex'
@@ -101,10 +101,10 @@ Similar to `for...in` the `for...of` loop is a shorthand notation, but for loopi
 of an array.
 
 ```js
-const fruits = ['apple', 'banana', 'melon'];
+const fruits = ["apple", "banana", "melon"];
 
 for (const fruit of fruits) {
-	console.log(fruit);
+  console.log(fruit);
 }
 
 // 'apple'

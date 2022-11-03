@@ -94,8 +94,8 @@ export function caeserCipher13(string) {
   - [ ] Make sure that the `.js` file extension is present:
 
 ```js
-import {authors} from './utils/authors.js';
-import {caeserCipher13} from './utils/cipher.js';
+import { authors } from "./utils/authors.js";
+import { caeserCipher13 } from "./utils/cipher.js";
 ```
 
 - [ ] Show that the app is broken right now. But why?
@@ -136,28 +136,28 @@ import {caeserCipher13} from './utils/cipher.js';
 
 ```js
 function Header() {
-	const headlineText = 'Classical Authors';
+  const headlineText = "Classical Authors";
 
-	const header = document.createElement('header');
-	header.className = 'header';
+  const header = document.createElement("header");
+  header.className = "header";
 
-	const headline = document.createElement('h1');
-	headline.textContent = caesarCipher13(headlineText);
+  const headline = document.createElement("h1");
+  headline.textContent = caesarCipher13(headlineText);
 
-	const button = document.createElement('button');
-	button.textContent = 'Decipher Headline';
-	button.type = 'button';
-	button.className = 'header__button';
-	button.addEventListener('click', handleDecipherHeadlineButtonClick);
+  const button = document.createElement("button");
+  button.textContent = "Decipher Headline";
+  button.type = "button";
+  button.className = "header__button";
+  button.addEventListener("click", handleDecipherHeadlineButtonClick);
 
-	header.append(headline, button);
+  header.append(headline, button);
 
-	function handleDecipherHeadlineButtonClick() {
-		headline.textContent = headlineText;
-		button.setAttribute('disabled', '');
-	}
+  function handleDecipherHeadlineButtonClick() {
+    headline.textContent = headlineText;
+    button.setAttribute("disabled", "");
+  }
 
-	return header;
+  return header;
 }
 
 const header = Header();
@@ -187,9 +187,9 @@ root.append(header);
 You should be left with this in `index.js`:
 
 ```js
-authors.forEach(author => {
-	const cardElement = Card(author);
-	root.append(cardElement);
+authors.forEach((author) => {
+  const cardElement = Card(author);
+  root.append(cardElement);
 });
 ```
 

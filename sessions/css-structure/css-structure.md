@@ -66,7 +66,7 @@ specificity.
 You can import one stylesheet into another stylesheet using **@import**:
 
 ```css
-@import 'customer-card.css';
+@import "customer-card.css";
 ```
 
 ---
@@ -78,15 +78,15 @@ components through CSS class naming conventions.
 
 ```css
 .block {
-	...;
+  ...;
 }
 
 .block__element {
-	...;
+  ...;
 }
 
 .block--modifier {
-	...;
+  ...;
 }
 ```
 
@@ -107,15 +107,15 @@ example:
 
 ```css
 .customer-card {
-	...;
+  ...;
 }
 
 .customer-card__button {
-	...;
+  ...;
 }
 
 .customer-card--disabled {
-	...;
+  ...;
 }
 ```
 
@@ -130,8 +130,8 @@ A common practice is to define variables in the `:root` pseudo class selector as
 
 ```css
 :root {
-	--primary-color: #ff00ff;
-	--secondary-color: #f00f0f;
+  --primary-color: #ff00ff;
+  --secondary-color: #f00f0f;
 }
 ```
 
@@ -141,8 +141,8 @@ You can use the custom properties as follows:
 
 ```css
 .customer-card {
-	color: var(--primary-color);
-	background-color: var(--secondary-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 ```
 

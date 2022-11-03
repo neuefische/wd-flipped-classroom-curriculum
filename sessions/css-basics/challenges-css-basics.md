@@ -2,18 +2,33 @@
 
 ## Social Card
 
-Solve this
-[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/social-card?file=/README.md)
+Solve the _Social Card_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/social-card?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/social-card
+```
 
 ## Button styles
 
-Solve this
-[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/button-styles?file=/css/styles.css)
+Solve the _Button styles_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/button-styles?file=/css/styles.css)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/button-styles
+```
 
 ## Pokemon page
 
-Solve this
-[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page?file=/css/styles.css:980-1001)
+Solve the _Pokemon page_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page?file=/css/styles.css:980-1001)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page
+```
 
 ## Homework: Personal Website Styling
 

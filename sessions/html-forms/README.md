@@ -68,9 +68,9 @@
 
 ```html
 <form>
-	<label for="input-name">Name:</label>
-	<input id="input-name" type="text" name="name" />
-	<button type="submit">Submit</button>
+  <label for="input-name">Name:</label>
+  <input id="input-name" type="text" name="name" />
+  <button type="submit">Submit</button>
 </form>
 ```
 
@@ -83,18 +83,18 @@
 
 ```html
 <form>
-	<label for="input-name">Name:</label>
-	<input id="input-name" type="text" name="name" />
-	<label for="input-date">Your favorite date:</label>
-	<input id="input-date" type="date" name="favorite-date" />
-	<label for="select-guests">How many friends will join you?</label>
-	<select id="select-guests" name="friends-to-join">
-		<option value="">--Please choose an option--</option>
-		<option value="single">I come alone.</option>
-		<option value="multiple">Maybe some?</option>
-		<option value="alone">I do not have friends.</option>
-	</select>
-	<button type="submit">Submit</button>
+  <label for="input-name">Name:</label>
+  <input id="input-name" type="text" name="name" />
+  <label for="input-date">Your favorite date:</label>
+  <input id="input-date" type="date" name="favorite-date" />
+  <label for="select-guests">How many friends will join you?</label>
+  <select id="select-guests" name="friends-to-join">
+    <option value="">--Please choose an option--</option>
+    <option value="single">I come alone.</option>
+    <option value="multiple">Maybe some?</option>
+    <option value="alone">I do not have friends.</option>
+  </select>
+  <button type="submit">Submit</button>
 </form>
 ```
 
@@ -111,19 +111,20 @@
 ```html
 <h2 id="title">Private Birthday Party Picker</h2>
 <p id="description">
-	Let's celebrate my birthday in small groups! Please give me your name, your preferred party date
-	and how many friends you will bring to my private birthday party.
+  Let's celebrate my birthday in small groups! Please give me your name, your
+  preferred party date and how many friends you will bring to my private
+  birthday party.
 </p>
 <form aria-labelledby="title">
-	<fieldset aria-describedby="description">
-		<legend>Enter your information</legend>
-		<label for="input-name">Name:</label>
-		<input id="input-name" type="text" name="name" />
-		<select>
-			...
-		</select>
-	</fieldset>
-	<button type="submit">Submit</button>
+  <fieldset aria-describedby="description">
+    <legend>Enter your information</legend>
+    <label for="input-name">Name:</label>
+    <input id="input-name" type="text" name="name" />
+    <select>
+      ...
+    </select>
+  </fieldset>
+  <button type="submit">Submit</button>
 </form>
 ```
 

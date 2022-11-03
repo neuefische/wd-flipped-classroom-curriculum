@@ -1,13 +1,17 @@
 # Challenges: HTML and the Web
 
-## Div-Salad
+## `<div>`-Salad
 
-Follow the link to this
-[CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/html-and-the-web/div-salad)
+Solve the _`<div>`-Salad_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/html-and-the-web/div-salad)
+or locally by running this command in your Terminal:
 
-1. Fork the CodeSandbox
-2. Replace all the div tags in the code with semantic HTML. In case you need some ideas, you can
-   refer to the [handout](html-and-the-web.md#layout-of-an-html-file)
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/div-salad -i
+```
+
+Replace all the div tags in the code with semantic HTML. In case you need some ideas, you can refer
+to the handout.
 
 ## Personal Website
 

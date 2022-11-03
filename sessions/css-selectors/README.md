@@ -56,8 +56,8 @@ Give a short overview of the different kind of selectors with one or two example
 
 You can use the following CodeSandbox to demonstrate the different kinds of selectors:
 
-- [demo start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-start_alternative)
-- [demo end](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-end_alternative)
+- [demo start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-start)
+- [demo end](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-end)
 
 ### Recap
 
@@ -65,7 +65,7 @@ You can use the following CodeSandbox to demonstrate the different kinds of sele
 
 ```css
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 ```
 
@@ -74,9 +74,9 @@ You can use the following CodeSandbox to demonstrate the different kinds of sele
 ```css
 h1,
 h2 {
-	background-color: midnightblue;
-	color: white;
-	padding: 5px;
+  background-color: midnightblue;
+  color: white;
+  padding: 5px;
 }
 ```
 
@@ -84,9 +84,9 @@ h2 {
 
 ```css
 .question-form {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 ```
 
@@ -97,7 +97,7 @@ Id selectors aren't resuable like class selectors and they are hard to overwrite
 
 ```css
 #submit {
-	color: blue;
+  color: blue;
 }
 ```
 
@@ -107,16 +107,16 @@ Select elements based on the presence of an attribute. If a value is specified i
 elements with the attribute and the specified values are selected:
 
 ```css
-[role='list'] {
-	list-style: none;
+[role="list"] {
+  list-style: none;
 }
 ```
 
 ```css
-a[href^='/'] {
-	color: hotpink;
-	text-transform: uppercase;
-	font-weight: bold;
+a[href^="/"] {
+  color: hotpink;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 ```
 
@@ -127,15 +127,15 @@ select elements which also match the state condition:
 
 ```css
 a:hover {
-	background-color: indigo;
-	color: white;
-	font-size: 1.4rem;
+  background-color: indigo;
+  color: white;
+  font-size: 1.4rem;
 }
 ```
 
 ```css
 button:active {
-	background-color: blue;
+  background-color: blue;
 }
 ```
 
@@ -145,7 +145,7 @@ With pseudo elements you can select parts of an element or add content before or
 
 ```css
 p::first-line {
-	font-size: 2em;
+  font-size: 2em;
 }
 ```
 
@@ -153,9 +153,9 @@ p::first-line {
 > dynamically while you change the viewport size (change the browser window size).
 
 ```css
-a[href^='https']::before {
-	content: '🌍';
-	margin-right: 5px;
+a[href^="https"]::before {
+  content: "🌍";
+  margin-right: 5px;
 }
 ```
 

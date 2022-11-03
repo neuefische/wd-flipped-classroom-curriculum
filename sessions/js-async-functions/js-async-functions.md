@@ -36,8 +36,8 @@ The Promise object has the following properties and methods:
 | `finally()`       | a method that takes a callback function that will be called when the asynchronous operation is complete, regardless of whether it was successful or not |
 
 ```js
-functionThatReturnsAPromise().then(value => {
-	console.log(value);
+functionThatReturnsAPromise().then((value) => {
+  console.log(value);
 });
 ```
 
@@ -54,11 +54,11 @@ asynchronous code that looks synchronous. Any function can be prefixed with the 
 
 ```js
 async function myAsyncFunction() {
-	// ...
+  // ...
 }
 
 const myAsyncArrowFunction = async () => {
-	// ...
+  // ...
 };
 ```
 
@@ -66,8 +66,8 @@ Inside an async function, you can use the `await` keyword to wait for a Promise 
 
 ```js
 async function myAsyncFunction() {
-	const value = await functionThatReturnsAPromise();
-	console.log(value);
+  const value = await functionThatReturnsAPromise();
+  console.log(value);
 }
 ```
 
@@ -76,10 +76,10 @@ operations that depend on each other.
 
 ```js
 async function myAsyncFunction() {
-	const value1 = await functionThatReturnsAPromise1();
-	const value2 = await functionThatReturnsAPromise2(value1);
-	const value3 = await functionThatReturnsAPromise3(value2);
-	console.log(value3);
+  const value1 = await functionThatReturnsAPromise1();
+  const value2 = await functionThatReturnsAPromise2(value1);
+  const value3 = await functionThatReturnsAPromise3(value2);
+  console.log(value3);
 }
 ```
 
@@ -88,13 +88,13 @@ Compared to:
 ```js
 // avoid doing this:
 function myFunction() {
-	functionThatReturnsAPromise1().then(value1 => {
-		functionThatReturnsAPromise2(value1).then(value2 => {
-			functionThatReturnsAPromise3(value2).then(value3 => {
-				console.log(value3);
-			});
-		});
-	});
+  functionThatReturnsAPromise1().then((value1) => {
+    functionThatReturnsAPromise2(value1).then((value2) => {
+      functionThatReturnsAPromise3(value2).then((value3) => {
+        console.log(value3);
+      });
+    });
+  });
 }
 ```
 
@@ -117,12 +117,12 @@ can use the `try`/`catch` syntax.
 
 ```js
 async function myAsyncFunction() {
-	try {
-		const value = await functionThatReturnsAPromise();
-		console.log(value);
-	} catch (error) {
-		console.error(error);
-	}
+  try {
+    const value = await functionThatReturnsAPromise();
+    console.log(value);
+  } catch (error) {
+    console.error(error);
+  }
 }
 ```
 
@@ -134,21 +134,21 @@ the execution of any further code in the `try` block:
 
 ```js
 async function functionThatThrowsAnError() {
-	throw new Error('ooops 🫣');
+  throw new Error("ooops 🫣");
 }
 
 async function myAsyncFunction() {
-	try {
-		const value = await functionThatThrowsAnError();
-		// The following code will never be executed because
-		// `functionThatThrowsAnError()` throws an error.
-		// The execution will jump to the `catch` block.
-		console.log(value);
-		const value2 = await functionThatReturnsAPromise2();
-		console.log(value2);
-	} catch (error) {
-		console.error(error);
-	}
+  try {
+    const value = await functionThatThrowsAnError();
+    // The following code will never be executed because
+    // `functionThatThrowsAnError()` throws an error.
+    // The execution will jump to the `catch` block.
+    console.log(value);
+    const value2 = await functionThatReturnsAPromise2();
+    console.log(value2);
+  } catch (error) {
+    console.error(error);
+  }
 }
 ```
 
@@ -159,14 +159,14 @@ resolved, regardless of whether it was successful or not:
 
 ```js
 async function myAsyncFunction() {
-	try {
-		const value = await functionThatReturnsAPromise();
-		console.log(value);
-	} catch (error) {
-		console.error(error);
-	} finally {
-		console.log('done');
-	}
+  try {
+    const value = await functionThatReturnsAPromise();
+    console.log(value);
+  } catch (error) {
+    console.error(error);
+  } finally {
+    console.log("done");
+  }
 }
 ```
 
@@ -177,18 +177,18 @@ JavaScript code that might throw an error.
 
 ```js
 function functionThatThrowsAnError() {
-	throw new Error('ooops 🫣');
+  throw new Error("ooops 🫣");
 }
 
 function myFunction() {
-	try {
-		functionThatThrowsAnError();
-		console.log('this will never be executed');
-	} catch (error) {
-		console.error(error);
-	} finally {
-		console.log('done');
-	}
+  try {
+    functionThatThrowsAnError();
+    console.log("this will never be executed");
+  } catch (error) {
+    console.error(error);
+  } finally {
+    console.log("done");
+  }
 }
 ```
 
@@ -204,16 +204,16 @@ results of the Promises in the same order.
 
 ```js
 async function myAsyncFunction() {
-	try {
-		const values = await Promise.all([
-			functionThatReturnsAPromise1(),
-			functionThatReturnsAPromise2(),
-			functionThatReturnsAPromise3(),
-		]);
-		console.log(values); // [value1, value2, value3]
-	} catch (error) {
-		console.error(error);
-	}
+  try {
+    const values = await Promise.all([
+      functionThatReturnsAPromise1(),
+      functionThatReturnsAPromise2(),
+      functionThatReturnsAPromise3(),
+    ]);
+    console.log(values); // [value1, value2, value3]
+  } catch (error) {
+    console.error(error);
+  }
 }
 ```
 

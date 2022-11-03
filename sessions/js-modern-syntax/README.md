@@ -71,9 +71,9 @@ You can use the following demo:
 
 ```js
 const tree = {
-	name: 'oak',
-	age: 1200,
-	scientificName: 'quercus',
+  name: "oak",
+  age: 1200,
+  scientificName: "quercus",
 };
 
 /*
@@ -82,7 +82,7 @@ const age = tree.age;
 const scientificName = tree.scientificName;
 */
 
-const {name, age, scientificName} = tree;
+const { name, age, scientificName } = tree;
 ```
 
 #### Renaming the variable
@@ -90,7 +90,7 @@ const {name, age, scientificName} = tree;
 - [ ] Show how a property can be renamed while destructuring an object with a colon (`:`) :
 
 ```js
-const {name: colloquialName} = tree;
+const { name: colloquialName } = tree;
 ```
 
 #### Default value
@@ -98,7 +98,7 @@ const {name: colloquialName} = tree;
 - [ ] Show how to set a default value of a property with an equal sign (`=`):
 
 ```js
-const {keepsLeavesInWinter = false} = tree;
+const { keepsLeavesInWinter = false } = tree;
 ```
 
 #### Rest syntax in object destructuring
@@ -107,7 +107,7 @@ const {keepsLeavesInWinter = false} = tree;
       them into one variable:
 
 ```js
-const {name, ...information} = tree;
+const { name, ...information } = tree;
 
 console.log(information); // {age: 1200, scientificName: 'quercus',}
 ```
@@ -122,7 +122,7 @@ console.log(information); // {age: 1200, scientificName: 'quercus',}
   - [ ] Its value depends on its index.
 
 ```js
-const animals = ['Lion', 'Tiger', 'Penguin', 'Bear', 'Whale'];
+const animals = ["Lion", "Tiger", "Penguin", "Bear", "Whale"];
 
 const [lion, tiger, penguin, bear, whale] = animals;
 ```
@@ -162,11 +162,11 @@ console.log(rest[1]); // 'Whale'
 
 ```js
 function showZooAnimals(...allAnimals) {
-	console.log(allAnimals);
-	return `My zoo consists of the following animals: ${allAnimals.join(', ')}.`;
+  console.log(allAnimals);
+  return `My zoo consists of the following animals: ${allAnimals.join(", ")}.`;
 }
 
-console.log(showZooAnimals('Monkey', 'Crocodil', 'Pig'));
+console.log(showZooAnimals("Monkey", "Crocodil", "Pig"));
 ```
 
 ---
@@ -180,7 +180,7 @@ console.log(showZooAnimals('Monkey', 'Crocodil', 'Pig'));
 ```js
 console.log(showZooAnimals(lion, tiger, ...rest));
 
-const newAnimals = ['Whale', 'Dolphin', 'Wolf'];
+const newAnimals = ["Whale", "Dolphin", "Wolf"];
 
 console.log(showZooAnimals(...newAnimals));
 ```
@@ -191,9 +191,9 @@ console.log(showZooAnimals(...newAnimals));
   - [ ] Create a new array from the old one and add a new value at the end.
 
 ```js
-const animalFood = ['Meat', 'Apple', 'Banana', 'Carrot'];
+const animalFood = ["Meat", "Apple", "Banana", "Carrot"];
 
-const newAnimalFood = 'Fish';
+const newAnimalFood = "Fish";
 
 const allAnimalFood = [...animalFood, newAnimalFood];
 ```

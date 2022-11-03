@@ -203,7 +203,7 @@ Mention that there are three possibilities:
   recommend defining font rules on the body of your page.
   ```css
   body {
-  	font-family: ...;
+    font-family: ...;
   }
   ```
 

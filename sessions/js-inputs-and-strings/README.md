@@ -86,7 +86,7 @@ Functions sessions.
   - [ ] You might need to give the hint that we need to access the `.value` property of the input:
 
 ```js
-output.textContent = 'Hello, ' + nameInput.value + '!';
+output.textContent = "Hello, " + nameInput.value + "!";
 ```
 
 ### Template strings
@@ -192,7 +192,7 @@ Now for the last one:
 - [ ] Ask students if they can think of a way to change it to be "1 hour" without also changing it
       for values larger than 1.
 
-> 💡The ternary operator might come in handy here.
+> 💡 The ternary operator might come in handy here.
 
 ---
 

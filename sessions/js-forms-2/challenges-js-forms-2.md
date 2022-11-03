@@ -3,26 +3,42 @@
 > 💡 Hint: Don't worry if you don't finish all challenges in the lesson time. Use the remaining
 > challenges to exercise in your free learning time.
 
-## Part 1: Formvalidation
+## Form validation
 
-Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/formvalidation?file=/README.md)
-and read the instructions given in the `README.md` file.
+Solve the _Form validation_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/formvalidation?file=/README.md)
+or locally by running this command in your Terminal:
 
-## Part 2: Controlled input changed to upper-case
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/formvalidation -i
+```
 
-Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/controlled-input-uppercase?file=/README.md)
-and read the instructions given in the `README.md` file.
+## Controlled input changed to uppercase
 
-## Part 3: Simple live calculator
+Solve the _Controlled input changed to uppercase_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/controlled-input-uppercase?file=/README.md)
+or locally by running this command in your Terminal:
 
-Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-live-calculator?file=/README.md)
-and read the instructions given in the `README.md` file.
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/controlled-input-uppercase -i
+```
 
-## Advanced: Simple todolist
+## Simple live calculator
 
-Please open
-[this CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-todolist?file=/README.md)
-and read the instructions given in the `README.md` file.
+Solve the _Simple live calculator_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-live-calculator?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-live-calculator -i
+```
+
+## Simple todo list
+
+Solve the _Simple todo list_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-todolist?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-todolist -i
+```

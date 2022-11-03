@@ -93,8 +93,8 @@ How can we guide the user to enter valid data into a form?
   - Implement a useful example for the `input` event in the demo to give some context:
 
 ```js
-passwordInput.addEventListener('input', event => {
-	updatePasswordStrength(event.target.value);
+passwordInput.addEventListener("input", (event) => {
+  updatePasswordStrength(event.target.value);
 });
 ```
 

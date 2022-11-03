@@ -73,7 +73,7 @@ respective browser output (it's more visual than `console.log`).
   - [ ] returns `true` or `false`
 
 ```js
-const studentNamesIncludesHarry = studentNames.includes('Harry'); // false
+const studentNamesIncludesHarry = studentNames.includes("Harry"); // false
 ```
 
 ---
@@ -86,7 +86,7 @@ const studentNamesIncludesHarry = studentNames.includes('Harry'); // false
   - [ ] show the return value of `undefined` of no element passes the test
 
 ```js
-const personOverThirty = students.find(student => student.age > 30);
+const personOverThirty = students.find((student) => student.age > 30);
 ```
 
 - [ ] Show `findIndex`:
@@ -96,7 +96,9 @@ const personOverThirty = students.find(student => student.age > 30);
   - [ ] show the return value of `-1` if no element passes the test
 
 ```js
-const indexOfStudentWith39Points = students.findIndex(student => student.points === 39);
+const indexOfStudentWith39Points = students.findIndex(
+  (student) => student.points === 39
+);
 ```
 
 ---
@@ -139,15 +141,15 @@ const sortedByAge = students.sort((a, b) => a.age - b.age);
 
 ```js
 const sortedByName = students.sort((a, b) => {
-	const nameA = a.name.toLowerCase();
-	const nameB = b.name.toLowerCase();
-	if (nameA < nameB) {
-		return -1;
-	}
-	if (nameA > nameB) {
-		return 1;
-	}
-	return 0;
+  const nameA = a.name.toLowerCase();
+  const nameB = b.name.toLowerCase();
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
+  return 0;
 });
 ```
 
@@ -158,8 +160,8 @@ const sortedByName = students.sort((a, b) => {
 - [ ] Use the provided `handleList()` calls to explain the problem:
 
 ```js
-handleList(students, 'Not Original Anymore');
-handleList(sortedByAge, 'Not Sorted By Age Anymore');
+handleList(students, "Not Original Anymore");
+handleList(sortedByAge, "Not Sorted By Age Anymore");
 ```
 
 Explanation:
@@ -191,7 +193,9 @@ const sortedByName = students.slice().sort((a, b) => {...}
 - [ ] Show that `some` returns either `true` or `false`.
 
 ```js
-const anyStudentHasZeroPoints = students.some(student => student.points === 0);
+const anyStudentHasZeroPoints = students.some(
+  (student) => student.points === 0
+);
 ```
 
 - [ ] Use `every` to test whether **all elements** in the array passes the provided testing
@@ -199,7 +203,9 @@ const anyStudentHasZeroPoints = students.some(student => student.points === 0);
 - [ ] Show that `every` returns either `true` or `false`.
 
 ```js
-const everyStudentIsOlderThanThirty = students.every(student => student.age > 30);
+const everyStudentIsOlderThanThirty = students.every(
+  (student) => student.age > 30
+);
 ```
 
 ---

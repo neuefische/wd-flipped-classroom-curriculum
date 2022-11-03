@@ -100,12 +100,12 @@ A typical html website consists of two main parts:
 
 ```html
 <html>
-	<head>
-		...meta information, additional links to css / js files
-	</head>
-	<body>
-		...elements displayed on the web page
-	</body>
+  <head>
+    ...meta information, additional links to css / js files
+  </head>
+  <body>
+    ...elements displayed on the web page
+  </body>
 </html>
 ```
 
@@ -171,22 +171,22 @@ examples of nested elements:
 
 - ```html
   <ul>
-  	<li>first item</li>
-  	<li>second item</li>
-  	<li>third item</li>
+    <li>first item</li>
+    <li>second item</li>
+    <li>third item</li>
   </ul>
   ```
 - ```html
   <article>
-  	<h2>Some headline</h2>
-  	<p>I am a paragraph...</p>
-  	<a href="https://www.github.com"> link to another website. </a>
+    <h2>Some headline</h2>
+    <p>I am a paragraph...</p>
+    <a href="https://www.github.com"> link to another website. </a>
   </article>
   ```
 - ```html
   <button>
-  	<img src="arrow.svg" />
-  	<span> submit </span>
+    <img src="arrow.svg" />
+    <span> submit </span>
   </button>
   ```
   Below is a sketch of how semantic elements can be nested in a web page. <br><br>

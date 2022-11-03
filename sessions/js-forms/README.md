@@ -84,10 +84,10 @@ const form = document.querySelector('[data-js="form"]');
       `.target`).
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	console.log(event);
+  console.log(event);
 });
 ```
 
@@ -105,10 +105,10 @@ form.addEventListener('submit', event => {
 - [ ] Show that `event.target` is a reference to the entire form:
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	console.log(event.target);
+  console.log(event.target);
 });
 // Output:
 // <form data-js="form">
@@ -131,13 +131,13 @@ form.addEventListener('submit', event => {
 - for readability, it's useful to save `event.target.elements` in a variable
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	const formElements = event.target.elements;
+  const formElements = event.target.elements;
 
-	console.log(formElements.firstName);
-	console.log(formElements.firstName.value);
+  console.log(formElements.firstName);
+  console.log(formElements.firstName.value);
 });
 ```
 
@@ -151,13 +151,13 @@ form.addEventListener('submit', event => {
 - `Object.fromEntries()` transforms the `FormData` object into a usable object
 
 ```js
-form.addEventListener('submit', event => {
-	event.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-	const formData = new FormData(event.target);
-	const data = Object.fromEntries(formData);
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
 
-	console.log(data);
+  console.log(data);
 });
 ```
 

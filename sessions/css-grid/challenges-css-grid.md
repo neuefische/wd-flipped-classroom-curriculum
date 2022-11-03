@@ -19,55 +19,85 @@ Solve the following Grid Challenges
 > 💡 Not all challenges have to be solved during session time. Use the remaining challenges as
 > practice for your independent learning time after class.
 
-### Image Gallery Challenge
+### Image Gallery
 
-Use
-[this codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/image-gallery?file=/css/styles.css).
+Solve the _Image Gallery_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/image-gallery?file=/css/styles.css)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/image-gallery -i
+```
 
 Expected Result:
 
 ![](assets/grid-challenge_image-gallery.png)
 
-### Service Gallery Challenge
+### Service Gallery
 
-Use
-[this codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/service-gallery?file=/css/styles.css).
+Solve the _Service Gallery_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/service-gallery?file=/css/styles.css)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/service-gallery -i
+```
 
 Expected Result:
 
 ![](assets/grid-challenge_service-gallery.png)
 
-### Payment Cards Challenge
+### Payment Cards
 
-Use
-[this codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/payment-cards?file=/css/styles.css).
+Solve the _Payment Cards Challenge_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/payment-cards?file=/css/styles.css)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/payment-cards -i
+```
 
 Expected Result:
 
 ![](assets/grid-challenge_payment-cards.png)
 
-### Fishes Cards Challenge
+### Fish Cards
 
-Use
-[this codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/fishes-cards).
+Solve the _Fish Cards_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/fish-cards/?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/fish-cards -i
+```
 
 Expected Result:
 
-![](assets/grid-challenge_fishes-cards.png)
+![](assets/grid-challenge_fish-cards.png)
 
-### Image Board Challenge
+### Image Board
 
-Use
-[this codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/image-board?file=/css/styles.css).
+Solve the _Image Board_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/image-board?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/image-board -i
+```
 
 Expected Result:
 
 ![](assets/grid-challenge_image-board.png)
 
-### Place The Elements Challenge
+### Place The Elements
 
-Use
-[this codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/place-elements?file=/css/styles.css).
+Solve the _Place The Elements Challenge_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/place-elements?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/place-elements -i
+```
 
 Expected Result:
 
