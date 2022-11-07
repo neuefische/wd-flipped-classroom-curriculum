@@ -49,12 +49,12 @@ ones more challenging than afternoon sessions.
 |     | [JS Fetch](sessions/js-fetch)                                                                                          | ✅     |
 | 19  | [Git Advanced](sessions/git-advanced)                                                                                  | ✅     |
 |     | [JS Modern Syntax](sessions/js-modern-syntax)                                                                          | ✅     |
-| 20  | JS Unit Testing ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/160))                               | 💭     |
+| 20  | [JS Unit Testing](sessions/js-unit-testing)                                                                            | ✅     |
 |     | _Buffer_                                                                                                               | 💭     |
 | 21  | [**Recap Project 3**](sessions/recap-project-3)                                                                        | ✅     |
 |     | [**Recap Project 3**](sessions/recap-project-3)                                                                        | ✅     |
-| 22  | React Basics ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/190))                                  | 💭     |
-|     | React Props ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/191))                                   | 💭     |
+| 22  | [React Basics](sessions/react-basics)                                                                                  | ✅     |
+|     | [React Props](sessions/react-props)                                                                                    | ✅     |
 | 23  | React Nesting ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/192))                                 | 💭     |
 |     | React Project Setup ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/206))                           | 💭     |
 | 24  | React State ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/195))                                   | 💭     |
