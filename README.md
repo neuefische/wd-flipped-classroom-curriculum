@@ -50,7 +50,7 @@ ones more challenging than afternoon sessions.
 | 19  | [Git Advanced](sessions/git-advanced)                                                                                  | ✅     |
 |     | [JS Modern Syntax](sessions/js-modern-syntax)                                                                          | ✅     |
 | 20  | [JS Unit Testing](sessions/js-unit-testing)                                                                            | ✅     |
-|     | _Buffer_                                                                                                               | 💭     |
+|     | _Buffer_                                                                                                               | 💤     |
 | 21  | [**Recap Project 3**](sessions/recap-project-3)                                                                        | ✅     |
 |     | [**Recap Project 3**](sessions/recap-project-3)                                                                        | ✅     |
 | 22  | [React Basics](sessions/react-basics)                                                                                  | ✅     |
