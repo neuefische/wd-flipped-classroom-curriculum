@@ -61,16 +61,16 @@ This way the actually generated result of the function is checked against an exp
 in the test case.
 
 ```js
-import {add} from 'calculator';
+import { add } from "calculator";
 
 test("should add the numbers 1, 2 and 3 correctly", () => {
-	const result = add(1, 2, 3);
-	expect(result).toBe(6);
+  const result = add(1, 2, 3);
+  expect(result).toBe(6);
 });
 
 test("should add the numbers 13, 28 and 42 correctly", () => {
-	const result = add(13, 28, 42);
-	expect(result).toBe(83);
+  const result = add(13, 28, 42);
+  expect(result).toBe(83);
 });
 ```
 
