@@ -55,7 +55,7 @@ ones more challenging than afternoon sessions.
 |     | [**Recap Project 3**](sessions/recap-project-3)                                                                        | ✅     |
 | 22  | [React Basics](sessions/react-basics)                                                                                  | ✅     |
 |     | [React Props](sessions/react-props)                                                                                    | ✅     |
-| 23  | React Nesting ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/192))                                 | 💭     |
+| 23  | [React Nesting](sessions/react-nesting)                              | ✅     |
 |     | React Project Setup ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/206))                           | 💭     |
 | 24  | React State ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/195))                                   | 💭     |
 |     | React with Arrays ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/199))                             | 💭     |
