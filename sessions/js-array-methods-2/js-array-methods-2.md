@@ -44,7 +44,7 @@ provided testing function. If there is no such element, `-1` is returned.
 ```js
 const colors = ["hotpink", "aquamarine", "granite", "grey"];
 
-colors.findIndex((color) => color.startsWith("g")); // 'granite'
+colors.findIndex((color) => color.startsWith("g")); // 2
 colors.findIndex((color) => color.startsWith("b")); // -1
 ```
 
