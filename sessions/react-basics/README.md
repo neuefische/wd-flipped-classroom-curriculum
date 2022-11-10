@@ -211,7 +211,7 @@ Open the [Render Demo](#render-demo) again and continue your demonstration.
   - [ ] It's like creating our own HTML tags, which represent a lot of other HTML tags.
   - [ ] Components are reuseable an can be put into JSX wherever we like.
 - [ ] Explain the rules of components.
-  - [ ] Function name with uppercase first letter (convention: CamelCase)
+  - [ ] Function name with uppercase first letter (convention: PascalCase)
   - [ ] Returns JSX (with one root element)
 
 ```jsx
