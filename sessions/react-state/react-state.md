@@ -110,7 +110,7 @@ the `set` function with a new value informs React, that state has changed.
 
 > 💡 Changing a state triggers a re-render of the component.
 
-When re-rendering the component, React executes the component function again from top to button,
+When re-rendering the component, React executes the component function again from top to bottom,
 which will again return JSX. However, this time the variable has a new value - the value that was
 passed with the call of the `set` function. This means the return JSX includes the new value.
 
