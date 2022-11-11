@@ -1,5 +1,9 @@
 # Challenges: JS Callback Functions
 
+The following four exercises build on each other. The first three challenges let you exercise how to write callback functions.
+
+If the names used for functions seem unclear at the beginning (e.g. `onSuccess()` instead of `callback()`), the fourth exercise will clear everything up.
+
 ## Named vs. anonymous callback functions
 
 Solve the _Named vs. anonymous callback functions_ challenge on
