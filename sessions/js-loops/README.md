@@ -157,7 +157,7 @@ for (const fruit of fruits) {
 - [ ] Provide the [handout](js-loops.md) and the [challenges](challenges-js-loops.md) to the
       students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
+- [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
   - meet again 30 min before lunch break in the class room
   - they can ask the coaches for help at any time
