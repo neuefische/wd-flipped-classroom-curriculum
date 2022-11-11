@@ -170,9 +170,6 @@ root.append(header);
 - [ ] Add add an `export` statement to the `Header` function.
 - [ ] Import the `Header` function into `index.js`.
 
-> 💡 You can show students how to use a default export/import for the Component here. It is
-> suggested to use named exports/imports though.
-
 #### Author Card
 
 - [ ] Asks students how they would extract the author card into a component that can be rendered for

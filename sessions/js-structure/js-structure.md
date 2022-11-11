@@ -145,8 +145,7 @@ import myModule from "./my-module.js";
 > 💡 Notice that the name you give it does not nessesarily have to match the name of the module or
 > the original name of the thing that was exported. For example `myModule` could have the value of
 > the `sayHello` function which is not clear from the name. Since you could import the same module
-> in multiple files you can also give it a different name every time. **For this reasons you should
-> prefer named exports instead of default exports in most cases.**
+> in multiple files you can also give it a different name every time.
 
 ### Mixing Named and `default` Imports
 
