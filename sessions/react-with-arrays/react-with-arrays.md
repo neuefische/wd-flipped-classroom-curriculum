@@ -101,7 +101,7 @@ function Drinks() {
 ## Keyed Fragments
 
 If you are rendering a list of items that are not wrapped in a single JSX tag, you can use a
-`<Fragment>` to wrap the list of items.
+`<Fragment>` to wrap the items.
 
 ```js
 import { Fragment } from "react";
