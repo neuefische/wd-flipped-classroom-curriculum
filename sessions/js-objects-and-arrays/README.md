@@ -76,8 +76,7 @@
   const complexArray = [1, 2, ["hello", false], true];
   ```
 
-- [ ] ❗️ Highlight, that this is bad practice and an array should always contain the same data
-      type.
+- [ ] Arrays with mixed types can be confusing to use. It is generally a good idea to use arrays with only one type of value unless you have a good reason to do otherwise.
 - [ ] Nested arrays can be accessed as follows:
 
   ```js

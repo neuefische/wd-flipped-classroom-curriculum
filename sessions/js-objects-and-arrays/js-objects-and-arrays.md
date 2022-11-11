@@ -64,11 +64,11 @@ shoppingList; // ["banana","tomato"];
 
 Objects are a structured data type, which couple their values not to an index, but to a unique key.
 
-You can declare an object using `{}` curly brackets (object initializer):
+You can declare an object using `{}` curly brackets (object literals):
 
 ```js
 const person = {
-  name: "Max Blub",
+  name: "Max Paddington",
   age: 21,
   isStudent: false,
 };
@@ -77,7 +77,7 @@ const person = {
 You can access the properties using the dot notation:
 
 ```js
-person.name; //"Max Blub"
+person.name; //"Max Paddington"
 ```
 
 You can also access the properties using the bracket notation:
@@ -90,7 +90,7 @@ Objects can be nested:
 
 ```js
 const person = {
-  name: "Max Blub",
+  name: "Max Paddington",
   age: 21,
   isStudent: false,
   address: {
@@ -112,7 +112,7 @@ person.address["city"]; // "Leipzig"
 You can change values of object properties by reassigning them using the dot or bracket notation:
 
 ```js
-person.name = "Max Bla";
+person.name = "Max Paddington";
 person["age"] = 33;
 ```
 
