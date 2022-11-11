@@ -59,20 +59,25 @@ There are three demos for this session:
 
 ### Introduction: JS is a single-threaded language
 
-- [ ] Use the
-      [Intro Blocking Demo](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo):
+- [ ] Use this demo on
+      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo?file=/README.md)
+      or locally by running this command in your Terminal:
 
-  - [ ] Explain that some processes in programming languages take time to complete. For example,
-        fetching data from a server, or doing a lot of calculations, or waiting for animations to
-        complete.
-  - [ ] Explain that as a simple example, we will use a function that does nothing for five seconds.
-  - [ ] Show that the `blockMainThreadFor5Seconds()` function takes 5 seconds to be finished, but
-        does nothing else (than blocking the main thread).
-  - [ ] `blockMainThreadFor5Seconds()` is called when clicking the button; start and end of blocking
-        is written into the console.
-  - [ ] Note that `console.log('done blocking');` and `blockButton.removeAttribute('disabled');` are
-        called after 5 seconds (when `blockMainThreadFor5Seconds()` is done executing).
-  - [ ] Show that you cannot input any string during these 5 seconds after hitting the button.
+  ```
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo -i
+  ```
+
+- [ ] Explain that some processes in programming languages take time to complete. For example,
+      fetching data from a server, or doing a lot of calculations, or waiting for animations to
+      complete.
+- [ ] Explain that as a simple example, we will use a function that does nothing for five seconds.
+- [ ] Show that the `blockMainThreadFor5Seconds()` function takes 5 seconds to be finished, but
+      does nothing else (than blocking the main thread).
+- [ ] `blockMainThreadFor5Seconds()` is called when clicking the button; start and end of blocking
+      is written into the console.
+- [ ] Note that `console.log('done blocking');` and `blockButton.removeAttribute('disabled');` are
+      called after 5 seconds (when `blockMainThreadFor5Seconds()` is done executing).
+- [ ] Show that you cannot input any string during these 5 seconds after hitting the button.
 
 > 💡 The `setTimeout()` in `blockMainThreadFor5Seconds` is only used to allow the browser to flush
 > the focus and the disabled button state before the blocking starts.
@@ -96,7 +101,7 @@ There are three demos for this session:
 > 💡 Some things like heavy calculations that take time to complete, but actually do stuff on the
 > main thread, cannot be made asynchronous.
 
-### Asynchronous Functions: `element.animate()`
+### Asynchronous Functions: `animateBall()`
 
 > 💡 This session uses the Web Animation API. It can be used to animate styles just like with
 > `@keyframes` and `animation` in CSS.
@@ -109,22 +114,35 @@ There are three demos for this session:
 > [Using the Web Animation API on mdn](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API).
 >
 > The `.animate()` method returns an object with a `finished` property that is a `Promise` that
-> resolves when the animation is complete. This is the reason why it is used as an example.
+> resolves when the animation is complete.
+>
+> **The demo uses an `animateBall()` function which abstracts away the details of the Web Animation
+> API and directly returns a `Promise` that resolves when the animation is complete.**
 
 #### Simultaneous Animations
 
-- [ ] Show the students around the
-      [Main Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start?file=/js/index.js):
+- [ ] Use this demo on
+      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start?file=/README.md)
+      or locally by running this command in your Terminal:
 
-  - [ ] It uses the
-        [`Element.animate()` browser API](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate).
-  - [ ] The `ballKeyframes` variable contains information necessary for the animation, similar to
-        the `@keyframes` CSS at-rule.
-  - [ ] The `ballAnimation` variable contains options for the timing properties of the animation.
+  ```
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start -i
+  ```
+
+  You can check out the final version of this demo on
+  [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end?file=/README.md)
+  or locally by running this command in your Terminal:
+
+  ```
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end -i
+  ```
+
+  - [ ] This demo uses the
+        [`Element.animate()` browser API](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate) inside the `animateBall()` function.
   - [ ] There are four balls: `soccer`, `basketball`, `football` and `tennis`.
   - [ ] When clicking the `animateButton`,
     - [ ] the button is disabled
-    - [ ] all four balls start their animation via `.animate(ballKeyframes, ballAnimation)`
+    - [ ] all four balls start their animation via `animateBall()`
     - [ ] the button is enabled
 
 - [ ] Click the `Animate` button and explain the problem:
@@ -134,12 +152,12 @@ There are three demos for this session:
 #### Staggered Animations with `promise.then()`
 
 - [ ] To start one after another, we need to know when the animation is finished.
-- [ ] `element.animate()` returns an `Animation` object:
+- [ ] `animateBall()` returns a `Promise` object:
   - [ ] store the return value in a variable and log it to the console
-  - [ ] inside the console, navigate to the `finished` property and show that it is a Promise.
+  - [ ] inside the console show that it is in fact a Promise
 
 ```js
-const soccerAnimation = soccer.animate(ballKeyframes, ballAnimation);
+const soccerAnimation = animateBall(soccer);
 console.log("soccerAnimation", soccerAnimation);
 ```
 
@@ -155,7 +173,7 @@ console.log("soccerAnimation", soccerAnimation);
   - [ ] while "waiting" for a Promise, other code can be executed
 
 - [ ] Show that the `then()` function is called when the Promise is resolved:
-  - [ ] call the `then()` method on the `soccerAnimation.finished` property
+  - [ ] call the `then()` method on the `soccerAnimation`
   - [ ] add a `console.log()` inside the `then()` callback
   - [ ] click the `Animate` button and show that the `console.log()` is called after the animation
         is finished
@@ -163,7 +181,7 @@ console.log("soccerAnimation", soccerAnimation);
         handler
 
 ```js
-soccerAnimation.finished.then(() => {
+soccerAnimation.then(() => {
   console.log("soccer animation finished");
 });
 ```
@@ -172,9 +190,9 @@ soccerAnimation.finished.then(() => {
       function:
 
 ```js
-soccerAnimation.finished.then(() => {
+soccerAnimation.then(() => {
   console.log("soccer animation finished");
-  const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
+  const basketballAnimation = animateBall(basketball);
 });
 ```
 
@@ -182,17 +200,17 @@ soccerAnimation.finished.then(() => {
       cumbersome to write by hand):
 
 ```js
-const soccerAnimation = soccer.animate(ballKeyframes, ballAnimation);
-soccerAnimation.finished.then(() => {
+const soccerAnimation = animateBall(soccer);
+soccerAnimation.then(() => {
   console.log("soccer animation finished");
-  const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
-  basketballAnimation.finished.then(() => {
+  const basketballAnimation = animateBall(basketball);
+  basketballAnimation.then(() => {
     console.log("basketball animation finished");
-    const footballAnimation = football.animate(ballKeyframes, ballAnimation);
-    footballAnimation.finished.then(() => {
+    const footballAnimation = animateBall(football);
+    footballAnimation.then(() => {
       console.log("football animation finished");
-      const tennisAnimation = tennis.animate(ballKeyframes, ballAnimation);
-      tennisAnimation.finished.then(() => {
+      const tennisAnimation = animateBall(tennis);
+      tennisAnimation.then(() => {
         console.log("tennis animation finished");
         animateButton.removeAttribute("disabled");
       });
@@ -221,28 +239,43 @@ soccerAnimation.finished.then(() => {
 
 - [ ] Adapt the code to wait for each animation to finish:
   - [ ] Add the `async` keyword before the callback function.
-  - [ ] Use the `await` keyword to wait for `soccerAnimation.finished`.
+  - [ ] Use the `await` keyword to wait for the `soccerAnimation` to finish.
   - [ ] Use `await` for the other animations as well and untangle the "callback hell".
 
 ```js
 animateButton.addEventListener("click", async () => {
   animateButton.setAttribute("disabled", "disabled");
 
-  const soccerAnimation = soccer.animate(ballKeyframes, ballAnimation);
-  await soccerAnimation.finished;
+  const soccerAnimation = animateBall(soccer);
+  await soccerAnimation;
   console.log("soccer animation finished");
 
-  const basketballAnimation = basketball.animate(ballKeyframes, ballAnimation);
-  await basketballAnimation.finished;
+  const basketballAnimation = animateBall(basketball);
+  await basketballAnimation;
   console.log("basketball animation finished");
 
-  const footballAnimation = football.animate(ballKeyframes, ballAnimation);
-  await footballAnimation.finished;
+  const footballAnimation = animateBall(football);
+  await footballAnimation;
   console.log("football animation finished");
 
-  const tennisAnimation = tennis.animate(ballKeyframes, ballAnimation);
-  await tennisAnimation.finished;
+  const tennisAnimation = animateBall(tennis);
+  await tennisAnimation;
   console.log("tennis animation finished");
+
+  animateButton.removeAttribute("disabled");
+});
+```
+
+- [ ] Show that this also works without the indermediary variables (and the console.log()s):
+
+```js
+animateButton.addEventListener("click", async () => {
+  animateButton.setAttribute("disabled", "disabled");
+
+  await animateBall(soccer);
+  await animateBall(basketball);
+  await animateBall(football);
+  await animateBall(tennis);
 
   animateButton.removeAttribute("disabled");
 });
@@ -259,8 +292,14 @@ animateButton.addEventListener("click", async () => {
   - [ ] for now it is enough to know that `fetch()` resolves with a `Response` object
   - [ ] the value can be accessed via the `then()` function
   - [ ] when using the `async/await` syntax, the `await` expression resolves to the value
-- [ ] Open the
-      [Fetch Demo](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo)
+- [ ] Use this demo on
+      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo?file=/README.md)
+      or locally by running this command in your Terminal:
+
+  ```
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo -i
+  ```
+
 - [ ] Explain the code:
   - [ ] the global `fetch()` function is used to make a HTTP request
   - [ ] the `fetch()` function returns a Promise that resolves with a `Response` object
