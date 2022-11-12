@@ -132,7 +132,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
     );
   }
   ```
+
 - [ ] Note that destructuring the props parameter is the way we are going to do it throughout this course.
+
 ### Functions as Props and Event Handlers
 
 - [ ] Explain that we want to be able to pet the pets by clicking on them.

@@ -125,7 +125,7 @@ root.render(
 - [ ] Explain that we need to insert dynamic values in JSX to build useful app.
   - [ ] Otherwise there would be only static content.
 - [ ] In JSX this is done by using curly braces.
-  - [ ] Inside curly braces you can put a variable 
+  - [ ] Inside curly braces you can put a variable
   - [ ] or any other JavaScript expression (something that resolves to a value: e.g. ternary
         operator is very common)
 - [ ] Demonstrate an example like this:
