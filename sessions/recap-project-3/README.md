@@ -1,4 +1,4 @@
-# Recap Project 2
+# Recap Project 3
 
 # Recap 3: Rick and Morty App
 
