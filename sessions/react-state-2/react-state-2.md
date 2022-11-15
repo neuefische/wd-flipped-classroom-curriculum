@@ -3,10 +3,10 @@
 ## Learning Objectives
 
 - [ ] Knowing how to handle form fields: controlled components, uncontrolled components
-- [ ] Knowing hot to handle form submit events
+- [ ] Knowing how to handle form submit events
 - [ ] Understanding the concept of lifting state up
 - [ ] Knowing how to pass state and functions via props
-- [ ] Understanding that state updates are not not synchronous
+- [ ] Understanding that state updates are not synchronous
 - [ ] Knowing what a `hook` in React is and which rules apply to hooks
 
 ---
