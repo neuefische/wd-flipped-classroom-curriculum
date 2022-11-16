@@ -177,7 +177,7 @@ Show the differences between inline and block elements (based on your starter Co
   - Wrapping parts of a text in inline elements does not break the flow of the text.
   - An inline element will apply margin and padding, but break to the next line.
   - Margin and padding will push elements only horizontally and not vertically.
-  - An inline element will apply declaration with `width` and `height`.
+  - An inline element will NOT apply declarations with `width` and `height`.
   - Common inline elements: `<em></em>`, `<strong></strong>` and `<span></span>`.
 
 ### How to link stylesheets
