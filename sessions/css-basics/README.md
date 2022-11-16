@@ -186,26 +186,9 @@ Explain what a stylesheet is and create a separate CSS stylesheet
 
 - [ ] Show students how to link the stylesheet to their HTML file
 
-### **Optional:** Show [Google-Fonts](https://fonts.google.com/) and how to import a Google font
+### **Optional:** How to use [Google-Fonts](https://fonts.google.com/)
 
-Mention that there are three possibilities:
-
-- use `@import` in your css file
-- use `link` element in the html file
-- download the font and add it to the project by using `@font-face`
-
-> ❗️ For legal reasons we only want to show the option of downloading and hosting fonts yourself.
-> This is the only option we want to encourage the students to use.
-
-- Show how to download and add a google font using the
-  [google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts)
-- Explain that you can create a rules for your body that will be handed down through inheritance. We
-  recommend defining font rules on the body of your page.
-  ```css
-  body {
-    font-family: ...;
-  }
-  ```
+> 💡 If students are eager to use Google Fonts, note that there are legal issues with the ways Google provides for importing the fonts. [A work-around](css-basics.md#styling-fonts) and an [explanation of the problem](css-basics.md#legal-issues-using-google-fonts-with-import-and-link) can be found in the handout.
 
 ---
 

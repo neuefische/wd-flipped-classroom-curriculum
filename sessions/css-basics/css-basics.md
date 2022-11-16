@@ -165,22 +165,6 @@ With CSS you can style the fonts of your website in many ways. Here are just som
 
 You can include custom fonts in different ways:
 
-- find a font on [google fonts](fonts.google.com) and use the `@import` snippet and paste it to the
-  top of your css file:
-  ```css
-  @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;			400;500;700&display=swap");
-  ```
-- use the provided HTML code to add the font via the `link` element in the `head` of your HTML file:
-
-  ```html
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap"
-    rel="stylesheet"
-  />
-  ```
-
 - download any font and include it as a `font-family`
 
   ```css
@@ -193,8 +177,28 @@ You can include custom fonts in different ways:
   You can use the [google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts) which
   will provide you with the fonts file and create the necessary css rules for you.
 
+- the `@import` snippet ([see legal notice below](./css-basics.md#legal-issues-using-google-fonts-with-import-and-link))
+- the HTML `link` element ([see legal notice below](./css-basics.md#legal-issues-using-google-fonts-with-import-and-link))
+
 > ❗️ For legal reasons you should choose the option to download the font and include it as a
 > font-family.
+
+### Legal Issues using Google Fonts with `@import` and `<link>`
+
+[Google Fonts](fonts.google.com) is an open source project where you can find a font. The website provides you with two easy ways to host fonts in your project:
+
+- the `@import` snippet
+- the HTML `link` element
+
+If you use one of these two ways, your website requests the font from the Google Server as soon as the website loads. To do so, the Google server needs to know the user's IP address.
+
+The IP address, however, is considered personally identifiable data and in January 2022, a German court has declared that Google Fonts is not [GDPR](https://gdpr.eu/)-compliant (DSGVO).
+
+And that's the point: the website has communicated with an (external) Google server without asking the user's permission (i.e. before the user agreed that the website uses cookies).
+
+This is why using Google Fonts with `@import` or the HTML `link` element, every user can sue you for violating their personal data.
+
+> 💡 In the future (towards your capstone project) we're going to use a web framework called Next.js. It provides an easy way to integrate downloaded Google Fonts automatically without getting into legal trouble. Please wait a few more weeks as we can't use that right now. We'll get there though. 🤞
 
 ---
 
@@ -220,3 +224,4 @@ your HTML file by placing a `<link>` tag in the `<head>` of your HTML document.
 - [CSS Tricks: Box-sizing](https://css-tricks.com/box-sizing/)
 - [Josh Comeau: Surprising truth about pixels and accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
 - [rem/px calculator](https://nekocalc.com/de/px-zu-rem-umrechner)
+- [Legal Issues using Google Fonts](https://cookie-script.com/blog/google-fonts-and-gdpr)

@@ -37,4 +37,3 @@ Start styling your personal website to make it absolutely fabulous. ✨
 - [ ] Add a style.css file to your project and [link it correctly](#linking-stylesheets) in your
       index.html file.
 - [ ] Get creative and find your very own style for your personal website.
-- [ ] [Include a font](#styling-fonts) into your website.
