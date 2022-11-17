@@ -64,6 +64,22 @@ how to style those elements.
 website. Therefore, it should be considered that the students have already created a basic HTML
 structure for their project.
 
+Use this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/demo-start?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/demo-start -i
+```
+
+You can check out the final version of this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/demo-end?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/demo-end -i
+```
+
 ### What is CSS?
 
 Explain what CSS is based on an example.
