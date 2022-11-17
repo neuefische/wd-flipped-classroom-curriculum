@@ -24,3 +24,6 @@
 
 # debug
 npm-debug.log*
+
+# obsidian config folder
+/.obsidian
