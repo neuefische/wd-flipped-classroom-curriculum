@@ -60,7 +60,7 @@ ones more challenging than afternoon sessions.
 | 24  | [React State](sessions/react-state)                                                                                    | ✅     |
 |     | [React with Arrays](sessions/react-with-arrays)                                                                        | ✅     |
 | 25  | [React State 2](sessions/react-state-2)                                                                                | ✅     |
-|     | React State 3 ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/197))                                 | 💭     |
+|     | [React State 3](sessions/react-state-3)                                                                                | ✅     |
 | 26  | React Effects and Fetch ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/200))                       | 💭     |
 |     | React Effects and localStorage ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/201))                | 💭     |
 | 27  | React Custom Hooks ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/203)) (begin Recap Project 4)    | 💭     |
