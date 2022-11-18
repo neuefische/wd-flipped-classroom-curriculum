@@ -85,7 +85,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-e
 
 - [ ] Open the `Movie` component
 
-  - [ ] Explain that it accepts the props `name` and `like` and show where they are used
+  - [ ] Explain that it accepts the props `name` and `isLiked` and show where they are used
   - [ ] Point out there is a button to like/dislike the movie via a toggle mechanism
   - [ ] Point out there is a delete button to remove the movie
   - [ ] Open the app in the browser and demonstrate how the two buttons don't work yet
@@ -98,7 +98,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-e
 
   - [ ] Explain the form has two fields for a movie
     - `name` as text
-    - `like` as checkbox
+    - `isLiked` as checkbox
   - [ ] Explain there is already a submit handler function in place
   - [ ] Point out that it reads the form data and logs it to the console. We still have to actually add the movie to the state.
   - [ ] Open the app in the browser and showcase the log message when submitting the form
@@ -120,6 +120,7 @@ export default function Form({ onAddMovie }) {
 
     onAddMovie(data);
     event.target.reset();
+    event.target.elements.name.focus();
   }
 
   // ...
@@ -247,7 +248,7 @@ onClick={() => onToggleLike(id)}
   - We need to create a new array as complete new state
   - We need to call the setter function and pass the new state
 - [ ] Call the `setMovies` function inside of `handleToggleLike`
-- [ ] Explain the new state is a list of all movies, but we want to flip the `like` key in one object
+- [ ] Explain the new state is a list of all movies, but we want to flip the `isLiked` property in one object
 - [ ] Point out we can use the array method `map` for this
   - We need to iterate over all movies
   - We have to compare `id`s
