@@ -224,7 +224,7 @@ function Counter() {
 
 > 📙 Read more about
 > [**Updating state based on the previous state**](https://beta.reactjs.org/apis/react/useState#updating-state-based-on-the-previous-state)
-> and answer to
+> and
 > [**I’ve updated the state, but logging gives me the old value**](https://beta.reactjs.org/apis/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
 > in the React docs.
 
