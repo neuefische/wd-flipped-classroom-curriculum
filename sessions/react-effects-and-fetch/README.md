@@ -215,17 +215,16 @@ useEffect(() => {
 ```
 
 - [ ] Add an `onClick` event listener to the `button`
+  > 💡 The API returns a `nextId` property that you can use to set the next id.
 
 ```jsx
-<button type="button" onClick={() => setId(id + 1)}>
+<button type="button" onClick={() => setId({joke.nextId})}>
   Next Joke
 </button>
 ```
 
 - Open the browser and demonstrate that clicking on the button will change the joke
 - Open the dev tools panel and demonstrate there is a network request when we click on the button
-
-> 💡 Don't click on the button too often! The APIs delivers 15 jokes. The simple example doesn't handle the end of the list which will break the app.
 
 ---
 
