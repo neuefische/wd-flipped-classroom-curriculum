@@ -30,6 +30,16 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters-extra -i
 ```
 
+## Pizza Analyzer
+
+Solve this challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions/pizza-analyzer?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/pizza-analyzer -i
+```
+
 ## Functions and DOM manipulation
 
 Solve the _Functions and DOM manipulation_ challenge on
