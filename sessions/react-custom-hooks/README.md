@@ -275,7 +275,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/d
 
 ### When to extract, when not to extract
 
-- [ ] Explain that students might feel the urge to extract everything into a custom hook. This is not always a good idea. For example, if a custom hook is only used in one component it might be better to keep it in the component file. This way it is easier to understand what the component does: Less abstraction makes = simpler code.
+- [ ] Explain that students might feel the urge to extract everything into a custom hook. This is not always a good idea. For example, if a custom hook is only used in one component it might be better to keep the build-in hooks in the component directly. This way it is easier to understand what the component does: Less abstraction = simpler code.
 
 - [ ] Explain that in practice it is a good idea to extract logic into custom hooks when it is used in multiple places. This way we can reuse the logic and avoid code duplication.
 
