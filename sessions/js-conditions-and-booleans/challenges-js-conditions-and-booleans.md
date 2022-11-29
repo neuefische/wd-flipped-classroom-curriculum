@@ -25,6 +25,8 @@ Solve this [Kata](https://www.codewars.com/kata/57089707fe2d01529f00024a/train/j
 
 Solve this [Kata](https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript)
 
+## Teenager check
+
 Solve the _Teenager check_ challenge on
 [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check?file=/js/index.js)
 or locally by running this command in your Terminal:
