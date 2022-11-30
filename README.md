@@ -64,8 +64,8 @@ ones more challenging than afternoon sessions.
 | 26  | [React Effects and Fetch](sessions/react-effects-and-fetch)                                                            | ✅     |
 |     | [React with Local Storage](sessions/react-with-local-storage)                                                          | ✅     |
 | 27  | [React Custom Hooks](sessions/react-custom-hooks) (begin Recap Project 4)                                              | ✅     |
-|     | **Recap Project 4** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/204))                           | 💭     |
-| 28  | Next.js Basics and Routing ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/208))                    | 💭     |
+|     | [**Recap Project 4**](sessions/recap-project-4)                                                                        | ✅     |
+| 28  | [Next.js Basics and Routing](sessions/next-js-basics-and-routing)                                                      | ✅     |
 |     | Next.js Dynamic Routes ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/209))                        | 💭     |
 | 29  | React Styled Components ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/210))                       | 💭     |
 |     | Storybook ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/207))                                     | 💭     |
