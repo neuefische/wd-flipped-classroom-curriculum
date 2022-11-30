@@ -84,7 +84,9 @@
 - [ ] You can ask students to watch
       [this 7 minute video about web accessibility perspectives](https://www.youtube.com/watch?v=3f31oufqFSM).
 
-### How to: WCAG, Colors and Semantic HTML
+### How to WCAG
+
+#### Colors
 
 - [ ] Show the [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) (Web Content Accessibility
       Guidelines) and give a broad overview:
@@ -94,11 +96,27 @@
   - Accessible `Pagelayout` (landmarks, headings, etc.)
   - `Alt` texts for images
   - Understandable `content` (language alà simplified english, complexity)
-- [ ] Show how to create an accessible pagelayout using semantic HTML and landmarks:
-  - Start with [this CodeSandbox](https://codesandbox.io/s/semantic-html-starter-hgyeig)
+
+#### Semantic HTML
+
+Use this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/accessibility/demo-start?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/accessibility/demo-start -i
+```
+
+You can check out the final version of this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/accessibility/demo-end?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/accessibility/demo-end -i
+```
+
+- [ ] Show how to create an accessible pagelayout using semantic HTML and landmarks
   - Add `h1`, `h2`, `h3`, `main`, `p`, `section`, `ul` and `li`
-  - Here is the
-    [final result CodeSandbox](https://codesandbox.io/s/semantic-html-final-result-df9ofo)
 - [ ] Explain that [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) (Accessible Rich
       Internet Applications) is an extension to HTML (and other web technologies), that can be used
       if the built-in HTML features are not enough to describe what something is or does
