@@ -71,7 +71,7 @@ How can we write JavaScript code that generates parts of our webpage for us?
   - [ ] `const newCard = document.createElement('li')`
   - [ ] extend the diagram in excalidraw: ![dom and createElement](assets/createElement.png)
 - [ ] explain that in addition to creating an element you have to **place it** somewhere in the DOM
-      tree: `body.append(newCard)`
+      tree: `document.body.append(newCard)`
   - [ ] show the effect in your example webpage
   - [ ] explain that `.append` puts the element as the **last child** in the respective element
 

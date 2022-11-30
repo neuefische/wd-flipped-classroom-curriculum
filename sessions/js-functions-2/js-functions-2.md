@@ -76,7 +76,7 @@ function setBackgroundColor(color) {
   if (typeof color === "String") {
     if (color.startsWith("#")) {
       if (color.length >= 7) {
-        body.style.backgroundColor = color;
+        document.body.style.backgroundColor = color;
       }
     }
   }

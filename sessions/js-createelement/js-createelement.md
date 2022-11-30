@@ -30,7 +30,7 @@ After generating an element, you need to place the element into the DOM. For thi
 `.append` method. It places the element as the **last child** into the respective element.
 
 ```js
-body.append(article); // placing the created article at the end of the body
+document.body.append(article); // placing the created article at the end of the body
 article.append(button); // placing the created button into the article
 ```
 
