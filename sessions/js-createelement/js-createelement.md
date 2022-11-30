@@ -143,7 +143,7 @@ HTML before:
 By setting the innerHTML to an empty string, the content is deleted:
 
 ```js
-const cardContainer = document.querySelector('ul[data-js="cardContainer"]');
+const cardContainer = document.querySelector('[data-js="cardContainer"]');
 cardContainer.innerHTML = "";
 ```
 
