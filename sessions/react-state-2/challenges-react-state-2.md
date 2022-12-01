@@ -50,7 +50,7 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/triple-count -i
 ```
 
-## Bonus:  Fix Conditionally Rendered useState Hook
+## Bonus: Fix Conditionally Rendered useState Hook
 
 Solve this challenge on
 [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-2/conditional-usestate?file=/README.md)

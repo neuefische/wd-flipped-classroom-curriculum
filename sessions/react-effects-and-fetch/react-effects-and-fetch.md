@@ -116,7 +116,7 @@ function Title({ title }) {
   useEffect(() => {
     // make a copy of the old title
     const oldTitle = document.title;
-    
+
     document.title = title;
 
     // cleanup function
