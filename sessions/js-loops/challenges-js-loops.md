@@ -10,16 +10,6 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/for-console -i
 ```
 
-## Star Rating
-
-Solve the _Star Rating_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-loops/for-stars?file=/README.md)
-or locally by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/for-stars -i
-```
-
 ## Creating a list
 
 Solve the _Creating a list_ challenge on
@@ -48,6 +38,16 @@ or locally by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/while-random-number -i
+```
+
+## Stars
+
+Solve this challenge on  
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-loops/stars?file=/README.md)  
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/stars -i
 ```
 
 ## Bonus: Pixels
