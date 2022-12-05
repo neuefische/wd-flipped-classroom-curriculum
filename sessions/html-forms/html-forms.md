@@ -79,7 +79,7 @@ whether the entered text is a valid email address. .
 Use `type="number"` to let the user enter a number.
 
 ```html
-<label for="age">Age</label> <input type="age" name="age" id="age" />
+<label for="age">Age</label> <input type="number" name="age" id="age" />
 ```
 
 ### Date
@@ -111,14 +111,14 @@ Use the tag `<textarea>` to let the user enter longer text with multiple lines.
 <textarea name="personal-message" id="personal-message"></textarea>
 ```
 
-> ❗️ Please be aware that the `<textarea>` tag is not a self-closing as the `<input>` tag
+> ❗️ Please be aware that the `<textarea>` tag is not a self-closing tag like `<input>`.
 
 ### Select / dropdown menu
 
 The `<select>` field lets the user choose between different options wrapped into `<option>` tags
 that are nested into their parent `<select>` tag - this renders a dropdown menu. Each `<option>` has
 a `value` attribute defining the data to be submitted. The option's text presented to the user is
-defined between the opening and closing tag
+defined between the opening and closing tag.
 
 ```html
 <label for="billing-plan">Billing plan</label>
