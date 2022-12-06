@@ -121,7 +121,7 @@ const StyledList = styled.ul`
 `;
 ```
 
-If you want to set several CSS properties based on the same prop, you can use the `css` helper function:
+If you want to set several CSS properties based on the same prop, you can use the `css` helper:
 
 ```js
 const StyledList = styled.ul`
@@ -135,7 +135,7 @@ const StyledList = styled.ul`
 `;
 ```
 
-> 💡 Besides others, the advantages of the `css` helper function is syntax highlighting and performance optimization.
+> 💡 Besides others, the advantages of the `css` helper is syntax highlighting and performance optimization.
 
 > 📙 Read more about [styling based on props](https://styled-components.com/docs/basics#adapting-based-on-props).
 
