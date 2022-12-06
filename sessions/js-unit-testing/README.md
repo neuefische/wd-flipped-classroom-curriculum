@@ -140,6 +140,7 @@ test("returns 'Hello Jane!' if called greet('Jane')", () => {
 - [ ] Open the `package.json` file
   - [ ] Show the line with the `test` script
   - [ ] Explain that this calls `jest`
+  - [ ] Explain that it starts `jest` in watch mode (test re-run on file change)
 - [ ] Execute `npm run test` in the terminal
   - [ ] Show that the result is `green` - a successful test
 - [ ] Change something in the implementation in `greet.js` (e.g. `"Hi"` instead of `"Hello"`)
@@ -161,10 +162,7 @@ test("returns 'Hello Jane!' if called greet('Jane')", () => {
   - [ ] When the function is called without a name, it should return `"Hello stranger!"`
   - [ ] When the function is called with `<YOUR-NAME>`, it should return `"Hello coach!"`
 - [ ] Open `greet.test.js` and write the tests for the acceptance criteria
-- [ ] Open the `package.json`
-  - [ ] Show the `test:watch` script
-  - [ ] Explain that this calls `jest` every time the code or tests are changed
-- [ ] Run `npm run test:watch` in the terminal
+- [ ] Run `npm run test` in the terminal
   - [ ] Point out that the two new tests fail
   - [ ] Now we need to write the implementation
 - [ ] Open `greet.js`

@@ -46,9 +46,6 @@ Create React App scaffolds a folder structure for you with a lot of files and fo
 Create React App has a few more npm scripts than the ones you have seen so far. Besides starting a
 development server and running tests, you can use them to build your app.
 
-> 💡 With Create React App, the `test` script runs the tests in watch mode. This is different from
-> the `test:watch` script you have seen so far.
-
 > 💡 You should never need to use the `eject` script. It is a one-way operation that you can't undo.
 > It is used to customize the configuration of your app.
 

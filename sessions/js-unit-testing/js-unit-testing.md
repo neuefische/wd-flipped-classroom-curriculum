@@ -78,16 +78,10 @@ test("should add the numbers 13, 28 and 42 correctly", () => {
 
 ## Run Tests locally
 
-Run all tests once:
+Run all tests:
 
 ```sh
 npm run test
-```
-
-Run all tests in watch mode:
-
-```sh
-npm run test:watch
 ```
 
 When executing this commands you will see the result of the test run: a list of all included tests
