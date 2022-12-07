@@ -148,15 +148,15 @@ export default function Form({ onAddMovie }) {
   - `[...movies]`
 - [ ] Explain that we like to add a new movie at the end of the list
 - [ ] Point out that each movie need a unique `id`, so we need to generate one.
-  - [ ] Explain that the tool `nanoid` can do this. It's already installed via `npm`
-  - [ ] Import `nanoid`
-    - `import { nanoid } from "nanoid";`
-  - [ ] Call `nanoid()` to create `random id`
+  - [ ] Explain that the tool `uid` can do this. It's already installed via `npm`
+  - [ ] Import `uid`
+    - `import { uid } from "uid";`
+  - [ ] Call `uid()` to create `random id`
   - [ ] Explain we create a new object, spread all data of the new movie and enrich the data with an `id`
 
 ```js
 function handleAddMovie(newMovie) {
-  setMovies([...movies, { id: nanoid(), ...newMovie }]);
+  setMovies([...movies, { id: uid(), ...newMovie }]);
 }
 ```
 

@@ -66,7 +66,7 @@ form component to add a new activity.
   - write a function `handleAddActivity` which accepts a new activity object as parameter and adds
     this object to the `activities` state
   - please add a unique id to every new activity object; you can use
-    [nanoid](https://www.npmjs.com/package/nanoid) to do so.
+    [uid](https://www.npmjs.com/package/uid) to do so.
 - Pass `handleAddActivity` to the Form component; make sure to use the correct prop name.
 
 Use this wireframe as a reference:
