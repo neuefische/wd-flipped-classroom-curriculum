@@ -63,12 +63,12 @@ in the test case.
 ```js
 import { add } from "calculator";
 
-test("should add the numbers 1, 2 and 3 correctly", () => {
+test("adds the numbers 1, 2 and 3 correctly", () => {
   const result = add(1, 2, 3);
   expect(result).toBe(6);
 });
 
-test("should add the numbers 13, 28 and 42 correctly", () => {
+test("adds the numbers 13, 28 and 42 correctly", () => {
   const result = add(13, 28, 42);
   expect(result).toBe(83);
 });
