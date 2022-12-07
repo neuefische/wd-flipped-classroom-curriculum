@@ -68,7 +68,7 @@ ones more challenging than afternoon sessions.
 | 28  | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing)                                                       | ✅     |
 |     | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes)                                                               | ✅     |
 | 29  | [React Styled Components](sessions/react-styled-components)                                                            | ✅     |
-|     | Storybook ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/207))                                     | 💭     |
+|     | _Buffer_ (or start with React Component Testing)                                                                       | 💤     |
 | 30  | React Component Testing ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/212))                       | 💭     |
 |     | React Global State ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/213))                            | 💭     |
 | 31  | React Immutable State ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/214))                         | 💭     |
