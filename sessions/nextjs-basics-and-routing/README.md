@@ -99,7 +99,7 @@ npm run dev
   - [ ] Mention `pages/api` is used to create APIs. We will ignore this for now, but learn about it in a later session
   - [ ] Mention the students will work with a template for Next.js projects including a `src` folder, like with `create-react-app` (pages will be located under `src/pages`).
 
-> 💡 We demonstrate `create-next-app` once in this session. The students are going to work with a provided template including setup/config for Styled Components, Jest and Storybook. The challenge document contains instructions on how to do that.
+> 💡 We demonstrate `create-next-app` once in this session. The students are going to work with a provided template including setup/config for Styled Components, Jest, SVGR and @next/font. The challenge document contains instructions on how to do that.
 
 - [ ] Explain Next.js includes ESlint
   - [ ] Mention the "code spell checker" is already installed and pre-configured
