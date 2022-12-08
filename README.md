@@ -69,7 +69,7 @@ ones more challenging than afternoon sessions.
 |     | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes)                                                               | ✅     |
 | 29  | [React Styled Components](sessions/react-styled-components)                                                            | ✅     |
 |     | _Buffer_ (or start with React Component Testing)                                                                       | 💤     |
-| 30  | React Component Testing ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/212))                       | 💭     |
+| 30  | [React Component Testing](sessions/react-component-testing)                                                            | ✅     |
 |     | React Global State ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/213))                            | 💭     |
 | 31  | React Immutable State ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/214))                         | 💭     |
 |     | React Data Fetching ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/216))                           | 💭     |
