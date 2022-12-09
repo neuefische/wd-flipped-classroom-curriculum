@@ -70,7 +70,7 @@ ones more challenging than afternoon sessions.
 | 29  | [React Styled Components](sessions/react-styled-components)                                                            | ✅     |
 |     | _Buffer_ (or start with React Component Testing)                                                                       | 💤     |
 | 30  | [React Component Testing](sessions/react-component-testing)                                                            | ✅     |
-|     | React Global State ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/213))                            | 💭     |
+|     | [React Global State](sessions/react-global-state)                                                                      | ✅     |
 | 31  | React Immutable State ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/214))                         | 💭     |
 |     | React Data Fetching ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/216))                           | 💭     |
 | 32  | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
