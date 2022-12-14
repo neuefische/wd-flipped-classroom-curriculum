@@ -246,7 +246,7 @@ has a `render()` method that we can use to render React elements into the DOM.
 
 ```js
 const rootElement = document.querySelector("#root");
-const root = ReactDOM.createRoot();
+const root = ReactDOM.createRoot(rootElement);
 root.render(<h1>Hello, world</h1>);
 ```
 
