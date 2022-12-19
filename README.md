@@ -72,7 +72,7 @@ ones more challenging than afternoon sessions.
 | 30  | [React Component Testing](sessions/react-component-testing)                                                            | ✅     |
 |     | [React Global State](sessions/react-global-state)                                                                      | ✅     |
 | 31  | [React Immutable State](sessions/react-immutable-state)                                                                | ✅     |
-|     | React Data Fetching ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/216))                           | 💭     |
+|     | [React Data Fetching](sessions/react-data-fetching)                                                                    | ✅     |
 | 32  | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
 |     | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
 | 33  | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
