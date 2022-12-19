@@ -81,11 +81,14 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 
 - [ ] Change the `Pet` component to receive the props as a parameter and use them in the JSX.
 
-  ```js
+  ```jsx
   function Pet(props) {
     return (
       <div>
-        {props.sound} {props.emoji}
+        {props.sound}{" "}
+        <span role="img" aria-label={props.name}>
+          {props.emoji}
+        </span>
       </div>
     );
   }
@@ -93,13 +96,13 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 
 - [ ] Change the `App` component to pass the props to the `Pet` component.
 
-  ```js
+  ```jsx
   function App() {
     return (
       <div>
-        <Pet sound="Meow" emoji="🐈" />
-        <Pet sound="Woof" emoji="🐕" />
-        <Pet sound="Squeak" emoji="🐁" />
+        <Pet sound="Meow" emoji="🐈" name="cat" />
+        <Pet sound="Woof" emoji="🐕" name="dog" />
+        <Pet sound="Squeak" emoji="🐁" name="mouse" />
       </div>
     );
   }
@@ -127,7 +130,10 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
   function Pet({ sound, emoji }) {
     return (
       <div>
-        {sound} {emoji}
+        {sound}{" "}
+        <span role="img" aria-label={name}>
+          {emoji}
+        </span>
       </div>
     );
   }
@@ -148,7 +154,10 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
   function Pet({ sound, emoji, onPet }) {
     return (
       <div onClick={onPet}>
-        {sound} {emoji}
+        {sound}{" "}
+        <span role="img" aria-label={name}>
+          {emoji}
+        </span>
       </div>
     );
   }
@@ -166,9 +175,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 
     return (
       <div>
-        <Pet sound="Meow" emoji="🐈" onPet={handlePet} />
-        <Pet sound="Woof" emoji="🐕" onPet={handlePet} />
-        <Pet sound="Squeak" emoji="🐁" onPet={handlePet} />
+        <Pet sound="Meow" emoji="🐈" name="cat" onPet={handlePet} />
+        <Pet sound="Woof" emoji="🐕" name="dog" onPet={handlePet} />
+        <Pet sound="Squeak" emoji="🐁" name="mouse" onPet={handlePet} />
       </div>
     );
   }
@@ -202,7 +211,10 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
   function Pet({ sound, emoji, onPet, isHungry }) {
     return (
       <div onClick={onPet}>
-        {isHungry ? "Feed me!" : sound} {emoji}
+        {isHungry ? "Feed me!" : sound}{" "}
+        <span role="img" aria-label={name}>
+          {emoji}
+        </span>
       </div>
     );
   }
@@ -218,9 +230,27 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 
     return (
       <div>
-        <Pet sound="Meow" emoji="🐈" onPet={handlePet} isHungry={true} />
-        <Pet sound="Woof" emoji="🐕" onPet={handlePet} isHungry={false} />
-        <Pet sound="Squeak" emoji="🐁" onPet={handlePet} isHungry={false} />
+        <Pet
+          sound="Meow"
+          emoji="🐈"
+          name="cat"
+          onPet={handlePet}
+          isHungry={true}
+        />
+        <Pet
+          sound="Woof"
+          emoji="🐕"
+          name="dog"
+          onPet={handlePet}
+          isHungry={false}
+        />
+        <Pet
+          sound="Squeak"
+          emoji="🐁"
+          name="mouse"
+          onPet={handlePet}
+          isHungry={false}
+        />
       </div>
     );
   }
@@ -252,9 +282,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 
     return (
       <div>
-        <Pet sound="Meow" emoji="🐈" onPet={handlePet} isHungry />
-        <Pet sound="Woof" emoji="🐕" onPet={handlePet} />
-        <Pet sound="Squeak" emoji="🐁" onPet={handlePet} />
+        <Pet sound="Meow" emoji="🐈" name="cat" onPet={handlePet} isHungry />
+        <Pet sound="Woof" emoji="🐕" name="dog" onPet={handlePet} />
+        <Pet sound="Squeak" emoji="🐁" name="mouse" onPet={handlePet} />
       </div>
     );
   }
@@ -296,7 +326,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 
 ## Keywords for Recap:
 
-Props, Conditional Rendering, Boolean Props, Destructoring
+Props, Conditional Rendering, Boolean Props, Destructuring
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

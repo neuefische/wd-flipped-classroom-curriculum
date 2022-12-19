@@ -291,10 +291,16 @@ const [vegan, setVegan] = useState(true);
 
 - [ ] Call the `set` function on button click
 
-```js
-<button onClick={() => setFood("🍔")}>🍔</button>
-<button onClick={() => setFood("🍕")}>🍕</button>
-<button onClick={() => setFood("🌮")}>🌮</button>
+```jsx
+<button onClick={() => setFood("🍔")}>
+	<span role="img" aria-label="A hamburger">🍔</span>
+</button>
+<button onClick={() => setFood("🍕")}>
+	<span role="img" aria-label="A pizza">🍕</span>
+</button>
+<button onClick={() => setFood("🌮")}>
+	<span role="img" aria-label="A taco">🌮</span>
+</button>
 ```
 
 ```js

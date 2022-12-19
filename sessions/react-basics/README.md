@@ -64,7 +64,7 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-render -i
 ```
 
-- [ ] Show that react renders the `<h1>Hello World 👋</h1>` into the `#root` div.
+- [ ] Show that react renders the `<h1>Hello World</h1>` into the `#root` div.
 - [ ] Explain that we are not using a template literal in the `render` function, but a JSX
       expression.
   - [ ] JSX is a syntax extension to JavaScript.
@@ -83,7 +83,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-re
 ```jsx
 root.render(
   <div>
-    <h1>Hello World 👋</h1>
+    <h1>Hello World</h1>
     <p>
       I am rendered by <strong>React</strong>
     </p>
@@ -100,7 +100,7 @@ root.render(
 ```jsx
 root.render(
   <div>
-    <h1 id="greeting">Hello World 👋</h1>
+    <h1 id="greeting">Hello World</h1>
     <p className="intro">
       I am rendered by <strong>React</strong>
     </p>
@@ -135,7 +135,7 @@ const name = "Jane";
 
 root.render(
   <div>
-    <h1 id="greeting">Hello {name} 👋</h1>
+    <h1 id="greeting">Hello {name}</h1>
     <p className="intro">
       I am rendered by <strong>React</strong>
     </p>
@@ -218,7 +218,7 @@ Open the [Render Demo](#render-demo) again and continue your demonstration.
 function Greeting() {
   const name = "Jane";
 
-  return <h1 id="greeting">Hello {name} 👋</h1>;
+  return <h1 id="greeting">Hello {name}</h1>;
 }
 
 root.render(
@@ -278,7 +278,7 @@ export default function App() {
 function Greeting() {
   const name = "Jane";
 
-  return <h1 id="greeting">Hello {name} 👋</h1>;
+  return <h1 id="greeting">Hello {name}</h1>;
 }
 ```
 
