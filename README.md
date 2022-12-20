@@ -77,7 +77,7 @@ ones more challenging than afternoon sessions.
 |     | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
 | 33  | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
 |     | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
-| 34  | Backend Basics ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/218))                                | 💭     |
+| 34  | [Backend Basics](sessions/backend-basics)                                                                              | ✅     |
 |     | Backend API Routes ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/219))                            | 💭     |
 | 35  | Backend MongoDB ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/220))                               | 💭     |
 |     | Backend Read ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/221))                                  | 💭     |
