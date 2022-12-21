@@ -73,10 +73,10 @@ ones more challenging than afternoon sessions.
 |     | [React Global State](sessions/react-global-state)                                                                      | ✅     |
 | 31  | [React Immutable State](sessions/react-immutable-state)                                                                | ✅     |
 |     | [React Data Fetching](sessions/react-data-fetching)                                                                    | ✅     |
-| 32  | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
-|     | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
-| 33  | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
-|     | **Recap Project 5** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/215))                           | 💭     |
+| 32  | [**Recap Project 5**](sessions/recap-project-5)                                                                        | ✅     |
+|     | [**Recap Project 5**](sessions/recap-project-5)                                                                        | ✅     |
+| 33  | [**Recap Project 5**](sessions/recap-project-5)                                                                        | ✅     |
+|     | [**Recap Project 5**](sessions/recap-project-5)                                                                        | ✅     |
 | 34  | [Backend Basics](sessions/backend-basics)                                                                              | ✅     |
 |     | Backend API Routes ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/219))                            | 💭     |
 | 35  | Backend MongoDB ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/220))                               | 💭     |
