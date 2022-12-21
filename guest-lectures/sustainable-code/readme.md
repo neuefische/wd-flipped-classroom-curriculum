@@ -1,1 +1,0 @@
-# Guest Lecture: Sustainable Code

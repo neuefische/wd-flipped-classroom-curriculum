@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "create-session": "node scripts/create-session.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "marp --server --watch"
   },
   "repository": {
     "type": "git",
@@ -34,10 +35,17 @@
     ]
   },
   "devDependencies": {
+    "@marp-team/marp-cli": "^2.2.2",
     "branch-name": "^1.0.0",
     "fs-extra": "^10.1.0",
     "inquirer": "^9.1.0",
     "slugify": "^1.6.5",
     "title-case": "^3.0.3"
+  },
+  "marp": {
+    "theme": "./.marp/neuefische.css",
+    "inputDir": ".",
+    "output": ".",
+    "html": true
   }
 }
