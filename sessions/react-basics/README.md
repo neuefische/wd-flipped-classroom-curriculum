@@ -69,7 +69,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-re
       expression.
   - [ ] JSX is a syntax extension to JavaScript.
 - [ ] Explain that it is a way to describe the DOM tree declaratively.
-  - [ ] It is the job of React to transform the JSX into actual DOM nodes.
+> 💡 Additional information : A JavaScript compiler (like [babel](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwEwlgbgfAEgpgGwQe2AenNIA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.20.6&externalPlugins=&assumptions=%7B%7D)) will compiles our JSX into valid JavaScript, then the React library creates or updates DOM nodes.
   - [ ] If what we want to show changes, we give a new description (new JSX) to the render function.
   - [ ] React will then efficiently update the DOM. As we will see in a later Demo, React is very
         good at this.
@@ -115,7 +115,7 @@ root.render(
 > [`className` is just the property name the DOM API uses to set the class of an element](https://developer.mozilla.org/en-US/docs/Web/API/Element/className).
 > The
 > [convention for using the JavaScript-centric DOM API name for properties](https://reactjs.org/docs/dom-elements.html#all-supported-html-attributes)
-> is true for all HTML properties, not just `class`.
+> is true for all HTML properties, not just for `class` (use `className` instead) and `for` (use `htmlFor` instead).
 >
 > This also means that properties need to be camel cased in JSX (e.g. `tabIndex` instead of
 > `tabindex` and `readOnly` instead of `readonly`).
