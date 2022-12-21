@@ -114,7 +114,7 @@ We have a target of 540 teaching minutes (= 9 hours or 12 teaching units (45 min
 
 We use `marp` to create slides for extra sessions which feature the neuefische design.
 
-You can [find all slides](./extra-sessions/slides/) as well as [a description how to use them](./extra-sessions/README.md) in the `extra-sessions` folder.
+You can find all slides as well as a description how to use them [in the `extra-sessions` folder](/extra-sessions).
 
 ## Workflow
 
