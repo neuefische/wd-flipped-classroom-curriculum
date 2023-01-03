@@ -85,7 +85,7 @@ In this demo we are going to **implement dynamic routes** and use the **Head** c
 ### Create a dynamic route
 
 - [ ] Rename `pages/movies/aquaman.js` to `pages/movies/[slug].js`
-- [ ] Show that you can now open `/movies/aquaman` and `/movies/avengers` and see the same page.
+- [ ] Show that you can now open `/movies/aquaman` and `/movies/the-avengers` and see the same page.
 - [ ] Explain that we want to show the correct movie depending on the slug.
 - [ ] Point out that the `"aquaman"` slug is hardcoded in the `Movie` component.
 - [ ] Import `useRouter` from `next/router` and use it to get the slug from the URL:
@@ -115,10 +115,10 @@ In this demo we are going to **implement dynamic routes** and use the **Head** c
 
   ```js
   {
-    movies.map(({ slug, title }) => (
-      <Link href={`/movies/${slug}`} key={slug}>
-        {title}
-      </Link>
+    movies.map(({ slug, title, id }) => (
+      <li key={id}>
+        <Link href={`/movies/${slug}`}>{title}</Link>
+      </li>
     ));
   }
   ```
