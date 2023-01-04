@@ -2,19 +2,20 @@
   --color-granite: #252629;
   --color-nemo: #ff4a11;
   --color-white: #ffffff;
-  --background-pattern-egg-gray: url("/assets/images/background_pattern_egg_gray.svg");
-  --logo_fisch_nemo: url("/assets/images/logo_fisch_nemo.svg");
-  --logo_fisch_white: url("/assets/images/logo_fisch_white.svg");
-  --logo_neuefische_granite: url("/assets/images/logo_neuefische_granite.svg");
-  --logo_neuefische_nemo: url("/assets/images/logo_neuefische_nemo.svg");
-  --logo_neuefische_white: url("/assets/images/logo_neuefische_white.svg");
-  --pfeil_granite: url("/assets/images/pfeil_granite.svg");
-  --pfeil_white: url("/assets/images/pfeil_white.svg");
+  --background-pattern-egg-gray: url("/.marp/assets/images/background_pattern_egg_gray.svg");
+  --logo_fisch_nemo: url("/.marp/assets/images/logo_fisch_nemo.svg");
+  --logo_fisch_white: url("/.marp/assets/images/logo_fisch_white.svg");
+  --logo_neuefische_granite: url("/.marp/assets/images/logo_neuefische_granite.svg");
+  --logo_neuefische_nemo: url("/.marp/assets/images/logo_neuefische_nemo.svg");
+  --logo_neuefische_white: url("/.marp/assets/images/logo_neuefische_white.svg");
+  --pfeil_granite: url("/.marp/assets/images/pfeil_granite.svg");
+  --pfeil_white: url("/.marp/assets/images/pfeil_white.svg");
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf") format("f");
+  src: url("/.marp/assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf")
+    format("f");
 }
 
 section {
@@ -226,6 +227,24 @@ section.image-profile h6 {
 
 section.image-profile p {
   margin-left: 570px;
+}
+
+section.image-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.image-center p {
+  display: flex;
+  justify-content: center;
+}
+
+section.image-center::before {
+  content: var(--logo_fisch_nemo);
+  position: fixed;
+  right: 65px;
+  bottom: 65px;
 }
 
 section.extra-small {

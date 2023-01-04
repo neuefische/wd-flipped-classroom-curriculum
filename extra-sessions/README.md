@@ -15,8 +15,8 @@ The `extra-sessions` folder contains one folder for each session.
 
 ## How to create a new session
 
-- Go to `extra-sessions/example-session`.
-- Copy the `example-session` folder and paste it into `extra-sessions/slides`.
+- Go to `extra-sessions/_example-session`.
+- Copy the `_example-session` folder and paste it into `extra-sessions/`.
 - Rename the folder you just pasted to the session name.
 - Open `extra-sessions/[your_new_session]/index.md`: it contains examples for all possible slides.
   - To see them in action, run `npm run start` and open `localhost:8080/example-session`
