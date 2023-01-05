@@ -124,6 +124,8 @@ const StyledList = styled.ul`
 If you want to set several CSS properties based on the same prop, you can use the `css` helper:
 
 ```js
+import styled, { css } from 'styled-components'
+
 const StyledList = styled.ul`
   ${(props) =>
     props.isOnFire &&
