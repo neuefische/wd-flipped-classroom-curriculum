@@ -11,7 +11,7 @@ ones more challenging than afternoon sessions.
 
 | Day | Session                                                                                                                | Status |
 | --- | ---------------------------------------------------------------------------------------------------------------------- | ------ |
-| 1   | Welcome                                                                                                                | ✅     |
+| 1   | [Welcome](sessions/welcome)                                                                                            | ✅     |
 |     | [Github and Markdown](sessions/github-and-markdown)                                                                    | ✅     |
 | 2   | [Shell Basics](sessions/shell-basics)                                                                                  | ✅     |
 |     | [Git CLI & Remote](sessions/git-cli-and-remote)                                                                        | ✅     |
@@ -79,7 +79,7 @@ ones more challenging than afternoon sessions.
 |     | [**Recap Project 5**](sessions/recap-project-5)                                                                        | ✅     |
 | 34  | [Backend Basics](sessions/backend-basics)                                                                              | ✅     |
 |     | [Backend API Routes](sessions/backend-api-routes)                                                                      | ✅     |
-| 35  | Backend MongoDB ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/220))                               | 💭     |
+| 35  | [Backend MongoDB](sessions/backend-mongodb)                                                                            | ✅     |
 |     | Backend Read ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/221))                                  | 💭     |
 | 36  | Backend Create ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/222))                                | 💭     |
 |     | Backend Update and Delete ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/227))                     | 💭     |
@@ -102,7 +102,7 @@ We have a target of 540 teaching minutes (= 9 hours or 12 teaching units (45 min
 | 0:45     | 45               | 9:30 - 10:15  | Session                  |
 | 1:30     | 90               | 10:15 - 11:45 | Active Learning          |
 | 0:30     | 30               | 11:45 - 12:15 | Recap                    |
-| 0:45     | 45               | 12:15 - 13:00 | Guest Lecture / Breather |
+| 0:45     | 45               | 12:15 - 13:00 | Research Time            |
 | 1:00     | –                | 13:00 - 14:00 | Break                    |
 | 0:30     | 30               | 14:00 - 14:30 | Recap / Q&A              |
 | 0:45     | 45               | 14:30 - 15:15 | Session                  |
@@ -162,8 +162,10 @@ Even with limited time, you can support us very well in this way:
 
 #### In Session Guides
 
-- (mis-)use `code`-blocks to highlight important words
-- use the schedule at the beginning of the file to describe the course of the session, e.g.
+- Be as descriptive as possible: write down **everything you would say** to explain the topic.
+- 🚫 "Explain `fetch()`." is **not enough**: coaches should have all relevant facts at their hand without further looking up.
+- Use code block only for code.
+- Use the schedule at the beginning of the file to describe the course of the session, e.g.
   - 45 min session / 90 min active learning / 30 min recap
   - 30 min object session / 45 min object exercises / 30 min array session / 45 min array exercises
     / 15 min recap
