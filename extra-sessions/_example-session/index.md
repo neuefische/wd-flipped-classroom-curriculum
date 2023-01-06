@@ -8,11 +8,11 @@ Example Slides: copy this folder and start!
 
 # How to create your own slides
 
-- Go to `extra-sessions/slides/example-session`.
-- Copy the `example-session` folder and paste it into `extra-sessions/slides`.
+- Go to `extra-sessions/_example-session`.
+- Copy the `_example-session` folder and paste it into `extra-sessions`.
 - Rename your copy as you wish.
-- Open `extra-sessions/slides/[your_new_session]/index.md` and create your slides using the example slides found below this slide.
-- Finally, create a link to your session on the overview page: open `extra-sessions/index.html` and add a new `<li>` with the relevant information.
+- Open `extra-sessions/[your_new_session]/index.md` and create your slides using the example slides found below this slide.
+- To see a live preview in your browser, run `npm run start` and open [`http://localhost:8080/`](http://localhost:8080/).
 - 🎉 Congratulations to your new presentation!
 
 ---
