@@ -128,7 +128,7 @@ learn new things every day.
 - [ ] Explain the process in general (Breakoutrooms / They can ask the coaches for help at any time
       / Where to find the project tasks / Tell them to help each other / Take a break when you need
       it in the next 1.5h / Keep and eye on Slack...)
-- [ ] Provide the [handout](handout.md) to the students
+- [ ] Provide the [handout](github-and-markdown.md) to the students
 - [ ] Open the handout and walk the students through the structure (summary on top and tasks on the
       bottom of the handout)
 - [ ] Divide the students into groups of 3-4
