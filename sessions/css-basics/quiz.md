@@ -1,6 +1,6 @@
 # CSS Basics
 
-### What does CSS stand for?
+## What does CSS stand for?
 
 * [x] Cascading Style Sheet
 * [ ] Creative Style Sheet
@@ -15,7 +15,23 @@ type: multiple_choice
 
 ---
 
-### Which of the following selectors is a type selector?
+## Which of the following statements is WRONG?
+
+* [ ] Selectors are used to target the HTML elements you want to style.
+* [ ] A declaration block is surrounded by curly braces.
+* [ ] A property and value pair is called a declaration.
+* [x] A ruleset can contain only one declaration. 
+
+Points: 1
+
+Feedback_correct: That's right.
+Feedback_incorrect: No, a ruleset can contain multiple declarations, separated by semicolons.
+
+type: multiple_choice
+
+---
+
+## Which of the following selectors is a type selector?
 
 * [ ] `.teaser`
 * [x] `p`
@@ -24,13 +40,13 @@ type: multiple_choice
 Points: 1
 
 Feedback_correct: That's right.
-Feedback_incorrect: No, `p` is the type selector.
+Feedback_incorrect: No, `p` is the type selector. The other two options are a class selector (`.teaser`) and the universal selector (`*`).
 
 type: multiple_choice
 
 ---
 
-### What does the universal selector do (`*`)?
+## What does the universal selector do (`*`)?
 
 * [ ] Selects only the top level `html` element.
 * [ ] Selects only one HTML element.
@@ -45,22 +61,7 @@ type: multiple_choice
 
 ---
 
-### Why should the id selector (`#`) *not* be used for styling?
-
-* [x] An id is a unique identifier and can only be used once per HTML document. Thus, it does not scale and the CSS is less maintainable.
-* [ ] It should not be used because id is not a global attribute.
-* [ ] The id selector does not allow certain CSS properties.
-
-Points: 1
-
-Feedback_correct: That's right.
-Feedback_incorrect: No, the id is a unique identifier and can only be used once per HTML document.
-
-type: multiple_choice
-
----
-
-### What is the advantage of using a class (`.`) selector?
+## What is the advantage of using a class (`.`) selector?
 
 * [ ] There are certain CSS properties which can only be used when using the class selector.
 * [x] Classes can be used multiple times on different HTML elements. It makes it easy to maintain styles.
@@ -75,7 +76,7 @@ type: multiple_choice
 
 ---
 
-### Which of the following statements is not true about the CSS Box Model? 
+## Which of the following statements is not true about the CSS Box Model? 
 
 * [ ] The default setting for `box-sizing` is `content-box`.
 * [ ] A box includes four areas: content, border, padding, margin.
@@ -91,7 +92,7 @@ type: multiple_choice
 
 ---
 
-### What is the actual width if an element has following styles: `box-sizing: content-box; width: 200px; padding: 10px;`?
+## What is the actual width if an element has following styles: `box-sizing: content-box; width: 200px; padding: 10px;`?
 
 * [ ] The width of the element is `200px`.
 * [x] The width of the element is `220px`.
@@ -106,7 +107,7 @@ type: multiple_choice
 
 ---
 
-### What is the correct way to write CSS?
+## What is the correct way to write CSS?
 
 * [x] `p { color: green; }`
 * [ ] `p < color: green; >`
@@ -122,7 +123,7 @@ type: multiple_choice
 
 ---
 
-### What is the correct HTML for referring to an external style sheet?
+## What is the correct HTML for referring to an external style sheet?
 
 * [ ] Using the `<style></style>` element.
 * [ ] Using the `style` attribute.
@@ -137,7 +138,7 @@ type: multiple_choice
 
 ---
 
-### Which are the two most common default `display` values of HTML elements?
+## Which are the two most common default `display` values of HTML elements?
 
 * [ ] `block` and `grid`
 * [ ] `inline` and `flex`

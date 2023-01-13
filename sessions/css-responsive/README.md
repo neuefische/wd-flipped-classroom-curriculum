@@ -27,7 +27,7 @@ Recommended schedule for this session:
 
 Websites need to work for a wide variety of devices, from mobile phones to desktop computers. We
 need to make sure that our websites are responsive to the size of the screen they are being viewed
-on. There are also accessibility features than can affect how a website should be displayed, like
+on. There are also accessibility features that can affect how a website should be displayed, like
 high contrast mode, or reducing animations.
 
 Media queries and relative units help to accomplish this.
@@ -104,7 +104,7 @@ You can find the
   - Explain that you only need to put the properties that change in the media query
   - Explain that media queries are not only used for screen sizes, but also for other factors like
     orientation, color scheme or accessibility needs
-  - Show the color scheme example in the demo and change you preferred color scheme in your
+  - Show the color scheme example in the demo and change your preferred color scheme in your
     operating system to see how it works
 
 ### Mobile First Design

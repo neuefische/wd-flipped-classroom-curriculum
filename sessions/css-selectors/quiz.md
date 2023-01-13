@@ -1,6 +1,6 @@
 # CSS Selectors
 
-### The * (asterisk symbol) is called
+## The * (asterisk symbol) is called
 
 * [ ] generic selector
 * [ ] all selector
@@ -16,7 +16,7 @@ type: multiple_choice
 
 ---
 
-### Which selector should you not use for styling?
+## Which selector should you not use for styling?
 
 * [ ] class selector
 * [x] ID selector
@@ -32,7 +32,7 @@ type: multiple_choice
 
 ---
 
-### How do you select elements with class name "test"?
+## How do you select elements with class name "test"?
 
 * [x] `.test`
 * [ ] `#test`
@@ -48,7 +48,7 @@ type: multiple_choice
 
 ---
 
-### How do you add a background color for all `<h1>` elements?
+## How do you add a background color for all `<h1>` elements?
 
 * [ ] `h1.all {background-color: hotpink;}`
 * [x] `h1 {background-color: hotpink;}`
@@ -63,7 +63,7 @@ type: multiple_choice
 
 ---
 
-### We can group different selectors using
+## We can group different selectors using
 
 * [ ] space
 * [x] comma
@@ -79,7 +79,7 @@ type: multiple_choice
 
 ---
 
-### A selector that selects elements in a specific state (ie. visited link) is a 
+## A selector that selects elements in a specific state (ie. visited link) is a 
 
 * [ ] element selector
 * [ ] attribute selector
@@ -95,7 +95,7 @@ type: multiple_choice
 
 ---
 
-### Which of the following selectors is not a pseudo-class?
+## Which of the following selectors is not a pseudo-class?
 
 * [ ] `:hover`
 * [x] `::before`
@@ -111,7 +111,7 @@ type: multiple_choice
 
 ---
 
-### A selector that selects certain parts of an element (ie. first letter) is a
+## A selector that selects certain parts of an element (ie. first letter) is a
 
 * [ ] element selector
 * [ ] pseudo-class selector
@@ -128,7 +128,7 @@ type: multiple_choice
 ---
 
 
-### Which of the following selectors is a valid pseudo-element?
+## Which of the following selectors is a valid pseudo-element?
 
 * [ ] `::hover`
 * [ ] `::last`
@@ -144,7 +144,7 @@ type: multiple_choice
 
 ---
 
-### How do you select all `<p>` elements inside a `<div>` element?
+## How do you select all `<p>` elements inside a `<div>` element?
 
 * [ ] `div.p`
 * [x] `div p`

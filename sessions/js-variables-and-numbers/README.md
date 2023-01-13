@@ -100,7 +100,7 @@ console.log(myMutableNumber);
 const oneTimeFee = "5";
 const monthlyFee = 12;
 const amountToBeCharged = oneTimeFee + monthlyFee; // result will be "512"
-console.log(sum);
+console.log(amountToBeCharged);
 ```
 
 ### Mathematical operators

@@ -44,7 +44,7 @@
 
 ### Which previously learned concepts will be utilized in this session?
 
-- You will use git and GitHub for your project.
+- You will use Git and GitHub for your project.
 - You will use a workflow that is based on best practices and done in the same way in many
   companies: You will use branches and pull request - and get reviews from coaches or other
   students.
@@ -75,7 +75,7 @@
 - [ ] `Hypertext`: Refers to the ability of HTML to create links that link one webpage to another.
       (Either on a single website or in between different websites.) This is a fundamental aspect of
       the web and the idea behind the "world wide" interconnection.
-- [ ] `Markup Language`: Refers to a syntax that uses specific element to structure or format a
+- [ ] `Markup Language`: Refers to a syntax that uses specific elements to structure or format a
       document. You have already learned about a markup language, which is called "Markdown". While
       Markdown has a very simple syntax and is primarily used for formatting, HTML is more complex
       and its primarily used to structure a document.
@@ -201,7 +201,7 @@ information about its content.
 </main>
 ```
 
-#### The benefits of writing semantic HTMl are:
+#### The benefits of writing semantic HTML are:
 
 - [ ] `Accessibility`: Screenreaders can function much better with semantic HTML, which can help
       e.g. visually impaired users to navigate the webpage and have a better user experience

@@ -1,22 +1,5 @@
 # JS Variables and Numbers
 
-
-## What is not a primitive type in JavaScript?
-
-* [x] function
-* [ ] number
-* [ ] boolean
-* [ ] undefined
-
-Points: 1
-
-Feedback_correct: Nice!
-Feedback_incorrect: Nope. `Number`, `boolean` and `undefined` are all primitive types. Functions on the other hand are `function objects`. See here for more details: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
-
-type: multiple_choice
-
----
-
 ## Which of the following statements is correct?
 
 * [x] Variables declared with `const` cannot be reassigned.
@@ -33,6 +16,21 @@ type: multiple_choice
 
 ---
 
+## What is not a primitive data type in JavaScript?
+
+* [x] function
+* [ ] symbol
+* [ ] boolean
+* [ ] undefined
+
+Points: 1
+
+Feedback_correct: Nice!
+Feedback_incorrect: Nope. `symbol`, `boolean` and `undefined` are all primitive data types. Functions on the other hand are `function objects`. See here for more details: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions.
+
+type: multiple_choice
+
+---
 
 ## How do you declare a variable in JavaScript that stores the string 'Hello'?
 
@@ -93,6 +91,22 @@ Points: 1
 
 Feedback_correct: Correct!
 Feedback_incorrect: Nope. If you declare a `let` variable without assigning a value to it, the default value will be `undefined`.  
+
+type: multiple_choice
+
+---
+
+## Given is: `const oneTimeFee = "5"; const monthlyFee = 12; const amountToBeCharged = oneTimeFee + monthlyFee;` What is the value of `amountToBeCharged`?
+
+* [ ] `17`
+* [ ] `512`
+* [x] `"512"`
+* [ ] `"17"`
+
+Points: 1
+
+Feedback_correct: Correct!
+Feedback_incorrect: Nope. The value of `amountToBeCharged` is `"512"`. In JavaScript, the `+` operator is used for numeric addition and string concatenation. When you “add” a number to a string the interpreter converts your number to a string and concatenates both together.
 
 type: multiple_choice
 

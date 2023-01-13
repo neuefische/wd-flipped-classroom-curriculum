@@ -1,9 +1,9 @@
 # CSSFlexbox
 
-### What is Flexbox used for?
+## What is Flexbox used for?
 
 * [ ] Change the background color of HTML elements.
-* [x] Flexbox efficiently allowes to lay out, align and distribute space among items in a container.
+* [x] Flexbox efficiently allows to lay out, align and distribute space among items in a container.
 * [ ] Layout the whole document with defined columns and rows.
 
 Points: 1
@@ -16,7 +16,7 @@ type: multiple_choice
 ---
 
 
-### How is a flex container defined?
+## How is a flex container defined?
 
 * [ ] `flex: 1`
 * [ ] `display: flexbox`
@@ -32,7 +32,7 @@ type: multiple_choice
 
 ---
 
-### What is the default flex direction?
+## What is the default flex direction?
 
 * [ ] `column`
 * [x] `row`
@@ -48,11 +48,11 @@ type: multiple_choice
 
 ---
 
-### What is a 'flex item'?
+## What is a flex item?
 
 * [ ] An item that automatically adopts the value `space-evenly`.
-* [x] The direct child of a 'flex container'.
-* [ ] Every nested HTML element corresponding with the 'flex container'.
+* [x] The direct child of a flex container.
+* [ ] Every nested HTML element corresponding with the flex container.
 
 Points: 1
 
@@ -63,7 +63,7 @@ type: multiple_choice
 
 ---
 
-### By default flex items will try to fit onto one line. Which style declaration allows the items to wrap onto the next line?
+## By default flex items will try to fit onto one line. Which style declaration allows the items to wrap onto the next line?
 
 * [x] `flex-wrap: wrap;`
 * [ ] `wrap: flex-wrap;`
@@ -78,7 +78,7 @@ Feedback_incorrect: No, `flex-wrap: wrap;` would allow the flex items to wrap on
 type: multiple_choice
 
 ---
-### Which flexbox property controls the space between flex items?
+## Which flexbox property controls the space between flex items?
 
 * [ ] `flexbox-gap`
 * [x] `gap`
@@ -93,7 +93,7 @@ type: multiple_choice
 
 ---
 
-### Which property defines the alignment along the main axis?
+## Which property defines the alignment along the main axis?
 
 * [ ] `justify-flexbox`
 * [ ] `justify-flex`
@@ -110,7 +110,7 @@ type: multiple_choice
 ---
 
 
-### Which property defines the alignment along the cross axis?
+## Which property defines the alignment along the cross axis?
 
 * [ ] `align-flexbox`
 * [ ] `align-flex`
