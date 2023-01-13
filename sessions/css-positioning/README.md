@@ -45,8 +45,22 @@ case we use positioning.
 
 ## Inform: Session Guide
 
-You can use the following [CodeSandbox](https://codesandbox.io/s/css-positioning-starter-ulu0vz) to
+Use the [Demo start](https://github.com/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-start) to
 demonstrate the different kinds of positioning.
+
+You can use [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-start) or checkout locally:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/demo-start
+```
+
+See [Demo end](https://github.com/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-end) for the final state of the Demo.
+
+You can use [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-end) or checkout locally:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/demo-end
+```
 
 ### 1. Exposition
 
