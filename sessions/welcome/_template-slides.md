@@ -283,10 +283,9 @@ Moving from the Fear Zone to the Growth Zone
 
 # Abwesenheit 🤒
 
-1. Benachrichtung an Franz (Slack und Email)
+1. Benachrichtung an Coaches (Slack)
    wichtig: **Krankmeldung!**
-2. Benachrichtung an Coaches (Slack)
-3. Benachrichtung in Kurs Channel (Slack)
+2. Benachrichtung in Kurs Channel (Slack)
 
 ---
 
