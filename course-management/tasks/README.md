@@ -60,7 +60,7 @@
 | Preparation of capstone phase                                 | [see task definition](task-definitions.md#preparation-of-capstone-phase)                    | Week 8                       |
 | Create events for public sprint reviews                       | in the slack chanel `events`                                                                | Weekly during capstone phase |
 | Confirm date for the graduation event and the rehearsal       | speak to the partner manager of the course                                                  | Week 9                       |
-| Create event slides for graduation event                      | [via Talent App](https://talents.neuefische.de)                                             | Week 11                      |
+| Create event slides for graduation event                      | [find template here](https://github.com/neuefische/web-event-slides)                                             | Week 11                      |
 | Collect capstone project screenshot/video                     | [see task definition](task-definitions.md#collect-capstone-project-screenshotvideo)         | Week 12                      |
 | Create event page in the talent app for graduation event      | [via Talent App](https://talents.neuefische.de/)                                            | Week 12                      |
 | After Graduation: Give students access to GH Student Dev Pack | [GitHub Student Developer Pack](https://github.com/neuefische/link-creator-github-dev-pack) | Week 13                      |
