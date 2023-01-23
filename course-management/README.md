@@ -6,7 +6,7 @@ The course management is an additional responsibility aside the normal workflow 
 
 For the course management there are some to-dos that come up once per course. Then there are some repeating tasks that are repeated on a weekly or daily basis.
 
-[A checklist of all common tasks can be found here](./tasks.md)
+[A checklist of all common tasks can be found here](./tasks/README.md)
 
 There are also tasks that require specific circumstances. These tasks include dealing with
 the expulsion (Ausschulung) of a student or the teaching experience regarding students met with special circumstances.
