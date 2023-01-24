@@ -1,7 +1,7 @@
 # Tasks Overview
 
-> ❗️ Sidenote: You can find
-> [definitions/explanations for all of these tasks in the `task definitions` file](./task-definitions.md).
+> ❗️ Sidenote: You can find [definitions/explanations for all of these tasks in the `task definitions` file](./task-definitions.md).
+
 
 ## Checklist: tasks before bootcamp start
 

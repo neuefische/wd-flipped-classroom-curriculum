@@ -10,7 +10,9 @@ Thanks to the wonderful data scientists. ✨
 - [How to classbook from Katja](https://drive.google.com/file/d/1Ujq8cC09U-QAoZlNxfnaDzXraELjeeMl/view)
 - [Classbook data template](https://docs.google.com/spreadsheets/d/1A-t60mItMKTA6JX1unLZ-hzSn37PcdcMCeXhbnT0R2c/edit#gid=0)
 - [Classbook automation script](https://github.com/neuefische/classbook-automation)
-- [Classbook example folder](../resources/_templates/classbook-example/)
+- [Classbook example folder](../classbook-manual/classbook-example/)
+
+
 
 ## Step by step
 
