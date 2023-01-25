@@ -36,7 +36,7 @@ Run the _General Setup_ script as described.
 ## Treasure Hunt
 
 Open **iTerm** and navigate to the folder you want to use for all your projects (create it if
-nessesary). Use the following command to download the challange files:
+nessesary). Use the following command to download the challenge files:
 
 > 💡 This command will ask you for permission to download ghcd. This is a tool that we use to
 > download challenges from GitHub to your computer. Press <kbd>Enter</kbd> to confirm the download.
