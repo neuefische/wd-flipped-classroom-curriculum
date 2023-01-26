@@ -55,13 +55,13 @@ self-closing and called
 ```html
 <hr />
 or
-<hr />
+<br />
 ```
 
 ### HTML tag attributes
 
-Some elements require some more information in order to function properly. This information is
-specified via attributes. For example:
+Some elements require some more information in order to work properly. This information is
+specified via attributes, for example:
 
 - the source of an image
   ```html
@@ -119,8 +119,7 @@ element, which consists of two main parts:
 | `<input>`           | an input field (self-closing / empty)                        |
 | `<button></button>` | a clickable element equipped with some kind of functionality |
 
-> 💡 A comprehensive list of all html elements can be found at the
-> [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics).
+> 💡 A comprehensive [list of all html elements can be found at the MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#inline_text_semantics).
 
 ---
 
@@ -154,8 +153,7 @@ Therefore, one should use semantic HTML elements whenever possible.
 | `<header></header>`     | representing introductory content, typically a group of introductory or navigational aids                           |
 | `<footer></footer>`     | typically contains information about the author of the section, copyright data or links to related documents        |
 
-> 💡 You can find a comprehensive list of semantic html elements in the
-> [MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
+> 💡 You can find a comprehensive [list of semantic html elements in the MDN web docs](https://developer.mozilla.org/en-US/docs/Glossary/Semantics).
 
 ### Nesting HTML elements
 

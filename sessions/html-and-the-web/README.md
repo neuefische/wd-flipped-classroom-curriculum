@@ -64,7 +64,7 @@
 > [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator) to generate all the
 > keywords in an exalidraw and structure them according to your explanation
 
-> `HTML = HyperText Markup Language, link a webpage to another webpage, syntax to structure and format documents, <button type="button">Click me!</button>, HTML Element, HTML Tag, </>, HTML Attribute <p>Click <strong>this</strong>!<p>), `
+> `HTML = HyperText Markup Language, link a webpage to another webpage, syntax to structure and format documents, <button type="button">Click me!</button>, HTML Element, HTML Tag, <>, </>, HTML Attribute, <p>Click <strong>this</strong>!<p>), content, opening tag, closing tag, parent element, child element, Empty elements (self-closing), <img>, <link>, <meta>, <input>`
 
 - [ ] HTML is short for `HyperText Markup Language`.
 - [ ] It is not considered a programming language, as `you can't write logic` with it. But
@@ -122,15 +122,14 @@ Two more interesting things to know about HTML:
 
 ### The HTML document
 
-> For this part of the session you can continue the demonstration in VS Code
+- [ ] Open VS Code and create an `index.html` file.
+- [ ] Start with a short explanation of Emmet:
 
-Start with a short explanation of Emmet.
+  - [ ] `Emmet` is a tool which is already integrated into VS Code. It autocompletes our code, which
+        makes the workflow much faster.
+  - [ ] By starting to type the name of the element and then clicking `tab`, Emmet does it's magic.
 
-- [ ] `Emmet` is a tool, which is already integrated into VS Code. It autocompletes our code, which
-      makes the workflow much faster.
-- [ ] By starting to type the name of the element and then clicking `tab`, Emmet does it's magic.
-
-> Then type `! tab` and walk the students through the document flow:
+- [ ] Type `! tab` and walk the students through the document flow:
 
 ```
 <!DOCTYPE html>
@@ -162,10 +161,9 @@ Start with a short explanation of Emmet.
 
 ### Semantic HTML
 
-Writing semantic HTML means writing "meaningful" HTML, in the sense that the element itself provides
-information about its content.
-
-> Copy this snippet into your body element from before
+- [ ] Note that writing semantic HTML means writing "meaningful" HTML: the element itself provides
+      information about its content.
+- [ ] Copy the following snippet into your body element from before:
 
 ```
 <div>
@@ -184,14 +182,14 @@ information about its content.
 </div>
 ```
 
-> Change the tags to semantic HTML, if you have time you can make this part interactive by asking
-> the students for their ideas
+- [ ] Change the tags to semantic HTML.
+  > 💡 If you have time, make this part interactive by asking the students for their ideas.
 
 ```
 <main>
 <h1>Hello World</h1>
       <article>
-            <p>I am training to become a Web Dev. Therefore I love coding. Other things i like are:</p>
+            <p>I am training to become a Web Dev. Therefore I love coding. Other things I like are:</p>
             <ul>
                   <li>good food</li>
                   <li>hanging out with my friends</li>
@@ -203,10 +201,10 @@ information about its content.
 
 #### The benefits of writing semantic HTML are:
 
-- [ ] `Accessibility`: Screenreaders can function much better with semantic HTML, which can help
-      e.g. visually impaired users to navigate the webpage and have a better user experience
+- [ ] `Accessibility`: Screen readers can work much better with semantic HTML, which can help
+      e.g. visually impaired users to navigate the webpage and have a better user experience.
 - [ ] `SEO`: It's relevant for search engines to evaluate the importance and the context of the
-      different parts of a web page
+      different parts of a web page.
 - [ ] `Readability`: It's easier for other developers to understand your code. And also for yourself
       in the future!
 
@@ -216,15 +214,16 @@ Setup a local and a remote repository with the students. Make sure that everybod
 with the project. When a student is finished with the setup they can start with the challenges.
 
 - [ ] let them create a local git repository named "personal-website"
-- [ ] let them create a initial commit with an empty HTML file, named index.html
-- [ ] let them create a remote repository on GitHub and connect your local repository
+- [ ] let them create an initial commit with an empty HTML file, named `index.html`
+- [ ] let them create a remote repository on GitHub and connect their local repository
 - [ ] let them push the first commit to the remote repository
 
 ---
 
 ## Process: Challenge
 
-- [ ] Provide the [handout](html-and-the-web.md) to the students
+- [ ] Provide the [handout](html-and-the-web.md) and the [challenges](challenges-html-and-the-web.md) to the
+      students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into pairs
 - [ ] Remind them of the ground rules:
