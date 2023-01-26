@@ -60,7 +60,7 @@ how to style those elements.
 
 **Notes:**
 
-[One challenge](./css-basics.md/#personal-website-part-3) is to apply the stylings to the personal
+[One challenge](./challenges-css-basics.md#homework-personal-website-styling) is to apply stylings to the personal
 website. Therefore, it should be considered that the students have already created a basic HTML
 structure for their project.
 
@@ -80,10 +80,11 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/demo-end -i
 ```
 
+Have a look at these [CSS Basics Codesandboxes examples](https://codesandbox.io/dashboard/all/CSS%20Basics?workspace=2ad16d97-42cf-49d7-aa8d-e3587729c609) to get more inspiration.
+
 ### What is CSS?
 
-Explain what CSS is based on an example.
-[See CSS Basics Codesandboxes as example.](https://codesandbox.io/dashboard/all/CSS%20Basics?workspace=2ad16d97-42cf-49d7-aa8d-e3587729c609)
+Use the demo to explain what CSS is in general:
 
 - [ ] **Definition**: CSS means Cascading Stylesheets. While HTML defines the structure and
       semantics of your content, we use CSS for design and layout.
@@ -116,9 +117,20 @@ It may help to explain the syntax with a scribble in Excalidraw:
 
 https://excalidraw.com/#json=6vTcgdviz8myOb-GrVCpe,zqt5qrO_mqG-hWCTMEwJRQ
 
+### How to link stylesheets
+
+- [ ] Explain what a stylesheet is:
+
+  - [ ] a separate file where all the styles are written;
+  - [ ] the file ending `.css` shows that it uses CSS syntax;
+  - [ ] for now, we've agreed to name this file `styles.css` and place it in a separate `css` folder.
+
+- [ ] Note that we need to link the `styles.css` file with the `index.html` so that the browser knows from where to load the styles.
+- [ ] Link both files by adding `<link rel="stylesheet" href="./css/styles.css" />` to the `<head></head>` of the `index.html`.
+
 ### Basic selectors
 
-Show and explain the most basic selectors based on the example with which you started the session:
+- [ ] Explain the most basic selectors:
 
 - [ ] `universal` selector (may be introduced later when explaining the `box model` and
       `box-sizing`):
@@ -146,6 +158,9 @@ could be:
 - `text-decoration`
 - `text-align`
 
+- [ ] Show that, if you remove the `<link>` to the stylesheet in the `index.html` file, the styles are not loaded.
+- [ ] Note that students will most likely run into this issue at least once.
+
 ### Box model & `box-sizing`
 
 To make good layouts with CSS and to understand how the styling with CSS works, the students should
@@ -164,43 +179,36 @@ learn to understand the **box model** and why the `property` `box-sizing` is ver
   - `Margin`: The space around the border and other elements. An empty / outermost area around the
     border area, separates the element from its neighbors.
 
-- [ ] Explain how we can change from `content-box` to `border-box` with the `box-sizing` property:
+- [ ] Show the default value `box-sizing: content-box`:
+  - [ ] if you set `width` (or `height`), they are only applied to the `content-box`;
+  - [ ] if you add `padding` and `border`, these values are added as well;
+  - [ ] this means that the actual width of the element is `width` + `padding` + `border`.
+- [ ] Summarize that `box-sizing: content-box` makes life hard because you have to consider `padding` and `border` when creating responsive layouts.
 
-  - Questions you should answer: How is the size of this box calculated? And why do we use
-    `box-sizing: border-box`?
-  - **Benefit:** Calculating sizes of elements is easier and more intuitive with `border-box`
-  - With the `property` `box-sizing` we determine how the total width and height of an element is
-    calculated.
-  - Show an example where you can visualize the difference `box-sizing: border-box` makes in
-    comparison to `box-sizing: content-box`.
-    [See **CSS Basics: Box-sizing** Codesandboxes as example.](https://codesandbox.io/dashboard/all/CSS%20Basics?workspace=2ad16d97-42cf-49d7-aa8d-e3587729c609)
+- [ ] Show the alternative value `box-sizing: border-box`:
+  - [ ] if you set `width` (or `height`), they are applied to the `border-box`;
+  - [ ] values for `padding` and `border` adapt to this `width`/ `height` value;
+  - [ ] the actual with of the element is always the value of `width` you've specified.
+- [ ] Note the **benefit**: Calculating sizes of elements is easier and more intuitive with `border-box` because we determine how the total `width` and `height` of an element is calculated.
 
 ### Inline & block elements & `display`
 
-Show the differences between inline and block elements (based on your starter Codesandbox):
-
-- As every element on a web page is a rectangular box how much space do they take by default? It
-  depends on whether the elements are inline or block elements.
-- [ ] **Block elements**:
-  - The width of a block element depends on the available space within its parent element.
-  - By default, the block element always takes the full width unless you have changed the value
-    yourself with CSS.
-  - Each new block element also creates another paragraph: subsequent elements slide under the block
-    element.
-  - Common block elements: `<article></article>` `<section></section>`, `<p></p>` `<nav></nav>`, the
-    headings from `h1` to `h6`
-- [ ] **Inline elements**:
-  - Wrapping parts of a text in inline elements does not break the flow of the text.
-  - An inline element will apply margin and padding, but break to the next line.
-  - Margin and padding will push elements only horizontally and not vertically.
-  - An inline element will NOT apply declarations with `width` and `height`.
-  - Common inline elements: `<em></em>`, `<strong></strong>` and `<span></span>`.
-
-### How to link stylesheets
-
-Explain what a stylesheet is and create a separate CSS stylesheet
-
-- [ ] Show students how to link the stylesheet to their HTML file
+- [ ] Note that every element on a web page is a rectangular box.
+- [ ] Show that the space this rectangular box takes up depends on whether the element is an inline or block element.
+  - [ ] **Block elements**:
+    - [ ] The width of a block element depends on the available space within its parent element.
+    - [ ] By default, the block element always takes the full width unless you have changed the value
+          yourself with CSS.
+    - [ ] Each new block element also creates another paragraph: subsequent elements slide under the block
+          element. This is called 'normal flow'.
+    - [ ] Common block elements: `<article></article>` `<section></section>`, `<p></p>` `<nav></nav>`, the
+          headings from `h1` to `h6`
+  - [ ] **Inline elements**:
+    - [ ] Wrapping parts of a text in inline elements does not break the flow of the text.
+    - [ ] An inline element will apply margin and padding, but break to the next line.
+    - [ ] Margin and padding will push elements only horizontally and not vertically.
+    - [ ] An inline element will NOT apply declarations with `width` and `height`.
+    - [ ] Common inline elements: `<em></em>`, `<strong></strong>` and `<span></span>`.
 
 ### **Optional:** How to use [Google-Fonts](https://fonts.google.com/)
 
@@ -210,7 +218,7 @@ Explain what a stylesheet is and create a separate CSS stylesheet
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](css-basics.md) to the students
+- [ ] Provide the [handout](css-basics.md) and the [challenges](challenges-css-basics.md) to the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:

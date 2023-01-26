@@ -34,6 +34,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-p
 
 Start styling your personal website to make it absolutely fabulous. ✨
 
-- [ ] Add a style.css file to your project and [link it correctly](#linking-stylesheets) in your
+- [ ] Add a `styles.css` file to your project and [link it correctly](./css-basics.md#linking-stylesheets) in your
       index.html file.
 - [ ] Get creative and find your very own style for your personal website.
