@@ -155,7 +155,7 @@ Moving from the Fear Zone to the Growth Zone
 - **GitHub & Git**
 - **HTML**
 - **CSS**
-- **JavaScript**,
+- **JavaScript**
 - **React** Basics, State, React Hooks
 - **Next** Basics, Routing,
 - **React** styled-components, Testing, Global State
@@ -196,7 +196,7 @@ Moving from the Fear Zone to the Growth Zone
 | **09:00** | Offene Fragen, Anwesenheitsbild |
 | **09:30** | Checkin mit Coaches             |
 |           | **Teil I**                      |
-|           | Session, Active Learing, Recap  |
+|           | Session, Active Learning, Recap |
 | **12:15** | Research Time                   |
 | **13:00** | Mittagspause                    |
 
@@ -212,7 +212,7 @@ Moving from the Fear Zone to the Growth Zone
 | --------- | -------------------------------- |
 | **14:00** | Recap und Q&A                    |
 | **14:30** | **Teil II**                      |
-|           | Session, Active Learing, Recap   |
+|           | Session, Active Learning, Recap  |
 | **17:00** | Checkout                         |
 |           | **Selbstorganisierte Lernphase** |
 
