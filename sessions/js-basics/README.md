@@ -49,19 +49,37 @@ JavaScript Basics
 
 ## Inform: Session Guide
 
+Use this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-basics/demo-start?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics/demo-start -i
+```
+
+You can check out the final version of this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-basics/demo-end?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics/demo-end -i
+```
+
 ### Short introduction of what JavaScript is (5 min max)
 
-- Explain why JavaScript is needed: **Makes web pages interactive**
-- Explain **ECMAScript 6**:
-  - ECMAScript is the JavaScript standard
-  - ECMAScript 6 is the second major revision to JavaScript and was published in 2015
-- Optional: Historical background to the `naming of JavaScript` (JavaScript is not Java), for
-  reference:
-  [The history of JavaScript](https://www.springboard.com/blog/data-science/history-of-javascript/)
+- [ ] Explain why JavaScript is needed: **Makes web pages interactive**
+- [ ] Explain **ECMAScript 6**:
+  - [ ] ECMAScript is the JavaScript standard
+  - [ ] ECMAScript 6 is the second major revision to JavaScript and was published in 2015
+- [ ] Optional: Historical background to the `naming of JavaScript` (JavaScript is not Java), for
+      reference:
+      [The history of JavaScript](https://www.springboard.com/blog/data-science/history-of-javascript/)
 
 ### Console
 
-- Explain that the console is a CLI in your browser. Show how to log into the console:
+- [ ] Open the browser console on any page.
+- [ ] Explain that the console is a CLI (Command Line Interface) in your browser.
+- [ ] Show how to log into the console:
 
 ```js
 console.log("Hello World!"); // logs into console
@@ -69,14 +87,21 @@ console.clear(); // clears console
 console.error("Error!"); // logs as error into console
 ```
 
-- Explain that we can use the console for debugging or error logging
+- [ ] Explain that we can use the console for debugging or error logging.
 
 ### QuerySelector
 
-- Explain that you can manipulate the DOM in JavaScript, e.g.: Change the CSS classes on HTML
-  elements.
-- Explain that you need to select the respective HTML element.
-- Show how this works with an example:
+- [ ] Explain that we can manipulate the DOM with the help of JavaScript, e.g. change the CSS classes of HTML
+      elements.
+- [ ] Note that we want to change the styling of the `main` element.
+- [ ] Show that we need to select the respective HTML element:
+  - [ ] in the `index.js`, create a variable like `mainElement`;
+  - [ ] we use the `document` interface provided by the browser;
+  - [ ] the `querySelector` method takes a string as argument and returns **the first HTML element** which matches the search query
+  - [ ] note that we could search for any string (like `.querySelector("main")` or `.querySelector("body")`), but we want to be as specific as possible to avoid errors;
+  - [ ] this is why we've agreed upon the `data-js` attribute for our course.
+- [ ] Log the element to the console and show the students what kind of object it is, which
+      properties it has, e.g. `classList`.
 
 ```html
 <body>
@@ -86,64 +111,99 @@ console.error("Error!"); // logs as error into console
 
 ```js
 const mainElement = document.querySelector('[data-js="main"]');
+console.log(mainElement);
 ```
 
-- Explain that you can use ordinary CSS selectors with querySelector
-- Explain that querySelector only selects the first element matching the selector
-
-- Optional: Log the element to the console and show the students what kind of object it is, which
-  properties it has, e.g. classList
+> 📙 Read more about [the custom `data-*` global attribute on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*).
 
 ### Adding, removing, and toggling CSS classes with classList
 
-- Explain with examples that you can add, remove, and toggle css classes:
+- [ ] Show that in `css/styles.css`, there is a `dark` class we want to use to change the styling of the `main` element.
 
 ```css
 .dark {
   background-color: black;
+  color: #eee;
 }
 ```
 
+- [ ] Switch to `js/index.js` and explain how to do this:
+  - [ ] the HTML element `mainElement` has the property `classList`;
+  - [ ] use `classList.add("dark")` to add the `dark` class to the `mainElement`;
+  - [ ] use `classList.remove("dark")` and show that the `dark` class is removed.
+
 ```js
-const mainElement = document.querySelector('[data-js="main"]');
 mainElement.classList.add("dark");
-// mainElement.classList.remove('dark');
-// mainElement.classList.toggle('dark');
+mainElement.classList.remove("dark");
 ```
 
 ### Acting on events with addEventListener
 
-- Explain that events are actions or occurrences, for example:
-  - a click on a button
-  - hovering over an element
-  - pressing a key on the keyboard
-  - resizing the browser window
+- [ ] Remind students that the way to manipulate the DOM with `classList.add()` and `classList.remove()` described above has one disadvantage: it cannot be utilized by users because they don't have access to the `index.js` file.
+- [ ] Note some examples a user interacts with our website:
+  - [ ] a click on a button
+  - [ ] hovering over an element
+  - [ ] pressing a key on the keyboard
+  - [ ] resizing the browser window
+- [ ] Explain that all these interactions trigger a so-called `event` we can utilize to react to the user behavior.
 
-Show how to add an event listener to a button and react to a click:
+- [ ] Show how to add an event listener to a button and react to a click:
 
 ```html
+<!-- index.html -->
 <button type="button" data-js="logging-button">Log into console</button>
 ```
 
 ```js
+// js/index.js
 const myLoggingButton = document.querySelector('[data-js="logging-button"]');
 myLoggingButton.addEventListener("click", () => {
   console.log("You clicked a button");
 });
 ```
 
-Demonstrate that the code works. Explain the different parts of the code:
+- [ ] Demonstrate that the code works and explain the different parts:
 
-- we select the button element with the `querySelector` and "save it as a variable with the name
-  `myLoggingButton`"
-- we use the method `addEventListener` on the button. It's something we don't have to fully
-  understand now - we have to know that we have to write addEventListener with brackets and have to
-  use the syntax in this exact way.
-- the `click` tells us that we listen to the click event
-- the "function body" (the thing we write in the curly braces) is the JavaScript that is being
-  executed when the event is triggered.
+  - [ ] we select the button element with the `querySelector` and "save it as a variable with the name
+        `myLoggingButton`"
+  - [ ] we use the method `addEventListener` on the button. It's something we don't have to fully
+        understand now - we have to know that we have to write `addEventListener` with brackets and have to
+        use the syntax in this exact way.
+  - [ ] the `click` tells us that we listen to the click event
+  - [ ] the "function body" (the thing we write in the curly braces) is the JavaScript that is being
+        executed when the event is triggered.
 
-Explain that we can listen to other events like `mouseover` or `keydown`.
+- [ ] Explain that we want to have three buttons: one to add, one to remove, and one to toggle the color of the `mainElement`.
+- [ ] Add three buttons to your `index.html`:
+
+```html
+<button type="button" data-js="add-button">Add color</button>
+<button type="button" data-js="remove-button">Remove color</button>
+<button type="button" data-js="toggle-button">Toggle color</button>
+```
+
+- [ ] In `index.js`, query the three buttons and listen to the click event:
+
+```js
+const addColorButton = document.querySelector('[data-js="add-button"]');
+const removeColorButton = document.querySelector('[data-js="remove-button"]');
+const toggleColorButton = document.querySelector('[data-js="toggle-button"]');
+
+addColorButton.addEventListener("click", () => {
+  mainElement.classList.add("dark");
+});
+
+removeColorButton.addEventListener("click", () => {
+  mainElement.classList.remove("dark");
+});
+
+toggleColorButton.addEventListener("click", () => {
+  mainElement.classList.toggle("dark");
+});
+```
+
+- [ ] Show that the user can now use the three buttons to change the color.
+- [ ] Finish by noting that we can listen to other events like `mouseover` or `keydown`.
 
 ---
 

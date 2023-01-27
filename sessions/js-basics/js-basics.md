@@ -85,7 +85,7 @@ const mainElement = document.querySelector(".main");
 const mainElement = document.querySelector("#main");
 ```
 
-> 💡 We try to separate our concerns: Classes are for CSS and data-\* attributes are for JavaScript
+> 💡 We try to separate our concerns: Classes are for CSS and data-\* attributes are for JavaScript.
 
 ---
 
