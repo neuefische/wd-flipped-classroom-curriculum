@@ -15,7 +15,7 @@ Master one of these two flexbox games:
 ## Flexbox Navigation
 
 Solve the _Flexbox Navigation_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/navigation?file=/css/styles.css)
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/navigation?file=/README.md)
 or locally by running this command in your Terminal:
 
 ```
@@ -25,7 +25,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/navigati
 ## Flexbox Profile
 
 Solve the _Flexbox Profile_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/profile?file=/css/styles.css)
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-flexbox/profile?file=/README.md)
 or locally by running this command in your Terminal:
 
 ```
