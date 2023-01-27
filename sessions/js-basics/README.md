@@ -105,7 +105,7 @@ console.error("Error!"); // logs as error into console
 
 ```html
 <body>
-  <main class="main" id="main" data-js="main">...</main>
+  <main class="main" data-js="main">...</main>
 </body>
 ```
 
