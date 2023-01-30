@@ -8,5 +8,4 @@ and follow the instructions in the `README.md` file.
 
 ## GitHub Learning Lab: Manage Merge Conflicts
 
-Learn how to
-[manage merge conflicts on the GitHub Learning Lab](https://lab.github.com/githubtraining/managing-merge-conflicts?overlay=register-box-overlay).
+Learn how to [manage merge conflicts with GitHub Skills](https://github.com/skills/resolve-merge-conflicts).
