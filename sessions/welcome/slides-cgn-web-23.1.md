@@ -29,7 +29,7 @@ Student Service
 
 <!-- class: image-profile -->
 
-## Sina Stulpe
+## Anne Buss
 
 Candidate Success Managerin
 
@@ -45,7 +45,7 @@ Coach
 
 ---
 
-## Jessic Lörs
+## Jessica Lörs
 
 Coach
 
