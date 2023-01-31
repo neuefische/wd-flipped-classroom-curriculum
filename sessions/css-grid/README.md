@@ -43,6 +43,24 @@ Why do we need another layout algorithm for the web?
 
 ---
 
+## Demo
+
+Use this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/demo-start?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-start -i
+```
+
+You can check out the final version of this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/demo-end?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-end -i
+```
+
 ## Inform: Session Guide
 
 - Grid is a very versatile layout mechanism with many properties.
@@ -77,13 +95,12 @@ Why do we need another layout algorithm for the web?
 
 ### A Simple Grid Demo
 
-- Start with this
-  [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
-  - Use the
-    [final result](https://codesandbox.io/s/css-grid-demo-result-y9yt1u?file=/css/styles.css) as
-    guide for yourself _or_ use it to show students the result we're working towards (or just show
-    the image): ![Result](assets/grid-bootcamp-demo-result.png)
-- Start at the bottom of the style sheet.
+- Use the [Demo End](#demo) to show students the result we're working towards (or just show the following image):
+
+![Result](assets/grid-bootcamp-demo-result.png)
+
+- Open the demo and show the students around the project.
+- Switch to `styles.css` of the demo and start at the bottom of the style sheet.
 - Set `display: grid` on the `.bootcamp-grid` container and explain that nothing much changes
   visually.
 - Just like with Flexbox the container is now the `grid container` and all of it's direct children
