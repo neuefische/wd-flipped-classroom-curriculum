@@ -141,7 +141,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-end -i
 ### Working with `grid-template-area`
 
 - Start with a fresh copy of the
-  [demo on CodeSandbox](https://codesandbox.io/s/css-grid-demo-start-utngf2?file=/css/styles.css).
+  [demo](#demo).
   Explain that there is a way to "draw" the grid template in CSS using "ASCII art". Add the
   following code into the CSS:
 
