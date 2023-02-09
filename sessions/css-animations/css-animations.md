@@ -126,13 +126,20 @@ properties should be applied where `0%` is the start of the animation and `100%`
 
 > 💡 You can also use the `from` and `to` keywords instead of percentages. `from` is the same as
 > `0%` and `to` is the same as `100%`. You can also define percentage amounts between `from` and `to`, such as:
-
-````css
-@keyframes animationName {
-  from { opacity: 0 }
-  50% { opacity: 1 }
-  to { opacity: 0 }
-}
+>
+> ```css
+> @keyframes animationName {
+>   from {
+>     opacity: 0;
+>   }
+>   50% {
+>     opacity: 1;
+>   }
+>   to {
+>     opacity: 0;
+>   }
+> }
+> ```
 
 ### `animation`
 
@@ -146,7 +153,7 @@ comma.
 animation: my-animation 2s;
 /* apply the animation my-animation to the element with a delay of 1s and an ease-in-out easing curve */
 animation: my-animation 2s ease-in-out 1s;
-````
+```
 
 These are the properties you can use with `animation` (you can combine them all into the shorthand
 but it becomes hard to read):
