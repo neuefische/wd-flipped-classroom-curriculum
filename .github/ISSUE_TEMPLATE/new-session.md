@@ -1,9 +1,10 @@
 ---
 name: New Session
 about: Issue to create a new session in the curriculum
-title: ""
+title: ''
 labels: Session
-assignees: ""
+assignees: ''
+
 ---
 
 PR:
