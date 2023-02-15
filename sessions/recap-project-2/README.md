@@ -2,7 +2,7 @@
 
 In this project, students will add interactivity to the Quiz App.
 
-They can either work on their own code or use the starter template as described in the [challenges files](./challenge.md).
+They can either work on their own code or use the starter template as described in the [challenges files](./challenges-recap-project-2.md).
 
 > 💡 This project is a continuation of [Recap Project 1](/sessions/recap-project-1).
 
