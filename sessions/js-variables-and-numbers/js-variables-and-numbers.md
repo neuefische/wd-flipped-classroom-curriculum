@@ -70,39 +70,51 @@ naming a variable:
 As a programmer you sometimes have to use mathematical operations to calculate certain widths or
 positions of elements. Operators calculate values based on one or two expressions.
 
-| operator | precedence | effect                                                                                       |
-| -------- | ---------- | -------------------------------------------------------------------------------------------- |
-| `+`      | 11         | adds two numbers together.                                                                   |
-| `-`      | 11         | subtracts two numbers                                                                        |
-| `*`      | 12         | multiplies two numbers                                                                       |
-| `/`      | 12         | divides two numbers                                                                          |
-| `**`     | 13         | potentiates two numbers: `2 ** 4 → 16`                                                       |
-| `%`      | 12         | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 → 2`. |
+| operator | effect                                                                                       |
+| -------- | -------------------------------------------------------------------------------------------- |
+| `+`      | adds two numbers together.                                                                   |
+| `-`      | subtracts two numbers                                                                        |
+| `*`      | multiplies two numbers                                                                       |
+| `/`      | divides two numbers                                                                          |
+| `**`     | potentiates two numbers: `2 ** 4 → 16`                                                       |
+| `%`      | The remainder or modulus. Gives you what remains after a whole number division: `8 % 3 → 2`. |
 
 The remainder is a very useful operator, but might be difficult to understand at first. A real life
 example would be time on a clock. After noon, you don't reach 13am but you start over at 1pm. 3
 hours after midnight you don't have 15pm (or 27h in the 24h format), but 3am. It is whatever hour we
-have mod 12.
-
-You can use this operator to determine if a number is even or odd:
+have mod 12:
 
 ```js
-6 % 2 === 0;
+5 % 12; // → 5
+12 % 12; // → 0
+13 % 12; // → 1
+15 % 12; // → 3
+27 % 12; // → 3
 ```
 
-This is always true for even numbers, because after dividing an even number by 2 nothing remains.
+You can also use this operator to determine if a number is even or odd:
 
 ```js
-5 % 2 === 1;
+6 % 2; // → 0
 ```
 
-This is also true for all odd numbers, because after this division you have always 1 left over.
+This is `0` for all **even** numbers, because after dividing an even number by `2` nothing remains.
+
+```js
+5 % 2; // → 1
+```
+
+This is `1` for all **odd** numbers, because after this division you have always `1` left over.
 
 ## Operator Precedence
 
 In maths, some operators have a higher precedence than others. This means that they are performed
-before operators with a lower precedence. For example, multiplication comes before addition. You can
-look up the precedence of the operators in the table above.
+before operators with a lower precedence. For example, multiplication comes before addition.
+
+> 📙 You can read more about [**Operator precedence** in the mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
+
+> 💡 If you are uncertain, use parentheses around calculations to denote precendence manually. Prettier
+> will remove any unnecessary parentheses from your expression automatically.
 
 ## Assignment Operators
 
@@ -110,32 +122,32 @@ You already know the default assignment operator `=`. This operator just assigns
 right to the element on the left. There are more assignment operators for very common actions like
 increasing a variable by a fixed value.
 
-| operator | effect                                                                                                                |
-| -------- | --------------------------------------------------------------------------------------------------------------------- |
-| `+=`     | Increases the value of the variable on the left about the value on the right: `count += 6` → count is increased by 6. |
-| `-=`     | Decreases the value of the variable on the left about the value on the right.                                         |
-| `*=`     | Multiplies the variable on the left with the value on the right.                                                      |
-| `/=`     | Divides the variable on the left with the value on the right.                                                         |
-| `++`     | Increments the value of a variable by one: `count++` → count is increased by one                                      |
-| `--`     | Decrements the value of a variable by one: `count--` → count is decreased by one                                      |
+| operator | effect                                                                                                               |
+| -------- | ---------------------------------------------------------------------------------------------------------------------|
+| `+=`     | Increases the value of the variable on the left about the value on the right: `count += 6` → count is increased by 6 |
+| `-=`     | Decreases the value of the variable on the left about the value on the right                                         |
+| `*=`     | Multiplies the variable on the left with the value on the right                                                      |
+| `/=`     | Divides the variable on the left with the value on the right                                                         |
+| `++`     | Increments the value of a variable by one: `count++` → count is increased by one                                     |
+| `--`     | Decrements the value of a variable by one: `count--` → count is decreased by one                                     |
 
-> 💡 The precedence of each assignment operator is 2.
-
-## Type Conversion
+## Type Coersion
 
 When you use an operator with a variable with an unfitting type, JavaScript will automatically
-convert this variable into a fitting type. For example:
+convert (coerse) this variable into a fitting type. For example:
 
 ```js
-4 / "2" → 4 / 2
+4 / "2"; // → 4 / 2
 ```
 
 There is no "/" operator for strings, so JavaScript converts the string into a number if possible.
 This is also true for boolean operators which we will cover in a later session.
 
-> ❗️ There is another `+` operator in JavaScript, that links two strings together: "a" + "b" →
-> "ab". When 'adding' a number and a string, the number is converted to a string: "a" + 6 → "a6".
+> ❗️ There is another `+` operator in JavaScript, that links two strings together: `"a" + "b"` →
+> `"ab"`. When 'adding' a number and a string, the number is converted to a string: `"a" + 6` → `"a6"`.
 > Make sure that both variables are numbers if you want to add them.
+
+> 📙 Read more about [**Type coersion** in the mdn](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion).
 
 ## Number Systems
 
@@ -153,4 +165,5 @@ and 1. You don't have to learn these systems by heart, but it is good if you hea
 
 ## Resources
 
-- [Operator Precedence MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+- [Operator Precedence in the mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+- [Type coersion in the mdn](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
