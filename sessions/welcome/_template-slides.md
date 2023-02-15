@@ -285,7 +285,7 @@ Moving from the Fear Zone to the Growth Zone
 
 1. Benachrichtung an Coaches (Slack)
    wichtig: **Krankmeldung!**
-2. Benachrichtung in Kurs Channel (Slack)
+2. Benachrichtigung in Kurs Channel (Slack)
 
 ---
 
