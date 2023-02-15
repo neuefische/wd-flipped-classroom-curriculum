@@ -94,10 +94,13 @@ Use the demo to explain what CSS is in general:
       positioning or decorations.
 
 - [ ] **Meaning** of the **terms** `Cascading` and `Stylesheets`:
-  - `Cascading`: Cascading refers to the cascade, an algorithm that defines the order in which
-    stylings are applied to elements. It is often the case that there are several competing stylings
-    for an element. The cascade solves this problem. **Note:** The students will learn more about
-    the cascade in following sessions.
+  - `Cascading`: 
+    - An algorithm that considers which style to apply when multiple styles are defined for an element.
+    - Decides which style to apply based on:
+      - Specificity: How specific the selector is in selecting the element.
+      - Source Order: The last style defined in the stylesheet will override previous styles of the same specificity.
+      - Inheritance: Styles can be passed down from parent elements to child elements.
+		- Students will learn more about this in later sessions.
   - `Stylesheet`: A style sheet consists of several of stylings that we declare with CSS and that
     determine the layout of the web page.
 
