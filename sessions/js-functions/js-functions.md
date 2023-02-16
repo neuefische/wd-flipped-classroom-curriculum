@@ -57,7 +57,7 @@ function printSum(first, second, third) {
 ## Function Calls
 
 When functions are defined you can call them by writing their name, followed by parentheses
-("rounded brackets"). If the functions consume parameters you can pass them as arguments in the
+("round brackets"). If the functions consume parameters you can pass them as arguments in the
 brackets.
 
 ```js
