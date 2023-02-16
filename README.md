@@ -1,4 +1,4 @@
-# Welcome to the new curriculum!
+# Welcome to the Curriculum of the neuefische Web Development Bootcamp!
 
 This is the work in progress of the new curriculum of the bootcamp Web Development. <br> This update
 is aiming to improve the way our students learn. <br>
