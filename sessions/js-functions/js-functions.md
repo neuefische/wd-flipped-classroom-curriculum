@@ -38,7 +38,7 @@ function greet() {
 ### Parameters
 
 Functions can accept parameters. Parameters can be used like predefined variables inside the
-function body. When declaring a function we are free to choose a name for the parameters , but
+function body. When declaring a function we are free to choose a name for the parameters, but
 descriptive, short names should be chosen.
 
 ```js
