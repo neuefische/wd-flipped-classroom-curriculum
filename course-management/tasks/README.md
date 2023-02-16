@@ -2,24 +2,23 @@
 
 > ❗️ Sidenote: You can find [definitions/explanations for all of these tasks in the `task definitions` file](./task-definitions.md).
 
-
 ## Checklist: tasks before bootcamp start
 
-| One-Time Task                                                 | Quick Resources                                                                                                                     | when?          |
-| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| Review Welcome E-mail                                         | [see task definition](task-definitions.md#review-student-welcome-email)                                                             | 2 weeks before |
-| Create a course folder in Google Drive                        | [follow this guide](https://docs.google.com/document/d/1LtCAzCcpok4KMRHcGz6I0qHCGStOQTuuzwr9nVnpvNU/edit#heading=h.rhdj2jmx5zd9)    | 2 weeks before |
-| Add the course to the students 1-on-1 documentation           | [Web Pool Students](https://docs.google.com/spreadsheets/d/154j0zPzjD8_DFPpDAE23o_09gpiEKjNhyiCOGS8eTJU/edit#gid=1215039695)        | 1 week before  |
-| Create a session timing section for the course                | [in the session timing spreadsheet](https://docs.google.com/spreadsheets/d/1j8ljm5-pwo2tXebpZQ7FyC5sqkviAeYma0-b7KZfxyo/edit#gid=0) | 1 week before  |
-| Confirm Zoom rooms are created or planned to be created       | Mareike and Paul are in charge of creating Zoom rooms                                                                               | 1 week before  |
-| Create a GitHub team                                          | [create a new team](https://github.com/orgs/neuefische/new-team)                                                                    | 1 week before  |
-| Create a student repository for handouts and protocols        | [template for student repo](https://github.com/neuefische/web-protocol-template)                                                    | 1 week before  |
-| Create a (coaches) protocol in the web-pool repo (_optional_) | [protocol directory in the web-pool repo](https://github.com/neuefische/web-pool-2022/tree/main/courses)                            | 1 week before  |
-| Planning: Design Workshop and Agile Workshop                  | via Slack Channel: `design-workshop` & `internal-agile`                                                                             | 1 week before  |
-| Planning: Career Session 1 & 2, LinkedIn Session              | Coordinate with Student Service Manager                                                                                             | 1 week before  |
-| Add helpful links to the description of the Slack channel     | [see task definition](task-definitions.md#add-helpful-links-to-the-description-of-the-slack-channel)                                | 1 week before  |
-| Post info sheet about absence into Slack channel              | [see absence document here](https://drive.google.com/drive/folders/1wh33dpVu-6Wrcng7ApymT3GcnYqZM81O)                               | 4 days before  |
-| Organize Kickoff (_optional_)                                 | [see task definition](task-definitions.md#kickoff-with-students-optional)                                                           | 4 days before  |
+| One-Time Task                                             | Quick Resources                                                                                                                     | when?          |
+| --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| Review Welcome E-mail                                     | [see task definition](task-definitions.md#review-student-welcome-email)                                                             | 2 weeks before |
+| Create a course folder in Google Drive                    | [follow this guide](https://docs.google.com/document/d/1LtCAzCcpok4KMRHcGz6I0qHCGStOQTuuzwr9nVnpvNU/edit#heading=h.rhdj2jmx5zd9)    | 2 weeks before |
+| Add the course to the students 1-on-1 documentation       | [Web Pool Students](https://docs.google.com/spreadsheets/d/154j0zPzjD8_DFPpDAE23o_09gpiEKjNhyiCOGS8eTJU/edit#gid=1215039695)        | 1 week before  |
+| Create a session timing section for the course            | [in the session timing spreadsheet](https://docs.google.com/spreadsheets/d/1j8ljm5-pwo2tXebpZQ7FyC5sqkviAeYma0-b7KZfxyo/edit#gid=0) | 1 week before  |
+| Confirm Zoom rooms are created or planned to be created   | Mareike and Paul are in charge of creating Zoom rooms                                                                               | 1 week before  |
+| Create a GitHub team                                      | [create a new team](https://github.com/orgs/neuefische/new-team)                                                                    | 1 week before  |
+| Create a student repository for handouts and protocols    | [template for student repo](https://github.com/neuefische/web-protocol-template)                                                    | 1 week before  |
+| Planning: Design Workshop and Agile Workshop              | via Slack Channel: `design-workshop` & `internal-agile`                                                                             | 1 week before  |
+| Planning: Career Session 1 & 2, LinkedIn Session          | Coordinate with Student Service Manager                                                                                             | 1 week before  |
+| Add helpful links to the description of the Slack channel | [see task definition](task-definitions.md#add-helpful-links-to-the-description-of-the-slack-channel)                                | 1 week before  |
+| Post info sheet about absence into Slack channel          | [see absence document here](https://drive.google.com/drive/folders/1wh33dpVu-6Wrcng7ApymT3GcnYqZM81O)                               | 4 days before  |
+| Organize Kickoff (_optional_)                             | [see task definition](task-definitions.md#kickoff-with-students-optional)                                                           | 4 days before  |
+| Create Welcome Slides                                     | [see task definition](task-definitions.md#create-welcome-slides)                                                                    | 4 days before  |
 
 ---
 
@@ -60,7 +59,7 @@
 | Preparation of capstone phase                                 | [see task definition](task-definitions.md#preparation-of-capstone-phase)                    | Week 8                       |
 | Create events for public sprint reviews                       | in the slack chanel `events`                                                                | Weekly during capstone phase |
 | Confirm date for the graduation event and the rehearsal       | speak to the partner manager of the course                                                  | Week 9                       |
-| Create event slides for graduation event                      | [find template here](https://github.com/neuefische/web-event-slides)                                             | Week 11                      |
+| Create event slides for graduation event                      | [find template here](https://github.com/neuefische/web-event-slides)                        | Week 11                      |
 | Collect capstone project screenshot/video                     | [see task definition](task-definitions.md#collect-capstone-project-screenshotvideo)         | Week 12                      |
 | Create event page in the talent app for graduation event      | [via Talent App](https://talents.neuefische.de/)                                            | Week 12                      |
 | After Graduation: Give students access to GH Student Dev Pack | [GitHub Student Developer Pack](https://github.com/neuefische/link-creator-github-dev-pack) | Week 13                      |

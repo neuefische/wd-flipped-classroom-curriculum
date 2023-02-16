@@ -110,16 +110,6 @@ _Students_
 
 ---
 
-### Create a (coaches) protocol in the web-pool repo (_optional_)
-
-This folder can be used for storage of whichever needed documents concerning the course, for example the welcome slides for the first day. See existing folders for more examples.
-
-<span style="color:orange">**to-do:**</span>
-
-- [ ] Create a new folder named after the course [in the web-pool repo](https://github.com/neuefische/web-pool-2022/tree/main/courses)
-
----
-
 ### Planning: Design & Agile workshop
 
 During the bootcamp we have the opportunity to book two freelance experts on their fields for:
@@ -172,6 +162,16 @@ Kickoff.
 
 > ❗️ If you choose to organize one, include all the information (date, meeting room/meeting-URL) in
 > the welcome email
+
+---
+
+### Create Welcome Slides
+
+- Navigate to the _welcome_ session in the _Web-Curriculum_ repository ( ... this one 🙂).
+- Duplicate the template file.
+- Rename the duplicate you've created.
+- Make sure to check if the information presented on the slides is correct (partner management, coaches, students services ...)
+- Make sure to check if the correct course is addressed on the slides
 
 ---
 
