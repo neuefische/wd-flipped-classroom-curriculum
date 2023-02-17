@@ -26,14 +26,14 @@ These work differently depending on the positioning method.
 
 ---
 
-## position: static
+## `position: static`
 
 Elements are positioned according to the normal document flow. The properties `top`, `bottom`,
 `right`, `left` have no effect. This is the default value.
 
 ---
 
-## position: relative
+## `position: relative`
 
 Elements are positioned according to the normal document flow and then displaced by the `top`,
 `bottom`, `right`, `left` properties. This method is also used to set the reference frame for an
@@ -42,7 +42,7 @@ this element.
 
 ![example for position relative](assets/position-relative.png)
 
-## position: absolute
+## `position: absolute`
 
 Elements are removed from the normal document flow and no space is created for them - so they leave
 no gap in the page. With position absolute you place an element (with the `top`, `bottom`, `right`,
@@ -61,7 +61,7 @@ the element is placed absolutely towards this element and not the entire page.
 
 ---
 
-## Position Fixed
+## `position: fixed`
 
 Elements are removed from the normal document flow and no space is created for them - so they leave
 no gap in the page. An element with position fixed is not influenced by scrolling and therefore
@@ -71,7 +71,7 @@ stays at the specified position. This is often used for navigation bars or "back
 
 ---
 
-## Position Sticky
+## `position: sticky`
 
 This is an unusual but very nifty positioning method. The element is not affected by the positioning
 until it comes near the border of its scrolling container (normally the page itself). When the user
@@ -82,7 +82,7 @@ like a fixed element.
 
 ---
 
-## Z - Index
+## `z-index`
 
 The z-index defines the stacking order of html elements. Elements with a higher stacking order
 appear on top if they overlap with other elements. The z-index can be an integer number (negative
