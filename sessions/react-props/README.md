@@ -151,7 +151,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 - [ ] Change the `Pet` component to receive the `onPet` prop and call it when the pet is clicked.
 
   ```js
-  function Pet({ sound, emoji, onPet }) {
+  function Pet({ sound, emoji, name, onPet }) {
     return (
       <div onClick={onPet}>
         {sound}{" "}
@@ -208,7 +208,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 - [ ] Change the `Pet` component to receive the `isHungry` prop and render the sound string conditionally.
 
   ```js
-  function Pet({ sound, emoji, onPet, isHungry }) {
+  function Pet({ sound, emoji, name, onPet, isHungry }) {
     return (
       <div onClick={onPet}>
         {isHungry ? "Feed me!" : sound}{" "}
