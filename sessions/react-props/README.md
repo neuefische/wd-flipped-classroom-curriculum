@@ -127,7 +127,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/demo-end
 - [ ] Change the `Pet` component to use destructuring for the props parameter.
 
   ```js
-  function Pet({ sound, emoji }) {
+  function Pet({ sound, emoji, name }) {
     return (
       <div>
         {sound}{" "}
