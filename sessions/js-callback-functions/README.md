@@ -99,11 +99,56 @@ You can use this demo to explain the topic:
 - [ ] Explain that callbacks are a general concept in JavaScript
   - It is not tied to event listeners
   - The students will encounter different use cases in the future (example: working with arrays)
-- [ ] Write a simple higher order function
-  - Explain, that it takes a function as a parameter and calls it
-  - Reiterate: Students don't need to write higher order functions themselves
-- [ ] Write a simple callback function expecting a parameter
-- [ ] Call the higher order function and pass the callback function
+- [ ] Introduce the concept of a Component: A reusable function that creates UI elements like buttons, cards, sections, etc.
+- [ ] Write a simple Button Component:
+  ```js
+  function Button(text) {
+    const buttonElement = document.createElement("button");
+    buttonElement.textContent = text;
+    buttonElement.addEventListener("click", () => {
+      console.log("Button clicked");
+    });
+    return buttonElement;
+  }
+  ```
+- [ ] Explain, that this function returns a button component, which has a dynamic display text.
+- [ ] create a button with this function and append it to the `buttonContainer`
+
+  ```js
+  const myCustomButton = Button("Some awesome text!");
+  buttonContainer.append(myCustomButton);
+  ```
+
+- [ ] Show that the behavior of the created button is static. We can create buttons with different text but they all perform the same action, which is not really useful
+- [ ] Turn the button component into a higher order function, which accepts an `onClick` callback function:
+
+  ```js
+  function Button(text, onClick) {
+    const buttonElement = document.createElement("button");
+    buttonElement.textContent = text;
+    buttonElement.addEventListener("click", onClick);
+    return buttonElement;
+  }
+  ```
+
+- [ ] Create now two buttons with this better component and show that both buttons now execute different commands 🤯
+
+  ```js
+  const alertButton = Button("show alert message", () => {
+    alert("Hello world!");
+  });
+  buttonContainer.append(alertButton);
+
+  function handleSubmit() {
+    console.log("Form was submitted!");
+  }
+
+  const submitButton = Button("submit", handleSubmit);
+  buttonContainer.append(submitButton);
+  ```
+
+- [ ] Explain, that the Button Component takes a function as a parameter and uses it internally.
+- [ ] Every call of `Button` creates a new button element which receives its own `onClick` function.
 
 ---
 
