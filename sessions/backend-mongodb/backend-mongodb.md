@@ -124,3 +124,4 @@ _Draft_: Refactor the following to fit the handout format.
 ---
 
 ## Resources
+```
