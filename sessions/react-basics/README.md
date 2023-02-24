@@ -8,7 +8,7 @@ Recommended schedule for this session:
 | -------- | --------------- |
 | 1:00     | Session         |
 | 1:30     | Active Learning |
-| 0:45     | Recap           |
+| 0:15     | Recap           |
 
 ## Learning objectives
 
@@ -69,7 +69,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-re
       expression.
   - [ ] JSX is a syntax extension to JavaScript.
 - [ ] Explain that it is a way to describe the DOM tree declaratively.
-> 💡 Additional information : A JavaScript compiler (like [babel](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwEwlgbgfAEgpgGwQe2AenNIA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.20.6&externalPlugins=&assumptions=%7B%7D)) will compiles our JSX into valid JavaScript, then the React library creates or updates DOM nodes.
+  > 💡 Additional information : A JavaScript compiler (like [babel](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwEwlgbgfAEgpgGwQe2AenNIA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.20.6&externalPlugins=&assumptions=%7B%7D)) will compile our JSX into valid JavaScript, then the React library creates or updates DOM nodes.
   - [ ] If what we want to show changes, we give a new description (new JSX) to the render function.
   - [ ] React will then efficiently update the DOM. As we will see in a later Demo, React is very
         good at this.
@@ -267,12 +267,14 @@ root.render(
 ```jsx
 // App.js
 export default function App() {
-  <div>
-    <Greeting />
-    <p className="intro">
-      I am rendered by <strong>React</strong>
-    </p>
-  </div>;
+  return (
+    <div>
+      <Greeting />
+      <p className="intro">
+        I am rendered by <strong>React</strong>
+      </p>
+    </div>
+  );
 }
 
 function Greeting() {
