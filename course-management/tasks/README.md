@@ -7,7 +7,7 @@
 | One-Time Task                                             | Quick Resources                                                                                                                     | when?          |
 | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------- |
 | Review Welcome E-mail                                     | [see task definition](task-definitions.md#review-student-welcome-email)                                                             | 2 weeks before |
-| Create a course folder in Google Drive                    | [follow this guide](https://docs.google.com/document/d/1LtCAzCcpok4KMRHcGz6I0qHCGStOQTuuzwr9nVnpvNU/edit#heading=h.rhdj2jmx5zd9)    | 2 weeks before |
+| Create a course folder in Google Drive                    | [follow this guide](task-definitions.md#create-a-course-folder-in-google-drive)                                                     | 2 weeks before |
 | Add the course to the students 1-on-1 documentation       | [Web Pool Students](https://docs.google.com/spreadsheets/d/154j0zPzjD8_DFPpDAE23o_09gpiEKjNhyiCOGS8eTJU/edit#gid=1215039695)        | 1 week before  |
 | Create a session timing section for the course            | [in the session timing spreadsheet](https://docs.google.com/spreadsheets/d/1j8ljm5-pwo2tXebpZQ7FyC5sqkviAeYma0-b7KZfxyo/edit#gid=0) | 1 week before  |
 | Confirm Zoom rooms are created or planned to be created   | Mareike and Paul are in charge of creating Zoom rooms                                                                               | 1 week before  |

@@ -23,7 +23,7 @@ The Google Drive course folder includes:
 
 - Weekly-Feedback
 
-  - Here you create the weekly feedback forms for the students,[see description below](#feedback-students)
+  - Here you create the weekly feedback forms for the students, [see weekly tasks description below](#generate-weekly-feedback-form-for-students)
 
 - Documents-Organization
 
@@ -31,8 +31,20 @@ The Google Drive course folder includes:
 
 <span style="color:orange">**to-dos:**</span>
 
-- [ ] Use [this template](https://drive.google.com/drive/folders/13_cRlnmJO0i7aWw3Mo4uvL-AwhTkJq9P) to
-      generate a new course folder
+- [ ] Generate a new course folder
+  - [ ] Download the [\_Course-Template](https://drive.google.com/drive/folders/13_cRlnmJO0i7aWw3Mo4uvL-AwhTkJq9P) folder
+  - [ ] Unzip the folder
+  - [ ] Rename the folder to the course name, e.g. `CGN-WEB-23-1`
+  - [ ] Navigate to [06_web-course](https://drive.google.com/drive/u/0/folders/1PBpjVj3Cjm4TIFBdQXZ6-9po78lT_UDs) on Google Drive
+  - [ ] Upload the course folder into `06_web-course`
+- [ ] Prepare the weekly feedback forms
+
+  - [ ] Navigate to the [\_Course-Template/Weekly-Feedback](https://drive.google.com/drive/folders/13_cRlnmJO0i7aWw3Mo4uvL-AwhTkJq9P) folder
+  - [ ] Select all forms with `cmd + a`
+  - [ ] Copy all forms with `cmd + c`
+  - [ ] Navigate to your course folder / Weekly_Feedback
+  - [ ] Paste all forms with `cmd + v`
+
 - [ ] Make sure to add the names of the students to the attendance list and to adjust the dates
 - [ ] Change all the generic titles of the template to match the course name
 - [ ] Read the information about the attendance rules
@@ -367,14 +379,11 @@ Every Friday we hand out a weekly feedback form to the students in order to unde
 
 <span style="color:orange">**to-dos:**</span>
 
-- [ ] Generate Feedback form by
-  - [ ] Going into the Google Drive course folder to the "Weekly-Feedback" directory
-  - [ ] Inside of this folder click right (on your mouse) or with two fingers (on your trackpad)
-  - [ ] Click on the little arrow next to "Google Formulare/Google Forms" and then choose "Aus einer Vorlage/From a template"
-  - [ ] Click "Erstellen und Freigeben/Create and Share" and choose the Weekly Course Feedback Template
-  - [ ] Adjust the form to your course by adding the sessions of the week and changing the name of the document
-  - [ ] Select the tab "Antworten/Answers" and copy the link into the internat chanel of the course - this link is for the coaches
-  - [ ] Select the tab "Einstellungen/Settings" and **turn off** the only switch which is on, which gives access to only neuefische members. We need to switch it off, as the students are not members of the neuefische Google ecosystem
+- [ ] Adjust Feedback form and generate a link to share with students
+  - [ ] If necessary adjust the sessions of the week.
+  - [ ] Change the name and the title of the document.
+  - [ ] Select the tab "Antworten/Answers" and copy the link into the internal channel of the course - this link is for the coaches.
+  - [ ] Select the tab "Einstellungen/Settings" and open "Antworten". Make sure that the switch "Nur für Nutzer in neuefische.de und den vertrauenswürdigen Organisationen freigeben" is **turned off**, which gives access to only neuefische members. We need to switch it off, as the students are not members of the neuefische Google ecosystem
   - [ ] Finally click "Senden/Send" and chose "Senden über/Send via -> Link symbol" and copy the link to send it to the students via Slack.
 
 ---
