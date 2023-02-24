@@ -307,6 +307,35 @@ animateButton.addEventListener("click", async () => {
   - [ ] the `response` variable is logged to the console
 - [ ] Show the `response` object logged to the console after clicking the "Fetch" button
 
+- [ ] Explain that things can go wrong when you try to access external resources (e.g. server down, no internet)
+- [ ] Explain that it's necessary to handle such errors gracefully
+- [ ] Explain the concept of `try/catch`:
+  - [ ] If fetch can't reach the server, it will "throw" an error
+  - [ ] Our code has to "catch" this error, otherwise our program will stop working
+  - [ ] Errors can be "caught" anywhere in the call stack
+  - [ ] With the `async/await` syntax you can catch and handle errors with a `try/catch` block:
+    ```js
+    try {
+      const response = await fetch(apiUrl);
+    } catch (error) {
+      console.log(error);
+    }
+    ```
+  - [ ] Emphasize that we have access to the actual error inside the `catch` block. We could examine it and take appropriate actions to inform the user.
+  - [ ] Show that there is a similar mechanism for the `.then()` syntax:
+    ```js
+    fetch(apiUrl)
+      .then((response) => {
+        console.log("fetch succeeded!");
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log("fetch failed");
+        console.log(error);
+      });
+    ```
+  - [ ] You can provoke an error by changing the `apiUrl` to something unreachable, e.g. by changing the protocol from `https` to `htt` or something similar
+
 ### Examples of Asynchronous APIs (Or: Why do we need this again?)
 
 - [ ] Summarize that some code is asynchronous and we have to wait for its return value.
