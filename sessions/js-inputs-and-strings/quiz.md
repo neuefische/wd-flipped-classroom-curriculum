@@ -1,11 +1,11 @@
 # Inputs and Strings
 
-### Which of the below is NOT a valid string in JavaScript?
+## Which of the below is NOT a valid string in JavaScript?
 
-* [ ] "hello world"
-* [ ] 'hello + world'
-* [x] _hello world_
-* [ ] 'hello world'
+* [ ] `"hello world"`
+* [ ] `'hello world'`
+* [x] `_hello world_`
+* [ ] ``hello world``
 
 Points: 1
 
@@ -16,7 +16,7 @@ type: multiple_choice
 
 ---
 
-### Given is `const name = 'hello world';`. What is the return value of `name.length`?
+## Given is `const greeting = 'hello world';`. What is the return value of `greeting.length`?
 
 * [ ] `10`
 * [x] `11`
@@ -32,7 +32,7 @@ type: multiple_choice
 
 ---
 
-### Which of the below statements about template literals (template strings) is correct?
+## Which of the below statements about template literals (template strings) is correct?
 
 * [ ] Template literals are enclosed by backticks.
 * [ ] Template literals allow variables in strings.
@@ -48,7 +48,23 @@ type: multiple_choice
 
 ---
 
-### Which method do you need to convert a string to uppercase?
+## Given is `const name = 'Max'; const greeting = "Hello " + name + ", good to see you!";`. Instead of concatenating multiple strings, we want to use a template literal for the value of `greeting`:
+
+* [ ] `'Hello ${name}, good to see you!'`
+* [ ] ``` `Hello` + name + `, good to see you!` ```
+* [x] ``` `Hello ${name}, good to see you!` ```
+* [ ] ``` `Hello {name}, good to see you!` ```
+
+Points: 1
+
+Feedback_correct: That's right.
+Feedback_incorrect: Nope. The correct answer is ``` `Hello ${name}, good to see you!` ```.
+
+type: multiple_choice
+
+---
+
+## Which method do you need to convert a string to uppercase?
 
 * [ ] `upperCase()`
 * [ ] `ToUpperCase()`
@@ -64,12 +80,12 @@ type: multiple_choice
 
 ---
 
-### Given is `const name = '  neue fische   ';`. What is the return value of `name.trim()`?
+## Given is `const name = '  neue fische   ';`. What is the return value of `name.trim()`?
 
-* [ ] 'neue fische  '
-* [ ] 'neuefische'
-* [x] 'neue fische'
-* [ ] '  neue fische'
+* [ ] `'neue fische  '`
+* [ ] `'neuefische'`
+* [x] `'neue fische'`
+* [ ] `'  neue fische'`
 
 Points: 1
 
@@ -80,7 +96,7 @@ type: multiple_choice
 
 ---
 
-### How do you get the value of the input field, declared via `const input = document.querySelector('[data-js="name-input"]');`?
+## How do you get the value of the input field, declared via `const input = document.querySelector('[data-js="name-input"]');`?
 
 * [ ] `name-input.value`
 * [x] `input.value`
@@ -96,23 +112,23 @@ type: multiple_choice
 
 ---
 
-### Given is `const name = 'Web Development Bootcamp';`. What is the return value of `name.replace(' ', '_')`?
+## Given is `const name = 'Web Development Bootcamp';`. What is the return value of `name.replaceAll(' ', '_')`?
 
-* [x] `'Web_Development Bootcamp'`
-* [ ] `'Web_Development_Bootcamp'`
+* [ ] `'Web_Development Bootcamp'`
+* [x] `'Web_Development_Bootcamp'`
 * [ ] `'Web Development_Bootcamp'`
 * [ ] `'Web Development Bootcamp'`
 
 Points: 1
 
 Feedback_correct: That's right.
-Feedback_incorrect: Nope! `replace()` only finds and replaces the first character searched; for replacing all searched characters, you need to use `replaceAll()`.
+Feedback_incorrect: Nope! The method `replaceAll(oldString, newString)` replaces all occurrences of `oldString` with the `newString`, so the return value is `'Web_Development_Bootcamp'`.
 
 type: multiple_choice
 
 ---
 
-### Given is `const name = 'neue fische';`. What is the return value of `name.includes('neue')`?
+## Given is `const name = 'neue fische';`. What is the return value of `name.includes('neue')`?
 
 * [ ] `false`
 * [ ] `neue`
@@ -122,7 +138,7 @@ type: multiple_choice
 Points: 1
 
 Feedback_correct: That's right.
-Feedback_incorrect: Nope! `includes` searches for a string inside another string and returns a boolean value, in this case `true`.
+Feedback_incorrect: Nope! The method `includes` searches for a string inside another string and returns a boolean value, in this case `true`.
 
 type: multiple_choice
 

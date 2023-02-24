@@ -161,3 +161,20 @@ Feedback_incorrect: Nope! With `person.age = 30;` you can add a new property cal
 type: multiple_choice
 
 ---
+
+## Given is: `const user = { userId: "1234", userName: "Remi", shoppingCart: ["tomato", "banana", "chocolate"],};` How can you log the first item of the shopping cart to the console?
+
+* [ ] `console.log(shoppingCart[0]);`
+* [ ] `console.log(user[shoppingCart].0);`
+* [x] `console.log(user.shoppingCart[0]);`
+* [ ] `console.log(user.shoppingCart[1]);`
+
+
+Points: 1
+
+Feedback_correct: That's right.
+Feedback_incorrect: Nope! With `console.log(user.shoppingCart[0]);` you can log the first item of the shopping cart to the console.
+
+type: multiple_choice
+
+---

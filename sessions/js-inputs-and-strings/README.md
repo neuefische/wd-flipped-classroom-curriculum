@@ -106,12 +106,12 @@ output.textContent = `Hello, ${nameInput.value}!`;
 > 💡 Show how to type the backtick character "`` ` ``" using <kbd>⇧</kbd><kbd>´</kbd> (next to the
 > backspace key).
 >
-> It's easiest to create a new template string by typing two backticks and then pressing the right
+> It's easiest to create a new template string by typing two backticks and then pressing the left
 > arrow (<kbd>◀︎</kbd>). Otherwise macOS sometimes thinks that we're trying to write an accented
 > character like à.
 
 - [ ] Explain that template literals have one more feature that is different from the other string
-      literals: They supports line breaks!
+      literals: They support line breaks!
 
 - [ ] Copy in the following code and show what it does:
 
