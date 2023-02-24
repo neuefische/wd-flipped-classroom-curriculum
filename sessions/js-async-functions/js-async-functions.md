@@ -88,18 +88,18 @@ Compared to:
 ```js
 // avoid doing this:
 function myFunction() {
-  functionThatReturnsAPromise1().then((value1) => {
-    functionThatReturnsAPromise2(value1).then((value2) => {
-      functionThatReturnsAPromise3(value2).then((value3) => {
-        console.log(value3);
-      });
+  functionThatReturnsAPromise1()
+    .then((value1) => {
+      return functionThatReturnsAPromise2(value1);
+    })
+    .then((value2) => {
+      return functionThatReturnsAPromise3(value2);
+    })
+    .then((value3) => {
+      console.log(value3);
     });
-  });
 }
 ```
-
-> 💡 These nested callbacks are sometimes called "callback hell". You can find interesting examples
-> by searching for "callback hell" online.
 
 > 💡 `async` functions always return a Promise. If the function returns a value, the Promise will be
 > resolved with that value. Even if you're not using the `return` keyword the function will return a

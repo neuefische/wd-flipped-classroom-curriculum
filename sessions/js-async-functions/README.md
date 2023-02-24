@@ -201,25 +201,29 @@ soccerAnimation.then(() => {
 
 ```js
 const soccerAnimation = animateBall(soccer);
-soccerAnimation.then(() => {
-  console.log("soccer animation finished");
-  const basketballAnimation = animateBall(basketball);
-  basketballAnimation.then(() => {
+soccerAnimation
+  .then(() => {
+    console.log("soccer animation finished");
+    const basketballAnimation = animateBall(basketball);
+    return basketballAnimation;
+  })
+  .then(() => {
     console.log("basketball animation finished");
     const footballAnimation = animateBall(football);
-    footballAnimation.then(() => {
-      console.log("football animation finished");
-      const tennisAnimation = animateBall(tennis);
-      tennisAnimation.then(() => {
-        console.log("tennis animation finished");
-        animateButton.removeAttribute("disabled");
-      });
-    });
+    return footballAnimation;
+  })
+  .then(() => {
+    console.log("football animation finished");
+    const tennisAnimation = animateBall(tennis);
+    return tennisAnimation;
+  })
+  .then(() => {
+    console.log("tennis animation finished");
+    animateButton.disabled = false;
   });
-});
 ```
 
-- [ ] This style of writing code is called "callback hell".
+- [ ] Explain that the promises can be chained by returning the next promise from the callback function.
 - [ ] Explain that this is a very cumbersome way to write code and that there is a better way to
       handle this.
 
