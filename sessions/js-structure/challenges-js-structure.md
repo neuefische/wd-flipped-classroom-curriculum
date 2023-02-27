@@ -1,16 +1,14 @@
 # Challenges: JS Structure
 
-## Space Rocket
+## Shapes
 
-Solve the _Space Rocket_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-structure/spacerocket?file=/README.md)
+Solve the _Shapes_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-structure/shapes?file=/README.md)
 or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/spacerocket -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/shapes -i
 ```
-
-> Launch the rocket! 🚀
 
 ## Quiz App
 
@@ -21,3 +19,15 @@ or locally by running this command in your Terminal:
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/quiz-app -i
 ```
+
+## Extra: Space Rocket
+
+Solve the _Space Rocket_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-structure/spacerocket?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/spacerocket -i
+```
+
+> Launch the rocket! 🚀
