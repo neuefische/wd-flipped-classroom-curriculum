@@ -49,6 +49,9 @@ How can we create an app with different pages?
 
 - [ ] Show the [Next.js website](https://nextjs.org/)
 
+> The website is constantly updated. Especially with all the new features that will be added in version 13.
+> To use the website view to explain the following features use [this snapshot](https://web.archive.org/web/20221129052839/https://nextjs.org/) taken when the following part was written.
+
   > "The React Framework for Production"
 
 - [ ] Point out that Next.js uses React and we continue to write React code as we did before
@@ -60,6 +63,7 @@ How can we create an app with different pages?
     - Large set of solutions for various typical challenges
     - Often opinionated on how to do things
 - [ ] Scroll down to the "The Web SDK" section and introduce some Next.js features we are going to use
+
   - **Zero Config**: we can setup Next.js with one command and everything works out of the box
   - **File-system Routing**: we are going to establish multiple pages with an individual URL using the tools Next.js includes
   - **API Routes**: we are going to build our own API to fetch data and more
