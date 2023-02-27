@@ -29,8 +29,8 @@ characters to format parts of the text in a certain way.
 | [x] done                        | `[x] checkbox`                    |
 | **bold text**                   | `**bold text**`                   |
 | _italicized text_               | `_italicized text_`               |
-| [link](https://www.example.com) | `[link](https://www.example.com)` |
-| image                           | `![link](url to image)`           |
+| [link](https://www.example.com) | `[link text](https://www.example.com)` |
+| image                           | `![description of image](url to image)`           |
 | block quote                     | `> block quote`                   |
 | divider                         | `---`                             |
 | `inline code block`             | `` `inline code block` ``         |
