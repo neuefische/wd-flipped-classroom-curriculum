@@ -1,11 +1,11 @@
-# GitHub & Markdown
+# GitHub and Markdown
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
 | duration | content         |
 | -------- | --------------- |
-| 1:15     | Session         |
-| 1:00     | Active Learning |
+| 1:00     | Session         |
+| 1:30     | Active Learning |
 | 0:30     | Recap           |
 
 ## Learning objectives
