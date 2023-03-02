@@ -37,7 +37,7 @@ successful. The implementation of your function is finished as soon as all test 
 
 ---
 
-## How to with jest
+## How to test with jest
 
 Tests are placed in a file next to the code you like to test, but with `.test.js` as filename
 ending.
