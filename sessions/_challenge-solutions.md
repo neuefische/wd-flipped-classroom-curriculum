@@ -14,6 +14,13 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 - [Pizza Analyzer](https://codesandbox.io/s/functions-1-exercise-pizza-analyzer-solution-7kqvnz?file=/js/index.js)
 - [Functions and DOM manipulation](https://codesandbox.io/s/functions-1-exercise-functions-and-dom-manipulation-solution-flef6i)
 
+**JS Functions 2**
+
+- [Calculations](https://codesandbox.io/s/charming-wozniak-c6pvdq?file=/index.js)
+- [Greeting Page](https://codesandbox.io/s/hardcore-ully-80j5so?file=/js/index.js)
+- [Progress Bar](https://codesandbox.io/s/sroll-bar--solution-1lo5tm?file=/js/index.js)
+- [Convert Arrow Functions](https://codesandbox.io/s/convert-arrow-functions--solution-xerdyi?file=/js/index.js)
+
 ## Week 3
 
 - [Personal Profile](https://codesandbox.io/s/html-forms-personal-profile-6cu2p1?file=/index.html)
