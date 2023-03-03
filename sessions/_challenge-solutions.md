@@ -6,6 +6,12 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 2
 
+**JS Functions 1**
+[Basic functions](https://codesandbox.io/s/functions-1-exercise-basic-functions-solution-vmpi8j)
+[Functions with parameters](https://codesandbox.io/s/functions-1-exercise-functions-with-parameters-solution-xbl62x?file=/js/index.js)
+[Functions with parameters extra](https://codesandbox.io/s/functions-1-exercise-functions-with-parameters-extra-solution-7pwg01?file=/js/index.js)
+[Pizza Analyzer](https://codesandbox.io/s/functions-1-exercise-pizza-analyzer-solution-7kqvnz?file=/js/index.js)
+[Functions and DOM manipulation](https://codesandbox.io/s/functions-1-exercise-functions-and-dom-manipulation-solution-flef6i)
 ## Week 3
 
 - [Personal Profile](https://codesandbox.io/s/html-forms-personal-profile-6cu2p1?file=/index.html)
