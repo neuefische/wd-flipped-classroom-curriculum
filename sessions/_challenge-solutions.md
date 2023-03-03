@@ -56,7 +56,7 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 - [Challenge 1](https://codesandbox.io/s/heuristic-murdock-xpqjuw?file=/js/index.js)
 - [Challenge 2](https://codesandbox.io/s/sweet-snyder-icxr60?file=/js/index.js)
-- [Challenge 3][https://codesandbox.io/s/rough-frost-4ukkmf?file=/index.js](https://codesandbox.io/s/rough-frost-4ukkmf?file=/index.js)
+- [Challenge 3](https://codesandbox.io/s/rough-frost-4ukkmf?file=/index.js)
 
 **JS Array Methods 2**
 
