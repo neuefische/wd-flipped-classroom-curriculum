@@ -245,7 +245,7 @@ export default function CounterList({ animals, handleAdd, handleSubtract }) {
     </>
   )
 }
-
+```
 - [ ] Make sure to pass `handleAdd` and `handleSubtract` to the props `onAdd` and `onSubtract` of the `<Counter />`  (prefixed with `on` instead of `handle`).
 
 > 💡 In React, the convention is to prefix the names of event handler functions with "on" to indicate that they are event handlers. For example, a function that handles a click event might be called "onClick". Similarly, a function that handles an "add" event might be called "onAdd". This convention helps to make the code easier to read and understand, because it clearly indicates the purpose of the function.
