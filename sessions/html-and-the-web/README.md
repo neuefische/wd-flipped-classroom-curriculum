@@ -131,7 +131,7 @@ Two more interesting things to know about HTML:
 
 - [ ] Type `! tab` and walk the students through the document flow:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -165,7 +165,7 @@ Two more interesting things to know about HTML:
       information about its content.
 - [ ] Copy the following snippet into your body element from before:
 
-```
+```html
 <div>
 <div>Hello World</div>
   <div>
@@ -185,7 +185,7 @@ Two more interesting things to know about HTML:
 - [ ] Change the tags to semantic HTML.
   > 💡 If you have time, make this part interactive by asking the students for their ideas.
 
-```
+```html
 <main>
 <h1>Hello World</h1>
       <article>
