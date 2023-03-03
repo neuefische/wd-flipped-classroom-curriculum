@@ -8,11 +8,12 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 **JS Functions 1**
 
-- [Basic functions](https://codesandbox.io/s/functions-1-exercise-basic-functions-solution-vmpi8j)  
-- [Functions with parameters](https://codesandbox.io/s/functions-1-exercise-functions-with-parameters-solution-xbl62x?file=/js/index.js)  
-- [Functions with parameters extra](https://codesandbox.io/s/functions-1-exercise-functions-with-parameters-extra-solution-7pwg01?file=/js/index.js)  
-- [Pizza Analyzer](https://codesandbox.io/s/functions-1-exercise-pizza-analyzer-solution-7kqvnz?file=/js/index.js)  
-- [Functions and DOM manipulation](https://codesandbox.io/s/functions-1-exercise-functions-and-dom-manipulation-solution-flef6i)  
+- [Basic functions](https://codesandbox.io/s/functions-1-exercise-basic-functions-solution-vmpi8j)
+- [Functions with parameters](https://codesandbox.io/s/functions-1-exercise-functions-with-parameters-solution-xbl62x?file=/js/index.js)
+- [Functions with parameters extra](https://codesandbox.io/s/functions-1-exercise-functions-with-parameters-extra-solution-7pwg01?file=/js/index.js)
+- [Pizza Analyzer](https://codesandbox.io/s/functions-1-exercise-pizza-analyzer-solution-7kqvnz?file=/js/index.js)
+- [Functions and DOM manipulation](https://codesandbox.io/s/functions-1-exercise-functions-and-dom-manipulation-solution-flef6i)
+
 ## Week 3
 
 - [Personal Profile](https://codesandbox.io/s/html-forms-personal-profile-6cu2p1?file=/index.html)
@@ -35,9 +36,13 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 - [Objects](https://codesandbox.io/s/objects-qs8cns)
 - [Objects and Arrays](https://codesandbox.io/s/objects-and-arrays-t9qen9)
 
-**JS Forms 1 & 2**
+**JS Forms 1**
 
-- [Lösungen zu Forms 1 im Solutions-Thread](https://neuefische-students.slack.com/archives/C0480UL4ZC3/p1669730758729229)
+- [Challenge 1](https://codesandbox.io/s/js-forms-handle-form-submit-solution-5gjkwx?file=/js/index.js)
+- [Challenge 2](https://codesandbox.io/s/js-forms-checkbox-input-solution-311sug)
+- [Challenge 3](https://codesandbox.io/s/js-forms-calculator-solution-7zpuyw?file=/README.md)
+
+**JS Forms 2**
 
 **JS createElement**
 
