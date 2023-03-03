@@ -182,13 +182,13 @@ Use proper markdown semantics:
 
 ## To-Do's
 
-There is a current [To-Do list](https://github.com/neuefische/web-curriculum-new-format/issues/41)
+There is a current [To-Do list](https://github.com/neuefische/web-curriculum/issues/41)
 to keep an eye on.
 
 ## Detailed workflow
 
 1. Go into the project
-   [Curriculum Roadmap](https://github.com/neuefische/web-curriculum-new-format/projects/1).
+   [Curriculum Roadmap](https://github.com/orgs/neuefische/projects/45/views/10).
 2. Choose a ticket which has **no assignee** yet. (Try to get tickets done before you start a new
    one from the "Ready for Work" column). <br /> You have three options here:
    1. `Review a session` (session guide, handout, and challenges).
