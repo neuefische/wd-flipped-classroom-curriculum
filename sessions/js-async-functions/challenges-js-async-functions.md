@@ -10,14 +10,14 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/relay-race -i
 ```
 
-## API Status ✅
+## Sleep
 
-Solve the _API Status ✅_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/api-status?file=/README.md)
+Solve the _Sleep_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/sleep?file=/README.md)
 or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/api-status -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/sleep -i
 ```
 
 ## Slot Machine 🎰
