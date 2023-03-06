@@ -199,6 +199,43 @@ authors.forEach((author) => {
       simple.
 - [ ] Show that even the code in the modules is self-contained and simpler to understand.
 
+### Optional: Button Component
+
+If there is enough time and the course is interested, you can create another `Button` component, replacing both the decipher button in the Card as well as in the Header component.
+
+- [ ] Inside the `Card.js` file, create another Component called `Button`. Move the lines of code creating the decipher button inside it:
+  ```js
+  function Button() {
+    const button = document.createElement("button");
+    button.className = "card__button";
+    button.textContent = "Decipher";
+    button.addEventListener("click", handleDecipherButtonClick);
+  }
+  ```
+- [ ] The Component doesn't work since it has no access to the handler function. Add an `onClick` parameter and return the `button` element:
+  ```js
+  function Button(onClick) {
+    const button = document.createElement("button");
+    button.className = "card__button";
+    button.textContent = "Decipher";
+    button.addEventListener("click", onClick);
+    return button;
+  }
+  ```
+- [ ] Use this component inside the Card component and pass the handler function as an argument.
+  > 💡 You can refer to the callback functions session where we passed functions as arguments
+  ```js
+  const button = Button(handleDecipherButtonClick);
+  ```
+- [ ] Move the `Button` component into its own file. Make sure to `export default` the component and `import` it in the Card.js.
+- [ ] Import the `Button` component in the Header.js. Replace the decipher button inside the `Header` with this component as well:
+  ```js
+  const button = Button(handleDecipherHeadlineButtonClick);
+  ```
+- [ ] Highlight, that by making the listener function a parameter, the same Component can execute different functions and create different behavior for the button.
+
+> 💡 The callback functions can access the correct `text` variables because they are stored in the **Closure** of the function. (See [this MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) for more information)
+
 ## Process: Challenges
 
 - [ ] Provide the [handout](js-structure.md) and the [challenges](challenges-js-structure.md) to the
