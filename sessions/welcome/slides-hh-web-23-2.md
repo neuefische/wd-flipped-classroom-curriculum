@@ -66,6 +66,14 @@ Coach
 
 ---
 
+## Jan Henckel
+
+Coach
+
+![Foto](images/jan_henckel.jpg)
+
+---
+
 <!-- _class: big-headline granite-->
 
 # Das Coach-Team bei _neue fische_
@@ -90,21 +98,6 @@ Coach
 
 - Wie heißt du und wo lebst du?
 - Was war dein Hobby als du 15 Jahre alt warst?
-
----
-
-<!-- _class: bullet-points small-->
-
-# _One truth_ One lie
-
-- Nehmt euch **5 Minuten** Zeit, um über euch:
-  1. eine **Lüge** auszudenken
-  2. eine **Wahrheit** auszusuchen
-- Jede/r erzählt die beiden Geschichten
-- Der Rest von uns schätzt welche Geschichte wahr ist:
-  - Geschichte 1 ist wahr ✅
-  - Geschichte 2 ist wahr ⛔️
-- Danach wird aufgelöst - Gewinne gibt es keine 🙂
 
 ---
 
@@ -291,3 +284,18 @@ Moving from the Fear Zone to the Growth Zone
 <!-- _class: intro-slide granite -->
 
 # Fragen?!
+
+---
+
+<!-- _class: bullet-points small-->
+
+# _One truth_ One lie
+
+- Nehmt euch **5 Minuten** Zeit, um über euch:
+  1. eine **Lüge** auszudenken
+  2. eine **Wahrheit** auszusuchen
+- Jede/r erzählt die beiden Geschichten
+- Der Rest von uns schätzt welche Geschichte wahr ist:
+  - Geschichte 1 ist wahr ✅
+  - Geschichte 2 ist wahr ⛔️
+- Danach wird aufgelöst - Gewinne gibt es keine 🙂
