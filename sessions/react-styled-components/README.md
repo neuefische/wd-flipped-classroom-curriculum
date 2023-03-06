@@ -50,6 +50,18 @@ Why do we have more flexibility writing styles when using a library like `styled
 
 ## Inform: Session Guide
 
+Use this demo locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/demo-start -i
+```
+
+You can check out the final version of this demo locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/demo-end -i
+```
+
 ### Introduction
 
 - [ ] Mention that we wrote CSS using the BEM approach in `.css` files until now
