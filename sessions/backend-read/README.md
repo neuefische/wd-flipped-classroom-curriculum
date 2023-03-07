@@ -71,7 +71,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-en
 - [ ] Announce the goal of the session: we want to have a database with the jokes' data and access it from our app.
 - [ ] Explain that we need a JavaScript API to work with MongoDB
   - [ ] that is sometimes called a database driver (just like your printer driver);
-  - [ ] we will use a library called `mongoose`. Thats a ODM (Object Document Mapper).
+  - [ ] we will use a library called `mongoose`. That's an ODM (Object Document Mapper).
 - [ ] Explain [the terms ORM / ODM](https://medium.com/spidernitt/orm-and-odm-a-brief-introduction-369046ec57eb):
 
   - [ ] ORM (_Object Relation Mapping_):
@@ -86,7 +86,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-en
 
 - [ ] Summarize the reasons to use `mongoose` as ORM:
   - [ ] It helps building a schema and querying the database (it's also our db driver).
-  - [ ] It has to run on the server, because database access in not secure in the browser.
+  - [ ] It has to run on the server, because database access is not secure in the browser.
 - [ ] Remind students that we already have a server: our Next.js API routes! 🤡
 
 ### Prepare and Connect the Database
@@ -127,7 +127,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-en
 - [ ] Create `db/models/Joke.js`:
   - [ ] We don't need to define the `id` because `mongoose` will automatically create one.
   - [ ] The name of the collection the model works upon is being generated from the models name, in
-        this case "Category" => "categories".
+        this case "Joke" => "jokes".
   - [ ] You can call the `mongoose.model` method with a third argument that holds the collection
         name.
   - [ ] We have to check whether the model with the name "Joke" has already been compiled and if
