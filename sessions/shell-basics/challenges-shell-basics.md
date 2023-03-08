@@ -45,7 +45,7 @@ nessesary). Use the following command to download the challenge files:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/shell-basics/treasure-hunt
 ```
 
-Once the download is complete, navigate into the `treasure-hunt` folder using the `cd` command. Now
+Once the download is complete, navigate into the `shell-basics_treasure-hunt` folder using the `cd` command. Now
 the real challenge begins.
 
 **Find the lost diamond of the ancient monarch of treasure island!** Navigate through treasure
