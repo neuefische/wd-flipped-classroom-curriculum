@@ -1,3 +1,6 @@
+> __Warning__  
+> This document is only for internal use. You (as a coach) do not have to read this to teach this session. ❤️
+
 # Rationale: Why We Are Not Building Our Own Local Storage Hook
 
 Or: Why none of the simple solutions are ideal…
