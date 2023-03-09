@@ -51,6 +51,11 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 **JS Forms 2**
 
+- [Form Validation](https://codesandbox.io/s/js-forms-ii-form-validation-3jt9fe?file=/js/index.js)
+- [To Uppercase](https://codesandbox.io/s/js-forms-ii-controlled-form-changed-to-uppercase-gu4em7?file=/js/index.js)
+- [Live Calculator](https://codesandbox.io/s/js-forms-ii-simple-live-calculator-exvwe9?file=/js/index.js)
+- [Simple To-Do List](https://codesandbox.io/s/js-forms-ii-simple-todolist-4kfpe6?file=/js/index.js)
+
 **JS createElement**
 
 - [JS Product Teaser](https://codesandbox.io/s/js-product-teaser-solution-unspwr)
