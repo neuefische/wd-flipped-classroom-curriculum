@@ -1,8 +1,8 @@
 # Challenges: CSS Structure
 
-## Selectors and cascading bugs
+## Selectors and Cascading Bugs
 
-Solve the _Selectors and cascading bugs_ challenge on
+Solve the _Selectors and Cascading Bugs_ challenge on
 [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading?file=/css/styles.css)
 or locally by running this command in your Terminal:
 
@@ -22,6 +22,16 @@ selectors.
 
 You can remove the `outline` style declaration once you fixed it's selector. It is only there to
 check if you selected the correct elements.
+
+## Custom Properties
+
+Solve this challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/custom-properties?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/custom-properties -i
+```
 
 ## Apply BEM to your Quiz App
 
