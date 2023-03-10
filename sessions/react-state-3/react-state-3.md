@@ -107,7 +107,7 @@ handleRemoveNumber(1);
 
 To replace an element in an array, you can use the `map` method:
 
-````js
+```js
 const [numbers, setNumbers] = useState([0, 1, 2]);
 
 function handleReplaceNumber(oldNumber, newNumber) {
@@ -121,19 +121,7 @@ function handleReplaceNumber(oldNumber, newNumber) {
 
 // Somewhere else:
 handleReplaceNumber(1, 1337);
-```trees.filter((tree) => tree.height > 7)
-
-### Sorting an Array
-
-To sort an array, you can use the spread syntax to make a copy of the array first, then sort the copy:
-
-```js
-const [numbers, setNumbers] = useState([12, 2, 42, 4]);
-
-function handleSortNumbers() {
-  setNumbers([...numbers].sort());
-}
-````
+```
 
 > 📙 Learn more about [**Updating arrays without mutation** in the React Docs](https://beta.reactjs.org/learn/updating-arrays-in-state#updating-arrays-without-mutation).
 
