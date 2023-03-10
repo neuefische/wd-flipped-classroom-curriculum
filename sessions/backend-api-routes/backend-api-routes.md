@@ -45,7 +45,7 @@ In Next.js, an API route is simply a JavaScript module that exports a default fu
 
 ```js
 export default function handler(request, response) {
-  request.status(200).json({ message: "Hello neuefische!" });
+  response.status(200).json({ message: "Hello neuefische!" });
 }
 ```
 
