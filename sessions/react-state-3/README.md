@@ -41,7 +41,6 @@ Why do we always need to create a copy of the data in state when we like to appl
 - React State
 - React with Arrays
 - React State 2
-- React State 3
 
 ---
 
