@@ -115,7 +115,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-component-test
   ```js
   render(<Movie name="The Matrix" />);
   ```
-- [ ] Explain that we can now check the rendered output of the component using the `screen` object, its methods and `expect` with `toBeInDocument`
+- [ ] Explain that we can now check the rendered output of the component using the `screen` object, its methods and `expect` with `toBeInTheDocument`
   ```js
   const matrixHeading = screen.getByText("The Matrix");
   expect(matrixHeading).toBeInTheDocument();
