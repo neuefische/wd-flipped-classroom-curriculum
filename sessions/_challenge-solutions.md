@@ -179,7 +179,7 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 **React Component Testing**
 
-- [Solution Branch](https://github.com/mbosselmann/component-testing-hh-web-22-7/tree/solution)
+- [Scorekeeper Challenge - Solution](https://github.com/ThomasKirst/codespaces-react-component-testing-scorekeeper/tree/solution)
 
 **Next.js Basics and Routing**
 
