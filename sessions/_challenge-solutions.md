@@ -93,7 +93,7 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 - [Challenge 1](https://codesandbox.io/s/js-fetch-star-wars-console-solution-20x3sc)
 - [Challenge 2](https://codesandbox.io/s/js-fetch-star-wars-solution-zs18p1)
-- [Challenge 3](https://codesandbox.io/s/color-clue-challenge-solution-forked-kw9zl4)
+- [Challenge 3](https://codesandbox.io/s/beautiful-brahmagupta-orhgk9?file=/index.js)
 
 **JS Structure**
 
