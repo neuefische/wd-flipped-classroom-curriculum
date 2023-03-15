@@ -75,12 +75,12 @@ export default function handler(request, response) {
 You can use the `console.log()` function to debug your web application and understand what is happening within your API Routes. Since the API handlers are executed on the server, the console output will be displayed in your terminal (localhost) where you started the development server (`npm run dev`) or in the Vercel web interface (vercel deployment).
 
 local: shown in terminal / server console
-![Example of `console.log()`in API route file](assests/log-messages-api-route-file.png)
+![Example of `console.log()`in API route file](assets/log-messages-api-route-file.png)
 
 Vercel: shown in web interface
-![Example of `console.log()`in API route file](assests/log-messages-api-route-file-runtime-log.png)
+![Example of `console.log()`in API route file](assets/log-messages-api-route-file-runtime-log.png)
 
-![Example shown in Vercel web interfach](assests/vercel-runtime-log.png)
+![Example shown in Vercel web interfach](assets/vercel-runtime-log.png)
 
 > 💡 Further information about [Vercel Runtime Logs](https://vercel.com/docs/concepts/observability/runtime-logs)
 
