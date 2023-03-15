@@ -168,7 +168,7 @@ The same operation with the `update` function provided by the `useImmer` hook lo
 ```jsx
 updateUsers((draft) => {
 	const index = draft.findIndex(user => user.id === 1)
-	draft[index].email: "john_doe@example.com"
+	draft[index].email = "john_doe@example.com"
 })
 ```
 
