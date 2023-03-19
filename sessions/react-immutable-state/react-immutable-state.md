@@ -16,7 +16,7 @@ As you have learned you cannot change (mutate) data stored in state directly. Yo
 
 Consider an object like this in state:
 
-```jsx
+```js
 const [user, setUser] = useState({
   name: "John Doe",
   email: "john@doe.com",
@@ -25,7 +25,7 @@ const [user, setUser] = useState({
 
 You might be tempted to mutate a value in the object and pass it to the setter function.
 
-```jsx
+```js
 user.email = "john_doe@example.com"; // ❌ direct state mutation: don't try this at home!
 setUser(user);
 ```
@@ -36,7 +36,7 @@ When you call the setter function, React checks if the object in state has chang
 
 Therefore, you need to make a copy of the data using the spread syntax and apply the changes to the copy. This way you won't mutate the previous state object.
 
-```jsx
+```js
 setUser({
   ...user,
   email: "john_doe@example.com",
@@ -49,7 +49,7 @@ setUser({
 
 It can get a bit complicated when you need to change data in a deeper nested state.
 
-```jsx
+```js
 const [user, setUser] = useState({
   name: "John Doe",
   contact: {
@@ -64,7 +64,7 @@ const [user, setUser] = useState({
 
 When `user.contact.phone.mobile` should be changed, you need to create a copy of each level.
 
-```jsx
+```js
 setUser({
   ...user,
   contact: {
@@ -94,7 +94,7 @@ The [`useImmer` hook](https://github.com/immerjs/use-immer) let's you add `immer
 
 The previous example looks like this with the `userImmer` hook.
 
-```jsx
+```js
 // useState → useImmer
 // setUser → updateUser
 const [user, updateUser] = useImmer({
@@ -111,7 +111,7 @@ const [user, updateUser] = useImmer({
 
 When you call the `update` function, you pass a callback. The callback receives a `draft` for the next state as parameter. You can apply mutations to the `draft` directly.
 
-```jsx
+```js
 updateUser((draft) => {
   // Mutate the draft directly
   draft.contact.phone.mobile = "+009999999999";
@@ -128,7 +128,7 @@ The examples above focusses on mutations in an object. However, in many applicat
 
 Your state might have such a shape:
 
-```jsx
+```js
 const [users, setUsers] = useState([
   {
     id: 1,
@@ -150,7 +150,7 @@ const [users, setUsers] = useState([
 
 You can perform an update to change the `email` of a user with the `id` of `1` like this:
 
-```jsx
+```js
 setUsers(
   users.map((user) =>
     user.id === 1
@@ -165,10 +165,10 @@ setUsers(
 
 The same operation with the `update` function provided by the `useImmer` hook looks like this:
 
-```jsx
+```js
 updateUsers((draft) => {
-	const user = draft.find(user => user.id === 1)
-	user.email = "john_doe@example.com"
+  const user = draft.find(user => user.id === 1);
+  user.email = "john_doe@example.com";
 })
 ```
 
