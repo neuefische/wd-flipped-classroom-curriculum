@@ -343,6 +343,8 @@ function Movies() {
 }
 ```
 
+> 💡 When using this pattern you are relying on your local state being created ad-hoc. Therefore your local state array will return `undefined` on `find` if the movie is not in the state. This is why we use the `??` operator to default to `{ isFavorite: false }` if the movie is not in the state.
+
 If you use Immer and `useImmer` you can simplify the update code a bit:
 
 ```js
@@ -361,8 +363,6 @@ function handleToggleFavorite(id) {
   });
 }
 ```
-
-> 💡 When using this pattern you are relying on your local state being created ad-hoc. Therefore your local state array will return `undefined` on `find` if the movie is not in the state. This is why we use the `??` operator to default to `{ isFavorite: false }` if the movie is not in the state.
 
 ---
 
