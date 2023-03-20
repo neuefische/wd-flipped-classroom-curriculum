@@ -47,7 +47,7 @@ handleChangeFirstName("Jane");
 > }
 > ```
 
-> 📙 Learn more about [**Updating Objects in State** in the React Docs](https://beta.reactjs.org/learn/updating-objects-in-state).
+> 📙 Learn more about [**Updating Objects in State** in the React Docs](https://react.dev/learn/updating-objects-in-state).
 
 ---
 
@@ -123,7 +123,7 @@ function handleReplaceNumber(oldNumber, newNumber) {
 handleReplaceNumber(1, 1337);
 ```
 
-> 📙 Learn more about [**Updating arrays without mutation** in the React Docs](https://beta.reactjs.org/learn/updating-arrays-in-state#updating-arrays-without-mutation).
+> 📙 Learn more about [**Updating arrays without mutation** in the React Docs](https://react.dev/learn/updating-arrays-in-state#updating-arrays-without-mutation).
 
 ---
 
@@ -211,7 +211,7 @@ function handleSortTreesByHeight() {
 }
 ```
 
-> 📙 Learn more about [**Updating objects inside Arrays** in the React Docs](https://beta.reactjs.org/learn/updating-arrays-in-state#updating-objects-inside-arrays).
+> 📙 Learn more about [**Updating objects inside Arrays** in the React Docs](https://react.dev/learn/updating-arrays-in-state#updating-objects-inside-arrays).
 
 ## Choosing the State Structure
 
@@ -311,11 +311,11 @@ const filteredTrees = trees.filter((tree) => tree.height > minHeight);
 setMinHeight(9);
 ```
 
-> 📙 Read more about [**Choosing the State Structure** in the React Docs](https://beta.reactjs.org/learn/choosing-the-state-structure). The Docs have many more examples and explanations.
+> 📙 Read more about [**Choosing the State Structure** in the React Docs](https://react.dev/learn/choosing-the-state-structure). The Docs have many more examples and explanations.
 
 ---
 
 ## Resources
 
-- [Updating Objects in State (React Docs Beta)](https://beta.reactjs.org/learn/updating-objects-in-state)
-- [Updating Arrays in State (React Docs Beta)](https://beta.reactjs.org/learn/updating-arrays-in-state)
+- [Updating Objects in State (React Docs)](https://react.dev/learn/updating-objects-in-state)
+- [Updating Arrays in State (React Docs)](https://react.dev/learn/updating-arrays-in-state)

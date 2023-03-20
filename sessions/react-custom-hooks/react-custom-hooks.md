@@ -19,7 +19,7 @@ Sometimes you want a hook that is build for a more specific use case. You can cr
 - A state that represents a fetched resource (e.g. `useFetch()`)
 - A state that is persisted in the browser's local storage (e.g. [`useLocalStorageState()`](https://github.com/astoilkov/use-local-storage-state))
 
-> 📙 Read more about [**Reusing Logic with Custom Hooks** in the React docs](https://beta.reactjs.org/learn/reusing-logic-with-custom-hooks).
+> 📙 Read more about [**Reusing Logic with Custom Hooks** in the React docs](https://react.dev/learn/reusing-logic-with-custom-hooks).
 
 ## Counter Example
 
@@ -288,4 +288,4 @@ If you are using something only once: Don't abstract it. If you are using someth
 
 ## Resources
 
-- [Reusing Logic with Custom Hooks in the React docs](https://beta.reactjs.org/learn/reusing-logic-with-custom-hooks)
+- [Reusing Logic with Custom Hooks in the React docs](https://react.dev/learn/reusing-logic-with-custom-hooks)

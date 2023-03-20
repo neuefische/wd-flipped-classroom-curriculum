@@ -22,4 +22,4 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-stat
 
 ## Further Challenges
 
-If you want to dive even deeper into the sea of immutable state, check out the [challenges of the React Docs](https://beta.reactjs.org/learn/updating-arrays-in-state#challenges).
+If you want to dive even deeper into the sea of immutable state, check out the [challenges of the React Docs](https://react.dev/learn/updating-arrays-in-state#challenges).

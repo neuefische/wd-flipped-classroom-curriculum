@@ -234,7 +234,7 @@ How does React handle events and changes to the UI?
 
 > 💡 A point you might already want to bring up is that setter function should only be called
 > as a reaction to an event (like a click, submit or finished network requests). It's bad practice to
-> call a setter function directly inside the component function. ([There are some rare exceptions to this when resseting part of the state.](https://beta.reactjs.org/learn/you-might-not-need-an-effect#adjusting-some-state-when-a-prop-changes))
+> call a setter function directly inside the component function. ([There are some rare exceptions to this when resseting part of the state.](https://react.dev/learn/you-might-not-need-an-effect#adjusting-some-state-when-a-prop-changes))
 
 ### State is local to component instance
 

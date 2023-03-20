@@ -67,7 +67,7 @@ function Drinks() {
 ```
 
 > 📙 If you are interested in understanding the details behind this, you can read about
-> [**the `key` prop** in the React Docs](https://beta.reactjs.org/learn/rendering-lists#keeping-list-items-in-order-with-key).
+> [**the `key` prop** in the React Docs](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key).
 
 > 💡 If you pass the `key` prop to a component, you cannot access it in the component. It is a special prop that React only uses internally.
 >
@@ -134,4 +134,4 @@ function Drinks() {
 
 ## Resources
 
-- [React Docs: Rendering Lists](https://beta.reactjs.org/learn/rendering-lists)
+- [React Docs: Rendering Lists](https://react.dev/learn/rendering-lists)

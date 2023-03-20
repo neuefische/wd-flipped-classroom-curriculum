@@ -56,7 +56,7 @@ This component will render the nested element(s) as a child of the `div` element
 > 💡 The nested element(s) can be a single element, multiple elements, or even a string or number.
 
 > 📙 Read more about [**Passing JSX as children**
-> in the React Docs](https://beta.reactjs.org/learn/passing-props-to-a-component#passing-jsx-as-children).
+> in the React Docs](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children).
 
 ## Fragments
 
@@ -103,7 +103,7 @@ function UserList() {
 > 💡 When researching you sometimes might see `<React.Fragment></React.Fragment>`, which is the same thing.
 
 > 📙 Read more about [**Fragment (<>...</>)**
-> in the React Docs](https://beta.reactjs.org/apis/react/Fragment).
+> in the React Docs](https://react.dev/apis/react/Fragment).
 
 ---
 
@@ -116,12 +116,12 @@ To do so you need to break down you application into components. You can then co
 It is important to figure out which components you need and how they should be composed. This is called application design.
 
 > 📙 Read [**Thinking in React**
-> in the React Docs](https://beta.reactjs.org/learn/thinking-in-react) up to and including Step 2. Later steps require state, which we will cover in a future session.
+> in the React Docs](https://react.dev/learn/thinking-in-react) up to and including Step 2. Later steps require state, which we will cover in a future session.
 
 ---
 
 ## Resources
 
-- [Passing JSX as children in the React Docs](https://beta.reactjs.org/learn/passing-props-to-a-component#passing-jsx-as-children)
-- [Fragment (<>...</>) in the React Docs](https://beta.reactjs.org/apis/react/Fragment)
-- [Thinking in React in the React Docs](https://beta.reactjs.org/learn/thinking-in-react)
+- [Passing JSX as children in the React Docs](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children)
+- [Fragment (<>...</>) in the React Docs](https://react.dev/apis/react/Fragment)
+- [Thinking in React in the React Docs](https://react.dev/learn/thinking-in-react)

@@ -180,9 +180,9 @@ function Timer() {
 }
 ```
 
-> 📙 Read more about [**Synchronizing with Effects** in the React docs](https://beta.reactjs.org/learn/synchronizing-with-effects).
+> 📙 Read more about [**Synchronizing with Effects** in the React docs](https://react.dev/learn/synchronizing-with-effects).
 
-> 📙 Even though effects can be incredibly useful, you might not actually need an effect to do what you want. Read more about [**You might not need an effect** in the React docs](https://beta.reactjs.org/learn/you-might-not-need-an-effect).
+> 📙 Even though effects can be incredibly useful, you might not actually need an effect to do what you want. Read more about [**You might not need an effect** in the React docs](https://react.dev/learn/you-might-not-need-an-effect).
 
 ## How to Fetch Data in React
 
@@ -263,12 +263,12 @@ In the future we will use a data fetching library to address these issues.
 
 > 💡 Even when you use a data fetching library, the library will use effects (and the `useEffect` hook) under the hood to fetch data.
 
-> 📙 Read more about [**Fetching Data** in the React docs](https://beta.reactjs.org/learn/synchronizing-with-effects#fetching-data). The docs also describe a way to handle race conditions.
+> 📙 Read more about [**Fetching Data** in the React docs](https://react.dev/learn/synchronizing-with-effects#fetching-data). The docs also describe a way to handle race conditions.
 
 ---
 
 ## Resources
 
-- [React docs: Synchronizing with Effects](https://beta.reactjs.org/learn/synchronizing-with-effects)
-- [React docs: Fetching data example with useEffect](https://beta.reactjs.org/learn/synchronizing-with-effects#fetching-dat)
-- [React docs: You Might Not Need an Effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect)
+- [React docs: Synchronizing with Effects](https://react.dev/learn/synchronizing-with-effects)
+- [React docs: Fetching data example with useEffect](https://react.dev/learn/synchronizing-with-effects#fetching-dat)
+- [React docs: You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect)

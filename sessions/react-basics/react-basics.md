@@ -86,7 +86,7 @@ Regarding attributes and children, creating elements from component types works 
 > to use PascalCase for component names.
 
 > 📙 Read more about [**Writing Markup with JSX**
-> in the React Docs](https://beta.reactjs.org/learn/writing-markup-with-jsx).
+> in the React Docs](https://react.dev/learn/writing-markup-with-jsx).
 
 ### Attributes
 
@@ -146,7 +146,7 @@ const element = (
 > 💡 To learn how to interpolate JavaScript expressions inside JSX attributes, refer to the [Attributes](#attributes) section.
 
 > 📙 Read more about [**JavaScript in JSX with Curly Braces**
-> in the React Docs](https://beta.reactjs.org/learn/javascript-in-jsx-with-curly-braces).
+> in the React Docs](https://react.dev/learn/javascript-in-jsx-with-curly-braces).
 
 ## React Components
 
@@ -178,7 +178,7 @@ in our application.
 > 'big' (i.e. an entire page).
 
 > 📙 Read about [**Your First Component**
-> in the React Docs](https://beta.reactjs.org/learn/your-first-component).
+> in the React Docs](https://react.dev/learn/your-first-component).
 >
 > **Note**: _Exporting the component_ and _Nesting and organizing components_ are out of scope for this first session.
 
@@ -295,7 +295,7 @@ for us automatically.
 ## Resources
 
 - [What is React: A Visual Introduction For Beginners on learnreact.design](https://learnreact.design/posts/what-is-react)
-- [Writing Markup with JSX in the React Docs](https://beta.reactjs.org/learn/writing-markup-with-jsx)
-- [JavaScript in JSX with Curly Braces in the React Docs](https://beta.reactjs.org/learn/javascript-in-jsx-with-curly-braces)
-- [Your First Component in the React Docs](https://beta.reactjs.org/learn/your-first-component)
+- [Writing Markup with JSX in the React Docs](https://react.dev/learn/writing-markup-with-jsx)
+- [JavaScript in JSX with Curly Braces in the React Docs](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
+- [Your First Component in the React Docs](https://react.dev/learn/your-first-component)
 - [Difference between a Framework and a Library on freecodecamp](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/)

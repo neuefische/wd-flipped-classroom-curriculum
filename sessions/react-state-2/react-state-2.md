@@ -65,7 +65,7 @@ existed in the `Article` component. We can lift the state up to the `App` compon
 to the `Article` component as a prop.
 
 > 📙 Read more about
-> [**Sharing State Between Components** in the React docs](https://beta.reactjs.org/learn/sharing-state-between-components).
+> [**Sharing State Between Components** in the React docs](https://react.dev/learn/sharing-state-between-components).
 
 ## Handling Form Data
 
@@ -223,9 +223,9 @@ function Counter() {
 > the parameter name: `setCount(c => c + 1)`.
 
 > 📙 Read more about
-> [**Updating state based on the previous state**](https://beta.reactjs.org/apis/react/useState#updating-state-based-on-the-previous-state)
+> [**Updating state based on the previous state**](https://react.dev/apis/react/useState#updating-state-based-on-the-previous-state)
 > and
-> [**I’ve updated the state, but logging gives me the old value**](https://beta.reactjs.org/apis/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
+> [**I’ve updated the state, but logging gives me the old value**](https://react.dev/apis/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
 > in the React docs.
 
 ## React Hooks
@@ -252,7 +252,7 @@ When using hooks you need to follow a few rules:
 
 ## Resources
 
-- [Sharing State Between Components in the React Docs](https://beta.reactjs.org/learn/sharing-state-between-components)
-- [Updating state based on the previous state in the React Docs](https://beta.reactjs.org/apis/react/useState#updating-state-based-on-the-previous-state)
-- [I’ve updated the state, but logging gives me the old value in the React Docs](https://beta.reactjs.org/apis/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
+- [Sharing State Between Components in the React Docs](https://react.dev/learn/sharing-state-between-components)
+- [Updating state based on the previous state in the React Docs](https://react.dev/apis/react/useState#updating-state-based-on-the-previous-state)
+- [I’ve updated the state, but logging gives me the old value in the React Docs](https://react.dev/apis/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
 - [Hooks at a Glance in the React Docs](https://reactjs.org/docs/hooks-overview.html)

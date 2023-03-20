@@ -70,7 +70,7 @@ function SocialMediaPost() {
 > follow the pattern of `x` and `setX`
 
 > 📙 Read more about the
-> [**concept of state** in the React Docs](https://beta.reactjs.org/learn/adding-interactivity).
+> [**concept of state** in the React Docs](https://react.dev/learn/adding-interactivity).
 
 In React state is encapsulated per instance of a component. Think of a feed in a social media app.
 The feed is a list of posts. Each post is an individual instance of the `SocialMediaPost` component,
@@ -115,14 +115,14 @@ which will again return JSX. However, this time the variable has a new value - t
 passed with the call of the `set` function. This means the return JSX includes the new value.
 
 > 📙 Read more about
-> [**state updates and re-rendering** in the React Docs](https://beta.reactjs.org/learn/render-and-commit).
+> [**state updates and re-rendering** in the React Docs](https://react.dev/learn/render-and-commit).
 
 ---
 
 ## Resources
 
-- [React Docs: Adding Interactivity](https://beta.reactjs.org/learn/adding-interactivity)
-- [React Docs: Responding to Events](https://beta.reactjs.org/learn/responding-to-events)
-- [React Docs: A simple variable is not enough](https://beta.reactjs.org/learn/state-a-components-memory#when-a-regular-variable-isnt-enough)
-- [React Docs: Render and commit](https://beta.reactjs.org/learn/render-and-commit)
+- [React Docs: Adding Interactivity](https://react.dev/learn/adding-interactivity)
+- [React Docs: Responding to Events](https://react.dev/learn/responding-to-events)
+- [React Docs: A simple variable is not enough](https://react.dev/learn/state-a-components-memory#when-a-regular-variable-isnt-enough)
+- [React Docs: Render and commit](https://react.dev/learn/render-and-commit)
 - [MDN: react events and state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state)

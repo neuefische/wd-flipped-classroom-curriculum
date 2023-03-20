@@ -180,6 +180,6 @@ Whether to use `immer` or not depends on personal preference and on the complexi
 
 ## Resources
 
-- [React docs: Updating Objects in State](https://beta.reactjs.org/learn/updating-objects-in-state)
+- [React docs: Updating Objects in State](https://react.dev/learn/updating-objects-in-state)
 - [useImmer hook](https://github.com/immerjs/use-immer)
 - [Immer: update patterns](https://immerjs.github.io/immer/update-patterns)

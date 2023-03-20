@@ -73,7 +73,7 @@ String props can be passed using double quotes. All other props must be passed u
 Omitting any attribute will result in the value `undefined` for that prop.
 
 > 📙 Read more about [**Passing props to a Component**
-> in the React Docs](https://beta.reactjs.org/learn/passing-props-to-a-component).
+> in the React Docs](https://react.dev/learn/passing-props-to-a-component).
 
 ### Conditional Rendering
 
@@ -111,11 +111,11 @@ function UserCard({ name, isFavorite }) {
 ```
 
 > 📙 Read more about [**Conditional Rendering**
-> in the React Docs](https://beta.reactjs.org/learn/conditional-rendering).
+> in the React Docs](https://react.dev/learn/conditional-rendering).
 
 ---
 
 ## Resources
 
-- [Passing props to a Component in the React Docs](https://beta.reactjs.org/learn/passing-props-to-a-component)
-- [Conditional Rendering in the React Docs](https://beta.reactjs.org/learn/conditional-rendering)
+- [Passing props to a Component in the React Docs](https://react.dev/learn/passing-props-to-a-component)
+- [Conditional Rendering in the React Docs](https://react.dev/learn/conditional-rendering)

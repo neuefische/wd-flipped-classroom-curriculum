@@ -1,11 +1,11 @@
-> __Warning__  
+> **Warning**  
 > This document is only for internal use. You (as a coach) do not have to read this to teach this session. ❤️
 
 # Rationale: Why We Are Not Building Our Own Local Storage Hook
 
 Or: Why none of the simple solutions are ideal…
 
-> 📙 _Please read [**Synchronizing with Effects**](https://beta.reactjs.org/learn/synchronizing-with-effects) and [**You Might Not Need an Effect**](https://beta.reactjs.org/learn/you-might-not-need-an-effect) in the React docs before reading this rationale._
+> 📙 _Please read [**Synchronizing with Effects**](https://react.dev/learn/synchronizing-with-effects) and [**You Might Not Need an Effect**](https://react.dev/learn/you-might-not-need-an-effect) in the React docs before reading this rationale._
 
 Custom React hook solutions for local storage have two main characteristics:
 
