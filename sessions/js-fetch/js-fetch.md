@@ -191,10 +191,10 @@ Any production `fetch` call should be inside a `try...catch` block:
 async function fetchSomething() {
   try {
     const response = await fetch("/bad/url/oops");
-    const data = await response.json();
 
     if (response.ok) {
       // Success (Good Response)
+      const data = await response.json();
       return data;
     } else {
       // Failure (Bad Response)
