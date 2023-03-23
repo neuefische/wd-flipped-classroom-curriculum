@@ -35,7 +35,7 @@ Wochenablauf
 
 ## Wochenablauf während der Capstone-Phase
 
-- **Keine verpflichtenden Sessions!** Evtl. kleine, **freiwillige Workshops** zu Themen, die für euere Capstone-Projekte interessant sind.
+- **Keine verpflichtenden Sessions!** Evtl. kleine, **freiwillige Workshops** zu Themen, die für eure Capstone-Projekte interessant sind.
 - **[!!hier Wochentag eintragen]:** Sprint Planning / User Stories ausformulieren (1 Woche = 1 Sprint)
 - **[!!hier Wochentag, Uhrzeit eintragen]:** Public Sprint Review
 - **Tipp:** Macht abends und am Wochenende **Pausen**
@@ -50,10 +50,10 @@ Workflow
 
 <!-- _class: small -->
 
-## Wokflow während der Capstone-Phase
+## Workflow während der Capstone-Phase
 
 - User Stories, Pull Requests, Code Reviews, Quality Assurance
-- **Agiles Arbeiten**: Kanban Board und User Stories sind nicht nur Pflicht sondern Helfen.
+- **Agiles Arbeiten**: Kanban Board und User Stories sind nicht nur Pflicht, sondern Helfen.
 - **Plant genügend Zeit für Organisatorisches ein!**
 
 ---
@@ -81,10 +81,10 @@ Workflow
 
 - Arbeitet ihr an der User Story? Dann **In Progress** des Boards ablegen.
 - Auf den `main Branch` wechseln und `git pull` ausführen.
-- Neuen Branch für das neue Feature erstellen, z.B. `fetaure/navigation`.
+- Neuen Branch für das neue Feature erstellen, z.B. `feature/navigation`.
 - Coden und möglichst viele kleine Commits machen.
 - `Tasks` aus der User Story abarbeiten.
-- `Acceptance Criterias` aus der User Story prüfen.
+- `Acceptance Criteria` aus der User Story prüfen.
 
 ---
 
@@ -105,7 +105,7 @@ Workflow
 
 ## Pull Requests & Code Reviews **#code-reviews**
 
-- Wenn ihr einen PR reviewed reagiert bitte wie folgt auf den Post:
+- Wenn ihr einen PR reviewed, reagiert bitte wie folgt auf den Post:
   - in review: 👀
   - changes requested: ✔️
   - approved: ✅
@@ -137,7 +137,7 @@ Workflow
 
 ## Quality Assurance **#quality-assurance**
 
-- Bei Änderungen geht der Pull Request **erneut** durch die "Sationen" **#code-reviews** und **#quality-assurance**
+- Bei Änderungen geht der Pull Request **erneut** durch die "Stationen" **#code-reviews** und **#quality-assurance**
 - **Der Merge darf erst NACH der Quality Assurance** ausgeführt werden! Ausnahme: bei einem Pull Request, bei dem eine Quality Assurance nicht sinnvoll ist, z.B. Code Refactoring.
 - Approved?! Dann in die Spalte **Done** des Boards ablegen.
 
@@ -160,7 +160,7 @@ Workflow
 - Fragt bei anderen Studierenden im Kurs nach.
 - Im **[GitHub Discussions Board](https://github.com/orgs/neuefische/discussions)** nach ähnlichen Fragen suchen.
 - Im **[GitHub Discussions Board](https://github.com/orgs/neuefische/discussions)** eine Frage stellen:
-  - Formuliert eure Frage aus und orientiert euch dabei an folgendes Handout: **[How to ask good questions?](https://github.com/neuefische/questions/wiki/How-to-ask-good-questions)**
+  - Formuliert eure Frage aus und orientiert euch dabei an folgendem Handout: **[How to ask good questions?](https://github.com/neuefische/questions/wiki/How-to-ask-good-questions)**
     Immer enthalten sein sollte:
   - **Link** zum/r betroffenen Branch / Datei / Zeile.
   - **Erklärung**, was ihr bereits versucht habt.
@@ -178,9 +178,9 @@ Capstone Tipps
 
 ## Capstone Project Tipps
 
-- **Code Quality** ist wichtiger, als die Anzahl der Features.
+- **Code Quality** ist wichtiger als die Anzahl der Features.
 - **KISS** _Keep It Simple Stupid_ z.B. keine unnötigen Technologien einbauen.
-- **CRUD operations** orgientiert euch an:
+- **CRUD operations** orientiert euch an:
   - **create** hinzufügen
   - **read** anzeigen
   - **update** editieren
