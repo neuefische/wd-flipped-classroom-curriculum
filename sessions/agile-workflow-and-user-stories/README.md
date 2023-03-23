@@ -49,7 +49,7 @@ How to organize a team in Software Development using agile / Scrum.
 
 ## Information for Slides: Session Guide
 
-- start slides with `npm run start` and on your localhost navigate to folder `agile&ScrumSlides`.
+- Start slides with `npm run start`, open your localhost and navigate to the folder `agile&ScrumSlides`.
 
 > ❗ If students already had the **external Agile Workshop,** the SCRUM Intro: Slides are only needed for a quick recap of the agile content:
 > ask students to recap. Show the slides and let them explain
@@ -66,11 +66,11 @@ How to organize a team in Software Development using agile / Scrum.
 
 ### MVP
 
-- [ ] explain **minimum viable product**
+- [ ] Explain **minimum viable product**
 
 Because the agile methodology is built on validating and iterating products based on user input, the MVP plays a central role in agile development.
 
-- [ ] It is a product, that is good enough to solve the core problem of the user, and only has functions for that.
+- [ ] It is a product that is good enough to solve the user's core problem and has functions only for that.
 - [ ] The team gets feedback from users/costumers fast and can adopt changes before it gets expensive.
 - [ ] Early feedback means learning early about needs.
 - [ ] It's small. What matters is the very core of your app.
@@ -86,9 +86,7 @@ It's a serviceable product with minimal features, created effortlessly and used 
 
 ### Backlog
 
-- [ ] talk about backlogs
-
-There are two backlocks to consider: Product Backlog and Sprint backlog.
+- [ ] Talk about the two backlogs to consider: Product Backlog and Sprint Backlog.
 
 - [ ] **Product Backlog**: The Product Owner owns the product backlog. There are items listed, that need to be considered during development of the product. It is prioritized, and contains user stories, anybody can contribute. The Product Owner keeps track and knows which items need to be done soon. The priorities and content are always open for changes.
 
@@ -102,7 +100,7 @@ In scrum, the dev team has refinement events regularly during the week, to devel
 
 ### A developer's week (example)
 
-- [ ] explain very short a week of a developer.
+- [ ] Explain very briefly a week of a developer.
 
 Your team is diverse and has different professions and knowledge.
 To gather all information and keep everyone involved in the process, the scrum team has a lot of events to join. This is necessary to enable everyone to do their job properly. The meeting time should be 10-15% of your week, but often increases, depending on teams.
@@ -111,16 +109,16 @@ To gather all information and keep everyone involved in the process, the scrum t
 
 ### User story
 
-Defining a expected user value for our product, **user stories** allows us to define requirements and tasks to be followed by the team.
+Defining an expected user value for our product, **user stories** allow us to define requirements and tasks to be followed by the team.
 
-- [ ] Goal: You need a reason for the user, why he/she might need the feature. The reason shall never be 'because its possible.
+- [ ] Goal: You need a reason for the user, why he/she might need the feature. The reason shall never be 'because it's possible'.
 
 The structure is fix:
 
 ```
 **Value proposition**
 
-- As a User ... (User, Author, logged in User...)
+- As a user ... (user, author, logged in user...)
 - I want to ...
 - in order to ...
 ```
@@ -130,20 +128,20 @@ The structure is fix:
 ```
 As a user,
 I want to view all Jokes,
-to decide which one is funny.
+in order to decide which one is funny.
 ```
 
 ```
 As a user,
 I want to add a joke to this list,
-to remember jokes I just learned.
+in order to remember jokes I just learned.
 
 ```
 
 ```
-As an mobile bank customer,
-I want to see balance on my accounts,
-So that I can make better informed decisions about my spending
+As a mobile bank customer,
+I want to see the balance on my accounts,
+in order to make better informed decisions about my spending.
 ```
 
 To write good user stories, make sure that it fits certain criteria.
@@ -176,7 +174,7 @@ User stories need to be short. Stories that require multiple sprints to be com
 
 - [ ] T: Testable
 
-Finally, the user story needs to have an achievable goal that can be tested to see if it delivers on user expectations.
+Finally, the user story needs to have an achievable goal that can be tested to see if it meets user expectations.
 
 ### Write a full user story
 
@@ -185,7 +183,7 @@ The structure is fixed!
 - Title
   - Short and precise
 - Value proposition
-  - As a User... (User, Author, logged in User...)
+  - As a user... (user, author, logged in user...)
   - I want to...
   - in order to ...
 - Description
@@ -202,7 +200,6 @@ The structure is fixed!
   - From developers - for developers:
     - Checkbox, try to sort it as you work on it
     - List Components
-    - Storybook
     - Tests
     - Add to app
     - Global styles
@@ -225,7 +222,7 @@ Title : List of jokes
 
 Value proposition
 
-- As a User user
+- As a user
 - I want to view a list of jokes
 - in order to decide which one is funny
 
@@ -244,7 +241,6 @@ Tasks
 
 - [ ] Create branch
 - [ ] Write tests
-- [ ] Update Storybook
 - [ ] Generate dummy-data
 - [ ] If it's the first user story: Global styles
 ```
@@ -258,7 +254,7 @@ Tasks
 - [ ] Provide the [handout](agile-workflow-and-user-stories.md) and the
       [challenges](challenges-agile-workflow-and-user-stories.md) to the students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
+- [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
   - Meet again 30 minutes before lunch break in the class room.
   - They can ask the coaches for help at any time.
