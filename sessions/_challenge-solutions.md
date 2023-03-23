@@ -139,8 +139,9 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 **React with Arrays**
 
-- [Fruits](https://codesandbox.io/s/react-with-arrays-fruits-solution-rl4si5)
+- [Fruits](https://codesandbox.io/s/react-with-arrays-fruits-solution-forked-92qxqy)
 - [Users](https://codesandbox.io/s/react-with-arrays-users-solution-h69kw4)
+- [Journal](https://codesandbox.io/s/quizzical-babbage-x59u31?file=/src/components/EntriesSection/index.js)
 
 **React State 2**
 
