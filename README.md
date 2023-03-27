@@ -82,12 +82,12 @@ ones more challenging than afternoon sessions.
 | 35  | [Backend MongoDB](sessions/backend-mongodb)                                                                            | ✅     |
 |     | [Backend Read](sessions/backend-read)                                                                                  | ✅     |
 | 36  | [Backend Create](sessions/backend-create)                                                                              | ✅     |
-|     | Backend Update and Delete ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/227))                     | 💭     |
-| 37  | Backend MongoDB Atlas ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/228)) (begin Recap Project 6) | 💭     |
-|     | **Recap Project 6** ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/229))                           | 💭     |
+|     | Backend Update and Delete ([PR](https://github.com/neuefische/web-curriculum/pull/227))                     | 💭     |
+| 37  | Backend MongoDB Atlas ([PR](https://github.com/neuefische/web-curriculum/pull/228)) (begin Recap Project 6) | 💭     |
+|     | **Recap Project 6** ([PR](https://github.com/neuefische/web-curriculum/pull/229))                           | 💭     |
 | 38  | _Design Workshop_                                                                                                      |        |
 |     | _Design Workshop_                                                                                                      |        |
-| 39  | Agile Workflow and User Stories ([PR](https://github.com/neuefische/web-curriculum-new-format/pull/230))               | 💭     |
+| 39  | Agile Workflow and User Stories ([PR](https://github.com/neuefische/web-curriculum/pull/230))               | 💭     |
 |     | _Agile Workshop_                                                                                                       |        |
 | 40  | _Capstone Forum_                                                                                                       |        |
 |     | _Capstone Forum_                                                                                                       |        |
