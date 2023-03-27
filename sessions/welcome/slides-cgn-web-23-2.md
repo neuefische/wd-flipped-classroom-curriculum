@@ -27,11 +27,11 @@ Student Service
 
 <!-- class: image-profile -->
 
-## Sina Stulpe
+## Anne Buss
 
 Candidate Success Management
 
-![Foto](images/sina_stulpe.jpg)
+![Foto](images/anne_buss.jpg)
 
 ---
 
@@ -235,6 +235,12 @@ Moving from the Fear Zone to the Growth Zone
 - Mehr **programmieren** als lesen
 - Findet euch in Gruppen zusammen und **unterstützt euch**
 - Versucht Probleme **selbstständig** zu lösen
+
+---
+
+<!-- _class: image-center -->
+
+![w:700](images/learning-pyramid.png)
 
 ---
 
