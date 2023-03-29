@@ -82,12 +82,12 @@ ones more challenging than afternoon sessions.
 | 35  | [Backend MongoDB](sessions/backend-mongodb)                                                                            | ✅     |
 |     | [Backend Read](sessions/backend-read)                                                                                  | ✅     |
 | 36  | [Backend Create](sessions/backend-create)                                                                              | ✅     |
-|     | Backend Update and Delete              																																						     | ✅     |
-| 37  | Backend MongoDB Atlas 																																																 | ✅     |
-|     | **Recap Project 6**                   																																				         | ✅     |
+|     | [Backend Update and Delete](sessions/backend-update-and-delete)                    																																						     | ✅     |
+| 37  | [Backend MongoDB Atlas](sessions/backend-mongodb-atlas)       																																																 | ✅     |
+|     | [**Recap Project 6**](sessions/recap-project-6)                         																																				         | ✅     |
 | 38  | _Design Workshop_            	                                                                                         |        |
 |     | _Design Workshop_                                                                                                      |        |
-| 39  | Agile Workflow and User Stories 																																				               | ✅     |
+| 39  | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories)       																																				               | ✅     |
 |     | _Agile Workshop_                                                                                                       |        |
 | 40  | _Capstone Forum_                                                                                                       |        |
 |     | _Capstone Forum_                                                                                                       |        |
