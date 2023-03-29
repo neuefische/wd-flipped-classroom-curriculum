@@ -9,6 +9,6 @@ Use this [script to set up MongoDB and the local MongoDB Compass app](https://gi
 Create your own local database and query its entries
 [🔗 **following these instructions**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/backend-mongodb/queries?file=/README.md).
 
-## Create Data Structure for Products
+## Bonus: Create Data Structure for Products
 
 Solve this challenge [🔗 **following these instructions**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/backend-mongodb/database-design?file=/README.md).
