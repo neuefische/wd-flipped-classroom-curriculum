@@ -180,7 +180,8 @@ These difficulties might arise because
 - Other coaches are unfamiliar with tools that are planned to be taught
 - Coaches cannot help students with custom challenges
 - Students have not learned a concept / tool that another session relies on
-  The changes to a session need to avoid these issues. As long as this is the case, a coach is more than welcome to use their custom version. They might inform the pool about the changes if necessary (see "Handling deviations from the curriculum").
+
+The changes to a session need to avoid these issues. As long as this is the case, a coach is more than welcome to use their custom version. They might inform the pool about the changes if necessary (see "Handling deviations from the curriculum").
 
 If your planned session does not satisfy this criteria but you are convinced that it would be an improvement to the session, you are highly encouraged to open up a minor / major change issue to implement the idea and share it with the whole team.
 
