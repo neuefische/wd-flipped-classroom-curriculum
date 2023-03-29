@@ -1,6 +1,6 @@
 # Welcome to the Curriculum of the neuefische Web Development Bootcamp!
 
-This is the curriculum of the bootcamp Web Development.
+This is the curriculum of the neuefische Web Development bootcamp.
 
 ## Sessions
 
