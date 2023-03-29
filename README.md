@@ -63,7 +63,7 @@ ones more challenging than afternoon sessions.
 |     | [React State 3](sessions/react-state-3)                                                                                | ✅     |
 | 26  | [React Effects and Fetch](sessions/react-effects-and-fetch)                                                            | ✅     |
 |     | [React with Local Storage](sessions/react-with-local-storage)                                                          | ✅     |
-| 27  | [React Custom Hooks](sessions/react-custom-hooks) (begin Recap Project 4)                                              | ✅     |
+| 27  | [React Custom Hooks](sessions/react-custom-hooks) (start Recap Project 4)                                              | ✅     |
 |     | [**Recap Project 4**](sessions/recap-project-4)                                                                        | ✅     |
 | 28  | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing)                                                       | ✅     |
 |     | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes)                                                               | ✅     |
@@ -83,7 +83,7 @@ ones more challenging than afternoon sessions.
 |     | [Backend Read](sessions/backend-read)                                                                                  | ✅     |
 | 36  | [Backend Create](sessions/backend-create)                                                                              | ✅     |
 |     | [Backend Update and Delete](sessions/backend-update-and-delete)                    																																						     | ✅     |
-| 37  | [Backend MongoDB Atlas](sessions/backend-mongodb-atlas)       																																																 | ✅     |
+| 37  | [Backend MongoDB Atlas](sessions/backend-mongodb-atlas)(start recap project 6)       																																																 | ✅     |
 |     | [**Recap Project 6**](sessions/recap-project-6)                         																																				         | ✅     |
 | 38  | _Design Workshop_            	                                                                                         |        |
 |     | _Design Workshop_                                                                                                      |        |
