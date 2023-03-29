@@ -83,7 +83,7 @@ ones more challenging than afternoon sessions.
 |     | [Backend Read](sessions/backend-read)                                                                                  | ✅     |
 | 36  | [Backend Create](sessions/backend-create)                                                                              | ✅     |
 |     | [Backend Update and Delete](sessions/backend-update-and-delete)                    																																						     | ✅     |
-| 37  | [Backend MongoDB Atlas](sessions/backend-mongodb-atlas)(start recap project 6)       																																																 | ✅     |
+| 37  | [Backend MongoDB Atlas](sessions/backend-mongodb-atlas) (start recap project 6)       																																																 | ✅     |
 |     | [**Recap Project 6**](sessions/recap-project-6)                         																																				         | ✅     |
 | 38  | _Design Workshop_            	                                                                                         |        |
 |     | _Design Workshop_                                                                                                      |        |
