@@ -145,18 +145,18 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 **React State 2**
 
-- [Challenge 1](https://codesandbox.io/s/react-state-2-colored-number-jmgqvx)
-- [Challenge 2](https://codesandbox.io/s/react-state-2-table-reservation-mcrfxn)
-- [Challenge 3](https://codesandbox.io/s/react-state-2-favorite-holiday-form-glckns)
-- [Challenge 4](https://codesandbox.io/s/react-state-2-personal-details-form-87x0s4)
-- [Challenge 5](https://codesandbox.io/s/react-state-2-fix-triple-counter-xd05od)
-- [Challenge 6](https://codesandbox.io/s/react-state-2-bonus-fix-conditionally-rendered-wpr3qc)
+- [Colored Number](https://codesandbox.io/s/react-state-2-colored-number-jmgqvx)
+- [Table Reservation](https://codesandbox.io/s/react-state-2-table-reservation-mcrfxn)
+- [Favorite Holiday Form](https://codesandbox.io/s/react-state-2-favorite-holiday-form-glckns)
+- [Personal Details Form](https://codesandbox.io/s/react-state-2-personal-details-form-87x0s4)
+- [Fix Triple Counter](https://codesandbox.io/s/react-state-2-fix-triple-counter-xd05od)
+- [Fix Conditionally Rendered](https://codesandbox.io/s/react-state-2-bonus-fix-conditionally-rendered-wpr3qc)
 
 **React State 3**
 
-- [Challenge 1](https://codesandbox.io/s/react-state-3-adding-animals-6x0dqc)
-- [Challenge 2](https://codesandbox.io/s/react-state-3-tags-mmwudc)
-- [Challenge 4](https://codesandbox.io/s/react-state-3-challenge-4-hzuejh)
+- [Adding Animals](https://codesandbox.io/s/react-state-3-adding-animals-6x0dqc)
+- [Tags](https://codesandbox.io/s/react-state-3-tags-mmwudc)
+- [Journal App](https://codesandbox.io/s/react-state-3-challenge-4-hzuejh)
 
 ## Week 6
 
