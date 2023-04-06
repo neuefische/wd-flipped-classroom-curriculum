@@ -181,7 +181,7 @@ How can we create a persistent database (locally on our computer), in which we c
   _id: {
     $oid: "63a43dcfd67b0ad32f43c867",
   },
-  joke: "How do you organize an astronomer's party? You planet.",
+  "joke": "How do you organize an astronomer's party? You planet."
 }
 ```
 
