@@ -27,11 +27,11 @@ Student Service
 
 <!-- class: image-profile -->
 
-## Anne Buss
+## Sina Stulpe
 
 Candidate Success Management
 
-![Foto](images/anne_buss.jpg)
+![Foto](images/sina_stulpe.jpg)
 
 ---
 
@@ -43,11 +43,11 @@ Partner Management
 
 ---
 
-## Gregor Adams
+## Thomas Görldt
 
 Coach
 
-![Foto](images/gregor_adams.jpg)
+![Foto](images/thomas_goerldt.jpg)
 
 ---
 
@@ -56,14 +56,6 @@ Coach
 Coach
 
 ![Foto](images/feline_huhn.jpg)
-
----
-
-## Felix Kirchhoff
-
-Coach
-
-![Foto](images/felix_kirchhoff.jpg)
 
 ---
 
@@ -91,21 +83,6 @@ Coach
 
 - Wie heißt du und wo lebst du?
 - Was war dein Hobby als du 15 Jahre alt warst?
-
----
-
-<!-- _class: bullet-points small-->
-
-# _One truth_ One lie
-
-- Nehmt euch **5 Minuten** Zeit, um über euch:
-  1. eine **Lüge** auszudenken
-  2. eine **Wahrheit** auszusuchen
-- Jede/r erzählt die beiden Geschichten
-- Der Rest von uns schätzt welche Geschichte wahr ist:
-  - Geschichte 1 ist wahr ✅
-  - Geschichte 2 ist wahr ⛔️
-- Danach wird aufgelöst - Gewinne gibt es keine 🙂
 
 ---
 
@@ -259,6 +236,21 @@ Moving from the Fear Zone to the Growth Zone
 <!-- _class: big-headline granite-->
 
 # _Bootcamp_ Remote Work
+
+---
+
+<!-- _class: bullet-points small-->
+
+# _One truth_ One lie
+
+- Nehmt euch **5 Minuten** Zeit, um über euch:
+  1. eine **Lüge** auszudenken
+  2. eine **Wahrheit** auszusuchen
+- Jede/r erzählt die beiden Geschichten
+- Der Rest von uns schätzt welche Geschichte wahr ist:
+  - Geschichte 1 ist wahr ✅
+  - Geschichte 2 ist wahr ⛔️
+- Danach wird aufgelöst - Gewinne gibt es keine 🙂
 
 ---
 
