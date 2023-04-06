@@ -178,8 +178,8 @@ How can we create a persistent database (locally on our computer), in which we c
  * Paste one or more documents here
  */
 {
-  _id: {
-    $oid: "63a43dcfd67b0ad32f43c867",
+  "_id": {
+    "$oid": "63a43dcfd67b0ad32f43c867"
   },
   "joke": "How do you organize an astronomer's party? You planet."
 }
@@ -273,7 +273,7 @@ db.jokes.insertOne({
 
 - [ ] Show that the database responds whether it worked and with the corresponding ObjectId:
 
-```json
+```
 { acknowledged: true,
   insertedId: ObjectId("63a45b40aacec5187ca3948d") }
 ```
