@@ -96,9 +96,10 @@ Creating a connection between your application and the cloud database in MongoDB
 
 1. In the root of your project, create a new file `.env`.
 2. In the `.env` file, insert a variable called `MONGODB_URI` and declare it with the MongoDB Atlas URI you have created when setting up your connection above.
-   1. The `.env` should look like this: `MONGODB_URI=mongodb+srv://paul:<password>@cluster0.mu12zrz.mongodb.net/?retryWrites=true&w=majority`.
+   1. The `.env` should look like this: `MONGODB_URI=mongodb+srv://paul:<password>@cluster0.mu12zrz.mongodb.net/<database-name>?retryWrites=true&w=majority`.
    2. Replace the `<password>` part with the password for your database user (in this case, the user is called "paul").
-   3. Note that you have to remove the brackets `<>` around the password as well.
+   3. Replace the `<database-name>` part with the name of your database (also remove the brackets `<>`). If the database is not existing in MongoDB Atlas, it will be created automatically.
+   4. Note that you have to remove the brackets `<>` around the password as well.
 3. Add `.env` to the `.gitignore` file if not already included. You can now delete your `.env.local` file.
 
 4. Restart the development server and check your browser: you can now read, create, update and delete entries from your cloud database hosted by MongoDB Atlas! 🎉
