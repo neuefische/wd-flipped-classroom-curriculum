@@ -101,7 +101,7 @@ npm run dev
     - Like `App.js` with `create-react-app`
     - Everything relevant for all pages can be added here
   - [ ] Mention `pages/api` is used to create APIs. We will ignore this for now, but learn about it in a later session
-  - [ ] Mention the students will work with a template for Next.js projects including a `src` folder, like with `create-react-app` (pages will be located under `src/pages`).
+  - [ ] Mention the students will work with a template for Next.js projects
 
 > 💡 We demonstrate `create-next-app` once in this session. The students are going to work with a provided template including setup/config for Styled Components, Jest, SVGR and @next/font. The challenge document contains instructions on how to do that.
 
