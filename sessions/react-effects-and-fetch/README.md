@@ -218,7 +218,7 @@ useEffect(() => {
   > 💡 The API returns a `nextId` property that you can use to set the next id.
 
 ```jsx
-<button type="button" onClick={() => setId({joke.nextId})}>
+<button type="button" onClick={() => setId(joke.nextId)}>
   Next Joke
 </button>
 ```
