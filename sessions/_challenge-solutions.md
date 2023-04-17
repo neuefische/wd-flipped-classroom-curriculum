@@ -204,6 +204,12 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 8
 
+**Backend Basics**
+
+- [Challenge 1: Greeting](https://github.com/Roland-Hufnagel/Backend-Basics-Challenge-1-Greeting)
+- [Challenge 2: Routes](https://github.com/Roland-Hufnagel/Backend-Basics---Challenge-2-Routes)
+- [Challenge 3: Random Responses](https://github.com/Roland-Hufnagel/Backend-Basics---Challenge-3-Random-Response)
+
 **Backend API Routes**
 
 - [Challenge 1: Products](https://github.com/Roland-Hufnagel/Backend-Api-Routes-Products)
