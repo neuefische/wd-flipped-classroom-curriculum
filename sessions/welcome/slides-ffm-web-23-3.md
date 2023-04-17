@@ -35,14 +35,6 @@ Candidate Success Management
 
 ---
 
-## Oliver Fohrmann
-
-Partner Management
-
-![Foto](images/oliver_fohrmann.jpg)
-
----
-
 ## Thomas Görldt
 
 Coach
