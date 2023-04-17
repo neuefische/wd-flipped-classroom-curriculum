@@ -204,6 +204,11 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 8
 
+**Backend API Routes**
+
+-[Challenge 1: Products] (https://github.com/Roland-Hufnagel/Backend-Api-Routes-Products)
+-[Challenge 2: Random Character](https://github.com/Roland-Hufnagel/Backend-Api-Routes-Random-Character)
+
 ## Recap Project 1
 
 ## Recap Project 2
