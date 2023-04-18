@@ -51,7 +51,7 @@ Do you know how to work with nested arrays and objects in state? What do you hav
 - [ ] Explain that the correct term for variables that are "frozen in time" is **immutable**
 - [ ] Explain that this means that we must never change state variables even if we want to update them
 - [ ] Explain that if we have complex values (object and arrays) stored in state we need to make a copy of the state value to pass into the setter function.
-- [ ] Explain that if we want to change something that is nested (like and object in an array) we need to make sure that we create a copy of every nested object/array that we want to change.
+- [ ] Explain that if we want to change something that is nested (like an object in an array) we need to make sure that we create a copy of every nested object/array that we want to change.
 - [ ] Explain that this can be quite cumbersome.
 
 ### Demo
@@ -249,7 +249,7 @@ This demo is a app that shows a list of seasons and episodes from the TV show "A
 
 ### Writing concise update logic with Immer
 
-- [ ] Explain that we can use the [Immer](https://immerjs.github.io/immer/docs/introduction) library to write concise update logic.
+- [ ] Explain that we can use the [Immer](https://immerjs.github.io/immer/) library to write concise update logic.
 - [ ] Explain that it allows us to write code that mutates a draft state, and then Immer will create an immutable update based on the mutations we have made. **Our code looks like we are mutating the state, but Immer is turning it into an immutable update under the hood.**
 - [ ] Immer provides the `use-immer` package that includes Immer bindings for React state.
 - [ ] Install `immer` and `use-immer` with `npm i immer use-immer`.
