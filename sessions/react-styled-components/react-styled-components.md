@@ -183,7 +183,7 @@ Import the `GlobalStyle` component into the `pages/_app.js` file and render it a
 
 ```js
 // pages/_app.js
-import { GlobalStyle } from "../styles";
+import GlobalStyle from "../styles";
 
 export default function App({ Component, pageProps }) {
   return (
