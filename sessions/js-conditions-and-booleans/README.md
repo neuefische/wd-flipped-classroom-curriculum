@@ -33,7 +33,7 @@ condition. In this session we will learn how to do that in JavaScript.
 
 ### Pose a question to be answered by the end of the block!
 
-Computers are electronics. Electronis are build on the principles of zeros and ones that are
+Computers are electronics. Electronics are build on the principles of zeros and ones that are
 combined using circuits that perform logical operations on them (And-Gate, Or-Gate, etc.). How does
 this concept translate into a higher level language like JavaScript?
 
@@ -50,6 +50,22 @@ this concept translate into a higher level language like JavaScript?
 ---
 
 ## Inform: Session Guide
+
+Use this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-start?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-start -i
+```
+
+You can check out the final version of this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-end?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-end -i
+```
 
 ### Conditional programming
 
@@ -202,7 +218,7 @@ More comparison operators will be in the handout.
 
 ### The ternary operator
 
-Sometimes it can be cumbersome to write lengthy `if/else-statments`. Especially if we do small
+Sometimes it can be cumbersome to write lengthy `if/else-statements`. Especially if we do small
 things like changing the value of one variable. Explain that there is a shorter way. We can write a
 conditional `expression`.
 
@@ -225,10 +241,10 @@ if (kidDidHelpCleaningTheKitchen) {
 carrots = carrots + extraCarrots;
 ```
 
-Acknoledge that this looks way more cumbersome than before.
+Acknowledge that this looks way more cumbersome than before.
 
 Explain that `if` is a `statement` and not an `expression`. That means we cannot use it in places
-were we can only use expressions. Like when assigning something to a variable.
+were we can only use expressions (e.g. when assigning something to a variable).
 
 The `ternary` operator can help here. It is best seen in action:
 

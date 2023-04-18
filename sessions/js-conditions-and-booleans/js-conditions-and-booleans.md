@@ -80,7 +80,7 @@ Logical operators combine up to two booleans into a new boolean.
 > 💡 Be careful when using `&&` or `||` with non-boolean values. They actually return one of the
 > original values. That can be useful, but can also quickly lead to confusion. This behaviour is
 > called
-> [short-circut evaluation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation)
+> [short-circuit evaluation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation)
 > and is a more advanced topic.
 >
 > - `"some string" || "some other string"` evaluates to `"some string"`
