@@ -109,11 +109,11 @@ We have a target of 540 teaching minutes (= 9 hours or 12 teaching units (45 min
 | 0:30     | 30               | 16:45 - 17:15 | Recap                    |
 | 1:45     | 105              | 17:15 - 19:00 | Independent project time |
 
-## Extra Sessions
+## Workshops
 
-We use `marp` to create slides for extra sessions which feature the neuefische design.
+We use `marp` to create slides for workshops which feature the neuefische design.
 
-You can find all slides as well as a description how to use them [in the `extra-sessions` folder](/extra-sessions).
+You can find all slides as well as a description how to use them [in the `workshops` folder](/workshops).
 
 ## How to contribute
 
