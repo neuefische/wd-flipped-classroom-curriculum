@@ -69,10 +69,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-
 - [ ] _Briefly_ remind the students of what a REST API is:
   - [ ] REST is short for "Representational State Transfer",
   - [ ] it refers to architectural principles and constraints how to structure your API.
- 
- > 💡 This is a very basic and incomplete explanation. If you're interested in learning more about
-> what makes an API RESTful, you can read about it [here](https://restfulapi.net/).
 
+> 💡 This is a very basic and incomplete explanation. If you're interested in learning more about
+> what makes an API RESTful, you can read about it [here](https://restfulapi.net/).
 
 ### Prepare Backend Database
 
@@ -92,20 +91,9 @@ To start with the database, open MongoDB Compass and if you not have done so in 
 //pages/api/index.js
 
 if (request.method === "POST") {
-  // Here we're distinguishing between our GET and POST method.
   try {
     const jokeData = request.body;
-    // We're declaring jokeData to contain the body of our request sent by our form that we haven't created yet.
-    // The body of our request might contain data in a variety of formats, but is typically an object.
-    const joke = new Joke(jokeData);
-    // Utilizing our Joke scheme, we're creating a new joke.
-    // At this point we're sanitizing our data according to the schema of our Joke model.
-    await joke.save();
-    // We've created a new joke, now we're calling save() to have mongoose insert a new document into our database.
-
-    // The three lines above are functionally the same as:
-    // Joke.create(request.body)
-    // It's just a somewhat less opaque way.
+    await Joke.create(jokeData);
 
     response.status(201).json({ status: "Joke created" });
   } catch (error) {
@@ -120,8 +108,7 @@ if (request.method === "POST") {
 > 💡 Note: Since this is the implementation of just the route, it isn't "doing anything" yet.
 > Imagine building a tunnel that isn't currently connected to a road carrying traffic.
 
-- [ ] Explain that the general concept is quite similar to our `GET` method,
-- [ ] ... but we do require a little more logic, as explained above.
+- [ ] Explain that the general concept is quite similar to our `GET` method
 - [ ] Keep in mind that theoretically anyone could post a joke to your database at this point, since
       there's no authorization process and the route isn't secure. We're choosing to ignore this for
       now.
@@ -129,7 +116,7 @@ if (request.method === "POST") {
 ### Building a form
 
 - [ ] Note that we need to build a form to enable our user to submit a joke.
-- [ ] Create  the file structure `components/JokeForm/index.js` and add a form like this:
+- [ ] Create the file structure `components/JokeForm/index.js` and add a form like this:
 
 ```js
 //components/JokeForm/index.js
@@ -148,6 +135,7 @@ export default function JokeForm() {
 - [ ] Navigate to the `pages/index.js` and render your `JokeForm`:
 
 ```js
+// pages/index.js
 import JokeList from "../components/JokeList";
 import JokeForm from "../components/JokeForm";
 
@@ -165,97 +153,78 @@ export default function HomePage() {
 
 ### Connecting the `JokeForm` to your `POST` API route
 
-- [ ] Switch to `components/JokeForm/index.js` and add a `submit` handler as explained below:
-
-> 💡 Once more, the comments act as an additional guide and need not be shown to the students.
-
-```js
-import useSWR from "swr";
-```
-
-- [ ] Import `useSWR` at the top of your file,
-
-```js
-export default function JokeForm() {
-  const jokes = useSWR("/api/jokes");
-
-  //...
-}
-```
-
-- [ ] declare `jokes` at the very beginning of the body of your `JokeForm` function,
-- [ ] and implement a function that handles the submit event of your form.
+- [ ] Explain that we plan to mutate the jokes state we receive in the JokeList component.
+- [ ] Quickly remind the students about what mutating a state means:
+  - We are changing the content of a state, e.g. adding an item to a list.
+  - Each element in our app that uses this state needs to be updated to reflect this change.
+- [ ] swr provides us with a hook called `useSWRMutation` that does two things:
+  1. Sending a request to a specific endpoint for creating a new entry
+  2. Revalidating the data from this specific endpoint in any place of the app where the endpoint is used
+- [ ] Import the `useSWRMutation` hook in the `JokeForm` component and destructure the `trigger` method.
 
 ```js
-async function handleSubmit(event) {
-  // This function needs to be an async function in order for us to be able to await promises.
-  event.preventDefault();
-  // This prevents the form from resetting too soon.
+import useSWRMutation from "swr/mutation";
 
-  const formData = new FormData(event.target);
-  // Here we're creating a new formData object.
-  // We could declare a const variable form beforehand containing our event.target, as well.
-
-  // We don't necessarily need to choose the FormData/Object.fromEntries() method to extract the values from our form. It's one of many different ways.
-  const jokeData = Object.fromEntries(formData);
-  // We're declaring jokeData and filling it with the values we've extracted from our form via Object.fromEntries().
-
-  const response = await fetch("/api/jokes", {
+async function sendRequest(url, { arg }) {
+  // Our sendRequest function receives url and { arg } as parameters.
+  // This naming convention isn't unintentional. It needs to be named that.
+  // This has to do with how useSWRMutation works.
+  const response = await fetch(url, {
     method: "POST",
-    body: JSON.stringify(jokeData),
+    body: JSON.stringify(arg),
     headers: {
       "Content-Type": "application/json",
     },
   });
-  // Here we're using the API route we've built earlier.
-  // We're declaring a response returning a promise while we're posting to our database.
-  // This promise will eventually resolve.
 
-  // Here we're using fetch and not swr, because swr is for data fetching, and not data mutation.
-  // ... but we can notify swr about data changes using the mutate function! (See below.)
-
-  // Our method is post, the body contains our jokeData JSON, and our header provides additional
-  // information about the data we're sending.
-
-  // Our joke is on its way!
-
-  if (response.ok) {
-    // If our attempt at posting our joke is a success, we proceed here.
-    await response.json();
-    // At this point, the promise of response has resolved.
-    jokes.mutate();
-    // Now we're notifying swr that our data has been mutated, which will trigger a rerender.
-    // If we don't include this line, the page won't automatically refresh and our submitted
-    // joke won't be immediately visible.
-    event.target.reset();
-    // Here we're resetting our form.
-  } else {
+  if (!response.ok) {
     console.error(`Error: ${response.status}`);
   }
 }
+
+export default function JokeForm() {
+	const { trigger } = useSWRMutation(`/api/jokes/`, sendRequest);
+
+	return ...
+}
 ```
 
-[Final stage of the code without comments](https://github.com/neuefische/web-exercises/blob/main/sessions/backend-create/demo-end/components/JokeForm/index.js)
-
-- [ ] Pass the just created `handleSubmit` function to your `form`:
+- [ ] Explain that the hook expects an API endpoint, e.g. `/api/jokes/` and a `sendRequest` function as arguments.
+- [ ] This `sendRequest` function gets called when `trigger` is used and sends a "POST" request to our endpoint.
+- [ ] Implement the code below inside our `JokeForm` component and note that the syntax of the following function is more or less that of a regular form submit function.
 
 ```js
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const jokeData = Object.fromEntries(formData);
+  // Here the jokeData gets passed to trigger, which in turns is passed as 'arg' to sendRequest
+  trigger(jokeData);
+}
+
 return (
   <form onSubmit={handleSubmit}>
-    <label htmlFor="joke-input">Enter a new joke</label>
-    <input type="text" id="joke-input" name="joke" />
-    <button type="submit">Submit</button>
+    {
+      // ...
+    }
   </form>
 );
 ```
 
-- [ ] Show that you can now submit jokes via your `JokeForm`.
+- [ ] Explain that the way this works is the following:
+  - `trigger` informs `useSWRMutation` about `jokeData`
+  - and `useSWRMutation` hands over `jokeData` to `sendRequest`
+  - which accepts it as the `{ arg }` object
+  - and then sends this `{ arg }` object down our API route as part of our response body.
+  - All useSWR hooks that use the same API route `api/jokes/` get notified that they need to update their content.
+- [ ] Show that you can now submit jokes via your `JokeForm` and that the `JokeList` gets updated automatically.
 
-> 💡 Note: In the following _Backend Update and Delete_ session, we're going to reuse the `JokeForm` to update a database entry. However, we will still need to implement [useSWRMutation](https://swr.vercel.app/docs/mutation#useswrmutation) to do so.
+> 💡 Note: In the following _Backend Update and Delete_ session, we're going to reuse the `JokeForm` to update a database entry.
 
 ---
 
-## Process: Challenges
+### Process: Challenges
 
 - [ ] Provide the [handout](backend-create.md) and the [challenges](challenges-backend-create.md) to
       the students
@@ -297,3 +266,7 @@ POST, .mutate()
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
+
+```
+
+```

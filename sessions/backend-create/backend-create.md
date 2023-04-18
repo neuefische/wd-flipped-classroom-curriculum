@@ -42,24 +42,14 @@ We use CRUD operations and HTTP methods with a REST API.
 
 ## Create with Mongoose
 
-To create a new entry in your database, you need to define a `POST` API route:
+To create a new entry in your database, you need to define a `POST` API route and call the `.create` method on our Joke model:
 
 ```js
 // pages/api/index.js
 if (request.method === "POST") {
   try {
     const jokeData = request.body;
-    // We're declaring jokeData to contain the body of our request sent by our form that we haven't created yet.
-    // The body of our request might contain data in a variety of formats, but is typically an object.
-    const joke = new Joke(jokeData);
-    // Utilizing our Joke scheme, we're creating a new joke.
-    // At this point we're sanitizing our data according to the schema of our Joke model.
-    await joke.save();
-    // We've created a new joke, now we're calling save() to have mongoose insert a new document into our database.
-
-    // The three lines above are functionally the same as:
-    // Joke.create(request.body)
-    // It's just a somewhat less opaque way.
+    await Joke.create(jokeData);
 
     response.status(201).json({ status: "Joke created" });
   } catch (error) {
@@ -71,24 +61,41 @@ if (request.method === "POST") {
 
 Note that the `POST` route alone does not create a new entry in your database: you need to tell your form's submit handler to use this route.
 
-> 📙 Read more in the [mongoose docs](https://mongoosejs.com/docs/models.html#constructing-documents), but don't get confused: they suggest `.create` and `.insertMany()`.
+> 📙 Read more in the [mongoose docs](https://mongoosejs.com/docs/models.html#constructing-documents)
 
 ---
 
-## `POST` using `fetch`
+## `POST` using `useSWRMutation`
 
-To connect the form submit handler with your `POST` API route, you need to call `fetch()` with two arguments: the `POST API route` and an `options` object.
+Since we are mutating our jokes data array, we can [use the `useSWRMutation` hook](https://swr.vercel.app/docs/mutation#useswrmutation) to send a `POST` request to the backend. This ensures that all other `useSWR` hooks that use the same API endpoint are updated automatically after the new joke is created.
 
-In this object, you set the HTTP method to `POST` (instead of the default `GET`) and specify the value for the `body` key (= the data you want to send).
+`useSWRMutation` expects two arguments:
+
+- An url, e.g. the API Endpoint: `/api/jokes`
+- A function that sends the `POST` request called `sendRequest` that you write yourself. It is a wrapper function for `fetch` and will be called whenever you call `trigger()`.
+
+`sendRequest` receives the data as the destructured `{ arg }` object. This is passed as the `request.body` of the request to our API endpoint.
 
 > 💡 The `body` key represent the `request.body` in the API route above: this is where the actual data is passed from frontend to the API (and then to the backend aka database).
 
 ```js
-import useSWR from "swr";
+import useSWRMutation from "swr/mutation";
+
+function sendRequest(url, { arg }) {
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(arg),
+  });
+
+  const { status } = await response.json();
+  console.log(status);
+}
 
 export default function JokeForm() {
-  const jokes = useSWR("/api/jokes");
-  // We're declaring jokes here because we call the .mutate() method below.
+  const { trigger } = useSWRMutation("/api/jokes", sendRequest);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -97,53 +104,26 @@ export default function JokeForm() {
     const jokeData = Object.fromEntries(formData);
     // We're declaring jokeData and filling it with the values we've extracted from our form via Object.fromEntries().
 
-    const response = await fetch("/api/jokes", {
-      method: "POST",
-      body: JSON.stringify(jokeData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    // Here we're using the API route we've built earlier.
-    // We're declaring a response returning a promise while we're posting to our database.
-
-    // Here we're using fetch and not swr, because swr is for data fetching, and not data mutation.
-    // ... but we can notify swr about data changes using the mutate function! (See below.)
-
-    // Our method is post, the body contains our jokeData JSON, and our header provides additional information about the data we're sending.
-
-    // Our joke is on its way!
-
-    if (response.ok) {
-      // If our attempt at posting our joke is a success, we proceed here.
-      await response.json();
-      // At this point, the promise of response has resolved.
-      jokes.mutate();
-      // Now we're notifying swr that our data has been mutated, which will trigger a rerender.
-      // If we don't include this line, the page won't automatically refresh and our submitted joke won't be immediately visible.
-      event.target.reset();
-    } else {
-      console.error(`Error: ${response.status}`);
-    }
+    trigger(jokeData);
+		// here the trigger does two things:
+	  // 1. trigger sendRequest, pass jokeData as { arg } to it
+    // 2. inform all useSWR hooks that subscribed to '/api/jokes/' to revalidate their data
   }
 }
 ```
 
----
+Summary:
 
-## Revalidation with `swr`'s `mutate()` function
+- `trigger` informs `useSWRMutation` about `jokeData`,
+- `useSWRMutation` hands over `jokeData` to `sendRequest`
+- which accepts it as the `{ arg }` object
+- and then sends this `{ arg }` object down your API route as part of your response body.
+- Our API endpoint then creates a new Joke document by calling `Joke.create(jokeData)` with the received `jokeData`.
+- In the meantime, `useSWRMutation` triggers a revalidation of all `useSWR` hooks using the `/api/jokes/` endpoint.
 
-In the example above, you've already seen how to use `jokes.mutate()`.
-
-This is why we use it:
-
-- it marks the data as expired and triggers a refetch (in the above example, `api/jokes` is fetched again)
-- `swr` updates the cache automatically (i.e. faster page reloads and the correct data is displayed)
-
-> 📙 [Read more in the documentation](https://swr.vercel.app/docs/mutation#revalidation).
-
----
+> 📙 `useSWRMutation` has a lot more functionality for handling errors, optimistic updates and much more. Have a look at the [ swr docs](https://swr.vercel.app/docs/mutation#useswrmutation) for more information.
 
 ## Resources
 
 - [What is REST?](https://restfulapi.net/)
+- [swr docs](https://swr.vercel.app/docs/mutation#useswrmutation).

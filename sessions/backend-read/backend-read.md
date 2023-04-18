@@ -69,7 +69,7 @@ We use this Schema to create a Model that we can use to interact with the databa
 Note the difference between _Schema_ and _Model_
 
 - the _Schema_ describes the structure of a document
-- the _model_ gives us a programming interface for interacting with the database (liking searching the database, updating, etc.)
+- the _model_ gives us a programming interface for interacting with the database (like searching the database, updating, etc.)
 
 ### Writing a Schema
 

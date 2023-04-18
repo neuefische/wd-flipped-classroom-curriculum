@@ -69,82 +69,79 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-d
 ### CRUD: The U and D
 
 - [ ] Remind the students that they have successfully created `READ` and `POST` API routes.
-- [ ] Explain that we need two additional CRUD operations to reach full functionality.
-- [ ] Showcase that, so far, we had to update and delete our data manually via _mongoDB Compass_.
+- [ ] Explain that we need two additional CRUD operations to reach full functionality: `Update` and `Delete`
+- [ ] Highlight that the UI components for handling these two cases have already been created.
+- [ ] Give the students a quick overview about the new code.
 
+### Reduce, reuse, recycle - reusing our JokeForm component
+
+- [ ] We've chosen to reuse our `JokeForm` component for editing jokes as part of the `Joke` component
+- [ ] we've **already refactored the code** for reusing the form.
+
+#### JokeForm as a Dumb Component
+
+- [ ] Navigate to the `index.js` of the `JokeForm` component.
+- [ ] Show the students that all functional logic has been removed from this component.
+- [ ] Instead, three props are passed to the component: `onSubmit`, `value`, and `isEditMode`
+- [ ] Highlight, that we can now specify the behavior of this Form via these props and that such a component is called "dumb", since it has no internal logic.
+
+#### JokeForm for creating Jokes
+
+- [ ] Navigate to the `pages/index.js` page file.
+- [ ] Highlight that the functionality for creating a joke has been moved here:
+
+  - the `sendRequest` function
+  - the `useSWRMutation` hook
+  - the `handleSubmit` function which is passed to our generalized `JokeForm`
+
+- [ ] Point out that the form will behave just like in the previous session, only that the logic is defined in a different place.
+
+#### JokeForm for editing Jokes
+
+- [ ] Navigate to the `index.js` of the `Joke` component.
+- [ ] Give a quick overview over the added content of this component:
+
+  - Two buttons for editing and deleting jokes.
+  - Two handler functions `handleEdit` and `handleDelete`
+  - The `JokeForm` component receiving the `handleEdit` function as `onSubmit` and the current joke as the `value` prop.
+  - A local state `isEditMode` which toggles the rendering of the `JokeForm`.
+
+- [ ] Highlight that we can now program a different behavior for our `JokeForm` in the `handleEdit` function which will be triggered if this instance of the `JokeForm` is submitted.
+
+### Implementing the Update API Endpoint
+
+- [ ] Navigate to the `/pages/api/[id].js` file.
 - [ ] Implement the code below as part of a `PUT` HTTP request method in your API routes.
-- [ ] The code is part of the `handler` function.
-- [ ] Feel free to implement it just below your `GET` method.
 - [ ] The comments included in the code are an additional guide and need not be shown to the students.
 
 ```js
 // /api/jokes/[id].js
 
 if (request.method === "PUT") {
-  // If our request method is PUT ...
-  const jokeToUpdate = await Joke.findByIdAndUpdate(id, {
+  await Joke.findByIdAndUpdate(id, {
     $set: request.body,
   });
   // ... find our joke by its ID and update the content that is part of the request body!
-  response.status(200).json(jokeToUpdate);
+  response.status(200).json({ status: "Joke updated!" });
   // If successful, we'll receive an OK status code.
 }
 ```
-
-[Final stage of the code without comments](https://github.com/neuefische/web-exercises/blob/main/sessions/backend-update-and-delete/demo-end/pages/api/jokes/[id].js)
 
 - [ ] Optional: Explain the difference between `PUT` and `PATCH`.
 
   > 💡 Note: `PUT` and `PATCH` are semantically different. According to convention, we would use `PUT` to update our entire document, and `PATCH` to update individual fields. In our demo, we're using `PUT`, simply because we only ever have _one_ field to update.
 
-### Reduce, reuse, recycle - reusing our JokeForm component
+- [ ] Now navigate back to the `/components/Joke/index.js` to connect the UI to our new API endpoint.
+- [ ] Since updating an existing joke means we are going to mutate this joke data, we are going to use the `userSWRMutation` hook again.
 
-- [ ] Explain that we want to reuse our `JokeForm` component.
-- [ ] Point out that, structurally, there are several ways to provide a user interface to edit data, such as inline-editing, etc.
-- [ ] We've chosen to reuse our `JokeForm` component as part of the `Joke` component and we've **already made all necessary preparations** like reusing the form and lifting up the state, etc. In short: we already refactored the code in the `Joke` component. All that's left to do here is introduce the students to the changes that were made behind the scenes.
-- [ ] Navigate to the `index.js` of the `Joke` component.
-- [ ] Show the students that we've had to import the `JokeForm` component as part of the refactoring process and that the form is conditionally rendered in the return statement.
-- [ ] There's a local state which toggles between showing and not showing the `JokeForm`.
-- [ ] There are two buttons, one for editing the joke and one for deleting the joke.
-- [ ] Both buttons receive their `onClick` function via props, but currently they're not doing anything. We are going to implement those functions ourselves in a minute.
-
-### Preparing connections
-
-- [ ] Point out that now we're going to implement the logic required to make the `Joke` component functional.
-- [ ] Navigate to the `JokeDetailsPage` in `pages\[id].js`.
-- [ ] Show the students around and point out that there are two functions already declared: `handleEditJoke` and `handleDeleteJoke`. These are the two missing functions we need to implement.
-- [ ] Further point out that we've already imported `useRouter` and destructured all necessary attributes from the `router` object.
-- [ ] Explain that we need an `id` to identify the joke we want to update and that we will be using `push` to route to the overview of jokes after successfully updating the joke.
-- [ ] But first we need to import `useSWRMutation` from `swr/mutation` at the top of our file.
-- [ ] Explain why we're using `useSWRMutation`:
-
-  - [ ] whenever we save to the database we want to manually trigger another `GET` request,
-  - [ ] that `GET` request is immediately going to display our updated jokes within our `JokeList` component.
-
-- [ ] Import the `useSWRMutation` hook.
+- [ ] Implement the code below.
 
 ```js
+// /components/Joke/index.js
+
 import useSWRMutation from "swr/mutation";
-```
-
-- [ ] Implement the code below below the router declaration in your `JokeDetailsPage` function.
-
-```js
-// pages/[id].js
-
-const { trigger, isMutating } = useSWRMutation(`/api/jokes/${id}`, sendRequest);
-```
-
-- [ ] Explain that we're destructuring `trigger` and `isMutating` from `useSWRMutation` while passing our `/api/jokes/${id}` API endpoint and a `sendRequest` function as arguments into it.
-- [ ] Point out that we now need to write our `sendRequest` function.
-
-```js
-// pages/[id].js
 
 async function sendRequest(url, { arg }) {
-  // Our sendRequest function expects url and { arg } as parameters.
-  // This naming convention isn't unintentional. It needs to be named that.
-  // This has to do with how useSWRMutation works.
   const response = await fetch(url, {
     method: "PUT",
     body: JSON.stringify(arg),
@@ -152,88 +149,62 @@ async function sendRequest(url, { arg }) {
       "Content-Type": "application/json",
     },
   });
-  // This syntax follows that of any regular HTTP response.
-  // Note the arg object that is passed as part of the response body.
-  // We will establish what arg is at a later point during the session.
-  if (response.ok) {
-    await response.json();
-  } else {
+
+  if (!response.ok) {
     console.error(`Error: ${response.status}`);
   }
 }
-```
 
-- [ ] Explain that now that we have established our API route we need to write a function that provides our `sendRequest` function with the `arg` object.
-- [ ] Implement the code below and note that the syntax of the following function is more or less that of a regular form submit function.
+export default function Joke() {
+  //...
 
-```js
-// pages/[id].js
-
-async function handleEditJoke(event) {
-  // We're expecting an event to be passed into our function.
-  event.preventDefault();
-  // As per usual, we're preventing the form from resetting.
-  const formData = new FormData(event.target);
-  const jokeData = Object.fromEntries(formData);
-  // Here we are preparing our updated data to be handed over to our sendRequest function.
-  await trigger(jokeData);
-  // By calling trigger with our jokeData object, we're triggering a cascade of asynchronous activity.
-  push("/");
+  const { trigger, isMutating } = useSWRMutation(
+    `/api/jokes/${id}`,
+    sendRequest
+  );
 }
 ```
 
-- [ ] Explain that the way this works is the following:
+- [ ] Remind the students what `useSWRMutation` is doing:
 
-  - [ ] `trigger` informs `useSWRMutation` about `jokeData`
-  - [ ] then `isMutating` evaluates to `true`
-  - [ ] and `useSWRMutation` hands over `jokeData` to `sendRequest`
-  - [ ] which accepts it as the `{ arg }` object
-  - [ ] and then sends this `{ arg }` object down our API route as part of our response body.
-  - [ ] Now, `isMutating` evaluates to `false`.
+  - The `trigger` function calls `sendRequest` and therefore sending a "PUT" request to our API endpoint updating or mutating our Joke
+  - All `useSWR` hooks using the same api endpoint are revalidated, i.e. they are informed that they need to refetch their data.
+  - The `isMutating` flag behaves in a similar way as the `isLoading` flag from the `useSWR` hook and informs us when a mutation is taking place.
 
-- [ ] Note that once all of this has happened, we're safe to push to our overview.
+- [ ] Implement the code below and note that the syntax of the following function is more or less that of a regular form submit function. Highlight that this function will be called when the `JokeForm` is submitted.
+
+```js
+function handleEdit(event) {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const jokeData = Object.fromEntries(formData);
+
+  trigger(jokeData);
+}
+```
 
 - [ ] Include the following code to establish conditional rendering:
 
 ```js
-// pages/[id].js
-
-if (isMutating) {
-  return <h1>Submitting your changes...</h1>;
+if (isLoading || isMutating) {
+  return <h1>Loading...</h1>;
 }
 ```
 
 - [ ] Explain that while `isMutating` is true, our `JokesDetailPage` will only render our `<h1>` element.
 - [ ] Mention that since we're not working with heavy data loads, `isMutating` only evaluates to `true` very briefly.
-- [ ] Navigate to the `JokeForm` component `index.js`.
-- [ ] Point out that the `{ onSubmit }` prop is already being destructured.
-- [ ] `onSubmit` is called inside the `onSubmit` event of the `StyledForm` and it receives the `event` object of that event.
-- [ ] We further accept the props `value` and `isEditMode` which serve to display the joke and the corresponding button text in case we're editing a joke as opposed to creating a new one.
-
-### What our reusable form looks like on the homepage
-
-- [ ] Navigate to the homepage `index.js` in `pages`.
-- [ ] Show the students around and point out how the same form is being used for a different purpose here, namely for creating new jokes.
-- [ ] The `handleCreateJoke` function collects the data from the input field and passes it on to our internal API endpoint `"/api/jokes` as a `POST` request.
-- [ ] Note how the data first has to be serialized into the JSON format with `JSON.stringify`
-- [ ] The `JokeForm` component then receives the `handleCreateJoke` function via the `onSubmit` prop. We now use the same form for two different purposes: creating and updating jokes.
-- [ ] Point out that we have chosen to give our `joke` state inside the `JokeForm` component an initial value of `""` empty string, just so that the component doesn't change from uncontrolled to being controlled.
-- [ ] Back inside the `JokeForm` reiterate that there's a local state for keeping track of the user's input.
-- [ ] We need that state because it enables the user to change the initial value, a change that resides in the `joke` state variable until the edit/submit button is pressed. Then the current value is passed down to the `onSubmit` function via the event object.
-- [ ] We have finalized the update process. And we'll now move on to the delete process.
 
 ### Implementing the DELETE API route
 
 - [ ] Navigate to `api/jokes/[id].js`.
-- [ ] Include the logic required for our `DELETE` request method (comments are for the coach)
+- [ ] Include the logic required for our `DELETE` request method.
 
 ```js
 if (request.method === "DELETE") {
-  // If our request method is DELETE ...
-  const jokeToDelete = await Joke.findByIdAndDelete(id);
-  // ... declare jokeToDelete to be the joke identified by its id and delete it.
+  await Joke.findByIdAndDelete(id);
   // This line handles the entire deletion process.
-  response.status(200).json(jokeToDelete);
+  response.status(200).json({ message: "success!" });
 }
 ```
 
@@ -241,7 +212,7 @@ if (request.method === "DELETE") {
 - [ ] Complete the `handleDeleteJoke` function with the following:
 
 ```js
-async function handleDeleteJoke() {
+async function handleDelete() {
   await fetch(`/api/jokes/${id}`, {
     method: "DELETE",
   });
