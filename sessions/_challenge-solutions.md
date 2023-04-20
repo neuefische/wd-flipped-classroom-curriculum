@@ -106,6 +106,12 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 - [Challenge 2](https://codesandbox.io/s/adoring-platform-busen3?file=/index.js)
 - [Challenge 3](https://codesandbox.io/s/clever-shape-14mbo8?file=/index.js)
 
+**JS Unit Testing**
+
+- [I like Animals, don't I?](https://codesandbox.io/s/competent-paper-ww7rxx?file=/index.js)
+- [Testing Math Functions](https://codesandbox.io/s/jovial-agnesi-s5h8os?file=/index.test.js)
+- [People](https://codesandbox.io/s/fervent-jasper-5lulxi?file=/index.test.js)
+
 ## Week 5
 
 **Lösungen für die aktuelle Woche\*\***React Basics\*\*
