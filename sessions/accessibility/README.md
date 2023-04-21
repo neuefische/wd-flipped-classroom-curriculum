@@ -77,12 +77,9 @@
 - [ ] Explain that the web is an increasingly important resource (digital government offices, etc.).
 - [ ] Explain that accessibility also improves `inclusivity`.
 - [ ] Explain that it is `unethical to build inaccessible` software.
-  - Sometimes features are inherently inaccessible or the decision to do something inaccessible was
-    made by others: Sometimes the only accessible/ethical thing _you_ can do is `saying no`.
-- [ ] Explain that it increases business potential (better job chances, better hiring chances for
-  employers, SEO, etc.).
-- [ ] You can ask students to watch
-      [this 7 minute video about web accessibility perspectives](https://www.youtube.com/watch?v=3f31oufqFSM).
+- [ ] Sometimes features are inherently inaccessible or the decision to do something inaccessible was made by others: Sometimes the only accessible/ethical thing _you_ can do is `saying no`.
+- [ ] Explain that it increases business potential (better job chances, better hiring chances for employers, SEO, etc.).
+- [ ] You can ask students to watch [this 7 minute video about web accessibility perspectives](https://www.youtube.com/watch?v=3f31oufqFSM).
 
 ### How to WCAG
 
