@@ -2,6 +2,10 @@
 
 This is the curriculum of the neuefische Web Development bootcamp.
 
+## Changelog
+
+In this [changelog](https://github.com/neuefische/web-curriculum/blob/main/changelog.md) we collect all current changes that are made to the curriculum. 
+
 ## Sessions
 
 Sessions are structured not by week - but by days. It does not matter which session is being held on
