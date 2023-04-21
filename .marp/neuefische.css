@@ -89,7 +89,7 @@ section.big-headline h6 {
 }
 
 section.big-headline::before {
-  content: var(--logo_fisch_nemo);
+  content: var(--logo_fisch_white);
   position: fixed;
   right: 65px;
   bottom: 65px;
@@ -103,6 +103,10 @@ section.big-headline.nemo {
 section.big-headline.granite::before,
 section.big-headline.nemo::before {
   content: var(--logo_fisch_white);
+}
+
+section.big-headline.arrow::before {
+  content: var(--pfeil_white);
 }
 
 section.big-headline.granite {
@@ -284,6 +288,38 @@ section.code-small pre {
   font-size: 0.2rem;
 }
 
+section.neutral-list ul {
+  /* list-style: none; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+section.quote {
+  padding-inline: 120px;
+  font-size: 4rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+section.quote p {
+  z-index: 1;
+  padding-top: 150px;
+}
+
+section.quote::before {
+  content: ">>";
+  position: fixed;
+  font-weight: bold;
+  font-size: 24rem;
+  top: 30px;
+  letter-spacing: -50px;
+  left: 65px;
+  z-index: 0;
+  color: #ccc;
+}
+
 pre {
   border: solid 1px #ccc;
   box-shadow: #888 10px 10px 10px;
@@ -381,4 +417,9 @@ code.hljs {
 
 .hljs-strong {
   font-weight: 700;
+}
+
+section.big-headline.headline-small p {
+  font-size: 50pt;
+  line-height: 150%;
 }
