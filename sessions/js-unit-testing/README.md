@@ -102,6 +102,13 @@ Use the following Demo to follow this guide: (clone as described with `ghcd`)
   - [ ] There are `no side effects`
     - [ ] Like writing to the DOM or fetching data
 
+### Introduction to jest
+
+- [ ] Show the [jest website](https://jestjs.io/)
+- [ ] Explain that `jest` is a testing framework for JavaScript code
+  - [ ] it loads and runs all tests
+  - [ ] it shows the test results (successful or failed)
+
 ### Writing a unit test
 
 - [ ] Point out that the `greet` function is `exported`
@@ -128,13 +135,6 @@ test("returns 'Hello Jane!' if called greet('Jane')", () => {
 });
 ```
 
-### Introduction to jest
-
-- [ ] Show the [jest website](https://jestjs.io/)
-- [ ] Explain that `jest` is a testing framework for JavaScript code
-  - [ ] it loads and runs all tests
-  - [ ] it shows the test results (successful or failed)
-
 ### Running tests
 
 - [ ] Open the `package.json` file
@@ -158,31 +158,50 @@ test("returns 'Hello Jane!' if called greet('Jane')", () => {
   - [ ] Write down this criteria in form of tests
   - [ ] Afterwards start writing the code that _provides how_ to solve this requirement
 - [ ] This approach is called `Test Driven Development (TDD)`
+
+Now show how TDD looks in practice. For that, we are going to extend the greet function.
+
 - [ ] State the following acceptance criteria
   - [ ] When the function is called without a name, it should return `"Hello stranger!"`
   - [ ] When the function is called with `<YOUR-NAME>`, it should return `"Hello coach!"`
 - [ ] Open `greet.test.js` and write the tests for the acceptance criteria
+
+  ```js
+  test("returns 'Hello stranger!' if called greet()", () => {
+    const result = greet();
+    expect(result).toBe("Hello stranger!");
+  });
+
+  test("returns 'Hello coach!' if called greet('<YOUR-NAME>')", () => {
+    const result = greet("<YOUR-NAME>");
+    expect(result).toBe("Hello coach!");
+  });
+  ```
+
 - [ ] Run `npm run test` in the terminal
   - [ ] Point out that the two new tests fail
   - [ ] Now we need to write the implementation
 - [ ] Open `greet.js`
   - [ ] Implement the logic to meet the first acceptance criteria
-- [ ] Show that all tests are run again
-  - [ ] Show that the first new test was successful
-  - [ ] Show that the second new tests still failed
+    ```js
+    function greet(name = "stranger") {
+      return `Hello ${name}!`;
+    }
+    ```
+- [ ] Highlight that all tests were executed after saving the file
+  - [ ] Show that the second test is now successful
+  - [ ] The third test still failed
 - [ ] Implement the logic for the second acceptance criteria and show the result in the terminal
 
-```js
-test("returns 'Hello stranger!' if called greet()", () => {
-  const result = greet();
-  expect(result).toBe("Hello stranger!");
-});
+  ```js
+  function greet(name = "stranger") {
+    if (name === "<YOUR NAME>") {
+      return "Hello coach!";
+    }
 
-test("returns 'Hello coach!' if called greet('<YOUR-NAME>')", () => {
-  const result = greet("<YOUR-NAME>");
-  expect(result).toBe("Hello coach!");
-});
-```
+    return `Hello ${name}!`;
+  }
+  ```
 
 ---
 
