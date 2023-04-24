@@ -103,7 +103,7 @@ There are many libraries that offer implementations for global state. We recomme
 With "zustand" the above example would look like this. Passing down the `userIsLoggedIn` is no longer required.
 
 ```jsx
-import create from "zustand";
+import { create } from "zustand";
 
 const useUserStore = create((set) => ({
   isLoggedIn: false,
@@ -112,7 +112,7 @@ const useUserStore = create((set) => ({
 }));
 
 function App() {
-  return <ProductsList />;
+  return <ProductsPage />;
 }
 
 function ProductsPage() {
