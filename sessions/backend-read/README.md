@@ -185,6 +185,8 @@ export default async function handler(request, response) {
 }
 ```
 
+> 💡 If the connection fails with the error code `connect ECONNREFUSED ::1:27017`, change the `localhost` of the MONGODB_URI into `127.0.0.1`
+
 #### Query one Joke by Id
 
 - [ ] Note that querying a single joke from the database does not work yet.
@@ -223,9 +225,7 @@ export default async function handler(request, response) {
 ```js
 // necessary frontend changes in components/JokeList.js: change joke.id to joke._id
 <li key={joke._id}>
-  <button type="button" onClick={() => router.push(`/${joke._id}`)}>
-    {joke.joke}
-  </button>
+  <Link href={`/${joke._id}`}>{joke.joke}</Link>
 </li>
 ```
 
