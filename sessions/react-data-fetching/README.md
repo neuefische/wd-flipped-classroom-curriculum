@@ -108,7 +108,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
 - [ ] Start the app and demonstrate it doesn't work yet. We only see `Loading...` in the UI. No request to the API is started. This is because SWR expects us to give it a fetcher function that it can use to actually fetch the data.
 - [ ] Show that we can copy the fetcher function directly from the SWR docs. It's just a wrapper around `fetch` but we should not think about it too much. Copy it **above** the `Joke` component function (**not inside**)
   ```js
-  const fetcher = (url) => fetch(url).then((r) => r.json());
+  const fetcher = (url) => fetch(url).then((response) => response.json());
   ```
 - [ ] Add the fetcher function to the `useSWR` hook.
   ```js
@@ -133,7 +133,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
   ```
 - [ ] Add the fetcher function above the `App` component function to the `pages/_app.js` file.
   ```js
-  const fetcher = (url) => fetch(url).then((r) => r.json());
+  const fetcher = (url) => fetch(url).then((response) => response.json());
   ```
 - [ ] Wrap the `Component` in the `SWRConfig` component.
   ```js
