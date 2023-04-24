@@ -130,10 +130,18 @@ makes the dream work
 
 ---
 
-## Individuelle Entwicklung
+## Individual Development
 
 Moving from the Fear Zone to the Growth Zone
 ![Learning Model](images/learning-model.png)
+
+---
+
+## Group Development
+
+When you teach others you learn more than them
+
+![Learning Model](images/learning-pyramid.png)
 
 ---
 
