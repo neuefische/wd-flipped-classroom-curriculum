@@ -114,10 +114,10 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/d
 
 ```js
 // pages/api/jokes/index.js
-import {jokes} from '../../../lib/data.js';
+import { jokes } from "../../../lib/data.js";
 
 export default function handler(request, response) {
-	response.status(200).json(jokes);
+  response.status(200).json(jokes);
 }
 ```
 
@@ -145,18 +145,18 @@ export default function handler(request, response) {
 
 ```js
 // /pages/api/jokes/[id].js
-import {jokes} from '../../../lib/data.js';
+import { jokes } from "../../../lib/data.js";
 
 export default function handler(request, response) {
-	const {id} = request.query;
+  const { id } = request.query;
 
-	const joke = jokes.find((joke) => joke.id === id);
+  const joke = jokes.find((joke) => joke.id === id);
 
-	if (!joke) {
-		return response.status(404).json({status: 'Not Found'});
-	}
+  if (!joke) {
+    return response.status(404).json({ status: "Not Found" });
+  }
 
-	response.status(200).json(joke);
+  response.status(200).json(joke);
 }
 ```
 
@@ -173,7 +173,7 @@ export default function handler(request, response) {
 
 ```js
 // `components/JokeList/index.js`
-const {data} = useSWR('/api/jokes');
+const { data } = useSWR("/api/jokes");
 ```
 
 - [ ] Reload the browser under `/` and show the network tab: the request is now send to
@@ -187,7 +187,7 @@ const {data} = useSWR('/api/jokes');
 
 ```js
 // `components/Joke/index.js`
-const {data} = useSWR(id ? `/api/jokes/${id}` : null);
+const { data } = useSWR(`/api/jokes/${id}`);
 ```
 
 - [ ] Open the browser and show that all pages are now fetched from your own API.
