@@ -4,6 +4,19 @@
 
 ### Major Changes
 
+### Minor Changes
+
+- [#395 JS Unit Testing: Add Test Driven Development to demo](https://github.com/orgs/neuefische/projects/45/views/10?pane=issue&itemId=25814877)
+- [#310 CSS Selectors: Rework Session Guide](https://github.com/orgs/neuefische/projects/45/views/10?pane=issue&itemId=22992630)
+
+### Patches
+
+- [#292 Refactor buttons into next/link (Some Backend Sessions)](https://github.com/orgs/neuefische/projects/45/views/10?pane=issue&itemId=26439726)
+
+## Week 16 (17.4 - 21.4)
+
+### Major Changes
+
 - [#371 Refactor backend useSWRMutation](https://github.com/orgs/neuefische/projects/45/views/10?pane=issue&itemId=22856677)
 
 ### Minor Changes
