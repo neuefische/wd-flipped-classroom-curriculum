@@ -353,7 +353,7 @@ return (
 ```
 
 - [ ] Open the app in the browser and demonstrate we see all three info boxes, but they have the same styling
-- [ ] Create a new file: `components/InfoBox.js`
+- [ ] Open the file: `components/InfoBox.js`
 - [ ] Point out, that we want to style multiple CSS properties for each variant: `color` and `border-color`
 - [ ] Explain that using the ternary operator is fine for adapting single CSS property value based on a prop
 - [ ] Note that, if there are several CSS styles based on the same prop, the ternary operator would not be a good solution
@@ -404,12 +404,12 @@ export default function InfoBox({ title, message, variant }) {
 
 ### Using Google Fonts
 
-- [ ] Explain with Next.js we can add fonts from the free Google Fonts library very easy
+- [ ] Explain with Next.js we can add fonts from the free Google Fonts library very easily
   - [ ] Point out this is not a feature of `styled-components`, but Next.js
 - [ ] Show the [Google Fonts website](https://fonts.google.com/)
 - [ ] Note that we can import the fonts in Next.js directly, for example in our global styles
 - [ ] Open the `styles.js` file
-- [ ] Import a font from `@next/font`. Demonstrate autocomplete for the font name
+- [ ] Import a font from `next/font`. Demonstrate autocomplete for the font name
 - [ ] Explain the import gives a function we need to call
   - [ ] We should pass a configuration object to the function call to define the `subset` we need
   - [ ] A font has subsets for different letters, like: Chinese, Arabic, Cyrillic
@@ -417,7 +417,7 @@ export default function InfoBox({ title, message, variant }) {
   - [ ] We need only `latin` for our projects
 
 ```jsx
-import { Open_Sans } from "@next/font/google";
+import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
