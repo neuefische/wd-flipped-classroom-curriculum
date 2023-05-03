@@ -4,7 +4,7 @@ This is the curriculum of the neuefische Web Development bootcamp.
 
 ## Changelog
 
-In this [changelog](https://github.com/neuefische/web-curriculum/blob/main/changelog.md) we collect all current changes that are made to the curriculum. 
+In this [changelog](https://github.com/neuefische/web-curriculum/blob/main/changelog.md) we collect all current changes that are made to the curriculum.
 
 ## Sessions
 
@@ -90,8 +90,8 @@ ones more challenging than afternoon sessions.
 |     | [**Recap Project 6**](sessions/recap-project-6)                                 |
 | 38  | _Design Workshop_                                                               |
 |     | _Design Workshop_                                                               |
-| 39  | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories)     |
-|     | _Agile Workshop_                                                                |
+| 39  | _Agile Workshop_                                                                |
+|     | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories)     |
 | 40  | _Capstone Forum_                                                                |
 |     | _Capstone Forum_                                                                |
 
