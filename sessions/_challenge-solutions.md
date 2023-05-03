@@ -6,7 +6,8 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 2
 
-**JS Functions 1**
+- [Responsive Wesbite](https://codesandbox.io/s/pedantic-wood-lynluw)
+  **JS Functions 1**
 
 - [Basic functions](https://codesandbox.io/s/functions-1-exercise-basic-functions-solution-vmpi8j)
 - [Functions with parameters](https://codesandbox.io/s/functions-1-exercise-functions-with-parameters-solution-xbl62x?file=/js/index.js)
@@ -27,7 +28,7 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 - [Understanding A11y Forms](https://codesandbox.io/s/html-forms-a11y-in-forms-ilyl0y)
 - [Zoo Visitor Sign Up](https://codesandbox.io/s/html-forms-zoo-v84hfv)
 
-**JS Inputs and Strings**
+  **JS Inputs and Strings**
 
 - [Inputs and Strings Uppercase](https://codesandbox.io/s/js-inputs-and-strings-exercise-1-solution-hj5uf8)
 - [Inputs and Strings Uppercase and Lowercase](https://codesandbox.io/s/js-inputs-and-strings-exercise-2-solution-qi604t)
