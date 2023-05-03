@@ -7,6 +7,7 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 ## Week 2
 
 - [Responsive Wesbite](https://codesandbox.io/s/pedantic-wood-lynluw)
+
   **JS Functions 1**
 
 - [Basic functions](https://codesandbox.io/s/functions-1-exercise-basic-functions-solution-vmpi8j)
