@@ -3,6 +3,16 @@
 > 💡 Hint: Don't worry if you don't finish all challenges in the lesson time. Use the remaining
 > challenges to exercise in your free learning time.
 
+## Statements
+
+Solve this challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/statements?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/statements -i
+```
+
 ## Truthy and Falsy values
 
 Solve the _Truthy and Falsy values_ challenge on
