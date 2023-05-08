@@ -40,66 +40,32 @@ Second, tell the submit handler of your edit form
 
 > 💡 Note: `PUT` and `PATCH` are semantically different. According to convention, we would use `PUT` to update our entire document, and `PATCH` to update individual fields. In our demo, we're using `PUT`, simply because we only ever have _one_ field to update.
 
-You can [use the `useSWRMutation` hook](https://swr.vercel.app/docs/mutation#useswrmutation) to achieve this.
-
-Go to the `page` or `component` where you want to write the submit handler of your edit form.
-
-Import `useSWRMutation` and destructure the `trigger` method and the `isMutating` state:
+Go to the `page` or `component` where you want to write the submit handler of your edit form. We need the `mutate` method to update the Joke component after a successful update.
 
 ```js
 // /components/Joke/index.js
-import useSWRMutation from "swr/mutation";
-
 export default function Joke() {
   //...
-  const { trigger, isMutating } = useSWRMutation(
-    `/api/jokes/${id}`,
-    sendRequest
-  );
-  // return (...)
-}
-```
+  const { data, isLoading, mutate } = useSWR(`/api/jokes/${id}`);
 
-Note that in the `sendRequest` function you define the `PUT` method and the `body` for your API route:
+  async function handleEdit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const jokeData = Object.fromEntries(formData);
 
-```js
-async function sendRequest(url, { arg }) {
-  // here we set the request method
-  const response = await fetch(url, {
-    method: "PUT",
-    body: JSON.stringify(arg),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+    const response = await fetch(`/api/jokes/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jokeData),
+    });
 
-  if (!response.ok) {
-    console.error(`Error: ${response.status}`);
+    if (response.ok) {
+      mutate();
+    }
   }
-}
-```
-
-You now need to write a function that provides your `sendRequest` function with the `arg` object:
-
-```js
-async function handleEdit(event) {
-  event.preventDefault();
-  const formData = new FormData(event.target);
-  const jokeData = Object.fromEntries(formData);
-  // Here you are preparing your updated data to be handed over to your sendRequest function.
-  await trigger(jokeData);
-}
-```
-
-`isMutating` behaves similarly to `isLoading` from `useSWR`. While the mutation process is ongoing, this flag is set to `true`. After the revalidation process has been finished, it switches back to `false`.
-
-### Render while `isMutating`
-
-If you want to inform the user that the changes are currently being submitted, you can make use of `isMutating`. Simply add an early return to your component:
-
-```js
-if (isMutating) {
-  return <h1>Submitting your changes...</h1>;
+  return; //...
 }
 ```
 
@@ -127,8 +93,6 @@ if (request.method === "DELETE") {
 
 ### `DELETE` using `fetch`
 
-We could use `useSWRMutation` for sending the `DELETE` request to our backend. But since we don't want to revalidate our data, we can simply use a plain `fetch` call.
-
 We write a handler function which calls `fetch()` with the appropriate arguments and pass it to a delete button:
 
 ```jsx
@@ -149,7 +113,7 @@ return (
 );
 ```
 
----
+We don't want to use `mutate` with "DELETE" requests, since the deleted data cannot be refetched and a revalidation would result in an error.
 
 ## Resources
 

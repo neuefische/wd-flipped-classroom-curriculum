@@ -90,8 +90,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-d
 - [ ] Navigate to the `pages/index.js` page file.
 - [ ] Highlight that the functionality for creating a joke has been moved here:
 
-  - the `sendRequest` function
-  - the `useSWRMutation` hook
+  - the `useSWR` hook
   - the `handleSubmit` function which is passed to our generalized `JokeForm`
 
 - [ ] Point out that the form will behave just like in the previous session, only that the logic is defined in a different place.
@@ -132,68 +131,34 @@ if (request.method === "PUT") {
   > 💡 Note: `PUT` and `PATCH` are semantically different. According to convention, we would use `PUT` to update our entire document, and `PATCH` to update individual fields. In our demo, we're using `PUT`, simply because we only ever have _one_ field to update.
 
 - [ ] Now navigate back to the `/components/Joke/index.js` to connect the UI to our new API endpoint.
-- [ ] Since updating an existing joke means we are going to mutate this joke data, we are going to use the `userSWRMutation` hook again.
+- [ ] We want to send a "PUT" request to our new API endpoint with fetch, similar to our "POST" request we send when we create a joke.
+- [ ] Since updating an existing joke means we are going to mutate this joke data, we need to destructure `mutate` and call it after we've updated the joke to reflect the changes in the app:
 
 - [ ] Implement the code below.
 
 ```js
 // /components/Joke/index.js
+const { data, isLoading, mutate } = useSWR(`/api/jokes/${id}`);
 
-import useSWRMutation from "swr/mutation";
-
-async function sendRequest(url, { arg }) {
-  const response = await fetch(url, {
-    method: "PUT",
-    body: JSON.stringify(arg),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-
-  if (!response.ok) {
-    console.error(`Error: ${response.status}`);
-  }
-}
-
-export default function Joke() {
-  //...
-
-  const { trigger, isMutating } = useSWRMutation(
-    `/api/jokes/${id}`,
-    sendRequest
-  );
-}
-```
-
-- [ ] Remind the students what `useSWRMutation` is doing:
-
-  - The `trigger` function calls `sendRequest` and therefore sending a "PUT" request to our API endpoint updating or mutating our Joke
-  - All `useSWR` hooks using the same api endpoint are revalidated, i.e. they are informed that they need to refetch their data.
-  - The `isMutating` flag behaves in a similar way as the `isLoading` flag from the `useSWR` hook and informs us when a mutation is taking place.
-
-- [ ] Implement the code below and note that the syntax of the following function is more or less that of a regular form submit function. Highlight that this function will be called when the `JokeForm` is submitted.
-
-```js
-function handleEdit(event) {
+async function handleEdit(event) {
   event.preventDefault();
 
   const formData = new FormData(event.target);
   const jokeData = Object.fromEntries(formData);
 
-  trigger(jokeData);
+  const response = await fetch(`/api/jokes/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(jokeData),
+  });
+
+  if (response.ok) {
+    mutate();
+  }
 }
 ```
-
-- [ ] Include the following code to establish conditional rendering:
-
-```js
-if (isLoading || isMutating) {
-  return <h1>Loading...</h1>;
-}
-```
-
-- [ ] Explain that while `isMutating` is true, our `JokesDetailPage` will only render our `<h1>` element.
-- [ ] Mention that since we're not working with heavy data loads, `isMutating` only evaluates to `true` very briefly.
 
 ### Implementing the DELETE API route
 

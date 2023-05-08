@@ -157,67 +157,47 @@ export default function HomePage() {
 - [ ] Quickly remind the students about what mutating a state means:
   - We are changing the content of a state, e.g. adding an item to a list.
   - Each element in our app that uses this state needs to be updated to reflect this change.
-- [ ] swr provides us with a hook called `useSWRMutation` that does two things:
+- [ ] therefore we need to perform two actions:
   1. Sending a request to a specific endpoint for creating a new entry
   2. Revalidating the data from this specific endpoint in any place of the app where the endpoint is used
-- [ ] Import the `useSWRMutation` hook in the `JokeForm` component and destructure the `trigger` method.
+- [ ] We are going to use `fetch` for sending the POST request to the endpoint and `mutate` from the useSWR hook for revalidation
+- [ ] Write the handleSubmit function for our form as follows:
 
 ```js
-import useSWRMutation from "swr/mutation";
-
-async function sendRequest(url, { arg }) {
-  // Our sendRequest function receives url and { arg } as parameters.
-  // This naming convention isn't unintentional. It needs to be named that.
-  // This has to do with how useSWRMutation works.
-  const response = await fetch(url, {
-    method: "POST",
-    body: JSON.stringify(arg),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-
-  if (!response.ok) {
-    console.error(`Error: ${response.status}`);
-  }
-}
-
 export default function JokeForm() {
-	const { trigger } = useSWRMutation(`/api/jokes/`, sendRequest);
+  const { mutate } = useSWR("/api/jokes");
 
-	return ...
-}
-```
+  async function handleSubmit(event) {
+    event.preventDefault();
 
-- [ ] Explain that the hook expects an API endpoint, e.g. `/api/jokes/` and a `sendRequest` function as arguments.
-- [ ] This `sendRequest` function gets called when `trigger` is used and sends a "POST" request to our endpoint.
-- [ ] Implement the code below inside our `JokeForm` component and note that the syntax of the following function is more or less that of a regular form submit function.
+    const formData = new FormData(event.target);
+    const jokeData = Object.fromEntries(formData);
 
-```js
-function handleSubmit(event) {
-  event.preventDefault();
+    const response = await fetch("/api/jokes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jokeData),
+    });
 
-  const formData = new FormData(event.target);
-  const jokeData = Object.fromEntries(formData);
-  // Here the jokeData gets passed to trigger, which in turns is passed as 'arg' to sendRequest
-  trigger(jokeData);
-}
-
-return (
-  <form onSubmit={handleSubmit}>
-    {
-      // ...
+    if (response.ok) {
+      mutate();
     }
-  </form>
-);
+  }
+
+  return; //...
+}
 ```
 
-- [ ] Explain that the way this works is the following:
-  - `trigger` informs `useSWRMutation` about `jokeData`
-  - and `useSWRMutation` hands over `jokeData` to `sendRequest`
-  - which accepts it as the `{ arg }` object
-  - and then sends this `{ arg }` object down our API route as part of our response body.
-  - All useSWR hooks that use the same API route `api/jokes/` get notified that they need to update their content.
+- [ ] Explain that the `useSWR` provides us next to `data`,`isLoading` and `error` with a method called `mutate`.
+- [ ] If `mutate` is called, swr refetches the data for the respective endpoint and triggers a rerender of all components which use this endpoint.
+- [ ] explain what the options mean, that we provide for the `fetch` call:
+  - [ ] method: defines what kind of fetch we will perform
+  - [ ] headers - "Content-Type": informs the server about what kind of data we will send
+  - [ ] body: the data we send to the server transformed into a string.
+- [ ] Highlight, that our jokeData now is send to our API and then is passed to mongoose which adds the joke to our database.
+- [ ] If this fetch was successful, we call `mutate` and trigger the revalidation of the jokes array.
 - [ ] Show that you can now submit jokes via your `JokeForm` and that the `JokeList` gets updated automatically.
 
 > 💡 Note: In the following _Backend Update and Delete_ session, we're going to reuse the `JokeForm` to update a database entry.

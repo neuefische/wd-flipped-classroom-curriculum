@@ -65,65 +65,74 @@ Note that the `POST` route alone does not create a new entry in your database: y
 
 ---
 
-## `POST` using `useSWRMutation`
+## Sending `POST` requests and revalidating data
 
-Since we are mutating our jokes data array, we can [use the `useSWRMutation` hook](https://swr.vercel.app/docs/mutation#useswrmutation) to send a `POST` request to the backend. This ensures that all other `useSWR` hooks that use the same API endpoint are updated automatically after the new joke is created.
+Since we are mutating our jokes data array, we must perform two actions:
 
-`useSWRMutation` expects two arguments:
+- sending data to our backend to add them to the database
+- updating our app so that it uses the updated data from the database
 
-- An url, e.g. the API Endpoint: `/api/jokes`
-- A function that sends the `POST` request called `sendRequest` that you write yourself. It is a wrapper function for `fetch` and will be called whenever you call `trigger()`.
+If we don't **revalidate** our data, the app won't reflect the changes we did to our database. `useSWR` provides us with a method called `mutate` to trigger this revalidation for a given API endpoint, e.g. "/api/jokes". We can destructure it from the hook call just like `data` or `isLoading`:
 
-`sendRequest` receives the data as the destructured `{ arg }` object. This is passed as the `request.body` of the request to our API endpoint.
+```js
+const {mutate} = useSWR('/api/jokes/`)
+```
+
+In order to perform a POST HTTP request with `fetch`, we need to provide an **options object** to the `fetch` call which includes the following information:
+
+- method: a verb like "POST", "PUT" or "DELETE" which defines the type of HTTP request method
+- the "Content-Type" provided in the request headers,
+- body: the data that is sent to the server
+
+A typical "POST" request looks like this:
+
+```js
+const response = await fetch("/api/jokes", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(data),
+});
+```
 
 > 💡 The `body` key represent the `request.body` in the API route above: this is where the actual data is passed from frontend to the API (and then to the backend aka database).
 
+After a successful "POST" fetch which triggered our new POST API endpoint, we can tell `useSWR` to revalidate the data by calling the `mutate` function. The whole submit process looks like this:
+
 ```js
-import useSWRMutation from "swr/mutation";
-
-function sendRequest(url, { arg }) {
-  const response = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(arg),
-  });
-
-  const { status } = await response.json();
-  console.log(status);
-}
+import useSWR from "swr";
 
 export default function JokeForm() {
-  const { trigger } = useSWRMutation("/api/jokes", sendRequest);
+  const { mutate } = useSWR("/api/jokes");
 
   async function handleSubmit(event) {
     event.preventDefault();
 
     const formData = new FormData(event.target);
     const jokeData = Object.fromEntries(formData);
-    // We're declaring jokeData and filling it with the values we've extracted from our form via Object.fromEntries().
 
-    trigger(jokeData);
-		// here the trigger does two things:
-	  // 1. trigger sendRequest, pass jokeData as { arg } to it
-    // 2. inform all useSWR hooks that subscribed to '/api/jokes/' to revalidate their data
+    const response = await fetch("/api/jokes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(jokeData),
+    });
+
+    if (response.ok) {
+      mutate();
+    }
   }
+
+  return (
+		//...
+  );
 }
+
 ```
-
-Summary:
-
-- `trigger` informs `useSWRMutation` about `jokeData`,
-- `useSWRMutation` hands over `jokeData` to `sendRequest`
-- which accepts it as the `{ arg }` object
-- and then sends this `{ arg }` object down your API route as part of your response body.
-- Our API endpoint then creates a new Joke document by calling `Joke.create(jokeData)` with the received `jokeData`.
-- In the meantime, `useSWRMutation` triggers a revalidation of all `useSWR` hooks using the `/api/jokes/` endpoint.
-
-> 📙 `useSWRMutation` has a lot more functionality for handling errors, optimistic updates and much more. Have a look at the [ swr docs](https://swr.vercel.app/docs/mutation#useswrmutation) for more information.
 
 ## Resources
 
 - [What is REST?](https://restfulapi.net/)
-- [swr docs](https://swr.vercel.app/docs/mutation#useswrmutation).
+- [swr docs](https://swr.vercel.app/docs/mutation)
