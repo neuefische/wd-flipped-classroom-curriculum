@@ -1,5 +1,15 @@
 # Changelog
 
+## Week 18 (2.5. - 5.5.)
+
+### Major Changes
+
+### Minor Changes
+
+- [#314 Refactor JS Conditions and Booleans Challenges](https://github.com/orgs/neuefische/projects/45/views/10?pane=issue&itemId=20190497)
+
+### Patches
+
 ## Week 17 (24.4 - 28.4)
 
 ### Major Changes
