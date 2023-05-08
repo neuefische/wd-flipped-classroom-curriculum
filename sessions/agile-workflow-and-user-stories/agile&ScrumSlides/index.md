@@ -6,6 +6,28 @@ Agile & Scrum
 
 <!-- _class: big-headline granite -->
 
+Classical Waterfall
+
+---
+
+<!-- _class: small  scrum-->
+
+### Classic Waterfall Model
+
+![Foto](assets/Wasserfall.png)
+
+---
+
+<!-- _class: small  scrum-->
+
+### Classic Waterfall Model ...
+
+![Foto](assets/Wasserfall-real.png)
+
+---
+
+<!-- _class: big-headline granite -->
+
 What is **agile**?
 
 ---
@@ -50,19 +72,25 @@ What is **agile**?
 
 ---
 
-<!-- _class: small  scrum-->
+<!-- _class: big-headline granite -->
 
-### Classic waterfall model
-
-![Foto](assets/Wasserfall.png)
+Backlog
 
 ---
 
 <!-- _class: small  scrum-->
 
-### Classic waterfall model ...
+### Backlog
 
-![Foto](assets/Wasserfall-real.png)
+![Foto](assets/backlog.png)
+
+---
+
+<!-- _class: small  scrum-->
+
+### A developers week (example)
+
+![Foto](assets/devWeek.png)
 
 ---
 
@@ -90,35 +118,13 @@ MVP
 
 <!-- _class: big-headline granite -->
 
-Backlog
+User Story
 
 ---
 
 <!-- _class: small  scrum-->
 
-### Backlog
-
-![Foto](assets/backlog.png)
-
----
-
-<!-- _class: small  scrum-->
-
-### A developers week (example)
-
-![Foto](assets/devWeek.png)
-
----
-
-<!-- _class: big-headline granite -->
-
-user story
-
----
-
-<!-- _class: small  scrum-->
-
-### User stories
+### User Stories
 
 ![Foto](assets/US2.png)
 
@@ -134,7 +140,7 @@ user story
 
 <!-- _class: small  scrum-->
 
-### write a full userstory
+### Write a full user story
 
 ![Foto](assets/US3_1.png)
 

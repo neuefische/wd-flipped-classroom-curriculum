@@ -59,30 +59,10 @@ How to organize a team in Software Development using agile / Scrum.
 > ❗️ Check the [Scrum Intro](./Scrum-intro.md) for more infromation about agile and Scrum.
 > Explain the content in detail, if there is **no** external workshop.
 
+- Classic waterfall model
 - What is agile
 - "we are agile"
 - SCRUM
-- Classic waterfall model
-
-### MVP
-
-- [ ] Explain **minimum viable product**
-
-Because the agile methodology is built on validating and iterating products based on user input, the MVP plays a central role in agile development.
-
-- [ ] It is a product that is good enough to solve the user's core problem and has functions only for that.
-- [ ] The team gets feedback from users/costumers fast and can adopt changes before it gets expensive.
-- [ ] Early feedback means learning early about needs.
-- [ ] It's small. What matters is the very core of your app.
-
-> In most cases it is a display of information the user provides or receives from somewhere, processed in a way that meets the needs of the user.
-
-![MVP](agile&ScrumSlides/assets/MVP1.png)
-
-The MVP is an instrument for risk minimization in the course of product development.
-It's a serviceable product with minimal features, created effortlessly and used to obtain customer or user feedback
-
-![MVP](agile&ScrumSlides/assets/MVP2.png)
 
 ### Backlog
 
@@ -106,6 +86,26 @@ Your team is diverse and has different professions and knowledge.
 To gather all information and keep everyone involved in the process, the scrum team has a lot of events to join. This is necessary to enable everyone to do their job properly. The meeting time should be 10-15% of your week, but often increases, depending on teams.
 
 ![devWeek](agile&ScrumSlides/assets/devWeek.png)
+
+### MVP
+
+- [ ] Explain **minimum viable product**
+
+Because the agile methodology is built on validating and iterating products based on user input, the MVP plays a central role in agile development.
+
+- [ ] It is a product that is good enough to solve the user's core problem and has functions only for that.
+- [ ] The team gets feedback from users/costumers fast and can adopt changes before it gets expensive.
+- [ ] Early feedback means learning early about needs.
+- [ ] It's small. What matters is the very core of your app.
+
+> In most cases it is a display of information the user provides or receives from somewhere, processed in a way that meets the needs of the user.
+
+![MVP](agile&ScrumSlides/assets/MVP1.png)
+
+The MVP is an instrument for risk minimization in the course of product development.
+It's a serviceable product with minimal features, created effortlessly and used to obtain customer or user feedback
+
+![MVP](agile&ScrumSlides/assets/MVP2.png)
 
 ### User story
 
