@@ -127,8 +127,6 @@ export default function handler(request, response) {
   - [ ] Remind them that the `data` would normally be fetched from a database.
   - [ ] Note that fetching from a database is only be possible from an API route (and not from the
         frontend).
-  - [ ] CORS?
-  - [ ] TBD: better explanation
 
 ### Dynamic API Routes
 
