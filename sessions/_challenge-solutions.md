@@ -78,6 +78,11 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 4
 
+- [map & filter](https://codesandbox.io/s/festive-black-ngu2ly)
+- [filter](https://codesandbox.io/s/wispy-currying-g7wltj)
+- [map](https://codesandbox.io/s/sweet-ellis-o3p4q3)
+- [forEach](https://codesandbox.io/s/determined-water-j3s6sx)
+
 **JS Async Functions**
 
 - [Challenge 1](https://codesandbox.io/s/heuristic-murdock-xpqjuw?file=/js/index.js)
