@@ -117,9 +117,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-d
 // /api/jokes/[id].js
 
 if (request.method === "PUT") {
-  await Joke.findByIdAndUpdate(id, {
-    $set: request.body,
-  });
+  const jokeData = request.body;
+  await Joke.findByIdAndUpdate(id, jokeData);
   // ... find our joke by its ID and update the content that is part of the request body!
   response.status(200).json({ status: "Joke updated!" });
   // If successful, we'll receive an OK status code.
