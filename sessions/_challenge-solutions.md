@@ -78,6 +78,8 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 4
 
+
+**JS Array Methods**
 - [map & filter](https://codesandbox.io/s/festive-black-ngu2ly)
 - [filter](https://codesandbox.io/s/wispy-currying-g7wltj)
 - [map](https://codesandbox.io/s/sweet-ellis-o3p4q3)
@@ -104,8 +106,9 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 **JS Structure**
 
-- [Challenge 1](https://codesandbox.io/s/js-structure-quiz-app-solution-dnesju)
-- [Challenge 2](https://codesandbox.io/s/js-structure-space-rocket-solution-wnh9sq)
+- [Shapes](https://codesandbox.io/s/gracious-swirles-gowphm)
+- [Quiz App](https://codesandbox.io/s/js-structure-quiz-app-solution-dnesju)
+- [Space Rocket](https://codesandbox.io/s/js-structure-space-rocket-solution-wnh9sq)
 
 **JS Modern Syntax**
 
