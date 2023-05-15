@@ -1,5 +1,17 @@
 # Changelog
 
+## Week 19 (8.5. - 12.5.)
+
+### Major Changes
+
+- [#402 Replace useSWRMutation in Backend Sessions](https://github.com/orgs/neuefische/projects/45/views/10?pane=issue&itemId=27427544)
+
+### Minor Changes
+
+- [#411 CSS Responsive: Refactor Guide](https://github.com/orgs/neuefische/projects/45/views/10?pane=issue&itemId=27415754)
+
+### Patches
+
 ## Week 18 (2.5. - 5.5.)
 
 ### Major Changes
