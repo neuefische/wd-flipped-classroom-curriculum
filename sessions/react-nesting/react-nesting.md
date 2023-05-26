@@ -103,7 +103,7 @@ function UserList() {
 > 💡 When researching you sometimes might see `<React.Fragment></React.Fragment>`, which is the same thing.
 
 > 📙 Read more about [**Fragment (<>...</>)**
-> in the React Docs](https://react.dev/apis/react/Fragment).
+> in the React Docs](https://react.dev/reference/react/Fragment).
 
 ---
 
