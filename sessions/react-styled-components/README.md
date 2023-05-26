@@ -100,11 +100,7 @@ export default styled.button`
 - [ ] Add the styled button to the page
 
 ```jsx
-return (
-  <>
-    <Button>Click me</Button>
-  </>
-);
+return <Button>Click me</Button>;
 ```
 
 - [ ] Start the dev server
