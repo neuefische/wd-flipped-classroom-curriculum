@@ -1,5 +1,21 @@
 # Changelog
 
+## Week 21 (22.5. - 26.5.)
+
+### Major Changes
+
+### Minor Changes
+
+### Patches
+
+## Week 20 (15.5. - 19.5.)
+
+### Major Changes
+
+### Minor Changes
+
+### Patches
+
 ## Week 19 (8.5. - 12.5.)
 
 ### Major Changes
