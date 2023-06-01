@@ -199,10 +199,10 @@ following:
 
 - Create a folder for each component
 - Make your component file and function names uppercase (PascalCase)
-- Each component has a named export for the component function (e.g.
-  `export function ButtonGroup()`)
+- Each component has a default export for the component function (e.g.
+  `export default function ButtonGroup()`)
 - Components can take arguments that are called props or properties a convention (e.g.
-  `export function ButtonGroup(props)`)
+  `export default function ButtonGroup(props)`)
 - Components should not depend on the outside world and create their own DOM elements
 - Components should return a single DOM element
 
@@ -221,7 +221,7 @@ following:
 Here is an example of a component that creates a button:
 
 ```js
-export function Button(props) {
+export default function Button(props) {
   const button = document.createElement("button");
   button.classList.add("button");
   button.textContent = props.text;
@@ -232,9 +232,9 @@ export function Button(props) {
 An advanced use case are components that call other components (composition):
 
 ```js
-import { Button } from "../Button/Button.js";
+import Button from "../Button/Button.js";
 
-export function ButtonGroup(props) {
+export default function ButtonGroup(props) {
   const buttonGroup = document.createElement("div");
   buttonGroup.classList.add("button-group");
   for (const buttonProps of props.buttons) {
@@ -248,8 +248,8 @@ export function ButtonGroup(props) {
 Here is how these components could be used in another file:
 
 ```js
-import { ButtonGroup } from "./ButtonGroup/ButtonGroup.js";
-import { Button } from "./Button/Button.js";
+import ButtonGroup from "./ButtonGroup/ButtonGroup.js";
+import Button from "./Button/Button.js";
 
 const myButtonGroup = ButtonGroup({
   buttons: [{ text: "Button 1" }, { text: "Button 2" }, { text: "Button 3" }],
