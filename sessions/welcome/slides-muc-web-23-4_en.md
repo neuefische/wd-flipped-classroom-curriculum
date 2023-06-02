@@ -35,6 +35,26 @@ Candidate Success Management
 
 ---
 
+<!-- class: image-profile -->
+
+## Valeria Kopylova
+
+Candidate Success Management
+
+![Foto](images/valeria-kopylova.jpg)
+
+---
+
+<!-- class: image-profile -->
+
+## Robin Liedel
+
+Candidate Success Management
+
+![Foto](images/robin_liedel.jpg)
+
+---
+
 ## Peter Anderson
 
 Coach
