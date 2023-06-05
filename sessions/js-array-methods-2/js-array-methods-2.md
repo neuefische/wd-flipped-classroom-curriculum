@@ -198,9 +198,9 @@ It's main use case is to calculate the sum of an array of numbers.
 ```js
 const numbers = [4, 42, 23, 1];
 
-numbers.reduce((a, b) => a + b);
+const sum = numbers.reduce((a, b) => a + b);
 
-console.log(numbers); // 70
+console.log(sum); // 70
 ```
 
 > ❗️ If you find yourself doing anything more complex than this with reduce (like reducing an array
