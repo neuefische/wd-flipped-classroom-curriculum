@@ -102,7 +102,7 @@ const name = "Alex";
 export default name;
 ```
 
-> 💡 Notice that since default exports have no clear name the should semantically correspond to the
+> 💡 Notice that since default exports have no clear name they should semantically correspond to the
 > name of the module. The above example should have a module name like `name.js`.
 
 ### Mixing Named and `default` Exports
@@ -176,7 +176,7 @@ names were.
 ### Utility Functions and Constants
 
 Utility functions are functions that are used in multiple places in your code. They are usually
-smaller functions that are used to perform a specific task. They should be be pure and not have any
+smaller functions that are used to perform a specific task. They should be pure and not have any
 side effects.
 
 Shared constants are constants that are used in multiple places in your code.
