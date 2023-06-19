@@ -132,6 +132,6 @@ We have a target of 540 teaching minutes (= 9 hours or 12 teaching units (45 min
 
 Thursday afternoons are reserved for "autonomous learning" (or "peer learning", which we did not discuss yet). Students have time to repeat and research whatever topics they need to. They can organize themselves in groups, if they like. During "autonomous learning", the students just repeat, no new content is taught.
 
-| duration | teaching minutes | time          | content                    |
-| -------- | ---------------- | ------------- | -------------------------- |
+| duration | teaching minutes | time          | content             |
+| -------- | ---------------- | ------------- | ------------------- |
 | 5:00     | 300              | 14:00 - 19:00 | Autonomous Learning |
