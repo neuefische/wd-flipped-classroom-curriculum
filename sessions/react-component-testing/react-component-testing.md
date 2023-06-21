@@ -158,7 +158,7 @@ You can use a string to define a text to search for, like: `getByText("Text Here
 
 You can also place the text in slashes followed by an `i` _instead of_ double quotes for a string, like `getByText(/text here/i)`
 
-This makes your tests more resilient to changes in the implementation: `getByText("Text here")` would start to fail if the component were to change the casing. Because of this, this is a very common convention when writing tests. Even though `/text here/i` may look funny at first, you'll get used to it rather quickly. 
+This makes your tests more resilient to changes in the implementation: `getByText("Text here")` would start to fail if the component were to change the casing. Because of this, this is a very common convention when writing tests. Even though `/text here/i` may look funny at first, you'll get used to it rather quickly.
 
 The literal expression enclosed in slashes (`/hello world/`) is called a [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions). The `i` modifier at the end tells the regular expression to ignore lower- and uppercase differences. Regular expressions are often used for searching things in large strings and are very powerful. You don't need to dive into them any deeper than shown above to write your tests though.
 
@@ -170,7 +170,7 @@ You can [simulate how users interact](https://testing-library.com/docs/user-even
 
 ### Using Matchers
 
-With [`expect`](https://jestjs.io/docs/expect) you can use [matchers](https://jestjs.io/docs/using-matchers) to formulate a expected result of your test: It's the same concept fot unit testing.
+With [`expect`](https://jestjs.io/docs/expect) you can use [matchers](https://jestjs.io/docs/using-matchers) to formulate an expected result of your test: It's the same concept for unit testing.
 
 Since we are generating HTML in component tests, you can use some [additional matchers](https://github.com/testing-library/jest-dom#custom-matchers). The `toBeInTheDocument` matcher is used very commonly.
 
@@ -178,7 +178,7 @@ Since we are generating HTML in component tests, you can use some [additional ma
 
 ## Mocks
 
-[A mock](https://jestjs.io/docs/mock-functions) is a substitute that is used in the tests instead of a original function. Common use cases are:
+[A mock](https://jestjs.io/docs/mock-functions) is a substitute that is used in the tests instead of an original function. Common use cases are:
 
 - Event-handler functions passed as prop to a component
 - Replacing an imported package
@@ -204,7 +204,7 @@ export default function Counter({ onDecrease, onIncrease }) {
 }
 ```
 
-In a test you might want to test if the passed event-handler functions are called when the buttons are clicked. Since your not rendering a complete app in the test, but only this component, you can pass a mock function.
+In a test you might want to test if the passed event-handler functions are called when the buttons are clicked. Since you are not rendering a complete app in the test, but only this component, you can pass a mock function.
 
 Mock function can be created with `jest.fn()`. This gives you a function you can use with `expect`.
 
@@ -236,7 +236,7 @@ test("should call event-handler functions", async () => {
 
 ### Testing Next.js (`useRouter` Mock)
 
-When writing tests for components that use the `useRouter` hook from Next.js, you need to be aware of some stumbling stones. When test are executed they don't run within a real browser. Thus there is no [browser location API](https://developer.mozilla.org/en-US/docs/Web/API/Location) and the context that Next.js uses to provide routing information to all components in the app is not present.
+When writing tests for components that use the `useRouter` hook from Next.js, you need to be aware of some stumbling stones. When tests are executed they don't run within a real browser. Thus there is no [browser location API](https://developer.mozilla.org/en-US/docs/Web/API/Location) and the context that Next.js uses to provide routing information to all components in the app is not present.
 
 The `useRouter` hook requires the browser location API to work, so it will throw an error and fail the tests.
 
