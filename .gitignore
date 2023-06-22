@@ -26,7 +26,7 @@
 npm-debug.log*
 
 # obsidian config folder
-/.obsidian
+**/.obsidian
 
 # clone-session script
 .temp

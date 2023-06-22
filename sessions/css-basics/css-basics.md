@@ -174,7 +174,7 @@ You can include custom fonts in different ways:
   }
   ```
 
-  You can use the [google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts) which
+  You can use the [google webfonts helper](https://gwfh.mranftl.com/fonts) which
   will provide you with the fonts file and create the necessary css rules for you.
 
 - the `@import` snippet ([see legal notice below](./css-basics.md#legal-issues-using-google-fonts-with-import-and-link))
