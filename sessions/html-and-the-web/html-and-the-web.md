@@ -198,7 +198,7 @@ HTML file and see what happens:
 - `ul>li.card\*10`
 
 > 💡 You can learn about more Emmet commands in
-> [this cheat-sheet](https://coolcheatsheet.com/toolkit/emmet)
+> [this cheat-sheet]([https://coolcheatsheet.com/toolkit/emmet](https://docs.emmet.io/cheat-sheet/))
 
 ---
 
