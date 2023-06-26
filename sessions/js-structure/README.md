@@ -25,7 +25,7 @@ Recommended schedule for this session:
 ### Which important problem will we solve today?
 
 Modules are a way to organize JavaScript code into separate files. Doing so is very important to
-keep your code managable. Especially when the size of your code grows.
+keep your code manageable. Especially when the size of your code grows.
 
 ### Pose a question to be answered by the end of the block!
 
@@ -70,10 +70,11 @@ You can use the following demo for this session:
 ### Using `export` Statements to Make Code Available to Other Modules
 
 - [ ] Show the named export syntax:
-  - [ ] Identify `const authors` and `function caeserCipher13` as utilities that can be extracted
+  - [ ] Identify `const authors` and `function caesarCipher13` as utilities that can be extracted
         from the `index.js` file.
   - [ ] Create a `utils` folder.
-  - [ ] Move `authors` to `utils/authors.js` and `caeserCipher13` to `utils/cipher.js`.
+  - [ ] Move `authors` to `utils/authors.js` and `caesarCipher13` to `utils/cipher.js`.
+  - [ ] Make sure to include the `input` and `output` variables in the `cipher.js` file.
   - [ ] Use named exports:
 
 ```js
@@ -83,7 +84,7 @@ export const authors = [
 
 ```js
 // utils/cipher.js
-export function caeserCipher13(string) {
+export function caesarCipher13(string) {
 ```
 
 ### Using `import` Statements to Import Code from Other Modules
@@ -95,7 +96,7 @@ export function caeserCipher13(string) {
 
 ```js
 import { authors } from "./utils/authors.js";
-import { caeserCipher13 } from "./utils/cipher.js";
+import { caesarCipher13 } from "./utils/cipher.js";
 ```
 
 - [ ] Show that the app is broken right now. But why?
