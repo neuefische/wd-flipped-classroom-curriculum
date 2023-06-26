@@ -66,7 +66,6 @@ ones more challenging than afternoon sessions.
 |     | [JS Fetch](sessions/js-fetch)                                                   |
 |     | [Git Advanced](sessions/git-advanced)                                           |
 |     | [JS Modern Syntax](sessions/js-modern-syntax)                                   |
-|     | [JS Unit Testing](sessions/js-unit-testing)                                     |
 |     | _Buffer_                                                                        |
 |     | [**Recap Project 3**](sessions/recap-project-3)                                 |
 |     | [**Recap Project 3**](sessions/recap-project-3)                                 |
@@ -84,8 +83,7 @@ ones more challenging than afternoon sessions.
 |     | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing)                |
 |     | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes)                        |
 |     | [React Styled Components](sessions/react-styled-components)                     |
-|     | _Buffer_ (or start with React Component Testing)                                |
-|     | [React Component Testing](sessions/react-component-testing)                     |
+|     | _Buffer_                                                                        |
 |     | [React Global State](sessions/react-global-state)                               |
 |     | [React Immutable State](sessions/react-immutable-state)                         |
 |     | [React Data Fetching](sessions/react-data-fetching)                             |
