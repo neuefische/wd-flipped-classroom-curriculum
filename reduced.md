@@ -80,8 +80,7 @@ ones more challenging than afternoon sessions.
 |     | [React State 2](sessions/react-state-2)                                         |
 |     | [React State 3](sessions/react-state-3)                                         |
 |     | [React Effects and Fetch](sessions/react-effects-and-fetch)                     |
-|     | [React with Local Storage](sessions/react-with-local-storage)                   |
-|     | [React Custom Hooks](sessions/react-custom-hooks) (start Recap Project 4)       |
+|     | [React with Local Storage](sessions/react-with-local-storage-new) 🆕            |
 |     | [**Recap Project 4**](sessions/recap-project-4)                                 |
 |     | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing)                |
 |     | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes)                        |
