@@ -37,14 +37,13 @@ ones more challenging than afternoon sessions.
 |     | [HTML and the Web](sessions/html-and-the-web)                                   |
 |     | [CSS Basics](sessions/css-basics)                                               |
 |     | [CSS Selectors](sessions/css-selectors)                                         |
-|     | [CSS Flexbox](sessions/css-flexbox)                                             |
+|     | [CSS Flexbox](sessions/css-flexbox-new) 🆕                                      |
 |     | [CSS Positioning](sessions/css-positioning)                                     |
 |     | [**Recap Project 1**](sessions/recap-project-1)                                 |
 |     | [Accessibility](sessions/accessibility) (Recap Project 1 cont.)                 |
 |     | [JS Basics](sessions/js-basics)                                                 |
 |     | [CSS Structure](sessions/css-structure)                                         |
 |     | [JS Variables and Numbers](sessions/js-variables-and-numbers)                   |
-|     | [CSS Grid](sessions/css-grid)                                                   |
 |     | [JS Conditions and Booleans](sessions/js-conditions-and-booleans)               |
 |     | [CSS Responsive](sessions/css-responsive)                                       |
 |     | [JS Functions](sessions/js-functions)                                           |
