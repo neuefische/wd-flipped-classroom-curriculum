@@ -11,4 +11,4 @@ Create your own local database and query its entries
 
 ## Bonus: Create Data Structure for Products
 
-Solve this challenge [🔗 **following these instructions**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/backend-mongodb/database-design?file=/README.md).
+Solve this challenge [🔗 **following these instructions**](https://github.com/neuefische/web-exercises/tree/main/sessions/backend-mongodb/database-design?file=/README.md).
