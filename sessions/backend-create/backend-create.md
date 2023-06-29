@@ -75,7 +75,7 @@ Since we are mutating our jokes data array, we must perform two actions:
 If we don't **revalidate** our data, the app won't reflect the changes we did to our database. `useSWR` provides us with a method called `mutate` to trigger this revalidation for a given API endpoint, e.g. "/api/jokes". We can destructure it from the hook call just like `data` or `isLoading`:
 
 ```js
-const {mutate} = useSWR('/api/jokes/`)
+const { mutate } = useSWR('/api/jokes/');
 ```
 
 In order to perform a POST HTTP request with `fetch`, we need to provide an **options object** to the `fetch` call which includes the following information:
