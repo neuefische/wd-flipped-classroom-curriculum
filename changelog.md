@@ -1,16 +1,10 @@
 # Changelog
 
-## Week 21 (22.5. - 26.5.)
+## Week 27 (3.7. - 7.7.)
 
 ### Major Changes
 
-### Minor Changes
-
-### Patches
-
-## Week 20 (15.5. - 19.5.)
-
-### Major Changes
+- [#448 Update React Styled Components for v6 (Transient Props)](https://github.com/neuefische/web-curriculum/pull/448)
 
 ### Minor Changes
 
