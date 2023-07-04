@@ -183,6 +183,10 @@ return (
 
 ### Using Props: Interpolate a Value
 
+> ❗️ Styled components recently (in v6) updated the way to use props. In the new version ALL props are forwarded to the underlying DOM node (in v5 only valid HTML attributes were forwarded). This means that the prop `direction="column"` would result in a `direction` attribute on the DOM node (`<div direction="column">`). To prevent that you need to use transient props which are prefixed with `$`. So instead of `direction` you would use `$direction`. Transient props are not forwarded to the underlying DOM node or styled component.
+>
+> All examples below are using the new syntax.
+
 - [ ] Mention that extending styles is just one approach to visual variants
 - [ ] Highlight that another, more flexible approach is using props inside of our styled components
 - [ ] Mention we like to create a wrapping container to add some spacing between the elements
@@ -223,20 +227,20 @@ return (
 - [ ] Explain we like to change the `flex-direction` and control it from the outside with a prop, when using this component
 - [ ] Highlight that we are writing a JavaScript template string and can use interpolation with `${}`
 - [ ] When interpolating within a styled component, we can write a function that receives all props passed to the component
-- [ ] Write the code to interpolate the `direction` prop
+- [ ] Write the code to interpolate the `$direction` prop
 
 ```jsx
-flex-direction: ${({ direction = "row" }) => direction};
+flex-direction: ${({ $direction = "row" }) => $direction};
 ```
 
 - [ ] Open the `pages/index.js` file
 - [ ] Add another `Button`
-- [ ] Demonstrate we can overwrite the default direction value of `row` via the prop `direction` on `Container` around the buttons
+- [ ] Demonstrate we can overwrite the default direction value of `row` via the prop `$direction` on `Container` around the buttons
 
 ```jsx
 return (
   <>
-    <Container direction="column">
+    <Container $direction="column">
       <Button>Click me</Button>
       <Button>Click me not</Button>
     </Container>
@@ -250,9 +254,9 @@ return (
 
 - [ ] Mention that we can use the ternary operator to check a prop's value and apply different styles based on this value
 - [ ] Go to `components/Button.js`
-- [ ] Explain that we like to change the `background-color` based on a `color` prop
+- [ ] Explain that we like to change the `background-color` based on a `$color` prop
 - [ ] Mention that the interpolation with `${}` looks quite the same as before, but we now check the `props`'s value with the ternary operator
-- [ ] Write the code to interpolate the `color` prop:
+- [ ] Write the code to interpolate the `$color` prop:
 
 ```jsx
 import styled from "styled-components";
@@ -260,8 +264,8 @@ import styled from "styled-components";
 export default styled.button`
   /* ... */
 
-  background-color: ${({ color }) =>
-    color === "danger" ? "var(--secondary-color)" : "var(--primary-color)"};
+  background-color: ${({ $color }) =>
+    $color === "danger" ? "var(--secondary-color)" : "var(--primary-color)"};
 
   /* ... */
 `;
@@ -269,14 +273,14 @@ export default styled.button`
 
 - [ ] Explain that we would have to write different BEM modifiers to the `className` prop when using BEM. We would need to match the classnames to the styles in another file. This makes it more complicated than influencing the styles directly, like we just did
 - [ ] Open the `pages/index.js` file
-- [ ] Add the prop `color="danger"` to one of the buttons
+- [ ] Add the prop `$color="danger"` to one of the buttons
 
 ```jsx
 return (
   <>
     <Container>
       <Button>Click me</Button>
-      <Button color="danger">Click me not</Button>
+      <Button $color="danger">Click me not</Button>
     </Container>
     {/* ... */}
   </>
@@ -335,7 +339,7 @@ return (
 return (
   <>
     {/* ... */}
-    <Container direction="column">
+    <Container $direction="column">
       <InfoBox title="This is an info" message="Read it carefully!" />
       <InfoBox
         title="It worked"
@@ -367,15 +371,15 @@ const StyledInfoBox = styled.section`
   padding: 2rem;
   border: 0.25rem solid black;
 
-  ${({ variant }) =>
-    variant === "success" &&
+  ${({ $variant }) =>
+    $variant === "success" &&
     css`
       color: var(--primary-color);
       border-color: var(--primary-color);
     `}
 
-  ${({ variant }) =>
-    variant === "error" &&
+  ${({ $variant }) =>
+    $variant === "error" &&
     css`
       color: var(--secondary-color);
       border-color: var(--secondary-color);
@@ -383,12 +387,12 @@ const StyledInfoBox = styled.section`
 `;
 ```
 
-- [ ] Read the `variant` prop in the `InfoBox` component and pass it to `StyledInfobox`
+- [ ] Read the `variant` prop in the `InfoBox` component and pass it to `StyledInfobox` as `$variant`
 
 ```jsx
 export default function InfoBox({ title, message, variant }) {
   return (
-    <StyledInfoBox variant={variant}>
+    <StyledInfoBox $variant={variant}>
       <h2>{title}</h2>
       <p>{message}</p>
     </StyledInfoBox>
