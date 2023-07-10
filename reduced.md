@@ -47,12 +47,11 @@ ones more challenging than afternoon sessions.
 |     | [CSS Responsive](sessions/css-responsive)                                       |
 |     | [JS Functions](sessions/js-functions)                                           |
 |     | [JS Functions 2](sessions/js-functions-2)                                       |
-|     | [HTML Forms](sessions/html-forms)                                               |
+|     | [HTML Forms](sessions/html-forms-new)  🆕                                       |
 |     | [JS Inputs and Strings](sessions/js-inputs-and-strings)                         |
 |     | [JS Objects and Arrays](sessions/js-objects-and-arrays)                         |
-|     | [JS Forms](sessions/js-forms)                                                   |
+|     | [JS Forms](sessions/js-forms-new) 🆕                                            |
 |     | [JS createElement](sessions/js-createelement)                                   |
-|     | [JS Forms 2](sessions/js-forms-2)                                               |
 |     | [**Recap Project 2**](sessions/recap-project-2)                                 |
 |     | [CSS Animations](sessions/css-animations) (Recap Project 2 cont.)               |
 |     | [JS Callback Functions](sessions/js-callback-functions)                         |
