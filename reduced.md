@@ -35,8 +35,7 @@ ones more challenging than afternoon sessions.
 |     | [Git CLI & Remote](sessions/git-cli-and-remote)                                 |
 |     | [Git Branches and PRs](sessions/git-branches-and-prs)                           |
 |     | [HTML and the Web](sessions/html-and-the-web)                                   |
-|     | [CSS Basics](sessions/css-basics)                                               |
-|     | [CSS Selectors](sessions/css-selectors)                                         |
+|     | [CSS Basics](sessions/css-basics-new) 🆕                                        |
 |     | [CSS Flexbox](sessions/css-flexbox-new) 🆕                                      |
 |     | [CSS Positioning](sessions/css-positioning)                                     |
 |     | [**Recap Project 1**](sessions/recap-project-1)                                 |
