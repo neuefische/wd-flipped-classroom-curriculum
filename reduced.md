@@ -55,7 +55,6 @@ ones more challenging than afternoon sessions.
 |     | [JS Forms 2](sessions/js-forms-2)                                               |
 |     | [**Recap Project 2**](sessions/recap-project-2)                                 |
 |     | [CSS Animations](sessions/css-animations) (Recap Project 2 cont.)               |
-|     | [JS Loops](sessions/js-loops)                                                   |
 |     | [JS Callback Functions](sessions/js-callback-functions)                         |
 |     | [JS Array Methods](sessions/js-array-methods)                                   |
 |     | [npm and Linting Basics](sessions/npm-and-linting-basics)                       |
