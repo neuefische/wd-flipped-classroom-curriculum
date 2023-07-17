@@ -82,7 +82,6 @@ ones more challenging than afternoon sessions.
 |     | [React Styled Components](sessions/react-styled-components)                     |
 |     | _Buffer_                                                                        |
 |     | [React Global State](sessions/react-global-state)                               |
-|     | [React Immutable State](sessions/react-immutable-state)                         |
 |     | [React Data Fetching](sessions/react-data-fetching)                             |
 |     | [**Recap Project 5**](sessions/recap-project-5)                                 |
 |     | [**Recap Project 5**](sessions/recap-project-5)                                 |
