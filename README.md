@@ -13,7 +13,7 @@ In this [changelog](https://github.com/neuefische/web-curriculum/blob/main/chang
 >
 > _The sessions listed in this readme represent the current state of the curriculum. If your cohort started with the reduced version, please use it throughout the bootcamp, as the versions are not compatible. Both versions will be available until the last cohort that started with the current version has finished the bootcamp._ ~Jan
 >
-> [**Reduced Curriculum Sessions →**](./reduced.md)
+> [**Reduced Curriculum Sessions →**](reduced.md)
 
 Sessions are structured not by week - but by days. It does not matter which session is being held on
 which day of the week. This is the recommended order of sessions. Morning sessions should be the
