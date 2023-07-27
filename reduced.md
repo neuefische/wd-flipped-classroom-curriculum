@@ -28,7 +28,7 @@ ones more challenging than afternoon sessions.
 > Day numbers removed for now to make editing this simpler. We can add them back later. ~Jan
 
 | Day | Session                                                                         |
-| --- | ------------------------------------------------------------------------------- |
+|-----|---------------------------------------------------------------------------------|
 |     | [Welcome](sessions/welcome)                                                     |
 |     | [Github and Markdown](sessions/github-and-markdown)                             |
 |     | [Shell Basics](sessions/shell-basics)                                           |
@@ -61,6 +61,7 @@ ones more challenging than afternoon sessions.
 |     | [JS Array Methods 2](sessions/js-array-methods-2)                               |
 |     | [JS Async Functions](sessions/js-async-functions)                               |
 |     | [JS Fetch](sessions/js-fetch)                                                   |
+|     | [JS Error Handling](sessions/js-error-handling)                                 |
 |     | [Git Advanced](sessions/git-advanced)                                           |
 |     | [JS Modern Syntax](sessions/js-modern-syntax)                                   |
 |     | _Buffer_                                                                        |
@@ -107,7 +108,7 @@ ones more challenging than afternoon sessions.
 We have a target of 540 teaching minutes (= 9 hours or 12 teaching units (45 min)) per day.
 
 | duration | teaching minutes | time          | content                  |
-| -------- | ---------------- | ------------- | ------------------------ |
+|----------|------------------|---------------|--------------------------|
 | 0:30     | 30               | 9:00 - 9:30   | Student Recap            |
 | 0:45     | 45               | 9:30 - 10:15  | Session                  |
 | 1:30     | 90               | 10:15 - 11:45 | Active Learning          |
@@ -125,5 +126,5 @@ We have a target of 540 teaching minutes (= 9 hours or 12 teaching units (45 min
 Thursday afternoons are reserved for "autonomous learning" (or "peer learning", which we did not discuss yet). Students have time to repeat and research whatever topics they need to. They can organize themselves in groups, if they like. During "autonomous learning", the students just repeat, no new content is taught.
 
 | duration | teaching minutes | time          | content             |
-| -------- | ---------------- | ------------- | ------------------- |
+|----------|------------------|---------------|---------------------|
 | 5:00     | 300              | 14:00 - 19:00 | Autonomous Learning |
