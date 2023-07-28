@@ -18,7 +18,5 @@ example:
 - style the `:link`, `:visited`, `:active`, `:hover` state of your links
 - use combinators instead of classes if possible: `footer ul > li` instead of `.footer-list-item`
 
-> ❗️ Remember to work with branches and pull requests!
-
 > 💡 Hint: Styling everything with combinators is equally as bad as styling everything with classes.
 > Try to find a good balance between both.

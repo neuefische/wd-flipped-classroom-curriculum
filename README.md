@@ -15,6 +15,10 @@ In this [changelog](https://github.com/neuefische/web-curriculum/blob/main/chang
 >
 > [**Reduced Curriculum Sessions →**](https://github.com/neuefische/web-curriculum/blob/main/reduced.md)
 
+> _Besides providing a reduced version of the curriculum, we also set up an alternative session timing for the case that the Macbooks don't arrive on time._
+
+> [**Postponed Curriculum Sessions →**](https://github.com/neuefische/web-curriculum/blob/main/postponed.md)
+
 Sessions are structured not by week - but by days. It does not matter which session is being held on
 which day of the week. This is the recommended order of sessions. Morning sessions should be the
 ones more challenging than afternoon sessions.

@@ -1,5 +1,40 @@
 # Challenges: Git CLI and Remote
 
+:exclamation: If you have done the the Mac Setup with zsh, Homebrew and VS Code already, you can skip the first two challenges and start with [Setting up git and GitHub](#setting-up-git-and-github).
+
+## macOS Setup using zsh
+
+> 💡 This will install and configure the software you'll be using during this bootcamp locally on your computer.
+
+Carefully read and follow the
+[instructions in the `web-setup` repository](https://github.com/neuefische/web-setup#readme).
+
+Run the _General Setup_ script as described.
+
+## Visual Studio Code Setup
+
+> 💡 Following these steps you will install some basic extensions for Visual Studio Code and do some
+> required setup for the course.
+
+1. Open **Visual Studio Code**
+2. Open the Extensions Panel (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>X</kbd>)
+3. Install the following extensions
+   - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+   - [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
+   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+4. Open the Visual Studio Code settings (<kbd>⌘</kbd><kbd>,</kbd>)
+   - Search for "Default Formatter" and set to "Prettier - Code formatter"
+   - Search for "Format On Save" and check the checkbox
+   - > 💡 This will set up Visual Studio Code to automatically format your code on save using
+     > Prettier.
+5. Open the command palette by pressing <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>.
+   - Type "shell command" into the prompt.
+   - Select _"Shell Command: Install 'code' command in PATH"_ and confirm the installation by
+     pressing <kbd>Enter</kbd>.
+   - > 💡 This allows you to open a folder in Visual Studio Code from the command line with the
+     > `code .` command.
+
 ## Setting up git and GitHub
 
 💡 This will configure git on your machine and connect it to your GitHub account.
