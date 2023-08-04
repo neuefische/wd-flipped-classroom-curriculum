@@ -19,7 +19,7 @@ to the handout.
 
 With our first experiences in HTML, we can now start to build our own website. But before we do so, we need to set up our development environment. In this challenge, we will set up Visual Studio Code in the cloud, which is Codespaces on GitHub.
 
-[🔗 **Follow these instructions**](https://github.com/neuefische/web-exercises/tree/curriculum/postpone-mac-setup/sessions/html-and-the-web/github-codespaces)
+[🔗 **Follow these instructions**](https://github.com/neuefische/web-exercises/tree/main/sessions/html-and-the-web/github-codespaces)
 
 ## Personal Website
 
