@@ -9,11 +9,113 @@ In this [changelog](https://github.com/neuefische/web-curriculum/blob/main/chang
 ## Sessions
 
 > **Note**  
-> _We are currently in the process of updating the curriculum to a more reduced version._
->
-> _The sessions listed in this readme represent the current state of the curriculum. If your cohort started with the reduced version, please use it throughout the bootcamp, as the versions are not compatible. Both versions will be available until the last cohort that started with the current version has finished the bootcamp._ ~Jan
->
-> [**Reduced Curriculum Sessions →**](https://github.com/neuefische/web-curriculum/blob/main/reduced.md)
+> In case your current course is working with the former (extended) version of the curriculum, you can find it [here](#soon-to-be-deprecated-extended-curriculum).
+> This version will be deleted as soon as all cohorts have switched to the new reduced version of the curriculum.
+
+All Session that are still WIP are marked with a ⭐️.
+All Sessions that are being simplified, but not fundamentally changed are marked with a 📗.
+
+| Day | Session                                                                     | Status                   | Explanation                                                                              |
+| --- | --------------------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------- |
+| 1   | [Welcome](sessions/welcome)                                                 |                          |                                                                                          |
+|     | [Github and Markdown](sessions/github-and-markdown)                         |                          |                                                                                          |
+| 2   | Active Learning: [HTML and the Web](sessions/html-and-the-web-new)          | AL and new challenge     | added intro to Codespaces, personal website challenge with Codespaces                    |
+|     | [CSS Basics](sessions/css-basics-new) 🆕                                    | new version              | merged with CSS Selectors                                                                |
+| 3   | [CSS Flexbox](sessions/css-flexbox-new) 🆕                                  | new version              | merged with CSS Grid                                                                     |
+|     | [CSS Positioning](sessions/css-positioning)                                 |                          |                                                                                          |
+| 4   | [Shell Basics](sessions/shell-basics-new) 🆕                                | new version              | removed Mac Setup, challenges with Codespaces                                            |
+|     | Self-Directed Learning + Mac Setup ⭐️                                      |                          | postponed Mac SetUp from Shell Basics to here                                            |
+| 5   | [Git CLI & Remote](sessions/git-cli-and-remote-new) 🆕 ⭐️                  | new challenge            |                                                                                          |
+|     | [Git Branches and PRs](sessions/git-branches-and-prs)                       |                          |                                                                                          |
+| 6   | [**Recap Project 1**](sessions/recap-project-1)                             |                          |                                                                                          |
+|     | Active Learning: [Accessibility](sessions/accessibility)                    | AL                       |                                                                                          |
+| 7   | [JS Basics](sessions/js-basics)                                             |                          |                                                                                          |
+|     | [CSS Structure](sessions/css-structure-new) 🆕 ⭐️                          | new version              | added Demo and reduced BEM                                                               |
+| 8   | [JS Variables and Numbers](sessions/js-variables-and-numbers)               |                          |                                                                                          |
+|     | [JS Conditions and Booleans](sessions/js-conditions-and-booleans)           |                          |                                                                                          |
+| 9   | Active Learning: [CSS Responsive](sessions/css-responsive)                  | AL                       |                                                                                          |
+|     | Self-Directed Learning                                                      |                          |                                                                                          |
+| 10  | [JS Functions](sessions/js-functions)                                       |                          |                                                                                          |
+|     | [JS Functions 2](sessions/js-functions-2) 📗 ⭐️                            | simplified session guide |                                                                                          |
+| 11  | [HTML Forms](sessions/html-forms-new) 🆕                                    | new version              | merged with part of JS Forms                                                             |
+|     | Active Learning: [JS Inputs and Strings](sessions/js-inputs-and-strings)    | AL                       |                                                                                          |
+| 12  | [JS Objects and Arrays](sessions/js-objects-and-arrays)                     |                          |                                                                                          |
+|     | [JS Forms](sessions/js-forms-new) 🆕                                        | new version              | merged with JS Forms 2                                                                   |
+| 13  | [JS createElement](sessions/js-createelement)                               |                          |                                                                                          |
+|     | [**Recap Project 2**](sessions/recap-project-2)                             |                          |                                                                                          |
+| 14  | [**Recap Project 2**](sessions/recap-project-2)                             |                          |                                                                                          |
+|     | Self-Directed Learning                                                      |                          |                                                                                          |
+| 15  | [JS Array Methods](sessions/js-array-methods)                               |                          |                                                                                          |
+|     | [JS Structure](sessions/js-structure)                                       |                          |                                                                                          |
+| 16  | [JS Array Methods 2](sessions/js-array-methods-2) 📗 ⭐️                    | simplified session guide |                                                                                          |
+|     | [JS Fetch](sessions/js-fetch-new) 🆕                                        | new version              | merged with JS Async Functions                                                           |
+| 17  | Active Learning: [JS Error Handling](sessions/js-error-handling)            | new session with AL      | removed JS Fetch 2 and developed JS Error Handling                                       |
+|     | [Git Advanced](sessions/git-advanced)                                       |                          |                                                                                          |
+| 18  | [JS Modern Syntax](sessions/js-modern-syntax)                               |                          |                                                                                          |
+|     | [**Recap Project 3**](sessions/recap-project-3)                             |                          |                                                                                          |
+| 19  | [**Recap Project 3**](sessions/recap-project-3)                             |                          |                                                                                          |
+|     | Self-Directed Learning                                                      |                          |                                                                                          |
+| 20  | [React Basics](sessions/react-basics-new) 🆕                                | new version              | merged with React Project Setup and npm and linting basics                               |
+|     | [React Props](sessions/react-props)                                         |                          |                                                                                          |
+| 21  | [React Nesting](sessions/react-nesting)                                     |                          |                                                                                          |
+|     | [React State](sessions/react-state)                                         |                          |                                                                                          |
+| 22  | [React with Arrays](sessions/react-with-arrays)                             |                          |                                                                                          |
+|     | [React State 2](sessions/react-state-2)                                     |                          |                                                                                          |
+| 23  | [React State 3](sessions/react-state-3) 📗 ⭐️                              | simplified session guide |
+|     | [React Effects and Fetch](sessions/react-effects-and-fetch)                 |                          |                                                                                          |
+| 24  | [React with Local Storage](sessions/react-with-local-storage-new) 🆕        | AL                       |                                                                                          |
+|     | Self-Directed Learning                                                      |                          |                                                                                          |
+| 25  | [**Recap Project 4**](sessions/recap-project-4)                             |                          |                                                                                          |
+|     | [**Recap Project 4**](sessions/recap-project-4)                             |                          |                                                                                          |
+| 26  | [**Recap Project 4**](sessions/recap-project-4)                             |                          |                                                                                          |
+|     | Workshop: Capstone Kickoff 🆕 ⭐️                                           | new session              | Kickoff for capstone projects in groups, intro and finding groups and pitching app ideas |
+| 27  | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing)            |                          |                                                                                          |
+|     | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes)                    |                          |                                                                                          |
+| 28  | [React Styled Components](sessions/react-styled-components)                 |                          |                                                                                          |
+|     | [React Styled Components 2](sessions/react-styled-components-2) 🆕 ⭐️      | new session              | simplified session by adding a new session for styled components, potentially AL         |
+| 29  | [React Global State](sessions/react-global-state)                           |                          |                                                                                          |
+|     | Self-Directed Learning                                                      |                          |                                                                                          |
+| 30  | [React Data Fetching](sessions/react-data-fetching)                         |                          |                                                                                          |
+|     | [**Recap Project 5**](sessions/recap-project-5)                             |                          |                                                                                          |
+| 31  | [**Recap Project 5**](sessions/recap-project-5)                             |                          |                                                                                          |
+|     | [**Recap Project 5**](sessions/recap-project-5)                             |                          |                                                                                          |
+| 32  | [Backend Basics](sessions/backend-basics)                                   |                          |                                                                                          |
+|     | [Backend API Routes](sessions/backend-api-routes)                           |                          |                                                                                          |
+| 33  | [Backend MongoDB](sessions/backend-mongodb)📗 ⭐️                           | new version              | merge with MongoDB Atlas to only host DB on Atlas                                        |
+|     | [Backend Read](sessions/backend-read) 📗 ⭐️                                | new version              | remove local MongoDB dependency                                                          |
+| 34  | [Backend Create](sessions/backend-create) 📗 ⭐️                            | new version              | remove local MongoDB dependency                                                          |
+|     | Self-Directed Learning                                                      |                          |                                                                                          |
+| 35  | [Backend Update and Delete](sessions/backend-update-and-delete) 📗 ⭐️      | new version              | remove local MongoDB dependency                                                          |
+|     | [**Recap Project 6**](sessions/recap-project-6)                             |                          |                                                                                          |
+| 36  | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories) |                          | held by IT Project Management coaches                                                    |
+|     | User Story Workshop 🆕 ⭐️                                                  | new session              | add practical exercises with User Stories                                                |
+| 37  | _Design Workshop_                                                           |                          |                                                                                          |
+|     | _Capstone Forum_                                                            |                          |                                                                                          |
+| 38  | _Design Workshop_                                                           |                          |                                                                                          |
+|     | _Capstone Forum_                                                            |                          |                                                                                          |
+| 39  | Frontend-CRUD Recap in Capstone Teams 🆕 ⭐️                                | new session              | add repetition exercises to ease the capstone start                                      |
+|     | Frontend-CRUD Recap in Capstone Teams 🆕 ⭐️                                | new session              | add repetition exercises to ease the capstone start                                      |
+| 40  | Agile Setup with Project Board 🆕 ⭐️                                       |                          |                                                                                          |
+|     | [How to Capstone](workshops/how-to-capstone/)                               |                          |                                                                                          |
+
+### Thursday Afternoons: Self-Directed Learning
+
+Thursday afternoons are reserved for "self directed learning". Students have time to repeat and research whatever topics they need to. They can organize themselves in groups, if they like. During "self directed learning", the students just repeat, no new content is taught.
+
+| duration | teaching minutes | time          | content                |
+| -------- | ---------------- | ------------- | ---------------------- |
+| 3:00     | 0                | 14:00 - 17:00 | Self Directed Learning |
+| 0:30     | 30               | 17:00 - 17:30 | Recap with Coach       |
+
+During the Recap, the students each have 1 minute to share what the looked into, what they learned and what is still missing.
+
+### Active Learning
+
+The Session with the prefix `Active Learning` (see Session Overview above) are a new learning method we are using in our cohort. The students are provided with an interactive handout. This handout will replace an in person lecture session. The handouts are to be found [here](https://web-active-learning.vercel.app/). You can also find [the respective repository here](https://github.com/neuefische/web-active-learning) Each Session folder in this web-curriculum, that is marked with the prefix `Active learning` contains a file called `active-learning.md`. This file contains the explanation and the link to the respective handout. It can be shared with the students via Slack.
+
+---
+
+## Soon to be deprecated: Extended curriculum
 
 > _Besides providing a reduced version of the curriculum, we also set up an alternative session timing for the case that the Macbooks don't arrive on time._
 
@@ -105,6 +207,8 @@ ones more challenging than afternoon sessions.
 |     | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories)     |
 | 40  | _Capstone Forum_                                                                |
 |     | _Capstone Forum_                                                                |
+
+---
 
 ## Daily routine
 
@@ -256,4 +360,4 @@ npm run create-session
 - [AVIVA Method](https://moodle.jku.at/jku/pluginfile.php/3829921/mod_resource/content/1/5S%C3%A4ulen%20der%20Unterrichtsvorbereitung.pdf)
 - [AVIVA Method Blog Post](https://www.julia-training.com/blog/2017/10/30/optimal-lernen-mit-aviva)
 - [problem based learning](https://citl.illinois.edu/citl-101/teaching-learning/resources/teaching-strategies/planning-a-class-session)
-- [more problem base learning](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)
+- [more problem based learning](https://teaching.cornell.edu/teaching-resources/engaging-students/problem-based-learning)

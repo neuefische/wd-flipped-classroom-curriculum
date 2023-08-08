@@ -27,7 +27,7 @@ As you read the document, you will probably have questions. Write them down in a
 ## Estimated timeline
 
 | duration | content         | mode       |
-|----------|-----------------|------------|
+| -------- | --------------- | ---------- |
 | 15m      | Introduction    | With Coach |
 | 5m       | Pause           | -          |
 | 45m      | Active Learning | Individual |
