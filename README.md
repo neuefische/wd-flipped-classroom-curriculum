@@ -30,7 +30,7 @@ All Sessions that are being simplified, but not fundamentally changed are marked
 | 6   | [**Recap Project 1**](sessions/recap-project-1)                             |                          |                                                                                          |
 |     | Active Learning: [Accessibility](sessions/accessibility)                    | AL                       |                                                                                          |
 | 7   | [JS Basics](sessions/js-basics)                                             |                          |                                                                                          |
-|     | [CSS Structure](sessions/css-structure-new) 🆕 ⭐️                          | new version              | added Demo and reduced BEM                                                               |
+|     | [CSS Structure](sessions/css-structure-new) 🆕                         | new version              | added Demo and reduced BEM                                                               |
 | 8   | [JS Variables and Numbers](sessions/js-variables-and-numbers)               |                          |                                                                                          |
 |     | [JS Conditions and Booleans](sessions/js-conditions-and-booleans)           |                          |                                                                                          |
 | 9   | Active Learning: [CSS Responsive](sessions/css-responsive)                  | AL                       |                                                                                          |
