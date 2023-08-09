@@ -49,7 +49,7 @@ All Sessions that are being simplified, but not fundamentally changed are marked
 |     | [JS Structure](sessions/js-structure)                                       |                          |                                                                                          |
 | 16  | [JS Array Methods 2](sessions/js-array-methods-2) 📗 ⭐️                    | simplified session guide |                                                                                          |
 |     | [JS Fetch](sessions/js-fetch-new) 🆕                                        | new version              | merged with JS Async Functions                                                           |
-| 17  | Active Learning: [JS Error Handling](sessions/js-error-handling)            | new session with AL      | removed JS Fetch 2 and developed JS Error Handling                                       |
+| 17  | Active Learning: [JS Error Handling](sessions/js-error-handling) 🆕                | new session with AL      | removed JS Fetch 2 and developed JS Error Handling                                       |
 |     | [Git Advanced](sessions/git-advanced)                                       |                          |                                                                                          |
 | 18  | [JS Modern Syntax](sessions/js-modern-syntax)                               |                          |                                                                                          |
 |     | [**Recap Project 3**](sessions/recap-project-3)                             |                          |                                                                                          |
@@ -63,7 +63,7 @@ All Sessions that are being simplified, but not fundamentally changed are marked
 |     | [React State 2](sessions/react-state-2)                                     |                          |                                                                                          |
 | 23  | [React State 3](sessions/react-state-3) 📗 ⭐️                              | simplified session guide |
 |     | [React Effects and Fetch](sessions/react-effects-and-fetch)                 |                          |                                                                                          |
-| 24  | [React with Local Storage](sessions/react-with-local-storage-new) 🆕        | AL                       |                                                                                          |
+| 24  | Active Learning: [React with Local Storage](sessions/react-with-local-storage-new) 🆕        | AL                       |                                                                                          |
 |     | Self-Directed Learning                                                      |                          |                                                                                          |
 | 25  | [**Recap Project 4**](sessions/recap-project-4)                             |                          |                                                                                          |
 |     | [**Recap Project 4**](sessions/recap-project-4)                             |                          |                                                                                          |
@@ -71,7 +71,7 @@ All Sessions that are being simplified, but not fundamentally changed are marked
 |     | Workshop: Capstone Kickoff 🆕 ⭐️                                           | new session              | Kickoff for capstone projects in groups, intro and finding groups and pitching app ideas |
 | 27  | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing)            |                          |                                                                                          |
 |     | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes)                    |                          |                                                                                          |
-| 28  | [React Styled Components](sessions/react-styled-components)                 |                          |                                                                                          |
+| 28  | [React Styled Components](sessions/react-styled-components) 🆕 ⭐️                    | simplified session guide                        |                                                                                          |
 |     | [React Styled Components 2](sessions/react-styled-components-2) 🆕 ⭐️      | new session              | simplified session by adding a new session for styled components, potentially AL         |
 | 29  | [React Global State](sessions/react-global-state)                           |                          |                                                                                          |
 |     | Self-Directed Learning                                                      |                          |                                                                                          |
