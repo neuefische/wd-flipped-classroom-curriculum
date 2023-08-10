@@ -27,19 +27,27 @@ Student Service
 
 <!-- class: image-profile -->
 
-## Sina Stulpe
+## Anne Buss
 
 Candidate Success Management
 
-![Foto](images/sina_stulpe.jpg)
+![Foto](images/anne_buss.jpg)
 
 ---
 
-## Thomas Görldt
+<!-- ## Oliver Fohrmann
+
+Partner Management
+
+![Foto](images/oliver_fohrmann.jpg)
+
+--- -->
+
+## Diego Caponera
 
 Coach
 
-![Foto](images/thomas_goerldt.jpg)
+![Foto](images/diego_caponera.jpeg)
 
 ---
 
@@ -139,12 +147,12 @@ Moving from the Fear Zone to the Growth Zone
 
 **Woche 9 bis 12**
 
-| Woche  | Aktivität                            |
-| ------ | ------------------------------------ |
-| **9**  | Capstone - Sprint 1                  |
-| **10** | Capstone - Sprint 2 + Sprint Review  |
-| **11** | Capstone - Sprint 3 + Sprint Review  |
-| **12** | Capstone - Sprint 4 + Abschlussevent |
+| Woche  | Aktivität                           |
+| ------ | ----------------------------------- |
+| **9**  | Capstone - Sprint 1                 |
+| **10** | Capstone - Sprint 2 + Sprint Review |
+| **11** | Capstone - Sprint 3 + Sprint Review |
+| **12** | Capstone - Sprint 4 + Abschluss     |
 
 ---
 
@@ -207,12 +215,6 @@ Moving from the Fear Zone to the Growth Zone
 
 ---
 
-<!-- _class: image-center -->
-
-![w:700](images/learning-pyramid.png)
-
----
-
 <!-- _class: bullet-points small-->
 
 # Bleibt gesund! 🍀
@@ -250,7 +252,7 @@ Moving from the Fear Zone to the Growth Zone
 
 # Arbeiten in Zoom 🎥
 
-- Kamera an / Mikrofon stumm,
+- Kamera muss an sein / Mikrofon stumm,
 - Nicht im Zoom Chat schreiben
 - Melden über **Zoom Reactions**
 - Visuelles **Feedback** geben
@@ -273,8 +275,8 @@ Moving from the Fear Zone to the Growth Zone
 
 # Abwesenheit 🤒
 
-1. Benachrichtung an Coaches (Slack)
-   wichtig: **Krankmeldung!**
+1. Benachrichtung an Coaches (Slack),
+   wichtig: **Krankmeldung vom Arzt ab dem 1. Tag!**
 2. Benachrichtigung in Kurs Channel (Slack)
 
 ---
