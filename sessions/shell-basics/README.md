@@ -121,9 +121,9 @@ delete things irreversibly or other things that you didn't intend to so. So be c
 
 Provide the [handout](shell-basics.md) and [challenges](challenges-shell-basics.md) to the students.
 
-Guide the students through the setup by follwing the instructions in the challenges.
+Guide the students through the setup by following the instructions in the challenges.
 
-Let students to the actual treasure hunt challenge on their own.
+Let students do the actual treasure hunt challenge on their own.
 
 ---
 

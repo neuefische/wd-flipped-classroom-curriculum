@@ -53,7 +53,7 @@ as alternative terminal emulators.
 | `curl <url>`             | prints the received content from the specified url. (try `curl ipinfo.io`) |
 
 > 💡 There are a lot of commands for any sort of action you want to perform check out
-> [this cheat cheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet) to look up important commands.
+> [this cheat sheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet) to look up important commands.
 
 ---
 
