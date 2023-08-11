@@ -25,7 +25,7 @@ All Sessions that are being simplified, but not fundamentally changed are marked
 |     | [CSS Positioning](sessions/css-positioning)                                           |                          |                                                                                          |
 | 4   | [Shell Basics](sessions/shell-basics) + Mac Setup 💻                                  |                          |                                                                                          |
 |     | Self-Directed Learning                                                                |                          | Mac Setup / challenges can be finalised here                                             |
-| 5   | [Git CLI & Remote](sessions/git-cli-and-remote-new) 🆕 ⭐️                            | new challenge            |                                                                                          |
+| 5   | [Git CLI & Remote](sessions/git-cli-and-remote)                     |           |                                                                                          |
 |     | [Git Branches and PRs](sessions/git-branches-and-prs)                                 |                          |                                                                                          |
 | 6   | [**Recap Project 1**](sessions/recap-project-1)                                       |                          |                                                                                          |
 |     | Active Learning: [Accessibility](sessions/accessibility)                              | AL                       |                                                                                          |
