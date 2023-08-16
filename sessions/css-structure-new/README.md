@@ -351,7 +351,3 @@ cascading, specificity, BEM, @import, custom properties
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
-
-```
-
-```
