@@ -69,9 +69,9 @@ You can check out the final version of this demo on
 [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/demo-end?file=/README.md)
 or locally by running this command in your Terminal:
 
-````
+```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/demo-end -i
-
+```
 
 ---
 
