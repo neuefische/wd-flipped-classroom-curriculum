@@ -1,14 +1,3 @@
-# Self Directed Learning Week 4
-
-🏋️‍♀️ What to do?
-
-- Additional challenge (see below) - optional, but highly recommended
-- Reread handouts from this week
-- Repeat challenges
-- Continue to work on Recap Project 3: Rick and Morty App
-
----
-
 ## Additional Challenge
 
 ---
