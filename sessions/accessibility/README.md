@@ -1,5 +1,23 @@
 # Accessibility
 
+## Active Learning
+
+This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro. The old session guide is retained below in case it is decided to be used as a one-off.
+
+- [ ] Intro topic for 5 - 10 mins
+- [ ] Share [Active Learning Guide](active-learning.md) with the students.
+- [ ] Share [Challenges](challenges-accessibility.md) with the students.
+
+---
+
+## Active Learning Intro
+
+> You can use the intro from the old session guide to explain [why we should care about accessibility](#why-should-i-care-about-accessibility).
+
+---
+
+## Session Guide
+
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
 | duration | content         |
@@ -27,7 +45,7 @@
 
 ### Why is the content of today's block that important for the students?
 
-> Why this topic is imporant is [part of the session itself](#why-should-i-care-about-accessibility)
+> Why this topic is important is [part of the session itself](#why-should-i-care-about-accessibility)
 > :)
 
 ---
