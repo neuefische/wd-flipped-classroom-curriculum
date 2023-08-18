@@ -145,8 +145,8 @@ export default function Form({ onAddMovie }) {
   - We need to call the setter function and pass the new state
 - [ ] Point out we need to create a new array and copy all existing movies
   - `[...movies]`
-- [ ] Explain that we like to add a new movie at the end of the list
-- [ ] Point out that each movie need a unique `id`, so we need to generate one.
+- [ ] Explain that we would like to add a new movie at the end of the list
+- [ ] Point out that each movie needs a unique `id`, so we need to generate one.
   - [ ] Explain that the tool `uid` can do this. It's already installed via `npm`
   - [ ] Import `uid`
     - `import { uid } from "uid";`
