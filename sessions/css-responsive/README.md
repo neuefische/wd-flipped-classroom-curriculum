@@ -1,5 +1,48 @@
 # CSS Responsive
 
+## Active Learning
+
+This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro. Old session guide is retained below incase it is decided to be used as a one off.
+
+- [ ] Intro topic for 5 - 10 mins
+- [ ] Share [Active Learning Guide](active-learning.md) with the students.
+- [ ] Share [Challenges](challenges-css-responsive.md) with the students.
+
+---
+
+## Active Learning Intro
+
+- Our websites should be able to adjust and look good on a wide range of devices, ranging from mobile phones to desktop computers.
+- Additionally, we need to consider accessibility features that might impact the way a website is shown.
+
+  - high contrast mode
+  - reducing animations.
+
+- [ ] **Demo Non-Responsive Website:** Show an example of a website that doesn't adapt to various screen sizes. You can use [this example](https://dequeuniversity.com/library/responsive/1-non-responsive).
+
+- [ ] **Contrast with Responsive Website:** Compare it with a website that effectively responds to different screen sizes, such as [GitHub](https://github.com/) or any other modern website you prefer for demonstration purposes.
+
+  Alternatively, you can use [the same example as above, but the responsive version](https://dequeuniversity.com/library/responsive/1-responsive).
+
+In this Active Learning session, we will explore two important tools that help us create responsive websites.
+
+- [ ] **Media Queries**
+
+  - A vital component within CSS tools
+  - Enable us to apply styles based on the device's characteristics
+    - Screen size
+    - Resolution
+    - Orientation (portrait or landscape on smartphones)
+  - Media queries ensure our site's layout and appearance adapt effectively to various devices.
+
+- [ ] **Responsive Units**
+  - Allow elements to dynamically adjust their size using specific reference points
+  - Ensure content looks appropriate across a range of devices
+
+---
+
+## Session Guide
+
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
 Recommended schedule for this session:
@@ -25,17 +68,18 @@ Recommended schedule for this session:
 
 ### Which important problem will we solve today?
 
-Websites need to work for a wide variety of devices, from mobile phones to desktop computers. We
-need to make sure that our websites are responsive to the size of the screen they are being viewed
-on. There are also accessibility features that can affect how a website should be displayed, like
-high contrast mode, or reducing animations.
+- Our Websites need to adapt responsively to a wide variety of devices
+  - from mobile phones to desktop computers.
+- There are accessibility features that can also affect how a website should be displayed
+  - high contrast mode
+  - reducing animations.
 
 Media queries and relative units help to accomplish this.
 
 ### Why is the content of today's block that important for the students?
 
-Responsive design is important for all websites, because it allows them to be viewed on a wide
-variety of devices. It also helps to make sure that websites are accessible to all users.
+- Responsive design allows users to view your website on a **wide variety of devices**.
+- It also ensures **accessibility to all users**.
 
 ### Pose a question to be answered by the end of the block!
 
