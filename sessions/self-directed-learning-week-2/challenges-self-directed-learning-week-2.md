@@ -1,4 +1,4 @@
-# Self Directed Learning - Week 2
+# Challenges - Self Directed Learning Week 2
 
 Out of ideas? Try these things out!
 
@@ -18,12 +18,12 @@ Flex to the max? Achieve full page layouts with flex!
 
 A commented possible solution is available [here](https://codesandbox.io/s/nested-flex-example-msrws7).
 
-## JS questions
+## JS Questions
 
 - How many JS data types you know? Why would you pick one over another?
 - What's the different behaviour granted by the `let` and `const` keywords?
 
-### Truthiness and falsiness
+### Truthiness and Falsiness
 
 What values behave like `true`? Remember:
 

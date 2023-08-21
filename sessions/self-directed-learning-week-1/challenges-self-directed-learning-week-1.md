@@ -1,8 +1,8 @@
-## Additional Challenges
+# Challenges - Self Directed Learning Week 1
 
 ---
 
-### Git Workflow Workout
+## Git Workflow Workout
 
 1. create a new repo from your Github profile (name it like you want);
 2. copy the git url (the SSH one, important!);
@@ -27,7 +27,7 @@ Done? Great!
 
 ---
 
-### HTML Workout
+## HTML Workout
 
 Let's have a look at a basic HTML structure and apply it to different scenarios.
 

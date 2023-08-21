@@ -4,6 +4,8 @@ The Thursday afternoon is dedicated to self-directed learning. This means the st
 
 However some students find it helpful to have some guidance and suggestions on what to do. Therefore we provide **optional** challenges that the students can work on.
 
+Find a template for a Slack message [here](self-directed-learning-week-4.md). Alternatively push the file to the students repository.
+
 Feel free to add more options according to the needs of your students.
 For example:
 
@@ -13,4 +15,4 @@ For example:
 
 ---
 
-> The [challenges page](/sessions/self-directed-learning-week-4/challenges-self-directed-learning-week-4.md) can be sent to the students via the `web-class-helper` tool.
+> The [challenges page](challenges-self-directed-learning-week-4.md) can be sent to the students via the `web-class-helper` tool.
