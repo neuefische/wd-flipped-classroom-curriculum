@@ -81,11 +81,15 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/demo-e
   - CSS includes an algorithm that defines which CSS rules are being applied when there are conflicting rules.
   - Important concepts: `specificity`, `order`, `inheritance`
 - [ ] Show an example for overwritten styles because of "cascading"
-  - on purpose
-    > find the `.info span`-Selector in the css file, its overwriting the font color defined in the `body`-Selector on purpose
-  - accidentally
-    > you can add the `.title`-Selector, the class is already added to the HTML file
-    >
+
+  - _on purpose_:
+
+    find the `.highlight`-Selector in the css file, it is **overwriting the font color** defined in the `body`-Selector on purpose
+
+  - _accidentally_:
+
+    you can add the `.title`-Selector, the class is already added to the HTML file
+
     > ```css
     > .title {
     >   color: purple;
@@ -108,11 +112,11 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/demo-e
   >   color: #ff4a11;
   > }
   >
-  > /*add to the demo:*/
   > .title {
   >   color: purple;
   > }
   >
+  > /*add to the demo:*/
   > #headline {
   >   color: green;
   > }
@@ -128,7 +132,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/demo-e
   > }
   > ```
 
-> You can now delete or comment out these examples to explain the next concept
+> You can now delete or comment out these examples `.title` and `#headline` to explain the next concept
 
 #### CSS Order
 
@@ -137,15 +141,16 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/demo-e
   - CSS rules written further down in the document may overwrite
 - [ ] Show an example for CSS order
 
-```css
-h1 {
-  color: #ff4a11;
-}
-
-h1 {
-  color: blue;
-}
-````
+> ```css
+> h1 {
+>   color: #ff4a11;
+> }
+>
+> /*add to the demo:*/
+> h1 {
+>   color: blue;
+> }
+> ```
 
 #### Inheritance
 
@@ -157,48 +162,51 @@ h1 {
     - color
     - cursor
     - visibility
-- [ ] Show an example for CSS inheritance
+- [ ] Show a simple example for CSS inheritance
 
-```css
-body {
-  color: red;
-}
-```
+> ```css
+> /*replace in the demo:*/
+> body {
+>   color: red;
+> }
+> ```
 
+> Ask the students to later play around with inheritance during the challenges.
 > You can now undo or comment out these examples to explain the next concept
 
 ### CSS practical strategies for good structure
 
 - [ ] Show some concrete use cases
-  - Show that the CSS code is doubled in the `body`and the `.info` selector
+  - Show that the CSS code is doubled in the `body`and the `.card` selector
   - to respect the D.R.Y. (Don't Repeat Yourself) principle we should avoid this
     The guidelines:
     - Independent blocks and CSS selectors
     - Make your code reusable and modular
     - Code is easier to read and understand
     - Easier to scale, more robust and explicit
-- [ ] Change the name of the `.info` selector to `.flex` and cut the flexbox rules from `body`
+- [ ] Cut the flexbox rules from the `.card` selector and `body` and create a new class called `.flex`. Add the rules to the new selector.
 
-```css
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-```
-
-- [ ] Go to the `index.html` and add the class to the `body`-element and the `section`-element with the`class="info"`
-
-```html
-<body class="flex">
-  ...
-  <section class="card flex">...</section>
-  <section class="card flex">...</section>
-</body>
-```
+> ```css
+> /*add to the demo:*/
+> .flex {
+>   display: flex;
+>   flex-wrap: wrap;
+>   gap: 10px;
+>   justify-content: center;
+>   align-items: center;
+>   flex-direction: column;
+> }
+> ```
+>
+> - [ ] Go to the `index.html` and add the `class="flex"` to the >`body`-element. For the section elements, add the class `flex` behind the > class `card` like this:
+>
+> ```html
+> <body class="flex">
+>   ...
+>   <section class="card flex">...</section>
+>   <section class="card flex">...</section>
+> </body>
+> ```
 
 ### CSS Structure best practices
 
