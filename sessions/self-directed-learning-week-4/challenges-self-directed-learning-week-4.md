@@ -92,7 +92,6 @@ Let's build a website that displays the current number of people in space. Hints
       const response = await fetch("http://api.open-notify.org/astros.json");
       const data = await response.json();
       console.log("data: ", data);
-      return data; // don't forget to return something from the function
     }
     getPeopleInSpace(); // don't forget to call the function
     ```
@@ -106,12 +105,12 @@ Let's build a website that displays the current number of people in space. Hints
 
     ```js
     // script.js
-    async function init() {
-      const data = await getPeopleInSpace();
+    async function getPeopleInSpace() {
+      const response = await fetch("http://api.open-notify.org/astros.json");
+      const data = await response.json();
       peopleInSpace.innerText = data.number;
     }
-
-    init(); // don't forget to call the function
+    getPeopleInSpace(); // don't forget to call the function
     ```
 
      </details>
@@ -125,6 +124,86 @@ As an **_extra bonus_** you could add 3 buttons to the page. `All`, `ISS` and `T
   <details>
   <summary>🙈 Hint</summary>
 
-`filter`
+[Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) would be a good array method to look at.
+
+```js
+const people = [
+  {
+    name: "Sergey Prokopyev",
+    craft: "ISS",
+  },
+  {
+    name: "Dmitry Petelin",
+    craft: "ISS",
+  },
+  {
+    name: "Frank Rubio",
+    craft: "ISS",
+  },
+  {
+    name: "Stephen Bowen",
+    craft: "ISS",
+  },
+  {
+    name: "Warren Hoburg",
+    craft: "ISS",
+  },
+  {
+    name: "Sultan Alneyadi",
+    craft: "ISS",
+  },
+  {
+    name: "Andrey Fedyaev",
+    craft: "ISS",
+  },
+  {
+    name: "Jing Haiping",
+    craft: "Tiangong",
+  },
+  {
+    name: "Gui Haichow",
+    craft: "Tiangong",
+  },
+  {
+    name: "Zhu Yangzhu",
+    craft: "Tiangong",
+  },
+];
+// e.g.
+const peopleOnIss = people.filter((person) => person.craft === "ISS");
+
+// the value of peopleOnIss would be
+
+// [
+//     {
+//         "name": "Sergey Prokopyev",
+//         "craft": "ISS"
+//     },
+//     {
+//         "name": "Dmitry Petelin",
+//         "craft": "ISS"
+//     },
+//     {
+//         "name": "Frank Rubio",
+//         "craft": "ISS"
+//     },
+//     {
+//         "name": "Stephen Bowen",
+//         "craft": "ISS"
+//     },
+//     {
+//         "name": "Warren Hoburg",
+//         "craft": "ISS"
+//     },
+//     {
+//         "name": "Sultan Alneyadi",
+//         "craft": "ISS"
+//     },
+//     {
+//         "name": "Andrey Fedyaev",
+//         "craft": "ISS"
+//     }
+// ]
+```
 
   </details>
