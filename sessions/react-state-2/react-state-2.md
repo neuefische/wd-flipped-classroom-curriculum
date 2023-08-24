@@ -253,6 +253,6 @@ When using hooks you need to follow a few rules:
 ## Resources
 
 - [Sharing State Between Components in the React Docs](https://react.dev/learn/sharing-state-between-components)
-- [Updating state based on the previous state in the React Docs](https://react.dev/apis/react/useState#updating-state-based-on-the-previous-state)
-- [I’ve updated the state, but logging gives me the old value in the React Docs](https://react.dev/apis/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
+- [Updating state based on the previous state in the React Docs](https://react.dev/reference/react/useState#updating-state-based-on-the-previous-state)
+- [I’ve updated the state, but logging gives me the old value in the React Docs](https://react.dev/reference/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
 - [Hooks at a Glance in the React Docs](https://reactjs.org/docs/hooks-overview.html)
