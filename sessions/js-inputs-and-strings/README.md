@@ -1,12 +1,39 @@
 # JS Inputs and Strings
 
+## Active Learning
+
+This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro. Old session guide is retained below incase it is decided to be used as a one off.
+
+- [ ] Intro topic for 5 - 10 mins
+- [ ] Share [Active Learning Guide](active-learning.md) with the students.
+- [ ] Share [Challenges](challenges-css-responsive.md) with the students.
+
+## Active Learning Intro
+
+- often we have to deal with strings that are generated based on other variables;
+- we refer to this concept as **interpolation** or **templating**;
+- you can briefly show how a function like:
+  ```js
+  function sayHello (name) {
+    console.log(`Hello, ${name}!`);
+  }
+  // example calls
+  sayHello('Jane');
+  sayHello('Mario');
+  ```
+- strings come in JavaScript with various useful **properties** (mainly `length`) and **methods**;
+- strings contain human friendly information, and we can retrieve informations from humans via **HTML inputs**;
+- you can use [this playground](https://6cpqpr.csb.app/) to briefly demonstrate what string methods do via inputs, without going into detail with code.
+
+## Session Guide
+
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
 | duration | content         |
-| -------- | --------------- |
-| 0:45     |	Session        |
-| 1:30     | 	Active Learning|
-| 0:30     |	Recap          |
+|----------|-----------------|
+| 0:45     | Session         |
+| 1:30     | Active Learning |
+| 0:30     | Recap           |
 
 ## Learning objectives
 
