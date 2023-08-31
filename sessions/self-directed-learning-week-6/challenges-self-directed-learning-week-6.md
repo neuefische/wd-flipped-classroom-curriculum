@@ -148,10 +148,10 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
         <>
           <h1>Cities</h1>
           <ul>
-          {cities.map((city) => (
-            <li key={city.id}>{city.name}</li>
-          </ul>
-          ))}
+	          {cities.map((city) => (
+	            <li key={city.id}>{city.name}</li>
+	          ))}
+					</ul>
         </>
       );
     }
