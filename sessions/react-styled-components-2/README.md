@@ -44,17 +44,8 @@ How can we create re useable components for our application with`styled-componen
 
 ## Inform: Session Guide
 
-Use this demo locally by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/demo-start -i
-```
-
-You can check out the final version of this demo locally by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/demo-end -i
-```
+- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-styled-components-2/demo-start)
+- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-styled-components-2/demo-end)
 
 ### Introduction
 
