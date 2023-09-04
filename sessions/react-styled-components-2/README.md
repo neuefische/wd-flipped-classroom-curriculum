@@ -82,7 +82,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-compone
 ### Create 2 styled buttons
 
 - [ ] Open the `pages/index.js` file
-- [ ] Add the 2 styled button to the page. Once with danger in the text.
+- [ ] Add the 2 styled button to the page. One with danger in the text.
 
 ```jsx
 import styled from "styled-components";
