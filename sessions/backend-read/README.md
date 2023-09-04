@@ -16,8 +16,6 @@ Recommended schedule for this session:
 - [ ] Understanding how to write a `mongoose` Schema
 - [ ] Knowing how to connect an application with a (local) database using `mongoose`
 - [ ] Knowing how to read data with a `mongoose` model
-- [ ] Understanding that the applications currently do not work if deployed to Vercel due to local
-      databases
 
 ---
 
@@ -46,7 +44,7 @@ How can we read data from our database and display it in the frontend?
 - Next.js
 - Backend Basics
 - Backend API Routes
-- Backend MongoDB (with MongoDB Compass)
+- Backend MongoDB (with MongoDB Atlas)
 
 ---
 
@@ -66,7 +64,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-en
 
 ### ORM / ODM and `mongoose`
 
-- [ ] Remind students that right now, we know how to set up a (local) database using MongoDB Compass.
+- [ ] Remind students that right now, we know how to set up a database in the cloud using MongoDB Atlas.
 - [ ] Show the Demo: it has an overview and details page, but receives the data from `lib/data.js`, i.e. there is no database where we could create / read / update / delete entries.
 - [ ] Announce the goal of the session: we want to have a database with the jokes' data and access it from our app.
 - [ ] Explain that we need a JavaScript API to work with MongoDB
@@ -92,20 +90,20 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-en
 ### Prepare and Connect the Database
 
 - [ ] Explain that we need to set up two things:
-  - [ ] a (local) database with all jokes and
+  - [ ] a database with all jokes and
   - [ ] the connection between this database and the Next.js app with `mongoose`.
-- [ ] To start with the database, open MongoDB Compass and if you not have done so in the _Backend
-      MongoDB_ session, create
+- [ ] To start with the database, open MongoDB Atlas and if you not have done so in the _Backend MongoDB_ session, create
 
   - [ ] a database called _jokes-database_ and
   - [ ] a collection called _jokes_;
-  - [ ] [import the jokes data](assets/data.json) into your _jokes_ collection via _Import File_ (or
-        copy the content and paste it into _Insert Document_).
+  - [ ] [Copy the jokes data](assets/data.json) into your _jokes_ collection by pasting it into the _Insert Document_ window.
 
 - [ ] Explain that we still need the connection between database and app:
   - [ ] Install mongoose: `npm install mongoose`.
   - [ ] Create a `.env.local` file at the root of your project with the following content:
-        `MONGODB_URI=mongodb://localhost:27017/jokes-database`.
+        `MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-name>/jokes-database?retryWrites=true&w=majority`.
+    - [ ] Replace `<username>`, `<password>` and `<cluster-name>` with the values from
+          MongoDB Atlas (see [MongoDB Atlas Setup](../backend-mongodb/challenges-backend-mongodb.md)).
   - [ ] Create a `db/connect.js` file and copy the
         [content from the Next.js mongoose example](https://github.com/vercel/next.js/blob/canary/examples/with-mongodb-mongoose/lib/dbConnect.js).
   - [ ] Remind students that it's not necessary to understand this file entirely:
@@ -185,8 +183,6 @@ export default async function handler(request, response) {
 }
 ```
 
-> 💡 If the connection fails with the error code `connect ECONNREFUSED ::1:27017`, change the `localhost` of the MONGODB_URI into `127.0.0.1`
-
 #### Query one Joke by Id
 
 - [ ] Note that querying a single joke from the database does not work yet.
@@ -229,10 +225,7 @@ export default async function handler(request, response) {
 </li>
 ```
 
-- [ ] Explain that the Next.js application will no longer work when deployed to Vercel.
-  - [ ] The application needs to connect to a database which is currently only on our local
-        computer - which is not reachable from Vercel (from the internet).
-  - [ ] We will solve this issue soon with the session about "MongoDB Atlas".
+- [ ] When we want to deploy the app on Vercel, we need to make sure to set the MongoDB connection string as an environment variable. We will discuss how to set environment variables in a later session.
 
 ---
 

@@ -41,21 +41,26 @@ ODM (_Object Document Mapping_):
 
 In order to read data from a database and consume it in our app, we need two things:
 
-- a (local) database with documents (e.g. about jokes)
+- a database with documents (e.g. about jokes)
 - a connection between this database and the Next.js app with `mongoose`.
 
 To create the connection, follow these steps:
 
 1. install `mongoose` with `npm install mongoose`
 2. create a `.env.local` file at the root of your project with the following content:
-   `MONGODB_URI=mongodb://localhost:27017/jokes-database`
+   `MONGODB_URI=mongodb+srv://<user>:<password>@<cluster-name>/jokes-database?retryWrites=true&w=majority`
    - Files called `.env` contain environment variables: secrets like usernames and passwords **you don't want to share with anybody**.
    - These files should be ignored by git inside of the `.gitignore` file.
-   - Note the structure of the content: the variable is called `MONGODB_URI` and has the value `mongodb://localhost:27017/jokes-database`.
-   - `jokes-database` is the name of your database: this value can vary.
+   - Note the structure of the content: the variable is called `MONGODB_URI` and has the value `MONGODB_URI=mongodb+srv://<user>:<password>@<cluster-name>/jokes-database?retryWrites=true&w=majority`.
+     - `user` is the name of the database user you have created in the MongoDB Atlas interface.
+     - `password` is the password you have chosen for this user.
+     - `cluster-name` is the name of your cluster: this value can vary and will look something like `cluster0.mu12zrz.mongodb.net`.
+     - `jokes-database` is the name of your database.
+     - Replace the placeholders, including the `<` and `>` characters, with the actual values.
 3. create a `db/connect.js` file and copy the
    [content from the Next.js mongoose example](https://github.com/vercel/next.js/blob/canary/examples/with-mongodb-mongoose/lib/dbConnect.js)
    - Note that this file uses the `MONGODB_URI` we have just set up in `.env.local` to create a connection.
+   - No need to change anything here.
 
 ---
 

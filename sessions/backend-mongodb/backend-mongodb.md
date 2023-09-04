@@ -11,6 +11,10 @@
   - [ ] one to one (1:1)
   - [ ] one to many (1:n)
   - [ ] many to many (n:m)
+- [ ] Knowing what MongoDB Atlas is
+  - [ ] Creating an account for MongoDB Atlas
+  - [ ] Creating a cluster and database
+  - [ ] Setting up database user and security settings
 
 ---
 
@@ -82,28 +86,6 @@ There are some [differences between relational and non-relational databases](htt
 - In MongoDB, a field is a _key-value_ pair that is stored in a _document_.
 - The field key is a string that identifies the field, and the field value is the data stored in the field.
 
-### MongoDB Queries
-
-You can search your local MongoDB in MongoDB Compass. To do so, open the mongo shell at the bottom of the app.
-
-Common commands:
-
-- `dbs`: show all databases
-- `db`: show name of current database
-- `use jokes-database`: switch to the database called `jokes-database`
-
-The following commands refer to a collection called `jokes`:
-| | Query Methods (one) | Query Methods (many) |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| **C**reate | `db.jokes.insertOne({joke: "What's the action like at a circus? In-tents."})` | `db.jokes.insertMany([{…}, {…}])` |
-| **R**ead | `db.jokes.findOne({_id: ObjectId("[paste_id_here]")})` | `db.jokes.find(…)` |
-| **U**pdate | `db.jokes.updateOne({ _id: ObjectId("[paste_id_here]") }, { $set: { joke: "What's the action like at a circus? In-tents." } })` | `db.jokes.updateMany(…)` |
-| **D**elete | `db.jokes.deleteOne({_id: ObjectId("[paste_id_here]")})` | `db.jokes.deleteMany(…)` |
-
-> 📙 See the [MongoDB documentation](https://www.mongodb.com/docs/mongodb-shell/crud/) for details how to use the query methods.
-
----
-
 ## Database Design
 
 General Guidance:
@@ -140,7 +122,7 @@ There are three different relationships between documents:
 
 The following three collections visualize the best practices and relationships mentioned above.
 
-![Database Collections Example](assets/database_collections.png)
+![Database Collections Example](assets/images/database_collections.png)
 
 ```json5
 // Jokes collection:
@@ -178,8 +160,16 @@ Notes:
 
 ---
 
+## MongoDB Atlas Introduction
+
+- We want our app to be accessible from the internet.
+- This is why we need to make our database accessible from the internet.
+- We depend on external providers to host our database.
+- We will use MongoDB Atlas, a cloud provider for mongo databases.
+
+**[Follow the instructions in the challenges document](./challenges-backend-mongodb.md)** to set up your database on MongoDB Atlas.
+
 ## Resources
 
 - [Differences between relational and non-relational databases](https://www.mongodb.com/compare/relational-vs-non-relational-databases)
 - [In-depth explanation and comparison relational/non-relational](https://www.mongodb.com/compare/relational-vs-non-relational-databases)
-- [CRUD operations in MongoDB documentation](https://www.mongodb.com/docs/mongodb-shell/crud/)

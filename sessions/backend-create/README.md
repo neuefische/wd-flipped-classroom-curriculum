@@ -75,11 +75,11 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-
 
 ### Prepare Backend Database
 
-To start with the database, open MongoDB Compass and if you not have done so in the Backend MongoDB or the Backend Read session, create
+To start with the database, open MongoDB Atlas and if you not have done so in the Backend MongoDB or the Backend Read session, create
 
 - [ ] a database called _jokes-database_ and
 - [ ] a collection called _jokes_;
-- [ ] [import the jokes data](assets/data.json) into your _jokes_ collection via _Import File_ (or copy the content and paste it into _Insert Document_).
+- [ ] [Copy the jokes data](assets/data.json) into your _jokes_ collection by pasting it into the _Insert Document_ window using the view `{}`.
 
 ### Building a `POST` API route
 

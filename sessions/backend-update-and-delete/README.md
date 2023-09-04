@@ -63,8 +63,8 @@ You can check out the final version of this demo locally by running this command
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-end -i
 ```
 
-> 💡 Note: If you don't have your database set up in mongoDB Compass already, please do so. You'll find data you can use in the assets folder of this session. If you'd prefer a step by step setup guide, feel free to take a look at the session "Backend Read".
-> Please also make sure you have an `.env.local` file containing `MONGODB_URI=mongodb://localhost:27017/jokes-database`. If you do not have it already, please create it at the root level of your file structure.
+> 💡 Note: If you don't have your database set up in MongoDB Atlas already, please do so. You'll find data you can use in the assets folder of this session. If you'd prefer a step by step setup guide, feel free to take a look at the session "Backend Read".
+> Please also make sure you have an `.env.local` file containing `MONGODB_URI=mongodb+srv://<user>:<password>@<cluster-name>/jokes-database?retryWrites=true&w=majority`. If you do not have it already, please create it at the root level of your file structure.
 
 ### CRUD: The U and D
 
