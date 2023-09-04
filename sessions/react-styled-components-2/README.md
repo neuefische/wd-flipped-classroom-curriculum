@@ -351,8 +351,8 @@ flex-direction: ${({ $direction = "row" }) =>
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](react-styled-components.md) and the
-      [challenges](challenges-react-styled-components.md) to the students
+- [ ] Provide the [handout](react-styled-components-2.md) and the
+      [challenges](challenges-react-styled-components-2.md) to the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
