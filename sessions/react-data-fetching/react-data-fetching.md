@@ -345,25 +345,6 @@ function Movies() {
 
 > 💡 When using this pattern you are relying on your local state being created ad-hoc. Therefore your local state array will return `undefined` on `find` if the movie is not in the state. This is why we use the `??` operator to default to `{ isFavorite: false }` if the movie is not in the state.
 
-If you use Immer and `useImmer` you can simplify the update code a bit:
-
-```js
-function handleToggleFavorite(id) {
-  updateMoviesInfo((draft) => {
-    // find the movie in the state
-    const info = draft.find((info) => info.id === id);
-
-    // if the movie is already in the state, toggle the isFavorite property
-    if (info) {
-      info.isFavorite = !info.isFavorite;
-    } else {
-      // if the movie is not in the state, add it with isFavorite set to true
-      draft.push({ id, isFavorite: true });
-    }
-  });
-}
-```
-
 ---
 
 ## Resources
