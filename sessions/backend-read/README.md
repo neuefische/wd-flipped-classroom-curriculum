@@ -14,7 +14,7 @@ Recommended schedule for this session:
 
 - [ ] Knowing about ORM and (`mongoose` as) ODM
 - [ ] Understanding how to write a `mongoose` Schema
-- [ ] Knowing how to connect an application with a (local) database using `mongoose`
+- [ ] Knowing how to connect an application with a remote database using `mongoose`
 - [ ] Knowing how to read data with a `mongoose` model
 
 ---
