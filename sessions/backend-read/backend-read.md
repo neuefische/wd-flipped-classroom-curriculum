@@ -58,7 +58,7 @@ To create the connection, follow these steps:
      - `jokes-database` is the name of your database.
      - Replace the placeholders, including the `<` and `>` characters, with the actual values.
 3. create a `db/connect.js` file and copy the
-   [content from the Next.js mongoose example](https://github.com/vercel/next.js/blob/canary/examples/with-mongodb-mongoose/lib/dbConnect.js)
+   [content from the Next.js mongoose example](./assets/dbConnect.js)
    - Note that this file uses the `MONGODB_URI` we have just set up in `.env.local` to create a connection.
    - No need to change anything here.
 
