@@ -3,11 +3,11 @@
 ## Box
 
 Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-styled-components/box?file=/README.md)
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-styled-components-2/box?file=/README.md)
 or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/box -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/box -i
 ```
 
 ## Lord of the Rings Fanpage
@@ -21,5 +21,5 @@ Solve this challenge on
 or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/lotr-app-styling -i
 ```
