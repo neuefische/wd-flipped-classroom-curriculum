@@ -49,7 +49,6 @@ after submit as well! This is where JavaScript comes into play:
 
 ## Inform: Session Guide
 
-
 Use this demo on
 [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-new/demo-start?file=/README.md)
 or locally by running this command in your Terminal:
@@ -65,7 +64,6 @@ or locally by running this command in your Terminal:
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-new/demo-end -i
 ```
-
 
 ### Listening to the submit event / preventing default form submit behavior
 
@@ -196,7 +194,7 @@ const charactersLeftElement = document.querySelector(
 );
 
 messageInput.addEventListener("input", (event) => {
-  charactersLeftElement.textContent = 150 - parseInt(event.target.value.length);
+  charactersLeftElement.textContent = 150 - event.target.value.length;
 });
 ```
 
