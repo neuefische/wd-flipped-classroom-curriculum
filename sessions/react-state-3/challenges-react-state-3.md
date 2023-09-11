@@ -22,10 +22,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/tags -
 
 ## Journal App with Form Submit
 
-> 💡 If you are far enough along with your own journal app, follow the
-> [instructions of this challenge](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-3/journal-app-form#readme)
-> using your own code.
-
 Solve this challenge on
 [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-3/journal-app-form?file=/README.md)
 or locally by running this command in your Terminal:
