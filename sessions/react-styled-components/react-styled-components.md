@@ -156,15 +156,15 @@ export default function App({ Component, pageProps }) {
 
 ### Google Fonts GDPR- (DSGVO-) compliant integration
 
-Next.js features the `@next/font` npm package. It will automatically optimize your fonts (including custom fonts) and **remove external network requests for improved privacy and performance** by self-hosting Google fonts.
+Next.js features the `next/font`. It will automatically optimize your fonts (including custom fonts) and **remove external network requests for improved privacy and performance** by self-hosting Google fonts.
 
-You need to [install `@next/font` in your project](https://nextjs.org/docs/basic-features/font-optimization#usage) first. To implement a font family, import it where needed and use it inside the styled component.
+To implement a font family, import it where needed and use it inside the styled component.
 
 The following example sets the font-family in the `GlobalStyle` component for the HTML `body` element:
 
 ```js
 import { createGlobalStyle } from "styled-components";
-import { Open_Sans } from "@next/font/google";
+import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -180,7 +180,7 @@ export default createGlobalStyle`
 `;
 ```
 
-> 📙 Read more about [Google Fonts in Next.js](https://nextjs.org/docs/basic-features/font-optimization) and check the [api reference for `@next/font`](https://nextjs.org/docs/api-reference/next/font).
+> 📙 Read more about [Google Fonts in Next.js](https://nextjs.org/docs/basic-features/font-optimization) and check the [api reference for `next/font`](https://nextjs.org/docs/api-reference/next/font).
 
 ---
 

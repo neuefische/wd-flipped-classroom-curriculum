@@ -65,8 +65,8 @@ Why do we have more flexibility writing styles when using a library like `styled
 
 ### First Styled Component: Button
 
-- [ ] Create a new file: `components/Button.js`
-- [ ] Import `styled`
+- [ ] open `pages/index.js`
+- [ ] Import `styled from "styled-components"`
 - [ ] Explain we choose the HTML tag to be rendered after `styled.`
 - [ ] Explain directly after the tag name we write a template string
   - [ ] The syntax looks a bit unexpected, but it's just a template string as we know it
@@ -76,7 +76,7 @@ Why do we have more flexibility writing styles when using a library like `styled
 ```jsx
 import styled from "styled-components";
 
-export default styled.button`
+const Button = styled.button`
   all: unset;
   border: none;
   cursor: pointer;
@@ -86,18 +86,12 @@ export default styled.button`
 `;
 ```
 
-- [ ] Open the `pages/index.js` file
-- [ ] Add the styled button to the page
-
 ```jsx
-return <Button>Click me</Button>;
-```
-
-- [ ] Start the dev server
-- [ ] Open the app in the browser and demonstrate the button is displayed with the styles we applied
-
-```sh
-npm run dev
+return (
+  <>
+    <Button>Click me</Button>
+  </>
+);
 ```
 
 ### Nested styles
@@ -105,7 +99,6 @@ npm run dev
 - [ ] Explain we can nest styles inside a styled component with `&`
   - [ ] Mention it is possible to use type selectors, but we should not use it: it brings potential for conflicting styles
   - [ ] Point out we should use it for `pseudo elements` or `pseudo classes`
-- [ ] Open the `components/Button.js` file
 - [ ] Give an example by adding `hover` styles to the button
 
 ```jsx
@@ -121,6 +114,41 @@ export default styled.button`
 
 - [ ] Open the app in the browser and demonstrate the button's hover state
 
+### Add Styles to the Link component
+
+- [ ] Explain we can use `styled-components` to apply styles to other components
+- [ ] Point out we can style the `Link` component from Next.js
+- [ ] Write styles to style a link
+
+```jsx
+import Link from "next/link";
+
+const StyledLink = styled(Link)`
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+`;
+```
+
+- [ ] Add a paragraph with a link to the page
+
+```jsx
+return (
+  <>
+    <Button>Click me</Button>
+    <p>
+      This is a <StyledLink href="/">styled link</StyledLink>.
+    </p>
+  </>
+);
+```
+
+- [ ] Open the browser and demonstrate the styled link
+
 ### Global Styles
 
 - [ ] Mention we used CSS custom properties (variables) for colors in the code so far
@@ -132,44 +160,6 @@ export default styled.button`
 - [ ] Open the `pages/_app.js` file
 - [ ] Point out that code added here is available for all pages in the Next.js app
 - [ ] Demonstrate that's why we import `GlobalStyles` here
-
-### Add Styles to the Link component
-
-- [ ] Explain we can use `styled-components` to apply styles to other components
-- [ ] Point out we can style the `Link` component from Next.js
-- [ ] Create a new file: `components/Link.js`
-- [ ] Write styles to style a link
-
-```jsx
-import Link from "next/link";
-import styled from "styled-components";
-
-export default styled(Link)`
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--primary-color);
-
-  &:hover {
-    color: var(--secondary-color);
-  }
-`;
-```
-
-- [ ] Open the `pages/index.js` file
-- [ ] Add a paragraph with a link to the page
-
-```jsx
-return (
-  <>
-    <Button>Click me</Button>
-    <p>
-      This is a <Link href="/">styled link</Link>.
-    </p>
-  </>
-);
-```
-
-- [ ] Open the browser and demonstrate the styled link
 
 ### Using Google Fonts
 
