@@ -29,7 +29,7 @@ ODM (_Object Document Mapping_):
 - like ORM for non-relational databases (MongoDB)
 - uses a _document-oriented paradigm_
 
-### Reasons to use `mongoose` as ORM
+### Reasons to use `mongoose` as ODM
 
 - It helps building a **schema** and querying the database (it's also our db driver).
 - It has to run on the server, because database access is not secure in the browser.
