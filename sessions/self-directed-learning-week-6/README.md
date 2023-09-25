@@ -10,6 +10,7 @@ Feel free to add more options according to the needs of your students.
 For example:
 
 - create a link to the [discussions board](https://github.com/orgs/neuefische/discussions/categories/web-self-directed-learning) for questions that can be added by the students.
+- create a link to [the guides on how to ask good questions in our discussions board](https://github.com/neuefische/questions/wiki)
 - add a link to helpful video that you recommend
 - add a link to an article that concludes a difficult topic of the week
 
