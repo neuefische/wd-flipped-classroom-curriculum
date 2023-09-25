@@ -82,7 +82,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-en
     - [ ] like ORM for non-relational databases (MongoDB)
     - [ ] uses a _document-oriented paradigm_
 
-- [ ] Summarize the reasons to use `mongoose` as ORM:
+- [ ] Summarize the reasons to use `mongoose` as ODM:
   - [ ] It helps building a schema and querying the database (it's also our db driver).
   - [ ] It has to run on the server, because database access is not secure in the browser.
 - [ ] Remind students that we already have a server: our Next.js API routes! 🤡
@@ -105,7 +105,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-en
     - [ ] Replace `<username>`, `<password>` and `<cluster-name>` with the values from
           MongoDB Atlas (see [MongoDB Atlas Setup](../backend-mongodb/challenges-backend-mongodb.md)).
   - [ ] Create a `db/connect.js` file and copy the
-        [content from the Next.js mongoose example](https://github.com/vercel/next.js/blob/canary/examples/with-mongodb-mongoose/lib/dbConnect.js).
+        [content]([https://github.com/vercel/next.js/blob/canary/examples/with-mongodb-mongoose/lib/dbConnect.js](https://github.com/neuefische/web-curriculum/blob/main/sessions/backend-read/assets/dbConnect.js)).
   - [ ] Remind students that it's not necessary to understand this file entirely:
     - [ ] Note that it uses the `MONGODB_URI` we have just set up in `.env.local` to create a
           connection.
