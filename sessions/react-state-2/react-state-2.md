@@ -223,9 +223,9 @@ function Counter() {
 > the parameter name: `setCount(c => c + 1)`.
 
 > 📙 Read more about
-> [**Updating state based on the previous state**](https://react.dev/apis/react/useState#updating-state-based-on-the-previous-state)
+> [**Updating state based on the previous state**](https://react.dev/reference/react/useState#updating-state-based-on-the-previous-state)
 > and
-> [**I’ve updated the state, but logging gives me the old value**](https://react.dev/apis/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
+> [**I’ve updated the state, but logging gives me the old value**](https://react.dev/reference/react/useState#ive-updated-the-state-but-logging-gives-me-the-old-value)
 > in the React docs.
 
 ## React Hooks

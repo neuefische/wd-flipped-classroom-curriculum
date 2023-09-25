@@ -123,5 +123,5 @@ It is important to figure out which components you need and how they should be c
 ## Resources
 
 - [Passing JSX as children in the React Docs](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children)
-- [Fragment (<>...</>) in the React Docs](https://react.dev/apis/react/Fragment)
+- [Fragment (<>...</>) in the React Docs](https://react.dev/reference/react/Fragment)
 - [Thinking in React in the React Docs](https://react.dev/learn/thinking-in-react)
