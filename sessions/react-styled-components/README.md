@@ -49,8 +49,17 @@ Why do we have more flexibility writing styles when using a library like `styled
 
 ## Inform: Session Guide
 
-- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-styled-components/demo-start)
-- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-styled-components/demo-end)
+Use this demo locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/demo-start -i
+```
+
+You can check out the final version of this demo locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/demo-end -i
+```
 
 ### Introduction
 
