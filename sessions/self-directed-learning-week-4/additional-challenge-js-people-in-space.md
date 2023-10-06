@@ -1,5 +1,3 @@
-# Challenges - Self Directed Learning Week 4
-
 ## 📡 People in Space 🚀
 
 Let's build a website that displays the current number of people in space. Hints are provided if you get stuck. Try to build as much as possible without looking at the hints. We will use the [following API](http://open-notify.org/Open-Notify-API/People-In-Space/) to determine how many people are current in space.
@@ -25,7 +23,7 @@ Let's build a website that displays the current number of people in space. Hints
        <summary>🙈 Hint</summary>
 
     ```html
-    <!DOCTYPE html>
+    <!doctype html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
