@@ -22,7 +22,7 @@ This is done by adding the `type="module"` attribute to the `<script>` tag.
 > about how the browser treats your code that differ from standard scripts: They have their own
 > scope and are not accessible from the global scope (unless exported). They also do not require the
 > `defer` attribute as they are deferred by default. The scripts are executed in the more modern
-> [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#aside_%E2%80%94_.mjs_versus_.js)
+> [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode#changes_in_strict_mode)
 > automatically.
 
 > 💡 When reading about modules online you might stumble upon the file extension `.mjs` which is
