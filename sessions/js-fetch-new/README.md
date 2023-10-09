@@ -48,8 +48,8 @@ How do we fetch data from an API?
 
 ## Inform: Session Guide
 
-- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/combine/js-fetch-js-async-functions/sessions/js-fetch-new/demo-start?file=/js/index.js)
-- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/combine/js-fetch-js-async-functions/sessions/js-fetch-new/demo-end?file=/js/index.js)
+- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch-new/demo-start?file=/js/index.js)
+- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch-new/demo-end?file=/js/index.js)
 
 ### Introduction to APIs
 
@@ -90,7 +90,7 @@ How do we fetch data from an API?
 ### Joke App introduction
 
 - [ ] Introduce the
-      [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/combine/js-fetch-js-async-functions/sessions/js-fetch-new/demo-start?file=/js/index.js):
+      [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch-new/demo-start?file=/js/index.js):
 
   - [ ] The DOM is already prepared and we find a function `setJoke(joke)` that we just have to call to set the Joke for the joke section.
   - Uncomment the following line with the function call:
