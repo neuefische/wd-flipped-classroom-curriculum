@@ -157,7 +157,7 @@ How do we fetch data from an API?
 
 ## Process: Challenges
 
-- [ ] Provide the [handout](js-async-functions.md) and the
+- [ ] Provide the [handout](js-fetch.md) and the
       [challenges](challenges-js-fetch.md) to the students
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
