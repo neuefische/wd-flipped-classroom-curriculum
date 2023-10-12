@@ -52,7 +52,7 @@ Coach & Kursmanagerin
 
 <!-- _class: image-center -->
 
-![w:1200](../images/neuefische_coaches_all.jpg)
+![w:1200](../images/neuefische_coaches_all.png)
 
 ---
 
