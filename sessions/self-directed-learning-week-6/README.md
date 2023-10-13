@@ -13,7 +13,8 @@ However some students find it helpful to have some guidance and suggestions on w
 
 🏋️‍♀️ What to do?
 
-- [Additional challenge - Next.js Dynamic Routes](additional-challenge-next-dynamic-routes.md)
+- Additional challenge - Next.js Dynamic Routes
+- Additional Challenge can be found at `sessions/self-directed-learning-week-6`
 - Reread handouts from this week
 - Repeat challenges
 - Continue to work on Recap Project 4: Weather & Activities App

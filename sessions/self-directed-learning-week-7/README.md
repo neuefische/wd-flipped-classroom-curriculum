@@ -12,7 +12,8 @@ However some students find it helpful to have some guidance and suggestions on w
 
 🏋️‍♀️ What to do?
 
-- [Additional challenge - Next.js Big Picture](additional-challenge-big-picture.md)
+- Additional challenge - Next.js Big Picture
+- Additional Challenge can be found at `sessions/self-directed-learning-week-7`
 - Reread handouts from this week
 - Repeat challenges
 

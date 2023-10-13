@@ -28,7 +28,8 @@ Some students find it helpful to have some guidance and suggestions on what to d
 
 🏋️‍♀️ Looking for ideas for what to do? Additional challenges are optional (but recommended)
 
-- [Additional challenge - HTML](additional-challenge-html.md)
+- Additional challenge - HTML
+- Additional Challenge can be found at `sessions/self-directed-learning-week-1`
 - Reread handouts from this week
 - Repeat challenges
 - Work on your Personal Website (HTML Markup, CSS Basics)

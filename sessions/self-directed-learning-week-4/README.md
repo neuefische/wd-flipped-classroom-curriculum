@@ -13,7 +13,8 @@ However some students find it helpful to have some guidance and suggestions on w
 
 🏋️‍♀️ What to do?
 
-- [Additional challenge - People In Space](additional-challenge-js-people-in-space.md)
+- Additional challenge - People In Space
+- Additional Challenge can be found at `sessions/self-directed-learning-week-4`
 - Reread handouts from this week
 - Repeat challenges
 - Continue to work on Recap Project 3: Rick and Morty App

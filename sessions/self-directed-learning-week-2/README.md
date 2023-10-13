@@ -14,9 +14,10 @@ However some students find it helpful to have some guidance and suggestions on w
 
 🏋️‍♀️ Looking for ideas for what to do? Additional challenges are optional (but recommended)
 
-- [Additional challenge - Git](additional-challenge-git.md)
-- [Additional challenge - Flexbox](additional-challenge-flexbox.md)
-- [Additional challenge - Js Conditions and Booleans](additional-challenge-js-conditions-booleans.md)
+- Additional challenge - Git
+- Additional challenge - Flexbox
+- Additional challenge - Js Conditions and Booleans
+- Additional Challenges can be found at `sessions/self-directed-learning-week-2`
 - Reread handouts from this week
 - Repeat challenges
 - Work on your Personal Website (HTML Markup, CSS Basics)

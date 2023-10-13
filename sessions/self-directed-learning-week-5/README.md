@@ -12,7 +12,8 @@ However some students find it helpful to have some guidance and suggestions on w
 
 🏋️‍♀️ What to do?
 
-- [Additional challenge - People In Space](additional-challenge-js-people-in-space-2.md)
+- Additional challenge - People In Space
+- Additional Challenge can be found at `sessions/self-directed-learning-week-5`
 - Reread handouts from this week
 - Repeat challenges
 

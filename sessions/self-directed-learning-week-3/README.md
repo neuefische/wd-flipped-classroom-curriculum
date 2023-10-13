@@ -14,8 +14,9 @@ However some students find it helpful to have some guidance and suggestions on w
 
 🏋️‍♀️ What to do?
 
-- [Additional challenge - Functions](additional-challenge-js-functions.md)
-- [Additional challenge - Functions Bonus](additional-challenge-js-functions-bonus.md)
+- Additional challenge - Functions
+- Additional challenge - Functions Bonus
+- Additional Challenges can be found at `sessions/self-directed-learning-week-3`
 - Reread handouts from this week
 - Repeat challenges
 - Work on your Quiz-App - Recap Project 2
