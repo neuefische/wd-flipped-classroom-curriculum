@@ -1,6 +1,6 @@
 ## Bonus: function call order
 
-To understand how a computer handles function calls, we have to think like one. Without going to deep in what a (call stack)[https://en.wikipedia.org/wiki/Call_stack] is, the general idea is that the nested function calls take precedence, much like mathematical expressions:
+To understand how a computer handles function calls, we have to think like one. Without going to deep in what a [call stack](https://en.wikipedia.org/wiki/Call_stack) is, the general idea is that the nested function calls take precedence, much like mathematical expressions:
 
 ```
 [(2 + 3) * 4] / (6 - 2)
