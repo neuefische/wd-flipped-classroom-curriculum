@@ -1,4 +1,4 @@
-# CSS Basics
+    # CSS Basics
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
@@ -12,15 +12,11 @@ Recommended schedule for this session:
 
 ## Learning objectives
 
-- [ ] What is CSS?
-  - [ ] know difference between HTML/CSS
-  - [ ] meaning behind the name CSS (`Cascading Style Sheets`)
-- [ ] fundamentals of CSS:
-  - [ ] `CSS syntax`: CSS ruleset (`selector`, `declaration`, `property`, `value`)
-  - [ ] `selectors`: `universal` selector, `type` selectors, `class` selectors
-  - [ ] `box model`: `border box` vs `content box` and the property `box-sizing`
-  - [ ] `inline & block elements`
-- [ ] how to link stylesheets
+- [ ] having a general understanding of the purpose of CSS
+- [ ] knowing what Cascading Style Sheets means
+- [ ] understanding the fundamentals of CSS: CSS syntax, selectors, box model,
+      inline & block elements
+- [ ] linking stylesheets to the HTML document
 
 ---
 
@@ -34,9 +30,7 @@ How can we style our HTML elements as efficiently as possible.
 
 ### Why is the content of today's block that important for the students?
 
-We often need to change the look of our HTML elements to make them fit to a design. And we want to
-be able to apply these stylings to different elements to have a common look and to avoid repetitive
-code.
+We often need to change the look of our HTML elements to make them fit to a design. And we want to be able to apply these stylings to different elements to have a common look and to avoid repetitive code.
 
 ### Pose a question to be answered by the end of the block!
 
@@ -46,9 +40,7 @@ How can I make it that the same stylings apply to multiple elements?
 
 ## Activate prior knowledge of students
 
-We should not assume that students already have prior knowledge for CSS. But you can go into it
-knowing that we've already learned how to structure our web page with HTML and will now understand
-how to style those elements.
+We should not assume that students already have prior knowledge of CSS. But you can go into it knowing that we've already learned how to structure our web page with HTML and will now understand how to style those elements.
 
 ### Which previously learned concepts will be utilized in this session?
 
@@ -57,12 +49,6 @@ how to style those elements.
 ---
 
 ## Inform: Session Guide
-
-**Notes:**
-
-[One challenge](./challenges-css-basics.md#homework-personal-website-styling) is to apply stylings to the personal
-website. Therefore, it should be considered that the students have already created a basic HTML
-structure for their project.
 
 Use this demo on
 [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/demo-start?file=/README.md)
@@ -80,142 +66,230 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/demo-end -i
 ```
 
-Have a look at these [CSS Basics Codesandboxes examples](https://codesandbox.io/dashboard/all/CSS%20Basics?workspace=2ad16d97-42cf-49d7-aa8d-e3587729c609) to get more inspiration.
-
 ### What is CSS?
 
-Use the demo to explain what CSS is in general:
-
-- [ ] **Definition**: CSS means Cascading Stylesheets. While HTML defines the structure and
-      semantics of your content, we use CSS for design and layout.
-
-- [ ] **Purpose**: CSS is a declarative language that controls how web pages look in the browser.
-      The basic goal of CSS is to provide elements of the page with certain features like colors,
-      positioning or decorations.
-
-- [ ] **Meaning** of the **terms** `Cascading` and `Stylesheets`:
-  - `Cascading`: 
-    - An algorithm that considers which style to apply when multiple styles are defined for an element.
-    - Decides which style to apply based on:
-      - Specificity: How specific the selector is in selecting the element.
-      - Source Order: The last style defined in the stylesheet will override previous styles of the same specificity.
-      - Inheritance: Styles can be passed down from parent elements to child elements.
-		- Students will learn more about this in later sessions.
-  - `Stylesheet`: A style sheet consists of several of stylings that we declare with CSS and that
-    determine the layout of the web page.
+- [ ] Explain that CSS means _Cascading Stylesheets_. We use CSS to add layout, colors, positioning or other decorations to elements on the page.
 
 ### Syntax
 
-Explain the syntax of a CSS rule/ruleset. You don't need to declare each part in deep, but you
-should cover the following terms:
+- [ ] Explain the syntax of a CSS ruleset (you don't have to explain every part in depth):
 
-- [ ] **Selector**: A CSS selector is used to specify the elements to which CSS rules apply.
-- [ ] **Property**: Name for a particular property to which a value is attributed.
-- [ ] **Value**: The value we assign to a property.
-- [ ] **Declaration**:Each pair of property and value is a declaration.
+  - [ ] **Selector** — A CSS selector is used to specify the elements to which CSS rules apply.
+  - [ ] **Property** — Name for a particular property to which a value is attributed.
+  - [ ] **Value** — The value we assign to a property.
+  - [ ] **Declaration** —Each pair of property and value is a declaration.
 
-It may help to explain the syntax with a scribble in Excalidraw:
+[![CSS Syntax](assets/css-syntax.png)<br />🔗 Open sketch in Excalidraw](https://excalidraw.com/#json=6vTcgdviz8myOb-GrVCpe,zqt5qrO_mqG-hWCTMEwJRQ)
 
-![CSS Syntax](assets/css-syntax.png)
+### Link the Stylesheet
 
-https://excalidraw.com/#json=6vTcgdviz8myOb-GrVCpe,zqt5qrO_mqG-hWCTMEwJRQ
+- [ ] Explain that a stylesheet
 
-### How to link stylesheets
+  - [ ] is a separate file where all the styles are written
+  - [ ] and uses the `.css` file extension.
 
-- [ ] Explain what a stylesheet is:
+- [ ] Explain that we could use any convention for how to call our stylesheet, but we will call the file `styles.css` and place it in a separate `css` folder.
 
-  - [ ] a separate file where all the styles are written;
-  - [ ] the file ending `.css` shows that it uses CSS syntax;
-  - [ ] for now, we've agreed to name this file `styles.css` and place it in a separate `css` folder.
+- [ ] Note that we need to link the `styles.css` file inside the `index.html` so that the browser knows from where to load the styles.
+- [ ] Link both files by adding a `link` element to the `head` of the `index.html`.
 
-- [ ] Note that we need to link the `styles.css` file with the `index.html` so that the browser knows from where to load the styles.
-- [ ] Link both files by adding `<link rel="stylesheet" href="./css/styles.css" />` to the `<head></head>` of the `index.html`.
+  ```html
+  <link rel="stylesheet" href="./css/styles.css" />
+  ```
 
-### Basic selectors
+### Add the first styles
 
-- [ ] Explain the most basic selectors:
+- [ ] Add the following styles to the `styles.css` file:
 
-- [ ] `universal` selector (may be introduced later when explaining the `box model` and
-      `box-sizing`):
+  ```css
+  h1 {
+    color: blue;
+  }
+  ```
 
-  - Selects all elements.
-  - Syntax: `*`
+- [ ] Explain that the above CSS code will make all `h1` elements blue.
 
-- [ ] `element` or `type` selector:
+  - The `h1` is the selector and `color: blue;` is the declaration.
+  - `h1` is a type selector, which means that it will select all `h1` elements on the page.
 
-  - Selects all elements of a specific type.
-  - Syntax: `elementName` like `article`, `section` or `body`
+- [ ] Show that you can add multiple declarations to the same selector:
 
-- [ ] `class` selector:
+  ```css
+  h1 {
+    color: blue;
+    font-size: 2rem;
+  }
+  ```
 
-  - Selects all elements that have the given class attribute.
-  - Syntax: `.classname` for example `.button`, `.highlighted` or `.list`
+> 💡
+> It makes sense to add comments to your CSS code to explain what you are doing. Show students how to add comments to their CSS code:
+>
+> ```css
+> /* make all h1 elements text be blue and 2rem big */
+> ```
 
-Show useful `CSS properties` that the students may need later for the challenges. Suitable examples
-could be:
+### Class selector
 
-- `background-color`
-- `color`
-- `border`
-- `border-radius`
-- `text-decoration`
-- `text-align`
+- [ ] Explain that we want to make the first paragraph italic (cursive), but not all paragraphs.
 
-- [ ] Show that, if you remove the `<link>` to the stylesheet in the `index.html` file, the styles are not loaded.
-- [ ] Note that students will most likely run into this issue at least once.
+- [ ] Add the following CSS code to the `styles.css` file:
 
-### Box model & `box-sizing`
+  ```css
+  p {
+    font-style: italic;
+  }
+  ```
 
-To make good layouts with CSS and to understand how the styling with CSS works, the students should
-learn to understand the **box model** and why the `property` `box-sizing` is very helpful.
+- [ ] Explain that the above CSS rule will make all `p` elements italic.
 
-- [ ] **Box model**: Every element is a rectangular box. This means that everything has a box around
-      it. Every box consists of four parts. Explain via a scribble in Excalidraw:
+  - The `p` is the selector and `font-style: italic;` is the declaration.
+  - `p` is a type selector, which means that it will select all `p` elements on the page.
 
-![box model](assets/box-model.png)
+- [ ] Point out that we want to make only the first paragraph italic.
+- [ ] Add a class attribute of `introduction` to the first paragraph:
 
-- [ ] Explain the following terms:
+  ```html
+  <p class="introduction">…</p>
+  ```
 
-  - `Content`: The actual content of the element.
-  - `Padding`: Space between the content and the border of the element.
-  - `Border`: The border of the element.
-  - `Margin`: The space around the border and other elements. An empty / outermost area around the
-    border area, separates the element from its neighbors.
+- [ ] Change the selector:
 
-- [ ] Show the default value `box-sizing: content-box`:
-  - [ ] if you set `width` (or `height`), they are only applied to the `content-box`;
-  - [ ] if you add `padding` and `border`, these values are added as well;
-  - [ ] this means that the actual width of the element is `width` + `padding` + `border`.
-- [ ] Summarize that `box-sizing: content-box` makes life hard because you have to consider `padding` and `border` when creating responsive layouts.
+  ```css
+  .introduction {
+    font-style: italic;
+  }
+  ```
 
-- [ ] Show the alternative value `box-sizing: border-box`:
-  - [ ] if you set `width` (or `height`), they are applied to the `border-box`;
-  - [ ] values for `padding` and `border` adapt to this `width`/ `height` value;
-  - [ ] the actual with of the element is always the value of `width` you've specified.
-- [ ] Note the **benefit**: Calculating sizes of elements is easier and more intuitive with `border-box` because we determine how the total `width` and `height` of an element is calculated.
+- [ ] Explain that the above CSS code will make all elements with the class `introduction` italic.
 
-### Inline & block elements & `display`
+  - `.introduction` is the selector and `font-style: italic;` is the declaration.
+  - `.introduction` is a class selector, which means that it will select all elements with the class `introduction` on the page.
 
-- [ ] Note that every element on a web page is a rectangular box.
-- [ ] Show that the space this rectangular box takes up depends on whether the element is an inline or block element.
-  - [ ] **Block elements**:
-    - [ ] The width of a block element depends on the available space within its parent element.
-    - [ ] By default, the block element always takes the full width unless you have changed the value
-          yourself with CSS.
-    - [ ] Each new block element also creates another paragraph: subsequent elements slide under the block
-          element. This is called 'normal flow'.
-    - [ ] Common block elements: `<article></article>` `<section></section>`, `<p></p>` `<nav></nav>`, the
-          headings from `h1` to `h6`
-  - [ ] **Inline elements**:
-    - [ ] Wrapping parts of a text in inline elements does not break the flow of the text.
-    - [ ] An inline element will apply margin and padding, but break to the next line.
-    - [ ] Margin and padding will push elements only horizontally and not vertically.
-    - [ ] An inline element will NOT apply declarations with `width` and `height`.
-    - [ ] Common inline elements: `<em></em>`, `<strong></strong>` and `<span></span>`.
+- [ ] Explain that a class selector is always written with a dot `.` in front of the class name.
 
-### **Optional:** How to use [Google-Fonts](https://fonts.google.com/)
+> 💡
+> You can show that Visual Studio Code (and other editors) will help you with the syntax by showing the class name in a different color. Also you can hover over the selector to see a preview of the elements that will be selected. This works for all kinds of selectors.
 
-> 💡 If students are eager to use Google Fonts, note that there are legal issues with the ways Google provides for importing the fonts. [A work-around](css-basics.md#styling-fonts) and an [explanation of the problem](css-basics.md#legal-issues-using-google-fonts-with-import-and-link) can be found in the handout.
+### Property Playground 🎨
+
+- [ ] Play around with some of the following properties to show that you can change the look of an element:
+
+  - `background-color`
+  - `color`
+  - `border`
+  - `border-radius`
+  - `text-decoration`
+  - `font-size`
+  - `margin`
+  - `padding`
+  - …
+
+- [ ] Explain that we cannot show all properties in this session, but that students can find a [🔗 **list of all properties** on mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference). (The reference also includes pseudo-classes, pseudo-elements, data types, functional notations and at-rules.)
+
+> 💡
+> At this point in your demo, you might want to show that the styles disappear when you remove the `<link>` to the stylesheet in the `index.html` file. Not adding the `<link>` element is a common mistake that students will make.
+>
+> You can introduce the idea of _sanity checks_. Sanity checks are a way to make sure that the code is working as expected. In this case, we could add a background color to the `body` element to make sure that the stylesheet is linked correctly:
+>
+> ```css
+> body {
+>   background-color: hotpink;
+> }
+> ```
+
+### Inheritance
+
+- [ ] Explain that elements inherit _some_ properties from their parents - but not _all_.
+
+- [ ] Add the following CSS code to the `styles.css` file:
+
+  ```css
+  body {
+    font-family: system-ui;
+  }
+  ```
+
+- [ ] Explain that the above CSS code will make all text on the page use the system font.
+
+  - This is because the `body` element is the ancestor element of all visible elements on the page and the `font-family` property is inherited by default.
+  - This behavior is very useful, because it means that we don't have to add the `font-family` property to every element on the page.
+
+- [ ] Other properties that are inherited by default are:
+
+  - `color`
+  - `font-size`
+  - `font-style`
+  - `font-weight`
+  - …
+
+### Hover Styles
+
+- [ ] Explain that we can change the styles of the link element when the user hovers over it.
+- [ ] Add the following CSS rule to the `styles.css` file:
+
+  ```css
+  a:hover {
+    color: hotpink;
+  }
+  ```
+
+- [ ] Explain that the above CSS rule will make all links hotpink when the user hovers over them.
+  - `a:hover` is the selector and `color: hotpink;` is the declaration.
+  - `a:hover` is a pseudo-class selector, which means that it will select all links when the user hovers over them.
+- [ ] Explain that the `:hover` part is called a pseudo-class. Pseudo-classes are keywords that can be added to selectors to **select a specific state of the element**.
+- [ ] Explain that there are other pseudo-classes (for other states) that can be found in the handout.
+
+### An important reset: `box-sizing: border-box;`
+
+- [ ] Add the following CSS rule to the `styles.css` file:
+
+  ```css
+  * {
+    box-sizing: border-box;
+  }
+  ```
+
+- [ ] Explain that the above CSS rule will be in all future projects to **reset a browser setting, that would otherwise make it hard to calculate the width or height of an element**. For now students must trust you that this is a good thing to have.
+
+> ❗️
+> Keep this section very brief. For the curious, a detailed explanation can be found in the
+> handout.
+
+### Demo CSS
+
+The full CSS for the demo could look like this (comments are added for explanation):
+
+```css
+/* CSS reset that makes working with width and height easier
+   and should always be in your stylesheet. */
+* {
+  box-sizing: border-box;
+}
+
+/* The font-family property is inherited to all child elements by default */
+body {
+  font-family: system-ui;
+}
+
+/* All links (anchors) are hotpink when the user hovers over them */
+a:hover {
+  color: hotpink;
+}
+
+/* make all h1 elements text be blue and 2rem big */
+h1 {
+  color: blue;
+  font-size: 2rem;
+}
+
+/* All elements with the class introduction are italic (and fancy) */
+.introduction {
+  font-style: italic;
+  background-color: lightblue;
+  padding: 16px;
+  border-radius: 8px;
+}
+```
 
 ---
 

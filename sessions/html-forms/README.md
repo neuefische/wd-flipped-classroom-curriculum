@@ -20,6 +20,8 @@
 - [ ] form structure: fieldset, legend
 - [ ] form fields have labels (connected via id)
 - [ ] form semantics
+- [ ] knowing the default behavior of form submit
+- [ ] understanding client-side form validation
 
 ---
 
@@ -52,39 +54,63 @@
 
 ### Simple Form
 
-- Show the `form` tag as the main wrapper of a form.
+- Add the `form` tag as the main wrapper of a form.
 - Start with an `input` field of type `text`.
 - Explain the `name` attribute:
   - the key to identify the submitted information on the server
   - needs to be unique for each form field
 - Explain the connection of `input` and `label`:
-  - connected via `id` and `for` // skip: nested `input`
+  - connected via `id` and `for` (do not talk about nested `input` elements)
   - user always knows what the input is for (compare: placeholder -> immediately replaced beginning
     with the first keystroke)
   - clicking on the label focusses the input field
   - accessibility aids such as a screen reader can correctly identify the purpose of the input
     element
-- Show a submit button with type `submit`.
+- Add a submit button with type `submit`.
+
+Your HTMl should look like this:
 
 ```html
 <form>
   <label for="input-name">Name:</label>
-  <input id="input-name" type="text" name="name" />
+  <input id="input-name" type="text" name="username" />
   <button type="submit">Submit</button>
 </form>
 ```
 
+### Default behavior of form submit
+
+- [ ] Fill in a name and submit the form to show the default behavior in the network tab:
+
+- Form tries to send a GET request with names and their values as prop inside a URL like
+  `/?username=value1`
+- The page is reloaded → the data is lost for us.
+
+- [ ] Note that we want to prevent this default behavior (no GET request, no page reload) and will learn to do so in a future session about Forms and JavaScript.
+
+### Form Validation
+
+- [ ] We can use build in form validation without having to write any JavaScript
+- [ ] Add the `required` attribute to the input field. Go to the browser and show that leaving it empty will lead to an error message when hitting the submit button.
+- [ ] Explain the concept of form validation
+  - [ ] Form fields can be enriched with various attributes
+  - [ ] The attributes define rules for the expected input
+  - [ ] The browser reads these attributes and validates the user's input
+  - [ ] The validation must be successful to trigger the actual form submission
+
 ### More input types
 
-- Show another input type, e.g. `date` or `number`
+- Show more input types: `date`, `number`, `email`
 - Explain `select`
   - needs a `label` connected via `id` and `for`
-  - `option`: `value` attribute to connect with the `name` attribute of the `select` field
+  - `option` elements as direct children with `value` attribute to connect with the `name` attribute of the `select` field
 
 ```html
 <form>
   <label for="input-name">Name:</label>
-  <input id="input-name" type="text" name="name" />
+  <input id="input-name" type="text" name="username" required />
+  <label for="input-email">Email:</label>
+  <input id="input-email" type="email" name="email" required />
   <label for="input-date">Your favorite date:</label>
   <input id="input-date" type="date" name="favorite-date" />
   <label for="select-guests">How many friends will join you?</label>
@@ -97,6 +123,10 @@
   <button type="submit">Submit</button>
 </form>
 ```
+
+- [ ] Show that the email input is being validated → the user gets an error message when the `@` sign is missing
+- [ ] Add one more attribute for client side form validation like `minlength` to an input element
+- [ ] Mention that there is more attributes you can use for client side form validation and show the following link: [mdn build-in form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation)
 
 ### Form structure and a11y
 
@@ -119,7 +149,7 @@
   <fieldset aria-describedby="description">
     <legend>Enter your information</legend>
     <label for="input-name">Name:</label>
-    <input id="input-name" type="text" name="name" />
+    <input id="input-name" type="text" name="username" />
     <select>
       ...
     </select>
@@ -164,7 +194,7 @@
 
 ## Keywords for Recap:
 
-input, type=checkbox, fieldset, required, label
+input, type=checkbox, fieldset, required, label, required, validation
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

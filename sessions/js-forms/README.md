@@ -10,14 +10,16 @@
 
 ## Learning objectives
 
-- [ ] knowing the default behavior of form submit
-  - [ ] prevent this behavior with `.preventDefault()`
+- [ ] prevent the default behavior of form submit with `.preventDefault()`
 - [ ] listening to submit events
   - learn what `event` and `event.target` is
   - reading input values via their names:
     - `.elements`
     - `FormData` / `Object.fromEntries()`
     - the `name` attribute of a form field
+- [ ] understanding the input event
+- [ ] know how to focus inputs programmatically
+- [ ] know how to reset the form programmatically
 
 ---
 
@@ -47,28 +49,27 @@ after submit as well! This is where JavaScript comes into play:
 
 ## Inform: Session Guide
 
-You can use the following
-[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms/demo-start?file=/js/index.js)
-to demonstrate the following steps.
+Use this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms/demo-start?file=/README.md)
+or locally by running this command in your Terminal:
 
-You can
-[find the final version here](https://codesandbox.io/s/github/neuefische/web-exercises/main/sessions/js-forms/demo-end?file=/js/index.js).
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-start -i
+```
 
-### Handle the Default Behavior
+You can check out the final version of this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms/demo-end?file=/README.md)
+or locally by running this command in your Terminal:
 
-- [ ] Fill in and submit the form to show the default behavior in the network tab:
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-end -i
+```
 
-- Form tries to send a GET request with names and their values as prop inside a URL like
-  `/?firstName=value1&lastName=value2&...`
-- One _could_ handle this request on the server side, but _we_ don't want to.
-- The page is reloaded => the data is lost for us.
+### Listening to the submit event / preventing default form submit behavior
 
-- [ ] Note that we always want to prevent this default (no GET request, no page reload).
+- [ ] Remind the students of the default submit behavior: Forms sends a GET request and page reloads => data is lost for us
 
-### Listening to the submit event
-
-- [ ] Remind the students that we need to query the form first in order to add some interactivity
-      with JS:
+- [ ] Remind the students that we need to query the form first in order to add some interactivity with JavaScript:
 
 ```js
 const form = document.querySelector('[data-js="form"]');
@@ -80,8 +81,7 @@ const form = document.querySelector('[data-js="form"]');
 - triggers a submit event which provides us with an `event` object
 - the `event` object has a method called `preventDefault()`
 
-- [ ] Use `console.log(event)` to show its methods and properties (especially `preventDefault()` and
-      `.target`).
+- [ ] Use `console.log(event)` to show its methods and properties (especially `preventDefault()` and `.target`).
 
 ```js
 form.addEventListener("submit", (event) => {
@@ -161,6 +161,43 @@ form.addEventListener("submit", (event) => {
 });
 ```
 
+### Resetting a form
+
+- [ ] Explain that it is a good idea to reset a form to allow for new data to be entered
+- [ ] Show an example of a form reset in the demo
+  - Add `event.target.reset()` to the end of the submit handler function
+- [ ] Explain that it is a good idea to focus an input field after submitting the form to further improve user experience (hands can stay on the keyboard and the user can input new data immediately)
+- [ ] Give a common example: e.g. message input for a chat app
+- [ ] Show an example in the demo app
+  - [ ] Use `event.target.elements.firstName.focus()` to focus the first input
+
+### Input Event
+
+- [ ] Explain that we have to listen to the `input` event if we want to react to every user input the user makes on an input field
+- [ ] Show an example for the `input` event in the demo
+- [ ] Demonstrate with `console.log()` that the event is triggered with every keystroke
+
+```js
+const messageInput = document.querySelector('[data-js="personal-message"]');
+
+messageInput.addEventListener("input", (event) => {
+  console.log(event.target.value);
+});
+```
+
+- [ ] Make the characters left on the page show the correct value using the `input` event:
+
+```js
+const messageInput = document.querySelector('[data-js="personal-message"]');
+const charactersLeftElement = document.querySelector(
+  '[data-js="remaining-characters"]'
+);
+
+messageInput.addEventListener("input", (event) => {
+  charactersLeftElement.textContent = 150 - event.target.value.length;
+});
+```
+
 ---
 
 ## Process: Challenges
@@ -197,7 +234,7 @@ form.addEventListener("submit", (event) => {
 
 ## Keywords for Recap:
 
-event.preventDefault(), new FormData(), Object.fromEntries(), event.target.elements
+event.preventDefault(), new FormData(), Object.fromEntries(), event.target.elements, input event, form.reset(), input.focus()
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of

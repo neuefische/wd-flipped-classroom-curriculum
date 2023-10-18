@@ -20,12 +20,12 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/Finding-a11y-errors -i
 ```
 
-## More input types
+## Form validation
 
-Solve the _More input types_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/html-forms/zoo?file=/readme.md)
+Solve the _Form validation_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/html-forms/formvalidation?file=/README.md)
 or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/zoo -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/formvalidation -i
 ```

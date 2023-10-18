@@ -6,6 +6,8 @@
 - Knowing most common types of form fields
 - Building useable and accessible forms
 - Understanding the different types of buttons
+- Understanding client-side form validation
+- Understanding the default behavior of form submit
 
 ---
 
@@ -170,7 +172,7 @@ not related to each other. Each choice can either be "on" ("true") or "off" ("fa
 
 ```html
 <input type="checkbox" name="accept-data-privacy" id="accept-data-privacy" />
-<label for="accept-data-privacy">I accept the data privacy agreement </label>
+<label for="accept-data-privacy">I accept the data privacy agreement</label>
 
 <input
   type="checkbox"
@@ -188,6 +190,47 @@ not related to each other. Each choice can either be "on" ("true") or "off" ("fa
 The different types of `<input>` elements described above is just a small selection. Please refer to
 the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to see a
 complete list of all types with examples.
+
+---
+
+### HTML Form Validation
+
+Before submitting a form, it is important to ensure all required form fields are filled out, in the
+correct format. This is called **client-side form validation**.
+
+HTML provides several form field attributes to enable validation features build into the browser.
+
+| Attribute                 | Description                                                                                                                                        |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `required`                | if present, a form field needs to be filled in before the form can be submitted                                                                    |
+| `minlength` / `maxlength` | minimum and maximum length of textual data (strings)                                                                                               |
+| `min` / `max`             | minimum and maximum values of numerical input types                                                                                                |
+| `type`                    | each input type has its own prefigured validation (like `email`)                                                                                   |
+| `pattern`                 | [a regular expression pattern](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) the entered data needs to follow |
+
+Example: The following input field is valid if its value exists and it is a string between 3 and 30
+characters:
+
+```html
+<input
+  id="input-name"
+  type="text"
+  name="name"
+  minlength="3"
+  maxlength="30"
+  required
+/>
+```
+
+---
+
+### Default Behavior of Form Submit
+
+If you click the submit button of a form, it triggers the following default behavior (which we will change in the future using JavaScript):
+
+- The form sends a GET request with names and their values as prop inside an URL like
+  `/?firstName=value1&lastName=value2&...`.
+- The page is reloaded and thus the data is lost for us.
 
 ---
 
@@ -217,7 +260,7 @@ click.
 ### Other buttons
 
 Since `type="submit"` is the default for `<button>` elements, buttons outside of a `form` element
-should be defined with `type="button"` to be semantically correct.
+should always be defined with `type="button"` to be semantically correct.
 
 ```html
 <button type="button">Click here for more information</button>

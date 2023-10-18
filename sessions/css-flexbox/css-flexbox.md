@@ -72,8 +72,18 @@ Depending on the screen width, the content can align itself, as shown in the fol
 
 ---
 
+### CSS Grid Layout
+
+CSS Grid is another powerful tool to layout your HTML elements. While flexbox excels at laying out
+elements in one dimension (if you ignore wrapped items), CSS Grid is used to layout elements in two dimensions.
+
+> 📑 Learn more about [**CSS Grid Layout** in the document we prepared](./assets/css-grid.md).
+
+---
+
 ## Resources
 
 - [Flexbox Cheat Sheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [MDN web docs: Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 - [CSS Battle](https://cssbattle.dev/)
+- [📑 CSS Grid Layout document](./assets/css-grid.md)

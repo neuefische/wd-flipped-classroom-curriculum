@@ -159,7 +159,16 @@ function Counter() {
 
 ---
 
+## React Custom Hooks
+
+The `useLocalStorageState` hook is not part of React itself. It is a custom hook that is provided by a third-party library. Just like the author of `use-local-storage-state` created a custom hook, you can create your own custom hooks to abstract away common logic that uses other hooks (`useState`, `useEffect`, …).
+
+> 📑 Learn more about [**React Custom Hooks** in the document we prepared](./assets/react-custom-hooks.md) (with examples).
+
+---
+
 ## Resources
 
 - [Web Storage API on the mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 - [use-local-storage-state on GitHub](https://github.com/astoilkov/use-local-storage-state)
+- [📑 React Custom Hooks document](./assets/react-custom-hooks.md)

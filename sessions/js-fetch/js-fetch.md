@@ -2,12 +2,78 @@
 
 ## Learning Objectives
 
+- [ ] Understanding how asynchronous code works
+- [ ] Understanding how to work with Promises and `async/await`
 - [ ] Understanding the fetch API
   - [ ] with async/await
   - [ ] JSON
   - [ ] HTTP Response Codes
   - [ ] REST API
-  - [ ] Error Handling
+
+---
+
+## Asynchronous Code
+
+Asynchronous code is code that runs in the background. This is useful for tasks that can take a long
+time to complete, but don't need to block the main thread.
+
+JavaScript is a single-threaded language, meaning that only one thing can happen at a time.
+
+Blocking the main thread is bad because it prevents the user from interacting with the page because
+no other JavaScript code can be executed. Examples of asynchronous code include: network requests,
+file system access, animations and timers.
+
+## Promises
+
+Aynchronous functions will not return their return a value directly, but a promise instead.
+A Promise is an object that represents the eventual completion (or failure) of an asynchronous
+operation, and its resulting value. Most of the time it is returned by a function that performs an
+asynchronous operation.
+There are two main ways of handling asynchronous Functions: Working with promises or working with `async/await`.
+
+## Asynchronous Code with Promises
+
+You can use the `then` method with a callback function to react to the completion of the asynchronous operation.
+
+```js
+asynchronousFunction().then((value) => {
+  console.log(value);
+});
+```
+
+> 💡 Promises are almost always created for you by other asynchronous APIs, only rarely do you
+> create them yourself. If you create a Promise yourself (`new Promise()`), you either know exactly
+> what you are doing, or you are probably doing something wrong.
+
+---
+
+## Asynchronous Code with `async/await`
+
+Asnyc functions are a syntactic sugar for Promises. Using the `await` keyword, you can write
+asynchronous code that looks synchronous. Any function can be prefixed with the `async` keyword:
+
+```js
+async function myAsyncFunction() {
+  // ...
+}
+
+const myAsyncArrowFunction = async () => {
+  // ...
+};
+```
+
+Inside an async function, you can use the `await` keyword to wait for a Promise to be resolved:
+
+```js
+async function myAsyncFunction() {
+  const value = await otherAsynchronousFunction();
+  console.log(value);
+}
+```
+
+> 💡 `async` functions always return a Promise. If the function returns a value, the Promise will be
+> resolved with that value. Even if you're not using the `return` keyword the function will return a
+> Promise that resolves to `undefined` when it reaches the end of it's scope.
 
 ---
 
@@ -32,7 +98,7 @@ API defines a way on how a JavaScript application can use a feature given by the
 APIs running on a server environment are a different type of API. They are provided by a _server_,
 opposing to the APIs provided by the browser (which is also called the _client_). A common use-case
 for such APIs is to read / load data. Other operations like writing or deleting data is also
-possible. There are common approaches regarding the architecture of a serve-side API. One such
+possible. There are common approaches regarding the architecture of a server-side API. One such
 approach are REST-APIs, which is explained later in this document.
 
 ---
@@ -156,59 +222,6 @@ the web might have already encountered at some point.
 
 ---
 
-## Error Handling
-
-It might be surprising that `fetch()` doesn't throw an error when the server returns a bad HTTP
-status, e.g. client or server errors.
-
-```js
-async function fetchSomething() {
-  const response = await fetch("/bad/url/oops");
-  const something = await response.json();
-  return something;
-}
-```
-
-Assuming that in the above example `'bad/url/oops` doesn't lead to an existing location, the server
-would respond with the status code `404` and the text `Page not found`. This is a **completed** HTTP
-request.
-
-A request will only register as rejected if a response cannot be retrieved. This may be due to
-network problems, such as no internet connection, the host not being found, or the server not
-responding.
-
-We can separate _good_ from _bad_ HTTP response statuses by relying on the boolean `response.ok`
-property. It is set to `true` only if the HTTP response code is between `200-299`.
-
-In our example above, `response.ok` would be set to `false` and the response code would be `404`.
-
-If something goes wrong that causes that we do not receive a response the fetch API throws an error.
-Once an error is thrown execution stops and JavaScript looks for the closest `catch` block.
-
-Any production `fetch` call should be inside a `try...catch` block:
-
-```js
-async function fetchSomething() {
-  try {
-    const response = await fetch("/bad/url/oops");
-
-    if (response.ok) {
-      // Success (Good Response)
-      const data = await response.json();
-      return data;
-    } else {
-      // Failure (Bad Response)
-      console.error("Bad Response");
-    }
-  } catch (error) {
-    // Failure (Network error, etc)
-    console.error("An Error occurred");
-  }
-}
-```
-
----
-
 ## REST API
 
 When you create an API, you need to come up with ideas on how to structure your API, shape the
@@ -235,3 +248,14 @@ methods (like GET/POST/PUT/DELETE) to describe desired actions.
 
 > 💡 This is a very basic and incomplete explanation. If you're interested in learning more about
 > what makes an API RESTful, you can read about it [here](https://restfulapi.net/).
+
+---
+
+## Resources
+
+- [Thread on mdn](https://developer.mozilla.org/en-US/docs/Glossary/Thread)
+- [Asynchronous on mdn](https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous)
+- [Using Promises on mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- [Async functions on mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
+- [Promise.all() on mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
+- [try...catch on mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)

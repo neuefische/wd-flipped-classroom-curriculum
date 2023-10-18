@@ -71,33 +71,127 @@ You can import one stylesheet into another stylesheet using **@import**:
 
 ---
 
-## BEM
+## CSS practical strategies
 
-BEM is short for "Block, Element, Modifier". It is a method that allows you to craft reusable
-components through CSS class naming conventions.
+There is no single strategy to approach HTML and CSS cooperation, since it mostly depends on the website / application size and target.
+
+Here we present some concrete scenarios.
+
+### Highlight a product in offer
+
+```html
+<article class="product">
+  <h2>Amazing Article</h2>
+  <span>Price: 66</span>
+</article>
+<article class="product product-in-offer">
+  <h2>Intrepid Item</h2>
+  <span>Price: 99</span>
+</article>
+<article class="product">
+  <h2>Pretty Product</h2>
+  <span>Price: 54</span>
+</article>
+```
 
 ```css
-.block {
-  ...;
+.product {
+  background-color: yellow;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
-.block__element {
-  ...;
-}
-
-.block--modifier {
-  ...;
+.product-in-offer {
+  background-color: orange;
 }
 ```
 
-A **block** is a standalone entity or component.
+### Preventing unwanted cascading
 
-An **element** is a part of your block (or component) that has no standalone meaning.
+Let's say we have an homepage with multiple `.homepage-section`, one of them looking like this:
 
-A **modifier** is a flag on your block (or component) that is used to change its appearance or
-behavior. E.g. disabled, checked, bright, etc. .
+```js
+<section class="homepage-section">
+  <h2>About us<h2>
+  <p>We offer the following services:</p>
+  <ul>
+    <li>Service one</li>
+    <li>Service two</li>
+    <li>Service three</li>
+  </ul>
+  <div class="cards">
+    <article>
+      <h3>Why you should choose us</h3>
+      <ul>
+        <li>Reason one</li>
+        <li>Reason two</li>
+        <li>Reason three</li>
+      </ul>
+    </article>
+    <article>...</article>
+    <article>...</article>
+  <div>
+</section>
+```
 
-You can find an [introduction to BEM here](http://getbem.com/introduction/).
+The section has some cards at the bottom, yielding the following output:
+
+![Example 01](./assets/example_01.png)
+
+Now both the section itself and the first article have a `<ul>`, and styling them in an incautious way would propagate the definitions to the article, see:
+
+```css
+.homepage-section ul {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.homepage-section .cards article ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+```
+
+Even to the padding is overridden by the second definition, the margin from the first one would still applied.
+
+Possible solution? Use the `>` selector:
+
+```css
+.homepage-section > ul {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+```
+
+Now the definition applies just to the `<ul>`s that are **direct descendants** of the section.
+
+[You can see a working example here][CSS Structure Example #1].
+
+### BEM
+
+Among the various naming conventions, a popular one is [BEM][Introduction to BEM]. It suggests the concept of blocks, elements and modifiers like:
+
+```html
+<article class="product">
+  <h2 class="product__title">Amazing Article</h2>
+  <span class="product__price">Price: 66</span>
+</article>
+<article class="product product--in-offer">
+  <h2 class="product__title">Intrepid Item</h2>
+  <span class="product__price">Price: 99</span>
+</article>
+<article class="product">
+  <h2 class="product__title">Pretty Product</h2>
+  <span class="product__price">Price: 54</span>
+</article>
+```
+
+- the `<article>` is a **block**;
+- the `<h2>` and `<span>` are **elements** contained in the block, and are named like `{block}__{elementName}`;
+- the second `<article>` is displayed in a different way thanks to the `product--in-offer` modifier class, that is named like `{block}--{modifierName}`.
+
+You are not required to use BEM, but you may encounter it in some challenges or examples.
 
 ### Kebab Case naming convention
 
@@ -146,10 +240,14 @@ You can use the custom properties as follows:
 }
 ```
 
+You can check an [example implementation of CSS Variables here](https://codesandbox.io/s/css-structure-custom-variables-lmxcc9?file=/css/styles.css)
+
 ---
 
 ## Resources
 
 - [MDN docs: CSS Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
 - [specifishity.com](https://specifishity.com/)
-- [Introduction to BEM](http://getbem.com/introduction/)
+
+[Introduction to BEM]: http://getbem.com/introduction/
+[CSS Structure Example #1]: https://codesandbox.io/s/css-structure-exampe-sv8xd9?file=/index.html

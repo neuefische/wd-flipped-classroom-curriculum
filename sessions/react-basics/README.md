@@ -6,7 +6,7 @@ Recommended schedule for this session:
 
 | duration | content         |
 | -------- | --------------- |
-| 1:00     | Session         |
+| 1:15     | Session         |
 | 1:30     | Active Learning |
 | 0:15     | Recap           |
 
@@ -15,9 +15,9 @@ Recommended schedule for this session:
 - [ ] Understanding what React is and why it is used
 - [ ] Understanding JSX and differences to HTML
 - [ ] Understanding the declarative approach of React
-- [ ] Creating React components
+- [ ] Learning how to work with Create React App
 - [ ] Understanding rendering with React
-- [ ] Knowing about the React ecosystem
+- [ ] Briefly introduce `npm` as CLI tool
 
 ---
 
@@ -71,8 +71,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-re
 - [ ] Explain that it is a way to describe the DOM tree declaratively.
   > 💡 Additional information : A JavaScript compiler (like [babel](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwEwlgbgfAEgpgGwQe2AenNIA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.20.6&externalPlugins=&assumptions=%7B%7D)) will compile our JSX into valid JavaScript, then the React library creates or updates DOM nodes.
   - [ ] If what we want to show changes, we give a new description (new JSX) to the render function.
-  - [ ] React will then efficiently update the DOM. As we will see in a later Demo, React is very
-        good at this.
+  - [ ] React will then efficiently update the DOM
 - [ ] Point out, that we focus on the syntax of JSX for now.
   - [ ] Explain that we can use HTML tags in JSX and nest them as we would do in HTML.
 
@@ -143,62 +142,6 @@ root.render(
 );
 ```
 
-## React Render vs. innerHTML
-
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render?file=/README.md)
-or locally by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render -i
-```
-
-- [ ] Show the HTML and the `index.js` file.
-  - [ ] We have the same demo implemented twice.
-  - [ ] Explain that we have two `div`s.
-  - [ ] The first has content created using `innerHTML` and the second has content created using
-        React.
-  - [ ] Every second (using `setInterval`) we increment a count variable, set `innerHTML` and call
-        `render`.
-- [ ] Demonstrate that template strings with HTML and JSX look a lot alike.
-- [ ] Explain two main differences between JSX and `innerHTML`
-
-  - [ ] No `$` sign in JSX
-    - [ ] With template string we used the `$` sign to insert values with string interpolation.
-    - [ ] JSX is not a string, so there is no interpolation.
-    - [ ] The JSX syntax doesn't use the `$` sign.
-  - [ ] Safe insert of dynamic data
-    - [ ] With `innerHTML` we need to be cautious with string interpolation.
-    - [ ] Dynamic data based on user content could include HTML tags and
-          [be unsafe to use](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#replacing_the_contents_of_an_element).
-    - [ ] JSX is not a string, so there is no interpolation.
-    - [ ] This potential problem doesn't exist in React.
-    - [ ] React handles a safe insertion for us in the background.
-
-## Optional deeper comparison: React Render vs. innerHTML
-
-> 💡 Please decide based on your experience with the class, if the following explanations are
-> suitable
-
-- [ ] Explain that calling `render` with the same JSX will not change the DOM completely.
-  - [ ] In that regard it is very different from `innerHTML` which would replace the entire DOM
-        tree.
-- [ ] Show the full DOM is replaced every second in the `innerHTML` case. (Show the DOM tree in the
-      inspector.)
-  - [ ] You can make this point clearer by typing into the rendered `<textarea>`.
-- [ ] Compare this to the React render case.
-  - [ ] Only the count text is updated and the rest of the DOM stays the same.
-  - [ ] This means that you can change the text in the `<textarea>` and it will not be replaced.
-  - [ ] React is smart enough to only update the parts of the DOM that need to be updated.
-  - [ ] In other words, it takes our declarative description of the DOM and efficiently updates the
-        actual DOM using imperative DOM manipulation like (`element.classList.add()`,
-        `element.append()`, `element.textContent =`, etc.).
-  - [ ] Even though both methods are (arguably) declarative. The user experience is very different.
-
-> 💡 You may also point out that the React render case is more efficient. The browser does not need
-> to re-parse the HTML and re-create the full DOM tree every second. It only needs to update the
-> text. This is not very relevant given the size of the Demo, but can be good to know.
-
 ## How to create your own components
 
 Open the [Render Demo](#render-demo) again and continue your demonstration.
@@ -231,41 +174,47 @@ root.render(
 );
 ```
 
-## The `App` component
+:exclamation: Before creating the `App` component inside an `App.js` file, explain that the Render demo does not contain all common react project files as it was reduced on purpose to focus on rendering.
 
-- [ ] Explain the purpose of the `App` component.
-  - [ ] Convention: a file called `App.js` with the `App` component inside.
-  - [ ] It's the starting point of the React app.
-- [ ] Explain the purpose of `index.js` file.
-  - [ ] The `index.js` file is used to mount the React app into the HTML document.
-- [ ] When creating a new React project from a template these two files are usually given.
-  - [ ] You don't need to change the `index.js`.
-  - [ ] You can add your own components to the JSX in `App.js`.
-- [ ] In those project templates also `StrictMode` is used.
-  - [ ] `StrictMode` helps writing modern React code.
-  - [ ] It is a tool for finding potential bugs.
-  - [ ] It shows warning messages in the JavaScript console.
-- [ ] Create an `App.js` file and update your code like this:
+- [ ] point out that students do not need to setup a react project manually and that we are going to use a package for that called create-react-app
 
-```jsx
-// index.js
-import React from "react";
-import { createRoot } from "react-dom/client";
+### Introduction to Create React App
 
-import App from "./App";
+- [ ] Open the [Create React App website](https://create-react-app.dev/) and show the "Getting
+      Started" section
+- [ ] explain that there is a simple terminal command which does all the project setup (scaffolding) for us
+- [ ] **briefly** explain npx and npm as CLI tools
+  - [ ] `npm`: node package manager, comes with `Node.js` (is part of the students mac setups at the beginning of the bootcamp), used to install & manage packages used by an application (e.g. react library itself is a package getting installed via `npm`)
+  - [ ] `npx`: node package executor, executes / runs packages once (suitable for packages which you do not need permanently installed)
+  - [ ] refer to the handout for more details on npm
+  - [ ] Show your terminal, navigate to a suitable folder (or create a new one) and run
 
-const rootElement = document.querySelector("#root");
-const root = createRoot(rootElement);
-
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+```sh
+npx create-react-app my-first-react-app
 ```
 
-```jsx
-// App.js
+- [ ] Go through the output shown by `create-react-app`
+- [ ] Start the dev server and demonstrate the working React app in the browser
+- [ ] Open the project in VS Code and go through the files, focus on `index.js` and `App.js`
+  - [ ] point out that there are some slight differences to the demo before
+    - Tests (`App.test.js`, `setUpTests.js`, `reportWebVitals.js`)
+    - `App` component being imported and used in `index.js`
+- [ ] explain that now that we have an `App.js` file we can adapt it to the render demo before:
+
+  - [ ] remove the boilerplate code in `App` component in `App.js`
+  - [ ] copy the `Greeting` component function from the demo before and place it in `App.js`:
+
+```js
+function Greeting() {
+  const name = "Jane";
+
+  return <h1 id="greeting">Hello {name}</h1>;
+}
+```
+
+- [ ] adjust the `App` component to:
+
+```js
 export default function App() {
   return (
     <div>
@@ -276,43 +225,87 @@ export default function App() {
     </div>
   );
 }
-
-function Greeting() {
-  const name = "Jane";
-
-  return <h1 id="greeting">Hello {name}</h1>;
-}
 ```
 
-## The React ecosystem
+---
 
-- [ ] Talk about the React ecosystem.
-  - [ ] There are many modern libraries or frameworks to build JavaScript apps.
-  - [ ] React is just one of them, but it has the widest distribution and highest market share.
-  - [ ] A big ecosystem evolved around React.
-  - [ ] Many developers wrote code for React, which we can benefit from.
-- [ ] Give examples for benefits.
-  - [ ] We can not only write components ourself, but also use components that are written by others
-    - (e.g. complex calendar or whole UI component libraries)
-  - [ ] Besides components there are a many other helpful libraries
-    - (e.g. for SPA routing - remember our own implementation in the Quiz-App)
-  - [ ] In the upcoming React lectures we will heavily rely on code written published by other
-        developers.
+## React Render vs. innerHTML
+
+Use this demo on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render -i
+```
+
+> 💡 Decide on your experience with the class and if there is enough time left if you want to explain the demo in detail:
+
+- [ ] Show the HTML and the `index.js` file.
+  - [ ] We have the same demo implemented twice.
+  - [ ] Explain that we have two `div`s.
+  - [ ] The first has content created using `innerHTML` and the second has content created using
+        React.
+  - [ ] Every second (using `setInterval`) we increment a count variable, set `innerHTML` and call
+        `render`.
+- [ ] Demonstrate that template strings with HTML and JSX look a lot alike.
+- [ ] Explain two main differences between JSX and `innerHTML`
+
+  - [ ] No `$` sign in JSX
+    - [ ] With template string we used the `$` sign to insert values with string interpolation.
+    - [ ] JSX is not a string, so there is no interpolation.
+    - [ ] The JSX syntax doesn't use the `$` sign.
+  - [ ] Safe insert of dynamic data
+    - [ ] With `innerHTML` we need to be cautious with string interpolation.
+    - [ ] Dynamic data based on user content could include HTML tags and
+          [be unsafe to use](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#replacing_the_contents_of_an_element).
+    - [ ] JSX is not a string, so there is no interpolation.
+    - [ ] This potential problem doesn't exist in React.
+    - [ ] React handles a safe insertion for us in the background.
+
+## Optional deeper comparison: React Render vs. innerHTML
+
+- [ ] Explain that calling `render` with the same JSX will not change the DOM completely.
+  - [ ] In that regard it is very different from `innerHTML` which would replace the entire DOM
+        tree.
+- [ ] Show the full DOM is replaced every second in the `innerHTML` case. (Show the DOM tree in the
+      inspector.)
+  - [ ] You can make this point clearer by typing into the rendered `<textarea>`.
+- [ ] Compare this to the React render case.
+  - [ ] Only the count text is updated and the rest of the DOM stays the same.
+  - [ ] This means that you can change the text in the `<textarea>` and it will not be replaced.
+  - [ ] React is smart enough to only update the parts of the DOM that need to be updated.
+  - [ ] In other words, it takes our declarative description of the DOM and efficiently updates the
+        actual DOM using imperative DOM manipulation like (`element.classList.add()`,
+        `element.append()`, `element.textContent =`, etc.).
+  - [ ] Even though both methods are (arguably) declarative. The user experience is very different.
+
+> 💡 You may also point out that the React render case is more efficient. The browser does not need
+> to re-parse the HTML and re-create the full DOM tree every second. It only needs to update the
+> text. This is not very relevant given the size of the Demo, but can be good to know.
 
 ---
+
+Otherwise just run the demo in the browser, inspect and point out the following:
+
+- [ ] the demo visualizes a comparison of DOM manipulation with Vanilla JS (innerHTML) and react rendering
+- [ ] for both examples, the DOM is updated every second (by using a timer function)
+- [ ] the `textarea` in the `innerHTML` part is blocked, gets cleared because DOM is fully re-parsed every second
+- [ ] the `textarea` in the react render case is fully functional, entered text persists
+- [ ] expand the DOM tree in inspector and show that react only updates changing parts of the DOM (indicated by a blinking `<p>`-Tag holding the `count` value)
 
 ## Process: Challenges
 
 - [ ] Provide the [handout](react-basics.md) and the [challenges](challenges-react-basics.md) to the
       students
 - [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups
+- [ ] Divide the students into groups of \_\_\_
 - [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
+- meet again 30 min before lunch break in the class room
+- they can ask the coaches for help at any time
+- always try to help each other
+- take a break within the next 1.5 hrs
+- keep an eye on Slack
 
 ---
 
@@ -335,11 +328,13 @@ function Greeting() {
 
 ## Keywords for Recap:
 
-React, render, JSX, component, declarative, string interpolation, nesting
-
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
 > [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
+
+```
+
+```

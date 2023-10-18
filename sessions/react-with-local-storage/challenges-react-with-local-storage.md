@@ -20,10 +20,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-sto
 
 ## Journal App with Local Storage
 
-> 💡 If you are far enough along with your own journal app, follow the
-> [instructions of this challenge](https://github.com/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/journal-app-with-local-storage#readme)
-> using your own code.
-
 Solve this challenge on
 [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/journal-app-with-local-storage?file=/README.md)
 or locally by running this command in your Terminal:

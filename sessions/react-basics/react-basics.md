@@ -8,6 +8,13 @@
 - [ ] Creating React components
 - [ ] Understanding rendering with React
 - [ ] Knowing about the React ecosystem
+- [ ] What npm is and how it is used
+- [ ] What are packages and how does the npm ecosystem work
+- [ ] The basic anatomy of a npm package
+- [ ] How does semantic versioning work
+- [ ] Project Scaffolding with the `Create React App` tool
+
+---
 
 ## What is React and why do we use it?
 
@@ -292,6 +299,105 @@ for us automatically.
 
 ---
 
+## npm
+
+It's a package registry that works like an app store for your project.
+
+---
+
+## `package.json`
+
+Packages that are installed into your project are called dependencies. They are kept inside a
+`package.json` file in your project root. The `package.json` file also contains information about
+your project.
+
+A `package.json` may look something like this:
+
+```json
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A description of my app",
+  "scripts": {
+    "test": "npm run …"
+  },
+  "author": "Alex Newfish",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "my-dependency": "^10.4.1",
+    "my-other-dependency": "^2.0.0"
+  },
+  "devDependencies": {
+    "my-dev-dependency": "^8.0.105",
+    "my-other-dev-dependency": "^0.1.6"
+  }
+}
+```
+
+- `dependencies` are packages that your application source code directly depends on, like libraries
+  or frameworks.
+- `devDependencies` are packages that help you while developing your application, like linters or
+  build tools.
+
+### Installing dependencies
+
+`dependencies` and `devDependencies` inside the `package.json` can be installed by running
+`npm install` (or just `npm i` for short).
+
+> 💡 Do not forget to run `npm install` after cloning a new repository that has a `package.json`
+> file.
+
+When installing, npm creates a `node_modules` folder and a `package-lock.json` file.
+
+- `node_modules` must always be in your `.gitignore` and must not be committed to your repository!
+- `package-lock.json` should be commited to your repository.
+
+---
+
+## Semantic Versioning
+
+A semantic version is updated whenever a package changes and a new version is published.
+
+It follows this schema: **`Major.Minor.Patch`** (e.g. `1.2.3`)
+
+- **`Major`** → major version, changes when the public api of a package changes (breaking change)
+- **`Minor`** → minor version, changes when new features are added
+- **`Patch`** → patch version, changes when bugs are fixed
+
+When defining dependencies in `package.json` npm uses version ranges to define which version of
+package should be installed. npm always installs the newest version of package that still matches
+the range description.
+
+- `^` (e.g. `"^10.4.1"`) → Newer minor updates and patches can be installed, but major updates
+  cannot.  
+  (Here version `10.5.6` would be installed but not `11.0.0`)
+
+- `~` (e.g. `"~10.4.1"`) → Newer patches can be installed, minor and major updates cannot.  
+  (Here version `10.4.8` would be installed but not `10.5.0`)
+
+- `>` (e.g. `">10.4.1"`) → Any newer version will be installed.  
+  (Here any version newer than `10.4.1` would be installed)
+
+Version ranges described with `^` are by far the most commmon choice because they are usally safe
+and won't break your application.
+
+## Project Scaffolding with `Create React App`
+
+Project scaffolding is the process of creating a new project. You will use the
+[Create React App](https://create-react-app.dev/docs/getting-started) tool to create a new React
+project automatically.
+
+> 💡 In principle, you could create a new React project from scratch. However, this would be a lot
+> of work and we would have to set up a lot of things ourselves. For example, you would have to set
+> up a development server, a build process and a test runner. You would also have to configure up a
+> module bundler and a transpiler. This is a lot of work and you would have to do it every time you
+> want to create a new project.
+
+> 💡 Create React App, by the way, works quite similar to the `ghcd` tool you have probably already
+> used.
+
+---
+
 ## Resources
 
 - [What is React: A Visual Introduction For Beginners on learnreact.design](https://learnreact.design/posts/what-is-react)
@@ -299,3 +405,18 @@ for us automatically.
 - [JavaScript in JSX with Curly Braces in the React Docs](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
 - [Your First Component in the React Docs](https://react.dev/learn/your-first-component)
 - [Difference between a Framework and a Library on freecodecamp](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/)
+
+### About npm
+
+- [npm website](https://www.npmjs.com/)
+- [package.json specification](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
+- [npm install documentation](https://docs.npmjs.com/cli/v8/commands/npm-install)
+- [Semantic Versioning specification](https://semver.org/)
+
+### `Create React App` Docs
+
+- [Getting Started on the Create React App Docs](https://create-react-app.dev/docs/getting-started)
+- [Folder Structure on the Create React App Docs](https://create-react-app.dev/docs/folder-structure)
+- [Available Scripts on the Create React App Docs](https://create-react-app.dev/docs/available-scripts)
+- [Adding a Stylesheet on the Create React App Docs](https://create-react-app.dev/docs/adding-a-stylesheet)
+- [Adding Images, Fonts and Files on the Create React App Docs](https://create-react-app.dev/docs/adding-images-fonts-and-files)

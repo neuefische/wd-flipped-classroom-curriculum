@@ -2,27 +2,15 @@
 
 ## Learning Objectives
 
-- knowing the default behavior of form submit
-  - understanding why to prevent this behavior with `.preventDefault()`
+- knowing how to prevent the default behavior of form submit with `.preventDefault()`
 - knowing how to listen to submit events: the `event` object and its `target` property
 - reading input values:
   - `event.target.elements`
   - `FormData`
   - the role of `name` attributes for form fields
-
----
-
-### Understanding the Default Behavior of Form Submit
-
-If you click the submit button of a form, it triggers the following default behavior (without
-writing _any_ JavaScript):
-
-- The form sends a GET request with names and their values as prop inside an URL like
-  `/?firstName=value1&lastName=value2&...`.
-- The page is reloaded and thus the data is lost for us.
-
-None of that is useful, if we want to do something with the submitted data in our frontend code. You
-can prevent this behavior with a method called `.preventDefault()`.
+- understanding the input event
+- knowing how to focus an input field programmatically
+- knowing how to reset a form
 
 ---
 
@@ -133,7 +121,7 @@ You can access the checkbox's state via the `.checked` property instead.
 Imagine the following checkbox
 
 ```html
-<input type="checkbox" name="colorBlue" value="blue" />
+<input type="checkbox" name="colorBlue" value="blue" data-js="blue" />
 ```
 
 and its corresponding JavaScript:
@@ -142,6 +130,71 @@ and its corresponding JavaScript:
 console.log(formElements.colorBlue.checked); // output: true or false
 console.log(formElements.colorBlue.value); // output (always): blue
 ```
+
+You can also react to every checking / unchecking of the checkbox:
+
+```js
+const checkbox = document.querySelector('[data-js="blue"]');
+
+checkbox.addEventListener("input", (event) => {
+  console.log(event.target.checked); // output: true or false
+});
+```
+
+---
+
+### The `input` Event
+
+Occasionally, you may want to do something if the value of a single field changes even before the
+form is submitted.
+
+The `input` event is fired every time when the value of a form field has been changed. For example,
+a `<textarea />` will fire this event with every keystroke.
+
+```js
+const messageInput = document.querySelector('[data-js="message"]');
+
+messageInput.addEventListener("input", (event) => {
+  console.log(event.target.value);
+});
+```
+
+> ❗️ Don't confuse the `input` event with the `change` event, which is only fired after a field's
+> content has been committed by the user by pressing enter or moving the focus to the next field.
+
+---
+
+### Focus Input Fields
+
+You can focus an input field with the `.focus()` method. This can be used to improve the user
+experience after submitting a form.
+
+```js
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // [...] handle form data
+  event.target.elements.message.focus();
+});
+```
+
+This will focus a form field with the attribute `name="message"`.
+
+---
+
+### Resetting Forms
+
+You can reset all form fields to their default value with the `.reset()` method.
+
+```js
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // [...] handle form data
+  event.target.reset();
+});
+```
+
+This often comes in handy in combination with `.focus()`. Think of a chat: After the message was
+send, the input field is cleared and re-focussed, so users can write the next message.
 
 ---
 

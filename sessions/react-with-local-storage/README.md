@@ -1,5 +1,45 @@
 # React with Local Storage
 
+## Active Learning
+
+This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro. The old session guide is retained below in case it is decided to be used as a one-off.
+
+- [ ] Intro topic for 5 - 10 mins
+- [ ] Share [Active Learning Guide](active-learning.md) with the students.
+- [ ] Share [Challenges](challenges-react-with-local-storage.md) with the students.
+
+---
+
+## Active Learning Intro
+
+At the moment, the data we've entered using forms in our apps gets lost when the page is reloaded. Our goal is to understand how to store data in the browser to make it _**persistent**_.
+
+- We can demo this behavior with the [Movie App](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end?file=/README.md).
+
+- Add a few movies, and then reload the page and they will all vanish 🪄.
+
+- To get the browser to "remember" the data we add to the page, we can use something called _**local storage**_.
+
+- Show an example of a site that uses local storage. i.e. [wordcounter.net](https://wordcounter.net/). Add some words and then refresh the page.
+
+- Show that they can open the dev tools, and navigate to the _**Application tab**_ (chrome) and then inspect the _**Local Storage**_ section.
+
+- Show how these are stored in _**key value**_ pairs.
+
+- _Optionally_ show that we can modify these values as a user. (the modified value will only be displayed on reload)
+
+- _Optionally_ show that the saved values are local to the browser. (i.e. open a different browser (i.e. firefox) and it will have a separate local storage).
+
+- _Optionally_ show that these values are not "saved" in incognito mode.
+
+- Mention that in this session we will learn how to _**write to**_, and _**read from**_ local storage using "vanilla javascript".
+
+- They will also learn how to use local storage within a React application.
+
+---
+
+## Session Guide
+
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
 Recommended schedule for this session:
@@ -206,6 +246,8 @@ const [todos, setTodos] = useLocalStorageState("todos", {
 - [ ] Open the demo in the browser again
 - [ ] Add some todos and check a few of them
 - [ ] Reload the browser tab and demonstrate the todos are still there, no data is lost
+
+- [ ] **Optional:** You can let the students know that `use-local-storage-state` is what is know as a `custom hook`. Custom hooks, are hooks that we can write ourselves to potentially help DRY up our code (or we can use 3rd party hooks like `use-local-storage-state`). Students interested in the topic can find a [link to plenty of examples at the end of the notes](assets/react-custom-hooks.md).
 
 ---
 
