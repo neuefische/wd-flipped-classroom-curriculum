@@ -66,7 +66,7 @@ We have:
 - the `<main>` contains three `<section>`s;
 - each `<section>` has a title, one or more paragraphs, and if needed a list of additional information.
 
-Try to draft an homepage for:
+Try to draft a homepage for:
 
 - a cinema / theater;
 - a restaurant;
