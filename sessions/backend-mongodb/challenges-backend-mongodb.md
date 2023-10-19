@@ -38,42 +38,42 @@ Follow this guide to set up your MongoDB Atlas account and your first database.
 
 <img src="assets/images/atlas_network-access.png" alt="Network access overview at the beginning" width="300px">
 
-10. In the IP Access List, behind your IP Address, click on "Edit".
-11. In the pop-up window, click "Allow Access from Anywhere".
+9. In the IP Access List, behind your IP Address, click on "Edit".
+10. In the pop-up window, click "Allow Access from Anywhere".
 
 <img src="assets/images/atlas_allow-access-from-anywhere.png" alt="Allow access from anywhere" width="300px">
 
-12. Your Network Access tab should now look like this:
+11. Your Network Access tab should now look like this:
 
 <img src="assets/images/atlas_access-from-anywhere-finished.png" alt="Finished state after allowing access from anywhere" width="300px">
 
-13. In the left-hand navigation, choose `Deployment > Database` which brings to this view:
+12. In the left-hand navigation, choose `Deployment > Database` which brings to this view:
 
 <img src="assets/images/atlas_deploy-database.png" alt="Deploying the database overview" width="300px">
 
-14. On the right side of your cluster's name (here "Cluster0"), click the "Connect" button.
+13. On the right side of your cluster's name (here "Cluster0"), click the "Connect" button.
 
-15. In the pop-up window, click `Connect to your application > Drivers`:
+14. In the pop-up window, click `Connect to your application > Drivers`:
 
 <img src="assets/images/atlas_connect-to-cluster_choose-connection-method.png" alt="Choose connection method" width="300px">
 
-16. You should now see this screen:
+15. You should now see this screen:
 
 <img src="assets/images/atlas_connect-to-cluster_finished-database-user.png" alt="Database user was generated" width="300px">
 
-18. Click on "Choose a connection method". You will see a screen similar to the following:
+16. Click on "Choose a connection method". You will see a screen similar to the following:
 
 <img src="assets/images/atlas_connect-to-cluster_connection-method-finished.png" alt="Connection to cluster finished" width="300px">
 
-19. We will later need the connection string for our application. Click on "Copy" to copy it to your clipboard. It should look similar to this:
+17. We will later need the connection string for our application. Click on "Copy" to copy it to your clipboard. It should look similar to this:
 
 `mongodb+srv://coachingmongodb:<password>@cluster0.mu12zrz.mongodb.net/?retryWrites=true&w=majority`
 
-20. Note the hint below: `Replace <password> with the password for the coachingmongodb user.`
+18. Note the hint below: `Replace <password> with the password for the coachingmongodb user.`
 
     > This is the database user you have created before. Your database user might have a different name.
 
-Store this connection string in a safe place, e.g. in a text file. You will need it later.
+19. Store this connection string in a safe place, e.g. in a text file. You will need it later.
 
 ## Resources
 
