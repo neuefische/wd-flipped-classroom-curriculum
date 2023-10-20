@@ -97,7 +97,7 @@ Coach
 
 makes the dream work
 
-![height:500px](images/team-work-dream-work.jpg)
+![width:600px](images/team-work-dream-work.jpg)
 
 ---
 
@@ -110,7 +110,7 @@ makes the dream work
 ## Individuelle Entwicklung
 
 Moving from the Fear Zone to the Growth Zone
-![height:550px](images/learning-model.png)
+![width:600px](images/learning-model.png)
 
 ---
 
