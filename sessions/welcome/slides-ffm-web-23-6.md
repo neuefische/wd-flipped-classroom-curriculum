@@ -168,19 +168,6 @@ makes the dream work
 
 <!-- _class: big-headline granite-->
 
-# _Individuelle_ Entwicklung
-
----
-
-## Individuelle Entwicklung
-
-Moving from the Fear Zone to the Growth Zone
-![width:600px](images/learning-model.png)
-
----
-
-<!-- _class: big-headline granite-->
-
 # _Bootcamp_ Tipps
 
 ---
