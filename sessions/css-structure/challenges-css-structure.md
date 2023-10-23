@@ -15,7 +15,7 @@ Have a look at the `styles.css` file.
 There are various CSS rule sets with `FIX_ME` as selector. Your task is to replace this placeholder
 with a proper selector according to the description above the rule set.
 
-Use regular selectors, you're not using BEM just yet. You do not need to touch the HTML file.
+You do not need to touch the HTML file.
 
 Try to get a sense of how you might encounter ambiguities or issues when choosing the right
 selectors.
@@ -33,22 +33,17 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/custom-properties -i
 ```
 
-## Apply BEM to your Quiz App
-
-When writing code for your Quiz App, you might have asked yourself how to choose class names. The
-BEM methodology specifies a predefined pattern for adding class names to your HTML elements.
-
-Bring more structure to your Quiz App code by using BEM to name all classes!
-
-The desired result: One should be able to see which HTML elements belong together to a logical group
-(a BEM "block" / a "component"), by reading the HTML code and paying attention to the classnames.
-
 ## Separate the Quiz App CSS code into different files
 
-You created a structure of individual components in the previous exercise.
+It's time to bring more structure to your Quiz App code!
 
-Now create a separate CSS file for each component. The file name should match the name of the
-component.
+This will involve thinking of your Quiz App in terms of reusable components and then organizing your CSS accordingly.
+
+Begin by examining your Quiz App and mentally breaking it down into distinct, reusable components.
+
+Now create a separate CSS file for each component. The file name should match the name of the component. For example, if you identified a button as a component, you might have a `button.css` for all styles related to buttons.
+
+> 💡 You can use the BEM naming pattern as described [in the handout](./css-structure.md/#BEM).
 
 Move all styles that are used across multiple components to a `global.css` file. (e.g. type
 selectors like `body` or the universal selector `*`)
