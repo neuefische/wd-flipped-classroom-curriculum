@@ -72,48 +72,6 @@ Coach
 
 ---
 
-<!-- _class: bullet-points small-->
-
-# _One truth_ One lie
-
-- Nehmt euch **5 Minuten** Zeit, um über euch:
-  1. eine **Lüge** auszudenken
-  2. eine **Wahrheit** auszusuchen
-- Jede/r erzählt die beiden Geschichten
-- Der Rest von uns schätzt welche Geschichte wahr ist:
-  - Geschichte 1 ist wahr ✅
-  - Geschichte 2 ist wahr ⛔️
-- Danach wird aufgelöst - Gewinne gibt es keine 🙂
-
----
-
-<!-- _class: big-headline granite-->
-
-# Wie und was _wir gemeinsam_ lernen
-
----
-
-## Teamwork
-
-makes the dream work
-
-![width:600px](images/team-work-dream-work.jpg)
-
----
-
-<!-- _class: big-headline granite-->
-
-# _Individuelle_ Entwicklung
-
----
-
-## Individuelle Entwicklung
-
-Moving from the Fear Zone to the Growth Zone
-![width:600px](images/learning-model.png)
-
----
-
 <!-- _class: big-headline granite-->
 
 # _Bootcamp_ Wochenübersicht
@@ -176,6 +134,48 @@ Moving from the Fear Zone to the Growth Zone
 |           | Session, Active Learning, Recap |
 | **12:15** | Research Time                   |
 | **13:00** | Kursende                        |
+
+---
+
+<!-- _class: bullet-points small-->
+
+# _One truth_ One lie
+
+- Nehmt euch **5 Minuten** Zeit, um über euch:
+  1. eine **Lüge** auszudenken
+  2. eine **Wahrheit** auszusuchen
+- Jede/r erzählt die beiden Geschichten
+- Der Rest von uns schätzt welche Geschichte wahr ist:
+  - Geschichte 1 ist wahr ✅
+  - Geschichte 2 ist wahr ⛔️
+- Danach wird aufgelöst - Gewinne gibt es keine 🙂
+
+---
+
+<!-- _class: big-headline granite-->
+
+# Wie und was _wir gemeinsam_ lernen
+
+---
+
+## Teamwork
+
+makes the dream work
+
+![width:600px](images/team-work-dream-work.jpg)
+
+---
+
+<!-- _class: big-headline granite-->
+
+# _Individuelle_ Entwicklung
+
+---
+
+## Individuelle Entwicklung
+
+Moving from the Fear Zone to the Growth Zone
+![width:600px](images/learning-model.png)
 
 ---
 
