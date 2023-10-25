@@ -6,9 +6,15 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 2
 
-- [Responsive Wesbite](https://codesandbox.io/s/pedantic-wood-lynluw)
+- [Responsive Website](https://codesandbox.io/s/pedantic-wood-lynluw)
 
-  **JS Functions 1**
+**JS Variables and Numbers**
+
+- [Challenge 1 – Social Media "Post"](https://github.com/ThomasKirst/js-variables-and-numbers_social-media-post_solution/pull/1)
+- [Challenge 2 – Simple Calculator](https://github.com/ThomasKirst/js-variables-and-numbers_simple-calculator_solution/pull/1)
+- [🎬 Solution Videos Playlist](https://www.youtube.com/playlist?list=PLSizAuhe-ZaMDvnZA35KPKJHs3LL6DARq)
+
+**JS Functions 1**
 
 - [Basic functions](https://codesandbox.io/s/functions-1-exercise-basic-functions-solution-vmpi8j)
 - [Functions with parameters](https://codesandbox.io/s/functions-1-exercise-functions-with-parameters-solution-xbl62x?file=/js/index.js)
@@ -78,8 +84,8 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 4
 
-
 **JS Array Methods**
+
 - [map & filter](https://codesandbox.io/s/festive-black-ngu2ly)
 - [filter](https://codesandbox.io/s/wispy-currying-g7wltj)
 - [map](https://codesandbox.io/s/sweet-ellis-o3p4q3)
@@ -124,7 +130,7 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 ## Week 5
 
-**Lösungen für die aktuelle Woche\*\***React Basics\*\*
+**React Basics**
 
 - [Challenge 1](https://codesandbox.io/s/gallant-water-frbs4m)
 - [Challenge 2](https://codesandbox.io/s/fervent-roman-vsgkbe)
@@ -174,14 +180,16 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 - [Tags](https://codesandbox.io/s/react-state-3-tags-mmwudc)
 - [Journal App](https://codesandbox.io/s/react-state-3-challenge-4-hzuejh)
 
-## Week 6
-
-**React Effect and Fetch**
+**React Effects and Fetch**
 
 - [Challenge 1 - Pokémon API](https://codesandbox.io/s/react-effects-and-fetch-challenge-1-sp5pvp)
 - [Challenge 2 - Pokémon API with paging](https://codesandbox.io/s/react-effects-and-fetch-challenge-2-14x7dl)
 - [Challenge 3 - ISS Tracker](https://codesandbox.io/s/react-effect-and-fetch-challenge-3-yugw9v)
 - [Challenge 4 - API Status and Error Handling](https://codesandbox.io/s/react-effects-and-fetch-challenge-4-l6xrvu)
+- [Alternative: GitHub Repository with Solutions](https://github.com/ThomasKirst/react-effects-and-fetch-solutions/pulls)
+- [🎬 Solutions Videos Playlist](https://www.youtube.com/playlist?list=PLSizAuhe-ZaN0ciOHgjDNpm6i6ESSovIF)
+
+## Week 6
 
 **React with Local Storage**
 
@@ -210,6 +218,13 @@ This is a temporarily solution collection for all challenges in our curriculum. 
 
 - [form](https://github.com/mbosselmann/react-immutable-state-form-hh-web-22-7)
 - [car-race](https://github.com/shebtastic/demo-web-hh-22-7-car-race)
+
+**React Global State**
+
+- [Challenge 1 – Lift State Up](https://github.com/ThomasKirst/react-global-state-challenge/pull/2)
+- [Challenge 2 – Count the Lights](https://github.com/ThomasKirst/react-global-state-challenge/pull/4)
+- [Challenge 3 – Quick Actions](https://github.com/ThomasKirst/react-global-state-challenge/pull/3)
+- [🎬 Solution Videos Playlist](https://www.youtube.com/playlist?list=PLSizAuhe-ZaMNvZaDT98e10ZG01mOh29k)
 
 **React Data Fetching**
 
