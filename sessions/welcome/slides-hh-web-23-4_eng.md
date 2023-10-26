@@ -27,43 +27,35 @@ Student Service
 
 <!-- class: image-profile -->
 
-## Sina Stulpe
+## Shari Holte
 
 Candidate Success Management
 
-![Foto](images/sina_stulpe.jpg)
+![Foto](images/shari_holte.jpg)
 
 ---
 
-## Oliver Fohrmann
+## Anne Buss
 
 Partner Management
 
-![Foto](images/oliver_fohrmann.jpg)
+![Foto](images/anne_buss.jpg)
 
 ---
 
-## Alex Cleas
+## Pete Anderson
 
 Coach
 
-![Foto](images/alex_claes.jpg)
+![Foto](images/peter_anderson.jpeg)
 
 ---
 
-## Andrea Hohnsen
+## Felix Kirchhoff
 
 Coach
 
-![Foto](images/andrea_hohnsen.jpg)
-
----
-
-## CJ Akkuec
-
-Coach
-
-![Foto](images/cj_akkuec.jpg)
+![Foto](images/felix_kirchhoff.jpg)
 
 ---
 
@@ -75,7 +67,7 @@ Coach
 
 <!-- _class: image-center -->
 
-![w:1200](images/neuefische_coaches_all.jpg)
+![w:1200](images/neuefische_coaches_all.png)
 
 ---
 
@@ -104,7 +96,7 @@ Coach
 - Everyone presents both their lie and truth to the group
 - The rest of the group has to guess what's the lie and what's the truth, for example:
   - Story Nr.1 is true ✅
-  - Story Nr.2 is a lie ⛔️
+  - Story Nr.1 is the lie ⛔️
 - Afterwards, the "storyteller" will reveal what's the truth and what's the lie - there are no prizes, though 🙂
 
 ---
@@ -255,12 +247,12 @@ Moving from the Fear Zone to the Growth Zone
 
 ---
 
-<!-- _class: bullet-points-->
+<!-- _class: bullet-points small-->
 
 # Working with Zoom 🎥
 
 - Camera stays on / mic stays muted,
-- Try not to communicate via the Zoom chat
+- Try not to communcate via the Zoom chat
 - Use **Zoom Reactions**
 - Try to give visual **feedback**
 - **Okay**✅ Drinking (water), eating, standing
