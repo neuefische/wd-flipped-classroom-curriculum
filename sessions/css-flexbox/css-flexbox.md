@@ -87,3 +87,4 @@ elements in one dimension (if you ignore wrapped items), CSS Grid is used to lay
 - [MDN web docs: Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 - [CSS Battle](https://cssbattle.dev/)
 - [📑 CSS Grid Layout document](./assets/css-grid.md)
+- [Flexbox playground](https://the-echoplex.net/flexyboxes/)
