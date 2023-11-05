@@ -49,7 +49,7 @@ Coach
 
 <!-- _class: image-center -->
 
-![w:1200](images/neuefische_coaches_all.jpg)
+![w:1200](images/neuefische_coaches_all.png)
 
 ---
 
@@ -119,7 +119,7 @@ Moving from the Fear Zone to the Growth Zone
 
 <!-- _class: image-center -->
 
-![w:850](images/course-schedule.png)
+![w:850](images/course_schedule.png)
 
 ---
 
