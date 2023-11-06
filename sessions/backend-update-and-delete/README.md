@@ -172,8 +172,8 @@ if (request.method === "DELETE") {
 }
 ```
 
-- [ ] Navigate to `pages/[id].js`.
-- [ ] Complete the `handleDeleteJoke` function with the following:
+- [ ] Navigate to `components/Joke/index.js`.
+- [ ] Complete the `handleDelete` function with the following:
 
 ```js
 async function handleDelete() {
