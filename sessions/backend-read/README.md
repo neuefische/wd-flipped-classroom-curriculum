@@ -152,7 +152,7 @@ export default Joke;
 
 - [ ] Explain that we can use the created `mongoose` model to query our database.
 - [ ] Switch to `api/jokes/index.js`.
-- [ ] Explain that we don't want to use the local `lib/data.js` anymore, but our local database;
+- [ ] Explain that we don't want to use the local `lib/data.js` anymore, but our remote database;
       delete the import.
 - [ ] Instead, import `dbConnect` and the `Joke` model.
 - [ ] Explain that we want to create a connection to our database first by calling
