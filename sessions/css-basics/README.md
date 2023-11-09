@@ -17,6 +17,7 @@ Recommended schedule for this session:
 - [ ] understanding the fundamentals of CSS: CSS syntax, selectors, box model,
       inline & block elements
 - [ ] linking stylesheets to the HTML document
+- [ ] Introduce the Developer Tools in the browser
 
 ---
 
@@ -254,6 +255,17 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/demo-end 
 > ❗️
 > Keep this section very brief. For the curious, a detailed explanation can be found in the
 > handout.
+
+### Learning to Use Dev Tools for CSS
+
+- [ ] Demonstrate how to select an element on the page using the "Inspect" tool.
+- [ ] Show how to open Dev Tools in different browsers (usually Cmd+Opt+I on Mac, Ctrl+Shift+I on Windows ).
+- [ ] Navigate to the 'Elements' tab to view the HTML structure and corresponding CSS.
+- [ ] Explain how the Dev Tools provide a live view of the CSS applied to each element.
+- [ ] Show how changes can be made 'on-the-fly' to test new styles.
+- [ ] Discuss the importance of copying working styles from Dev Tools back to the source code.
+
+> 💡 Dev Tools are an invaluable resource for debugging CSS. Encourage students to use Dev Tools to understand how CSS styles are applied and to tweak styles in real-time
 
 ### Demo CSS
 
