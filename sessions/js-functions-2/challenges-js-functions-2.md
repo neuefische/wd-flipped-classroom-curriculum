@@ -22,6 +22,16 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/greet
 
 Create a small greeting page which changes depending on your current time.
 
+## Convert Arrow Functions
+
+Solve the _Convert Arrow Functions_ challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions-2/arrow-functions?file=/js/index.js)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/arrow-functions -i
+```
+
 ## Progress Bar
 
 Solve the _Progress Bar_ challenge on
@@ -33,13 +43,3 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/progr
 ```
 
 Build a Progress Bar which indicates how much the user scrolled down the page.
-
-## Convert Arrow Functions
-
-Solve the _Convert Arrow Functions_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions-2/arrow-functions?file=/js/index.js)
-or locally by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/arrow-functions -i
-```
