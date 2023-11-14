@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-- [ ] Knowing how to attach events ins React
+- [ ] Knowing how to attach events in React
 - [ ] Understanding the concept of "state"
 - [ ] Using `useState()` to handle state in React
 - [ ] Understanding the React Lifecycle
@@ -11,15 +11,15 @@
 
 ## What is state?
 
-State is data that changes over time. Think of the lamp on you desk. It can be switched on or
-switched of. The lamp is in a particular state at a given time and that state can change over time.
+State is data that changes over time. Think of the lamp on your desk. It can be switched on or
+switched off. The lamp is in a particular state at a given time and that state can change over time.
 
-Another example could be the amount of money in your purse. At any given time your have a certain amount
+Another example could be the amount of money in your purse. At any given time you have a certain amount
 of money in your purse, but the amount of money can change. The state of your purse can change.
-Going to the grocery store will decrease the amount of money, while going to the ATM will increases
+Going to the grocery store will decrease the amount of money, while going to the ATM will increase
 it.
 
-This concepts also applies to software. Your app can have data that changes over time.
+This concept also applies to software. Your app can have data that changes over time.
 
 Think of a post on a social media app. You might have liked a specific post, or not. The "liked"
 state of a post can be on or off, like the lamp on your desk.
@@ -74,8 +74,8 @@ function SocialMediaPost() {
 
 In React state is encapsulated per instance of a component. Think of a feed in a social media app.
 The feed is a list of posts. Each post is an individual instance of the `SocialMediaPost` component,
-each with individual state. When you change the "liked" state of one specific post, all other post
-stay as the are.
+each with individual state. When you change the "liked" state of one specific post, all other posts
+stay as they are.
 
 A React component can have multiple states. You can use the `useState` function as much as you need.
 
@@ -106,7 +106,7 @@ This is related to the render cycle of React components.
 
 When React renders a component it executes the component function, which returns JSX. If the JSX
 includes a state variable, it uses the variable's value at that time to place into the JSX. Calling
-the `set` function with a new value informs React, that state has changed.
+the `set` function with a new value informs React, that the state has changed.
 
 > 💡 Changing a state triggers a re-render of the component.
 
