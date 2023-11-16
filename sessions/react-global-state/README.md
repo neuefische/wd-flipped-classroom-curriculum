@@ -74,7 +74,6 @@ or locally by running this command in your Terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/demo-end -i
 ```
 
-
 ### How to start
 
 - [ ] Introduce the students to the general architecture of the application.
@@ -92,7 +91,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/d
 - [ ] Explain the shape of the data stored in state:
   - [ ] the goal is to have a single state variable for all animal counters.
   - [ ] we have multiple counters, so we decided to use an array of objects.
-  - [ ] each object represents an animal with `id`, `name` and the `counter` value. 
+  - [ ] each object represents an animal with `id`, `name` and the `counter` value.
 - [ ] Create a state variable `animals` with `initialAnimals` as initial state.
 - [ ] This will enable us to refactor our code in a way that makes it more dynamic, such as mapping over our data array in order to create individual components.
 
@@ -115,7 +114,7 @@ const [animals, setAnimals] = useState(initialAnimals);
 
 - [ ] Showcase the process of passing `animals` through the components of our application from `_app.js` to `CounterList.js`.
 
-pages/_app.js
+pages/\_app.js
 
 ```jsx
 <Component {...pageProps} animals={animals} />
@@ -154,7 +153,7 @@ export default function CounterList({ animals }) {
       </List>
       {/* ... */}
     </>
-  )
+  );
 }
 ```
 
@@ -176,7 +175,7 @@ export default function CounterList({ animals }) {
 - [ ] These functions won't be working as intended (or at all) anymore, since we now need to feed them with additional information to do their job correctly.
 - [ ] Refactor the code of the functions to accept an `animalId` argument, which is used to check against the value stored in `animal.id` after mapping over our global `animals` state variable.
 
-pages/_app.js
+pages/\_app.js
 
 ```js
 function handleAdd(animalId) {
@@ -200,7 +199,7 @@ function handleSubtract(animalId) {
 
 - [ ] Now we need to pass these functions as props through our components just as before.
 
-pages/_app.js
+pages/\_app.js
 
 ```jsx
 <Component
@@ -214,7 +213,7 @@ pages/_app.js
 pages/counters.js
 
 ```jsx
-export default function CountersPage({ animals , handleAdd, handleSubtract}) {
+export default function CountersPage({ animals, handleAdd, handleSubtract }) {
   return (
     <>
       {/* ... */}
@@ -232,21 +231,23 @@ export default function CountersPage({ animals , handleAdd, handleSubtract}) {
 components/CounterList.js
 
 ```jsx
+// prettier-ignore
 export default function CounterList({ animals, handleAdd, handleSubtract }) {
   return (
     <>
       {/* ... */}
-      <Counter 
-        animal={animal} 
-        onAdd={handleAdd} 
-        onSubtract={handleSubtract} 
+      <Counter
+        animal={animal}
+        onAdd={handleAdd}
+        onSubtract={handleSubtract}
       />
       {/* ... */}
     </>
-  )
+  );
 }
 ```
-- [ ] Make sure to pass `handleAdd` and `handleSubtract` to the props `onAdd` and `onSubtract` of the `<Counter />`  (prefixed with `on` instead of `handle`).
+
+- [ ] Make sure to pass `handleAdd` and `handleSubtract` to the props `onAdd` and `onSubtract` of the `<Counter />` (prefixed with `on` instead of `handle`).
 
 > 💡 In React, the convention is to prefix the names of event handler functions with "on" to indicate that they are event handlers. For example, a function that handles a click event might be called "onClick". Similarly, a function that handles an "add" event might be called "onAdd". This convention helps to make the code easier to read and understand, because it clearly indicates the purpose of the function.
 
@@ -345,7 +346,6 @@ return (
   - [ ] can make the application more difficult to maintain
   - [ ] can make it difficult to reuse components, because they may be tied to a specific data structure passed down through props
 
-
 ### Alternatives: State Management Solutions in React
 
 - [ ] React state management solutions are libraries that help manage the data flow in a React application.
@@ -380,6 +380,12 @@ return (
   - always try to help each other
   - take a break within the next 1.5 hrs
   - keep an eye on Slack
+
+### Solutions for the challenges as a video playlist
+
+> 💡 There is a video playlist with solutions for the challenges which you can share with the students after the session:
+
+[🎬 Solutions Videos Playlist](https://www.youtube.com/playlist?list=PLSizAuhe-ZaMNvZaDT98e10ZG01mOh29k)
 
 ---
 

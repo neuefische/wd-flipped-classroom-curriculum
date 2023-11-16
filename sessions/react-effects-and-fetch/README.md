@@ -241,6 +241,12 @@ useEffect(() => {
   - take a break within the next 1.5 hrs
   - keep an eye on Slack
 
+### Solutions for the challenges as a video playlist
+
+> 💡 There is a video playlist with solutions for the challenges which you can share with the students after the session:
+
+[🎬 Solutions Videos Playlist](https://www.youtube.com/playlist?list=PLSizAuhe-ZaN0ciOHgjDNpm6i6ESSovIF)
+
 ---
 
 ## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
