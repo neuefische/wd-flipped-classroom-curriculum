@@ -66,7 +66,7 @@ Here you can see a comparison of some relevant differences between Next.js and C
 
 With CRA the browser loads an almost empty HTML document (`public/index.html`). Your React code is only executed in the browser.
 
-Next.js comes with a featured called "server-side rendering". This feature will execute your React components on the server to send a complete HTML document to the client (the browser). On the client your React code gets executed again.
+Next.js comes with a feature called "server-side rendering". This feature will execute your React components on the server to send a complete HTML document to the client (the browser). On the client your React code gets executed again.
 
 This enables a lot of optimization techniques we won't discuss. However, there is one important implication you need to know:
 
@@ -82,7 +82,7 @@ return <button onClick={() => console.log(window.innerWidth)}>Click me</button>;
 
 #### Routing
 
-Until now our React applications only ever displayed a single page. The process of conditionally rendering different pages based on the URL (path name) and navigating between these pages ist called routing.
+Until now our React applications only ever displayed a single page. The process of conditionally rendering different pages based on the URL (path name) and navigating between these pages is called routing.
 
 Since a good routing solution is not easy to make, almost all React developers rely on an external routing library. For example `react-router` is a very popular solution.
 
