@@ -9,7 +9,7 @@
 
 ### Adapting based on props
 
-You can adapt styling based on props. To do so, you need to pass the props to the styled component. Most of the time you'll want to prefix the prop with a `$`. This tells styled components, that the prop should not be passed to the underlying DOM element or component and should only be used for styling.
+You can adapt styling based on props. To do so, you need to pass the props to the styled component. Most of the time you'll want to prefix the prop with a `$`. This tells styled components that the prop should not be passed to the underlying DOM element or component and should only be used for styling.
 
 ```js
 import styled from "styled-components";
@@ -25,7 +25,7 @@ export default function List() {
 }
 ```
 
-To use the props to change the styles interpolate a function into the styling template sting. The function receives the props as an argument.
+To use the props to change the styles interpolate a function into the styling template string. The function receives the props as an argument.
 
 For example, you can use the ternary operator to check whether a property is true or false:
 
@@ -56,5 +56,3 @@ const StyledList = styled.ul`
 > 💡 Besides others, the advantages of the `css` helper is syntax highlighting and performance optimization.
 
 > 📙 Read more about [styling based on props](https://styled-components.com/docs/basics#adapting-based-on-props).
-
-
