@@ -245,23 +245,6 @@ export const server = createServer((request, response) => {
   }
   ```
 
-### Testing the Server
-
-- [ ] Explain that we can test the server with Jest
-- [ ] The demo contains tests that you can run with `npm run test`
-- [ ] Show to the students that (if you followed the instructions) all the tests are passing besides one
-- [ ] Show that it is failing because it expects the server to respond with "42" when the requested URL is "/answer"
-- [ ] Implement the missing functionality in the server to make the test pass
-  ```js
-  else if (request.url === "/answer") {
-    response.statusCode = 200;
-    response.end("42");
-  }
-  ```
-- [ ] Show that the test is now passing and that the response is "42" when we open `/answer` in the browser
-
-> 💡 These tests use the `supertest` library. It is a library that allows you to test HTTP servers. It is only used for this session so do not go into details about it. Students should not be expected to write tests for the server. The tests are mainly there to guide them through the implementation of the server itself.
-
 ---
 
 ## Process: Challenges
