@@ -134,15 +134,9 @@ Moving from the Fear Zone to the Growth Zone
 
 ---
 
-<!-- _class: image-center -->
-
-![w:850](images/course_schedule_en.png)
-
----
-
 <!-- _class: bullet-points small-->
 
-# The First Eight Weeks
+# The First Nine Weeks
 
 - **GitHub & Git**
 - **HTML**
@@ -150,7 +144,7 @@ Moving from the Fear Zone to the Growth Zone
 - **JavaScript**
 - **React** Basics, State, React Hooks
 - **Next** Basics, Routing,
-- **React** styled-components, Testing, Global State
+- **React** styled-components, Global State, SWR
 - **Backend** MongoDB,
 - **Agile & Design** UX/UI, User Stories, Product Thinking
 
@@ -160,14 +154,13 @@ Moving from the Fear Zone to the Growth Zone
 
 # Capstone phase
 
-**Week 9 - 12**
+**Week 10 - 12**
 
 | Week   | Task                                |
 | ------ | ----------------------------------- |
-| **9**  | Capstone - Sprint 1                 |
-| **10** | Capstone - Sprint 2 + Sprint Review |
-| **11** | Capstone - Sprint 3 + Sprint Review |
-| **12** | Capstone - Sprint 4 + Graduation 🎓 |
+| **10** | Capstone - Sprint 1                 |
+| **11** | Capstone - Sprint 2 + Sprint Review |
+| **12** | Capstone - Sprint 3 + Graduation 🎓 |
 
 ---
 
