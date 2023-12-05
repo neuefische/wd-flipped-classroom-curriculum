@@ -236,54 +236,18 @@ You can find all slides as well as a description how to use them [in the `worksh
 
 ## How to contribute
 
-There are always tasks to be done to constantly improve the curriculum. Have a look at the [Curriculum Project Board](https://github.com/orgs/neuefische/projects/45/views/10) to see what tasks can be worked on.
+The changes of the curriulum are organized via ticktes on the [curriuclum project board](https://github.com/orgs/neuefische/projects/45/views/10).
 
-If you have ideas how to improve the curriculum, check which of the following 3 categories the update fits in and take the respective action:
+### When to create a Ticket
+This board is meant to organize changes to the curriculum. If you only want to fix a bug or broken link, you can do so directly without posting on this board. 
 
-### Patch
+### Proposing changes
+Please follow these steps when adding a suggestion to the curriculum:
+1. In this "new" column, add an item.
+2. Turn the new item into an Issue and choose `web-curriculum` as a repository.
+3. Post in the slack channel `web-curriculum` your suggestion with a link to your ticket. 
 
-**Examples**:
-
-- very small changes like bug fixes, typos, migration of demos / challenges from codesandbox to web-exercises
-- does not introduce new content, only improves already existing parts
-
-**Action**:
-
-- implement the fix / improvement immediately
-- create a PR and double check the content
-- a code review is not mandatory
-
-### Minor Change
-
-**Examples**:
-
-- introduction of new content without deleting or altering existing content
-- redistribution of already existing content into different sessions
-- introduction of new challenges
-
-**Action**:
-
-- open an issue in the [curriculum project board](https://github.com/orgs/neuefische/projects/45/views/10) and describe the proposed change
-- share the issue in the web-curriculum slack channel
-- after discussing feedback with other coaches, move the issue into the "ready to work on" column
-- the proposal can be implemented
-
-### Major Change
-
-**Examples**:
-
-- introduction of "breaking changes" which alter the curriculum content substantially
-- rewrite of an entire session
-- swapping central technologies / concepts of a sessions, e.g. reactQuery instead of useSWR
-- General layout changes of curriculum files
-
-**Action**:
-
-- open an issue in the [curriculum project board](https://github.com/orgs/neuefische/projects/45/views/10) and describe the proposed change
-- share the issue in the web-curriculum slack channel
-- discuss the proposal in the headless or headful weekly meetings
-- after the pool coaches come to an agreement about the proposal move the issue into the "ready to work on" column
-- the proposal can be implemented
+The Team Curriculum will take it from here and will keep you up to date about the progress of the ticket.
 
 ## Teaching custom versions of a session
 
