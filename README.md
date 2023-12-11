@@ -238,14 +238,17 @@ You can find all slides as well as a description how to use them [in the `worksh
 
 The changes of the curriulum are organized via ticktes on the [curriuclum project board](https://github.com/orgs/neuefische/projects/45/views/10).
 
-### When to create a Ticket
-This board is meant to organize changes to the curriculum. If you only want to fix a bug or broken link, you can do so directly without posting on this board. 
+## When to create a Ticket
 
-### Proposing changes
+This board is meant to organize changes to the curriculum. If you only want to fix a bug or broken link, you can do so directly without posting on this board.
+
+## Proposing changes
+
 Please follow these steps when adding a suggestion to the curriculum:
-1. In this "new" column, add an item.
+
+1. Add a new item In the "new" column of the [Curriculum Project Board](https://github.com/orgs/neuefische/projects/45/views/10).
 2. Turn the new item into an Issue and choose `web-curriculum` as a repository.
-3. Post in the slack channel `web-curriculum` your suggestion with a link to your ticket. 
+3. Post in the slack channel `web-curriculum` your suggestion with a link to your ticket.
 
 The Team Curriculum will take it from here and will keep you up to date about the progress of the ticket.
 
