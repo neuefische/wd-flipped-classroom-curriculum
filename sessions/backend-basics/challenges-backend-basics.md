@@ -2,9 +2,7 @@
 
 ## Greeting
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/backend-basics/greeting?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/greeting -i
@@ -12,9 +10,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/greet
 
 ## Routes
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/backend-basics/routes?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/routes -i
@@ -22,9 +18,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/route
 
 ## Chance: Random Responses
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/backend-basics/chance?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/chance -i
