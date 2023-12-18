@@ -42,7 +42,6 @@ How do we fetch data from an API?
 
 - JS Functions
 - JS Callback Functions
-- CSS Animations
 
 ---
 
