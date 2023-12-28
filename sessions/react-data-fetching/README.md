@@ -44,7 +44,6 @@ Think about the **React Effects and Fetch** session. Do you remember which flaws
 ### Which previously learned concepts will be utilized in this session?
 
 - React Effects and State
-- React Custom Hooks
 
 ---
 
@@ -56,6 +55,7 @@ Use this demo locally by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-start -i
+
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
@@ -64,7 +64,7 @@ You can check out the final version of this demo locally by running this command
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-end -i
 ```
 
-> 💡 This demo is a continuation of the **React Effects and Fetch** and **React Custom Hooks** session demos. It aims to replace the custom `useFetch` hook with `useSWR` before adding some additional local state to enrich the app.
+> 💡 This demo is a continuation of the **React Effects and Fetch** session demo. It aims to replace the `startFetching` function and the `useEffect` with `useSWR` before adding some additional local state to enrich the app.
 
 ### Recap: Fetching Data in React
 
@@ -98,13 +98,14 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
   ```js
   import useSWR from "swr";
   ```
-- [ ] Replace the usage of our custom `useFetch` hook inside the component function with `useSWR`.
+- [ ] Replace the `jokes` state, the `useEffect` hook and the `startFetching` function inside the component function with `useSWR`.
+
   ```js
   const { data } = useSWR(
     `https://example-apis.vercel.app/api/bad-jokes/${id}`
   );
   ```
-- [ ] Delete the now unused function `useFetch`
+
 - [ ] Start the app and demonstrate it doesn't work yet. We only see `Loading...` in the UI. No request to the API is started. This is because SWR expects us to give it a fetcher function that it can use to actually fetch the data.
 - [ ] Show that we can copy the fetcher function directly from the SWR docs. It's just a wrapper around `fetch` but we should not think about it too much. Copy it **above** the `Joke` component function (**not inside**)
   ```js
@@ -150,7 +151,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
   ```
 - [ ] Show that the app still works as expected.
 
-### Combine Fetched Data with Local State
+### Optional: Combine Fetched Data with Local State
 
 > 💡 The following explanation is only one of many ways to combine fetched data with local state. This pattern will help students with the next recap project. The handout contains a detailed explanation of this pattern.
 >
