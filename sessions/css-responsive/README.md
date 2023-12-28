@@ -5,7 +5,6 @@
 This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro. Old session guide is retained below incase it is decided to be used as a one off.
 
 - [ ] Intro topic for 5 - 10 mins
-- [ ] Share [Active Learning Guide](active-learning.md) with the students.
 - [ ] Share [Challenges](challenges-css-responsive.md) with the students.
 
 ---

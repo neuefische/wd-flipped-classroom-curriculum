@@ -111,7 +111,7 @@ During the Recap, the students each have 1 minute to share what they looked into
 
 ### Active Learning
 
-The Session with the prefix `Active Learning` (see Session Overview above) are a new learning method we are using in our cohort. The students are provided with an interactive handout. This handout will replace an in person lecture session. The handouts are to be found [here](https://web-active-learning.vercel.app/). You can also find [the respective repository here](https://github.com/neuefische/web-active-learning) Each Session folder in this web-curriculum, that is marked with the prefix `Active learning` contains a file called `active-learning.md`. This file contains the explanation and the link to the respective handout. It can be shared with the students via Slack.
+The Session with the prefix `Active Learning` (see Session Overview above) are a new learning method we are using in our cohort. The students are provided with an interactive handout. This handout will replace an in person lecture session. The handouts are to be found [here](https://web-active-learning.vercel.app/). You can also find [the respective repository here](https://github.com/neuefische/web-active-learning) Each Session in this web-curriculum, that is titled with the prefix `Active learning` contains a challenge called `Active Learning`. This file contains the explanation and the link to the respective handout.
 
 ---
 
