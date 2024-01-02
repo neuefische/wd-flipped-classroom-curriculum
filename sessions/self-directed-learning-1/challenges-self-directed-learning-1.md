@@ -1,4 +1,10 @@
+# Challenges: Self Directed Learning 1
+
 ## HTML Workout
+
+> Required Sessions:
+>
+> - HTML and the Web
 
 Let's have a look at a basic HTML structure and apply it to different scenarios.
 

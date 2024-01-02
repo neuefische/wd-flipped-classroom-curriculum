@@ -1,4 +1,12 @@
+# Challenges: Self Directed Learning 4
+
 ## 📡 People in Space 🚀
+
+> Required Sessions:
+>
+> - JS Array Methods 1 & 2
+> - JS Fetch
+> - JS createElement
 
 Let's build a website that displays the current number of people in space. Hints are provided if you get stuck. Try to build as much as possible without looking at the hints. We will use the [following API](http://open-notify.org/Open-Notify-API/People-In-Space/) to determine how many people are current in space.
 
@@ -106,7 +114,7 @@ Let's build a website that displays the current number of people in space. Hints
     async function getPeopleInSpace() {
       const response = await fetch("http://api.open-notify.org/astros.json");
       const data = await response.json();
-      peopleInSpace.innerText = data.number;
+      peopleInSpace.textContent = data.number;
     }
     getPeopleInSpace(); // don't forget to call the function
     ```

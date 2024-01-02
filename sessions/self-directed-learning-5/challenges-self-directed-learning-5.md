@@ -1,4 +1,12 @@
+# Challenges: Self Directed Learning 5
+
 ## 📡 People in Space - React Style 🚀
+
+> Required Sessions:
+>
+> - React Basics
+> - React State 1-3
+> - React useEffect with Fetch
 
 Let's build a website that displays the current number of people in space (again!). Hints are provided if you get stuck. Try to build as much as possible without looking at the hints. We will use the [following API](http://open-notify.org/Open-Notify-API/People-In-Space/) to determine how many people are current in space.
 

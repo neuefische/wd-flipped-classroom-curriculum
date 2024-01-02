@@ -1,6 +1,8 @@
-Now that we are dealing with a more complex architecture, it's good to take a step back from coding and spend it to have a look at the big picture.
+# Challenges - Self Directed Learning 7
 
 ## Next Structure
+
+Now that we are dealing with a more complex architecture, it's good to take a step back from coding and spend it to have a look at the big picture.
 
 Let's have a look at a basic Next project file structure:
 

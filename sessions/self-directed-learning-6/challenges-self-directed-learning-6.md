@@ -1,4 +1,19 @@
+# Challenges: Self Directed Learning 6
+
+> ❗️ Feel free to use this self directed learning session as you like. This file provides suggestions if you need some inspiration on how to use this session effectively.
+
+## Suggestions for this Session
+
+- Reread handouts from this week.
+- Repeat the challenges from the last sessions.
+- Work on the last recap project.
+
 ## 🏙️ Cities of the World 🌇
+
+> Required Sessions:
+>
+> - Next.js Basics and Routing
+> - Next.js Dynamic Routes
 
 Let's build an app that lists 10 cities. Each city in the list will link to a detailed information page about that city. This will practice `Next.js Basics and Routing` and `Next.js Dynamic Routes`.
 
