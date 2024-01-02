@@ -125,6 +125,20 @@ In this demo we are going to **implement dynamic routes** and use the **Head** c
 
 - [ ] Show that all the links work now.
 
+### Edge-Case: useRouter with Next.js Pre-Rendering
+
+Why is this `early return` so important?
+
+```js
+if (!currentMovie) {
+  return null;
+}
+```
+
+Comment it out and show that it doesn't make any difference - as long as you are using the `Next.js Link Components` inside of your app. (These links don't make real http-requests to the server).
+
+In opposite: If you create a real http-request by typing `movies/Aquaman` into the browsers URL it will throw an error: `currentMovie` is now undefined because when pre-rendering the site, the `slug` can't be read from the browsers API and a `currentMovie` can't be found.
+
 ### Imperative Routing
 
 > 💡 If you are short on time, skip this section. Imperative routing is explained in the handout and
