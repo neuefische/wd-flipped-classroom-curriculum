@@ -107,6 +107,29 @@
   console.log(shoppingList);
   ```
 
+## Instructions on how to set up the challenge locally
+
+> 💡 The challenges are verified through tests, so it's beneficial to provide brief instructions on how to set up the challenge locally with npm and how to run these tests. Optionally, a brief overview of Node.js and npm can also be included.
+
+1. Clone the Challenge Directory Locally
+
+- Use the `npx command` specified for the challenge to clone the directory.
+
+2. Install Project Dependencies
+
+- Run `npm install` or `npm i`.
+- This reads the `package.json` file and installs all the necessary dependencies listed under `dependencies` and `devDependencies`.
+- 💡 Note: `npm` is the `Node.js` package manager, used for managing libraries and tools.
+
+3. Start the Local Development Server
+   - Use the command `npm run start`.
+   - This command starts a local development server, making the application accessible via a web browser.
+   - The exact action depends on the scripts defined in the `package.json` file.
+4. Run Tests
+   - Use the command `npm run test`.
+   - This command is used to run unit tests, integration tests, etc.
+   - The exact action depends on the scripts defined in the `package.json` file.
+
 ### Process: Challenge 1
 
 - [ ] Open the handout and walk the students through the tasks
