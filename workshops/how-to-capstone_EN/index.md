@@ -14,14 +14,14 @@ Daily Schedule
 
 ## Daily Schedule during the Capstone Phase
 
-- **09:00 AM** Students' Meeting (no Coaches)
+- **09:00 AM**Course Meeting (all, no Coaches)
   - Attendance screenshot
-  - Student review protocol
-  - Proceedings as per usual ...
-- **09:30 AM** Daily Standup (with Coach/es)
-  - What have I worked on yesterday? / What will I be working on today? / Is there anything blocking my progress? (questions, appointments, etc.)
-  - If people have shared challenges or features that they need to work on: work as a team!
-- **5:00 PM** Checkout (with coach/es unless stated otherwise)
+  - Time to talk amongst yourselves
+- **09:30 AM** Daily Check-in (with Coach/es)
+  - Brief get-together
+- **approx. 09:40 AM** Group Meeting (with Coach/es)
+  - Individual meetings with the respective groups
+- **5:00 PM** Checkout
   - Attendance is still **mandatory** and you **have to be present** on Zoom until 5:00 PM.
 
 ---
@@ -36,10 +36,11 @@ Weekly Schedule
 
 ## Weekly Schedule during the Capstone Phase
 
-- **No more mandatory sessions!** There may potentially be voluntary workshops that could be interesting for your capstone project.
-<!-- make sure to update the weekdays!-->
-- **Every <insert retro weekday>:** Plan next week's sprint, write user stories (1 week = 1 sprint).
-- **Every <insert sprint review weekday>:** Public Sprint Review
+- **Independent group-based work rather than routine sessions**
+- There may be small, voluntary workshops centered around subjects of interest during the capstone phase
+- **[!! Weekday]**: Public Sprint Review
+- **[!! Weekday]**: Backlog Grooming
+- **[!! Weekday]** Sprint Planning / Writing User Stories (1 Week = 1 Sprint)
 - **Tip:** Please use your evenings and weekends to take a break!
 
 ---
