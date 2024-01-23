@@ -1,5 +1,15 @@
 # Challenges: JS Array Methods 2
 
+## Letter Puzzle
+
+Solve this challenge on
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle?file=/README.md)
+or locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle -i
+```
+
 ## Array of Animal Strings
 
 Solve the _Array of Animal Strings_ challenge on

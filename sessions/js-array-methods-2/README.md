@@ -14,9 +14,7 @@ Recommended schedule for this session:
 
 - [ ] Understanding advanced array methods
   - [ ] `includes`
-  - [ ] `find` and `findIndex`
-  - [ ] `sort` (and `slice`)
-  - [ ] `some` and `every`
+  - [ ] `find`
 
 ---
 
@@ -26,22 +24,15 @@ Recommended schedule for this session:
 
 ### Which important problem will we solve today?
 
-As developers, we are often confronted with arrays which contain objects. In order to process these
-arrays, we want to
+As developers, we are often confronted with arrays. In order to process these arrays, we want to
 
-- check whether a specific value exists in some of these objects
-- find a specific object or its index
-- sort the array
-- check whether there is at least one element which passes a provided test
-- check whether all elements pass a provided test.
+- check whether there is at least one element in an array
+- find a specific object
 
 ### Pose a question to be answered by the end of the block!
 
-- How do you check whether an array includes a specific value?
-- How do you find an object or the index of an object in an array?
-- How do you sort arrays?
-- How do you check whether at least one element of the array passes a provided test?
-- How do you check whether all elements of the array pass a provided test?
+- How do you check whether at least one element is included in an array?
+- How do you find an specific object in an array?
 
 ---
 
@@ -58,155 +49,79 @@ arrays, we want to
 
 ## Inform: Session Guide
 
-You can use the following demo for this session:
+Use this demo-start locally by running this command in your Terminal:
 
-- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-start?file=/js/index.js)
-- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-end?file=/js/index.js)
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-start -i
+```
 
-Note: The functions `handleList`, `handleSingleValue`, and `handleObject` are used to create the
-respective browser output (it's more visual than `console.log`).
+You can check out the final version of this demo locally by running this command in your Terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-end -i
+```
+
+Show the students the demo code and explain, that we often have to deal with arrays. If the array contains simple data types (like numbers or strings), we can use the `includes` method to check whether a certain value is included or not.
+If the array contains complex data types (like objects) we can use other array methods for this purpose. We look at the `find` method in this session but there are more useful methods shown in the handout.
 
 ### `includes`
 
-- [ ] Explain `includes`:
-  - [ ] takes a value as an argument and checks whether an array contains this value
-  - [ ] returns `true` or `false`
+[Link to the mdn docs: Array.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes?retiredLocale=de)
+
+Let's first look at the array of numbers shown in the browser preview. Copy this code snippet and show how the `includes` method works with an array of numbers.
 
 ```js
-const studentNamesIncludesHarry = studentNames.includes("Harry"); // false
+const numberToCheck = 3333;
+const numberIsIncluded = numbers.includes(numberToCheck);
+numberOutput.textContent = numberIsIncluded
+  ? `Yes, ${numberToCheck} it is included!`
+  : `No, ${numberToCheck} it's not included`;
 ```
+
+- [ ] `includes` works on an array (`numbers.includes`)
+- [ ] It consumes a value as an argument
+- [ ] It returns `true`, if the value is found in the array (and stops execution)
+- [ ] It returns `false`, if the value cannot be found
+- [ ] Play along with some different numbers
+- [ ] Optional you can give a number as a second argument (`fromIndex`) to define the index where to search from
+
+`includes` works fine with strings as well. Here's an example with strings:
+
+```js
+const stringToCheck = "MongoDB";
+const stringIsIncluded = strings.includes(stringToCheck);
+stringOutput.textContent = stringIsIncluded
+  ? `Yes, '${stringToCheck}' it is included!`
+  : `No, '${stringToCheck}' it's not included`;
+```
+
+- [ ] Play along with some different strings
+- [ ] You can use `fromIndex` as a second argument to start searching from a certain index.
 
 ---
 
-### `find` and `findIndex`
+### `find`
 
-- [ ] Show `find`:
-  - [ ] use the callback function to define a test for each element
-  - [ ] note that `find` returns **the first element matching the test**
-  - [ ] show the return value of `undefined` of no element passes the test
+[Link to the mdn docs: Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
-```js
-const personOverThirty = students.find((student) => student.age > 30);
-```
-
-- [ ] Show `findIndex`:
-  - [ ] use the callback function to define a test for each element
-  - [ ] note that `findIndex` returns the index of the **first element found** (there are two
-        students with 39 points) or
-  - [ ] show the return value of `-1` if no element passes the test
+When working with arrays that contain objects we can use the `find` method:
+This one is to get the object we are looking for. It won't return `true` or `false` but the object **itself**.
 
 ```js
-const indexOfStudentWith39Points = students.findIndex(
-  (student) => student.points === 39
-);
+const objectToFind = simpsons.find((simpson) => simpson.age === 12);
+findOutput.textContent = objectToFind
+  ? `Yes, it's '${objectToFind.name}'`
+  : "Cannot find any!";
 ```
 
----
+- [ ] Explain that `find` consumes a callback function that is executed for every element of the array.
+- [ ] This callback function will check a specific condition and needs to return either `true` or `false`
+- [ ] Once the callback function returns true, the execution is stopped and the find function returns the specific object
+- [ ] When no element is found, it returns `undefined`. We have to keep this in mind to avoid an error when rendering an undefined value (we can use optional chaining for this purpose or an if-else statement)
+- [ ] Play along with some different conditions
+- [ ] Point out that we use an `implicit return` in this example. If your callback functions needs to execute more code (e.g. a console.log) you will have to use an `explicit return`
 
-### `sort`
-
-#### Sorting Numbers
-
-- [ ] Explain how to `sort` arrays:
-  - [ ] you provide a callback function with two parameters `(a, b)`
-  - [ ] on each iteration, `sort` takes two values as arguments for `a` and `b` and compares them
-  - [ ] the comparison return values and the result are as follows:
-
-| Return value of `a - b` | sort order                         |
-| ----------------------- | ---------------------------------- |
-| > 0                     | sort `a` after `b`                 |
-| < 0                     | sort `a` before `b`                |
-| === 0                   | keep original order of `a` and `b` |
-
-```js
-const sortedByAge = students.sort((a, b) => a.age - b.age);
-```
-
----
-
-#### Sorting Strings
-
-- [ ] Show that `sorting` strings takes a little bit more effort:
-  - [ ] provide a callback function with two parameters `(a, b)`
-  - [ ] lowercase (or uppercase) both elements before comparing them because of `sort`'s usage of
-        UTF-16 code unit values
-  - [ ] specify the return values for each comparison result with if-statements
-
-> 💡 In UTF-16, the upper- and lowercase version of the same letter do not have the same value. An
-> uppercase 'H' has the UTF-16 decimal value of 72, while the lowercase 'h' has a value of 104.
->
-> For example, an uppercase 'W' (87) and a lowercase 'd' (100) are sorted behind the uppercase 'H'
-> (72), but before the lowercase 'h' (104); the result would look like ['H', 'W', 'd', 'h']. This is
-> why it's necessary to upper- or lowercase all letters before sorting them.
-
-```js
-const sortedByName = students.sort((a, b) => {
-  const nameA = a.name.toLowerCase();
-  const nameB = b.name.toLowerCase();
-  if (nameA < nameB) {
-    return -1;
-  }
-  if (nameA > nameB) {
-    return 1;
-  }
-  return 0;
-});
-```
-
----
-
-### `slice`
-
-- [ ] Use the provided `handleList()` calls to explain the problem:
-
-```js
-handleList(students, "Not Original Anymore");
-handleList(sortedByAge, "Not Sorted By Age Anymore");
-```
-
-Explanation:
-
-- [ ] the original `students` array is now sorted by name (the last use of `sort` above)
-- [ ] the `sortedByAge` call is not sorted by age, but by name as well
-- [ ] if we now want to use the original order, it's gone
-- [ ] the reason is that `sort` does not create a new array, but mutates the old one
-
-Solution:
-
-- [ ] use `.slice()` before each call of `.sort()` in order to create a shallow copy first:
-
-```js
-const sortedByAge = students.slice().sort((a, b) => a.age - b.age);
-
-const sortedByName = students.slice().sort((a, b) => {...}
-```
-
-- [ ] show that `handleList(students, 'Not Original Anymore');` and
-      `handleList(sortedByAge, 'Not Sorted By Age Anymore');` work now
-
----
-
-### `some` and `every`
-
-- [ ] Use `some` to test whether **at least one element** in the array passes the provided testing
-      function.
-- [ ] Show that `some` returns either `true` or `false`.
-
-```js
-const anyStudentHasZeroPoints = students.some(
-  (student) => student.points === 0
-);
-```
-
-- [ ] Use `every` to test whether **all elements** in the array passes the provided testing
-      function.
-- [ ] Show that `every` returns either `true` or `false`.
-
-```js
-const everyStudentIsOlderThanThirty = students.every(
-  (student) => student.age > 30
-);
-```
+More useful array methods are shown in the handout. They all work in a similar way.
 
 ---
 
