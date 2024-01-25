@@ -3,7 +3,7 @@
 ## Absolute Position
 
 Solve the _Absolute Position_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-positioning/absolute-no-advanced-requirements?file=/css/styles.css)
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-positioning/absolute-position?file=/css/styles.css)
 or locally by running this command in your Terminal:
 
 ```
