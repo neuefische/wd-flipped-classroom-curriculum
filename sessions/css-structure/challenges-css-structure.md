@@ -3,7 +3,7 @@
 ## Selectors and Cascading Bugs
 
 Solve the _Selectors and Cascading Bugs_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading?file=/css/styles.css)
+[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading-bugs?file=/css/styles.css)
 or locally by running this command in your Terminal:
 
 ```
