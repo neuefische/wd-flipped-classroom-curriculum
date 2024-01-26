@@ -47,13 +47,13 @@ How can we create re useable components for our application with`styled-componen
 Use this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/demo-start
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/demo-end
 ```
 
 ### Introduction

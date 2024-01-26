@@ -139,20 +139,16 @@ JSON.parse(localStorage.getItem("settings"));
 
 ### Local Storage in React with `use-local-storage-state` hook
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end
 ```
 
 - [ ] Open the demo in the browser and introduce this small Todo App

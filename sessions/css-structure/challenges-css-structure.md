@@ -2,12 +2,10 @@
 
 ## Selectors and Cascading Bugs
 
-Solve the _Selectors and Cascading Bugs_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading-bugs?file=/css/styles.css)
-or locally by running this command in your Terminal:
+Solve the _Selectors and Cascading Bugs_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading-bugs
 ```
 
 Have a look at the `styles.css` file.
@@ -25,12 +23,10 @@ check if you selected the correct elements.
 
 ## Custom Properties
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-structure/custom-properties?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/custom-properties -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/custom-properties
 ```
 
 ## Separate the Quiz App CSS code into different files

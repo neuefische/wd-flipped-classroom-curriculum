@@ -48,11 +48,18 @@ How can we guide the user to enter valid data into a form?
 ## Inform: Session Guide
 
 - During the session, show an example of how to apply the topics to an example form. You can use
-  this demo:
-- starter code:
-  [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/demo-start?file=/index.html)
-- final code:
-  [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms-2/demo-end?file=/index.html)
+
+Demo Start:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/demo-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/demo-end
+```
 
 ### HTML Form Validation
 

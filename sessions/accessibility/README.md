@@ -113,20 +113,16 @@ This is an Active Learning session for the students. That means that the coach a
 
 #### Semantic HTML
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/accessibility/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/accessibility/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/accessibility/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/accessibility/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/accessibility/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/accessibility/demo-end
 ```
 
 - [ ] Show how to create an accessible pagelayout using semantic HTML and landmarks

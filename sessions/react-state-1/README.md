@@ -41,27 +41,23 @@ How does React handle events and changes to the UI?
 - JS Basics
 - React Basics
 
+Demo Start:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-counter-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-counter-end
+```
+
 ---
 
 ## Inform: Session Guide
 
 ### A Naive Approach to State
-
-- [ ] Use this demo on
-      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-1/demo-counter-start?file=/README.md)
-      or locally by running this command in your Terminal:
-
-  ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-counter-start -i
-  ```
-
-  You can check out the final version of this demo on
-  [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-1/demo-counter-end?file=/README.md)
-  or locally by running this command in your Terminal:
-
-  ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-counter-end -i
-  ```
 
 - [ ] Explain that our goal is for the number on the button to increase by one every time we click
       it.
@@ -260,20 +256,16 @@ export default function App() {
 
 ### Components can have multiple state with different data types
 
-Use this second demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-1/demo-food-order-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this second demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-food-order-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-food-order-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-1/demo-food-order-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-food-order-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-food-order-end
 ```
 
 - [ ] Explain that component can have multiple states (multiple calls of `useState`)

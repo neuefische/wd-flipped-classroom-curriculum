@@ -21,58 +21,48 @@ Solve the following challenges.
 
 ## Input to uppercase Challenge
 
-Solve the _Input to uppercase Challenge_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-uppercase?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Input to uppercase Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-uppercase -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-uppercase
 ```
 
 Convert the text in the input field to uppercase when clicking the button.
 
 ## Input to uppercase and lowercase Challenge
 
-Solve the _Input to uppercase and lowercase Challenge_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-upper-and-lowercase?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Input to uppercase and lowercase Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-upper-and-lowercase -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-upper-and-lowercase
 ```
 
 Convert the text in the input field to lowercase when clicking the button.
 
 ## Switch values Challenge
 
-Solve the _Switch values Challenge_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/switch-values?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Switch values Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/switch-values -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/switch-values
 ```
 
 Switch the input values of the two inputs when clicking the button.
 
 ## Multiple inputs Challenge
 
-Solve the _Multiple inputs Challenge_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/multiple-inputs?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Multiple inputs Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/multiple-inputs -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/multiple-inputs
 ```
 
 ## Change Box Appearance Advanced Challenge
 
-Solve the _Change Box Appearance Advanced Challenge_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/change-box-appearance?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Change Box Appearance Advanced Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/change-box-appearance -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/change-box-appearance
 ```
 
 Change the appearance of the box when the values of the sliders (color, border radius, rotation)

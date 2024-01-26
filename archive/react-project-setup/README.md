@@ -169,7 +169,11 @@ npm start
 ### Component structure
 
 Open the
-[demo](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-project-setup/demo-project-structure)
+[demo]:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-project-setup/demo-project-structure
+```
 
 - [ ] Show the rendered page of this React app
 - [ ] Explain this project was also started with Create React App
@@ -237,3 +241,7 @@ create-react-app, project scaffolding, bundler, transpilation, npm dependencies,
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
+
+```
+
+```

@@ -58,20 +58,16 @@ How can we migrate our local states to top level components and what are the ben
 
 ### Demo: A Global State Solution
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-global-state/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-global-state/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/demo-end
 ```
 
 ### How to start

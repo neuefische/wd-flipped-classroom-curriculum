@@ -2,22 +2,18 @@
 
 ## Form
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-immutable-state/form?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/form -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/form
 ```
 
 ## Car Race
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-immutable-state/car-race?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/car-race -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/car-race
 ```
 
 ## Further Challenges

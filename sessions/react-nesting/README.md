@@ -44,20 +44,16 @@ Why is composition an important concept when writing React?
 
 ## Inform: Session Guide
 
-- [ ] Use this demo on
-      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-nesting/demo-start?file=/README.md)
-      or locally by running this command in your Terminal:
+- [ ] Use this demo by running this command in your Terminal:
 
   ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-start -i
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-start
   ```
 
-- [ ] You can check out the final version of this demo on
-      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-nesting/demo-end?file=/README.md)
-      or locally by running this command in your Terminal:
+- [ ] You can check out the final version of this demo running this command in your Terminal:
 
   ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-end -i
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-end
   ```
 
 - [ ] Explain the existing code in the demo
@@ -200,12 +196,10 @@ function Button({ children }) {
   - [ ] Point out, that we put together multiple smaller components to form larger, more complex components
   - [ ] This is called composition
 
-- [ ] Use this **Composition** demo on
-      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-nesting/demo-composition?file=/README.md)
-      or locally by running this command in your Terminal:
+- [ ] Use this **Composition** demo by running this command in your Terminal:
 
   ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-composition -i
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-composition
   ```
 
 - [ ] Tell students that this a slightly advanced version of the animal shelter demo

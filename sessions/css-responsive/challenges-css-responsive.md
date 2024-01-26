@@ -16,12 +16,10 @@ Welcome to this active learning session focused on exploring CSS Responsive in a
 
 ## Playground
 
-Solve the _Playground_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/playground?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _Playground_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/playground -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/playground
 ```
 
 In this challenge you'll get to play around a bit with some responsive features such as relative
@@ -32,12 +30,10 @@ mini-challenge.
 
 ## Responsive Website
 
-Solve the _Responsive Website_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/responsive-website?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _Responsive Website_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/responsive-website -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/responsive-website
 ```
 
 This challenges revolves around making a website responsive via media queries and breakpoints.

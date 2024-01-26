@@ -20,7 +20,7 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
 1.  Create a new `nextjs` app. You can use the following template.
 
     ```bash
-    npx ghcd@latest neuefische/web-exercises/tree/main/templates/next cities -i
+    npx ghcd@latest neuefische/web-exercises/tree/main/templates/next cities
     cd cities
     npm i
     ```

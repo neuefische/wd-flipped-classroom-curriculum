@@ -10,12 +10,10 @@ Reload the page, restart your browser (or heck, even restart your computer) and 
 
 ## Stored Note 📝
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/stored-note?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/stored-note -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/stored-note
 ```
 
 ## Journal App with Local Storage
@@ -24,20 +22,16 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-sto
 > [instructions of this challenge](https://github.com/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/journal-app-with-local-storage#readme)
 > using your own code.
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/journal-app-with-local-storage?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/journal-app-with-local-storage -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/journal-app-with-local-storage
 ```
 
 ## Dice 🎲
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/dice?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/dice -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/dice
 ```

@@ -240,8 +240,6 @@ You can use the custom properties as follows:
 }
 ```
 
-You can check an [example implementation of CSS Variables here](https://codesandbox.io/s/css-structure-custom-variables-lmxcc9?file=/css/styles.css)
-
 ---
 
 ## Resources
@@ -250,4 +248,3 @@ You can check an [example implementation of CSS Variables here](https://codesand
 - [specifishity.com](https://specifishity.com/)
 
 [Introduction to BEM]: http://getbem.com/introduction/
-[CSS Structure Example #1]: https://codesandbox.io/s/css-structure-exampe-sv8xd9?file=/index.html

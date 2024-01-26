@@ -46,8 +46,17 @@ makes our code hard to read and maintain. We will learn how to solve this proble
 
 You can use this demo to explain the topic:
 
-- [Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-loops/demo-start)
-- [End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-loops/demo-end)
+Demo Start
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/demo-start
+```
+
+Demo End
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/demo-end
+```
 
 ### Introduction: What is a loop
 

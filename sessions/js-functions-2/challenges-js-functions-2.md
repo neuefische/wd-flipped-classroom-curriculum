@@ -2,44 +2,36 @@
 
 ## Calculations
 
-Solve the _Calculations_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions-2/basic-calculations?file=/src/index.js)
-or locally by running this command in your Terminal:
+Solve the _Calculations_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/basic-calculations -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/basic-calculations
 ```
 
 ## Greeting Page
 
-Solve the _Greeting Page_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions-2/greeting-page?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Greeting Page_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/greeting-page -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/greeting-page
 ```
 
 Create a small greeting page which changes depending on your current time.
 
 ## Convert Arrow Functions
 
-Solve the _Convert Arrow Functions_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions-2/arrow-functions?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Convert Arrow Functions_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/arrow-functions -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/arrow-functions
 ```
 
 ## Progress Bar
 
-Solve the _Progress Bar_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-functions-2/progress-bar?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Progress Bar_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/progress-bar -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/progress-bar
 ```
 
 Build a Progress Bar which indicates how much the user scrolled down the page.

@@ -52,10 +52,18 @@ How can we write JavaScript code that generates parts of our webpage for us?
 - [ ] show that we need to learn how to do this to build a modern web app
 - [ ] During the session, show an example of how to generate HTML by creating a card component from
       a simple form. You can use this demo:
-  - starter code:
-    [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-createelement/demo-start?file=/js/index.js)
-  - final code:
-    [codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-createelement/demo-end?file=/js/index.js)
+
+Demo Start:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-createelement/demo-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-createelement/demo-end
+```
 
 ### The DOM
 
@@ -85,6 +93,9 @@ How can we write JavaScript code that generates parts of our webpage for us?
   newCard.classList.add("card");
   newCard.textContent = "This text is displayed in the element";
   ```
+
+````
+
 - [ ] add this code to an event listener on the form element:
   ```js
   form.addEventListener("submit", (event) => {
@@ -155,3 +166,4 @@ createElement, append, innerHTML, textContent, classList
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
+````

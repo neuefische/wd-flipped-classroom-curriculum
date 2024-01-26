@@ -51,20 +51,16 @@ this concept translate into a higher level language like JavaScript?
 
 ## Inform: Session Guide
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-end
 ```
 
 ### Conditional programming

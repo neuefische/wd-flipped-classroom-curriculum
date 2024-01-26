@@ -2,42 +2,34 @@
 
 ## Color Boxes (`forEach`)
 
-Solve the _Color Boxes (`forEach`)_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/for-each?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _Color Boxes (`forEach`)_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/for-each -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/for-each
 ```
 
 ## `map`
 
-Solve the _`map`_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/map?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _`map`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/map -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/map
 ```
 
 ## `filter`
 
-Solve the _`filter`_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/filter?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _`filter`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/filter -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/filter
 ```
 
 ## Repetition: `map`and `filter`
 
-Solve the _Repetition: `map`and `filter`_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/repetition?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _Repetition: `map`and `filter`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/repetition -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/repetition
 ```
 
 ## `document.querySelectorAll`
@@ -57,12 +49,26 @@ Up until now, we've used several HTML files for our app. In contrast, we can cre
 ([single-page application](https://developer.mozilla.org/en-US/docs/Glossary/SPA)): It loads only a
 single web document and updates the body content of that single document via JavaScript.
 
-In the following CodeSandboxes, there is a dummy SPA of the Quiz App; additionally, there are two
+In the following examples, there is a dummy SPA of the Quiz App; additionally, there are two
 enhanced versions which make use of `forEach` in order to improve and reduce the necessary code.
 
-- [SPA 1: a working solution](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-1?file=/README.md)
-- [SPA 2: simplified with `forEach`](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-2?file=/README.md)
-- [SPA 3: `forEach` within `forEach`](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-3?file=/README.md)
+SPA 1: a working solution:
 
-Working in groups, use the CodeSandboxes above. Make sure that every student understands every
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-1
+```
+
+SPA 2: simplified with `forEach`:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-2
+```
+
+`forEach` within `forEach`:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-3
+```
+
+Working in groups, use the examples above. Make sure that every student understands every
 single line of code and is able to explain it.

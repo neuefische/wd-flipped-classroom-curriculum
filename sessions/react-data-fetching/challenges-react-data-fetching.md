@@ -5,7 +5,7 @@
 Solve this challenge locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/iss-tracker -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/iss-tracker
 ```
 
 ## Star Wars
@@ -13,5 +13,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
 Solve this challenge locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/star-wars -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/star-wars
 ```

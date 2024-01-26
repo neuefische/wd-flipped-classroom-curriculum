@@ -2,39 +2,31 @@
 
 ## Pink Box
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/pink-box?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pink-box -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pink-box
 ```
 
 ## Pseudo Park
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/pseudo-park?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pseudo-park -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pseudo-park
 ```
 
 ## Combined Users
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/combined-users?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/combined-users -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/combined-users
 ```
 
 ## Playground: Button styles
 
-Solve the _Button styles_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/button-styles?file=/css/styles.css)
-or locally by running this command in your Terminal:
+Solve the _Button styles_ challenge by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/button-styles
@@ -42,9 +34,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/button-st
 
 ## Pokemon page
 
-Solve the _Pokemon page_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page?file=/css/styles.css:980-1001)
-or locally by running this command in your Terminal:
+Solve the _Pokemon page_ challenge by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page

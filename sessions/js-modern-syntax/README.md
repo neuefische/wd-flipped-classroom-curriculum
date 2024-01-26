@@ -53,10 +53,17 @@ particular, React projects.
 - [ ] Name the latest features students will learn in this session: `destructuring assignment`,
       `rest syntax`, and `spread syntax`.
 
-You can use the following demo:
+Demo Start:
 
-- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-modern-syntax/demo-start?file=/index.js)
-- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-modern-syntax/demo-end?file=/index.js)
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/demo-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/demo-end
+```
 
 ### Destructuring Assignment - Objects
 

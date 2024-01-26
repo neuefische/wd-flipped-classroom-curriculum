@@ -49,17 +49,35 @@ As developers, we are often confronted with arrays. In order to process these ar
 
 ## Inform: Session Guide
 
+<<<<<<< HEAD
+Demo Start:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-end
+=======
 Use this demo-start locally by running this command in your Terminal:
 
 ```
+
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-start -i
+
+> > > > > > > main
+
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
+
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-end -i
-```
+
+````
 
 Show the students the demo code and explain, that we often have to deal with arrays. If the array contains simple data types (like numbers or strings), we can use the `includes` method to check whether a certain value is included or not.
 If the array contains complex data types (like objects) we can use other array methods for this purpose. We look at the `find` method in this session but there are more useful methods shown in the handout.
@@ -76,7 +94,7 @@ const numberIsIncluded = numbers.includes(numberToCheck);
 numberOutput.textContent = numberIsIncluded
   ? `Yes, ${numberToCheck} it is included!`
   : `No, ${numberToCheck} it's not included`;
-```
+````
 
 - [ ] `includes` works on an array (`numbers.includes`)
 - [ ] It consumes a value as an argument

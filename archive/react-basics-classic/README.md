@@ -56,12 +56,10 @@ What concepts in React make it easier for us to write better apps?
 
 ### Render Demo
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-basics/demo-render?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-render -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-render
 ```
 
 - [ ] Show that react renders the `<h1>Hello World</h1>` into the `#root` div.
@@ -145,12 +143,10 @@ root.render(
 
 ## React Render vs. innerHTML
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render
 ```
 
 - [ ] Show the HTML and the `index.js` file.

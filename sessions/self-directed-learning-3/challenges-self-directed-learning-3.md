@@ -79,8 +79,6 @@ When the user submits the form, display the generated email in the `<span>` belo
 
 Do the same for the other operation, this time with just one field of `type=email`, that populates a span with the guessed complete name of the user (e.g. Jane Doe).
 
-[A possible solution can be found here](https://codesandbox.io/s/self-learning-email-solution-45sz7y?file=/src/index.js:0-2229).
-
 ## Bonus: function call order
 
 > Required Sessions:

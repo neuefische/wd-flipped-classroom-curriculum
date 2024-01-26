@@ -47,20 +47,16 @@ How can we abstract logic in React components that might include state and effec
 
 ### Demo
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-end
 ```
 
 > 💡 This demo is based on the final version of the demo from the [_React Effects and Fetch_](../react-effects-and-fetch/README.md) session and picks up where it left off.

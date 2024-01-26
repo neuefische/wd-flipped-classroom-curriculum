@@ -16,19 +16,21 @@ Welcome to this active learning session focused on exploring Accessibility in a 
 
 ## `<div>`-Salad
 
-Solve the _`<div>`-Salad_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/html-and-the-web/div-salad?file=/README.md)
+Solve the _`<div>`-Salad_ challenge by using this command in your terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/div-salad
+```
 
 Replace all the div tags in the code with semantic HTML. In case you need some ideas, you can refer
 to the handout.
 
-## VS Code in the Cloud
-
-With our first experiences in HTML, we can now start to build our own website. But before we do so, we need to set up our development environment. In this challenge, we will set up Visual Studio Code in the cloud, which is Codespaces on GitHub.
-
-[🔗 **Follow these instructions**](https://github.com/neuefische/web-exercises/tree/main/sessions/html-and-the-web/github-codespaces)
-
 ## Personal Website
 
-Build your own _Personal Website_
-[🔗 **following these instructions**](https://github.com/neuefische/web-exercises/tree/main/sessions/html-and-the-web/personal-website).
+Build your own _Personal Website_ using this command in your terminal:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/personal-website
+```
+
+Follow the instructions in the `README.md`. Good luck!

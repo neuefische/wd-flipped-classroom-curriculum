@@ -47,12 +47,17 @@ after submit as well! This is where JavaScript comes into play:
 
 ## Inform: Session Guide
 
-You can use the following
-[Codesandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-forms/demo-start?file=/js/index.js)
-to demonstrate the following steps.
+Demo Start:
 
-You can
-[find the final version here](https://codesandbox.io/s/github/neuefische/web-exercises/main/sessions/js-forms/demo-end?file=/js/index.js).
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/main/sessions/js-forms/demo-end
+```
 
 ### Handle the Default Behavior
 

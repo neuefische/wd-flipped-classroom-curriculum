@@ -95,20 +95,16 @@ node index.js
 
 - [ ] Explain that we are now going to write a simple http server (web-server) with Node.js to demonstrate that it's just a running process executing our JavaScript code
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/backend-basics/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/backend-basics/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/demo-end
 ```
 
 - [ ] Open the empty `server.js` file and explain that we are going to define our server inside of this file.

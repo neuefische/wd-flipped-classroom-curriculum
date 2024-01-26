@@ -5,22 +5,18 @@
 
 ## Statements
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/statements?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/statements -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/statements
 ```
 
 ## Truthy and Falsy values
 
-Solve the _Truthy and Falsy values_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/truthy-and-falsy?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Truthy and Falsy values_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/truthy-and-falsy -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/truthy-and-falsy
 ```
 
 <!--
@@ -41,10 +37,8 @@ Solve this [Kata](https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/j
 
 ## Teenager check
 
-Solve the _Teenager check_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check?file=/js/index.js)
-or locally by running this command in your Terminal:
+Solve the _Teenager check_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check
 ```

@@ -2,12 +2,10 @@
 
 ## Example Implementation
 
-You can find an example implementation for this project on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/recap-project-4/example-implementation?file=/README.md)
-or locally by running this command in your Terminal:
+You can find an example implementation for this project or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-4/example-implementation -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-4/example-implementation
 ```
 
 ## Wireframes

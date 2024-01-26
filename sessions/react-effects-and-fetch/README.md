@@ -44,20 +44,16 @@ Why is `fetch` a side effect and how can we use it in React?
 
 ## Inform: Session Guide
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/demo-end
 ```
 
 ### Introduce the Bad Jokes API

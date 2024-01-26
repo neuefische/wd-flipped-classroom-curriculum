@@ -5,7 +5,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/greeting -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/greeting
 ```
 
 ## Routes
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/greet
 Solve this challenge running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/routes -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/routes
 ```
 
 ## Chance: Random Responses
@@ -21,5 +21,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/route
 Solve this challenge running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/chance -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/chance
 ```

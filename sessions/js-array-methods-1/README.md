@@ -48,10 +48,17 @@ with this information:
 
 ### Introduction to array methods
 
-For this session, you can use the following codesandbox:
+Demo Start:
 
-- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/demo-start?file=/js/index.js)
-- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-1/demo-end?file=/js/index.js)
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/demo-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/demo-end
+```
 
 Use the demo to show the problem:
 

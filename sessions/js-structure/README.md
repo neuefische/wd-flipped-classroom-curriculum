@@ -48,22 +48,35 @@ Transferring the knowledge from CSS: How might something similar be done in Java
 
 You can use the following demo for this session:
 
-- [Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-structure/demo-start?file=/index.js)
-- [End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-structure/demo-end?file=/index.js)
+Demo Start
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/demo-start
+```
+
+Demo End
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/demo-end
+```
 
 > 💡 Our approach is to create vanialla JavaScript components that are similar to React components.
 > That's why we use uppercase function names for our components and folders.
 
 ### The Concept of Modules
 
-- [ ] Have a look at the
-      [Start Demo's index.js file](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-structure/demo-start?file=/index.js):
-  - [ ] Explain that a lot of code accumulated in the main script file and that it would be a good
-        idea to separate it into multiple files
-  - [ ] Encourage students to think about which parts of the code belong together semantically
-    - [ ] Helper Functions / Data
-    - [ ] Header
-    - [ ] Author Cards
+- [ ] Have a look at the Start Demo's index.js file:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/demo-start
+```
+
+- [ ] Explain that a lot of code accumulated in the main script file and that it would be a good
+      idea to separate it into multiple files
+- [ ] Encourage students to think about which parts of the code belong together semantically
+  - [ ] Helper Functions / Data
+  - [ ] Header
+  - [ ] Author Cards
 - [ ] Explain the concept of separation of concerns: Its about keeping code that is part of the same
       thing together (in terms of content or functionality).
 

@@ -9,5 +9,5 @@
 Solve this challenge on by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/lotr-app-dynamic-routes -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/lotr-app-dynamic-routes
 ```

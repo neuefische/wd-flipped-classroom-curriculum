@@ -21,12 +21,10 @@ Solve the following Grid Challenges
 
 ### Image Gallery
 
-Solve the _Image Gallery_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/image-gallery?file=/css/styles.css)
-or locally by running this command in your Terminal:
+Solve the _Image Gallery_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/image-gallery -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/image-gallery
 ```
 
 Expected Result:
@@ -35,12 +33,10 @@ Expected Result:
 
 ### Service Gallery
 
-Solve the _Service Gallery_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/service-gallery?file=/css/styles.css)
-or locally by running this command in your Terminal:
+Solve the _Service Gallery_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/service-gallery -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/service-gallery
 ```
 
 Expected Result:
@@ -49,12 +45,10 @@ Expected Result:
 
 ### Payment Cards
 
-Solve the _Payment Cards Challenge_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/payment-cards?file=/css/styles.css)
-or locally by running this command in your Terminal:
+Solve the _Payment Cards Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/payment-cards -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/payment-cards
 ```
 
 Expected Result:
@@ -63,12 +57,10 @@ Expected Result:
 
 ### Fish Cards
 
-Solve the _Fish Cards_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/fish-cards/?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _Fish Cards_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/fish-cards -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/fish-cards
 ```
 
 Expected Result:
@@ -77,12 +69,10 @@ Expected Result:
 
 ### Image Board
 
-Solve the _Image Board_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/image-board?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _Image Board_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/image-board -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/image-board
 ```
 
 Expected Result:
@@ -91,12 +81,10 @@ Expected Result:
 
 ### Place The Elements
 
-Solve the _Place The Elements Challenge_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/place-elements?file=/README.md)
-or locally by running this command in your Terminal:
+Solve the _Place The Elements Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/place-elements -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/place-elements
 ```
 
 Expected Result:

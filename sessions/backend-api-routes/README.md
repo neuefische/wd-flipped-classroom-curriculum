@@ -45,13 +45,13 @@ How do we create an API with the help of Next.js API routes and use them in our 
 Use this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/demo-start
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/demo-end
 ```
 
 ### Introduction to Next.js API Routes

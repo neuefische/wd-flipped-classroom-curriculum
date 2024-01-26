@@ -49,10 +49,17 @@ How do we fetch data from an API?
 
 ## Inform: Session Guide
 
-You can use the following demo:
+Demo Start:
 
-- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start?file=/js/index.js)
-- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch/demo-end?file=/js/index.js)
+```
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start
+```
+
+Demo End:
+
+```
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-end
+```
 
 ### Introduction to APIs
 
@@ -87,8 +94,7 @@ You can use the following demo:
 
 ### Fetching data
 
-- [ ] Introduce the
-      [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start?file=/js/index.js):
+- [ ] Introduce the Demo
 
   - [ ] We want to fetch a random joke from an API, that is provided by a server.
   - [ ] The DOM is already prepared inside the `// Assemble DOM` part.
@@ -224,8 +230,7 @@ if (!response.ok) {
 - Afterwards you can render a list of all jokes to the UI.
 - Receiving and rendering a list of data is a more common use-case, but might be tricky to
   understand for students when dealing with `fetch` for the first time.
-- Please have a look at the alternative implementation in
-  [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch/demo-end?file=/js/index.js)
+- Please have a look at the alternative implementation in the Demo End
 
 Follow these steps to finish the demo:
 

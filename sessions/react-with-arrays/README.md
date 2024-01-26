@@ -40,20 +40,16 @@ Can you think of a way to render a list of items in React? Do any array methods 
 
 ## Inform: Session Guide
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-arrays/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-arrays/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/demo-end
 ```
 
 ### Introduce the Demo

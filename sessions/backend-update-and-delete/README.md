@@ -54,13 +54,13 @@ How can we update our data and how can we delete data points?
 Use this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-start
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-end
 ```
 
 > 💡 Note: If you don't have your database set up in MongoDB Atlas already, please do so. You'll find data you can use in the assets folder of this session. If you'd prefer a step by step setup guide, feel free to take a look at the session "Backend Read".

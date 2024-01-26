@@ -2,40 +2,32 @@
 
 ## Box 📦
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-1/box?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/box -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/box
 ```
 
 ## Counter 🧮
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-1/counter?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/counter -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/counter
 ```
 
 ## Emoji Checker 🤔
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-1/emoji-checker?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/emoji-checker -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/emoji-checker
 ```
 
 ## Journal App Favorite Button
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-1/journal-app-favorite-button?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/journal-app-favorite-button -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/journal-app-favorite-button
 ```

@@ -5,30 +5,24 @@
 
 ## Arrays
 
-Solve the _Arrays_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays?file=/md/README.md)
-or locally by running this command in your Terminal:
+Solve the _Arrays_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays
 ```
 
 ## Objects
 
-Solve the _Objects_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects?file=/md/README.md)
-or locally by running this command in your Terminal:
+Solve the _Objects_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects
 ```
 
 ## Objects and Arrays
 
-Solve the _Objects and Arrays_ challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays?file=/md/README.md)
-or locally by running this command in your Terminal:
+Solve the _Objects and Arrays_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays
 ```

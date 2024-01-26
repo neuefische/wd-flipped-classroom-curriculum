@@ -58,8 +58,17 @@ How can we react to events in JavaScript and receive details about the occurred 
 
 You can use this demo to explain the topic:
 
-- [Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-callback-functions/demo-start)
-- [End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-callback-functions/demo-end)
+Demo Start
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-functions/demo-start
+```
+
+Demo End
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-functions/demo-end
+```
 
 ### Section 1: Callback functions and button click events
 

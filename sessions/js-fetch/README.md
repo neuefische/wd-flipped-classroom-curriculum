@@ -47,8 +47,17 @@ How do we fetch data from an API?
 
 ## Inform: Session Guide
 
-- [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start?file=/js/index.js)
-- [Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch/demo-end?file=/js/index.js)
+Demo Start:
+
+```
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start
+```
+
+Demo End:
+
+```
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-end
+```
 
 ### Introduction to APIs
 
@@ -84,12 +93,17 @@ How do we fetch data from an API?
 - [ ] Blocking the main thread means:
   - [ ] that no other JavaScript code can be executed.
   - [ ] the user is prevented from interacting with the page.
-- [ ] Optional: Show what can happen if we block the main thread: [Intro Blocking Demo](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo)
+- [ ] Optional: Show what can happen if we block the main thread:
+
+Intro Blocking Demo:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo
+```
 
 ### Joke App introduction
 
-- [ ] Introduce the
-      [Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start?file=/js/index.js):
+- [ ] Introduce the Demo
 
   - [ ] The DOM is already prepared and we find a function `setJoke(joke)` that we just have to call to set the Joke for the joke section.
   - Uncomment the following line with the function call:
@@ -97,6 +111,8 @@ How do we fetch data from an API?
   ```js
   renderJoke("Thanks for explaining the word “many” to me, it means a lot.");
   ```
+
+````
 
 ### Fetching data & asynchronous JavaScript
 
@@ -196,3 +212,4 @@ API, JSON, Promise, async, await, single-threaded
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
+````

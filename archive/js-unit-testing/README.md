@@ -64,8 +64,8 @@ How can we be sure that a function works exactly as intended?
 
 Use the following Demo to follow this guide: (clone as described with `ghcd`)
 
-- [Demo Start](https://github.com/neuefische/web-exercises/tree/main/sessions/js-unit-testing/demo-start)
-- [Demo End](https://github.com/neuefische/web-exercises/tree/main/sessions/js-unit-testing/demo-end)
+- [Demo Start](https://github.com/neuefische/web-exercises/tree/main/sessions/js-unit-testing/demo-start
+- [Demo End](https://github.com/neuefische/web-exercises/tree/main/sessions/js-unit-testing/demo-end
 
 > Note: replace the placeholder `<YOUR-NAME>` with your actual name in the demo
 

@@ -1,13 +1,20 @@
 # Challenges: Shell Basics
 
-## macOS Setup using zsh
+## Shell Setup
 
 > 💡 This will install and configure the software you'll be using during this bootcamp.
+
+### Setup Guide for MacOS
 
 Carefully read and follow the
 [instructions in the `web-setup` repository](https://github.com/neuefische/web-setup#readme).
 
 Run the _General Setup_ script as described.
+
+### Setup Guide for Windows
+
+Carefully read and follow the
+[instructions in the `web-setup` repository](https://github.com/neuefische/web-setup/blob/main/README_Windows.md).
 
 ## Visual Studio Code Setup
 
@@ -33,10 +40,31 @@ Run the _General Setup_ script as described.
    - > 💡 This allows you to open a folder in Visual Studio Code from the command line with the
      > `code .` command.
 
+## Clone Web-Challenges
+
+In order to work properly on the challenges, you need a copy of your `web-challenges` repository on your computer.
+
+1. Inside your terminal, navigate to your home route:
+   ```
+   cd ~
+   ```
+2. create a new folder called "neuefische" and enter it:
+   ```
+   mkdir neuefische
+   cd neuefische
+   ```
+3. On [GitHub](https://github.com), navigate to your `web-challenges` repository you created in the last session.
+4. Click on the `<> code` button and select the `SSH` link for this repository. It should look something like `git@github:<your username>/web-challenges.git`.
+5. Copy this link and inside your terminal (in the folder neuefische) execute:
+   ```
+   git clone <your git link>
+   ```
+6. Make sure that a new folder called `web-challenges` was created.
+7. Use this folder from now on to store your challenges.
+
 ## Treasure Hunt
 
-Open **iTerm** and navigate to the folder you want to use for all your projects (create it if
-necessary). Use the following command to download the challenge files:
+Open **iTerm/git-bash** and navigate to web-challenges folder. Use the following command to download the challenge files:
 
 > 💡 This command will ask you for permission to download ghcd. This is a tool that we use to
 > download challenges from GitHub to your computer. Press <kbd>Enter</kbd> to confirm the download.
@@ -63,7 +91,7 @@ Good luck! 💎
 
 ## Notes Project
 
-Create the following file structure in a new folder inside your projects folder (using `mkdir`,
+Create the following file structure in a new folder inside your web-challenges folder (using `mkdir`,
 `touch` and `cd`):
 
 ```

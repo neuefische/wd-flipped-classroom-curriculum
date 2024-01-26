@@ -13,7 +13,11 @@ This is an Active Learning session for the students. That means that the coach a
 
 At the moment, the data we've entered using forms in our apps gets lost when the page is reloaded. Our goal is to understand how to store data in the browser to make it _**persistent**_.
 
-- We can demo this behavior with the [Movie App](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end?file=/README.md).
+- We can demo this behavior with the Movie App:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end
+```
 
 - Add a few movies, and then reload the page and they will all vanish 🪄.
 
@@ -178,20 +182,16 @@ JSON.parse(localStorage.getItem("settings"));
 
 ### Local Storage in React with `use-local-storage-state` hook
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end
 ```
 
 - [ ] Open the demo in the browser and introduce this small Todo App

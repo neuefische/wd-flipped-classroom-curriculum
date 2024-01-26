@@ -30,4 +30,8 @@ npm-debug.log*
 
 # clone-session script
 .temp
+.temp-test
 .clone-session-config.json
+
+# testing logs
+link_tests.log

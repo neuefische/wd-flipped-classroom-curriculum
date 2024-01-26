@@ -52,20 +52,38 @@ How do we handle asynchronous code and long running processes?
 
 There are three demos for this session:
 
-- [Intro Blocking Demo](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo)
-- [Main Demo Start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start?file=/js/index.js)
-- [Main Demo End](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end?file=/js/index.js)
-- [Fetch Demo](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo)
+Intro Blocking Demo:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo
+```
+
+Main Demo Start:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start
+```
+
+Main Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end
+```
+
+Fetch Demo:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo
+```
 
 ### Introduction: JS is a single-threaded language
 
-- [ ] Use this demo on
-      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo?file=/README.md)
-      or locally by running this command in your Terminal:
+- [ ] Use this demo by running this command in your Terminal:
 
-  ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo -i
-  ```
+```
+
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo
+```
 
 - [ ] Explain that some processes in programming languages take time to complete. For example,
       fetching data from a server, or doing a lot of calculations, or waiting for animations to
@@ -84,19 +102,20 @@ There are three demos for this session:
 
 - [ ] Explain the reasons for this behaviour:
 
-  - [ ] JavaScript is a single-threaded language: only one thing can happen at a time.
-  - [ ] Blocking the main thread
-    - [ ] means that no other JavaScript code can be executed.
-    - [ ] is bad because it prevents the user from interacting with the page.
+- [ ] JavaScript is a single-threaded language: only one thing can happen at a time.
+- [ ] Blocking the main thread
+
+  - [ ] means that no other JavaScript code can be executed.
+  - [ ] is bad because it prevents the user from interacting with the page.
 
 - [ ] Mention the solution:
-  - [ ] Code that takes some time to complete can be made asynchronous.
-  - [ ] This means that while something that takes time is happening in the background, the main
-        thread is free to execute other code.
-  - [ ] Technically this is done similar to how events are handled in JavaScript: the main thread
-        registers a callback function that is called when the asynchronous operation is complete.
-  - [ ] Examples: network requests, file system access, animations, things that need to wait for
-        user permission (think "Website XYZ wants to send Notifications") and timers.
+- [ ] Code that takes some time to complete can be made asynchronous.
+- [ ] This means that while something that takes time is happening in the background, the main
+      thread is free to execute other code.
+- [ ] Technically this is done similar to how events are handled in JavaScript: the main thread
+      registers a callback function that is called when the asynchronous operation is complete.
+- [ ] Examples: network requests, file system access, animations, things that need to wait for
+      user permission (think "Website XYZ wants to send Notifications") and timers.
 
 > 💡 Some things like heavy calculations that take time to complete, but actually do stuff on the
 > main thread, cannot be made asynchronous.
@@ -121,40 +140,39 @@ There are three demos for this session:
 
 #### Simultaneous Animations
 
-- [ ] Use this demo on
-      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start?file=/README.md)
-      or locally by running this command in your Terminal:
+- [ ] Use this demo by running this command in your Terminal:
 
-  ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start -i
-  ```
+```
 
-  You can check out the final version of this demo on
-  [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end?file=/README.md)
-  or locally by running this command in your Terminal:
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start
+```
 
-  ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end -i
-  ```
+You can check out the final version of this demo by running this command in your Terminal:
 
-  - [ ] This demo uses the
-        [`Element.animate()` browser API](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate) inside the `animateBall()` function.
-  - [ ] There are four balls: `soccer`, `basketball`, `football` and `tennis`.
-  - [ ] When clicking the `animateButton`,
-    - [ ] the button is disabled
-    - [ ] all four balls start their animation via `animateBall()`
-    - [ ] the button is enabled
+```
+
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end
+```
+
+- [ ] This demo uses the
+      [`Element.animate()` browser API](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate) inside the `animateBall()` function.
+- [ ] There are four balls: `soccer`, `basketball`, `football` and `tennis`.
+- [ ] When clicking the `animateButton`,
+
+  - [ ] the button is disabled
+  - [ ] all four balls start their animation via `animateBall()`
+  - [ ] the button is enabled
 
 - [ ] Click the `Animate` button and explain the problem:
-  - [ ] All balls start and finish at the same time, but we want them to start one after another.
-  - [ ] Also the button is enabled before the animations are finished.
+- [ ] All balls start and finish at the same time, but we want them to start one after another.
+- [ ] Also the button is enabled before the animations are finished.
 
 #### Staggered Animations with `promise.then()`
 
 - [ ] To start one after another, we need to know when the animation is finished.
 - [ ] `animateBall()` returns a `Promise` object:
-  - [ ] store the return value in a variable and log it to the console
-  - [ ] inside the console show that it is in fact a Promise
+- [ ] store the return value in a variable and log it to the console
+- [ ] inside the console show that it is in fact a Promise
 
 ```js
 const soccerAnimation = animateBall(soccer);
@@ -296,12 +314,10 @@ animateButton.addEventListener("click", async () => {
   - [ ] for now it is enough to know that `fetch()` resolves with a `Response` object
   - [ ] the value can be accessed via the `then()` function
   - [ ] when using the `async/await` syntax, the `await` expression resolves to the value
-- [ ] Use this demo on
-      [🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo?file=/README.md)
-      or locally by running this command in your Terminal:
+- [ ] Use this demo by running this command in your Terminal:
 
   ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo -i
+  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo
   ```
 
 - [ ] Explain the code:

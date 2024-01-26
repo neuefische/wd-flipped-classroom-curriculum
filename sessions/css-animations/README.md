@@ -64,10 +64,17 @@ How can you improve the user experience of your website by adding animations?
 
 ### How to use a CSS `transition`
 
-- [ ] Open the
-      [demo on CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-animations/demo-start?file=/css/styles.css).
-      (Here is the
-      [finished demo](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-animations/demo-end?file=/css/styles.css))
+Demo Start:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-animations/demo-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-animations/demo-end
+```
 
 - [ ] Explain that you have to define two states for a property you want to animate like this:
 
@@ -111,7 +118,9 @@ How can you improve the user experience of your website by adding animations?
 
 .button--scale:active {
   transform: scale(0.9);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 ```
 
@@ -120,14 +129,20 @@ How can you improve the user experience of your website by adding animations?
   ```css
   .button--shadow {
     background-color: var(--nemo);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    transition: background-color 0.5s ease-out, box-shadow 1s ease 0.5s;
+    box-shadow:
+      rgba(0, 0, 0, 0.16) 0px 3px 6px,
+      rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition:
+      background-color 0.5s ease-out,
+      box-shadow 1s ease 0.5s;
     /* add transition here */
   }
 
   .button--shadow:hover {
     background-color: var(--granite);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow:
+      rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
   ```
 

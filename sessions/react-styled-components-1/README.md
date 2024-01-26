@@ -52,13 +52,13 @@ Why do we have more flexibility writing styles when using a library like `styled
 Use this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-1/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-1/demo-start
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-1/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-1/demo-end
 ```
 
 ### Introduction

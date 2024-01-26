@@ -83,11 +83,19 @@ You will learn to read string values from inputs as well as manipulating and out
   - [ ] We need a function that is executed to create the story
   - [ ] In that function the user input needs to be put into the story
 
-Start with
-[this CodeSandbox](https://codesandbox.io/s/js-inputs-and-strings-demo-7rioxt?file=/js/index.js).
-Everything in this session will be done within the submit event handler.
+Demo Start:
 
-[A finished version can be found here](https://codesandbox.io/s/js-inputs-and-strings-demo-final-k2c0ig?file=/js/index.js).
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/demo-start
+```
+
+> 💡Everything in this session will be done within the submit event handler.
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/demo-end
+```
 
 - [ ] Show that we currently log `"Hello, World!"` to the console, when the "Create story" button is
       clicked.

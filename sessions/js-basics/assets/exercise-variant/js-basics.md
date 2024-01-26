@@ -119,8 +119,6 @@ We need to open the console first:
 
 - in Firefox, use <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>K</kbd>
 - in Chrome, use <kbd>F12</kbd> or the shortcut <kbd>Cmd</kbd> + <kbd>Option</kbd> + <kbd>J</kbd>
-- in a Codesandbox, you find the console at the bottom of your Browser's tab (note the blue "1"
-  right next to the word "Console"): ![Console in Codesandbox](assets/codesandbox_console.png)
 
 Now, we can see the following output in the console:
 
@@ -132,7 +130,7 @@ Congratulations, you have grabbed your first HTML element to use it in a JavaScr
 mentioned above, the `querySelector` returns **the entire element** with both attributes `class` and
 `data-js`. We will use this to add interaction in the next chapter!
 
-> 💡 If you open the console in the browser (instead of Codesandbox), you will have a small arrow
+> 💡 If you open the console in the browser you will have a small arrow
 > next to the button output. If you click on this arrow, you will see a long list of all properties
 > which are also available. ![Properties of an HTML element](assets/console_element_properties.png)
 >
@@ -140,7 +138,7 @@ mentioned above, the `querySelector` returns **the entire element** with both at
 
 ### Useful Addition: `console.clear()`
 
-Have you noticed the `console.clear()` in the first line of the Codesandbox example above? This
+Have you noticed the `console.clear()` in the first line of the example above? This
 method clears the console, i.e. all outputs before this line are deleted.
 
 When you start your code with this line, you can be sure the console is cleared every time you

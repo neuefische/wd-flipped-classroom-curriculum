@@ -46,20 +46,16 @@ Do you have any idea how we can conceptually avoid redundancy in repeated pages 
 
 ### Demo
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-end
 ```
 
 In this demo we are going to **implement dynamic routes** and use the **Head** component.

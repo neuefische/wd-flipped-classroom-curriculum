@@ -53,13 +53,13 @@ How can we read data from our database and display it in the frontend?
 Use this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-start
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-end
 ```
 
 ### ORM / ODM and `mongoose`

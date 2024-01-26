@@ -51,13 +51,13 @@ collection of our `jokes-database`?
 Use this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-start
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-end
 ```
 
 ### GET vs. POST and CRUD operations

@@ -54,10 +54,15 @@ _The "Active Learning" portion of the session may require less time._
 This is likely a short session. It is a topic that is supposedly best learned by doing exercises.
 Give a short overview of the different kind of selectors with two or three examples here.
 
-You can use the following CodeSandbox to demonstrate the different kinds of selectors:
+You can use the following commands to demonstrate the different kinds of selectors:
 
-- [demo start](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-start)
-- [demo end](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-selectors/demo-end)
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-selectors/demo-start
+```
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-selectors/demo-end
+```
 
 ### Recap: Basic Selectors
 

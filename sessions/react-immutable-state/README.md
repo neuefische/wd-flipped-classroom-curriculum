@@ -56,20 +56,16 @@ Do you know how to work with nested arrays and objects in state? What do you hav
 
 ### Demo
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-immutable-state/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-immutable-state/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/demo-end
 ```
 
 This demo is a app that shows a list of seasons and episodes from the TV show "A Series of Unfortunate Events". The user can mark an episode as "seen" by clicking on the episode. The episode will then be crossed out.

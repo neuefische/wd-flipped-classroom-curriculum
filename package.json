@@ -31,7 +31,9 @@
   },
   "homepage": "https://github.com/neuefische/web-curriculum-new-format#readme",
   "dependencies": {
-    "husky": "^8.0.1"
+    "chalk": "^5.3.0",
+    "husky": "^8.0.1",
+    "mdast-util-from-markdown": "^2.0.0"
   },
   "lint-staged": {
     "*.md": [

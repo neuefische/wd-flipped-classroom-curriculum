@@ -46,20 +46,16 @@ Why do we always need to create a copy of the data in state when we like to appl
 
 ## Inform: Session Guide
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-3/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end
 ```
 
 ### Introduce the demo app

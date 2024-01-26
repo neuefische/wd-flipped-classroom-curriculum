@@ -54,14 +54,13 @@ Think about the **React Effects and Fetch** session. Do you remember which flaws
 Use this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-start -i
-
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-start
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-end
 ```
 
 > 💡 This demo is a continuation of the **React Effects and Fetch** session demo. It aims to replace the `startFetching` function and the `useEffect` with `useSWR` before adding some additional local state to enrich the app.

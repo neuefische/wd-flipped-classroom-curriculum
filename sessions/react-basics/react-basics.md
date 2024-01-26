@@ -288,8 +288,7 @@ Since JSX is not a standard JavaScript syntax, we need to use a [transpiler](htt
 
 A [bundler](https://webpack.js.org/) is a tool that combines all the files of our codebase into one file, that we can include in our HTML. The bundler also takes care of running the transpiler when needed.
 
-The bundler creates a development server when we run `npm run start` locally. CodeSandbox does this
-for us automatically.
+The bundler creates a development server when we run `npm run start` locally.
 
 > 💡 You might notice that in the challenges we are using an `import` statement to import `.css` files into our JavaScript files. This is not a standard JavaScript feature, but it is supported by the bundler. A css import statement is transformed into a `<link>` element in the HTML automatically.
 >

@@ -5,7 +5,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/box -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/box
 ```
 
 ## Lord of the Rings Fanpage
@@ -17,5 +17,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-compone
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/lotr-app-styling -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components-2/lotr-app-styling
 ```

@@ -71,20 +71,16 @@ What do you remember about unit testing with Jest? Can you imagine how we could 
 
 ### Movies App Demo
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-component-testing/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-component-testing/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-component-testing/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/react-component-testing/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-component-testing/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-component-testing/demo-end
 ```
 
 - [ ] Show the students the Movies App Demo in the browser

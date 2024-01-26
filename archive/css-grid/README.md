@@ -45,20 +45,16 @@ Why do we need another layout algorithm for the web?
 
 ## Demo
 
-Use this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/demo-start?file=/README.md)
-or locally by running this command in your Terminal:
+Use this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-start
 ```
 
-You can check out the final version of this demo on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-grid/demo-end?file=/README.md)
-or locally by running this command in your Terminal:
+You can check out the final version of this demo or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-end -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-end
 ```
 
 ## Inform: Session Guide

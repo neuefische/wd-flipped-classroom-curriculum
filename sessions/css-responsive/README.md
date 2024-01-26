@@ -99,15 +99,40 @@ How can we use CSS to react to different features of the medium that our website
 
 ## Inform: Session Guide
 
+Demo Start:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/demo-start
+```
+
+Demo End:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/demo-end
+```
+
 ### Responsive Design
 
 - [ ] Open this [static example](https://iujmks.csb.app/)
-      ([source](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/demo-example-static))
-      and show how it behaves on different screen sizes
+
+Source:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/demo-example-static
+```
+
+- [ ] show how it behaves on different screen sizes
 - [ ] Explain that this site does not respond to different screen sizes
 - [ ] Open this [responsive example](https://r4djc5.csb.app/)
-      ([source](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/demo-example-responsive))
-      and compare how _it_ behaves on different screen sizes
+
+Source:
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/demo-example-responsive
+```
+
+- [ ] compare how _it_ behaves on different screen sizes
+
 - [ ] Explain that responsive design is a design that adapts to the screen size of the device it is
       being viewed on
 - [ ] It can also mean adapting to other factors like orientation, color scheme, or accessibility
@@ -121,13 +146,9 @@ How can we use CSS to react to different features of the medium that our website
       size, or the size of the parent element
 - [ ] Explain that the most common relative units are `vh`, `vw`, `em`, `rem`, and `%`. The `calc()`
       function can help combine multiple units and do math
-- [ ] Open the
-      [demo on CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/demo-start)
-      and walk students through the current state of the demo.
-- [ ] Explain the relative units step by step.
 
-You can find the
-[final state of the demo on CodeSandbox](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/css-responsive/demo-end).
+- [ ] walk students through the current state of the demo.
+- [ ] Explain the relative units step by step.
 
 #### Percentage: `%`
 
@@ -166,7 +187,7 @@ You can find the
   - [ ] it takes an integer between 1 and 100
   - [ ] the value indicates what percentage of the screen height the element occupies
 - [ ] Adapt the `width` property of `.box--vh` to occupy 50% of the screen height.
-- [ ] Show that changing the height of the screen (i.e. the CodeSandbox Browser) will change the `width`
+- [ ] Show that changing the height of the screen will change the `width`
 
 ```css
 .box--vh {
@@ -362,3 +383,7 @@ html {
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
+
+```
+
+```
