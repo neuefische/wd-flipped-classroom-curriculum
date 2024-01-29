@@ -1,13 +1,15 @@
 # Challenges: Git CLI and Remote
 
-## Setting up git and GitHub
+## Upload Web Challenges
 
-💡 This will configure git on your machine and connect it to your GitHub account.
+Until now you added folders to your web-challenges repository, but never actually committed the changes. Lets change that!
 
-Carefully read and follow the
-[instructions in the web-setup repository](https://github.com/neuefische/web-setup#-setting-up-git-and-github).
+For every challenge in your web-challenges repository:
 
-Run the _Setting up git and GitHub_ script as described.
+- Use `git add <challenge folder name>` to stage the changes from this challenge.
+- Commit these challenge files with `git commit -m "<message>"` and add a meaningful message, e.g. "add solution for html and the web - personal website".
+- Use `git push` to push the new commit to your remote repository on GitHub.
+- Repeat this for every challenge folder!
 
 ## Session Notebook part 1
 

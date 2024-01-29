@@ -9,12 +9,12 @@
 Carefully read and follow the
 [instructions in the `web-setup` repository](https://github.com/neuefische/web-setup#readme).
 
-Run the _General Setup_ script as described.
+Run the _💻 General Setup_ and _🐙 Setting up git and GitHub_ script as described.
 
 ### Setup Guide for Windows
 
 Carefully read and follow the
-[instructions in the `web-setup` repository](https://github.com/neuefische/web-setup/blob/main/README_Windows.md).
+[instructions in the `web-setup` repository for Windows users](https://github.com/neuefische/web-setup/blob/main/README_Windows.md).
 
 ## Visual Studio Code Setup
 
