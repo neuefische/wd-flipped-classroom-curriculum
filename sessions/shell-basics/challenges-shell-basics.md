@@ -38,7 +38,7 @@ Carefully read and follow the
    - Select _"Shell Command: Install 'code' command in PATH"_ and confirm the installation by
      pressing <kbd>Enter</kbd>.
    - > 💡 This allows you to open a folder in Visual Studio Code from the command line with the
-     > `code .` command.
+     > `code .` command. This might not be needed if vscode is already registered in the PATH. If you don't know if its the case we suggest to execute this step.
 
 ## Clone Web-Challenges
 
