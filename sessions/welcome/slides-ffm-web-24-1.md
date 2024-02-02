@@ -69,6 +69,7 @@ Coach
 
 - Wie heißt du und wo lebst du?
 - Was war dein Hobby als du 15 Jahre alt warst?
+- Warum hast du dich für den Teilzeitkurs entschieden?
 
 ---
 
@@ -106,12 +107,12 @@ Coach
 
 **Woche 17 bis 26**
 
-| Woche       | Aktivität                                           |
-| ----------- | --------------------------------------------------- |
-| **17 - 19** | Capstone - Sprint 1                                 |
-| **19 - 21** | Capstone - Sprint 2 + Sprint Review                 |
-| **21 - 23** | Capstone - Sprint 3 + Sprint Review                 |
-| **23 - 26** | Capstone - Sprint 4 + Sprint Review, Abschlussevent |
+| Woche       | Aktivität                            |
+| ----------- | ------------------------------------ |
+| **17 - 18** | Capstone - Sprint 1 + Sprint Review  |
+| **19 - 20** | Capstone - Sprint 2 + Sprint Review  |
+| **21 - 22** | Capstone - Sprint 3 + Sprint Review  |
+| **23 - 24** | Capstone - Sprint 4 + Abschlussevent |
 
 ---
 
@@ -163,7 +164,7 @@ makes the dream work
 
 - **Habt Vertrauen in euch** - manchmal kann man nicht
   alles auf Anhieb verstehen
-- **Stellt Fragen** - traut euch
+- **Stellt Fragen** - traut euch ❤️
 - **Täglich üben** - Wiederholungen helfen
 - Mehr **programmieren** als lesen
 - Findet euch in Gruppen zusammen und **unterstützt euch**
