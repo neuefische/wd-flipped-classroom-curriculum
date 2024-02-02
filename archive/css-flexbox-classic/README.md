@@ -70,13 +70,13 @@ You can ask these questions:
 
 ### Document Normal Flow
 
-Use this demo or locally by running this command in your Terminal:
+Use this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-start
 ```
 
-You can check out the final version of this demo or locally by running this command in your Terminal:
+You can check out the final version of this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-end

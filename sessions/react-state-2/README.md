@@ -47,13 +47,13 @@ How can React components share state with each other?
 
 ## Inform: Session Guide
 
-Use this demo or locally by running this command in your Terminal:
+Use this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/demo-start
 ```
 
-You can check out the final version of this demo or locally by running this command in your Terminal:
+You can check out the final version of this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/demo-end

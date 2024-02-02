@@ -56,7 +56,7 @@ What concepts in React make it easier for us to write better apps?
 
 ### Render Demo
 
-Use this demo or locally by running this command in your Terminal:
+Use this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-render
@@ -229,7 +229,7 @@ export default function App() {
 
 ## React Render vs. innerHTML
 
-Use this demo or locally by running this command in your Terminal:
+Use this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render

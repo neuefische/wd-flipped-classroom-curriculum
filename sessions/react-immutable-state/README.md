@@ -56,13 +56,13 @@ Do you know how to work with nested arrays and objects in state? What do you hav
 
 ### Demo
 
-Use this demo or locally by running this command in your Terminal:
+Use this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/demo-start
 ```
 
-You can check out the final version of this demo or locally by running this command in your Terminal:
+You can check out the final version of this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/demo-end

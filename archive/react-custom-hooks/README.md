@@ -47,13 +47,13 @@ How can we abstract logic in React components that might include state and effec
 
 ### Demo
 
-Use this demo or locally by running this command in your Terminal:
+Use this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-start
 ```
 
-You can check out the final version of this demo or locally by running this command in your Terminal:
+You can check out the final version of this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-end

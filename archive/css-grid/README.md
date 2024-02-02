@@ -45,13 +45,13 @@ Why do we need another layout algorithm for the web?
 
 ## Demo
 
-Use this demo or locally by running this command in your Terminal:
+Use this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-start
 ```
 
-You can check out the final version of this demo or locally by running this command in your Terminal:
+You can check out the final version of this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-end

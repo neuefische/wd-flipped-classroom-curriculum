@@ -182,13 +182,13 @@ JSON.parse(localStorage.getItem("settings"));
 
 ### Local Storage in React with `use-local-storage-state` hook
 
-Use this demo or locally by running this command in your Terminal:
+Use this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start
 ```
 
-You can check out the final version of this demo or locally by running this command in your Terminal:
+You can check out the final version of this demo by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end
