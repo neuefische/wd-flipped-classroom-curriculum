@@ -49,7 +49,6 @@ As developers, we are often confronted with arrays. In order to process these ar
 
 ## Inform: Session Guide
 
-<<<<<<< HEAD
 Demo Start:
 
 ```
@@ -60,31 +59,14 @@ Demo End:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-end
-=======
-Use this demo-start locally by running this command in your Terminal:
-
 ```
-
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-start -i
-
-> > > > > > > main
-
-```
-
-You can check out the final version of this demo locally by running this command in your Terminal:
-
-```
-
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-end -i
-
-````
 
 Show the students the demo code and explain, that we often have to deal with arrays. If the array contains simple data types (like numbers or strings), we can use the `includes` method to check whether a certain value is included or not.
 If the array contains complex data types (like objects) we can use other array methods for this purpose. We look at the `find` method in this session but there are more useful methods shown in the handout.
 
 ### `includes`
 
-[Link to the mdn docs: Array.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes?retiredLocale=de)
+[mdn docs: Array.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes?retiredLocale=de)
 
 Let's first look at the array of numbers shown in the browser preview. Copy this code snippet and show how the `includes` method works with an array of numbers.
 
@@ -92,9 +74,9 @@ Let's first look at the array of numbers shown in the browser preview. Copy this
 const numberToCheck = 3333;
 const numberIsIncluded = numbers.includes(numberToCheck);
 numberOutput.textContent = numberIsIncluded
-  ? `Yes, ${numberToCheck} it is included!`
-  : `No, ${numberToCheck} it's not included`;
-````
+  ? `Yes, ${numberToCheck} is included!`
+  : `No, ${numberToCheck} is not included`;
+```
 
 - [ ] `includes` works on an array (`numbers.includes`)
 - [ ] It consumes a value as an argument
@@ -109,8 +91,8 @@ numberOutput.textContent = numberIsIncluded
 const stringToCheck = "MongoDB";
 const stringIsIncluded = strings.includes(stringToCheck);
 stringOutput.textContent = stringIsIncluded
-  ? `Yes, '${stringToCheck}' it is included!`
-  : `No, '${stringToCheck}' it's not included`;
+  ? `Yes, '${stringToCheck}' is included!`
+  : `No, '${stringToCheck}' is not included`;
 ```
 
 - [ ] Play along with some different strings
@@ -120,7 +102,7 @@ stringOutput.textContent = stringIsIncluded
 
 ### `find`
 
-[Link to the mdn docs: Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+[mdn docs: Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 
 When working with arrays that contain objects we can use the `find` method:
 This one is to get the object we are looking for. It won't return `true` or `false` but the object **itself**.
@@ -177,7 +159,7 @@ More useful array methods are shown in the handout. They all work in a similar w
 
 ## Keywords for Recap:
 
-includes(), find(), findIndex(), sort(), slice(), some(), every()
+includes(), find()
 
 > These keywords are for the weekly summary on Fridays. We use the keywords to automatically
 > generate excalidraw tags with the help of
