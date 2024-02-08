@@ -21,12 +21,12 @@ First, define a `PUT` API route:
 ```js
 // /api/jokes/[id].js
 if (request.method === "PUT") {
-  Joke.findByIdAndUpdate(id, {
-    $set: request.body,
-  });
-  // Find the joke by its ID and update the content that is part of the request body!
-  response.status(200).json({ status: `Joke ${id} updated!` });
-  // If successful, you'll receive an OK status code.
+  const jokeData = request.body;
+  // Get the joke data from the request body
+  await Joke.findByIdAndUpdate(id, jokeData);
+  // Find the joke by its ID and update the joke using its ID and the new data.
+  return response.status(200).json({ status: `Joke ${id} updated!` });
+  // Return an OK status on successful update
 }
 ```
 
@@ -85,9 +85,9 @@ First, define a `DELETE` API route:
 ```js
 if (request.method === "DELETE") {
   await Joke.findByIdAndDelete(id);
-  // Declare jokeToDelete to be the joke identified by its id and delete it.
-  // This line handles the entire deletion process.
+  // Find and delete the joke by its ID.
   response.status(200).json({ status: `Joke ${id} successfully deleted.` });
+  // Confirm deletion with a status message.
 }
 ```
 
@@ -96,20 +96,24 @@ if (request.method === "DELETE") {
 We write a handler function which calls `fetch()` with the appropriate arguments and pass it to a delete button:
 
 ```jsx
-async function handleDelete() {
-  await fetch(`/api/jokes/${id}`, {
-    method: "DELETE",
-  });
-  // You are handing over the joke identified by its id to our DELETE request method.
-  // This is the entire code required to do so.
-  router.push("/");
-  // After deleting the joke, you route back to our index page.
-}
+// /components/Joke/index.js
+
+  async function handleDelete() {
+    const response = await fetch(`/api/jokes/${id}`, {
+      method: "DELETE",
+    });
+    // Send a DELETE request to the server for a specific joke.
+    if (response.ok) {
+      // If the response is successful redirect to the home page
+      router.push("/");
+    }
+  }
 
 return (
   <button type="button" onClick={handleDelete}>
     Delete
   </button>
+);
 );
 ```
 

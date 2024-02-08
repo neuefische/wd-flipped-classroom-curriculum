@@ -177,13 +177,12 @@ if (request.method === "DELETE") {
 
 ```js
 async function handleDelete() {
-  await fetch(`/api/jokes/${id}`, {
+  const response = await fetch(`/api/jokes/${id}`, {
     method: "DELETE",
   });
-  // We are handing over the joke identified by its id to our DELETE request method.
-  // This is the entire code required to do so.
-  push("/");
-  // After deleting the joke, we route back to our index page.
+  if (response.ok) {
+    router.push("/");
+  }
 }
 ```
 
