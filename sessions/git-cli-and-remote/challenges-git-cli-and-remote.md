@@ -11,6 +11,30 @@ For every challenge in your web-challenges repository:
 - Use `git push` to push the new commit to your remote repository on GitHub.
 - Repeat this for every challenge folder!
 
+## Upload the Personal Website
+
+We already know how we can download a remote repository from GitHub (`git clone <repository address>`), but how can we upload an existing repository from our computer to GitHub? Lets find out!
+
+- Go to your **personal website** project folder and turn the folder into a git repository with `git init`.
+- Make sure that the personal website folder is **not** nested inside the web-challenges, otherwise we would create a nested git repository inside another git repository, which is tricky to handle.
+- Commit everything in this folder the same way you did in the prior challenge.
+- Go to Github and create a new **empty** repository called "personal-website" (no readme, no license).
+- Copy the ssh repository address, e.g. `git@github.com:<your-github-name>/presonal-website.git`
+- Add it as the "origin" repository to your local repository (a repository can be linked to multiple remote repositories, therefore we need to give them nicknames to distinguish them, "origin" is the standard name for the main remote repository):
+  ```bash
+  git remote add origin <ssh-repostory-address>
+  ```
+- Check if the remote repository was successfully linked with the command
+  ```bash
+  git remote -v
+  ```
+  A "fetch" and a "push" address should be printed to the terminal.
+- Push your commit to the remote repository by using
+  ```bash
+  git push -u origin main
+  ```
+- Reload the GitHub repository page and check if the code of your personal website is now online.
+
 ## Session Notebook part 1
 
 In this project you will create a markdown based notebook for all your upcoming session notes. In
