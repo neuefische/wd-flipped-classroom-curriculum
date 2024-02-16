@@ -88,7 +88,7 @@ All Sessions that are being simplified, but not fundamentally changed are marked
 | 35  | [Backend Update and Delete](sessions/backend-update-and-delete) 📗 ⭐️            | simplified version       | remove local MongoDB dependency                                                          |
 |     | [**Recap Project 6**](sessions/recap-project-6)                                   |                          |                                                                                          |
 | 36  | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories)       |                          | held by IT Project Management coaches                                                    |
-|     | User Story Workshop 🆕 ⭐️                                                        | new session              | add practical exercises with User Stories                                                |
+|     | [User Stories Workshop](sessions/user-stories-workshop/)                          | new session              | add practical exercises with User Stories                                                |
 | 37  | _Design Workshop_                                                                 |                          |                                                                                          |
 |     | _Capstone Forum_                                                                  |                          |                                                                                          |
 | 38  | _Design Workshop_                                                                 |                          |                                                                                          |

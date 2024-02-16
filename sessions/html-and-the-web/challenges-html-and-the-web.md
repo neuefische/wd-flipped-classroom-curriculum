@@ -28,7 +28,9 @@ to the handout.
 ## Personal Website
 
 Build your own _Personal Website_ using this command in your terminal:
+
 > ❗️ Make sure you execute this command while being located in your 'neuefische' folder, not inside the 'web-challenges'
+
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/personal-website
 ```

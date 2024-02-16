@@ -1,4 +1,4 @@
-# JS Error Handling 
+# JS Error Handling
 
 ## Learning Objectives
 
