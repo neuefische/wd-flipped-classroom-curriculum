@@ -39,6 +39,8 @@ Carefully read and follow the
      pressing <kbd>Enter</kbd>.
    - > 💡 This allows you to open a folder in Visual Studio Code from the command line with the
      > `code .` command. This might not be needed if vscode is already registered in the PATH. If you don't know if its the case we suggest to execute this step.
+6. (Only for Windows Users) Open te command palette by pressing <kbd>⇧</kbd><kbd>CTRL</kbd><kbd>P</kbd> or <kbd>F1</kbd>.
+   - Type `Terminal: Select Default Profile` and choose `Git Bash`.
 
 ## Clone Web-Challenges
 
