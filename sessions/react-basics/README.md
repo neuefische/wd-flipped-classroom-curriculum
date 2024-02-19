@@ -83,13 +83,13 @@ What concepts in React make it easier for us to write better apps?
 Use this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-start -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-start
 ```
 
 You can check out the final version of this demo locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-start
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-end
 ```
 
 > For this demo you will imitate the React "App component" in Vanilla JS.
