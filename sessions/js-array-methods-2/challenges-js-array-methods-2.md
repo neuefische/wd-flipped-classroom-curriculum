@@ -7,7 +7,7 @@ Solve this challenge on
 or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/zoo-animals -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/zoo-animals
 ```
 
 ## Employees
@@ -17,7 +17,7 @@ Solve this challenge on
 or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/employees -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/employees
 ```
 
 ## Bonus: Letter Puzzle
@@ -27,7 +27,7 @@ Solve this challenge on
 or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle -i
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle
 ```
 
 ## Array of Animal Strings
