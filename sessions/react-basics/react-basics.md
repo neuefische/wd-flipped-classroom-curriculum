@@ -7,137 +7,153 @@
 - [ ] Understanding the declarative approach of React
 - [ ] Creating React components
 - [ ] Understanding rendering with React
-- [ ] Knowing about the React ecosystem
-- [ ] What npm is and how it is used
-- [ ] What are packages and how does the npm ecosystem work
-- [ ] The basic anatomy of a npm package
-- [ ] How does semantic versioning work
 - [ ] Project Scaffolding with the `Create React App` tool
 
 ---
 
 ## What is React and why do we use it?
 
-React is a JavaScript library with the purpose of making the developer's life easier: you don't need to work directly
-with the DOM API (e.g. `createElement`) in most cases. You just write simpler (declarative) code
-describing what the user interface should look like and React handles the DOM under the hood.
+React is a JavaScript **library** used for building user interfaces. It allows us to create reusable UI components without needing to work directly with the DOM API (e.g. `createElement`) in most cases. In React we write shorter, declarative code.
 
-To write declarative code for React, you use JSX.
+Compared to working with Vanilla JS, in React we now **describe what the user interface should look like** and React handles the DOM for us under the hood.
 
-## Using JSX
+To write declarative code for React, we use **JSX**.
 
-JSX is a syntax extension to JavaScript. JSX is neither a string, nor HTML as we know it. JSX
-expressions can be used anywhere a JavaScript expression can be used.
+## JSX
 
-```js
-const element = <p>Some Text</p>;
+Even thought JSX looks similar to HTML, it is not HTML as we know it. JSX is actually a syntax extension to JavaScript.
+JSX expressions can be used anywhere a JavaScript expression can be used.
+This can look as simple as this:
+
+```jsx
+const element = <p>Hello World!</p>;
 ```
 
-We use JSX to create React elements. React elements are an intermediary format that React converts
-to DOM elements during the rendering process. This allows us to declaratively describe our user
-interface using JSX.
+We use JSX to create **React elements**. React elements are an intermediary format that React converts
+to DOM elements during the rendering process.
 
-### Creating Elements
+This allows us to **declaratively** describe our user interface using JSX.
+Up until now we have been using the DOM API in Vanilla JS to create elements **imperatively**.
 
-Just like in HTML, JSX elements are described using opening and closing tags. The opening tag
-contains the tag name or the component type (see [Using Components](#using-components)) and any
-attributes. The closing tag contains the same tag name or the same component type as the opening tag does and nothing else. The
-children of the element are placed between the opening and closing tag. If the element has no
-children, the closing tag can be omitted and the element is self-closing.
+### Imperative vs. Declarative Programming
+
+To understand the difference between imperative and declarative code, let's look at an example of a simple button.
+
+> ❗️ The main difference between imperative and declarative code is that imperative code describes _how_ something should be built, and declarative code describes _what_ needs to be built.
+
+#### Imperative Code in Vanilla JavaScript
+
+In imperative programming, your code performs a series of actions.
 
 ```js
-// Element with children
-//
-//              opening tag         children
-//              |  attributes       |        closing tag
-//              |  |                |        |
+const button = document.createElement("button");
+button.type = "button";
+button.textContent = "click me";
+button.addEventListener("click", () => console.log("Hello World"));
+document.body.append(button);
+```
+
+- We create the element with `document.createElement()`
+- We set the button type,
+- We set the text content
+- We add the event listener
+- We append the button to the body
+
+#### Declarative Code in React
+
+In declarative programming, your code describes a desired outcome.
+
+```jsx
+const element = (
+  <button type="button" onClick={() => console.log("Hello World")}>
+    click me
+  </button>
+);
+```
+
+- We describe in JSX what element we want (in this case a button element)
+- React figures out how to update the DOM according to our description
+
+> 💡 A metaphor: Image you are really hungry. You have two options:
+>
+> The Vanilla JavaScript way would be to cook a meal yourself. You would have to go to the grocery store, buy the ingredients, prepare them, cook them, and finally eat them.
+>
+> There is also the React way: You could just order food from a restaurant. You would just have to tell them what you want to eat, and they (React) would take care of the rest.
+
+## React Components
+
+React components are **customizable, reusable building blocks** for a React application, They serve as **independent elements of the user interface** that can be used multiple times across different parts of the app. It contains its own structure, logic, and potentially styling.
+
+> 💡 There are hardly any limitations to how 'small' a component can be (e.g. a button), or how 'big' (e.g. an entire page).
+
+To create a component in React, we define a **named function** (using PascalCase) and have it **return the desired elements using JSX**. We can then use the component in our code by using the function name as a tag name.
+
+```jsx
+function Button() {
+  return (
+    <button type="button" onClick={() => console.log("Hello World")}>
+      click me
+    </button>
+  );
+}
+
+// Use the component by using the function name as a tag name
+const element = <Button />;
+```
+
+This is a very powerful concept, because it allows us to reuse the same component in multiple places in our application.
+
+> 💡 Components need to be named with PascalCase, otherwise React will not recognize them as components.
+
+> 📙 Read about [**Your First Component**
+> in the React Docs](https://react.dev/learn/your-first-component).
+
+---
+
+## Nesting Elements
+
+JSX elements in a React component can be nested the same way we have been nesting our HTML elements.
+
+```jsx
+function Card() {
+  return (
+    <div>
+      <p>Some Text</p>
+      <p>Some more Text</p>
+    </div>
+  );
+}
+```
+
+## Attributes
+
+In most cases the names for attributes are the same as in HTML, but there are some exceptions. For example, the `class` attribute from HTML is called `className` in JSX.
+
+```jsx
 const element = <p className="text">Some Text</p>;
-//               | |         |                 |
-//               | |         attribute value   |
-//               | attribute name              |
-//               tag name or component type ---+
-
-// Self-closing element
-//
-//            self closing tag   slash denotes self closing
-//            |      attributes  |
-//            |      |           |
-const input = <input type="text" />;
-//             |     |    |
-//             |     |    attribute value
-//             |     attribute name
-//             tag name or component type
 ```
 
-> 💡 Elements that do not support closing tags in HTML like `<br>` or `<input>` must be self-closing
-> in JSX (like `<br />` or `<input type="text" />`).
+> 📙 Find out more about the [differences in attributes](https://legacy.reactjs.org/docs/dom-elements.html#differences-in-attributes)
 
-> 💡 Unlike HTML, which is resilient to missing closing tags, JSX is not. If you forget to close a
-> tag, you will get an error.
+---
 
-#### Using Components
+Passing string values to attributes is done by using double quotes. To pass any JavaScript expression use curly braces.
 
-To create an element from a [component](#react-components), we can simply refer to it by the
-function name in JSX and treat it just like any built-in component:
-
-```js
-const element = <MyComponent />;
-```
-
-Regarding attributes and children, creating elements from component types works just like with any
-(HTML) tag name.
-
-> 💡 JSX makes the distinction between built-in (HTML) tag names and components by looking at the
-> first character inside the JSX tag. If it is lowercase it's treated as a built-in tag name, if it is
-> uppercase it looks for any defined JavaScript function with that name. That is why it is important
-> to use PascalCase for component names.
-
-> 📙 Read more about [**Writing Markup with JSX**
-> in the React Docs](https://react.dev/learn/writing-markup-with-jsx).
-
-### Attributes
-
-Attributes for built-in HTML elements use JavaScript-centric names from the DOM API. In most cases
-the names are the same as in HTML, but there are some exceptions. For example, the `class` attribute
-from HTML is called `className` in JSX.
-
-Passing string values to attributes is done by using double quotes. To pass any JavaScript
-expression use curly braces.
-
-```js
-const element = <p className="text">Some Text</p>;
-
+```jsx
 const myValue = "This is a string";
 const input = <input type="text" value={myValue} minLength={5} />;
 ```
 
-### Nesting Elements
-
-React elements can be nested the same way we have been nesting our HTML elements.
-
-```js
-const element = (
-  <div>
-    <p>Some Text</p>
-    <p>Some more Text</p>
-  </div>
-);
-```
-
-> 💡 Multiline JSX expressions are wrapped in parentheses to make them easier to read. No worries:
-> Prettier will take care of that for you.
-
 ### Interpolating Expressions
 
-We can use any JavaScript expression inside JSX by wrapping it in curly braces. This is called
-interpolation. It is similar to string interpolation in JavaScript template strings.
+We can use any JavaScript expression inside JSX by wrapping it in curly braces. This is called interpolation. It is similar to string interpolation in JavaScript template strings.
 
-```js
+```jsx
 const name = "Pawtricia";
 const element = <p>My cat's name is {name}</p>;
 ```
 
-```js
+```jsx
 const a = 5;
 const b = 10;
 
@@ -148,94 +164,12 @@ const element = (
 );
 ```
 
-> 💡 You can only use expressions inside JSX. Statements like `if` or `for` are not allowed.
-
-> 💡 To learn how to interpolate JavaScript expressions inside JSX attributes, refer to the [Attributes](#attributes) section.
+> 💡 You can only use **expressions** inside JSX. Statements like `if/else` or `for`-loops are not allowed.
 
 > 📙 Read more about [**JavaScript in JSX with Curly Braces**
 > in the React Docs](https://react.dev/learn/javascript-in-jsx-with-curly-braces).
 
-## React Components
-
-React applications are built using components. A component is an independent and reusable piece of the user interface that contains its own structure, logic, and potentially styling.
-
-React components are JavaScript functions that
-return React elements. Those elements are then turned into DOM elements by React during the
-rendering process.
-
-In order to create a React component, we write a named function (using PascalCase) and have it
-return the desired elements using JSX.
-
-```js
-function MyButton() {
-  return (
-    <button type="button" className="default-button">
-      I'm a button
-    </button>
-  );
-}
-```
-
-This is a very powerful concept, because it allows us to reuse the same component in multiple places
-in our application.
-
-> 💡 See [Using Components](#using-components) for more information on how to use components in JSX.
-
-> 💡 There are hardly any limitations to how 'small' a component can be (i.e. a button), or how
-> 'big' (i.e. an entire page).
-
-> 📙 Read about [**Your First Component**
-> in the React Docs](https://react.dev/learn/your-first-component).
->
-> **Note**: _Exporting the component_ and _Nesting and organizing components_ are out of scope for this first session.
-
-## Imperative vs. Declarative Programming
-
-The main difference between imperative and declarative code is that imperative code describes _how_
-something should be built, and declarative code describes _what_ needs to be built.
-
-> 💡 Imagine building a stool. Imperative "code" would describe the steps you need to take to build
-> the stool. Declarative "code" would describe the stool itself.
->
-> Imperative:
->
-> - take 4 wooden slats
-> - take 1 wooden board
-> - take 4 screws
-> - take a screwdriver
-> - screw the slats under the board perpendicularly
-> - position your work so that the board is on top
->
-> Declarative:
->
-> - a stool with 4 legs and a seat, standing upright
-
-In imperative programming, your code performs a series of actions.
-
-In declarative programming, your code describes a desired outcome.
-
-The way we have used JavaScript during this course so far has been mostly imperative. We have
-described what needs to be done to get a certain result.
-
-```js
-const p = document.createElement("p");
-p.classList.add("introText");
-p.textContent = "Hello World!";
-rootElement.append(p);
-```
-
-Now, React allows us to use JavaScript in a declarative way. We describe to React what we want, and
-React figures out how to update the DOM according to our description.
-
-```js
-root.render(<p className="introText">Hello World!</p>);
-// React could interpret this to do the following:
-// const p = document.createElement("p");
-// p.classList.add("introText");
-// p.textContent = "Hello World!";
-// rootElement.append(p);
-// …
-```
+---
 
 ## How React Renders
 
@@ -280,7 +214,7 @@ Here we have an imported `<App />` element that is wrapped in `<React.StrictMode
 
 React only updates the DOM elements that have changed compared to the last render. This is very
 efficient and provides a great user experience (focus stays consistent, inputs keep their values,
-etc.) as well as a great developer experience (declaritive code is much easier to reason about).
+etc.) as well as a great developer experience (declaritive code is much easier to read).
 
 ## Nice to know: React, JSX, Transpilers and Bundlers
 
@@ -300,7 +234,11 @@ The bundler creates a development server when we run `npm run start` locally.
 
 ## npm
 
-It's a package registry that works like an app store for your project.
+[npm](https://www.npmjs.com/) a package registry that works like an app store for your project.
+
+It is used to install and manage packages (libraries) for a project.
+
+It is also used to run scripts that are defined in the `package.json` file (like `npm start`)
 
 ---
 
@@ -353,47 +291,46 @@ When installing, npm creates a `node_modules` folder and a `package-lock.json` f
 
 ---
 
-## Semantic Versioning
-
-A semantic version is updated whenever a package changes and a new version is published.
-
-It follows this schema: **`Major.Minor.Patch`** (e.g. `1.2.3`)
-
-- **`Major`** → major version, changes when the public api of a package changes (breaking change)
-- **`Minor`** → minor version, changes when new features are added
-- **`Patch`** → patch version, changes when bugs are fixed
-
-When defining dependencies in `package.json` npm uses version ranges to define which version of
-package should be installed. npm always installs the newest version of package that still matches
-the range description.
-
-- `^` (e.g. `"^10.4.1"`) → Newer minor updates and patches can be installed, but major updates
-  cannot.  
-  (Here version `10.5.6` would be installed but not `11.0.0`)
-
-- `~` (e.g. `"~10.4.1"`) → Newer patches can be installed, minor and major updates cannot.  
-  (Here version `10.4.8` would be installed but not `10.5.0`)
-
-- `>` (e.g. `">10.4.1"`) → Any newer version will be installed.  
-  (Here any version newer than `10.4.1` would be installed)
-
-Version ranges described with `^` are by far the most commmon choice because they are usally safe
-and won't break your application.
-
 ## Project Scaffolding with `Create React App`
 
 Project scaffolding is the process of creating a new project. You will use the
-[Create React App](https://create-react-app.dev/docs/getting-started) tool to create a new React
-project automatically.
+[Create React App](https://create-react-app.dev/docs/getting-started) tool to create a new React project automatically.
 
-> 💡 In principle, you could create a new React project from scratch. However, this would be a lot
-> of work and we would have to set up a lot of things ourselves. For example, you would have to set
-> up a development server, a build process and a test runner. You would also have to configure up a
-> module bundler and a transpiler. This is a lot of work and you would have to do it every time you
-> want to create a new project.
+> 💡 In principle, you could create a new React project from scratch. However, this would be a lot of work and we would have to set up a lot of things ourselves.
 
 > 💡 Create React App, by the way, works quite similar to the `ghcd` tool you have probably already
 > used.
+
+A new project is created by running the following command in the terminal:
+
+```sh
+npx create-react-app my-react-app
+```
+
+- Run `cd my-first-react-app` to go into the project and open in VSCode with `code .`
+- Run `npm i`
+- Run `npm start`to start the dev server
+
+A new create-react-app project will have a lot of files and folders. Here is a brief overview:
+
+| File / Folder           | Description                                                                                                              | contains                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| README.md               | general info about project                                                                                               | reminder how to start the dev-server                                               |
+| package.json            | project configuration                                                                                                    | information about dependencies, scripts, metadata                                  |
+| node_modules folder     | dependencies                                                                                                             | all dependencies of the project                                                    |
+| **public folder**       | static assets that are not processed by the bundler                                                                      | e.g. index.html, favicon.ico, manifest.json, robot.txt                             |
+| index.html              | root html file, don't mess with the `div id="root"></div>`                                                               | root element for React                                                             |
+| favicon.ico             | icon that is shown in the browser tab                                                                                    | image                                                                              |
+| robots.txt              | instructions for web robots how to crawl the site                                                                        | text                                                                               |
+| manifest.json           | configuration for Progressive Web Apps, it defines how your app appears and behaves when 'installed' on a mobile device. | metadata                                                                           |
+| images and other assets | static assets that you want to be served directly without processing.                                                    | images, fonts, etc.                                                                |
+| **src folder**          | all source code that will go through webpack processing                                                                  | all JavaScript, JSX, CSS, and other files that make up your React application.     |
+| index.js                | The JavaScript entry point where ReactDOM renders the App component into the DOM.                                        | imports react-dom and the App component                                            |
+| App.js                  | The root component of the React app                                                                                      | typically where you start writing your app's code and organizing other components. |
+| App.css                 | CSS file for the App component                                                                                           | styles for the App component                                                       |
+| App.test.js             | Test file for the App component                                                                                          |                                                                                    |
+| reportWebVitals.js      | Report performance metrics to Google Analytics                                                                           |                                                                                    |
+| setupTests.js           | Setup file for Jest                                                                                                      |
 
 ---
 
@@ -404,13 +341,6 @@ project automatically.
 - [JavaScript in JSX with Curly Braces in the React Docs](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
 - [Your First Component in the React Docs](https://react.dev/learn/your-first-component)
 - [Difference between a Framework and a Library on freecodecamp](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/)
-
-### About npm
-
-- [npm website](https://www.npmjs.com/)
-- [package.json specification](https://docs.npmjs.com/cli/v8/configuring-npm/package-json)
-- [npm install documentation](https://docs.npmjs.com/cli/v8/commands/npm-install)
-- [Semantic Versioning specification](https://semver.org/)
 
 ### `Create React App` Docs
 

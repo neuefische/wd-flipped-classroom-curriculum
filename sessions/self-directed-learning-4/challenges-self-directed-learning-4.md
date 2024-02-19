@@ -31,7 +31,7 @@ Let's build a website that displays the current number of people in space. Hints
        <summary>🙈 Hint</summary>
 
     ```html
-    <!doctype html>
+    <!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
