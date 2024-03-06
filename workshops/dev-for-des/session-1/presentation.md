@@ -85,7 +85,8 @@ WebDev Day
 
 ## Bringing Interactivity with JavaScript
 
-![Foto](./assets/html-css-js.jpeg)
+
+![Foto](./assets/html-css-js.webp)
 
 - React to user events
 - Change what appears on the screen
