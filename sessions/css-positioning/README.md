@@ -145,9 +145,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/demo
 }
 ```
 
-- [ ] Now the donut "sticks" to its intended goal: the plate!
-- [ ] Demonstrate the behavior of `position: sticky` by playing with the value of `top`.
-
 - [ ] The plate is now positioned to the left of the title.
 - [ ] Feel free to demonstrate the relation between `position: relative` and `position: absolute` by playing with the values for `top`, `right`, `bottom`, `left`, such as `top: 0`.
 
@@ -165,6 +162,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/demo
   /* ... */
 }
 ```
+
+- [ ] Now the donut "sticks" to its intended goal: the plate!
+- [ ] Demonstrate the behavior of `position: sticky` by playing with the value of `top`.
 
 ### `z-index`
 
