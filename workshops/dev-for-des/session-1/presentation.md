@@ -23,10 +23,10 @@ WebDev Day
 ## Schedule Day 2
 
 - Introduction to forms and inputs
-- Code a form: 10:15 - 11:15
+- Code a hotel booking form: 10:15 - 11:15
 - Break Time
-- Intro to JS: 11:30 - 12:00
-- Code/implement some JS?
+- CSS Variables: 11:30 - 12:00
+- Coding practice
 - Wrap up / questions: 12:30 - 13:00
 
 ---
@@ -84,7 +84,6 @@ WebDev Day
 <!-- _class: hsplit  -->
 
 ## Bringing Interactivity with JavaScript
-
 
 ![Foto](./assets/html-css-js.webp)
 
