@@ -19,35 +19,17 @@ theme: neuefische
 
 ## Franz Wilhelmy
 
-Student Service
+Program Management
 
 ![Foto](images/franz_wilhelmy.jpg)
 
 ---
 
-<!-- class: image-profile -->
-
-## Sina Stulpe
-
-Candidate Success Management
-
-![Foto](images/sina_stulpe.jpg)
-
----
-
-## Oliver Fohrmann
-
-Partner Management
-
-![Foto](images/oliver_fohrmann.jpg)
-
----
-
-## Alex Cleas
+## Peter Anderson
 
 Coach
 
-![Foto](images/alex_claes.jpg)
+![Foto](images/peter_anderson.jpeg)
 
 ---
 
@@ -59,14 +41,6 @@ Coach
 
 ---
 
-## CJ Akkuec
-
-Coach
-
-![Foto](images/cj_akkuec.jpg)
-
----
-
 <!-- _class: big-headline granite-->
 
 # Das Coach-Team bei _neue fische_
@@ -75,7 +49,7 @@ Coach
 
 <!-- _class: image-center -->
 
-![w:1200](images/neuefische_coaches_all.jpg)
+![w:900](images/neuefische_coaches_all.png)
 
 ---
 
@@ -144,7 +118,7 @@ Moving from the Fear Zone to the Growth Zone
 
 <!-- _class: image-center -->
 
-![w:850](images/course-schedule.png)
+![w:850](images/course_schedule.png)
 
 ---
 
@@ -156,26 +130,26 @@ Moving from the Fear Zone to the Growth Zone
 - **HTML**
 - **CSS**
 - **JavaScript**
-- **React** Basics, State, React Hooks
-- **Next** Basics, Routing,
-- **React** styled-components, Testing, Global State
-- **Backend** MongoDB,
-- **Agile & Design** UX/UI, User Stories, Product Thinking
+- **React** Basics, State
+- **Next** Basics, Routing
+- **React** styled-components, Global State
+- **Backend** Basics, MongoDB Atlas
+- **Agile & Design** Agile Workflow, User Stories, UX/UI
 
 ---
 
 <!-- _class: bullet-points small-->
 
-# Capstonephase
+# Capstone Phase
 
 **Woche 9 bis 12**
 
-| Woche  | Aktivität                            |
-| ------ | ------------------------------------ |
-| **9**  | Capstone - Sprint 1                  |
-| **10** | Capstone - Sprint 2 + Sprint Review  |
-| **11** | Capstone - Sprint 3 + Sprint Review  |
-| **12** | Capstone - Sprint 4 + Abschlussevent |
+| Woche  | Aktivität                                           |
+| ------ | --------------------------------------------------- |
+| **9**  | Capstone - Sprint 1                                 |
+| **10** | Capstone - Sprint 2 + Sprint Review                 |
+| **11** | Capstone - Sprint 3 + Sprint Review                 |
+| **12** | Capstone - Sprint 4 + Sprint Review, Abschlussevent |
 
 ---
 
@@ -210,8 +184,7 @@ Moving from the Fear Zone to the Growth Zone
 
 | Zeit      | Aktivität                        |
 | --------- | -------------------------------- |
-| **14:00** | Recap und Q&A                    |
-| **14:30** | **Teil II**                      |
+| **14:00** | **Teil II**                      |
 |           | Session, Active Learning, Recap  |
 | **17:00** | Checkout                         |
 |           | **Selbstorganisierte Lernphase** |

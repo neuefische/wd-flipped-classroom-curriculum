@@ -19,35 +19,17 @@ theme: neuefische
 
 ## Franz Wilhelmy
 
-Student Service
+Program Management
 
 ![Foto](images/franz_wilhelmy.jpg)
 
 ---
 
-<!-- class: image-profile -->
-
-## Sina Stulpe
-
-Candidate Success Management
-
-![Foto](images/sina_stulpe.jpg)
-
----
-
-## Oliver Fohrmann
-
-Partner Management
-
-![Foto](images/oliver_fohrmann.jpg)
-
----
-
-## Alex Cleas
+## Peter Anderson
 
 Coach
 
-![Foto](images/alex_claes.jpg)
+![Foto](images/peter_anderson.jpeg)
 
 ---
 
@@ -59,14 +41,6 @@ Coach
 
 ---
 
-## CJ Akkuec
-
-Coach
-
-![Foto](images/cj_akkuec.jpg)
-
----
-
 <!-- _class: big-headline granite-->
 
 # The Coach Team at _neue fische_
@@ -75,13 +49,13 @@ Coach
 
 <!-- _class: image-center -->
 
-![w:1200](images/neuefische_coaches_all.jpg)
+![w:900](images/neuefische_coaches_all.png)
 
 ---
 
 <!-- _class: big-headline granite-->
 
-# Get-to-know
+# Get to know
 
 ---
 
@@ -104,7 +78,7 @@ Coach
 - Everyone presents both their lie and truth to the group
 - The rest of the group has to guess what's the lie and what's the truth, for example:
   - Story Nr.1 is true ✅
-  - Story Nr.2 is a lie ⛔️
+  - Story Nr.2 is true ⛔️
 - Afterwards, the "storyteller" will reveal what's the truth and what's the lie - there are no prizes, though 🙂
 
 ---
@@ -150,32 +124,32 @@ Moving from the Fear Zone to the Growth Zone
 
 <!-- _class: bullet-points small-->
 
-# The First Eight Weeks
+# The First 8 Weeks
 
 - **GitHub & Git**
 - **HTML**
 - **CSS**
 - **JavaScript**
-- **React** Basics, State, React Hooks
-- **Next** Basics, Routing,
-- **React** styled-components, Testing, Global State
-- **Backend** MongoDB,
-- **Agile & Design** UX/UI, User Stories, Product Thinking
+- **React** Basics, State
+- **Next** Basics, Routing
+- **React** styled-components, Global State
+- **Backend** Basics, MongoDB Atlas
+- **Agile & Design** Agile Workflow, User Stories, UX/UI
 
 ---
 
 <!-- _class: bullet-points small-->
 
-# Capstone phase
+# Capstone Phase
 
 **Week 9 - 12**
 
-| Week   | Task                                |
-| ------ | ----------------------------------- |
-| **9**  | Capstone - Sprint 1                 |
-| **10** | Capstone - Sprint 2 + Sprint Review |
-| **11** | Capstone - Sprint 3 + Sprint Review |
-| **12** | Capstone - Sprint 4 + Graduation 🎓 |
+| Week   | Task                                            |
+| ------ | ----------------------------------------------- |
+| **9**  | Capstone - Sprint 1                             |
+| **10** | Capstone - Sprint 2 + Sprint Review             |
+| **11** | Capstone - Sprint 3 + Sprint Review             |
+| **12** | Capstone - Sprint 4 + Sprint Review, Graduation |
 
 ---
 
@@ -198,7 +172,7 @@ Moving from the Fear Zone to the Growth Zone
 |           | **Part I**                            |
 |           | Session, Active Learning, Recap       |
 | **12:15** | Research Time                         |
-| **13:00** | Lunch break                           |
+| **13:00** | Lunch Break                           |
 
 ---
 
@@ -210,8 +184,7 @@ Moving from the Fear Zone to the Growth Zone
 
 | Time      | Task                            |
 | --------- | ------------------------------- |
-| **14:00** | Recap and Q&A                   |
-| **14:30** | **Part II**                     |
+| **14:00** | **Part II**                     |
 |           | Session, Active Learning, Recap |
 | **17:00** | Checkout                        |
 |           | **Self-organized Learning**     |
@@ -259,12 +232,12 @@ Moving from the Fear Zone to the Growth Zone
 
 # Working with Zoom 🎥
 
-- Camera stays on / mic stays muted,
+- Camera stays on / mic stays muted
 - Try not to communicate via the Zoom chat
 - Use **Zoom Reactions**
 - Try to give visual **feedback**
-- **Okay**✅ Drinking (water), eating, standing
-- **Not okay**❌ Smoking, Lying down (unless medically necessary)
+- **Okay** Drinking (water), eating, standing
+- **Not okay** Smoking, lying down (unless medically necessary)
 
 ---
 
