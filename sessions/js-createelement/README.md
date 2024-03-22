@@ -89,12 +89,11 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-createelement/dem
 - [ ] show that the element doesn't have to be queried to be manipulated. It is already saved in a
       variable, e.g. `newCard`.
 - [ ] quickly recap how to add properties to an element
+
   ```js
   newCard.classList.add("card");
   newCard.textContent = "This text is displayed in the element";
   ```
-
-````
 
 - [ ] add this code to an event listener on the form element:
   ```js
@@ -166,4 +165,3 @@ createElement, append, innerHTML, textContent, classList
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
-````
