@@ -7,9 +7,9 @@ assignees: ''
 
 ---
 
-| **Assignees** |  |
+| **Assignees** | **Duration** |
 | :------: | :--------: |
-|  **Duration**  |   |
+|   |   |
 
 ## Problem
 
