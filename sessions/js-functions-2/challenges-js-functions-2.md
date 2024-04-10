@@ -26,9 +26,13 @@ Solve the _Convert Arrow Functions_ challenge by running this command in your Te
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/arrow-functions
 ```
 
+# Bonus Challenge
+
 ## Progress Bar
 
-Solve the _Progress Bar_ challenge by running this command in your Terminal:
+> ⚠️ This challenge is intended to be more difficult to solve.
+
+Solve the **advanced** _Progress Bar_ challenge by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-2/progress-bar
