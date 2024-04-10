@@ -45,6 +45,59 @@
 
 ## Inform: Session Guide
 
+> 💡 Seeing as how this session doesn't require our usual website architecture, we're presented with a great opportunity to repeat Terminal commands with the students and introduce `node` as a way to run Javascript code.
+
+### Session Demo: Setup
+
+- Inside your Terminal, navigate to the directory where you want to create your Javascript file.
+
+> Mac/Windows
+
+```bash
+cd path/to/my/directory
+```
+
+- Feel free to create a new session directory with `mkdir` such as `js-functions-1` and `cd` into it.
+- Create a new file called `script.js`.
+
+> Mac
+
+```bash
+touch script.js
+```
+
+> Windows
+
+```bash
+type nul > script.js
+```
+
+- Open the directory in **Visual Studio Code** to edit your newly created Javascript file.
+
+> Mac/Windows
+
+```bash
+code .
+```
+
+- Inside of **Visual Studio Code** add a simple `console.log()` to the file and save it.
+
+```js
+console.log("Hi Friends!");
+```
+
+- Run your `script.js` file using `node` inside of your Terminal and explain to the students that this is going to be the way how we're going to run our code during this session.
+
+> Mac/Windows
+
+```bash
+node script.js
+```
+
+- Remind the students that the `log()` part of a `console.log()` is a **method**, which is a **function** that is part of an object.
+
+> 💡 Keep in mind that you need to save and run `node script.js` after every change made to your `script.js` file. You can quick-access previous Terminal commands by hitting the <kbd>⬆︎</kbd> up arrow on your keyboard.
+
 ### Functions
 
 - Ask students whether they have an idea what a function is
