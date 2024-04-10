@@ -1,16 +1,27 @@
-# HTML basics and the web
+# HTML Basics and the Web
+
+## Active Learning
+
+This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro. The old session guide is retained below in case it is decided to be used as a one-off.
+
+- [Introduce](#active-learning-intro) the topic for 5 - 10 minutes
+- Share [challenges](challenges-html-and-the-web.md) and [learning document](html-and-the-web.md) with the students
+
+## Session Guide
 
 > 💡 feel free to create a personal branch of this guide to add your own notes
 
-| duration | content                  |
-| -------- | ------------------------ |
-| 1:15     | Session                  |
-| 0:15     | Project Repository Setup |
-| 0:45     | Active Learning          |
-| 0:30     | Recap                    |
+Recommended schedule for this session:
+
+| duration  | content         |
+| --------- | --------------- |
+| max. 0:10 | Intro           |
+| 2:20      | Active Learning |
+| 0:15      | Recap           |
 
 ## Learning objectives
 
+- [ ] An answer to "What is the web?"
 - [ ] How to write HTML
 - [ ] How HTML documents are structured
 - [ ] Understanding and applying semantic HTML
@@ -44,195 +55,75 @@
 
 ### Which previously learned concepts will be utilized in this session?
 
-- You will use Git and GitHub for your project.
-- You will use a workflow that is based on best practices and done in the same way in many
-  companies: You will use branches and pull request - and get reviews from coaches or other
-  students.
-- If you have prior knowledge of HTML, you will expand and apply it today.
+- Optional: Prior knowledge of HTML
 
 ---
 
 ## Inform: Session Guide
 
 > ❗️ Before diving into the depths of HTML, ask the students how many of them already have prior
-> knowledge of HTML and how comfortable they are with it. If all of the students have some
-> understanding of HTML you can skip or summarize the first part of the session.
+> knowledge of HTML and how comfortable they are with it. Let them know that any prior understanding of HTML is not a prerequisite to this session.
 
-### What is HTML?
+## Active Learning Intro
 
-> 💡 Hint: to visualize this quite theoretical session, use the following keywords and
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator) to generate all the
-> keywords in an exalidraw and structure them according to your explanation
+> ⚠️ Since this is the first **Active Learning** session, you may want to give the students a little overview regarding what an Active Learning session is, what the intended goals are, etc.
+>
+> **What is an Active Learning session?**
+>
+> - Students autonomously acquire knowledge via handouts or interactive work files
+> - Every AL sessions comes with a handout and challenges; frequently also with additional content
+> - Students reinforce new concepts via challenges
+> - The goal is for students to wrestle with a subject on their own to build their confidence level, for them to structure their approach to learning and to slice concepts into smaller, more easily digestible portions
+>
+> **What is the structure of an Active Learning session?**
+>
+> - A coach gives a quick overview of the subjects and a small intro
+> - The coach hands out any material that comes with the session
+> - The students are separated into groups and work through the material
+> - To wrap up the session there is a brief recap unit
+> - The students are encouraged to find answers to potential questions on their own
 
-> `HTML = HyperText Markup Language, link a webpage to another webpage, syntax to structure and format documents, <button type="button">Click me!</button>, HTML Element, HTML Tag, <>, </>, HTML Attribute, <p>Click <strong>this</strong>!<p>), content, opening tag, closing tag, parent element, child element, Empty elements (self-closing), <img>, <link>, <meta>, <input>`
+- Outline the objectives of this particular AL session
 
-- [ ] HTML is short for `HyperText Markup Language`.
-- [ ] It is not considered a programming language, as `you can't write logic` with it. But
-      nevertheless it is an extremely important part of the internet as we know it today.
-- [ ] It is giving content on websites `meaning and structure`. You can imagine HTML as the skeleton
-      or the most basic building block of the Web. <br> <br> Let's analyze the word for more
-      clarification:
-- [ ] `Hypertext`: Refers to the ability of HTML to create links that link one webpage to another.
-      (Either on a single website or in between different websites.) This is a fundamental aspect of
-      the web and the idea behind the "world wide" interconnection.
-- [ ] `Markup Language`: Refers to a syntax that uses specific elements to structure or format a
-      document. You have already learned about a markup language, which is called "Markdown". While
-      Markdown has a very simple syntax and is primarily used for formatting, HTML is more complex
-      and its primarily used to structure a document.
+  - getting an initial feeling for how the web works
+  - understanding client/server communication (a bit)
+  - developing a concept of what URLs, DNS resolution, and the request-response cycle is
+  - writing HTML
+  - the importance of _semantic_ HTML
 
-  > Your explanation in excalidraw could look like this:
+- Describe the web as a network of interconnected computers, like connecting points in a spider's web
+- _Optional: Mention how the web was invented_
+  > Tim Berners-Lee invented the World Wide Web while working at CERN in 1989. He proposed a "universal linked information system" using several concepts and technologies, the most fundamental of which was the connections that existed between information. He developed the first web server, the first web browser, and a document formatting protocol, called Hypertext Markup Language. [Source](https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web)
+- Give a brief overview over HTML and what it is
+  - the markup language used to structure websites
+  - follows a specific syntax
+- Inform the students that - while they are learning - they need to pay special attention to proper syntax and structure
+- Give one quick example of an HTML tag and proper nesting
 
-<img src="./assets/HTML.png" alt="HTML Explanation" width=500>
-<br>
-<br>
+  ✅
 
-### How to write HTML
+  ```html
+  <p>Hello, my name is XYZ!</p>
+  <ul>
+    <li>My first list item.</li>
+    <li>My second list item.</li>
+  </ul>
+  ```
 
-- [ ] `HTML element`: every piece of content in a HTML document is placed inside of an HTML element
-- [ ] `HTML tags`: the elements are written in form of HTML tags, meaning surrounded by `<>` and
-      `</>`
-- [ ] `HTML attributes`: some HTML elements need additional information in order to work properly.
-      This information is given by HTML attributes
-- [ ] `local attributes`: There are attributes that are specific to some HTML elements, for example
-      `src', which only makes sense if a resource is supposed to be embedded into the webpage (e.g.
-      images or videos)
-- [ ] `global attributes`: There are also attributes that can be added to any kind of element. (e.g.
-      class, id, style, hidden)
+  ❌
 
-> Your explanation in excalidraw could look like this:
-
-<img src="./assets/HTMLelement.png" alt="HTML Element Explanation" width=500>
-<br>
-<br>
-
-### Nesting elements
-
-Two more interesting things to know about HTML:
-
-- [ ] it is possible to nest elements in other elements (e.g. `<p>click <strong>this</strong>!<p>`)
-- [ ] the element inside of another element is called `child element`
-- [ ] the wrapping element is called `parent element`
-
-### Self-closing elements
-
-- [ ] some elements are `empty elements`, which means they contain no content.
-- [ ] those empty elements are always `self closing elements`, which means they don`t have a closing
-      tag, as they don't need to wrap around content
-- [ ] examples are images, links, inputs, meta
-
-### The HTML document
-
-- [ ] Open VS Code and create an `index.html` file.
-- [ ] Start with a short explanation of Emmet:
-
-  - [ ] `Emmet` is a tool which is already integrated into VS Code. It autocompletes our code, which
-        makes the workflow much faster.
-  - [ ] By starting to type the name of the element and then clicking `tab`, Emmet does it's magic.
-
-- [ ] Type `! tab` and walk the students through the document flow:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
-```
-
-- [ ] `<!DOCTYPE html>`: an almost ancient relique of the early HTML (1991/92) that ensures the
-      document behaves correctly
-- [ ] `<html>`: wraps around the entire content of a page (aka `root element`)
-- [ ] `<head>`: wraps around every element, which is relevant for your page to function, but which
-      is not content in the sense of visibly showing up on the webpage. (e.g scrips, links, keywords
-      for SEO,...)
-- [ ] `<meta>`: is an element which provides "metadata" about your document. Metadata is information
-      about the data in your document. (e.g. charset determines the valid characters with are used
-      on the webpage)
-- [ ] `<title>`: sets the title of the page, which appears in the browser tab.
-- [ ] `<body>`: contains all the visible content of your webpage. This is where the real magic
-      happens.
-
-### Semantic HTML
-
-- [ ] Note that writing semantic HTML means writing "meaningful" HTML: the element itself provides
-      information about its content.
-- [ ] Copy the following snippet into your body element from before:
-
-```html
-<div>
-  <div>Hello World</div>
+  ```html
   <div>
-    <div>
-      I am training to become a Web Dev. Therefore I love coding. Other things i
-      like are:
-    </div>
-    <div>
-      <div>good food</div>
-      <div>hanging out with my friends</div>
-      <div>sunny days</div>
-    </div>
-  </div>
-</div>
-```
-
-- [ ] Change the tags to semantic HTML.
-  > 💡 If you have time, make this part interactive by asking the students for their ideas.
-
-```html
-<main>
-  <h1>Hello World</h1>
-  <article>
-    <p>
-      I am training to become a Web Dev. Therefore I love coding. Other things I
-      like are:
-    </p>
+    <p></p>Hello, my name is XYZ!
+    <!-- Oops! We put the content outside of the <p> tag. -->
     <ul>
-      <li>good food</li>
-      <li>hanging out with my friends</li>
-      <li>sunny days</li>
+      <li>My first list item.</li>
+      <li>My second list item.</ul></li>
+       <!-- Oops! We accidentally included an additional </ul> and nested incorrectly. -->
     </ul>
-  </article>
-</main>
-```
+  ```
 
-#### The benefits of writing semantic HTML are:
-
-- [ ] `Accessibility`: Screen readers can work much better with semantic HTML, which can help
-      e.g. visually impaired users to navigate the webpage and have a better user experience.
-- [ ] `SEO`: It's relevant for search engines to evaluate the importance and the context of the
-      different parts of a web page.
-- [ ] `Readability`: It's easier for other developers to understand your code. And also for yourself
-      in the future!
-
-## Personal Website - Project Setup
-
-Setup a local and a remote repository with the students. Make sure that everybody is ready to start
-with the project. When a student is finished with the setup they can start with the challenges.
-
-- [ ] let them create a local git repository named "personal-website"
-- [ ] let them create an initial commit with an empty HTML file, named `index.html`
-- [ ] let them create a remote repository on GitHub and connect their local repository
-- [ ] let them push the first commit to the remote repository
-
----
-
-## Process: Challenge
-
-- [ ] Provide the [handout](html-and-the-web.md) and the [challenges](challenges-html-and-the-web.md) to the
-      students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into pairs
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
+- Remind the students to read the provided material carefully and perhaps take some notes for themselves if they like
 
 ---
 
@@ -240,8 +131,6 @@ with the project. When a student is finished with the setup they can start with 
 
 - Revisit the question that was posed in the beginning of the session and try to answer it with a
   few phrases.
-- Why do we WANT to write semantic HTML? Click [here](#the-benefits-of-writing-semantic-html-are)
-  for the answer
 
 ---
 

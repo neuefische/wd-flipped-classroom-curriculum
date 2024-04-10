@@ -6,9 +6,7 @@
 - writing HTML code
 - knowing about the importance of semantic HTML
 
----
-
-## How the web works
+## How the Web works
 
 The world wide web is a network of computers that can exchange information with each other. There
 are many different protocols that define the rules on how machines communicate. Browsers use HTTP
@@ -26,11 +24,54 @@ are many different protocols that define the rules on how machines communicate. 
 - Browsers might also request additional data from servers later via subsequent **GET** or **POST**
   requests
 
+## Web Protocols
+
+There are many different protocols that define the rules on how two machines communicate with
+each other, for example:
+
+- requesting and displaying html files via `http` (e.g. opening websites with your browser)
+- accessing the shell of another computer via `ssh` or cloning repositories from GitHub via a ssh
+  connection
+- sending and receiving e-mails via `TLS/SSL`
+- Accessing files on a server via `FTP` (file transfer protocol)
+
+For now we are focusing on the most commonly used feature of the web: displaying and interacting
+with websites.
+
+In order to view a specific website you have to:
+
+- get the `address` of the server that provides the html file, i.e. the `IP address` (internet
+  protocol address).
+- send a `GET request` to that address
+- request additional resources (CSS files, images, etc.)
+- `render` the received content (e.g. via a browser)
+
+Most computers connected to the internet can be reached via an `IPv4` address which consists of 4
+numbers in a range from 0 to 255 separated by a dot.
+
+> 💡 Enter this IP address in the address bar of your browser and see what happens:
+> `172.217.203.94`.
+
+> 💡 Execute following command in your terminal to get the current IP address of your computer:
+> `curl ipinfo.io`.
+
+Just like remembering all the phone numbers of your friends is impractical, remembering the IP
+addresses of all the websites is not very user friendly. To solve this problem, websites can be
+reached via a `url` like `https://www.neuefische.de`. The browser then requests the IP address of
+this website from a `DNS` (domain name server), which is basically a phone book for domains.
+
+Then the browser fetches all necessary content for the website like the html file, CSS and
+JavaScript files, images, fonts, etc. As soon as all files have downloaded, the browser displays the
+html content, styles it as specified in the style sheet and executes JavaScript code. We can now
+interact with the website.
+
+#### A sketch of what a typical request of a web page looks like
+
 <img src="./assets/request-response.png" width=600 />
 
 ---
 
-## HTML basics
+## HTML Basics
 
 HTML (Hyper Text Markup Language) is used to express text in a structured way. HTML tags indicate
 what kind of element is displayed on the website. For example, a headline is written like this:
@@ -58,7 +99,7 @@ or
 <br />
 ```
 
-### HTML tag attributes
+### HTML Tag Attributes
 
 Some elements require some more information in order to work properly. This information is
 specified via attributes, for example:
@@ -79,7 +120,7 @@ specified via attributes, for example:
 > 💡 The [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) contain
 > detailed information about elements and corresponding attributes.
 
-### Layout of an HTML file
+### Layout of an HTML File
 
 Every HTML document starts with a
 [doctype](https://developer.mozilla.org/en-US/docs/Glossary/Doctype) followed by the `<html>`
@@ -93,7 +134,7 @@ element, which consists of two main parts:
 - The `<body>` contains the visible content of the website structured by html elements
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     … meta information, additional links to CSS / JavaScript files …
@@ -104,7 +145,7 @@ element, which consists of two main parts:
 </html>
 ```
 
-### List of common HTML elements
+### List of Common HTML Elements
 
 | element             | meaning                                                      |
 | ------------------- | ------------------------------------------------------------ |
