@@ -1,19 +1,20 @@
 # React Recap Project
 
-## Music Collection App
+## Theme Creator App
 
-In this 5 day recap project, the students create a music collection app in 10 parts.
+In this 4 day recap project, the students create a color theme creator app. The project is divided into [8 parts or user stories](https://github.com/neuefische/web-exercises/blob/main/sessions/recap-project-react/README.md).
 
 ## Session Guide
 
-Hand out the challenges to the students, they will find a link to the [instructions](https://www.github.com/neuefische/web-extercises/tree/main/sessions/reacap-project-react).
-There is an [example solution](https://github.com/neuefische/web-react-recap-project-solution/tree/main) with a checkpoint for every part.
+Hand out the challenges to the students, they will find a link to the [instructions](https://www.github.com/neuefische/web-extercises/tree/main/sessions/reacap-project-react). The setup of the project is the following:
 
-## Custom API
+- Each student will work individually on the recap project.
+- The students will start the project from scratch with `npx create-react-app`.
+- In the first user stories, the students will use some [example theme data](https://github.com/neuefische/web-exercises/blob/main/sessions/recap-project-react/assets/db.js) to test their components.
+- The students have not learned about styled components yet. You can advise them to use `BEM` for their css class names.
+- The tasks for each user story offer some general advise how to implement each feature, but are not a step by step solution.
+- Each part has 2-3 hints in a separate file to assist students when they are stuck.
 
-The students will use a custom build proxy API [https://neuefische-spotify-proxy.vercel.app/](https://neuefische-spotify-proxy.vercel.app/) for fetching data from spotify. The API has the following endpoints:
+The last 3 user stories can be more challenging for the students. You can remind them that they are optional and it is ok if they struggle.
 
-- `/api/featured`: a fixed list of 20 Albums
-- `/api/search?artist=beatles&offset=20`: returns Albums matching search parameter, with optional offset
-- `/api/albums?ids=[...albumIds]`: fetches specific list of album by id array (array needs to be stringified in the url)
-- `/api/tracks?ids=[...trackIds]`: fetches specific list of tracks by id array (array needs to be stringified in the url)
+There is an [example solution](https://github.com/neuefische-web-demos/theme-creator-example-solution/tree/main) with a branch for part-1 to part-8.
