@@ -1,25 +1,19 @@
 # Challenges: CSS Structure
 
-## Selectors and Cascading Bugs
+## Taco Truck
 
-Solve the _Selectors and Cascading Bugs_ challenge by running this command in your Terminal:
+Solve the _Tacko Truck_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading-bugs
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/taco-truck
 ```
 
-Have a look at the `styles.css` file.
+Tommy from Tommy's Taco Truck needs your help!
 
-There are various CSS rule sets with `FIX_ME` as selector. Your task is to replace this placeholder
-with a proper selector according to the description above the rule set.
+This challenge will help you further develop your component-driven CSS thinking.
+You will find any further guidelines in the project's `README.md`.
 
-You do not need to touch the HTML file.
-
-Try to get a sense of how you might encounter ambiguities or issues when choosing the right
-selectors.
-
-You can remove the `outline` style declaration once you fixed it's selector. It is only there to
-check if you selected the correct elements.
+Have fun!
 
 ## Custom Properties
 
