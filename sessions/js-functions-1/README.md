@@ -59,8 +59,6 @@ cd path/to/my/directory
 - Feel free to create a new session directory with `mkdir` such as `js-functions-1` and `cd` into it.
 - Create a new file called `script.js`.
 
-> Mac
-
 ```bash
 touch script.js
 ```
