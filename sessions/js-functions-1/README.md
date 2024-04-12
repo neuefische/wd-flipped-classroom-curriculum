@@ -10,6 +10,7 @@
 
 ## Learning objectives
 
+- [ ] running Javascript code in Node
 - [ ] writing functions in JavaScript
 - [ ] calling functions
 - [ ] using function parameters
@@ -51,8 +52,6 @@
 
 - Inside your Terminal, navigate to the directory where you want to create your Javascript file.
 
-> Mac/Windows
-
 ```bash
 cd path/to/my/directory
 ```
@@ -66,15 +65,7 @@ cd path/to/my/directory
 touch script.js
 ```
 
-> Windows
-
-```bash
-type nul > script.js
-```
-
 - Open the directory in **Visual Studio Code** to edit your newly created Javascript file.
-
-> Mac/Windows
 
 ```bash
 code .
@@ -87,8 +78,6 @@ console.log("Hi Friends!");
 ```
 
 - Run your `script.js` file using `node` inside of your Terminal and explain to the students that this is going to be the way how we're going to run our code during this session.
-
-> Mac/Windows
 
 ```bash
 node script.js
