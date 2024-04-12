@@ -40,6 +40,25 @@
 
 ## Inform: Session Guide
 
+> 💡 Since this session revolves purely around Javascript, feel free to either create a vanilla Javascript file manually or use the template below.
+
+#### Terminal
+
+```bash
+cd path/to/my/directory
+touch script.js
+code .
+node script.js
+```
+
+#### Template
+
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
+```
+
+---
+
 ### Arrays
 
 - [ ] Store multiple values in one variable
