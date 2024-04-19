@@ -47,205 +47,131 @@ How to organize a team in Software Development using agile / Scrum.
 
 ---
 
-## Information for Slides: Session Guide
+## Inform: Session Guide
 
-- Start slides with `npm run start`, open your localhost and navigate to the folder `agile&ScrumSlides`.
+In this workshop, students will explore how their future workflow in a team will look like. Given the considerable departure from traditional practices, it's crucial for them to grasp the fundamental reasons behind the shift.
 
-> ❗ If students already had the **external Agile Workshop,** the SCRUM Intro: Slides are only needed for a quick recap of the agile content:
-> ask students to recap. Show the slides and let them explain
+You can use this [excalidraw file](./assets/agile-workflow.excalidraw) as a visual guide through the session.
 
-### SCRUM Intro: Slides
+### A New Workflow for a New Industry
 
-> ❗️ Check the [Scrum Intro](./Scrum-intro.md) for more infromation about agile and Scrum.
-> Explain the content in detail, if there is **no** external workshop.
+- [ ] Briefly outline the conventional waterfall workflow, typical in classical engineering:
+      ![waterfall model](./assets/Wasserfall.png)
+- [ ] Emphasize its necessity in scenarios:
+- Involving the design of complex, error-intolerant machinery.
+- Where system requirements remain static (e.g. aircraft design).
+- Requiring costly updates or fixes (e.g. Tesla's large-scale vehicle recall).
+- [ ] Explain that in software development these assumptions often don't apply:
+- Software errors seldom have the same consequences than a failing machine.
+- The rapid evolution of computing and software demands constant adaptation.
+- Updating software is simple and cheap compared to other industries.
+- [ ] Consequently, in software development a more "agile" workflow with fast product cycles is not only possible but required.
 
-- Classic waterfall model
-- What is agile
-- "we are agile"
-- SCRUM
+### Agile Concepts
 
-### Backlog
+- [ ] Outline the key principles of agile workflows:
+- Agile teams operate in short development cycles (2-4 weeks).
+- Teams are self-organized and interdisciplinary, fostering faster development.
+- Product evolution occurs incrementally rather than in a single plan.
+- Users receive updates with the latest features after each cycle.
+- [ ] Emphasize the adaptability of the product to changing requirements due to the short development cycles.
+- [ ] Highlight the cost-effectiveness and innovative potential enabled by this workflow.
+- [ ] Note the existence of various workflows embodying these principles, with our focus on SCRUM for this session.
 
-- [ ] Talk about the two backlogs to consider: Product Backlog and Sprint Backlog.
+### SCRUM Overview
 
-- [ ] **Product Backlog**: The Product Owner owns the product backlog. There are items listed, that need to be considered during development of the product. It is prioritized, and contains user stories, anybody can contribute. The Product Owner keeps track and knows which items need to be done soon. The priorities and content are always open for changes.
+- [ ] Provide an overview of SCRUM using the following sketch:
+      ![scrum overview](./assets/SCRUM.png)
+- [ ] Emphasize that SCRUM serves as a **framework** for agile product development, consisting of the following components:
+- **User Story**: Each product feature is planned as an independent unit known as a User Story.
+- **Backlog**: Future User Stories are stored in a constantly evolving list called the Backlog, responsive to changing requirements.
+- **Sprint**: Teams operate in short development cycles called sprints.
+- **Sprint Backlog**: Each sprint comprises a detailed, prioritized list of User Stories called the Sprint Backlog, which is fixed once the sprint begins.
+- [ ] Introduce the roles within a SCRUM team:
+- **SCRUM Master**: Facilitates team meetings and ensures a smooth SCRUM process.
+- **Product Owner**: Manages User Stories and the Backlog, maintaining close communication with the customer to update requirements.
+- **Development Team**: Comprises all individuals actively contributing to the product, including designers, frontend and backend developers, and DevOps engineers.
+- [ ] Explain the key events during a SCRUM sprint:
+- **Daily Stand-up**: Daily brief meetings where team members update each other on their tasks.
+- **Backlog Refinement**: Regular meetings between the development team and the product owner to discuss upcoming User Stories and refine priorities.
+- **Sprint Planning**: Pre-sprint meeting to select and finalize User Stories for the upcoming sprint, transitioning them to the new Sprint Backlog.
+- **Public Sprint Review**: Post-sprint review session where updates are showcased to other teams and stakeholders, providing insight into recent changes and future plans.
+- **Retrospective (Retro)**: Optional meeting for internal reflection on the previous sprint, aimed at improving processes for future sprints.
 
-- [ ] **Sprint Backlog**: The sprint backlog defines all user stories for the next sprint. The user stories are detailed and finished, prioritized and fix. Once the sprint started, the sprint backlog is protected and the development team works concentrated on those tasks.
+### A Developer's Week
 
-![Backlog](agile&ScrumSlides/assets/backlog.png)
+- [ ] Illustrate a typical week for a developer within this framework:
 
-In scrum, the dev team has refinement events regularly during the week, to develop new user stories in the product backlog. In sprint planning events, the next sprint will be discussed and prioritized. Once the sprint has started, it is protected and can not be changed.
+As part of a diverse team with various expertise, developers engage in multiple events throughout the week to ensure effective collaboration and information sharing. While ideally comprising 10-15% of the week, meeting time may vary based on team dynamics.
 
-> show the SCRUM page again if you want to show it
+![devWeek](./assets/devWeek.png)
 
-### A developer's week (example)
+### User Story
 
-- [ ] Explain very briefly a week of a developer.
-
-Your team is diverse and has different professions and knowledge.
-To gather all information and keep everyone involved in the process, the scrum team has a lot of events to join. This is necessary to enable everyone to do their job properly. The meeting time should be 10-15% of your week, but often increases, depending on teams.
-
-![devWeek](agile&ScrumSlides/assets/devWeek.png)
-
-### MVP
-
-- [ ] Explain **minimum viable product**
-
-Because the agile methodology is built on validating and iterating products based on user input, the MVP plays a central role in agile development.
-
-- [ ] It is a product that is good enough to solve the user's core problem and has functions only for that.
-- [ ] The team gets feedback from users/costumers fast and can adopt changes before it gets expensive.
-- [ ] Early feedback means learning early about needs.
-- [ ] It's small. What matters is the very core of your app.
-
-> In most cases it is a display of information the user provides or receives from somewhere, processed in a way that meets the needs of the user.
-
-![MVP](agile&ScrumSlides/assets/MVP1.png)
-
-The MVP is an instrument for risk minimization in the course of product development.
-It's a serviceable product with minimal features, created effortlessly and used to obtain customer or user feedback
-
-![MVP](agile&ScrumSlides/assets/MVP2.png)
-
-### User story
-
-Defining an expected user value for our product, **user stories** allow us to define requirements and tasks to be followed by the team.
-
-- [ ] Goal: You need a reason for the user, why he/she might need the feature. The reason shall never be 'because it's possible'.
-
-The structure is fix:
+- [ ] User stories define expected user value for our product, guiding the team in defining requirements and tasks.
+- [ ] Recap that students have previously engaged with user stories in recap projects.
+- [ ] Present an example to the students:
 
 ```
-**Value proposition**
+Title: List of Jokes
 
-- As a user ... (user, author, logged in user...)
-- I want to ...
-- in order to ...
-```
+Value Proposition:
 
-- [ ] make examples:
-
-```
-As a user,
-I want to view all Jokes,
-in order to decide which one is funny.
-```
-
-```
-As a user,
-I want to add a joke to this list,
-in order to remember jokes I just learned.
-
-```
-
-```
-As a mobile bank customer,
-I want to see the balance on my accounts,
-in order to make better informed decisions about my spending.
-```
-
-To write good user stories, make sure that it fits certain criteria.
-
-A good user story will follow the criteria termed as INVEST by _Bill Wake_.
-
-### How good are our user stories?
-
-![User story](agile&ScrumSlides/assets/US1.png)
-
-- [ ] I: Independent
-
-User stories should be independent. You have to ensure that any changes to a user story do not affect another. This is to avoid increasing the work burden and an effort to keep user stories simple.
-
-- [ ] N: Negotiable
-
-One of the main purposes of creating user stories is to give your team flexibility in their working process. Hence, the project team must be given free reign in the implementation of user stories
-
-- [ ] V: Valuable
-
-A user story that fails to clearly state the value of the product to the user is essentially worthless. While creating user stories, you must make it understandable and also clearly state the value of the product.
-
-- [ ] E: Estimable
-
-The development of the goals highlighted by the user story should be measurable. This will allow your team to determine their priorities as well as their working schedule.
-
-- [ ] S: Small
-
-User stories need to be short. Stories that require multiple sprints to be completed defeat the purpose of what a user story needs to achieve.
-
-- [ ] T: Testable
-
-Finally, the user story needs to have an achievable goal that can be tested to see if it meets user expectations.
-
-### Write a full user story
-
-The structure is fixed!
-
-- Title
-  - Short and precise
-- Value proposition
-  - As a user... (user, author, logged in user...)
-  - I want to...
-  - in order to ...
-- Description
-  - Scribble / design or text
-  - Precise, no unnecessary information
-- Acceptance criteria
-  - Describe every scenario in detail
-    - What happens when an entry is empty?
-    - How should something behave?
-    - What is the text of an alert?
-    - List is scrollable...etc
-- Tasks
-  - List the tasks that need to be performed within the dev team
-  - From developers - for developers:
-    - Checkbox, try to sort it as you work on it
-    - List Components
-    - Tests
-    - Add to app
-    - Global styles
-
-![User story](agile&ScrumSlides/assets/US3_1.png)
-
-Further knowledge:
-
-- [ ] User stories should be as slim as possible.
-- [ ] Whenever you can remove something - do it and write another user story.
-- [ ] We don't want to estimate complexity (or even hours or duration, also no story points).
-- [ ] When you discuss a user story in your team, try to verbalize every detail. Expectations are different in persons minds.
-
-> Create an example in Excalidraw
->
-> Make your own or use the following:
-
-```
-Title : List of jokes
-
-Value proposition
-
-- As a user
+- As a user,
 - I want to view a list of jokes
-- in order to decide which one is funny
+- in order to decide which one is funny.
 
-Description
+Description:
 
 - Scribble an app with a list of jokes.
 - Make sure you scribble "real" proportions.
 
-Acceptance criteria
+Acceptance Criteria:
 
-- [ ] List scrolls vertically
-- [ ] Listitem height is as high as content
-- [ ] The heading is always visible
+- [ ] List scrolls vertically.
+- [ ] Displays a list of joke cards.
+- [ ] Each card contains a joke.
+- [ ] Includes a persistent heading at the top.
 
-Tasks
+Tasks:
 
-- [ ] Create branch
-- [ ] Write tests
-- [ ] Generate dummy-data
-- [ ] If it's the first user story: Global styles
+- [ ] Create a feature branch.
+- [ ] Generate dummy data.
+- [ ] If it's the first user story: Implement global styles.
+- [ ] Develop the JokeCard Component.
+- [ ] Implement a prop for joke data.
+- [ ] Utilize mapping over dummy data to generate JokeCard instances.
+- [ ] Add the heading as an h1 tag.
+- [ ] Implement fixed positioning for the heading.
 ```
 
-> feel free to make another example
+- [ ] Explain the components of a user story:
+- [ ] **Title**
+- Concise and specific.
+- [ ] **Value Proposition**
+- Identifies a user need without prescribing a solution.
+- [ ] **Description**
+- Presents a design or text with precision and clarity.
+- Avoids unnecessary information.
+- [ ] **Acceptance Criteria**
+- Describes every new element of the feature in detail.
+- Addresses potential behaviors, such as empty entries or alert text.
+- Specifies every functionality like user interaction or automatic events like data fetching.
+- [ ] **Tasks**
+- Lists actionable items for the development team.
+- Geared towards developers, outlining necessary actions for implementation.
+
+### MVP
+
+- [ ] Explain **Minimum Viable Product (MVP)**
+- [ ] An MVP is a product designed to sufficiently address the user's core problem, featuring only essential functionalities.
+- [ ] By swiftly gathering feedback from users/customers, the team can implement changes before they become costly.
+- [ ] Early feedback facilitates early learning about user needs.
+- [ ] It's compact, focusing solely on the essential elements of the app.
+
+The MVP serves as a risk mitigation tool throughout product development, offering a functional product with minimal features, created and utilized to gather customer or user feedback.
+
+- [ ] Highlight, that it is the goal of an agile team to rapidly create an MVP in order to get as much feedback on the product as soon as possible.
 
 ---
 
@@ -256,11 +182,11 @@ Tasks
 - [ ] Open the handout and walk the students through the tasks
 - [ ] Divide the students into groups
 - [ ] Remind them of the ground rules:
-  - Meet again 30 minutes before lunch break in the class room.
-  - They can ask the coaches for help at any time.
-  - Always try to help each other.
-  - Take a break within the next 1.5 hours.
-  - Keep an eye on Slack.
+- Meet again 30 minutes before lunch break in the class room.
+- They can ask the coaches for help at any time.
+- Always try to help each other.
+- Take a break within the next 1.5 hours.
+- Keep an eye on Slack.
 
 ---
 
@@ -291,3 +217,7 @@ agile, user stories, SCRUM, Sprint, Backlog, MVP, waterfall model, Kanban
 > the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
+
+```
+
+```

@@ -14,10 +14,7 @@
 
 The word agile can mean a process in developing a product, a structure within a group or the whole culture of a company. It's about to do something (act) - check the results very quickly and adapt to the results of the iteration. Inspect and adapt. We develop in iterations, we continuously check and align the results and change the way we do it, to get the best results. The good thing is, that we can try and fail, we are free to change if things don't work out. At the end of every iteration is a working product.
 
-There are a lot of different methods, we can use in agile management. The picture lists the most important methods in agile and shows their complexity and implementation.
-
-![agile](agile&ScrumSlides/assets/agile-methods.png)
-Agile methods: complexity over implementation
+There are a lot of different methods we can use in agile management. The picture lists the most important methods in Agile and shows their complexity and implementation.
 
 - **Single Task**: One Person does a job without many dependencies to others. It's simple, straight forward and easy in implementation.
 - **Kanban**: the tasks are defined and you work on it one by one. When a task is finished you pull the next one. The status of your task can be viewed on a board (Kanban board) from the other team members. By itself it is not complex, but complicated when used in a group.
@@ -30,14 +27,15 @@ Agile methods: complexity over implementation
 
 ---
 
-## SCRUM overview
+## SCRUM Overview
 
-![agile](agile&ScrumSlides/assets/SCRUM.png)
-SCRUM
+![agile](assets/SCRUM.png)
 
 The heart of the method is the **Sprint**. It's a fixed time where the developer team consistently works on defined tasks. Everyday there is a **daily standup** where everybody shares her/his progress. There are more events during the week for the team, like **Sprint planning** (we plan what to put in the next sprint) and **Sprint review** (after every Sprint inform stakeholders about the Sprint results).
 
 After every Sprint there is a final **product increment**. The **product owner** keeps track and owns the product backlog, the **scrum master** is usually not part of the development team. Her/his goal is to make the team as efficient as possible, she/he checks if we can optimize the process, if the mood in the team is up and everybody can focus.
+
+Within the backlog refinements, the product owner and the development team adjust and improve existing user stories in the backlog and adapt them to the changes in the codebase.
 
 The **Retrospective** reveals what went well, what went bad and what do we need to change in preparation for the next time.
 
@@ -47,12 +45,8 @@ The **Retrospective** reveals what went well, what went bad and what do we need 
 
 Because the Agile methodology is built on validating and iterating products based on user input, the MVP plays a central role in agile development.
 
-![MVP](agile&ScrumSlides/assets/MVP1.png)
-
 The MVP is an instrument for risk minimization in the course of product development.
 It's a serviceable product with minimal features, created with little effort and used to obtain customer or user feedback
-
-![MVP](agile&ScrumSlides/assets/MVP2.png)
 
 ## Backlog
 
@@ -61,8 +55,6 @@ There are two backlogs to consider: Product backlog and Sprint backlog. Check th
 **Product Backlog**: The Product Owner owns the product backlog. There are items listed, that need to be considered during development of the product. It is prioritized, and contains user stories, anybody can contribute. The product owner keeps track and knows which items needs to be done soon. The priority and content is always open for changes.
 
 **Sprint Backlog**: The Sprint backlog defines all user stories for the next sprint. The user stories are detailed and finished, prioritized and fixed. Once the Sprint has started, the Sprint backlog is protected and the development team focuses on those tasks.
-
-![MVP](agile&ScrumSlides/assets/backlog.png)
 
 ## User Stories
 
@@ -79,32 +71,30 @@ So that <benefit>
 
 ```
 
-To write good user stories, ensure that it fits certain criteria.
-A good user story will follow the criteria termed as INVEST by Bill Wake.
+A user story typically consists of the following parts:
 
-I: Independent
+**Title**
 
-User stories should be independent. You have to ensure that any changes to a user story do not affect another. This is to avoid increasing the work burden and an effort to keep user stories simple.
+- Concise and specific.
+  **Value Proposition**
+- Identifies a user need without prescribing a solution.
+- Serves as a starting point for brainstorming solutions.
 
-N: Negotiable
+**Description**
 
-One of the main purposes of creating user stories is to give your team flexibility in their working process. Hence, the project team must be given free reign in the implementation of user stories
+- Presents a design or text with precision and clarity.
+- Avoids unnecessary information.
 
-V: Valuable
+**Acceptance Criteria**
 
-A user story that fails to clearly state the value of the product to the user is essentially worthless. While creating user stories, you must make it understandable and also clearly state the value of the product.
+- Describes every new element of the feature in detail.
+- Addresses potential behaviors, such as empty entries or alert text.
+- Specifies every functionality like user interaction or automatic events like data fetching.
 
-E: Estimable
+**Tasks**
 
-The development of the goals highlighted by the user story should be measurable. This will allow your team to determine their priorities as well as their working schedule.
-
-S: Small
-
-User stories need to be short. Stories that require multiple Sprints to be completed defeat the purpose of what a user story needs to achieve.
-
-T: Testable
-
-Finally, the user story needs to have an achievable goal that can be tested to see if it delivers on user expectations.
+- Lists actionable items for the development team.
+- Geared towards developers, outlining necessary actions for implementation.
 
 ### User Story Template
 

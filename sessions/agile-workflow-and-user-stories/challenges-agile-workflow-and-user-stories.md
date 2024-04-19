@@ -1,18 +1,11 @@
 # Challenges: Agile Workflow and User Stories
 
-## Capstone Forum
+## Movie App User Stories
 
-Think about your project and try to figure out what the MVP can look like. Remember to always create a value for the user.
-Scribble your ideas or write down key points.
+Solve this challenge by running this command in your Terminal:
 
-> Discuss the user stories with the group.
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/agile-workflow-and-user-stories/movie-app
+```
 
-## User stories
-
-Start writing!
-
-Write your first user story / user stories (max. 3) for your capstone project. Remember that the form is fix and the story as small as possible. Create a value for the user with every story.
-
-> Discuss the user stories with the group.
-
----
+and follow the instructions in the README.md.
