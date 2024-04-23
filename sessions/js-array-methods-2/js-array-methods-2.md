@@ -5,8 +5,7 @@
 - [ ] Understanding advanced array methods
   - [ ] `includes`
   - [ ] `find` and `findIndex`
-  - [ ] `sort` and `reverse`
-    - [ ] know how to use `slice()` to make a copy
+  - [ ] `toSorted` and `toReversed`
   - [ ] `some` and `every`
   - [ ] `reduce`
 
@@ -50,9 +49,15 @@ colors.findIndex((color) => color.startsWith("b")); // -1
 
 ---
 
-## `sort` and `reverse`
+## `toSorted` and `toReversed`
 
-Use `sort()` to sort the elements of an array. You need to provide a callback function in order to
+> ❗️ You will find the array methods `sort()` and `reverse()` in the mdn docs. These methods mutate the original array which is bad.
+> That is why we use `toSorted()` and `toReversed()` instead. These methods don't mutate the original array and only return the
+> sorted or reversed array that can be stored in a new variable.
+
+> ❗️ `toSorted` and `toReversed` are a quite recent additions to the [ECMAScript standards](https://ecma-international.org/). Please make sure to use `Node.js` version 20 or higher when working with these methods.
+
+Use `toSorted()` to sort the elements of an array. You need to provide a callback function in order to
 tell how the array is sorted.
 
 ### Sorting Numbers
@@ -60,8 +65,8 @@ tell how the array is sorted.
 ```js
 const numbers = [4, 42, 23, 1];
 
-numbers.sort((a, b) => a - b); // [1, 4, 23, 42]
-numbers.sort((a, b) => b - a); // [42, 23, 4, 1]
+numbers.toSorted((a, b) => a - b); // [1, 4, 23, 42]
+numbers.toSorted((a, b) => b - a); // [42, 23, 4, 1]
 ```
 
 The sorted order is based on the return value of `a - b` / `b - a` :
@@ -72,12 +77,12 @@ The sorted order is based on the return value of `a - b` / `b - a` :
 | < 0                     | sort `a` before `b`                |
 | === 0                   | keep original order of `a` and `b` |
 
-> 💡 `sort()` converts the elements into strings, then compares their sequences of UTF-16 Code units
-> values. This is why `array.sort()` without a callback is mostly useless.
+> 💡 `toSorted()` converts the elements into strings, then compares their sequences of UTF-16 Code units
+> values. This is why `array.toSorted()` without a callback is mostly useless.
 
 ### Sorting Strings
 
-In order to sort strings, you need to tell the `sort()` method two things inside of the callback
+In order to sort strings, you need to tell the `toSorted()` method two things inside of the callback
 function:
 
 - lowercase both strings before comparing them (uppercase works as well)
@@ -109,56 +114,16 @@ console.log(strings); // ['GameBoy', 'PlayStation', 'Xbox']
 > (72), but before the lowercase 'h' (104); the result would look like ['H', 'W', 'd', 'h']. This is
 > why it's necessary to upper- or lowercase all letters before sorting them.
 
-### `reverse`
+### `toReversed`
 
-In order to reverse an array, simply use `array.reverse()`. This can be combined with `sort()` as
+In order to reverse an array, simply use `array.toReversed()`. This can be combined with `toSorted()` as
 well:
 
 ```js
 const numbers = [4, 42, 23, 1];
 
-const reversedNumbers = numbers.reverse(); // [1, 23, 42, 4]
+const reversedNumbers = numbers.toReversed(); // [1, 23, 42, 4]
 ```
-
-### `slice`
-
-It's important to note that some array methods, as `sort()`, do not create a new array, but mutate
-the original one.
-
-```js
-const numbers = [4, 42, 23, 1];
-
-console.log(numbers); // [4, 42, 23, 1]
-
-const sortedNumbers = numbers.sort((a, b) => a - b);
-
-console.log(sortedNumbers); // [1, 4, 23, 42]
-console.log(numbers); // [1, 4, 23, 42]
-
-// What happens if sortedNumbers is reversed?
-
-const reversedSortedNumbers = sortedNumbers.reverse();
-
-console.log(reversedSortedNumbers); // [42, 23, 4, 1]
-console.log(sortedNumbers); // [42, 23, 4, 1]
-console.log(numbers); // [42, 23, 4, 1]
-```
-
-This behaviour will often cause errors. To prevent it, just make a copy of the original array using
-`slice()`.
-
-```js
-const numbers = [4, 42, 23, 1];
-
-console.log(numbers); // [4, 42, 23, 1]
-
-const sortedNumbers = numbers.slice().sort((a, b) => a - b);
-
-console.log(sortedNumbers); // [1, 4, 23, 42]
-console.log(numbers); // [4, 42, 23, 1]
-```
-
----
 
 ## `some` and `every`
 
@@ -228,5 +193,6 @@ console.log(sum); // 70
 ## Resources
 
 - [Searching Arrays (javascript.info)](https://javascript.info/array-methods#searching-in-array)
-- [sort (javascript.info)](https://javascript.info/array-methods#sort-fn)
+- [toSorted (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted)
 - [reduce (javascript.info)](https://javascript.info/array-methods#reduce-reduceright)
+- [ECMAScript Standards](https://ecma-international.org/)
