@@ -25,6 +25,7 @@ Recommended schedule for this session:
 
 Idea is that students get a (very) brief overview of the web. As well as a quick demo of some html tags in CodePen. They then break into groups to create an html card.
 
+- Open a new [codepen](https://codepen.io/).
 - Show the minimizing of CSS and JS panes
 - Show the most tags need to be opened and closed (like a door). Content goes in-between the tags.
 - Potentially [show mdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements). (Can highlight here that each element has it's own rules or best practices i.e. only 1 h1 per page).
