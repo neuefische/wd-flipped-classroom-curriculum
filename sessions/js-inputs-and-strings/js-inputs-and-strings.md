@@ -27,11 +27,11 @@ There are three ways to create strings using _string literals_:
 > Prettier detects these cases automatically.
 
 Strings can be chained together by using the `+` operator (yes, the same as the maths operator).
-This is called **string concatination**:
+This is called **string concatenation**:
 
 ```js
 const name = "Alex";
-const stringConcatination = "Hello " + name + ", good to see you!";
+const stringConcatenation = "Hello " + name + ", good to see you!";
 ```
 
 ## Template Literals
@@ -43,7 +43,7 @@ string by wrapping placeholders with a dollar sign and curly brackets `${}` . Th
 This way you don't have to concat multiple strings if you want to use a variable in your string:
 
 ```js
-const stringConcatination = "Hello " + name + ", good to see you!";
+const stringConcatenation = "Hello " + name + ", good to see you!";
 
 const withTemplateString = `Hello ${name}, good to see you!`;
 ```
