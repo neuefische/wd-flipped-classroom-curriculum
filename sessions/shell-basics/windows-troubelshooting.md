@@ -1,6 +1,6 @@
-# This is to collect all possible problems and solutions coming with the windows setup and the fact that students will use their own windows PCs from now on.
+# Collection of possible problems and solutions due to the windows setup.
 
-## Problem: The following script would not run for a student today
+## Problem: The following script would not run for a student today:
 
 `bash <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/setup-windows.bash)`
 
