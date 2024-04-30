@@ -2,9 +2,7 @@
 
 ## Zoo Animals
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-2/zoo-animals?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/zoo-animals
@@ -12,9 +10,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/z
 
 ## Employees
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-2/employees?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/employees
@@ -22,9 +18,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/e
 
 ## Bonus: Letter Puzzle
 
-Solve this challenge on
-[🔗 **CodeSandbox**](https://codesandbox.io/s/github/neuefische/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle?file=/README.md)
-or locally by running this command in your Terminal:
+Solve this challenge by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle
