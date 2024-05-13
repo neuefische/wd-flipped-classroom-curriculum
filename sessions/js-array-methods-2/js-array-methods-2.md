@@ -92,7 +92,7 @@ function:
 ```js
 const strings = ["Xbox", "PlayStation", "GameBoy"];
 
-strings.sort((a, b) => {
+strings.toSorted((a, b) => {
   const nameA = a.toLowerCase();
   const nameB = b.toLowerCase();
   if (nameA < nameB) {
