@@ -98,7 +98,7 @@ Demo End:
 Intro Blocking Demo:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/blocking-demo
 ```
 
 ### Joke App introduction
