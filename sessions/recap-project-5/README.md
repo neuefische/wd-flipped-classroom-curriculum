@@ -7,11 +7,5 @@ To get an idea how the app might look like, you can see the [wireframes file](wi
 You can find an example implementation for this project locally by running this in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-5/art-gallery-app-solution
-```
-
-If you can get the example implementation here:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-5/art-gallery-app-solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-5/example-implementation
 ```
