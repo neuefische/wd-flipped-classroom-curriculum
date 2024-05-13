@@ -158,7 +158,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/blocking-de
       "https://example-apis.vercel.app/api/bad-jokes/random"
     );
     const data = await response.json();
-    setJoke(data.joke);
+    renderJoke(data.joke);
   }
 
   getJoke();
