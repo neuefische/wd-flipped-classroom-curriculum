@@ -21,5 +21,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/finding-a
 Solve the _Form validation_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/formvalidation
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/form-validation
 ```
