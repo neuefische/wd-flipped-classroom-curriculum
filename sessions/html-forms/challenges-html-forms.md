@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/personal-
 Solve the _Forms and A11y_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/Finding-a11y-errors
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/finding-a11y-errors
 ```
 
 ## Form validation
