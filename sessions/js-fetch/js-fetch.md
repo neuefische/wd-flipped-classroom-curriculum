@@ -25,7 +25,7 @@ file system access, animations and timers.
 
 ## Promises
 
-Aynchronous functions will not return their return a value directly, but a promise instead.
+Aynchronous functions will not return their return value directly, but a promise instead.
 A Promise is an object that represents the eventual completion (or failure) of an asynchronous
 operation, and its resulting value. Most of the time it is returned by a function that performs an
 asynchronous operation.
