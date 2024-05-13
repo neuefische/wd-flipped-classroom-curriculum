@@ -105,7 +105,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/b
 
 - [ ] Introduce the Demo
 
-  - [ ] The DOM is already prepared and we find a function `setJoke(joke)` that we just have to call to set the Joke for the joke section.
+  - [ ] The DOM is already prepared and we find a function `renderJoke(joke)` that we just have to call to set the Joke for the joke section.
   - Uncomment the following line with the function call:
 
   ```js
