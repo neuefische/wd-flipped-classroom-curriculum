@@ -46,6 +46,7 @@ function getUserName(user) {
 }
 
 getUserName("Marc") // -> Error: string is not an object
+```
 
 #### Logical Errors
 
