@@ -196,7 +196,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/demo-
   });
   ```
 
-  > 💡 The reason why we're using one file for defining the server (`server.js`) and one file for starting the server (`index.js`) is that we can use the server definition in other files as well. For example to write tests for the server. The challenges include tests for the server, thus we are establishing this pattern from the beginning.
+  > 💡 The reason why we're using one file for defining the server (`server.js`) and one file for starting the server (`index.js`) is that we can use the server definition in other files as well. For example to write tests for the server.
 
 - [ ] Start the server from your terminal: `npm run start
 
