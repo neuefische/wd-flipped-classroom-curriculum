@@ -1,4 +1,4 @@
-# React with Local Storage
+# JS Error Handling
 
 ## Active Learning
 
@@ -34,11 +34,11 @@ Recommended schedule for this session:
 
 ### Which important problem will we solve today?
 
-All data we entered with any form in any of our apps so far is lost after a page reload. We want to learn how to persist data in the browser.
+How can we ensure our applications handle errors gracefully and provide a better user experience? We will learn how to manage and handle errors in JavaScript effectively.
 
 ### Pose a question to be answered by the end of the block!
 
-Which browser feature enables us to store and retrieve data?
+How can we use JavaScript to catch and handle errors to prevent our application from crashing?
 
 ---
 

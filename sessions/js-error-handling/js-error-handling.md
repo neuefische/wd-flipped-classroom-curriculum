@@ -42,10 +42,10 @@ Also known as exceptions, these occur during the execution of the code due to fa
 ```javascript
 // Get the name of a user object
 function getUserName(user) {
-  return user.name
+  return user.name;
 }
 
-getUserName("Marc") // -> Error: string is not an object
+getUserName("Marc"); // -> Error: string is not an object
 ```
 
 #### Logical Errors
@@ -117,8 +117,6 @@ async function fetchData() {
     return data;
   } catch (error) {
     console.error("Error fetching data:", error);
-
-    throw error;
   }
 }
 ```
