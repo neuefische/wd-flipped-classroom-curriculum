@@ -17,7 +17,7 @@ You can find an interactive look at the subjects presented below at [the end of 
 
 JavaScript distinguishes between different types of exceptions, each indicating a specific kind of error in your code.
 
-#### Syntax Errors
+### Syntax Errors
 
 Occur when there are errors in the syntax of your code, preventing it from being parsed correctly.
 
@@ -31,7 +31,7 @@ console.log("Hello, world";
 
 ```
 
-#### Runtime Errors
+### Runtime Errors
 
 Also known as exceptions, these occur during the execution of the code due to factors such as invalid operations, type mismatches, or referencing non-existent variables.
 
@@ -48,7 +48,7 @@ function getUserName(user) {
 getUserName("Marc"); // -> Error: string is not an object
 ```
 
-#### Logical Errors
+### Logical Errors
 
 These errors occur when the code runs without throwing exceptions but produces incorrect results due to flawed logic or algorithmic errors. In other words: The code works but the reasoning behind it is flawed.
 
@@ -79,7 +79,7 @@ try {
 }
 ```
 
-## Throwing Custom Errors
+### Throwing Custom Errors
 
 In addition to handling built-in exceptions, JavaScript allows you to throw custom errors to signal specific error conditions within your code. This is achieved using the throw statement, which interrupts the execution flow and propagates the error to be caught by an enclosing try...catch block or handled at a higher level.
 
@@ -94,7 +94,7 @@ function divide(a, b) {
 
 Throwing custom errors enables you to provide meaningful error messages and context to aid in debugging and troubleshooting.
 
-## Handling Errors in a `fetch` Request Environment:
+### Handling Errors in a `fetch` Request Environment:
 
 When making HTTP requests using the `fetch` API, you may encounter the following issues:
 
@@ -110,15 +110,34 @@ async function fetchData() {
     const response = await fetch("https://api.example.com/data");
     if (!response.ok) {
       // "!" => Logical NOT operator === response is NOT okay
-      throw new Error("Failed to fetch data");
+      throw new Error(`Failed to fetch data! Status Code: ${response.status}`);
     }
     const data = await response.json();
 
-    return data;
+    return { data: data };
   } catch (error) {
-    console.error("Error fetching data:", error);
+    return { error: error };
   }
 }
+```
+
+This allows the calling code e.g. a handleFetchData function a to explicitly check if an error occurred and respond accordingly:
+
+```js
+async function handleFetchData() {
+  const result = await fetchData();
+
+  // Check if an error has been returned
+  if (result.error) {
+    console.log("An error occurred:", result.error);
+  } else {
+    // Log successfully fetched data
+    console.log("Fetched data:", result.data);
+  }
+}
+
+// Invoke the handleFetchData function to process data retrieval
+handleFetchData();
 ```
 
 It is usually wise not to leave errors "un-handled". Knowing when to expect and how to handle errors is a specific set of skills that should be part of every developers tool belt.
