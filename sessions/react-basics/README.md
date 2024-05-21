@@ -461,6 +461,3 @@ And that's a wrap!
 > to be explained in a few words by one student. We go in rounds one by one until all tags are
 > included in the structure.
 
-```
-
-```
