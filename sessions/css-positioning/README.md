@@ -45,7 +45,7 @@ CSS Basics, CSS Selectors
 
 ## Inform: Session Guide
 
-Use the [Demo Start](https://github.com/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-start to guide through the session and demonstrate the behavior of the `position` property.
+Use the [Demo Start](https://github.com/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-start) to guide through the session and demonstrate the behavior of the `position` property.
 
 You can use this demo by running this command in your terminal:
 
@@ -53,7 +53,7 @@ You can use this demo by running this command in your terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/demo-start
 ```
 
-See [Demo End](https://github.com/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-end for the finalized version of the Demo.
+See [Demo End](https://github.com/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-end) for the finalized version of the Demo.
 
 You can check the final version by running this command in your terminal:
 
