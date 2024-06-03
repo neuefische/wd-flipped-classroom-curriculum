@@ -39,7 +39,7 @@ wrapper of the native fetch. A basic example
 [recommended by the docs](https://swr.vercel.app/docs/getting-started) looks like this:
 
 ```js
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+const fetcher = (...args) => fetch(...args).then((response) => response.json());
 ```
 
 Then you can import the `useSWR` hook and pass it two argument: the `url` you want to fetch and the
@@ -48,7 +48,7 @@ Then you can import the `useSWR` hook and pass it two argument: the `url` you wa
 ```js
 import useSWR from "swr";
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+const fetcher = (...args) => fetch(...args).then((response) => response.json());
 
 function Character() {
   const { data } = useSWR("https://swapi.dev/api/people/1", fetcher);
@@ -72,7 +72,7 @@ an application wide `refreshInterval`:
 ```js
 import { SWRConfig } from "swr";
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json());
+const fetcher = (...args) => fetch(...args).then((response) => response.json());
 
 function App() {
   return (
@@ -129,19 +129,19 @@ You can customize the `fetcher` to `throw` an `Error` with additional informatio
 
 ```js
 const fetcher = async (url) => {
-  const res = await fetch(url);
+  const response = await fetch(url);
 
   // If the status code is not in the range 200-299,
   // we still try to parse and throw it.
-  if (!res.ok) {
+  if (!response.ok) {
     const error = new Error("An error occurred while fetching the data.");
     // Attach extra info to the error object.
-    error.info = await res.json();
-    error.status = res.status;
+    error.info = await response.json();
+    error.status = response.status;
     throw error;
   }
 
-  return res.json();
+  return response.json();
 };
 ```
 
@@ -280,24 +280,83 @@ The `useSWR` hook returns an SWR response object with the following properties:
 
 With SWR you don't control the state containing the fetched data yourself. Because of this you can't modify the state directly. This is a **good thing** because modifying state that has been fetched from a server is an anti-pattern. If your server gives you data it has to be the single source of truth.
 
-If you want to enrich server data with local state (like attaching an `isFavorite` property to a movie) you can use the `useSWR` hook to fetch the data and the `useState` hook to manage the local state. The local state should be connected to the server data via a unique identifier (like `id` or `slug`).
+If you want to enrich server data with local state (like attaching an `isFavorite` property to a movie) you can use the `useSWR` hook to fetch the data and the `useState` hook to manage the local state. The individual pairs of local data and server data should be connected via a unique identifier (like `id` or `slug`).
+
+In the end you have two arrays of data: one fetched from the server and one local:
+
+```js
+// fetched Data
+[
+  {
+    id: 1,
+    title: "Star Wars",
+    year: 1977
+    },
+  {
+    id: 2,
+    title: "The Empire Strikes Back",
+    year: 1980,
+  },
+  //...
+  {
+    id: 57,
+    title: "The Big Lebowsky",
+    year: 1995,
+  },
+];
+
+//local data
+[
+  {
+    id: 1,
+    isFavorite: true,
+  },
+  {
+    id: 2,
+    isFavorite: false,
+  },
+];
+```
+
+We can then match the data via the unique identifier (in this case id):
+
+```js
+// data for id 1:
+{
+	id: 1,
+	title: "Star Wars",
+	year: 1977,
+},
+{
+	id: 1,
+	isFavorite: true,
+}
+
+// data for id 2:
+{
+	id: 2,
+	title: "The Empire Strikes Back",
+	year: 1980,
+},
+{
+	id: 2,
+	isFavorite: false,
+}
+
+// data for id 57:
+{
+	id: 57,
+	title: "The Big Lebowsky",
+	year: 1995,
+}
+//no local data saved yet!
+
+```
+
+In our application this might look something like this:
 
 ```js
 function Movies() {
-  /* let's assume the API return a list of movies like this:
-    [
-      {
-        id: 1,
-        title: "Star Wars",
-        year: 1977,
-      },
-      {
-        id: 2,
-        title: "The Empire Strikes Back",
-        year: 1980,
-      }
-    ]
-  */
   const { data: moviesData } = useSWR("/api/movies");
 
   // initialize the local state with an empty array

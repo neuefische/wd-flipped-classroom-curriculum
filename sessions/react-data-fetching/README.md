@@ -63,8 +63,6 @@ You can check out the final version of this demo locally by running this command
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-end
 ```
 
-> 💡 This demo is a continuation of the **React Effects and Fetch** session demo. It aims to replace the `startFetching` function and the `useEffect` with `useSWR` before adding some additional local state to enrich the app.
-
 ### Recap: Fetching Data in React
 
 - [ ] Remind students how to fetch data in React using Effects and State.
@@ -93,7 +91,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
   ```
   npm install swr
   ```
-- [ ] Open the `Joke` Component and import `useSWR` from `swr`.
+- [ ] Open the `page/index.js` Page and import `useSWR` from `swr`.
   ```js
   import useSWR from "swr";
   ```
@@ -105,8 +103,10 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
   );
   ```
 
-- [ ] Start the app and demonstrate it doesn't work yet. We only see `Loading...` in the UI. No request to the API is started. This is because SWR expects us to give it a fetcher function that it can use to actually fetch the data.
-- [ ] Show that we can copy the fetcher function directly from the SWR docs. It's just a wrapper around `fetch` but we should not think about it too much. Copy it **above** the `Joke` component function (**not inside**)
+- [ ] Start the app and demonstrate it doesn't work yet. We only see `Loading...` in the UI. No request to the API is started.
+- [ ] Explain to the students that it is always a good idea to check the [documentation](https://swr.vercel.app/docs/getting-started) of a library if something does not work.
+- [ ] Since we are already in the 'getting started' section of the documentation, highlight the necessity of a fetcher function and its role in the SWR library.
+- [ ] Copy the fetcher function directly from the SWR docs. It's just a wrapper around `fetch` but we should not think about it too much. Copy it **above** the `Joke` component function (**not inside**)
   ```js
   const fetcher = (url) => fetch(url).then((response) => response.json());
   ```
@@ -118,37 +118,27 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
   );
   ```
 - [ ] Show that the app now works as expected.
+
+- [ ] Go back to the documentation and highlight that the demo uses some extra information provided by the hook: `isLoading` and `error`.
+- [ ] Use these to show an initial loading state and an error state:
+
+  ```js
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  }
+
+  if (error || !joke) {
+    return <h1>Error</h1>;
+  }
+  ```
+
+- [ ] Encourage the students to explore the library with the help of the documentation and to make it a habit to always check out the docs of new libraries which they want to learn.
+
+### Cached Data
+
 - [ ] Compare the behavior of the application to before. We have flashes of no data when the `id` changes but the data is not yet fetched. Only after the data is fetched we see the new joke. This way the local `id` state and the fetched data are always in sync.
 - [ ] Show (by clicking the Prev/Next buttons) that the data is **cached** and we don't see the loading state when we click through jokes we have already loaded.
 - [ ] You can open the Browser DevTools and check the Network tab to see that even though the data is cached, SWR still revalidates the data in the background. This is what the "stale while revalidate" strategy is all about.
-
-> 💡 The hook also returns an `isLoading`, `isValidating` and `error` property. We can use these to show an initial loading state and an error state. We can also use `isValidating` to show a "loading" state while the data is being revalidated in the background. You can briefly talk about this but we will not implement it in the demo. For more information refer students to the handout.
-
-### `SWRConfig`
-
-- [ ] Explain that we can set the fetcher function application-wide using the `SWRConfig` component. This way it does not need to be passed to every `useSWR` hook which can be a bit tedious.
-- [ ] Open the `App` component (`pages/_app.js`) and import `SWRConfig` from `swr`.
-  ```js
-  import { SWRConfig } from "swr";
-  ```
-- [ ] Add the fetcher function above the `App` component function to the `pages/_app.js` file.
-  ```js
-  const fetcher = (url) => fetch(url).then((response) => response.json());
-  ```
-- [ ] Wrap the `Component` in the `SWRConfig` component.
-  ```js
-  <SWRConfig value={{ fetcher }}>
-    <Component {...pageProps} />
-  </SWRConfig>
-  ```
-- [ ] Explain that this will make the fetcher available to all components that are children of the `App` component which means all pages and components on them in the Next.js application.
-- [ ] Remove the fetcher function from the `useSWR` hook in the `Joke` component.
-  ```js
-  const { data } = useSWR(
-    `https://example-apis.vercel.app/api/bad-jokes/${id}`
-  );
-  ```
-- [ ] Show that the app still works as expected.
 
 ### Optional: Combine Fetched Data with Local State
 
@@ -158,126 +148,43 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
 
 - [ ] Explain that in SWR we don't control the state containing the fetched data ourself.
 - [ ] Because of this we can't modify the state directly. This is a **good thing** because modifying state that has been fetched from a server is an anti-pattern. Server data should be the single source of truth.
+- [ ] Explain that if we want to enrich server data with local state (like attaching an `isFunny` property to a joke) we can use the `useSWR` hook to fetch the data and the `useState` hook to manage the local state. The local data should be matched or combined with the server data via a unique identifier (like the `id` of the joke).
 
-- [ ] Explain that if we want to enrich server data with local state (like attaching an `isFunny` property to a joke) we can use the `useSWR` hook to fetch the data and the `useState` hook to manage the local state. The local state should be connected to the server data via a unique identifier (like the `id` of the joke).
-
-- [ ] Explain that to do so, we are going to create a new local state containing an array for joke extra information. We will use the `id` of the joke as the key to identify the extra information for a joke.
-
-  > 💡 For consistency, we will call the local state array `xyzInfo` (e.g. `jokesInfo` or `moviesInfo`) and a single element from the array `info` in all our material.
-
-- [ ] Open the `Joke` Component; create a new state variable `jokesInfo` and a setter function `setJokesInfo` using `useState`. Initialize the state with an empty array.
+- [ ] Create a new state variable `funnyJokeIds` and a setter function `setFunnyJokeIds` using `useState`. Initialize the state with an empty array.
 
   ```js
-  const [jokesInfo, setJokesInfo] = useState([]);
+  const [funnyJokeIds, setFunnyJokeIds] = useState([]);
   ```
 
-- [ ] Explain that we are going to use the `id` of the joke to identify the extra information for a joke. We will use the `find` method on the `jokesInfo` array to find the extra information for a joke. If we don't find any extra information we will return a default object (using `??`). This means that we are only creating entries in our `jokesInfo` array when we need them.
+- [ ] Explain that this array will store the ids of all funny jokes. If a joke should be labelled funny, we can add its id to this array, and remove it otherwise. If we find the id of a given joke in this array, it is considered funny:
   ```js
-  const info = jokesInfo.find((info) => info.id === id) ?? {
-    isFunny: false,
-  };
+  const isFunny = funnyJokeIds.includes(id);
   ```
-- [ ] Since in our example we are only interested in the `isFunny` property of the extra information we can destructure it from the `info` object directly.
-  ```js
-  const { isFunny } = info;
-  ```
-- [ ] Explain that we can now use the `isFunny` state to render the joke differently depending on whether it is funny or not. Change the `h1` to include a "funny" emoji and add a button to toggle the `isFunny` state below it. The full return statement should look something like this:
+- [ ] Now we can use this information in the UI to show to the user if the joke is funny or not:
 
   ```js
-  return (
-    <>
-      <small>ID: {id}</small>
-      <h1>
-        {data.joke}{" "}
-        <span
-          role="img"
-          aria-label={isFunny ? "A laughing face" : "An unamused face"}
-        >
-          {isFunny ? "🤣" : "😒"}
-        </span>
-      </h1>
-      <div>
-        <button
-          type="button"
-          onClick={() => {
-            console.log("toggle isFunny");
-          }}
-        >
-          {isFunny ? "Stop laughing" : "Start laughing"}
-        </button>
-      </div>
-      <div>
-        <button type="button" onClick={handlePrevJoke}>
-          ← Prev Joke
-        </button>
-        <button type="button" onClick={handleNextJoke}>
-          Next Joke →
-        </button>
-      </div>
-    </>
-  );
+  <button type="button">{isFunny ? "😂 is Funny" : "😐 is not Funny"}</button>
   ```
 
-- [ ] Explain that currently the `jokesInfo` array is always empty, thus all jokes are rendered as "not funny".
-- [ ] To mark a joke as funny we need to implement a `handleToggleFunny` function that takes an `id` and updates the `jokesInfo` array. Add the function above the `return` statement.
+- [ ] We can write the following function such that the user can toggle the funny state of the given joke:
   ```js
-  function handleToggleFunny(id) {
-    console.log("toggle isFunny");
+  function handleToggleFunnyJoke(jokeId) {
+    // you can reuse the "isFunny" variable here if you like
+    if (funnyJokeIds.includes(jokeId)) {
+      //joke is in the list, to toggle the state we need to remove it.
+      const updatedFunnyJokeIds = funnyJokeIds.filter((id) => id !== jokeId);
+      setFunnyJokesIds(updatedFunnyJokeIds);
+    } else {
+      //joke is not the list, to toggle the state we need to add it.
+      const updatedFunnyJokeIds = [...funnyJokeIds, jokeId];
+      setFunnyJokesIds(updatedFunnyJokeIds);
+    }
   }
   ```
-- [ ] Call the `handleToggleFunny` function with the current `id` when the button is clicked.
-  ```js
-  <button
-    type="button"
-    onClick={() => {
-      handleToggleFunny(id);
-    }}
-  >
-    {isFunny ? "Stop laughing" : "Start laughing"}
-  </button>
-  ```
-- [ ] Explain that in our update function we need to perform one of two operations, depending on the context:
-  1. If the joke info already exists in the `jokesInfo` array we need to update the `isFunny` property.
-  2. If the joke info doesn't exist in the `jokesInfo` array we need to add it to the array with the `isFunny` property set to `true`.
-- [ ] In the `handleToggleFunny` function we want to set a new value for the `jokesInfo` state, thus we call the state setter and pass it an updater function. The updater function will receive the current value of the `jokesInfo` state as an argument. The updater function should return the new value for the `jokesInfo` state.
-  ```js
-  function handleToggleFunny(id) {
-    setJokesInfo((jokesInfo) => {
-      // …
-    });
-  }
-  ```
-- [ ] Explain that to figure out if the the joke info already exists in the `jokesInfo` array we can use the `find` method. It either return the joke info or `undefined` if it doesn't exist.
-
-  ```js
-  function handleToggleFunny(id) {
-    setJokesInfo((jokesInfo) => {
-      const info = jokesInfo.find((info) => info.id === id);
-
-      // …
-    });
-  }
-  ```
-
-- [ ] Explain that if the joke info already exists in the `jokesInfo` array we can use the `map` method to create a new array with the updated joke info (toggled `isFunny`). If the joke info doesn't exist in the `jokesInfo` array we can use the spread syntax to create a new array with the new joke info added to the end of the array.
-
-  ```js
-  function handleToggleFunny(id) {
-    setJokesInfo((jokesInfo) => {
-      const info = jokesInfo.find((info) => info.id === id);
-
-      if (info) {
-        return jokesInfo.map((info) =>
-          info.id === id ? { ...info, isFunny: !info.isFunny } : info
-        );
-      }
-
-      return [...jokesInfo, { id, isFunny: true }];
-    });
-  }
-  ```
-
-- [ ] Show that we can now use the button to toggle the `isFunny` state of a joke.
+- [ ] We can put this function onto the button click listener:
+      `js
+<button type="button" onClick={() => handleToggleFunnyJoke(id)}>{isFunny ? "😂 is Funny" : "😐 is not Funny"}</button>
+`
 
 ---
 
