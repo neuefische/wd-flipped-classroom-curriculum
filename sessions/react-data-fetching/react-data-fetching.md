@@ -290,8 +290,8 @@ In the end you have two arrays of data: one fetched from the server and one loca
   {
     id: 1,
     title: "Star Wars",
-    year: 1977
-    },
+    year: 1977,
+  },
   {
     id: 2,
     title: "The Empire Strikes Back",

@@ -111,7 +111,7 @@ You can even get a code review from the AI tool:
 ### 💡 Solve the [additional challenges](./challenges-self-directed-learning-1.md).
 
 Need more practice? We have prepared some additional challenges for you.
-We recommend you to solve them on your own first. If you get stuck try and check out
+We recommend you to solve them on your own first. (On your own means you are allowed to Google, use the handouts, etc.) If you get stuck, ask your group for help.
 
 > ❗️ Remember:
 >
@@ -124,3 +124,5 @@ We recommend you to solve them on your own first. If you get stuck try and check
 > The more you get to know the AI model, the better you can use it to your true advantage.
 >
 > Check these [awesome ChatGPT promps](https://github.com/f/awesome-chatgpt-prompts).
+
+## Good luck and have fun! 🚀
