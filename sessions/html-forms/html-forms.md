@@ -7,7 +7,6 @@
 - Building useable and accessible forms
 - Understanding the different types of buttons
 - Understanding client-side form validation
-- Understanding the default behavior of form submit
 
 ---
 
@@ -24,16 +23,6 @@ form controls to the user.
 </form>
 ```
 
-### Form field names
-
-Forms are created to request information from the user. Each fragment of information (each form
-field) requires a unique name. It can be set with the `name` attribute and pairs up with the entered
-data, when submitting the form.
-
-```html
-<input name="first-name" />
-```
-
 ### Labels
 
 The `<label>` always goes together with a form field. It provides a caption to let users understand,
@@ -43,8 +32,7 @@ It is required to define, which label and form field belong together. Use the `f
 `<label>` and the `id` attribute on the form field. Their values needs to match.
 
 ```html
-<label for="first-name">First name</label>
-<input name="first-name" id="first-name" />
+<label for="first-name">First name</label> <input id="first-name" />
 ```
 
 > ❗️ Always add a label to a form field. Otherwise users won't understand the purpose of a field,
@@ -62,8 +50,7 @@ The default `type` for `<input>` elements is `text`. Choose the `type` based on 
 user is requested to enter. Use `type="text"` when none of the other types is a better fit.
 
 ```html
-<label for="first-name">First name</label>
-<input type="text" name="first-name" id="first-name" />
+<label for="first-name">First name</label> <input type="text" id="first-name" />
 ```
 
 ### Email
@@ -73,7 +60,7 @@ whether the entered text is a valid email address. .
 
 ```html
 <label for="email-address">Email address</label>
-<input type="email" name="email-address" id="email-address" />
+<input type="email" id="email-address" />
 ```
 
 ### Number
@@ -81,7 +68,7 @@ whether the entered text is a valid email address. .
 Use `type="number"` to let the user enter a number.
 
 ```html
-<label for="age">Age</label> <input type="number" name="age" id="age" />
+<label for="age">Age</label> <input type="number" id="age" />
 ```
 
 ### Date
@@ -91,7 +78,7 @@ the browser.
 
 ```html
 <label for="date-of-birth">Date of birth</label>
-<input type="date" name="date-of-birth" id="date-of-birth" />
+<input type="date" id="date-of-birth" />
 ```
 
 ### Color
@@ -101,7 +88,7 @@ the browser.
 
 ```html
 <label for="favorite-color">Favorite color</label>
-<input type="color" name="favorite-color" id="favorite-color" />
+<input type="color" id="favorite-color" />
 ```
 
 ### Multi-line text
@@ -110,7 +97,7 @@ Use the tag `<textarea>` to let the user enter longer text with multiple lines.
 
 ```html
 <label for="personal-message">Personal Message</label>
-<textarea name="personal-message" id="personal-message"></textarea>
+<textarea id="personal-message"></textarea>
 ```
 
 > ❗️ Please be aware that the `<textarea>` tag is not a self-closing tag like `<input>`.
@@ -124,7 +111,7 @@ defined between the opening and closing tag.
 
 ```html
 <label for="billing-plan">Billing plan</label>
-<select name="billing-plan" id="billing-plan">
+<select id="billing-plan">
   <option value="weekly">Weekly billing</option>
   <option value="monthly">Monthly billing</option>
   <option value="yearly">Monthly billing</option>
@@ -136,54 +123,52 @@ defined between the opening and closing tag.
 The `<input type="radio" />` element is another way of presenting a choice with different options to
 the user. In many situations it can be used as an alternative to `<select>`.
 
+❗️ Each radio input element that refer to the same choice needs a `name` attribute, that must be equal among all radio elements. The browser groups them together and ensures only one radio element can be selected at the same time.
+
 ```html
 <input
   type="radio"
-  name="billing-plan"
   id="billing-plan-weekly"
   value="weekly"
+  name="billing-plan"
 />
 <label for="billing-plan-weekly">Weekly billing</label>
 
 <input
   type="radio"
-  name="billing-plan"
   id="billing-plan-monthly"
   value="monthly"
+  name="billing-plan"
 />
 <label for="billing-plan-monthly">Monthly billing</label>
 
 <input
   type="radio"
-  name="billing-plan"
   id="billing-plan-yearly"
   value="yearly"
+  name="billing-plan"
 />
 <label for="billing-plan-yearly">Yearly billing</label>
 ```
-
-> ❗️ The `name` attribute must be equal among all radio elements that refer to the same choice. The
-> browser groups them together and ensures only one radio element can be selected at the same time.
 
 ### Checkboxes
 
 In contrast to the radio element, `<input type="checkbox" />` presents individual choices, that are
 not related to each other. Each choice can either be "on" ("true") or "off" ("false").
 
+❗️ The `name` attribute must not be equal among the checkbox elements. They are used to represent individual choices.
+
 ```html
-<input type="checkbox" name="accept-data-privacy" id="accept-data-privacy" />
+<input type="checkbox" id="accept-data-privacy" name="accept-data-privacy" />
 <label for="accept-data-privacy">I accept the data privacy agreement</label>
 
 <input
   type="checkbox"
-  name="accept-terms-conditions"
   id="accept-terms-conditions"
+  name="accept-terms-conditions"
 />
 <label for="accept-terms-conditions">I accept the terms and conditions </label>
 ```
-
-> ❗️ The `name` attribute must not be equal among the checkbox elements. They are used to represent
-> individual choices.
 
 ### More form field types
 
@@ -212,25 +197,8 @@ Example: The following input field is valid if its value exists and it is a stri
 characters:
 
 ```html
-<input
-  id="input-name"
-  type="text"
-  name="name"
-  minlength="3"
-  maxlength="30"
-  required
-/>
+<input id="input-name" type="text" minlength="3" maxlength="30" required />
 ```
-
----
-
-### Default Behavior of Form Submit
-
-If you click the submit button of a form, it triggers the following default behavior (which we will change in the future using JavaScript):
-
-- The form sends a GET request with names and their values as prop inside an URL like
-  `/?firstName=value1&lastName=value2&...`.
-- The page is reloaded and thus the data is lost for us.
 
 ---
 
@@ -282,10 +250,10 @@ provide a caption for such a group.
   <legend>Personal information</legend>
 
   <label for="first-name">First name</label>
-  <input type="text" name="first-name" id="first-name" />
+  <input type="text" id="first-name" />
 
   <label for="email">Email address</label>
-  <input type="email" name="email" id="email" />
+  <input type="email" id="email" />
 </fieldset>
 ```
 

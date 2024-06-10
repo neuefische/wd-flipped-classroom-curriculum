@@ -20,7 +20,6 @@
 - [ ] form structure: fieldset, legend
 - [ ] form fields have labels (connected via id)
 - [ ] form semantics
-- [ ] knowing the default behavior of form submit
 - [ ] understanding client-side form validation
 
 ---
@@ -56,9 +55,6 @@
 
 - Add the `form` tag as the main wrapper of a form.
 - Start with an `input` field of type `text`.
-- Explain the `name` attribute:
-  - the key to identify the submitted information on the server
-  - needs to be unique for each form field
 - Explain the connection of `input` and `label`:
   - connected via `id` and `for` (do not talk about nested `input` elements)
   - user always knows what the input is for (compare: placeholder -> immediately replaced beginning
@@ -73,20 +69,10 @@ Your HTMl should look like this:
 ```html
 <form>
   <label for="input-name">Name:</label>
-  <input id="input-name" type="text" name="username" />
+  <input id="input-name" type="text" />
   <button type="submit">Submit</button>
 </form>
 ```
-
-### Default behavior of form submit
-
-- [ ] Fill in a name and submit the form to show the default behavior in the network tab:
-
-- Form tries to send a GET request with names and their values as prop inside a URL like
-  `/?username=value1`
-- The page is reloaded → the data is lost for us.
-
-- [ ] Note that we want to prevent this default behavior (no GET request, no page reload) and will learn to do so in a future session about Forms and JavaScript.
 
 ### Form Validation
 
@@ -101,20 +87,20 @@ Your HTMl should look like this:
 ### More input types
 
 - Show more input types: `date`, `number`, `email`
-- Explain `select`
+- Explain `select` element
   - needs a `label` connected via `id` and `for`
-  - `option` elements as direct children with `value` attribute to connect with the `name` attribute of the `select` field
+  - `option` elements as direct children with `value` attribute
 
 ```html
 <form>
   <label for="input-name">Name:</label>
-  <input id="input-name" type="text" name="username" required />
+  <input id="input-name" type="text" required />
   <label for="input-email">Email:</label>
-  <input id="input-email" type="email" name="email" required />
+  <input id="input-email" type="email" required />
   <label for="input-date">Your favorite date:</label>
-  <input id="input-date" type="date" name="favorite-date" />
+  <input id="input-date" type="date" />
   <label for="select-guests">How many friends will join you?</label>
-  <select id="select-guests" name="friends-to-join">
+  <select id="select-guests">
     <option value="">--Please choose an option--</option>
     <option value="single">I come alone.</option>
     <option value="multiple">Maybe some?</option>
@@ -149,7 +135,7 @@ Your HTMl should look like this:
   <fieldset aria-describedby="description">
     <legend>Enter your information</legend>
     <label for="input-name">Name:</label>
-    <input id="input-name" type="text" name="username" />
+    <input id="input-name" type="text" />
     <select>
       ...
     </select>

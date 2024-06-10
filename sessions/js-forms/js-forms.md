@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-- knowing how to prevent the default behavior of form submit with `.preventDefault()`
+- Understanding the default behavior of form submit and knowing how to prevent it with `.preventDefault()`
 - knowing how to listen to submit events: the `event` object and its `target` property
 - reading input values:
   - `event.target.elements`
@@ -11,6 +11,16 @@
 - understanding the input event
 - knowing how to focus an input field programmatically
 - knowing how to reset a form
+
+---
+
+### Default Behavior of Form Submit
+
+If you click the submit button of a form, it triggers the following default behavior:
+
+- The form sends a GET request with names and their values as prop inside an URL like
+  `/?firstName=value1&lastName=value2&...`.
+- The page is reloaded and thus the data is lost for us.
 
 ---
 
@@ -57,6 +67,17 @@ form.addEventListener("submit", (event) => {
 //		...
 //		<button type="submit">Submit</button>
 //	</form>
+```
+
+---
+
+### Form field names
+
+Forms are created to request information from the user. Each fragment of information (each form
+field) requires a unique name, which can be set with the `name` attribute in HTML. This attribute pairs up with the entered data, when submitting the form.
+
+```html
+<input name="firstName" />
 ```
 
 ---

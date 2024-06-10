@@ -10,7 +10,7 @@
 
 ## Learning objectives
 
-- [ ] prevent the default behavior of form submit with `.preventDefault()`
+- [ ] knowing the default behavior of form submit and prevent it with `.preventDefault()`
 - [ ] listening to submit events
   - learn what `event` and `event.target` is
   - reading input values via their names:
@@ -32,7 +32,6 @@
 After building a form with accessible HTML, our job is not done - we want to access the user input
 after submit as well! This is where JavaScript comes into play:
 
-- How do we handle the default behavior of our forms?
 - How do we access the data after form submit in order to use it?
 
 ---
@@ -61,9 +60,17 @@ You can check out the final version of this demo by running this command in your
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-end
 ```
 
-### Listening to the submit event / preventing default form submit behavior
+### Default behavior of form submit
 
-- [ ] Remind the students of the default submit behavior: Forms sends a GET request and page reloads => data is lost for us
+- [ ] Fill in a first name and submit the form to show the default behavior in the network tab:
+
+- Form tries to send a GET request with names and their values as prop inside a URL like
+  `/?firstName=value1`
+- The page is reloaded → the data is lost for us.
+
+- [ ] Note that we want to prevent this default behavior (no GET request, no page reload).
+
+### Listening to the submit event / preventing default form submit behavior
 
 - [ ] Remind the students that we need to query the form first in order to add some interactivity with JavaScript:
 
@@ -116,6 +123,11 @@ form.addEventListener("submit", (event) => {
 
 ### Accessing Interactive Fields: `event.target.elements` and the `name` Attribute
 
+- [ ] Explain the `name` attribute:
+
+  - the key to identify the submitted information.
+  - needs to be unique for each form field
+
 - [ ] Explain the `.elements` property of `event.target`:
 
 - represents a collection of all form controls
@@ -123,7 +135,7 @@ form.addEventListener("submit", (event) => {
   - `elements.firstName` returns the form field where attribute `name="firstName"`
   - `elements.firstName.value` returns only the value of the form field with attribute
     `name="firstName"`
-- remind students that the `name` attribute is crucial at this point
+- the `name` attribute is crucial at this point
 - for readability, it's useful to save `event.target.elements` in a variable
 
 ```js
