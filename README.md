@@ -53,7 +53,7 @@ This timetable includes the new 4-day **React Recap Project** (Recap Project 4) 
 | 37  | [**Recap Project 6**](sessions/)                                                | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories/) |
 | 38  | Design Workshop (external)                                                      | [Capstone Grouping and Setup](sessions/capstone-grouping-and-setup/)         |
 | 39  | Design Workshop (external)                                                      | [Capstone Prep 1](sessions/capstone-prep/)                                   |
-| 40  | [Capstone Prep 2](sessions/capstone-prep/)                                      | How to Capstone                                                              |
+| 40  | [Capstone Prep 2](sessions/capstone-prep/)                                      | [How to Capstone](sessions/how-to-capstone/)                                 |
 
 ### Thursday Afternoons: Self-Directed Learning
 
