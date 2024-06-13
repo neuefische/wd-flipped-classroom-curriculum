@@ -252,7 +252,7 @@ methods (like GET/POST/PUT/DELETE) to describe desired actions.
 ---
 
 ## Resources
-
+- [Promises From The Ground Up by Josh W. Comeau](https://www.joshwcomeau.com/javascript/promises/)
 - [Thread on mdn](https://developer.mozilla.org/en-US/docs/Glossary/Thread)
 - [Asynchronous on mdn](https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous)
 - [Using Promises on mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
