@@ -156,18 +156,25 @@ export default function AnimalImage() {
 }
 ```
 
-When using images from external domains, you need to configure the allowed domains in the `next.config.js` file:
+When using images from external domains, you need to configure the allowed remote patterns in the `next.config.js` file:
 
 ```js
 const nextConfig = {
   reactStrictMode: true,
+
   images: {
-    domains: ["images.unsplash.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+      },
+    ],
   },
 };
 ```
 
-> 📙 Read more about [configuring **domains** for next/image](https://nextjs.org/docs/api-reference/next/image#domains) and [**next/image** in general in the Next.js Docs](https://nextjs.org/docs/api-reference/next/image).
+> 📙 Read more about [configuring **remote patterns** for next/image](https://nextjs.org/docs/api-reference/next/image#remotepatterns) and [**next/image** in general in the Next.js Docs](https://nextjs.org/docs/api-reference/next/image).
 
 ---
 
