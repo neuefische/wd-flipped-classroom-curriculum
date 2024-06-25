@@ -302,8 +302,14 @@ export default function Movies() {
 
 ```js
 images: {
-	domains: ['images.unsplash.com'],
-},
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+      },
+    ],
+  },
 ```
 
 - [ ] Restart the Next.js server: `npm run dev`
