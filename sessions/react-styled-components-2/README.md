@@ -325,8 +325,8 @@ export default function HomePage() {
       <h1>Styled Components with Props</h1>
       <h2>Props with the ternary</h2>
       <FlexContainer>
-        <Button $color="danger">Button </Button>
-        <Button>Button Danger</Button>
+        <Button>Button</Button>
+        <Button $color="danger">Button Danger</Button>
       </FlexContainer>
       <h2>Using Props: css block / Complex Component</h2>
       <FlexContainer $direction="column">
@@ -338,7 +338,7 @@ export default function HomePage() {
   );
 ```
 
-- [ ] Point out that at the moment, both container have flex-direction row. That is because at the moment we are not passing a prop to the first container, so the value of `$direction` will be `undefined`.
+- [ ] Point out that at the moment, both container have `flex-direction: column`. That is because at the moment we are not passing a prop to the first container, so the value of `$direction` will be `undefined`.
 - [ ] A nice fix is to add a default argument to the function. i.e.
 
 ```jsx
