@@ -1,4 +1,4 @@
-# Challenges: React Styled Components
+# Challenges: React Styled Components 2
 
 ## Box
 
