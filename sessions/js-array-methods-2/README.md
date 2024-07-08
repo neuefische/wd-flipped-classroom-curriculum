@@ -68,9 +68,11 @@ If the array contains complex data types (like objects) we can use other array m
 
 [mdn docs: Array.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes?retiredLocale=de)
 
-Let's first look at the array of numbers shown in the browser preview. Copy this code snippet and show how the `includes` method works with an array of numbers.
+Let's first look at the array of numbers shown in the browser preview. You can find it in the file `./js/numbers.js` Copy this code snippet and show how the `includes` method works with an array of numbers.
 
 ```js
+// js/numbers.js
+
 const numberToCheck = 3333;
 const numberIsIncluded = numbers.includes(numberToCheck);
 numberOutput.textContent = numberIsIncluded
@@ -88,6 +90,8 @@ numberOutput.textContent = numberIsIncluded
 `includes` works fine with strings as well. Here's an example with strings:
 
 ```js
+// js/strings.js
+
 const stringToCheck = "MongoDB";
 const stringIsIncluded = strings.includes(stringToCheck);
 stringOutput.textContent = stringIsIncluded
@@ -108,6 +112,8 @@ When working with arrays that contain objects we can use the `find` method:
 This one is to get the object we are looking for. It won't return `true` or `false` but the object **itself**.
 
 ```js
+// js/characters.js
+
 const objectToFind = simpsons.find((simpson) => simpson.age === 12);
 findOutput.textContent = objectToFind
   ? `Yes, it's '${objectToFind.name}'`
@@ -119,7 +125,7 @@ findOutput.textContent = objectToFind
 - [ ] Once the callback function returns true, the execution is stopped and the find function returns the specific object
 - [ ] When no element is found, it returns `undefined`. We have to keep this in mind to avoid an error when rendering an undefined value (we can use optional chaining for this purpose or an if-else statement)
 - [ ] Play along with some different conditions
-- [ ] Point out that we use an `implicit return` in this example. If your callback functions needs to execute more code (e.g. a console.log) you will have to use an `explicit return`
+- [ ] Point out that we use an `implicit return` in this example. If your callback functions needs to execute more code (e.g. a console.log) you will have to use an `explicit return`
 
 More useful array methods are shown in the handout. They all work in a similar way.
 
