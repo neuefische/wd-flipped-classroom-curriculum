@@ -1,79 +1,67 @@
 # Challenges: Backend MongoDB
 
-## Setting up a MongoDB Atlas account and database
+## 1. Setting Up a MongoDB Atlas Account and Database
 
 Follow this guide to set up your MongoDB Atlas account and your first database.
 
-1. Go to [the MongoDB Atlas homepage](https://www.mongodb.com/atlas/database) and choose "Try Free" to start the process.
-2. Create an account by providing your data or sign up using Google.
-3. You might need to verify your email address.
-4. You might be asked to tell MongoDB Atlas something about your future use cases:
+> 💡 Note that some steps may vary slightly.
 
-<img src="assets/images/atlas_tell-us-something.png" alt="Tell us something about yourself and your project" width="300px">
+**1. Sign Up for MongoDB Atlas**
 
-5. To create a cluster, choose
-   1. `M0 Free`,
-   2. `aws`, and
-   3. `Frankfurt` and click on "Create".
+- Visit [MongoDB Atlas](https://www.mongodb.com/atlas/database) and click "Try Free".
+- Fill in the required information, including your email, and create a password.
+- Alternatively, you can sign up using your Google account.
 
-<img src="assets/images/atlas_create-cluster.png" alt="Create a cluster" width="300px">
+**2. Create a New Project** - _This step may vary and could be automatic in some cases._
 
-6. In the left-hand navigation, choose `Security > Quickstart` to generate a first user. You might be led to this screen automatically after creating the cluster.
-   1. Choose a username and a password.
-   2. 🚨 Make sure to write down your password!
-   3. Click on "Create User".
+- Enter a name for your project (e.g., "Web Dev Bootcamp").
 
-<img src="assets/images/atlas_generate-admin.png" alt="Generate a database user" width="300px">
+**3. Set Up a Cluster**
 
-7. Scroll down to choose where you would like to connect from:
+- Choose a free tier: `M0 Free`.
+- Select a provider: `AWS`.
+- Select a region: `Frankfurt`.
+- Click on "Create".
+- Wait for the cluster to deploy; this may take a few minutes.
 
-   1. Choose "My Local Environment".
-   2. Click "Add My Current IP Address".
+**4. Configure Database Access**- _You might be led to this screen automatically after creating the cluster._
 
-   Your IP address might have been added automatically.
+**4.1 Add a Databse User**
 
-<img src="assets/images/atlas_local-env.png" alt="Choose connection from local environment" width="300px">
+- Go to the "Security > Database Access" tab.
+- Click "Add New Database User".
+- Create a user with a username and password. 💡 Make sure to save these credentials as you will need them to connect to your database.
+- Choose "Read and Write to any database" as the user role.
+- Click "Add User".
 
-8. In the left-hand navigation, choose `Security > Network Access`.
+**4.2 Change Your IP Adress**
 
-<img src="assets/images/atlas_network-access.png" alt="Network access overview at the beginning" width="300px">
+- Go to the "Security > Network Access" tab.
+  -Make sure that the IP adress is `0.0.0.0/0  (includes your current IP address)`
 
-9. In the IP Access List, behind your IP Address, click on "Edit".
-10. In the pop-up window, click "Allow Access from Anywhere".
+## 2. Creating a Database and Inserting Multiple Documents
 
-<img src="assets/images/atlas_allow-access-from-anywhere.png" alt="Allow access from anywhere" width="300px">
+> 💡 You will use this database in the upcoming session.
 
-11. Your Network Access tab should now look like this:
+**1. Create a Fish-Shop Database**
 
-<img src="assets/images/atlas_access-from-anywhere-finished.png" alt="Finished state after allowing access from anywhere" width="300px">
+- Go to the "Deployments > Database" tab.
+- Click "Browse Collections".
+- Click "Create Database".
+- In the dialog that appears, enter `fish-shop-database` as the `database name`.
+- Enter `products` as the `collection name`.
+- Click "Create" to create the new database and collection.
 
-12. In the left-hand navigation, choose `Deployment > Database` which brings to this view:
+**2. Insert Multiple Documents**
 
-<img src="assets/images/atlas_deploy-database.png" alt="Deploying the database overview" width="300px">
-
-13. On the right side of your cluster's name (here "Cluster0"), click the "Connect" button.
-
-14. In the pop-up window, click `Connect to your application > Drivers`:
-
-<img src="assets/images/atlas_connect-to-cluster_choose-connection-method.png" alt="Choose connection method" width="300px">
-
-15. You should now see this screen:
-
-<img src="assets/images/atlas_connect-to-cluster_finished-database-user.png" alt="Database user was generated" width="300px">
-
-16. Click on "Choose a connection method". You will see a screen similar to the following:
-
-<img src="assets/images/atlas_connect-to-cluster_connection-method-finished.png" alt="Connection to cluster finished" width="300px">
-
-17. We will later need the connection string for our application. Click on "Copy" to copy it to your clipboard. It should look similar to this:
-
-`mongodb+srv://coachingmongodb:<password>@cluster0.mu12zrz.mongodb.net/?retryWrites=true&w=majority`
-
-18. Note the hint below: `Replace <password> with the password for the coachingmongodb user.`
-
-    > This is the database user you have created before. Your database user might have a different name.
-
-19. Store this connection string in a safe place, e.g. in a text file. You will need it later.
+- Open the `fish-shop-database` database.
+- Select the `products` collection.
+- Click "Insert Document".
+- A JSON editor will appear where you can insert these products.
+- Change to the view `{}` and copy-paste the data from the `products.json` file.
+- Download and extract the [resources](https://github.com/neuefische/web-exercises/blob/main/sessions/backend-read/products/README.md#resources).
+- Copy-paste the data from the `products.json` file.
+- Click "Insert".
 
 ## Resources
 
