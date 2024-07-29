@@ -37,7 +37,7 @@ This timetable includes the new 4-day **React Recap Project** (Recap Project 4) 
 | 21  | [React Nesting](sessions/react-nesting)                                         | [React State 1](sessions/react-state-1)                                      |
 | 22  | [React with Arrays](sessions/react-with-arrays)                                 | [React State 2](sessions/react-state-2)                                      |
 | 23  | [React State 3](sessions/react-state-3/)                                        | [React Effects and Fetch](sessions/react-effects-and-fetch/)                 |
-| 24  | Active Learning: [React with Local Storage](sessions/react-with-local-storage/) | [**Recap Project 4**](sessions/recap-project-react)                          |
+| 24  | Active Learning: [React with Local Storage](sessions/react-with-local-storage/) | [**Recap Project 4**](sessions/recap-project-4)                          |
 | 25  | [**Recap Project 4**](sessions/recap-project-4)                             | [**Recap Project 4**](sessions/recap-project-4)                          |
 | 26  | [**Recap Project 4**](sessions/recap-project-4)                             | [**Recap Project 4**](sessions/recap-project-4)                          |
 | 27  | [**Recap Project 4**](sessions/recap-project-4)                             | [**Recap Project 4**](sessions/recap-project-4)                          |
