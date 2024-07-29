@@ -9,7 +9,7 @@ Let's use our knowledge of next.js + api routes to build an AI Cover Letter Gene
 We can create a new project from the following template
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/templates/next cover-letter-generator -i
+npx ghcd@latest neuefische/web-exercises/tree/main/templates/next cover-letter-generator
 ```
 
 We will use the [OpenAI Node API Library](https://www.npmjs.com/package/openai)
