@@ -167,9 +167,9 @@ The same operation with the `update` function provided by the `useImmer` hook lo
 
 ```js
 updateUsers((draft) => {
-  const user = draft.find(user => user.id === 1);
+  const user = draft.find((user) => user.id === 1);
   user.email = "john_doe@example.com";
-})
+});
 ```
 
 The exact code you need to write depends heavily on the type of operation (update, insert, delete) and on the shape of the data you store in state.
