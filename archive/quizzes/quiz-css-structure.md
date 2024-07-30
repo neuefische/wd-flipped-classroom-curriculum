@@ -2,10 +2,10 @@
 
 ## What does the "C" in CSS stand for?
 
-* [x] Cascading
-* [ ] Complex
-* [ ] Constructive
-* [ ] Command
+- [x] Cascading
+- [ ] Complex
+- [ ] Constructive
+- [ ] Command
 
 Points: 1
 
@@ -18,9 +18,9 @@ type: multiple_choice
 
 ## What does "inheritance" mean?
 
-* [ ] Elements always increase in size the further down on the stylesheet they are.
-* [ ] Elements always start out with the same CSS properties.
-* [x] Elements will inherit some CSS properties from their parent elements.
+- [ ] Elements always increase in size the further down on the stylesheet they are.
+- [ ] Elements always start out with the same CSS properties.
+- [x] Elements will inherit some CSS properties from their parent elements.
 
 Points: 1
 
@@ -33,9 +33,9 @@ type: multiple_choice
 
 ## What is an example of "good practice" for structuring CSS?
 
-* [x] Using specific CSS selectors such as classes.
-* [ ] Using `!important` and the id selector.
-* [ ] Writing all styles in the same file.
+- [x] Using specific CSS selectors such as classes.
+- [ ] Using `!important` and the id selector.
+- [ ] Writing all styles in the same file.
 
 Points: 1
 
@@ -48,9 +48,9 @@ type: multiple_choice
 
 ## Which of these specified selectors is the most specific one?
 
-* [ ] universal selector `*`
-* [x] class selector like `.container`
-* [ ] type selector like `div`
+- [ ] universal selector `*`
+- [x] class selector like `.container`
+- [ ] type selector like `div`
 
 Points: 1
 
@@ -63,10 +63,10 @@ type: multiple_choice
 
 ## Which of the following is a popular CSS naming method for writing cleaner and more readable CSS classes?
 
-* [ ] "cascading importance"
-* [x] "BEM"
-* [ ] "NASA"
-* [ ] "mobile first"
+- [ ] "cascading importance"
+- [x] "BEM"
+- [ ] "NASA"
+- [ ] "mobile first"
 
 Points: 1
 
@@ -79,10 +79,10 @@ type: multiple_choice
 
 ## Following BEM: using the block class name "navigation", which class name would a link within this element have?
 
-* [ ] `navigation--link`
-* [ ] `navigation_link`
-* [ ] `navigation-link`
-* [x] `navigation__link`
+- [ ] `navigation--link`
+- [ ] `navigation_link`
+- [ ] `navigation-link`
+- [x] `navigation__link`
 
 Points: 1
 
@@ -95,10 +95,10 @@ type: multiple_choice
 
 ## Following BEM: which classname would a modified link have?
 
-* [ ] `navigation--link--active`
-* [ ] `navigation_link_active`
-* [x] `navigation__link--active`
-* [ ] `navigation-link__active`
+- [ ] `navigation--link--active`
+- [ ] `navigation_link_active`
+- [x] `navigation__link--active`
+- [ ] `navigation-link__active`
 
 Points: 1
 
@@ -111,9 +111,9 @@ type: multiple_choice
 
 ## Which pseudo-class selector can be used to declare global CSS custom properties (variables)?
 
-* [ ] `:gobal`
-* [x] `:root`
-* [ ] `:all`
+- [ ] `:gobal`
+- [x] `:root`
+- [ ] `:all`
 
 Points: 1
 
@@ -126,9 +126,9 @@ type: multiple_choice
 
 ## Which of the following is an example of defining CSS custom properties (variables)?
 
-* [ ] `custom color: green;`
-* [ ] `green = --color-secondary;`
-* [x] `--color-secondary: green;`
+- [ ] `custom color: green;`
+- [ ] `green = --color-secondary;`
+- [x] `--color-secondary: green;`
 
 Points: 1
 
@@ -141,9 +141,9 @@ type: multiple_choice
 
 ## How are CSS custom properties (variables) used?
 
-* [x] `color: var(--color-secondary);`
-* [ ] `color: custom(--color-secondary);`
-* [ ] `color: func(--color-secondary);`
+- [x] `color: var(--color-secondary);`
+- [ ] `color: custom(--color-secondary);`
+- [ ] `color: func(--color-secondary);`
 
 Points: 1
 
@@ -156,9 +156,9 @@ type: multiple_choice
 
 ## What is `@import` used for?
 
-* [x] It is used to import style rules from other stylesheets.
-* [ ] It is used to import HTML to stylesheets.
-* [ ] It is used to import CSS to HTML.
+- [x] It is used to import style rules from other stylesheets.
+- [ ] It is used to import HTML to stylesheets.
+- [ ] It is used to import CSS to HTML.
 
 Points: 1
 
