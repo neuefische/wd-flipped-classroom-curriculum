@@ -1,16 +1,8 @@
 # HTML Forms
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-| duration | content         |
-| -------- | --------------- |
-| 0:45     | Session         |
-| 1:30     | Active Learning |
-| 0:30     | Recap           |
-
 ## Learning objectives
 
-- [ ] students should be able to create a html form with different types of form fields
+- students should be able to create a html form with different types of form fields
   - input: text, number, etc.
   - select
   - textarea
@@ -18,17 +10,11 @@
   - radio, checkbox
   - various types of inputs and buttons (definitions found in the handout document)
 - [ ] form structure: fieldset, legend
-- [ ] form fields have labels (connected via id)
-- [ ] form semantics
-- [ ] understanding client-side form validation
+- form fields have labels (connected via id)
+- form semantics
+- understanding client-side form validation
 
 ---
-
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
 
 ### Why is the content of today's block that important for the students?
 
@@ -37,19 +23,17 @@
 - Forms need to be accessible to every user:
   - Students need to know how to build an accessible form.
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - Accessibility
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 ### Simple Form
 
@@ -76,13 +60,13 @@ Your HTMl should look like this:
 
 ### Form Validation
 
-- [ ] We can use build in form validation without having to write any JavaScript
-- [ ] Add the `required` attribute to the input field. Go to the browser and show that leaving it empty will lead to an error message when hitting the submit button.
-- [ ] Explain the concept of form validation
-  - [ ] Form fields can be enriched with various attributes
-  - [ ] The attributes define rules for the expected input
-  - [ ] The browser reads these attributes and validates the user's input
-  - [ ] The validation must be successful to trigger the actual form submission
+- We can use build in form validation without having to write any JavaScript
+- Add the `required` attribute to the input field. Go to the browser and show that leaving it empty will lead to an error message when hitting the submit button.
+- Explain the concept of form validation
+  - Form fields can be enriched with various attributes
+  - The attributes define rules for the expected input
+  - The browser reads these attributes and validates the user's input
+  - The validation must be successful to trigger the actual form submission
 
 ### More input types
 
@@ -110,9 +94,9 @@ Your HTMl should look like this:
 </form>
 ```
 
-- [ ] Show that the email input is being validated → the user gets an error message when the `@` sign is missing
-- [ ] Add one more attribute for client side form validation like `minlength` to an input element
-- [ ] Mention that there is more attributes you can use for client side form validation and show the following link: [mdn build-in form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation)
+- Show that the email input is being validated → the user gets an error message when the `@` sign is missing
+- Add one more attribute for client side form validation like `minlength` to an input element
+- Mention that there is more attributes you can use for client side form validation and show the following link: [mdn build-in form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation)
 
 ### Form structure and a11y
 
@@ -145,46 +129,3 @@ Your HTMl should look like this:
 ```
 
 ---
-
-## Process: Challenges
-
-- [ ] Provide the [handout](html-forms.md) and the [challenges](challenges-html-forms.md) to the
-      students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
-
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-input, type=checkbox, fieldset, required, label, required, validation
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.

@@ -1,28 +1,18 @@
 # Capstone Prep
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-Recommended schedule for this session:
-
-| duration | content          |
-| -------- | ---------------- |
-| 0:10     | Introduction     |
-| 2:25     | Preparation Time |
-| 0:10     | Checkout/Wrap-up |
-
 ## Session Guide
 
 The purpose of this preparation slot is for the students to be able to "hit the ground running" once the first Capstone Sprint comes around. The students should be encouraged to get their ducks in a row so they need not find their bearings and rush into things unprepared on Day 1.
 
 ### Learning Objectives
 
-- [ ] Start working on and/or finish up user stories
-  - [ ] create wireframes
-  - [ ] write developer tasks
-  - [ ] ...
-- [ ] define group rules based on their "Manual of Me"
-- [ ] Study the [Capstone Docs](https://web-capstone-docs.neuefische.de/)
-- [ ] Optional: Complete various other preparation activities
+- Start working on and/or finish up user stories
+  - create wireframes
+  - write developer tasks
+  - ...
+- define group rules based on their "Manual of Me"
+- Study the [Capstone Docs](https://web-capstone-docs.neuefische.de/)
+- Optional: Complete various other preparation activities
 
 ### Introduction
 
@@ -76,9 +66,3 @@ In case any group has already finished their preparations, you may suggest the f
 **Team Building Time**
 
 - Do they want to set aside an hour each week for team building measures?
-
-## Process: Challenges
-
-- [ ] Provide the [handout](./capstone-prep.md) and the [challenges](./challenges-capstone-prep.md) to the students
-- [ ] (Briefly) walk them through the challenges
-- [ ] Divide the students into their existing Capstone groups

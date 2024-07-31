@@ -1,27 +1,11 @@
 # Backend Create
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-Recommended schedule for this session:
-
-| duration | content         |
-| -------- | --------------- |
-| 0:45     | Session         |
-| 1:30     | Active Learning |
-| 0:15     | Recap           |
-
 ## Learning objectives
 
-- [ ] Understanding CRUD and REST APIs
-- [ ] Building a Create REST API route
+- Understanding CRUD and REST APIs
+- Building a Create REST API route
 
 ---
-
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
 
 We will pave the way toward implementing a method to create new jokes.
 
@@ -29,16 +13,14 @@ We will pave the way toward implementing a method to create new jokes.
 
 Creating data is an essential part of CRUD operations.
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 How can we implement a feature that allows us to create new jokes and send them to the `jokes`
 collection of our `jokes-database`?
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - Backend API Routes
 - Backend MongoDB
@@ -46,7 +28,7 @@ collection of our `jokes-database`?
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 Use this demo locally by running this command in your Terminal:
 
@@ -62,13 +44,13 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-
 
 ### GET vs. POST and CRUD operations
 
-- [ ] Remind the students that they've already built a `GET` API route as part of the _Backend Read_
-      session.
-- [ ] Inform them that the next step would be building a `POST` API route.
-- [ ] Remind students of the different [CRUD operations using this overview](./assets/CRUD.md).
-- [ ] _Briefly_ remind the students of what a REST API is:
-  - [ ] REST is short for "Representational State Transfer",
-  - [ ] it refers to architectural principles and constraints how to structure your API.
+- Remind the students that they've already built a `GET` API route as part of the _Backend Read_
+  session.
+- Inform them that the next step would be building a `POST` API route.
+- Remind students of the different [CRUD operations using this overview](./assets/CRUD.md).
+- _Briefly_ remind the students of what a REST API is:
+  - REST is short for "Representational State Transfer",
+  - it refers to architectural principles and constraints how to structure your API.
 
 > 💡 This is a very basic and incomplete explanation. If you're interested in learning more about
 > what makes an API RESTful, you can read about it [here](https://restfulapi.net/).
@@ -77,15 +59,15 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-
 
 To start with the database, open MongoDB Atlas and if you not have done so in the Backend MongoDB or the Backend Read session, create
 
-- [ ] a database called _jokes-database_ and
-- [ ] a collection called _jokes_;
-- [ ] [Copy the jokes data](assets/data.json) into your _jokes_ collection by pasting it into the _Insert Document_ window using the view `{}`.
+- a database called _jokes-database_ and
+- a collection called _jokes_;
+- [Copy the jokes data](assets/data.json) into your _jokes_ collection by pasting it into the _Insert Document_ window using the view `{}`.
 
 ### Building a `POST` API route
 
-- [ ] Navigate to `pages/api/index.js`
-- [ ] Implement the code below just under your `GET` request.
-- [ ] Keep in mind that you don't need to include the comments, they're simply an additional guide.
+- Navigate to `pages/api/index.js`
+- Implement the code below just under your `GET` request.
+- Keep in mind that you don't need to include the comments, they're simply an additional guide.
 
 ```js
 //pages/api/index.js
@@ -108,15 +90,15 @@ if (request.method === "POST") {
 > 💡 Note: Since this is the implementation of just the route, it isn't "doing anything" yet.
 > Imagine building a tunnel that isn't currently connected to a road carrying traffic.
 
-- [ ] Explain that the general concept is quite similar to our `GET` method
-- [ ] Keep in mind that theoretically anyone could post a joke to your database at this point, since
-      there's no authorization process and the route isn't secure. We're choosing to ignore this for
-      now.
+- Explain that the general concept is quite similar to our `GET` method
+- Keep in mind that theoretically anyone could post a joke to your database at this point, since
+  there's no authorization process and the route isn't secure. We're choosing to ignore this for
+  now.
 
 ### Building a form
 
-- [ ] Note that we need to build a form to enable our user to submit a joke.
-- [ ] Create the file structure `components/JokeForm/index.js` and add a form like this:
+- Note that we need to build a form to enable our user to submit a joke.
+- Create the file structure `components/JokeForm/index.js` and add a form like this:
 
 ```js
 //components/JokeForm/index.js
@@ -132,7 +114,7 @@ export default function JokeForm() {
 }
 ```
 
-- [ ] Navigate to the `pages/index.js` and render your `JokeForm`:
+- Navigate to the `pages/index.js` and render your `JokeForm`:
 
 ```js
 // pages/index.js
@@ -149,19 +131,19 @@ export default function HomePage() {
 }
 ```
 
-- [ ] Remind the students that, at this point, the form isn't quite functional yet.
+- Remind the students that, at this point, the form isn't quite functional yet.
 
 ### Connecting the `JokeForm` to your `POST` API route
 
-- [ ] Explain that we plan to mutate the jokes state we receive in the JokeList component.
-- [ ] Quickly remind the students about what mutating a state means:
+- Explain that we plan to mutate the jokes state we receive in the JokeList component.
+- Quickly remind the students about what mutating a state means:
   - We are changing the content of a state, e.g. adding an item to a list.
   - Each element in our app that uses this state needs to be updated to reflect this change.
-- [ ] therefore we need to perform two actions:
+- therefore we need to perform two actions:
   1. Sending a request to a specific endpoint for creating a new entry
   2. Revalidating the data from this specific endpoint in any place of the app where the endpoint is used
-- [ ] We are going to use `fetch` for sending the POST request to the endpoint and `mutate` from the useSWR hook for revalidation
-- [ ] Write the handleSubmit function for our form as follows:
+- We are going to use `fetch` for sending the POST request to the endpoint and `mutate` from the useSWR hook for revalidation
+- Write the handleSubmit function for our form as follows:
 
 ```js
 export default function JokeForm() {
@@ -190,63 +172,16 @@ export default function JokeForm() {
 }
 ```
 
-- [ ] Explain that the `useSWR` provides us next to `data`,`isLoading` and `error` with a method called `mutate`.
-- [ ] If `mutate` is called, swr refetches the data for the respective endpoint and triggers a rerender of all components which use this endpoint.
-- [ ] explain what the options mean, that we provide for the `fetch` call:
-  - [ ] method: defines what kind of fetch we will perform
-  - [ ] headers - "Content-Type": informs the server about what kind of data we will send
-  - [ ] body: the data we send to the server transformed into a string.
-- [ ] Highlight, that our jokeData now is send to our API and then is passed to mongoose which adds the joke to our database.
-- [ ] If this fetch was successful, we call `mutate` and trigger the revalidation of the jokes array.
-- [ ] Show that you can now submit jokes via your `JokeForm` and that the `JokeList` gets updated automatically.
+- Explain that the `useSWR` provides us next to `data`,`isLoading` and `error` with a method called `mutate`.
+- If `mutate` is called, swr refetches the data for the respective endpoint and triggers a rerender of all components which use this endpoint.
+- explain what the options mean, that we provide for the `fetch` call:
+  - method: defines what kind of fetch we will perform
+  - headers - "Content-Type": informs the server about what kind of data we will send
+  - body: the data we send to the server transformed into a string.
+- Highlight, that our jokeData now is send to our API and then is passed to mongoose which adds the joke to our database.
+- If this fetch was successful, we call `mutate` and trigger the revalidation of the jokes array.
+- Show that you can now submit jokes via your `JokeForm` and that the `JokeList` gets updated automatically.
 
 > 💡 Note: In the following _Backend Update and Delete_ session, we're going to reuse the `JokeForm` to update a database entry.
 
 ---
-
-### Process: Challenges
-
-- [ ] Provide the [handout](backend-create.md) and the [challenges](challenges-backend-create.md) to
-      the students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
-
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-POST, .mutate()
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.
-
-```
-
-```

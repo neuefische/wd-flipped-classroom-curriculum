@@ -4,20 +4,10 @@
 
 This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro.
 
-- [ ] [Introduce](#active-learning-intro) the topic for 5 - 10 minutes
-- [ ] Share [Challenges](challenges-js-error-handling.md) and [learning document](js-error-handling.md) with the students
+- [Introduce](#active-learning-intro) the topic for 5 - 10 minutes
+- Share [Challenges](challenges-js-error-handling.md) and [learning document](js-error-handling.md) with the students
 
 ## Session Guide
-
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-Recommended schedule for this session:
-
-| duration  | content         |
-| --------- | --------------- |
-| max. 0:10 | Intro           |
-| 2:20      | Active Learning |
-| 0:15      | Recap           |
 
 ## Learning Objectives
 
@@ -28,23 +18,15 @@ Recommended schedule for this session:
 
 ---
 
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
-
 How can we ensure our applications handle errors gracefully and provide a better user experience? We will learn how to manage and handle errors in JavaScript effectively.
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 How can we use JavaScript to catch and handle errors to prevent our application from crashing?
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - JS Basics
 - JS Conditions and Booleans
@@ -67,31 +49,3 @@ How can we use JavaScript to catch and handle errors to prevent our application 
 - Conclude that by the end of this **Active Learning** session, they'll have a solid understanding of error handling techniques in JavaScript, empowering them to write **more robust and reliable code**.
 
 ---
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-Error Handling, try...catch, Custom Errors, Asynchronous Operations, fetch requests
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.

@@ -1,26 +1,12 @@
 # JS Objects and Arrays
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-| duration | content                          |
-| -------- | -------------------------------- |
-| 0:30     | Session Arrays                   |
-| 0:30     | Active Learning Arrays           |
-| 0:30     | Session Objects                  |
-| 1:00     | Active Learning Objects & Arrays |
-| 0:15     | Recap                            |
-
 ## Learning objectives
 
-- [ ] Creating, accessing, and manipulating arrays
-- [ ] Creating, accessing, and manipulating objects
-- [ ] Knowing how to find properties and methods of objects by logging
+- Creating, accessing, and manipulating arrays
+- Creating, accessing, and manipulating objects
+- Knowing how to find properties and methods of objects by logging
 
 ---
-
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
 
 ### Why is the content of today's block that important for the students?
 
@@ -29,16 +15,14 @@
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - Variables
 - Primitive types in JavaScript
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 > 💡 Since this session revolves purely around Javascript, feel free to either create a vanilla Javascript file manually or use the template below.
 
@@ -61,42 +45,42 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
 
 ### Arrays
 
-- [ ] Store multiple values in one variable
-- [ ] Special Object
-- [ ] Access not by key but by **index**
+- Store multiple values in one variable
+- Special Object
+- Access not by key but by **index**
 
 ### Declaring and reading from Arrays
 
-- [ ] You can declare an array using array literals:
+- You can declare an array using array literals:
 
   ```js
   const shoppingList = ["apple", "tomato"];
   console.log(shoppingList);
   ```
 
-- [ ] Each item in the array has an index, which starts at 0
-- [ ] You can access individual items using the bracket notation and the item's index:
+- Each item in the array has an index, which starts at 0
+- You can access individual items using the bracket notation and the item's index:
 
   ```js
   console.log(shoppingList[0]);
   console.log(shoppingList[1]);
   ```
 
-- [ ] You can get the length of an array using the length property:
+- You can get the length of an array using the length property:
 
   ```js
   console.log(shoppingList.length);
   ```
 
-- [ ] Arrays can contain different types of values:
+- Arrays can contain different types of values:
 
   ```js
   const diverseArray = [1, 2, "hello", false];
   const complexArray = [1, 2, ["hello", false], true];
   ```
 
-- [ ] Arrays with mixed types can be confusing to use. It is generally a good idea to use arrays with only one type of value unless you have a good reason to do otherwise.
-- [ ] Nested arrays can be accessed as follows:
+- Arrays with mixed types can be confusing to use. It is generally a good idea to use arrays with only one type of value unless you have a good reason to do otherwise.
+- Nested arrays can be accessed as follows:
 
   ```js
   console.log(complexArray[2][1]);
@@ -104,7 +88,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
 
 ### Manipulating Arrays
 
-- [ ] You can overwrite individual values in an array:
+- You can overwrite individual values in an array:
 
   ```js
   const shoppingList = ["apple", "tomato"];
@@ -112,14 +96,14 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
   console.log(shoppingList);
   ```
 
-- [ ] You can add an element (or multiple elements) to the end of an array:
+- You can add an element (or multiple elements) to the end of an array:
 
   ```js
   shoppingList.push("orange");
   console.log(shoppingList);
   ```
 
-- [ ] You can remove an element from the end of an array:
+- You can remove an element from the end of an array:
 
   ```js
   shoppingList.pop();
@@ -149,26 +133,19 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
    - This command is used to run unit tests, integration tests, etc.
    - The exact action depends on the scripts defined in the `package.json` file.
 
-### Process: Challenge 1
+### Challenge 1
 
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
+Instruct the students to solve **Challenge 1** before proceeding with the session. The remaining challenges should be worked on after the session.
 
 ### Objects
 
-- [ ] Objects store properties (key / value pairs)
-- [ ] Some objects you already know are: `document`, `event`, queried dom elements
-- [ ] Log an object in the dev-tools visiting a website like wikipedia
+- Objects store properties (key / value pairs)
+- Some objects you already know are: `document`, `event`, queried dom elements
+- Log an object in the dev-tools visiting a website like wikipedia
 
 #### Declaring and reading from Objects
 
-- [ ] You can declare an object using an object initializer:
+- You can declare an object using an object initializer:
 
   ```js
   const person = {
@@ -178,19 +155,19 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
   };
   ```
 
-- [ ] You can access the properties using the dot notation:
+- You can access the properties using the dot notation:
 
   ```js
   console.log(person.name);
   ```
 
-- [ ] You can access the properties using the bracket notation:
+- You can access the properties using the bracket notation:
 
   ```js
   console.log(person["name"]);
   ```
 
-- [ ] Objects can be nested:
+- Objects can be nested:
 
   ```js
   const person = {
@@ -206,7 +183,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
   };
   ```
 
-- [ ] Nested values can be accessed like this:
+- Nested values can be accessed like this:
 
   ```js
   console.log(person.address.street);
@@ -214,8 +191,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
 
 #### Manipulating Objects
 
-- [ ] You can change values of object properties by reassigning them using the dot or bracket
-      notation:
+- You can change values of object properties by reassigning them using the dot or bracket
+  notation:
 
   ```js
   person.name = "Max Bla";
@@ -224,14 +201,14 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
   console.log(person.name); // omit
   ```
 
-- [ ] You can add properties in the same way:
+- You can add properties in the same way:
 
   ```js
   person.score = 15;
   console.log(person);
   ```
 
-- [ ] You can delete properties using the delete keyword:
+- You can delete properties using the delete keyword:
 
   ```js
   delete person.score;
@@ -240,7 +217,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
 
 ### Nested Objects / Arrays
 
-- [ ] Arrays can contain objects and vice versa:
+- Arrays can contain objects and vice versa:
 
   ```js
   const peopleArray = [
@@ -263,46 +240,11 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
   };
   ```
 
-- [ ] Access elements via chained dot / bracket notation:
+- Access elements via chained dot / bracket notation:
 
   ```js
   console.log(peopleArray[1].name); // "Alex"
   console.log(user.shoppingCart[0]); // "tomato"
   ```
 
-### Challenges 2 & 3
-
-- [ ] Provide the [handout](js-objects-and-arrays.md) and the
-      [challenges](challenges-js-objects-and-arrays.md) to the students
-- [ ] Open the handout and walk the students through the second and third challenge
-- [ ] Give them ca. 60min for solving these challenges
-
 ---
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-array.length, dot-notation, bracket-notation, nesting, key-value-pair
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.

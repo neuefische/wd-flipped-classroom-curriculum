@@ -1,44 +1,26 @@
 # JS Array Methods 2
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-Recommended schedule for this session:
-
-| duration | content         |
-| -------- | --------------- |
-| 0:45     | Session         |
-| 1:30     | Active Learning |
-| 0:30     | Recap           |
-
 ## Learning objectives
 
-- [ ] Understanding advanced array methods
-  - [ ] `includes`
-  - [ ] `find`
+- Understanding advanced array methods
+  - `includes`
+  - `find`
 
 ---
-
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
 
 As developers, we are often confronted with arrays. In order to process these arrays, we want to
 
 - check whether there is at least one element in an array
 - find a specific object
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 - How do you check whether at least one element is included in an array?
 - How do you find an specific object in an array?
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - JS Functions
 - JS Objects and Arrays
@@ -47,7 +29,7 @@ As developers, we are often confronted with arrays. In order to process these ar
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 Demo Start:
 
@@ -80,12 +62,12 @@ numberOutput.textContent = numberIsIncluded
   : `No, ${numberToCheck} is not included`;
 ```
 
-- [ ] `includes` works on an array (`numbers.includes`)
-- [ ] It consumes a value as an argument
-- [ ] It returns `true`, if the value is found in the array (and stops execution)
-- [ ] It returns `false`, if the value cannot be found
-- [ ] Play along with some different numbers
-- [ ] Optional you can give a number as a second argument (`fromIndex`) to define the index where to search from
+- `includes` works on an array (`numbers.includes`)
+- It consumes a value as an argument
+- It returns `true`, if the value is found in the array (and stops execution)
+- It returns `false`, if the value cannot be found
+- Play along with some different numbers
+- Optional you can give a number as a second argument (`fromIndex`) to define the index where to search from
 
 `includes` works fine with strings as well. Here's an example with strings:
 
@@ -99,8 +81,8 @@ stringOutput.textContent = stringIsIncluded
   : `No, '${stringToCheck}' is not included`;
 ```
 
-- [ ] Play along with some different strings
-- [ ] You can use `fromIndex` as a second argument to start searching from a certain index.
+- Play along with some different strings
+- You can use `fromIndex` as a second argument to start searching from a certain index.
 
 ---
 
@@ -120,56 +102,13 @@ findOutput.textContent = objectToFind
   : "Cannot find any!";
 ```
 
-- [ ] Explain that `find` consumes a callback function that is executed for every element of the array.
-- [ ] This callback function will check a specific condition and needs to return either `true` or `false`
-- [ ] Once the callback function returns true, the execution is stopped and the find function returns the specific object
-- [ ] When no element is found, it returns `undefined`. We have to keep this in mind to avoid an error when rendering an undefined value (we can use optional chaining for this purpose or an if-else statement)
-- [ ] Play along with some different conditions
-- [ ] Point out that we use an `implicit return` in this example. If your callback functions needs to execute more code (e.g. a console.log) you will have to use an `explicit return`
+- Explain that `find` consumes a callback function that is executed for every element of the array.
+- This callback function will check a specific condition and needs to return either `true` or `false`
+- Once the callback function returns true, the execution is stopped and the find function returns the specific object
+- When no element is found, it returns `undefined`. We have to keep this in mind to avoid an error when rendering an undefined value (we can use optional chaining for this purpose or an if-else statement)
+- Play along with some different conditions
+- Point out that we use an `implicit return` in this example. If your callback functions needs to execute more code (e.g. a console.log) you will have to use an `explicit return`
 
 More useful array methods are shown in the handout. They all work in a similar way.
 
 ---
-
-## Process: Challenges
-
-- [ ] Provide the [handout](js-array-methods-2.md) and the
-      [challenges](challenges-js-array-methods-2.md) to the students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
-
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the questions that were posed in the beginning of the session and try to answer them with
-  a few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-includes(), find()
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.

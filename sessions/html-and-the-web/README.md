@@ -9,28 +9,14 @@ This is an Active Learning session for the students. That means that the coach a
 
 ## Session Guide
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-Recommended schedule for this session:
-
-| duration  | content         |
-| --------- | --------------- |
-| max. 0:10 | Intro           |
-| 2:20      | Active Learning |
-| 0:15      | Recap           |
-
 ## Learning objectives
 
-- [ ] An answer to "What is the web?"
-- [ ] How to write HTML
-- [ ] How HTML documents are structured
-- [ ] Understanding and applying semantic HTML
+- An answer to "What is the web?"
+- How to write HTML
+- How HTML documents are structured
+- Understanding and applying semantic HTML
 
 ---
-
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
 
 ### Why is the content of today's block that important for the students?
 
@@ -38,28 +24,24 @@ Recommended schedule for this session:
 - You will have a solid foundation to build upon and expand your knowledge and skills.
 - You will create your first website today, a big step towards becoming a developer!
 
-### Which important problem will we solve today?
-
 - With semantic HTML you will learn how to write better code because
   - it's more accessible
   - it's SEO optimized
   - it's better understandable for other developers
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 - Why do we **want** to write semantic HTML?
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - Optional: Prior knowledge of HTML
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 > ❗️ Before diving into the depths of HTML, ask the students how many of them already have prior
 > knowledge of HTML and how comfortable they are with it. Let them know that any prior understanding of HTML is not a prerequisite to this session.
@@ -126,32 +108,3 @@ Recommended schedule for this session:
 - Remind the students to read the provided material carefully and perhaps take some notes for themselves if they like
 
 ---
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-HTML = HyperText Markup Language, HTML Element, HTML Tag, HTML Attribute, Semantic HTML, `<div>`,
-`<section>`, <>, </>,
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.

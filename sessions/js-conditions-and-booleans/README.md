@@ -1,13 +1,5 @@
 # JS Conditions and Booleans
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-| duration | content         |
-| -------- | --------------- |
-| 0:45     | Session         |
-| 1:30     | Active Learning |
-| 0:30     | Recap           |
-
 ## Learning objectives
 
 - using conditions to control the program flow
@@ -17,12 +9,6 @@
 
 ---
 
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
-
 Most of the time when programming you want to do different things, depending on some kind of
 condition. In this session we will learn how to do that in JavaScript.
 
@@ -31,7 +17,7 @@ condition. In this session we will learn how to do that in JavaScript.
 - Almost all computational problems require some kind of branching or conditional programming.
 - Booleans are the most fundamental building block of all computer science.
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 Computers are electronics. Electronics are build on the principles of zeros and ones that are
 combined using circuits that perform logical operations on them (And-Gate, Or-Gate, etc.). How does
@@ -39,9 +25,7 @@ this concept translate into a higher level language like JavaScript?
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - JS Basics
 - Variables
@@ -49,7 +33,7 @@ this concept translate into a higher level language like JavaScript?
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 Use this demo by running this command in your Terminal:
 
@@ -305,50 +289,3 @@ like in the example.) But you have to be careful, because as far as JavaScript i
 these are falsy: `if(false)`, `if(0)`, `if('')`, `if(null)`, `if(undefined)`.
 
 ---
-
-## Process: Challenges
-
-- [ ] Provide the [handout](js-conditions-and-booleans.md) and the
-      [challenges](challenges-js-conditions-and-booleans.md) to the students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of 2
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
-
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-George Bool, truthy, falsy, strict equality, type coercion, ternary operator, if statement
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.
-
-[^1]:
-    Fun fact: Some languages, like Objective-C, actually use `YES` and `NO` instead of `true` and
-    `false`. ([Source](https://riptutorial.com/objective-c/example/16004/bool))

@@ -1,11 +1,9 @@
 # Capstone Grouping and Setup
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
 ## Learning objectives
 
-- [ ] How to form a team for the capstone phase.
-- [ ] Preparing the project repository for the capstone.
+- How to form a team for the capstone phase.
+- Preparing the project repository for the capstone.
 
 ---
 
@@ -25,20 +23,20 @@ The voting can be conducted in different ways. _You, along with the course manag
 
 ### Voting and Manual of Me
 
-- [ ] Post a slack thread titled **🗳️ Capstone Voting 🗳️**.
-- [ ] Instruct the students to discuss the different projects with each other and vote for their preferred project.
-- [ ] Hand out the **[Manual of Me](assets/manual-of-me.md)** together with the [challenges](challenges-capstone-grouping-and-setup.md).
-- [ ] Give a short [summary](./capstone-grouping-and-setup.md/#manual-of-me) on what a **Manual of Me** is and why it can help the students in the team project.
-- [ ] Give the students ~ 30 / 45 min to finalize their choice and to start working on their **Manual of Me**.
-- [ ] Meet the students again in the course room.
-- [ ] Depending on the chosen voting system, create appropriate capstone groups.
+- Post a slack thread titled **🗳️ Capstone Voting 🗳️**.
+- Instruct the students to discuss the different projects with each other and vote for their preferred project.
+- Hand out the **[Manual of Me](assets/manual-of-me.md)** together with the [challenges](challenges-capstone-grouping-and-setup.md).
+- Give a short [summary](./capstone-grouping-and-setup.md/#manual-of-me) on what a **Manual of Me** is and why it can help the students in the team project.
+- Give the students ~ 30 / 45 min to finalize their choice and to start working on their **Manual of Me**.
+- Meet the students again in the course room.
+- Depending on the chosen voting system, create appropriate capstone groups.
 
 ### Project Setup
 
-- [ ] Share the [web capstone docs](https://web-capstone-docs.neuefische.de/) with the students and give them a quick overview.
-- [ ] Emphasize the **Project Setup** portion and advise the students to follow the setup guide.
-- [ ] Send the students into breakout rooms to work on the project setup.
-- [ ] After a while, visit the students in the breakout rooms and check if they successfully set up the project repository. Check the following:
+- Share the [web capstone docs](https://web-capstone-docs.neuefische.de/) with the students and give them a quick overview.
+- Emphasize the **Project Setup** portion and advise the students to follow the setup guide.
+- Send the students into breakout rooms to work on the project setup.
+- After a while, visit the students in the breakout rooms and check if they successfully set up the project repository. Check the following:
 - A single public repository was created.
 - All Students are invited as collaborators.
 - A project board with the respective columns was created.

@@ -1,28 +1,14 @@
 # JS Functions 1
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-| duration | content         |
-| -------- | --------------- |
-| 0:45     | Session         |
-| 1:30     | Active Learning |
-| 0:30     | Recap           |
-
 ## Learning objectives
 
-- [ ] running Javascript code in Node
-- [ ] writing functions in JavaScript
-- [ ] calling functions
-- [ ] using function parameters
-- [ ] learning what 'scope' is
+- running Javascript code in Node
+- writing functions in JavaScript
+- calling functions
+- using function parameters
+- learning what 'scope' is
 
 ---
-
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
 
 - We don't want to write identical or similar code multiple times. => Which leads to more workload,
   more bugs, less maintainability
@@ -31,20 +17,18 @@
 
 - We will learn one of the most important core concepts of programming languages.
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - We will use all prior JavaScript knowledge.
 - We will talk about variables in the context of functions specifically
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 > 💡 Seeing as how this session doesn't require our usual website architecture, we're presented with a great opportunity to repeat Terminal commands with the students and introduce `node` as a way to run Javascript code.
 
@@ -199,46 +183,3 @@ console.log(localAge); // Error! Variable not available outside of function
 ```
 
 ---
-
-## Process: Challenges
-
-- [ ] Provide the [handout](js-functions-1.md) and the [challenges](challenges-js-functions-1.md) to the
-      students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
-
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-function declaration, function call, parameter, argument, scope
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.

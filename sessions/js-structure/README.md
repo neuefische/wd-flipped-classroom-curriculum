@@ -1,33 +1,17 @@
 # JS Structure
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-Recommended schedule for this session:
-
-| duration | content         |
-| -------- | --------------- |
-| 0:45     | Session         |
-| 1:30     | Active Learning |
-| 0:30     | Recap           |
-
 ## Learning objectives
 
-- [ ] Understanding JavaScript modules
-- [ ] Using import and export statements
-- [ ] Understanding how to structure a JavaScript project
+- Understanding JavaScript modules
+- Using import and export statements
+- Understanding how to structure a JavaScript project
 
 ---
-
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
 
 Modules are a way to organize JavaScript code into separate files. Doing so is very important to
 keep your code manageable. Especially when the size of your code grows.
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 How do you structure your CSS code? (`@import`)
 
@@ -35,16 +19,14 @@ Transferring the knowledge from CSS: How might something similar be done in Java
 
 ---
 
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - JS Functions
 - CSS Structure
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 You can use the following demo for this session:
 
@@ -65,30 +47,30 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/demo-en
 
 ### The Concept of Modules
 
-- [ ] Have a look at the Start Demo's index.js file:
+- Have a look at the Start Demo's index.js file:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/demo-start
 ```
 
-- [ ] Explain that a lot of code accumulated in the main script file and that it would be a good
-      idea to separate it into multiple files
-- [ ] Encourage students to think about which parts of the code belong together semantically
-  - [ ] Helper Functions / Data
-  - [ ] Header
-  - [ ] Author Cards
-- [ ] Explain the concept of separation of concerns: Its about keeping code that is part of the same
-      thing together (in terms of content or functionality).
+- Explain that a lot of code accumulated in the main script file and that it would be a good
+  idea to separate it into multiple files
+- Encourage students to think about which parts of the code belong together semantically
+  - Helper Functions / Data
+  - Header
+  - Author Cards
+- Explain the concept of separation of concerns: Its about keeping code that is part of the same
+  thing together (in terms of content or functionality).
 
 ### Using `export` Statements to Make Code Available to Other Modules
 
-- [ ] Show the named export syntax:
-  - [ ] Identify `const authors` and `function caesarCipher13` as utilities that can be extracted
-        from the `index.js` file.
-  - [ ] Create a `utils` folder.
-  - [ ] Move `authors` to `utils/authors.js` and `caesarCipher13` to `utils/cipher.js`.
-  - [ ] Make sure to include the `input` and `output` variables in the `cipher.js` file.
-  - [ ] Use named exports:
+- Show the named export syntax:
+  - Identify `const authors` and `function caesarCipher13` as utilities that can be extracted
+    from the `index.js` file.
+  - Create a `utils` folder.
+  - Move `authors` to `utils/authors.js` and `caesarCipher13` to `utils/cipher.js`.
+  - Make sure to include the `input` and `output` variables in the `cipher.js` file.
+  - Use named exports:
 
 ```js
 // utils/authors.js
@@ -102,51 +84,51 @@ export function caesarCipher13(string) {
 
 ### Using `import` Statements to Import Code from Other Modules
 
-- [ ] Show how to import functions and variables into the `index.js` file:
-  - [ ] Imports must be at the top of the importing file.
-  - [ ] Note the curly braces `{}` around the name.
-  - [ ] Make sure that the `.js` file extension is present:
+- Show how to import functions and variables into the `index.js` file:
+  - Imports must be at the top of the importing file.
+  - Note the curly braces `{}` around the name.
+  - Make sure that the `.js` file extension is present:
 
 ```js
 import { authors } from "./utils/authors.js";
 import { caesarCipher13 } from "./utils/cipher.js";
 ```
 
-- [ ] Show that the app is broken right now. But why?
+- Show that the app is broken right now. But why?
 
 ### Necessary Setup: `type="module"`
 
-- [ ] Explain that the browser needs to know that you are using JS modules:
-  - [ ] This is done by adding the attribute `type="module"` to the `script` tag of the `index.html`
-        file.
-  - [ ] Note that the `defer` attribute is now obsolete and can be deleted.
+- Explain that the browser needs to know that you are using JS modules:
+  - This is done by adding the attribute `type="module"` to the `script` tag of the `index.html`
+    file.
+  - Note that the `defer` attribute is now obsolete and can be deleted.
 
 ```html
 <script src="./index.js" type="module"></script>
 ```
 
-- [ ] Show that the app is working again.
+- Show that the app is working again.
 
 ### Thinking in Components
 
-- [ ] Remind students that we always want to think in components.
-- [ ] Identify the following components:
-  - [ ] Header
-  - [ ] Author Card (we're cheating a little by not having a CardList component…)
-- [ ] Show students the already existing `components` folder that has `.css` files in it.
-- [ ] Explain that the goal is to colocate the `.js` and `.css` files of a component because they
-      are part of the same concern.
+- Remind students that we always want to think in components.
+- Identify the following components:
+  - Header
+  - Author Card (we're cheating a little by not having a CardList component…)
+- Show students the already existing `components` folder that has `.css` files in it.
+- Explain that the goal is to colocate the `.js` and `.css` files of a component because they
+  are part of the same concern.
 
 #### Header
 
-- [ ] Explain that the `Header` component is a good candidate for a component because it is
-      self-contained.
-- [ ] Wrap all header related `createElement` calls in a function `Header` that returns the `header`
-      element.
-- [ ] Keep the `root.append(header)` call outside of the function.
-- [ ] Call the `Header` function and assign the return value to a variable `header` before the
-      `append` call.
-- [ ] The code should look like this now:
+- Explain that the `Header` component is a good candidate for a component because it is
+  self-contained.
+- Wrap all header related `createElement` calls in a function `Header` that returns the `header`
+  element.
+- Keep the `root.append(header)` call outside of the function.
+- Call the `Header` function and assign the return value to a variable `header` before the
+  `append` call.
+- The code should look like this now:
 
 ```js
 function Header() {
@@ -178,22 +160,22 @@ const header = Header();
 root.append(header);
 ```
 
-- [ ] Show that the code still works, but we have not won much yet.
-- [ ] Move the `Header` function from `index.js` to `components/Header/Header.js`.
-- [ ] Show that `Header.js` now also needs an import from `utils/cipher.js`.
-- [ ] Add add an `export` statement to the `Header` function.
-- [ ] Import the `Header` function into `index.js`.
+- Show that the code still works, but we have not won much yet.
+- Move the `Header` function from `index.js` to `components/Header/Header.js`.
+- Show that `Header.js` now also needs an import from `utils/cipher.js`.
+- Add add an `export` statement to the `Header` function.
+- Import the `Header` function into `index.js`.
 
 #### Author Card
 
-- [ ] Asks students how they would extract the author card into a component that can be rendered for
-      each author in the array.
-- [ ] Repeat the steps from the `Header` component to extract the author card into a component.
-- [ ] Make sure to also move the cipher import. You should also be able to remove it from `index.js`
-      now.
-- [ ] Tell students that we can pass the author data to the component as an argument. → The `Card`
-      function is called once per author! This is a good thing because we reuse the same code for
-      all authors.
+- Asks students how they would extract the author card into a component that can be rendered for
+  each author in the array.
+- Repeat the steps from the `Header` component to extract the author card into a component.
+- Make sure to also move the cipher import. You should also be able to remove it from `index.js`
+  now.
+- Tell students that we can pass the author data to the component as an argument. → The `Card`
+  function is called once per author! This is a good thing because we reuse the same code for
+  all authors.
 
 You should be left with this in `index.js`:
 
@@ -209,15 +191,15 @@ authors.forEach((author) => {
 
 ### The Result
 
-- [ ] Go back to the `index.js` file and show students that the code is now much more clean and
-      simple.
-- [ ] Show that even the code in the modules is self-contained and simpler to understand.
+- Go back to the `index.js` file and show students that the code is now much more clean and
+  simple.
+- Show that even the code in the modules is self-contained and simpler to understand.
 
 ### Optional: Button Component
 
 If there is enough time and the course is interested, you can create another `Button` component, replacing both the decipher button in the Card as well as in the Header component.
 
-- [ ] Inside the `Card.js` file, create another Component called `Button`. Move the lines of code creating the decipher button inside it:
+- Inside the `Card.js` file, create another Component called `Button`. Move the lines of code creating the decipher button inside it:
   ```js
   function Button() {
     const button = document.createElement("button");
@@ -226,7 +208,7 @@ If there is enough time and the course is interested, you can create another `Bu
     button.addEventListener("click", handleDecipherButtonClick);
   }
   ```
-- [ ] The Component doesn't work since it has no access to the handler function. Add an `onClick` parameter and return the `button` element:
+- The Component doesn't work since it has no access to the handler function. Add an `onClick` parameter and return the `button` element:
   ```js
   function Button(onClick) {
     const button = document.createElement("button");
@@ -236,59 +218,16 @@ If there is enough time and the course is interested, you can create another `Bu
     return button;
   }
   ```
-- [ ] Use this component inside the Card component and pass the handler function as an argument.
+- Use this component inside the Card component and pass the handler function as an argument.
   > 💡 You can refer to the callback functions session where we passed functions as arguments
   ```js
   const button = Button(handleDecipherButtonClick);
   ```
-- [ ] Move the `Button` component into its own file. Make sure to `export default` the component and `import` it in the Card.js.
-- [ ] Import the `Button` component in the Header.js. Replace the decipher button inside the `Header` with this component as well:
+- Move the `Button` component into its own file. Make sure to `export default` the component and `import` it in the Card.js.
+- Import the `Button` component in the Header.js. Replace the decipher button inside the `Header` with this component as well:
   ```js
   const button = Button(handleDecipherHeadlineButtonClick);
   ```
-- [ ] Highlight, that by making the listener function a parameter, the same Component can execute different functions and create different behavior for the button.
+- Highlight, that by making the listener function a parameter, the same Component can execute different functions and create different behavior for the button.
 
 > 💡 The callback functions can access the correct `text` variables because they are stored in the **Closure** of the function. (See [this MDN article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) for more information)
-
-## Process: Challenges
-
-- [ ] Provide the [handout](js-structure.md) and the [challenges](challenges-js-structure.md) to the
-      students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
-
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-import, export, named-import, default-import, named-export, default-export, type="module"
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.

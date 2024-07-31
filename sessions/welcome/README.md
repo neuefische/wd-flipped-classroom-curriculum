@@ -1,13 +1,5 @@
 # Welcome
 
-Recommended schedule for this session:
-
-| duration | content         |
-| -------- | --------------- |
-| 1:30     | Session         |
-| 0:00     | Active Learning |
-| 0:00     | Recap           |
-
 ## How to create the Welcome Slides
 
 > 💡 In order to keep the Welcome Session folder clean, please delete your `slides.md` after the presentation.

@@ -1,27 +1,11 @@
 # Backend Update and Delete
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-Recommended schedule for this session:
-
-| duration | content         |
-| -------- | --------------- |
-| 1:00     | Session         |
-| 1:30     | Active Learning |
-| 0:15     | Recap           |
-
 ## Learning objectives
 
-- [ ] Understanding the Update and Delete part of CRUD operations
-- [ ] Being able to implement `UPDATE` and `DELETE` API routes
+- Understanding the Update and Delete part of CRUD operations
+- Being able to implement `UPDATE` and `DELETE` API routes
 
 ---
-
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
 
 We will address that we still need to establish a method to update and delete the data in our backend.
 
@@ -29,19 +13,17 @@ We will address that we still need to establish a method to update and delete th
 
 Updating and deleting data are very important parts of CRUD operations.
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 How can we update our data and how can we delete data points?
 
 ---
 
-## Activate prior knowledge of students
-
 - Backend API Routes
 - Backend Read
 - Backend Create
 
-### Which previously learned concepts will be utilized in this session?
+### Required
 
 - Serverless functions
 - REST API in Next.js
@@ -49,7 +31,7 @@ How can we update our data and how can we delete data points?
 
 ---
 
-## Inform: Session Guide
+## Session Guide
 
 Use this demo locally by running this command in your Terminal:
 
@@ -68,50 +50,50 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-d
 
 ### CRUD: The U and D
 
-- [ ] Remind the students that they have successfully created `READ` and `POST` API routes.
-- [ ] Explain that we need two additional CRUD operations to reach full functionality: `Update` and `Delete`
-- [ ] Highlight that the UI components for handling these two cases have already been created.
-- [ ] Give the students a quick overview about the new code.
+- Remind the students that they have successfully created `READ` and `POST` API routes.
+- Explain that we need two additional CRUD operations to reach full functionality: `Update` and `Delete`
+- Highlight that the UI components for handling these two cases have already been created.
+- Give the students a quick overview about the new code.
 
 ### Reduce, reuse, recycle - reusing our JokeForm component
 
-- [ ] We've chosen to reuse our `JokeForm` component for editing jokes as part of the `Joke` component
-- [ ] we've **already refactored the code** for reusing the form.
+- We've chosen to reuse our `JokeForm` component for editing jokes as part of the `Joke` component
+- we've **already refactored the code** for reusing the form.
 
 #### JokeForm as a Dumb Component
 
-- [ ] Navigate to the `index.js` of the `JokeForm` component.
-- [ ] Show the students that all functional logic has been removed from this component.
-- [ ] Instead, three props are passed to the component: `onSubmit`, `value`, and `isEditMode`
-- [ ] Highlight, that we can now specify the behavior of this Form via these props and that such a component is called "dumb", since it has no internal logic.
+- Navigate to the `index.js` of the `JokeForm` component.
+- Show the students that all functional logic has been removed from this component.
+- Instead, three props are passed to the component: `onSubmit`, `value`, and `isEditMode`
+- Highlight, that we can now specify the behavior of this Form via these props and that such a component is called "dumb", since it has no internal logic.
 
 #### JokeForm for creating Jokes
 
-- [ ] Navigate to the `pages/index.js` page file.
-- [ ] Highlight that the functionality for creating a joke has been moved here:
+- Navigate to the `pages/index.js` page file.
+- Highlight that the functionality for creating a joke has been moved here:
 
   - the `useSWR` hook
   - the `handleSubmit` function which is passed to our generalized `JokeForm`
 
-- [ ] Point out that the form will behave just like in the previous session, only that the logic is defined in a different place.
+- Point out that the form will behave just like in the previous session, only that the logic is defined in a different place.
 
 #### JokeForm for editing Jokes
 
-- [ ] Navigate to the `index.js` of the `Joke` component.
-- [ ] Give a quick overview over the added content of this component:
+- Navigate to the `index.js` of the `Joke` component.
+- Give a quick overview over the added content of this component:
 
   - Two buttons for editing and deleting jokes.
   - Two handler functions `handleEdit` and `handleDelete`
   - The `JokeForm` component receiving the `handleEdit` function as `onSubmit` and the current joke as the `value` prop.
   - A local state `isEditMode` which toggles the rendering of the `JokeForm`.
 
-- [ ] Highlight that we can now program a different behavior for our `JokeForm` in the `handleEdit` function which will be triggered if this instance of the `JokeForm` is submitted.
+- Highlight that we can now program a different behavior for our `JokeForm` in the `handleEdit` function which will be triggered if this instance of the `JokeForm` is submitted.
 
 ### Implementing the Update API Endpoint
 
-- [ ] Navigate to the `/pages/api/[id].js` file.
-- [ ] Implement the code below as part of a `PUT` HTTP request method in your API routes.
-- [ ] The comments included in the code are an additional guide and need not be shown to the students.
+- Navigate to the `/pages/api/[id].js` file.
+- Implement the code below as part of a `PUT` HTTP request method in your API routes.
+- The comments included in the code are an additional guide and need not be shown to the students.
 
 ```js
 // /api/jokes/[id].js
@@ -125,15 +107,15 @@ if (request.method === "PUT") {
 }
 ```
 
-- [ ] Optional: Explain the difference between `PUT` and `PATCH`.
+- Optional: Explain the difference between `PUT` and `PATCH`.
 
   > 💡 Note: `PUT` and `PATCH` are semantically different. According to convention, we would use `PUT` to update our entire document, and `PATCH` to update individual fields. In our demo, we're using `PUT`, simply because we only ever have _one_ field to update.
 
-- [ ] Now navigate back to the `/components/Joke/index.js` to connect the UI to our new API endpoint.
-- [ ] We want to send a "PUT" request to our new API endpoint with fetch, similar to our "POST" request we send when we create a joke.
-- [ ] Since updating an existing joke means we are going to mutate this joke data, we need to destructure `mutate` and call it after we've updated the joke to reflect the changes in the app:
+- Now navigate back to the `/components/Joke/index.js` to connect the UI to our new API endpoint.
+- We want to send a "PUT" request to our new API endpoint with fetch, similar to our "POST" request we send when we create a joke.
+- Since updating an existing joke means we are going to mutate this joke data, we need to destructure `mutate` and call it after we've updated the joke to reflect the changes in the app:
 
-- [ ] Implement the code below.
+- Implement the code below.
 
 ```js
 // /components/Joke/index.js
@@ -161,8 +143,8 @@ async function handleEdit(event) {
 
 ### Implementing the DELETE API route
 
-- [ ] Navigate to `api/jokes/[id].js`.
-- [ ] Include the logic required for our `DELETE` request method.
+- Navigate to `api/jokes/[id].js`.
+- Include the logic required for our `DELETE` request method.
 
 ```js
 if (request.method === "DELETE") {
@@ -172,8 +154,8 @@ if (request.method === "DELETE") {
 }
 ```
 
-- [ ] Navigate to `components/Joke/index.js`.
-- [ ] Complete the `handleDelete` function with the following:
+- Navigate to `components/Joke/index.js`.
+- Complete the `handleDelete` function with the following:
 
 ```js
 async function handleDelete() {
@@ -186,48 +168,7 @@ async function handleDelete() {
 }
 ```
 
-- [ ] Explain that the delete button now works as intended and that we have fully implemented our `DELETE` method.
-- [ ] Showcase that we are now able to delete jokes.
+- Explain that the delete button now works as intended and that we have fully implemented our `DELETE` method.
+- Showcase that we are now able to delete jokes.
 
 ---
-
-## Process: Challenges
-
-- [ ] Provide the [handout](backend-update-and-delete.md) and the
-      [challenges](challenges-backend-update-and-delete.md) to the students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups of \_\_\_
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
-
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.
