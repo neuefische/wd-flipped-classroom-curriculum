@@ -41,11 +41,10 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
 
 ### A Naive Approach to State
 
-- Explain that our goal is for the number on the button to increase by one every time we click
-  it.
+- [ ] State our goal: Increase the number in the headline by one each time it's clicked.
 
-- Ask students to think about what they would need to do to achieve this goal. Collect some of
-  the ideas. Possible answers:
+- [ ] Ask students how they would achieve this. Gather their ideas. Possible answers
+
 
   - a variable that stores the current count
   - a function that increases the count
@@ -55,20 +54,24 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
   > 💡 If someone mentions State (or `useState`, etc.) at this point, tell them that this is exactly
   > what we will learn today, but we will take a quick detour before we get there.
 
-- Add a variable `let count = 0;` to the `Counter` component and use it to display the current
-  count on the button.
+- [ ] Add a variable `let count = 0;` to the `Counter` component and use it to display the current count in the headline.
 
-  - we use `let` because we want to change the value of `count` later
 
-  ```js
-  function Counter() {
-    let count = 0;
-    return <button>You have clicked the button {count} times</button>;
-  }
-  ```
+```js
+function Counter() {
+  let count = 0;
+  return (
+    <div className="counter">
+      <p>You have clicked {count} times</p>
+      <button>Click me</button>
+    </div>
+  );
+}
+```
 
-- Demonstrate the variable is actually shown on the button by changing the value of
-  `let count = 0;` to `let count = 1337;` and see that the button text changes.
+- [ ] Demonstrate the variable is actually shown in the headline by changing the value of
+      `let count = 0;` to `let count = 1337;` and see that the headline text changes.
+
 
 - Explain that we want to increase the count by one every time we click the button, for which we
   need a function that is called when the button is clicked. We can use the `onClick` prop for
@@ -78,42 +81,28 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
   `addEventListener("click", ()=>{})` in vanilla JS. In React we add all event listeners with an
   `on*` prop.
 
-  ```js
-  function Counter() {
-    let count = 0;
-    return (
-      <button
-        onClick={() => {
-          console.log("button click");
-        }}
-      >
-        You have clicked the button {count} times
-      </button>
-    );
+- [ ] Add an onClick handler to the button that calls a handler function
+
+```js
+function Counter() {
+  let count = 0;
+
+  function handleIncreaseCount() {
+    count = count + 1;
+    console.log("Button clicked", count);
   }
-  ```
 
-  > 💡 You can also use a separate `handleClick` function for the `onClick` handler if you prefer.
+  return (
+    <div className="counter">
+      <p>You have clicked {count} times</p>
+      <button onClick={handleIncreaseCount}>Click me</button>
+    </div>
+  );
+}
+```
 
-- Show that the 'button click' message is printed to the console when we click the button.
 
-- We now want to actually increment the counter. Let's try incrementing the count variable
-  directly:
-
-  ```js
-  function Counter() {
-    let count = 0;
-    return (
-      <button
-        onClick={() => {
-          count = count + 1;
-        }}
-      >
-        You have clicked the button {count} times
-      </button>
-    );
-  }
-  ```
+- [ ] The 'button click' message and the incremented `count` variable are logged to the console each time the button is clicked.
 
 - Show that this is not working as expected. Let students ponder for a moment before explaining
   that this does not work because React does not know that the count has changed and therefore
@@ -121,16 +110,18 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
 
 ### React Lifecycle
 
-- Explain that React itself controls when the UI is updated. Everytime React thinks that any
-  part of the UI needs to be updated, it calls the corresponding component function.
-- Until now we were fine with every component function being only called once per element
-  (component instance) because our App was static: it never changed.
-- Now that we want to update the UI (when the button is clicked), we need to tell React that it
-  needs to call the component function again, so we can see the updated _state_.
-- Using a special _setter_ function that we will see in a moment, we can tell React that the
-  state has changed. (In our case that will be that changed `count` value.)
-- Each time the component function is called, all of its variables (props and state) are
-  conceptually frozen in time. We can think of them as being read-only.
+- [ ] Explain that React itself controls when the UI is updated. Everytime React thinks that any
+      part of the UI needs to be updated, it calls the corresponding component function.
+- [ ] Until now we were fine with every component function being only called once per element
+      (component instance) because our App was static: it never changed.
+- [ ] Now that we want to update the UI (when the button is clicked), we need to tell React that it
+      needs to call the component function again, so we can see the updated _state_.
+- [ ] Imagine we could have a function to tell react to update the UI.
+- [ ] Using a special _setter_ function that we will see in a moment, we can tell React that the
+      state has changed. (In our case that will be that changed `count` value.)
+- [ ] Each time the component function is called, all of its variables (props and state) are
+      conceptually frozen in time. We can think of them as being read-only.
+
 
 > 🎞️ Here is an analogy you might find useful:
 >
@@ -151,25 +142,28 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
 
 - Do **not** go into depth about the destructuring syntax
 
-  ```js
-  import { useState } from "react";
+```js
+import { useState } from "react";
 
-  function Counter() {
-    const [count, setCount] = useState(0);
-    return (
-      <button
-        onClick={() => {
-          count = count + 1;
-        }}
-      >
-        You have clicked the button {count} times
-      </button>
-    );
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  function handleIncreaseCount() {
+    count = count + 1;
+    console.log("Button clicked", count);
   }
-  ```
 
-  > 💡 Do not worry about the exact syntax of the `useState` hook for now. If you want you can talk
-  > about it being a hook, but that's not really important for now.
+  return (
+    <div className="counter">
+      <p>You have clicked {count} times</p>
+      <button onClick={handleIncreaseCount}>Click me</button>
+    </div>
+  );
+}
+```
+
+> 💡 Do not worry about the exact syntax of the `useState` hook for now. If you want you can talk
+> about it being a hook, but that's not really important for now.
 
 - Explain that `xyz` and `setXyz` are the preferred naming convention for the state variable and
   the setter function.
@@ -185,30 +179,34 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
 
 - Fix the error by changing `count =` to `setCount()` in the `onClick` handler:
 
-  ```js
-  import { useState } from "react";
+```js
+import { useState } from "react";
 
-  function Counter() {
-    const [count, setCount] = useState(0);
-    return (
-      <button
-        onClick={() => {
-          setCount(count + 1);
-        }}
-      >
-        You have clicked the button {count} times
-      </button>
-    );
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  function handleIncreaseCount() {
+    setCount(count + 1);
+    console.log("Button clicked", count);
   }
-  ```
 
-- Explain that we pass the new value of the state variable to the setter function. In our case
-  we want to increase the count by one, so we pass `count + 1`.
+
+  return (
+    <div className="counter">
+      <p>You have clicked {count} times</p>
+      <button onClick={handleIncreaseCount}>Click me</button>
+    </div>
+  );
+}
+```
+
+- [ ] Explain that we pass the new value of the state variable to the setter function. In our case we want to increase the count by one, so we pass `count + 1`.
 
 - Show that the button text is now updated when we click it. Success! 🎉
 
-- Repeat the points from the [React Lifecycle](#react-lifecycle) section to explain what is
-  happening now that we have the actual code.
+
+- [ ] Repeat the points from the [React Lifecycle](#react-lifecycle) section to explain what is happening now that we have the actual code.
+
 
 > 💡 A point you might already want to bring up is that setter function should only be called
 > as a reaction to an event (like a click, submit or finished network requests). It's bad practice to
@@ -218,11 +216,10 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
 
 - Mention that we can place a component multiple times in our app
 
-- Explain that state is local to each individual instance of a component. Changing a state will
-  only effect this specific component instance
+- [ ] Explain that state is local to each individual instance of a component. Changing a state will only effect this specific component instance
 
-- Demonstrate this placing three instances of the `Counter` in the `App` component and click the
-  buttons
+- [ ] Demonstrate this placing three instances of the `Counter` in the `App` component and click the buttons
+
 
 ```js
 export default function App() {
@@ -238,47 +235,54 @@ export default function App() {
 
 ### Components can have multiple state with different data types
 
-Use this second demo or locally by running this command in your Terminal:
+- [ ] Explain that component can have multiple states (multiple calls of `useState`)
 
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-food-order-start
-```
-
-You can check out the final version of this demo by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-food-order-end
-```
-
-- Explain that component can have multiple states (multiple calls of `useState`)
 
 - Explain that we can store all kinds of data in state (like booleans, numbers, strings, objects
   or arrays).
 
-- Demonstrate both aspects by adding state to the `FoodOrder` component (don't forget to import
-  `useState`)
+- [ ] Demonstrate both aspects by adding another state `isDarkTheme` to the counter.
+
 
 ```js
-const [food, setFood] = useState("❓");
-const [vegan, setVegan] = useState(true);
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  // ... (additional code here)
+
+  return (
+    // JSX code here
+  );
+}
+
 ```
 
-- Call the `set` function on button click
+- [ ] Add a second button with textContent `Toggle Theme` and a corresponding handler function:
 
-```jsx
-<button onClick={() => setFood("🍔")}>
-	<span role="img" aria-label="A hamburger">🍔</span>
-</button>
-<button onClick={() => setFood("🍕")}>
-	<span role="img" aria-label="A pizza">🍕</span>
-</button>
-<button onClick={() => setFood("🌮")}>
-	<span role="img" aria-label="A taco">🌮</span>
-</button>
-```
+- [ ] And adapt the div to make use of the second useState:
 
 ```js
-<button onClick={() => setVegan(!vegan)}> ... </button>
+function Counter() {
+  const [count, setCount] = useState(0);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  function handleIncreaseCount() {
+    setCount(count + 1);
+    console.log("Button clicked", count);
+  }
+  function handleToggleTheme() {
+    setIsDarkTheme(!isDarkTheme);
+  }
+  return (
+    <div className={isDarkTheme ? "counter dark" : "counter"}>
+      <p>You have clicked {count} times</p>
+      <button onClick={handleIncreaseCount}>Click me</button>
+      <button onClick={handleToggleTheme}>Toggle Theme</button>
+    </div>
+  );
+}
 ```
 
 ---
