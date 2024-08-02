@@ -1,34 +1,20 @@
-# Mock Interview 1
+# Mock Interview 1 - ✨Unlock Your Next Job with Practice ✨
 
-## ✨Unlock Your Next Job with Practice ✨
-
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-Recommended schedule for this session:
-
-| duration | content         |
-| -------- | --------------- |
-| 1:15     | Session         |
-| 1:15     | Active Learning |
-| 0:15     | Recap           |
-
-> Note:  It might be beneficial for the coach to ask for a volunteer candidate a day before the session.
 ## Learning objectives
 
-- [ ] Get ready to ace technical interviews
-- [ ] Sharpen your problem-solving and coding skills
-- [ ] Boost your confidence in interviews
-- [ ] Overcome challenges when feeling stuck or experiencing a mental block during an interview
+- Get ready to ace technical interviews
+- Sharpen your problem-solving and coding skills
+- Boost your confidence in interviews
+- Overcome challenges when feeling stuck or experiencing a mental block during an interview
+
+> 💡 It might be beneficial for the coach to ask for a volunteer candidate a day before the session.
+
 
 ---
 
-## Disclaimer: If you'd rather not read, you can watch a recorded session in action [here][video] while enjoying your favorite coffee ☕🎦
-- If interested here is also a [workshop][workshoplink] on technical interviews we conducted earlier.
+## Disclaimer: If you'd rather not read, you can watch a recorded session in action [here](https://drive.google.com/file/d/12aP1psjYGDVQn7uDiixEnu2OvfPDUmsq/view) while enjoying your favorite coffee ☕🎦
+- If interested here is also a [workshop](https://drive.google.com/drive/u/0/folders/1-KEnNk7anbmOHaYiSONRa4vRZYindxuq) on technical interviews we conducted earlier.
   
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
 > 💰 Interviewing is the most
 > profitable skill you can learn! 💰
 
@@ -36,19 +22,15 @@ Recommended schedule for this session:
 
 > Making mistakes during a real interview can be costly and may result in losing the position you're applying for. However, in a mock interview, mistakes are not only welcome but also provide valuable learning opportunities. Embrace the chance to make plenty of mistakes now, as they will help you and others learn and avoid them in real interviews. So, get ready to embrace the mock interview and make mistakes, because the more mistakes you make now, the fewer you'll make in a real interview!
 
-### Which important problem will we solve today?
-
-- Boost your interview confidence and become more proficient in foundational problem-solving and coding skills.
-
 ### Why is the content of today's block that important for the students?
-
+- Boost your interview confidence and become more proficient in foundational problem-solving and coding skills.
 - Today's session is crucial for securing your first position as a software engineer. Mastering interviews is the key to unlocking your next job opportunity!
 
 - Build Interviewing Confidence!
 
 - Your mock interview will be conducted by a friendly senior software engineer and they’ll give you personalized feedback to help you keep improving.
 
-### Pose a question to be answered by the end of the block!
+### Question
 
 - Are you ready for your next interview?
 - What should you do if you feel stuck or experience a mental block during an interview?
@@ -204,51 +186,5 @@ If there is still time left in the 1-hour interview (which has rarely been the c
 5. **Practice Regularly:**
    - Improve your skills through regular practice and learning from different solutions
 
-## Process: Challenges
 
-- [ ] Provide the [handout](mock-interview-1.md) and the [challenges](challenges-mock-interview-1.md) to the
-      students
-- [ ] Open the handout and walk the students through the tasks
-- [ ] Divide the students into groups
-- [ ] Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
 
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-## Give yourself a pat on the back all!
-
-This is just the beginning of your interview journey, and your performance will continue to improve with each opportunity. Embrace the mistakes you make along the way, as they are valuable learning experiences that will propel you forward! Get ready to embark on an exciting adventure of growth and success!
-
-- [ ] Summarize the day by repeating all of the topics that were discussed
-- [ ] Highlight the progress made that day
-- [ ] Encourage the students to repeat what they learned with practical exercises
-- [ ] Remind them to rest :)
-
-## Keywords for Recap:
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.
-
-[video]: https://drive.google.com/file/d/12aP1psjYGDVQn7uDiixEnu2OvfPDUmsq/view?usp=sharing
-[coderunner]: https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner
-[workshoplink]: https://drive.google.com/drive/u/8/folders/1-KEnNk7anbmOHaYiSONRa4vRZYindxuq 
