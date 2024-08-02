@@ -41,7 +41,7 @@
 
 In this session, we will be putting your previously learned JavaScript concepts to the test. The challenges and tasks provided will require you to utilize and apply the foundational coding skills you have acquired so far. This is an opportunity to reinforce your understanding and demonstrate your problem-solving abilities in a practical setting. By actively engaging with the exercises, you will gain confidence and further solidify your knowledge of JavaScript. So get ready to showcase your skills and take your coding abilities to the next level!
 
-## Inform: Session Guide
+## Session Guide
 
 In today's session, we are conducting a mock interview where you play the role of the interviewer and one of the students plays the role of the candidate. Remember, since this is their first interview ever, they may be shy and nervous. Encourage them and make them feel comfortable with making mistakes. Additionally, give the candidate the opportunity to introduce themselves briefly and share their professional background.
 
@@ -77,7 +77,8 @@ We want to write a function that gives us the longest word from an array.
 
 ### Step 2: Coming up with a solution in plain language
 
-- Ask students if they have any ideas of how to solve the above problem with code.  
+- Ask students if they have any ideas of how to solve the above problem with code.
+  
 <details>
 
  <summary>💡Details of the actual challenge:</summary>
@@ -87,7 +88,9 @@ We want to write a function that gives us the longest word from an array.
 - The key to come up with these steps is to make yourself aware what happens in your brain when you solve this task. It helps if you make the input more complicated, i.e. the list consists of a thousand words so you cannot see at a glance which is the longest
 
 </details>
+
 - Ask the students how they would solve this problem with pen and paper
+  
 <details>
  <summary>💡Details on how to probably solve:</summary>
  
@@ -97,6 +100,7 @@ We want to write a function that gives us the longest word from an array.
 4. If it's longer the word on the small piece of paper would be replaced and so on.
 
 </details>
+
 - Students should write down these instructions in plain language in a way so that another person could execute them without making any mistakes. 
 
 <details>
