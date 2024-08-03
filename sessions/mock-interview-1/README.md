@@ -190,5 +190,48 @@ If there is still time left in the 1-hour interview (which has rarely been the c
 5. **Practice Regularly:**
    - Improve your skills through regular practice and learning from different solutions
 
+This approach should be practiced constantly with the students. For this. At the beginning always discuss the task with the students. Make sure the problem is understood. Be very strict about using exact language when coming up with the steps to solve the problem (written as comments in the function body) and about using the correct technical terms when discussing the code. 
+For the first few times come up with the steps in plain English together with the students. At some point though they should be able to come up with a solution themselves. 
 
+
+---
+
+## Process: Challenges
+
+- Provide hands-on challenges that require students to apply the discussed problem-solving strategies and JavaScript concepts.
+- Encourage collaboration among students to foster peer learning.
+
+### Challenge Setup
+
+- Each student will receive a set of problems varying in difficulty.
+- Students will work individually for the first half and then in pairs to discuss and refine their solutions.
+
+### Ground Rules
+
+- Meet again 30 min before lunch break in the classroom.
+- Ask the coaches for help at any time.
+- Always try to help each other.
+- Take a break within the next 1.5 hrs.
+- Keep an eye on Slack.
+
+---
+
+## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
+
+- Revisit the question that was posed at the beginning of the session and try to answer it with a few phrases.
+
+---
+
+## Checkout
+
+> 💡 In case the students seem frustrated, try to find some encouraging words (e.g., remind them of how far they have come already) :)
+
+- Summarize the day by repeating all of the topics that were discussed.
+- Highlight the progress made that day.
+- Encourage the students to practice what they learned with more problems.
+- Remind them to rest :)
+
+## Keywords for Recap:
+
+Problem Solving, Understanding, Planning, Executing, Reviewing, Practice
 
