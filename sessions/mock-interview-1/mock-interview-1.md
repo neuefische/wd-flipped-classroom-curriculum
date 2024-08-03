@@ -1,4 +1,4 @@
-# Mock Interview 1
+# Mock Interview 1 - ✨Unlock Your Next Job with Practice ✨
 
 ## Learning Objectives
 
