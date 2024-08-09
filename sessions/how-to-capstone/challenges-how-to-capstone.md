@@ -14,7 +14,7 @@ We prepared a fresh repository with a feature branch for you. Your task is to re
    git switch feature/products-list
    ```
 
-3. switch back to main:
+3. Switch back to main:
 
    ```shell
    git switch main
