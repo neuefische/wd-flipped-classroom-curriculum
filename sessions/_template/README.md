@@ -1,29 +1,45 @@
-# Session Name
+# [Session Title]
 
-## Learning objectives
+## Learning Objectives
 
-- [ ]
+- [Objective 1]
+- [Objective 2]
+- ...
 
----
+## Requirements
 
-### Why is the content of today's block that important for the students?
+- [Prerequisite 1]
+- [Prerequisite 2]
+- ...
 
-### Question
+## Demo
 
----
+### Start
 
-### Required
+```
+[Command to download the start version of the demo code]
+```
+
+### End
+
+```
+[Command to download the end version of the demo code]
+```
 
 ---
 
 ## Session Guide
 
-### Section 1
+[Introduce the topic by explaining its relevance and importance, possibly through a common problem or challenge.]
+
+> [Pose a question or discussion prompt that encourages students to think critically about the topic and its application.]
+
+### [Custom Section 1]
 
 -
 -
 
-### Section 2
+### [Custom Section 2]
 
 -
-- ***
+-
