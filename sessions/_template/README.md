@@ -30,7 +30,7 @@
 
 ## Session Guide
 
-[Introduce the topic by explaining its relevance and importance, possibly through a common problem or challenge.]
+[Introduce the topic by explaining its relevance and importance, possibly through a common problem or challenge. Activate prior knowledge by connecting the topic to concepts the students have already learned.]
 
 > [Pose a question or discussion prompt that encourages students to think critically about the topic and its application.]
 

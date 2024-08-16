@@ -1,59 +1,48 @@
 # CSS Structure
 
-## Learning objectives
+## Learning Objectives
 
 - Understanding the CSS cascade
 - Structuring CSS to improve maintainability and readability
-- `@import` to import different CSS stylesheets in one file
-- CSS practical strategies
-- CSS custom properties (CSS variables)
+- Using `@import` to import different CSS stylesheets in one file
+- Applying practical CSS strategies for better structure
+- Utilizing CSS custom properties (CSS variables)
 
----
-
-- When writing CSS code things get messy really fast
-- We need methods to organize our CSS code to avoid bugs and improve maintainability
-
-### Why is the content of today's block that important for the students?
-
-- You need a basic understanding on how different CSS declarations are applied all together
-
-### Question
-
-How can we write well-structured, more readable and maintainable CSS code with fewer bugs?
-
----
-
-### Required
+## Requirements
 
 - HTML Basics
 - CSS Basics
 
-You can ask these questions:
+## Demo
 
-- When you wrote CSS code before, which questions did you ask yourself while doing it?
-  - How should I name this class?
-  - Where should I put the code within the CSS file?
-  - Why is this style declaration overwritten?
-  - Can I avoid changing a certain color in different places manually?
-
----
-
-## Session Guide
-
-Use this demo
-or locally by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/demo-start
 ```
 
-You can check out the final version of this demo by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/demo-end
 ```
 
 ---
+
+## Session Guide
+
+Writing CSS code can quickly become messy and hard to manage. To create well-structured, readable, and maintainable CSS, it’s essential to understand how different CSS declarations interact and how to organize your code effectively. This session will focus on strategies for achieving these goals, which are crucial for reducing bugs and improving efficiency.
+
+> How can we write well-structured, more readable and maintainable CSS code with fewer bugs?
+
+As you think about structuring your CSS, consider these common questions:
+
+- How should I name this class?
+- Where should I put the code within the CSS file?
+- Why is this style declaration being overwritten?
+- Can I avoid changing a certain color in multiple places manually?
+
+Understanding how different CSS declarations interact and how to structure your CSS properly is key to answering these questions.
 
 ### CSS Cascade
 
@@ -293,5 +282,3 @@ body {
 - Important: custom properties must start with two dashes & naming is case sensitive
 - Change the respective properties to apply custom values
 - Optional: discuss inheritance and how to overwrite custom properties
-
----

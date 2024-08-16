@@ -1,53 +1,48 @@
 # CSS Positioning
 
-## Learning objectives
+## Learning Objectives
 
-- types of positioning
+- Understanding different types of positioning:
   - `static`
   - `relative`
   - `absolute`
   - `fixed`
   - `sticky`
-- all positioning values
+- Knowing all positioning values:
   - `top`
   - `right`
   - `bottom`
   - `left`
-- the basic usage of `z-index`
+- Learning the basic usage of `z-index`
 
----
+## Requirements
 
-### Why is the content of today's block that important for the students?
+- CSS Basics
+- CSS Selectors
 
-Elements on a web page are positioned according to the normal document flow, i.e. the order in the HTML document. Sometimes, we want to position certain elements outside of the normal document flow. One way to accomplish this is to use the `position` property.
+## Demo
 
----
-
-### Required
-
-CSS Basics, CSS Selectors
-
----
-
-## Session Guide
-
-Use the [Demo Start](https://github.com/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-start) to guide through the session and demonstrate the behavior of the `position` property.
-
-You can use this demo by running this command in your terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/demo-start
 ```
 
-See [Demo End](https://github.com/neuefische/web-exercises/tree/main/sessions/css-positioning/demo-end) for the finalized version of the Demo.
-
-You can check the final version by running this command in your terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/demo-end
 ```
 
-### Intro
+---
+
+## Session Guide
+
+Elements on a web page are positioned according to the normal document flow, which follows the order of elements in the HTML document. However, there are times when we need to position elements outside of this normal flow. One way to accomplish this is to use the `position` property.
+
+> How can we position elements outside of the normal document flow? In what scenarios would you need to move an element outside of the normal document flow?
+
+### Recap: Document Normal Flow
 
 - Remind the students of what the normal document flow is.
 - Normal flow describes the layout of any inline and block elements part of the document before any changes are made.
@@ -216,5 +211,3 @@ To explain the `z-index`, prepare the following:
   - `z-index` affects only `non-static elements`.
 
 - ... and you're done! 🚀
-
----

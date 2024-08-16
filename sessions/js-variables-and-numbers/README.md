@@ -1,49 +1,42 @@
-# Session name
+# JS Variables and Numbers
 
-## Learning objectives
+## Learning Objectives
 
-- knowing the difference between `var`, `let` and `const`
-- understanding the different data types
-- using basic math operations
+- Knowing the difference between `var`, `let` and `const`
+- Understanding the different data types
+- Using basic math operations
 
----
-
-- how to "remember" values in JavaScript, so that we can use them later on
-
-### Why is the content of today's block that important for the students?
-
-Variables are a basic building block for writing reusable logic. Write code once and use it as often
-as you need to.
-
-### Question
-
----
-
-### Required
+## Requirements
 
 - JS Basics
-- math knowledge from everyone's time as a student in school
+- Basic math knowledge from school
+
+## Demo
+
+There is no pre-built demo for this session.
 
 ---
 
 ## Session Guide
 
+Variables are a fundamental building block in programming that allow us to store and reuse values in our code. By understanding how to work with variables, you can write reusable logic that can be applied in different parts of your application. This is a key skill for creating efficient and maintainable code.
+
+> How do you "remember" values in JavaScript, so that you can use them later on?
+
 ### Variables
 
-- variables are a storage for values
-- we can declare variables and then use them as if they were values
-  - we don't have to remember the values
-  - different parts of our application can exchange the values behind variables, so the code works
-    for every value (we don't have to write new code, only if a value changes e.g. some user input)
-- we can declare a variable using the **const** keyword:
+- Variables are a storage for values.
+- We can declare variables and then use them as if they were the values themselves:
+  - We don't have to remember the values.
+  - Different parts of our application can exchange the values behind variables, so the code works for every value (we don't have to write new code, only if a value changes e.g., some user input).
+- We can declare a variable using the **const** keyword:
 
 ```js
 const myNumber = 42;
 console.log(myNumber);
 ```
 
-- The **const** keyword is used to declare variables that cannot change their value. Use it per
-  default.
+- The **const** keyword is used to declare variables that cannot change their value. Use it per default.
 
 - If you need to change the value of a variable, use the **let** keyword:
 
@@ -58,20 +51,20 @@ console.log(myMutableNumber);
 
 ### Variable Naming
 
-- Use camel case: `myMutableNumber` instead of `mymutablenumber` or `my-mutable-number`
-- Use descriptive names and don't shorten words: `followButton` instead of `flwBtn`
+- Use camelCase: `myMutableNumber` instead of `mymutablenumber` or `my-mutable-number`.
+- Use descriptive names and don't shorten words: `followButton` instead of `flwBtn`.
 
 ### Primitive Data Types
 
 - In JavaScript there are 7 different primitive data types:
 
-- **string**: A sequence of characters, for example: `const name="max";`
-- **number**: A number, for example: `const length=42;` or `const price=4.95;`
-- **boolean**: A binary value which is either true or false: `const isHungry=true;` or
+- **String**: A sequence of characters, for example: `const name="max";`
+- **Number**: A number, for example: `const length=42;` or `const price=4.95;`
+- **Boolean**: A binary value which is either true or false: `const isHungry=true;` or
   `const done=false;`
-- **null**: A value that represents the intentional absence of a value. Typically set by a
+- **Null**: A value that represents the intentional absence of a value. Typically set by a
   developer.
-- **undefined**: A value that represents the absence of a value, because no value has been
+- **Undefined**: A value that represents the absence of a value, because no value has been
   defined or given yet.
 
 - There are two more data types: **BigInt** and **Symbol**. If the students are interested they
@@ -87,7 +80,7 @@ const amountToBeCharged = oneTimeFee + monthlyFee; // result will be "512"
 console.log(amountToBeCharged);
 ```
 
-### Mathematical operators
+### Mathematical Operators
 
 - `+`: Adds numbers
   ```js
@@ -96,7 +89,7 @@ console.log(amountToBeCharged);
   const amountToBeCharged = oneTimeFee + monthlyFee; // result will be 17
   console.log(amountToBeCharged);
   ```
-- `-`: Substracts numbers
+- `-`: Subtracts numbers
   ```js
   const mortgageSum = 20000;
   const alreadyPayed = 5000;
@@ -117,7 +110,7 @@ console.log(amountToBeCharged);
   const studentsPerGroup = students / groups; // result will be 3
   console.log(studentsPerGroup);
   ```
-- `**`: Potentiates numbers
+- `**`: Raises a number to the power of another number
   ```js
   console.log(2 ** 10); // will log 1024
   ```
@@ -164,5 +157,3 @@ console.log(amountToBeCharged);
   price--;
   console.log(price); // will log 7
   ```
-
----

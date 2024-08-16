@@ -1,11 +1,11 @@
 # CSS Flexbox
 
-## Learning objectives
+## Learning Objectives
 
 - Understanding the purpose of flexbox:
   - Let items fill out the possible space in their container
   - Distributing elements for different screen sizes
-  - Make the website more responsive with flexbox
+  - Making the website more responsive with flexbox
 - Understanding the most important flexbox properties:
   - `justify-content`
   - `align-items`
@@ -14,57 +14,35 @@
   - `gap`
 - Knowing the difference between `main-axis` and `cross-axis`
 
----
-
-- In a normal document flow block-level elements are displayed below each other.
-- Altering this behavior is important to realize an appealing layout with a well-defined visual
-  structure that can be consumed easier by users.
-- In addition elements should be distributed on the page based on the viewport size to make use of
-  the available space.
-
-### Why is the content of today's block that important for the students?
-
-- It is possible to distribute elements on the page with traditional ways of styling (e.g. float,
-  position, margin).
-- However, modern layouts consist of many reuseable parts and need to respond to different viewport
-  sizes.
-- This would be hard to implement with such tools and leads to very complex and inflexible code.
-
-### Question
-
-How can we create a horizontal navigation bar that adjusts to the viewport's width by increasing the
-space between the navigation links?
-
----
-
-### Required
+## Requirements
 
 - HTML Basics
 - CSS Basics
-- CSS box model
+- CSS Box Model
 
-You can ask these questions:
+## Demo
 
-- Have you ever tried to align elements besides each other?
-- Have you ever tried to center an element horizontally and vertically within a parent element?
-
----
-
-## Session Guide
-
-### Document Normal Flow
-
-Use this demo by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-start
 ```
 
-You can check out the final version of this demo by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-end
 ```
+
+---
+
+## Session Guide
+
+In a normal document flow, block-level elements are displayed below each other. While this default behavior is useful, it often needs to be adjusted to create visually appealing layouts that are easy for users to navigate. Traditional styling methods like `float`, `position`, and `margin` can be used to distribute elements on a page, but these methods become increasingly complex and inflexible, especially when dealing with modern, responsive layouts. Modern web designs consist of many reusable parts (components) that need to adapt seamlessly to different screen sizes. Flexbox offers a powerful solution to these challenges by providing a flexible and efficient way to control the layout of elements based on the available space.
+
+> How can we create a horizontal navigation bar that adjusts to the viewport’s width by increasing the space between the navigation links?
+
+### Document Normal Flow
 
 - Show the code and the normal document flow of the demo.
 - Note what we want to achieve:
@@ -133,5 +111,3 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-end
 - `flex-wrap`: Flex items can wrap into another row instead of being squashed into one row
   - `nowrap` (default): All flex items will be on one line.
   - `wrap`: Flex items will wrap onto multiple lines, from top to bottom.
-
----

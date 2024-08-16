@@ -1,45 +1,34 @@
 # Git Advanced
 
-## Learning objectives
+## Learning Objectives
 
-- deepen understanding of git in general
+- Deepening the understanding of Git commands:
   - `git fetch`
   - `git pull`
-- understand why and how git conflicts happen
-- know how to combine branches:
-  - `git merge`
-- know how to resolve git conflicts
+- Understanding why and how Git conflicts happen
+- Learning how to combine branches using `git merge`
+- Knowing how to resolve Git conflicts
 
----
-
-### Why is the content of today's block that important for the students?
-
-When working on a feature in a team project, your team members might have finished their feature and
-merged it into main before you do.
-
-In this situation, how do you integrate approved changes to your current feature branch? How do you
-handle merge conflicts?
-
-### Question
-
----
-
-### Required
+## Requirements
 
 - Shell Basics
 - Git Basics
 - Git CLI and Remote
 - Git Branches and PRs
 
+## Demo
+
+There is no pre-built demo for this session. You will set up a local Git repository and connect it to GitHub during the session using the commands provided in the session guide.
+
 ---
 
 ## Session Guide
 
-> 💡 During this session you'll set up a local demo repository and connect it to GitHub. For
-> illustration purposes you should create the repo on the fly using the commands described in the
-> session guide.
+When working on a feature in a team project, your team members might finish their features and merge them into the main branch before you complete yours. In this situation, how do you integrate the approved changes into your current feature branch? And how do you handle merge conflicts that arise during this process? This session will explore these scenarios and teach you how to manage them effectively.
 
-### How do we end up with merge conflicts?
+> How can you resolve conflicts that arise when merging branches, and what are the best practices for combining changes in a team project?
+
+### How Do We End Up with Merge Conflicts?
 
 - In your web projects folder, create a new folder and initialize a new git repository
   - `mkdir git-advanced`
@@ -105,7 +94,7 @@ console.log("Hello World");
 - Explain that `greet-coach` and `main` both have changes on the same line and that git doesn't
   know how to merge them automatically. This is what git calls a merge conflict.
 
-### How to solve conflicts using `merge`
+### How to Resolve Conflicts Using `merge`
 
 - Explain that to resolve the merge conflict, we need to combine the to branches manually and
   that there are different strategies to do so.
@@ -151,5 +140,3 @@ console.log("Hello World");
 
 - Show the pull request on GitHub again to demonstrate that it can now be merged, merge it and
   delete the branch.
-
----

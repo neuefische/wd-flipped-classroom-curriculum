@@ -1,53 +1,43 @@
 # JS Conditions and Booleans
 
-## Learning objectives
+## Learning Objectives
 
-- using conditions to control the program flow
-- understanding what booleans and truthy/falsy values are
-- working with comparison and logical operators
-- writing ternary expressions
+- Using conditions to control the program flow
+- Understanding what booleans and truthy/falsy values are
+- Working with comparison and logical operators
+- Writing ternary expressions
 
----
-
-Most of the time when programming you want to do different things, depending on some kind of
-condition. In this session we will learn how to do that in JavaScript.
-
-### Why is the content of today's block that important for the students?
-
-- Almost all computational problems require some kind of branching or conditional programming.
-- Booleans are the most fundamental building block of all computer science.
-
-### Question
-
-Computers are electronics. Electronics are build on the principles of zeros and ones that are
-combined using circuits that perform logical operations on them (And-Gate, Or-Gate, etc.). How does
-this concept translate into a higher level language like JavaScript?
-
----
-
-### Required
+## Requirements
 
 - JS Basics
-- Variables
-- Variable Types
+- JS Variables and Numbers
 
----
+## Demo
 
-## Session Guide
-
-Use this demo by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-start
 ```
 
-You can check out the final version of this demo by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-end
 ```
 
-### Conditional programming
+---
+
+## Session Guide
+
+Most of the time when programming you want to do different things, depending on some kind of
+condition. In this session we will learn how to do that in JavaScript.
+
+Most of the time, when programming, you want to do different things depending on some kind of condition. In this session, we will learn how to control the flow of a program in JavaScript using conditions. Understanding how to work with booleans and conditions is crucial because almost all computational problems require some kind of branching or conditional logic. Booleans are the most fundamental building block of all computer science.
+
+> How can we make decisions in our code that allow different outcomes based on varying conditions? How do true and false values help us control the flow of a program?
+
+### Conditional Programming
 
 Tell students a story:
 
@@ -68,8 +58,7 @@ let carrots = 2;
 carrots = carrots + 2;
 ```
 
-Ask students if this code does what the story describes. You should come to the conclusion, that
-this code `unconditionally` adds two carrots.
+Ask students if this code does what the story describes. You should come to the conclusion, that this code `unconditionally` adds two carrots.
 
 Tell students, that you can write an `if-statement` in JavaScript, that can kinda be read like a
 sentence.
@@ -113,10 +102,9 @@ Feel free to add a `console.log(carrots)` and experiment with different values.
 Explain that this is called a Boolean value (after George Bool) and that it only has two states:
 `true` or `false`.
 
-### Else case
+### Else Case
 
-Suppose you wanted to take the carrots away from the child, when in fact it would _not_ help to
-clean the kitchen.
+Suppose you wanted to take the carrots away from the child, when in fact it would _not_ help to clean the kitchen.
 
 Modify the story from above like this:
 
@@ -142,7 +130,7 @@ Explain that the optional `else` block does not have a condition (`()`) and alwa
 Explain that executing different code based on a `condition` is called `branching`. And that we just
 made our first full `if/else-statement`.
 
-### Creating booleans from other values
+### Creating Booleans from Other Values
 
 Explain that a static `true` or `false` by itself is seldomly helpful.
 
@@ -150,8 +138,7 @@ Modify the scenario again:
 
 > If the kid cleaned more than 3 dishes, it gets the extra carrots.
 
-Explain that you now need a variable to track how many dishes have been cleaned and that from that
-we have to create a boolean variable.
+Explain that you now need a variable to track how many dishes have been cleaned and that from that we have to create a boolean variable.
 
 To create it we have to check if the cleaned dishes counter is `larger than 3`.
 
@@ -196,14 +183,11 @@ More comparison operators will be in the handout.
 
 > 💡 This is a good place to ask for questions or take a quick 1 min break.
 
-### The ternary operator
+### The Ternary Operator
 
-Sometimes it can be cumbersome to write lengthy `if/else-statements`. Especially if we do small
-things like changing the value of one variable. Explain that there is a shorter way. We can write a
-conditional `expression`.
+Sometimes it can be cumbersome to write lengthy `if/else-statements`. Especially if we do small things like changing the value of one variable. Explain that there is a shorter way. We can write a conditional `expression`.
 
-Change up the code a little bit and ensure/discuss that we have not changed the functionality (no
-ternary yet).
+Change up the code a little bit and ensure/discuss that we have not changed the functionality (no ternary yet).
 
 ```js
 let carrots = 2;
@@ -223,8 +207,7 @@ carrots = carrots + extraCarrots;
 
 Acknowledge that this looks way more cumbersome than before.
 
-Explain that `if` is a `statement` and not an `expression`. That means we cannot use it in places
-were we can only use expressions (e.g. when assigning something to a variable).
+Explain that `if` is a `statement` and not an `expression`. That means we cannot use it in places were we can only use expressions (e.g. when assigning something to a variable).
 
 The `ternary` operator can help here. It is best seen in action:
 
@@ -238,14 +221,11 @@ let extraCarrots = kidDidHelpCleaningTheKitchen ? 2 : -1;
 carrots = carrots + extraCarrots;
 ```
 
-The ternary expression always follows the formula: `condition ? value if true : value if false`. It
-evaluates to one of the values. And it can be assigned just like any other expression.
+The ternary expression always follows the formula: `condition ? value if true : value if false`. It evaluates to one of the values. And it can be assigned just like any other expression.
 
-Now our code looks much smaller. But it is important to acknowledge that it is not always more
-readable than using an `if/else-statement`.
+Now our code looks much smaller. But it is important to acknowledge that it is not always more readable than using an `if/else-statement`.
 
-Since expressions can be composed together, our code can be even shorter by using less intermediate
-variables, but it then becomes even less readable and loses intent.
+Since expressions can be composed together, our code can be even shorter by using less intermediate variables, but it then becomes even less readable and loses intent.
 
 ```js
 let carrots = 2;
@@ -254,14 +234,11 @@ const dishesCleaned = 4;
 carrots = carrots + (dishesCleaned > 3 ? 2 : -1);
 ```
 
-Compare this with the last version were we used an `if/else-statement` and ask students which
-version seems more readable to them. Explain that readability is much more important than short and
-clever solutions.
+Compare this with the last version were we used an `if/else-statement` and ask students which version seems more readable to them. Explain that readability is much more important than short and clever solutions.
 
-### Type coercion and truthy / falsy
+### Type Coercion and Truthy / Falsy
 
-Explain that in places where JavaScript needs a boolean variable but we give it any other variable
-type it tries to guess what boolean value would best describe whatever we specified.
+Explain that in places where JavaScript needs a boolean variable but we give it any other variable type it tries to guess what boolean value would best describe whatever we specified.
 
 This is called `type coercion` in general. Show students this example:
 
@@ -275,8 +252,7 @@ if (carrots) {
 
 Here `carrots` has the value `4`, so we basically are telling JavaScript `if(4)`.
 
-The value `4` is coerced to `true`. In fact any number that is not `0` will be interpreted as
-`true`.  
+The value `4` is coerced to `true`. In fact any number that is not `0` will be interpreted as `true`.  
 The set of values that is interpreted as `true` is called "truthy".
 
 If `carrots` were `0` (change the code to show students) it's value would coerce to `false`.  
@@ -284,8 +260,4 @@ The set of values that is interpreted as `false` is called "falsy".
 
 A more complete list of values that are truthy and falsy can be found in the handout.
 
-Explain that this concept can be very helpful, for example when checking if a value "exists". (Just
-like in the example.) But you have to be careful, because as far as JavaScript is concerned all of
-these are falsy: `if(false)`, `if(0)`, `if('')`, `if(null)`, `if(undefined)`.
-
----
+Explain that this concept can be very helpful, for example when checking if a value "exists". (Just like in the example.) But you have to be careful, because as far as JavaScript is concerned all of these are falsy: `if(false)`, `if(0)`, `if('')`, `if(null)`, `if(undefined)`.

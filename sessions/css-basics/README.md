@@ -1,49 +1,39 @@
 # CSS Basics
 
-## Learning objectives
+## Learning Objectives
 
-- having a general understanding of the purpose of CSS
-- knowing what Cascading Style Sheets means
-- understanding the fundamentals of CSS: CSS syntax, selectors, box model,
+- Having a general understanding of the purpose of CSS
+- Knowing what Cascading Style Sheets means
+- Understanding the fundamentals of CSS: CSS syntax, selectors, box model,
   inline & block elements
-- linking stylesheets to the HTML document
-- Introduce the Developer Tools in the browser
+- Linking stylesheets to the HTML document
+- Getting to know the Developer Tools in the browser
 
----
-
-How can we style our HTML elements as efficiently as possible.
-
-### Why is the content of today's block that important for the students?
-
-We often need to change the look of our HTML elements to make them fit to a design. And we want to be able to apply these stylings to different elements to have a common look and to avoid repetitive code.
-
-### Question
-
-How can I make it that the same stylings apply to multiple elements?
-
----
-
-We should not assume that students already have prior knowledge of CSS. But you can go into it knowing that we've already learned how to structure our web page with HTML and will now understand how to style those elements.
-
-### Required
+## Requirements
 
 - HTML Basics
 
----
+## Demo
 
-## Session Guide
-
-Use this demo by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/demo-start
 ```
 
-You can check out the final version of this demo by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/demo-end
 ```
+
+---
+
+## Session Guide
+
+Now that we know how to structure our web pages with HTML, it’s time to learn how to style those elements with CSS. When building web pages, we often need to change how our HTML elements look to match a design. CSS allows us to efficiently apply styles to multiple elements, ensuring our page looks consistent without repeating the same code over and over.
+
+> How can you style HTML elements as efficiently as possible? How can you apply the same styles to multiple elements on a web page without repeating code?
 
 ### What is CSS?
 
@@ -280,5 +270,3 @@ h1 {
   border-radius: 8px;
 }
 ```
-
----

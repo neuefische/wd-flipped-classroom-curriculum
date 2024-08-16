@@ -1,61 +1,49 @@
 # JavaScript Basics
 
-## Learning objectives
+## Learning Objectives
 
-- understand what JavaScript is
-- understand how to use `querySelector`
-- add, remove and toggle CSS classes
-- understand events and how to use `addEventListener`
-- get to know the JS console, work with `console.log()` / `console.clear()`
+- Understanding what JavaScript is
+- Understanding how to use `querySelector`
+- Adding, removing and toggling CSS classes
+- Understanding events and how to use `addEventListener`
+- Getting to know the JS console, working with `console.log()` / `console.clear()`
 
-> 💡 Get dynamic... ;)
-
-- What is your idea of interactivity or dynamic actions on a website?
-
-- Bringing action and dynamics to a website
-- get an idea of the power (and the pitfalls) of JavaScript
-- get an insight on its importance as a fundamental development skill
-
-### Why is the content of today's block that important for the students?
-
-- JavaScript is among the first three most in-demand programming languages, knowledge is mandatory
-  for fullstack web developers
-- The most used development libraries and frameworks are based on JavaScript, from backend to
-  frontend
-
----
-
-### Required
+## Requirements
 
 - HTML Basics
 - CSS Basics
 - CSS Selectors
 
----
+## Demo
 
-## Session Guide
-
-Use this demo by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics/demo-start
 ```
 
-You can check out the final version of this demo by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics/demo-end
 ```
 
-### Short introduction of what JavaScript is (5 min max)
+---
+
+## Session Guide
+
+JavaScript is a key technology that brings interactivity and dynamics to a website. It is one of the most in-demand programming languages, essential for full-stack web developers. Understanding JavaScript is fundamental, as it forms the basis of many popular development libraries and frameworks. In this session, you will get an idea of the power (and the pitfalls) of JavaScript.
+
+> What comes to mind when you think about interactivity or dynamic actions on a website?
+
+### Short Introduction of What JavaScript Is (5 min max)
 
 - Explain why JavaScript is needed: **Makes web pages interactive**
 - Explain **ECMAScript 6**:
-  - ECMAScript is the JavaScript standard
-  - ECMAScript 6 is the second major revision to JavaScript and was published in 2015
-- Optional: Historical background to the `naming of JavaScript` (JavaScript is not Java), for
-  reference:
-  [The history of JavaScript](https://www.springboard.com/blog/data-science/history-of-javascript/)
+  - ECMAScript is the JavaScript standard.
+  - ECMAScript 6 is the second major revision to JavaScript and was published in 2015.
+- Optional: Provide a brief historical background on the `naming of JavaScript` (JavaScript is not Java), for
+  reference: [The history of JavaScript](https://www.springboard.com/blog/data-science/history-of-javascript/).
 
 ### Console
 
@@ -73,17 +61,15 @@ console.error("Error!"); // logs as error into console
 
 ### QuerySelector
 
-- Explain that we can manipulate the DOM with the help of JavaScript, e.g. change the CSS classes of HTML
-  elements.
+- Explain that we can manipulate the DOM with the help of JavaScript, e.g. change the CSS classes of HTML elements.
 - Note that we want to change the styling of the `main` element.
 - Show that we need to select the respective HTML element:
-  - in the `index.js`, create a variable like `mainElement`;
-  - we use the `document` interface provided by the browser;
-  - the `querySelector` method takes a string as argument and returns **the first HTML element** which matches the search query
-  - note that we could search for any string (like `.querySelector("main")` or `.querySelector("body")`), but we want to be as specific as possible to avoid errors;
-  - this is why we've agreed upon the `data-js` attribute for our course.
-- Log the element to the console and show the students what kind of object it is, which
-  properties it has, e.g. `classList`.
+  - In the `index.js`, create a variable like `mainElement`.
+  - We use the `document` interface provided by the browser.
+  - The `querySelector` method takes a string as argument and returns **the first HTML element** which matches the search query.
+  - Note that we could search for any string (like `.querySelector("main")` or `.querySelector("body")`), but we want to be as specific as possible to avoid errors.
+  - This is why we've agreed upon the `data-js` attribute for our course.
+- Log the element to the console and show the students what kind of object it is, which properties it has, e.g. `classList`.
 
 ```html
 <body>
@@ -98,7 +84,7 @@ console.log(mainElement);
 
 > 📙 Read more about [the custom `data-*` global attribute on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*).
 
-### Adding, removing, and toggling CSS classes with classList
+### Adding, Removing, and Toggling CSS Classes with `classList`
 
 - Show that in `css/styles.css`, there is a `dark` class we want to use to change the styling of the `main` element.
 
@@ -110,23 +96,23 @@ console.log(mainElement);
 ```
 
 - Switch to `js/index.js` and explain how to do this:
-  - the HTML element `mainElement` has the property `classList`;
-  - use `classList.add("dark")` to add the `dark` class to the `mainElement`;
-  - use `classList.remove("dark")` and show that the `dark` class is removed.
+  - The HTML element `mainElement` has the property `classList`.
+  - Use `classList.add("dark")` to add the `dark` class to the `mainElement`.
+  - Use `classList.remove("dark")` and show that the `dark` class is removed.
 
 ```js
 mainElement.classList.add("dark");
 mainElement.classList.remove("dark");
 ```
 
-### Acting on events with addEventListener
+### Acting on Events with `addEventListener`
 
 - Remind students that the way to manipulate the DOM with `classList.add()` and `classList.remove()` described above has one disadvantage: it cannot be utilized by users because they don't have access to the `index.js` file.
 - Note some examples a user interacts with our website:
-  - a click on a button
-  - hovering over an element
-  - pressing a key on the keyboard
-  - resizing the browser window
+  - Clicking on a button
+  - Hovering over an element
+  - Pressing a key on the keyboard
+  - Resizing the browser window
 - Explain that all these interactions trigger a so-called `event` we can utilize to react to the user behavior.
 
 - Show how to add an event listener to a button and react to a click:
@@ -146,14 +132,10 @@ myLoggingButton.addEventListener("click", () => {
 
 - Demonstrate that the code works and explain the different parts:
 
-  - we select the button element with the `querySelector` and "save it as a variable with the name
-    `myLoggingButton`"
-  - we use the method `addEventListener` on the button. It's something we don't have to fully
-    understand now - we have to know that we have to write `addEventListener` with brackets and have to
-    use the syntax in this exact way.
-  - the `click` tells us that we listen to the click event
-  - the "function body" (the thing we write in the curly braces) is the JavaScript that is being
-    executed when the event is triggered.
+  - We select the button element with the `querySelector` and "save it as a variable with the name `myLoggingButton`".
+  - We use the method `addEventListener` on the button. It's something we don't have to fully understand now - we have to know that we have to write `addEventListener` with brackets and have to use the syntax in this exact way.
+  - The `click` tells us that we listen to the click event.
+  - The "function body" (the thing we write in the curly braces) is the JavaScript that is being executed when the event is triggered.
 
 - Explain that we want to have three buttons: one to add, one to remove, and one to toggle the color of the `mainElement`.
 - Add three buttons to your `index.html`:
@@ -186,5 +168,3 @@ toggleColorButton.addEventListener("click", () => {
 
 - Show that the user can now use the three buttons to change the color.
 - Finish by noting that we can listen to other events like `mouseover` or `keydown`.
-
----
