@@ -37,11 +37,11 @@ This timetable includes the new 4-day **React Recap Project** (Recap Project 4) 
 | 21  | [React Nesting](sessions/react-nesting)                                         | [React State 1](sessions/react-state-1)                                      |
 | 22  | [React with Arrays](sessions/react-with-arrays)                                 | [React State 2](sessions/react-state-2)                                      |
 | 23  | [React State 3](sessions/react-state-3/)                                        | [React Effects and Fetch](sessions/react-effects-and-fetch/)                 |
-| 24  | Active Learning: [React with Local Storage](sessions/react-with-local-storage/) | [**Recap Project 4**](sessions/recap-project-4)                          |
-| 25  | [**Recap Project 4**](sessions/recap-project-4)                             | [**Recap Project 4**](sessions/recap-project-4)                          |
-| 26  | [**Recap Project 4**](sessions/recap-project-4)                             | [**Recap Project 4**](sessions/recap-project-4)                          |
-| 27  | [**Recap Project 4**](sessions/recap-project-4)                             | [**Recap Project 4**](sessions/recap-project-4)                          |
-| 28  | [**Recap Project 4**](sessions/recap-project-4)                             | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing/)            |
+| 24  | Active Learning: [React with Local Storage](sessions/react-with-local-storage/) | [**Recap Project 4**](sessions/recap-project-4)                              |
+| 25  | [**Recap Project 4**](sessions/recap-project-4)                                 | [**Recap Project 4**](sessions/recap-project-4)                              |
+| 26  | [**Recap Project 4**](sessions/recap-project-4)                                 | [**Recap Project 4**](sessions/recap-project-4)                              |
+| 27  | [**Recap Project 4**](sessions/recap-project-4)                                 | [**Recap Project 4**](sessions/recap-project-4)                              |
+| 28  | [**Recap Project 4**](sessions/recap-project-4)                                 | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing/)            |
 | 29  | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes/)                       | [Self-Directed Learning 6](sessions/self-directed-learning-6/)               |
 | 30  | [React Styled Components 1](sessions/react-styled-components-1/)                | [React Styled Components 2](sessions/react-styled-components-2/)             |
 | 31  | [React Global State](sessions/react-global-state/)                              | [React Data Fetching](sessions/react-data-fetching)                          |

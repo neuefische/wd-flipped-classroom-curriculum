@@ -45,7 +45,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
 
 - [ ] Ask students how they would achieve this. Gather their ideas. Possible answers
 
-
   - a variable that stores the current count
   - a function that increases the count
   - an event handler that calls the function when the button is clicked
@@ -55,7 +54,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-c
   > what we will learn today, but we will take a quick detour before we get there.
 
 - [ ] Add a variable `let count = 0;` to the `Counter` component and use it to display the current count in the headline.
-
 
 ```js
 function Counter() {
@@ -71,7 +69,6 @@ function Counter() {
 
 - [ ] Demonstrate the variable is actually shown in the headline by changing the value of
       `let count = 0;` to `let count = 1337;` and see that the headline text changes.
-
 
 - Explain that we want to increase the count by one every time we click the button, for which we
   need a function that is called when the button is clicked. We can use the `onClick` prop for
@@ -101,7 +98,6 @@ function Counter() {
 }
 ```
 
-
 - [ ] The 'button click' message and the incremented `count` variable are logged to the console each time the button is clicked.
 
 - Show that this is not working as expected. Let students ponder for a moment before explaining
@@ -121,7 +117,6 @@ function Counter() {
       state has changed. (In our case that will be that changed `count` value.)
 - [ ] Each time the component function is called, all of its variables (props and state) are
       conceptually frozen in time. We can think of them as being read-only.
-
 
 > 🎞️ Here is an analogy you might find useful:
 >
@@ -190,7 +185,6 @@ function Counter() {
     console.log("Button clicked", count);
   }
 
-
   return (
     <div className="counter">
       <p>You have clicked {count} times</p>
@@ -204,9 +198,7 @@ function Counter() {
 
 - Show that the button text is now updated when we click it. Success! 🎉
 
-
 - [ ] Repeat the points from the [React Lifecycle](#react-lifecycle) section to explain what is happening now that we have the actual code.
-
 
 > 💡 A point you might already want to bring up is that setter function should only be called
 > as a reaction to an event (like a click, submit or finished network requests). It's bad practice to
@@ -219,7 +211,6 @@ function Counter() {
 - [ ] Explain that state is local to each individual instance of a component. Changing a state will only effect this specific component instance
 
 - [ ] Demonstrate this placing three instances of the `Counter` in the `App` component and click the buttons
-
 
 ```js
 export default function App() {
@@ -237,12 +228,10 @@ export default function App() {
 
 - [ ] Explain that component can have multiple states (multiple calls of `useState`)
 
-
 - Explain that we can store all kinds of data in state (like booleans, numbers, strings, objects
   or arrays).
 
 - [ ] Demonstrate both aspects by adding another state `isDarkTheme` to the counter.
-
 
 ```js
 

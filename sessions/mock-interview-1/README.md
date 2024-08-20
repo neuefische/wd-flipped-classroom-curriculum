@@ -9,12 +9,12 @@
 
 > 💡 It might be beneficial for the coach to ask for a volunteer candidate a day before the session.
 
-
 ---
 
 ## Disclaimer: If you'd rather not read, you can watch a recorded session in action [here](https://drive.google.com/file/d/12aP1psjYGDVQn7uDiixEnu2OvfPDUmsq/view) while enjoying your favorite coffee ☕🎦
+
 - If interested here is also a [workshop](https://drive.google.com/drive/u/0/folders/1-KEnNk7anbmOHaYiSONRa4vRZYindxuq) on technical interviews we conducted earlier.
-  
+
 > 💰 Interviewing is the most
 > profitable skill you can learn! 💰
 
@@ -23,6 +23,7 @@
 > Making mistakes during a real interview can be costly and may result in losing the position you're applying for. However, in a mock interview, mistakes are not only welcome but also provide valuable learning opportunities. Embrace the chance to make plenty of mistakes now, as they will help you and others learn and avoid them in real interviews. So, get ready to embrace the mock interview and make mistakes, because the more mistakes you make now, the fewer you'll make in a real interview!
 
 ### Why is the content of today's block that important for the students?
+
 - Boost your interview confidence and become more proficient in foundational problem-solving and coding skills.
 - Today's session is crucial for securing your first position as a software engineer. Mastering interviews is the key to unlocking your next job opportunity!
 
@@ -78,19 +79,19 @@ We want to write a function that gives us the longest word from an array.
 ### Step 2: Coming up with a solution in plain language
 
 - Ask students if they have any ideas of how to solve the above problem with code.
-  
+
 <details>
 
  <summary>💡Details of the actual challenge:</summary>
 
-  - Every one of the students could solve this problem. In the sense that you could give them a list of words and they could tell you which is the longest.  
-  - So the problem is not that the task is too complicated, the problem is to come up with small incremental steps, because this is how you instruct the computer to solve this problem.
+- Every one of the students could solve this problem. In the sense that you could give them a list of words and they could tell you which is the longest.
+- So the problem is not that the task is too complicated, the problem is to come up with small incremental steps, because this is how you instruct the computer to solve this problem.
 - The key to come up with these steps is to make yourself aware what happens in your brain when you solve this task. It helps if you make the input more complicated, i.e. the list consists of a thousand words so you cannot see at a glance which is the longest
 
 </details>
 
 - Ask the students how they would solve this problem with pen and paper
-  
+
 <details>
  <summary>💡Details on how to probably solve:</summary>
  
@@ -101,7 +102,7 @@ We want to write a function that gives us the longest word from an array.
 
 </details>
 
-- Students should write down these instructions in plain language in a way so that another person could execute them without making any mistakes. 
+- Students should write down these instructions in plain language in a way so that another person could execute them without making any mistakes.
 
 <details>
 
@@ -115,13 +116,10 @@ We want to write a function that gives us the longest word from an array.
 
 </details>
 
-
-
-- Ask the student to write these steps as comments into the function body. 
+- Ask the student to write these steps as comments into the function body.
 - Start by asking "_What is the equivalent for that small piece of paper in the JavaScript code?_" **Yes, a variable.**
 
 It could look like this:
-
 
 ```js
 const words = ["Jaws", "Up", "Alien", "Gravity", "Inception", "Psycho"];
@@ -190,9 +188,8 @@ If there is still time left in the 1-hour interview (which has rarely been the c
 5. **Practice Regularly:**
    - Improve your skills through regular practice and learning from different solutions
 
-This approach should be practiced constantly with the students. For this. At the beginning always discuss the task with the students. Make sure the problem is understood. Be very strict about using exact language when coming up with the steps to solve the problem (written as comments in the function body) and about using the correct technical terms when discussing the code. 
-For the first few times come up with the steps in plain English together with the students. At some point though they should be able to come up with a solution themselves. 
-
+This approach should be practiced constantly with the students. For this. At the beginning always discuss the task with the students. Make sure the problem is understood. Be very strict about using exact language when coming up with the steps to solve the problem (written as comments in the function body) and about using the correct technical terms when discussing the code.
+For the first few times come up with the steps in plain English together with the students. At some point though they should be able to come up with a solution themselves.
 
 ---
 
@@ -234,4 +231,3 @@ For the first few times come up with the steps in plain English together with th
 ## Keywords for Recap:
 
 Problem Solving, Understanding, Planning, Executing, Reviewing, Practice
-
