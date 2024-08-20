@@ -12,7 +12,7 @@
 
 > Required Sessions:
 >
-> - JS Functions 1 & 2
+> - JS Functions
 > - JS Objects and Arrays
 > - JS Forms
 
