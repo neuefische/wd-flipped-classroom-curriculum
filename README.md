@@ -1,6 +1,4 @@
-# Welcome to the Curriculum of the neuefische Web Development Bootcamp!
-
-This is the curriculum of the neuefische Web Development Bootcamp.
+# Welcome to the Curriculum of the neuefische/spiced Web Development Bootcamp!
 
 ## Sessions
 
@@ -8,7 +6,57 @@ The curriculum is divided into sessions, each being a distinct teaching unit foc
 
 Sessions marked with a 🏗️ are incomplete.
 
-### Upcoming Session Timetable
+### New Session Timetable
+
+This timetable includes the new 4-day **React Recap Project** (Recap Project 4) and predefined capstone projects. The previous timetable is available [here](https://github.com/neuefische/web-curriculum/blob/fff449f49da7aa3b916edbf2cdaf1b65908fad60/README.md).
+
+| Day  | Session AM                                                                                     | Session PM                                                                      |
+| ---- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| 1    | [Welcome](sessions/welcome)                                                                    | [Github and Markdown](sessions/github-and-markdown)                             |
+| 2    | [Shell Basics](sessions/shell-basics) + Mac/Windows Setup 💻                                   | Active Learning: [HTML and the Web](sessions/html-and-the-web)                  |
+| 3    | [CSS Basics](sessions/css-basics)                                                              | [CSS Flexbox](sessions/css-flexbox)                                             |
+| 4    | [CSS Positioning](sessions/css-positioning)                                                    | [Self-Directed Learning 1](sessions/self-directed-learning-1/)                  |
+| 5    | [Git CLI & Remote](sessions/git-cli-and-remote)                                                | [Git Branches and PRs](sessions/git-branches-and-prs)                           |
+| 6    | [**Recap Project 1**](sessions/recap-project-1)                                                | Active Learning: [Accessibility](sessions/accessibility)                        |
+| 7    | [JS Basics](sessions/js-basics)                                                                | [CSS Structure](sessions/css-structure)                                         |
+| 8    | [JS Variables and Numbers](sessions/js-variables-and-numbers)                                  | [JS Conditions and Booleans](sessions/js-conditions-and-booleans)               |
+| 9    | Active Learning: [CSS Responsive](sessions/css-responsive)                                     | [Self-Directed Learning 2](sessions/self-directed-learning-2/)                  |
+| 10   | [JS Functions](sessions/js-functions)                                                          | [HTML Forms](sessions/html-forms)                                               |
+| 11   | Active Learning: [JS Inputs and Strings](sessions/js-inputs-and-strings)                       | [JS Objects and Arrays](sessions/js-objects-and-arrays)                         |
+| 12   | [JS Forms](sessions/js-forms)                                                                  | [JS createElement](sessions/js-createelement)                                   |
+| 13   | [**Recap Project 2**](sessions/recap-project-2)                                                | [**Recap Project 2**](sessions/recap-project-2)                                 |
+| 14   | [JS Loops](sessions/js-loops)                                                                  | [Self-Directed Learning 3](sessions/self-directed-learning-3/)                  |
+| 15   | [JS Array Methods](sessions/js-array-methods)                                                  | [JS Structure](sessions/js-structure)                                           |
+| 16   | [JS Fetch](sessions/js-fetch)                                                                  | Active Learning: [JS Error Handling](sessions/js-error-handling)                |
+| 17   | [Git Advanced](sessions/git-advanced)                                                          | [JS Modern Syntax](sessions/js-modern-syntax)                                   |
+| 18   | [**Recap Project 3**](sessions/recap-project-3)                                                | [**Recap Project 3**](sessions/recap-project-3)                                 |
+| 19   | [Mock Interview 1](sessions/mock-interview-1)                                                  | [Self-Directed Learning 4](sessions/self-directed-learning-4/)                  |
+| 20   | [React Basics](sessions/react-basics)                                                          | [React Props](sessions/react-props)                                             |
+| 21   | [React Nesting](sessions/react-nesting)                                                        | [React State 1](sessions/react-state-1)                                         |
+| 22   | [React with Arrays](sessions/react-with-arrays)                                                | [React State 2](sessions/react-state-2)                                         |
+| 23   | [React State 3](sessions/react-state-3/)                                                       | [React Effects and Fetch](sessions/react-effects-and-fetch/)                    |
+| 24   | [JS Unit Testing](sessions/js-unit-testing/)                                                   | Active Learning: [React with Local Storage](sessions/react-with-local-storage/) |
+| 25   | [**Recap Project 4**](sessions/recap-project-4)                                                | [**Recap Project 4**](sessions/recap-project-4)                                 |
+| 26   | [**Recap Project 4**](sessions/recap-project-4)                                                | [**Recap Project 4**](sessions/recap-project-4)                                 |
+| 27   | [**Recap Project 4**](sessions/recap-project-4)                                                | [**Recap Project 4**](sessions/recap-project-4)                                 |
+| 28   | [Mock Interview 2 🏗️](sessions/mock-interview-2)                                               | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing/)               |
+| 29   | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes/)                                      | [Self-Directed Learning 6](sessions/self-directed-learning-6/)                  |
+| 30   | [React Component Testing](sessions/react-component-testing/)                                   | [React Styled Components](sessions/react-styled-components/)                    |
+| 31   | [React Global State](sessions/react-global-state/)                                             | [React Data Fetching](sessions/react-data-fetching)                             |
+| 32   | [**Recap Project 5**](sessions/recap-project-5/)                                               | [**Recap Project 5**](sessions/recap-project-5/)                                |
+| 33   | [**Recap Project 5**](sessions/recap-project-5/)                                               | [Backend Basics](sessions/backend-basics/)                                      |
+| 34   | [Backend API Routes](sessions/backend-api-routes/)                                             | [Self-Directed Learning 7](sessions/self-directed-learning-7/)                  |
+| 35   | [Backend MongoDB](sessions/backend-mongodb/)                                                   | [Backend Read](sessions/backend-read)                                           |
+| 36   | [Backend Create](sessions/backend-create)                                                      | [Backend Update and Delete](sessions/backend-update-and-delete)                 |
+| 37   | [**Recap Project 6**](sessions/)                                                               | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories/)    |
+| 38   | Design Workshop (external)                                                                     | [Capstone Grouping and Setup](sessions/capstone-grouping-and-setup/)            |
+| 39   | Design Workshop (external)                                                                     | [Capstone Prep 1](sessions/capstone-prep/)                                      |
+| 40   | [Capstone Prep 2](sessions/capstone-prep/)                                                     | [How to Capstone](sessions/how-to-capstone/)                                    |
+| ~ 48 | [Mock Interview 3 🏗️](sessions/mock-interview-3) - _during the midpoint of the Capstone phase_ |
+
+---
+
+### Old Session Timetable
 
 This timetable includes the new 4-day **React Recap Project** (Recap Project 4) and predefined capstone projects. The previous timetable is available [here](https://github.com/neuefische/web-curriculum/blob/fff449f49da7aa3b916edbf2cdaf1b65908fad60/README.md).
 
@@ -54,6 +102,8 @@ This timetable includes the new 4-day **React Recap Project** (Recap Project 4) 
 | 38  | Design Workshop (external)                                                      | [Capstone Grouping and Setup](sessions/capstone-grouping-and-setup/)         |
 | 39  | Design Workshop (external)                                                      | [Capstone Prep 1](sessions/capstone-prep/)                                   |
 | 40  | [Capstone Prep 2](sessions/capstone-prep/)                                      | [How to Capstone](sessions/how-to-capstone/)                                 |
+
+---
 
 ### Thursday Afternoons: Self-Directed Learning
 
