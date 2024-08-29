@@ -46,13 +46,27 @@ loop criteria changes to `false`.
 
 ## `for`
 
-`for` loops are intended for repeating a task a certain number of times. They consist of three
-internal parts:
+`for` loops are intended for repeating a task as long as a certain condition is fullfilled. They consist of four internal parts:
 
-- an internal counter which is increased / decreased every iteration.
-- a criteria which checks the value of the counter. As long as the criteria is `true`, the loop is
-  executed.
-- a rule how the counter is increased / decreased (in most cases it is increased by 1)
+- the initialization expression: The expression (if any) is executed. It usually initializes one or more loop counters, but it can execute any degree of expression, even variable declarations.
+- the condition expression: As long as the condition evaluates to `true`, the loop statement executes, otherwise the loop terminates. If there is no condition expression specified, the condition is assumed to be `true`
+- the loop statement: Is executed as long as the value of the condition is `true`. To execute multiple statements, use a block statement ({}).
+- the afterthought expression: If present, the afterthought expression is executed after the loop statement
+
+```js
+for (initialization; condition; afterthought) statement;
+```
+
+or
+
+```js
+for (initialization; condition; afterthought) {
+  statement;
+  statement;
+}
+```
+
+Even if there's only a single statement to execute, it's recommended to always use block statements for better readability.
 
 ```js
 for (let counter = 0; counter < 4; counter++) {
@@ -64,9 +78,18 @@ for (let counter = 0; counter < 4; counter++) {
 // 3
 ```
 
-The body of the for loop contains the code which is executed on each iteration. For the example
-above it is a `console.log` which logs the value of the counter on each iteration until the value of
-`counter` reached 4 and the loop is terminated.
+The body of the for loop contains the code which is executed on each iteration. For the example above it is a `console.log` which logs the value of the counter on each iteration until the value of `counter` reached 4 and the loop is terminated.
+
+```js
+for (let arr = [2, 4, 6]; arr.length > 0; arr.shift()) {
+  console.log(arr[0]);
+}
+// 2
+// 4
+// 6
+```
+
+The usage of for loops is not limited to maintain a counter variable as demonstrated in the example above.
 
 ---
 
