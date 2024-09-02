@@ -1,53 +1,47 @@
 # React Data Fetching
 
-## Learning objectives
+## Learning Objectives
 
-- Understanding the advantages of a fetching library in general
-- Knowing how to fetch with `SWR`:
+- Understanding the advantages of using a fetching library
+- Knowing how to fetch data with `SWR`:
   - `fetcher` function
-  - loading and validating state
-  - error state
-  - fetching on interval
+  - Loading and validating state
+  - `error` state
+  - Fetching on interval
   - `mutate()`
 - Knowing how to combine local state with fetched data
 
----
+## Requirements
 
-Our custom data fetching solutions are missing quite a few very important features like error handling, refetching, loading states, caching and handling race conditions. We will learn how to use the SWR library to solve these issues.
+- React State 1-3
+- React Effects and Fetch
 
-Additionally we will learn how to connect local state to the data we fetched without duplicating state.
+## Demo
 
-### Question
-
-Think about the **React Effects and Fetch** session. Do you remember which flaws we talked about when we implemented our custom fetching solution?
-
----
-
-### Required
-
-- React Effects and State
-
----
-
-## Session Guide
-
-### Demo
-
-Use this demo locally by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-start
 ```
 
-You can check out the final version of this demo locally by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-end
 ```
 
+---
+
+## Session Guide
+
+When fetching data in React using custom solutions, we often miss important features such as error handling, refetching, loading states, caching, and handling race conditions. In this session, we will learn how to use the SWR library to solve these issues.
+Additionally we will learn how to connect local state to the data we fetched without duplicating state.
+
+> Think about the **React Effects and Fetch** session. Do you remember which flaws we discussed when implementing our custom fetching solution?
+
 ### Recap: Fetching Data in React
 
-- Remind students how to fetch data in React using Effects and State.
+- Remind students how to fetch data in React using effects.
 - Open the `Joke` Component in the demo and show how it works.
 - Remind students that with our naive implementation we are not handling a few core things:
   - Error handling
@@ -58,26 +52,26 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
 - Explain that while we could implement all of these things ourselves (given a large amount of time), there are libraries that help us with this.
 - When clicking through the demo, point out that the `id` from state and the actually shown data are not in sync. This is because the `id` is updated before the data is fetched.
 
-### SWR
+### Introducing SWR
 
-- Open the [SWR homepage](https://swr.vercel.app/) and explain what it is.
-  - It's a data fetching library that helps us with all of the things we just mentioned.
-  - It's implemented using React Hooks.
+- Open the [SWR homepage](https://swr.vercel.app/) and explain:
+  - SWR is a data fetching library that helps us with all of the things we just mentioned.
+  - It is implemented using React Hooks.
   - It can work with more than just the `fetch` API (axios, GraphQL, etc.) but we will focus on `fetch` for now.
   - SWR stands for "stale while revalidate" which is a caching strategy that enables great UX: Show the cached (_stale_) data _while_ loading (_revalidating_) the new data.
-  - SWR is made by Vercel (the company behind Next.js) which means that is very well integrated with Next.js. (It works with any React app though.)
+  - SWR is made by Vercel (the company behind Next.js) which means that it is very well integrated with Next.js. (It works with any React app though.)
 
-### `useSWR`
+### Using `useSWR`
 
-- In the demo install SWR
+- In the demo install SWR:
   ```
   npm install swr
   ```
-- Open the `page/index.js` Page and import `useSWR` from `swr`.
+- Open the `page/index.js` page and import `useSWR` from `swr`:
   ```js
   import useSWR from "swr";
   ```
-- Replace the `jokes` state, the `useEffect` hook and the `startFetching` function inside the component function with `useSWR`.
+- Replace the `jokes` state, the `useEffect` hook and the `startFetching` function inside the component function with `useSWR`:
 
   ```js
   const { data } = useSWR(
@@ -88,7 +82,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
 - Start the app and demonstrate it doesn't work yet. We only see `Loading...` in the UI. No request to the API is started.
 - Explain to the students that it is always a good idea to check the [documentation](https://swr.vercel.app/docs/getting-started) of a library if something does not work.
 - Since we are already in the 'getting started' section of the documentation, highlight the necessity of a fetcher function and its role in the SWR library.
-- Copy the fetcher function directly from the SWR docs. It's just a wrapper around `fetch` but we should not think about it too much. Copy it **above** the `Joke` component function (**not inside**)
+- Copy the fetcher function directly from the SWR docs. It's just a wrapper around `fetch` but we should not think about it too much. Copy it **above** the `Joke` component function (**not inside**):
   ```js
   const fetcher = (url) => fetch(url).then((response) => response.json());
   ```
@@ -120,9 +114,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
 
 - Compare the behavior of the application to before. We have flashes of no data when the `id` changes but the data is not yet fetched. Only after the data is fetched we see the new joke. This way the local `id` state and the fetched data are always in sync.
 - Show (by clicking the Prev/Next buttons) that the data is **cached** and we don't see the loading state when we click through jokes we have already loaded.
-- You can open the Browser DevTools and check the Network tab to see that even though the data is cached, SWR still revalidates the data in the background. This is what the "stale while revalidate" strategy is all about.
+- You can open the browser dev tools and check the network tab to see that even though the data is cached, SWR still revalidates the data in the background. This is what the "stale while revalidate" strategy is all about.
 
-### Optional: Combine Fetched Data with Local State
+### Optional: Combining Fetched Data with Local State
 
 > 💡 The following explanation is only one of many ways to combine fetched data with local state. This pattern will help students with the next recap project. The handout contains a detailed explanation of this pattern.
 >
@@ -163,9 +157,10 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
     }
   }
   ```
-- We can put this function onto the button click listener:
-  `js
-<button type="button" onClick={() => handleToggleFunnyJoke(id)}>{isFunny ? "😂 is Funny" : "😐 is not Funny"}</button>
-`
+- We can attach this function to the `onClick` of the button:
 
----
+  ```js
+  <button type="button" onClick={() => handleToggleFunnyJoke(id)}>
+    {isFunny ? "😂 is Funny" : "😐 is not Funny"}
+  </button>
+  ```

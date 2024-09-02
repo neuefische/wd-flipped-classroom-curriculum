@@ -1,24 +1,37 @@
 # Capstone Grouping and Setup
 
-## Learning objectives
+## Learning Objectives
 
-- How to form a team for the capstone phase.
-- Preparing the project repository for the capstone.
+- Understanding how to form a team for the Capstone phase
+- Setting up the repository and project board for the Capstone project
+
+## Requirements
+
+- Students have been presented with a selection of predefined Capstone projects in the last checkout and are expected to be familiar with these projects.
+
+## Demo
+
+There is no pre-built demo for this session.
 
 ---
 
 ## Session Guide
 
+Today, we’re going to focus on two key aspects: forming your teams for the Capstone project and setting up your project repositories. The goal is for all of you to be ready to start working on your projects effectively.
+By the end of this session, you should all be in your respective groups and have your repositories fully set up and ready to go. We’ll also be creating your “Manual of Me,” which will help establish ground rules for how you will work together as a team.
+
+> Why is it important to have clear group rules and a well-organized repository before starting your Capstone project? How could this preparation impact your teamwork and project success?
+
 ### Voting Preparations
 
-> ❗️ In preparation for this session, the course management has presented a subset of our [predefined capstone projects](https://github.com/neuefische/web-internal/tree/main/team-capstone-projects) to the students in the last checkout. It is expected that all students are familiar with the projects by now.
-
-During this session, the students will vote for their preferred capstone project. Based on this voting you will form the capstone groups. If you are not the course management for this course, it is strongly advised that you communicate closely with the course management in order to make balanced group dynamics possible.
+> ❗️ In preparation for this session, the course management has presented a subset of our [predefined Capstone projects](https://github.com/neuefische/web-internal/tree/main/team-capstone-projects) to the students in the last checkout. It is expected that all students are familiar with the projects by now.
+>
+> During this session, the students will vote for their preferred Capstone project. Based on this voting you will form the Capstone groups. If you are not the course management for this course, it is strongly advised that you communicate closely with the course management in order to make balanced group dynamics possible.
 
 The voting can be conducted in different ways. _You, along with the course management,_ decide how. Here are some suggestions:
 
 1.  The students post their preferred project into the **🗳️ Capstone Voting 🗳️** thread. If the students cannot be divided evenly, you continue to conduct consecutive rounds of voting while removing the least voted options until a fitting group can be formed.
-2.  The students post a their top 3 capstone projects and you group them based on these preferences and the group dynamic of the students.
+2.  The students post their top 3 Capstone projects and you group them based on these preferences and the group dynamic of the students.
 3.  Let the students decide on the groups by themselves. Afterwards, you, with assistance of the students, assign the projects to the groups.
 
 ### Voting and Manual of Me
@@ -29,17 +42,17 @@ The voting can be conducted in different ways. _You, along with the course manag
 - Give a short [summary](./capstone-grouping-and-setup.md/#manual-of-me) on what a **Manual of Me** is and why it can help the students in the team project.
 - Give the students ~ 30 / 45 min to finalize their choice and to start working on their **Manual of Me**.
 - Meet the students again in the course room.
-- Depending on the chosen voting system, create appropriate capstone groups.
+- Depending on the chosen voting system, create appropriate Capstone groups.
 
 ### Project Setup
 
-- Share the [web capstone docs](https://web-capstone-docs.neuefische.de/) with the students and give them a quick overview.
+- Share the [Capstone Docs](https://web-capstone-docs.neuefische.de/) with the students and give them a quick overview.
 - Emphasize the **Project Setup** portion and advise the students to follow the setup guide.
 - Send the students into breakout rooms to work on the project setup.
 - After a while, visit the students in the breakout rooms and check if they successfully set up the project repository. Check the following:
-- A single public repository was created.
-- All Students are invited as collaborators.
-- A project board with the respective columns was created.
-- A template for the user story issues has been saved to the repository.
-- The project board was connected with the project repository.
-- The vercel deployment was correctly set up.
+  - A single public repository was created.
+  - All Students are invited as collaborators.
+  - A project board with the respective columns was created.
+  - A template for the user story issues has been saved to the repository.
+  - The project board was connected with the project repository.
+  - The vercel deployment was correctly set up.

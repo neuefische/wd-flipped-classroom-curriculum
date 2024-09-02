@@ -267,7 +267,7 @@ body {
 - Example: contacts in an address book (remember a person's name instead of the phone number)
 - Complex websites have a lot of repeating values
 - colors, fonts, border radius size, shadows, spacing size
-- Go to the ` global.css`` file and add a  `:root` selector
+- Go to the `global.css`` file and add a `:root` selector
 - Define custom properties:
 
 ```css

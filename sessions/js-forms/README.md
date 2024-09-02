@@ -1,60 +1,57 @@
 # JS Forms
 
-## Learning objectives
+## Learning Objectives
 
-- knowing the default behavior of form submit and prevent it with `.preventDefault()`
-- listening to submit events
-  - learn what `event` and `event.target` is
-  - reading input values via their names:
+- Knowing the default behavior of form submission and how to prevent it with `.preventDefault()`
+- Listening to submit events
+  - Understanding what `event` and `event.target` are
+  - Reading input values via their names:
     - `.elements`
     - `FormData` / `Object.fromEntries()`
     - the `name` attribute of a form field
-- understanding the input event
-- know how to focus inputs programmatically
-- know how to reset the form programmatically
+- Understanding the input event
+- Knowing how to focus inputs programmatically
+- Knowing how to reset the form programmatically
 
----
-
-After building a form with accessible HTML, our job is not done - we want to access the user input
-after submit as well! This is where JavaScript comes into play:
-
-- How do we access the data after form submit in order to use it?
-
----
-
-### Required
+## Requirements
 
 - HTML Forms
 - JS Functions
-- JS Callback Functions
 
----
+## Demo
 
-## Session Guide
-
-Use this demo by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-start
 ```
 
-You can check out the final version of this demo by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-end
 ```
 
-### Default behavior of form submit
+---
+
+## Session Guide
+
+After building a form with accessible HTML, our job is not done - we want to access the user input
+after submission as well! This is where JavaScript comes into play.
+
+> How do you access the data after form submission to use it in your application?
+
+### Default Behavior of Form Submit
 
 - Fill in a first name and submit the form to show the default behavior in the network tab:
 
-- Form tries to send a GET request with names and their values as prop inside a URL like
-  `/?firstName=value1`
+- The form tries to send a GET request with names and their values as prop inside a URL like
+  `/?firstName=value1`.
 - The page is reloaded → the data is lost for us.
 
 - Note that we want to prevent this default behavior (no GET request, no page reload).
 
-### Listening to the submit event / preventing default form submit behavior
+### Listening to the Submit Event / Preventing Default Form Submit Behavior
 
 - Remind the students that we need to query the form first in order to add some interactivity with JavaScript:
 
@@ -64,9 +61,9 @@ const form = document.querySelector('[data-js="form"]');
 
 - Add an event listener for the submit event:
 
-- is called on form submit
-- triggers a submit event which provides us with an `event` object
-- the `event` object has a method called `preventDefault()`
+- It is called on form submission.
+- Triggers a submit event which provides us with an `event` object.
+- The `event` object has a method called `preventDefault()`.
 
 - Use `console.log(event)` to show its methods and properties (especially `preventDefault()` and `.target`).
 
@@ -84,10 +81,10 @@ form.addEventListener("submit", (event) => {
 
 - Explain the event object:
 
-- is created when an event is triggered
-- we can access it as an argument of our callback function
-- important method: `event.preventDefault()`
-- important property: `event.target`
+- It is created when an event is triggered.
+- We can access it as an argument of our callback function.
+- Important method: `event.preventDefault()`
+- Important property: `event.target`
 
 - Show that `event.target` is a reference to the entire form:
 
@@ -109,18 +106,18 @@ form.addEventListener("submit", (event) => {
 
 - Explain the `name` attribute:
 
-  - the key to identify the submitted information.
-  - needs to be unique for each form field
+  - It is the key to identify the submitted information.
+  - It needs to be unique for each form field.
 
 - Explain the `.elements` property of `event.target`:
 
-- represents a collection of all form controls
-- form controls are accessible via dot notation and the `name` key:
-  - `elements.firstName` returns the form field where attribute `name="firstName"`
-  - `elements.firstName.value` returns only the value of the form field with attribute
-    `name="firstName"`
-- the `name` attribute is crucial at this point
-- for readability, it's useful to save `event.target.elements` in a variable
+- It represents a collection of all form controls.
+- Form controls are accessible via dot notation and the `name` key:
+  - `elements.firstName` returns the form field with the attribute `name="firstName"`.
+  - `elements.firstName.value` returns only the value of the form field with the attribute
+    `name="firstName"`.
+- The `name` attribute is crucial at this point.
+- For readability, it's useful to save `event.target.elements` in a variable.
 
 ```js
 form.addEventListener("submit", (event) => {
@@ -135,12 +132,12 @@ form.addEventListener("submit", (event) => {
 
 ### Using Input Values
 
-- Show how to access all input values with the `FormData`
+- Show how to access all input values with the `FormData`.
 
 - Explain the `FormData` interface:
 
-- `new FormData(event.target)` creates a `FormData` object using the entire form via `event.target`
-- `Object.fromEntries()` transforms the `FormData` object into a usable object
+- `new FormData(event.target)` creates a `FormData` object using the entire form via `event.target`.
+- `Object.fromEntries()` transforms the `FormData` object into a usable object.
 
 ```js
 form.addEventListener("submit", (event) => {
@@ -153,21 +150,21 @@ form.addEventListener("submit", (event) => {
 });
 ```
 
-### Resetting a form
+### Resetting a Form
 
-- Explain that it is a good idea to reset a form to allow for new data to be entered
-- Show an example of a form reset in the demo
-  - Add `event.target.reset()` to the end of the submit handler function
-- Explain that it is a good idea to focus an input field after submitting the form to further improve user experience (hands can stay on the keyboard and the user can input new data immediately)
-- Give a common example: e.g. message input for a chat app
-- Show an example in the demo app
-  - Use `event.target.elements.firstName.focus()` to focus the first input
+- Explain that it is a good idea to reset a form to allow for new data to be entered.
+- Show an example of a form reset in the demo:
+  - Add `event.target.reset()` to the end of the submit handler function.
+- Explain that it is a good idea to focus an input field after submitting the form to further improve user experience (hands can stay on the keyboard and the user can input new data immediately).
+- Give a common example: e.g., message input for a chat app.
+- Show an example in the demo app:
+  - Use `event.target.elements.firstName.focus()` to focus the first input.
 
 ### Input Event
 
-- Explain that we have to listen to the `input` event if we want to react to every user input the user makes on an input field
-- Show an example for the `input` event in the demo
-- Demonstrate with `console.log()` that the event is triggered with every keystroke
+- Explain that we have to listen to the `input` event if we want to react to every user input the user makes on an input field.
+- Show an example for the `input` event in the demo.
+- Demonstrate with `console.log()` that the event is triggered with every keystroke.
 
 ```js
 const messageInput = document.querySelector('[data-js="personal-message"]');
@@ -189,5 +186,3 @@ messageInput.addEventListener("input", (event) => {
   charactersLeftElement.textContent = 150 - event.target.value.length;
 });
 ```
-
----

@@ -1,32 +1,20 @@
 # JS Objects and Arrays
 
-## Learning objectives
+## Learning Objectives
 
 - Creating, accessing, and manipulating arrays
 - Creating, accessing, and manipulating objects
 - Knowing how to find properties and methods of objects by logging
 
----
+## Requirements
 
-### Why is the content of today's block that important for the students?
+- JS Variables and Numbers
 
-- Working with objects and arrays is a fundamental building block for writing complex logic
-- Objects or arrays are almost always used when data is being fetched from an API
+## Demo
 
----
+Since this session revolves purely around Javascript, feel free to either create a vanilla Javascript file manually or use the template below.
 
-### Required
-
-- Variables
-- Primitive types in JavaScript
-
----
-
-## Session Guide
-
-> 💡 Since this session revolves purely around Javascript, feel free to either create a vanilla Javascript file manually or use the template below.
-
-#### Terminal
+### Terminal
 
 ```bash
 cd path/to/my/directory
@@ -35,7 +23,7 @@ code .
 node script.js
 ```
 
-#### Template
+### Template
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
@@ -43,13 +31,19 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
 
 ---
 
+## Session Guide
+
+Working with objects and arrays is fundamental for writing complex logic in JavaScript. Objects and arrays are commonly used when handling data fetched from an API, making them essential skills for any developer.
+
+> How can you efficiently organize, manipulate, and access complex data structures like arrays and objects in JavaScript?
+
 ### Arrays
 
-- Store multiple values in one variable
-- Special Object
-- Access not by key but by **index**
+- Arrays store multiple values in one variable.
+- They are a special type of object in JavaScript.
+- Access elements not by key but by **index**.
 
-### Declaring and reading from Arrays
+#### Declaring and Reading from Arrays
 
 - You can declare an array using array literals:
 
@@ -58,7 +52,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
   console.log(shoppingList);
   ```
 
-- Each item in the array has an index, which starts at 0
+- Each item in the array has an index, which starts at 0.
 - You can access individual items using the bracket notation and the item's index:
 
   ```js
@@ -86,7 +80,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
   console.log(complexArray[2][1]);
   ```
 
-### Manipulating Arrays
+#### Manipulating Arrays
 
 - You can overwrite individual values in an array:
 
@@ -110,7 +104,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
   console.log(shoppingList);
   ```
 
-## Instructions on how to set up the challenge locally
+---
+
+### Instructions on How to Set Up the Challenge Locally
 
 > 💡 The challenges are verified through tests, so it's beneficial to provide brief instructions on how to set up the challenge locally with npm and how to run these tests. Optionally, a brief overview of Node.js and npm can also be included.
 
@@ -125,25 +121,28 @@ npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
 - 💡 Note: `npm` is the `Node.js` package manager, used for managing libraries and tools.
 
 3. Start the Local Development Server
-   - Use the command `npm run start`.
-   - This command starts a local development server, making the application accessible via a web browser.
-   - The exact action depends on the scripts defined in the `package.json` file.
-4. Run Tests
-   - Use the command `npm run test`.
-   - This command is used to run unit tests, integration tests, etc.
-   - The exact action depends on the scripts defined in the `package.json` file.
 
-### Challenge 1
+- Use the command `npm run start`.
+- This command starts a local development server, making the application accessible via a web browser.
+- The exact action depends on the scripts defined in the `package.json` file.
+
+4. Run Tests
+
+- Use the command `npm run test`.
+- This command is used to run unit tests, integration tests, etc.
+- The exact action depends on the scripts defined in the `package.json` file.
 
 Instruct the students to solve **Challenge 1** before proceeding with the session. The remaining challenges should be worked on after the session.
 
+---
+
 ### Objects
 
-- Objects store properties (key / value pairs)
-- Some objects you already know are: `document`, `event`, queried dom elements
-- Log an object in the dev-tools visiting a website like wikipedia
+- Objects store properties as key / value pairs.
+- Some objects you already know are: `document`, `event`, and queried DOM elements.
+- Log an object in the dev-tools visiting a website like Wikipedia.
 
-#### Declaring and reading from Objects
+#### Declaring and Reading from Objects
 
 - You can declare an object using an object initializer:
 
@@ -191,8 +190,7 @@ Instruct the students to solve **Challenge 1** before proceeding with the sessio
 
 #### Manipulating Objects
 
-- You can change values of object properties by reassigning them using the dot or bracket
-  notation:
+- You can change values of object properties by reassigning them using the dot or bracket notation:
 
   ```js
   person.name = "Max Bla";
@@ -246,5 +244,3 @@ Instruct the students to solve **Challenge 1** before proceeding with the sessio
   console.log(peopleArray[1].name); // "Alex"
   console.log(user.shoppingCart[0]); // "tomato"
   ```
-
----

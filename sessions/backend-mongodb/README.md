@@ -1,77 +1,72 @@
 # Backend MongoDB
 
-## Learning objectives
+## Learning Objectives
 
-- Knowing the difference between a database and a server
+- Understanding the difference between a database and a server
 - Knowing the difference between relational and non-relational databases
-- Understanding MongoDB basics and important terms
-- Knowing how to use MongoDB Atlas in order to
-  - insert data
-  - find and show data
-  - update data
-  - delete data
+- Learning MongoDB basics and important terms
+- Knowing how to use MongoDB Atlas to:
+  - Insert data
+  - Find and show data
+  - Update data
+  - Delete data
 - Deepening the understanding of CRUD operations with databases
 
----
-
-The students have predominantly used browser-based solutions to store data, but this is not sufficient for bigger projects. This is why it's necessary to have basic knowledge of creating and communicating to a database.
-
-### Why is the content of today's block that important for the students?
-
-They learn what a database is, how to create one (remotely on MongoDB Atlas) and how to design the data-model.
-
-### Question
-
-How can we create a persistent database (remotely on MongoDB Atlas), in which we can store our data?
-
-### Required
+## Requirements
 
 - Backend Basics
+
+## Demo
+
+There is no pre-built demo for this session. You will create a MongoDB database using MongoDB Atlas during the session by following the steps provided in the session guide.
 
 ---
 
 ## Session Guide
 
-### Intro: Databases
+For larger projects, using browser-based storage like localStorage isn’t enough. We need a more robust, scalable solution to store and manage data that multiple users or applications can access. In this session, we’ll cover the basics of databases, focusing on MongoDB, a popular non-relational database, and how to use MongoDB Atlas to create and manage a database in the cloud.
+
+We’ll learn what a database is, how to set one up remotely using MongoDB Atlas, and how to design a data model that fits our needs.
+
+> How can you create a persistent database (remotely on MongoDB Atlas), in which you can store your data?
+
+### Introduction to Databases
 
 - Remind students what a server is:
-  - a computer that is designed to **provide services to other computers or devices**,
-  - it can host a variety of services, such as a web server, an email server, a file server, or **a database server**,
-  - we have used Next.js API routes as a server to request data (from a `data.js` file in the same project).
+  - A computer that is designed to **provide services to other computers or devices**.
+  - It can host a variety of services, such as a web server, an email server, a file server, or **a database server**.
+  - We have used Next.js API routes as a server to request data (from a `data.js` file in the same project).
 - Explain a database server:
-  - it is a computer that is specifically designed to **host a database**,
-  - it manages the data stored in the database,
-  - it ensures that it is available to users and applications that need to access it.
+  - It is a computer that is specifically designed to **host a database**.
+  - It manages the data stored in the database.
+  - It ensures that it is available to users and applications that need to access it.
 - Summarize that we already know how to build a frontend and a web server (Next.js API routes), but we still need to get to know a database server.
 - Explain that data storage in a database is persistent (in contrast to localStorage).
-- Explain the
-  [difference between relational and non-relational databases](https://www.mongodb.com/compare/relational-vs-non-relational-databases)
-  (aka SQL vs NoSQL):
+- Explain the [difference between relational and non-relational databases](https://www.mongodb.com/compare/relational-vs-non-relational-databases)(aka SQL vs NoSQL):
 
   - Relational:
 
-    - data is stored in tables (like SQL or Excel),
-    - the tables are connected to each other,
-    - constraint: we must decide for each column what we do if we don't have data for all
-      entries in this column,
-    - example: store database for orders.
+    - Data is stored in tables (like SQL or Excel).
+    - The tables are connected to each other.
+    - Constraint: We must decide for each column what we do if we don't have data for all entries in this column.
+    - Example: Store database for orders.
 
   - Non-relational:
-    - data is stored in JSON-like structures,
-    - data is stored in key/value pairs,
-    - each data set in the database can have unique keys
+    - Data is stored in JSON-like structures.
+    - Data is stored in key/value pairs.
+    - Each data set in the database can have unique keys.
 
 > 💡 You can find an [in-depth explanation and comparison here](https://www.mongodb.com/compare/relational-vs-non-relational-databases).
 
-### Intro: MongoDB
+### Introduction to MongoDB
 
 - Point out that, so far, the students have been using `localStorage` to persist data.
-- Remind students that `localStorage`
-  - has a limited capacity (usually around 5MB),
-  - is stored in the browser of a user's computer or device,
-  - is specific to the web page or application that created it and the browser that is being used,
-  - its data can be deleted if the user manually deletes the browser's cache and other data;
-  - It might be [deleted based on the LRU Policy](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Browser_storage_limits_and_eviction_criteria#lru_policy) (Last Recently Used)
+- Remind students that:
+  - `localStorage` has a limited capacity (usually around 5MB).
+  - It is stored in the browser of a user's computer or device.
+  - It is specific to the web page or application that created it and the browser that is being used.
+  - Its data can be deleted if the user manually deletes the browser's cache and other data.
+  - It might be [deleted based on the LRU Policy](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Browser_storage_limits_and_eviction_criteria#lru_policy) (Last Recently Used).
   - This is why `localStorage` is not well-suited for storing large amounts of data or data that needs to be accessed and shared by multiple applications or users.
 - Point out that a database, in contrast,
 
@@ -84,8 +79,6 @@ How can we create a persistent database (remotely on MongoDB Atlas), in which we
   - The name MongoDB is a shortened version of "humongous".
   - The name was chosen to reflect the scalability and flexibility of the database.
   - The "DB" in the name stands for "database," indicating that MongoDB is a type of database.
-
----
 
 ### MongoDB Atlas
 
@@ -122,12 +115,12 @@ How can we create a persistent database (remotely on MongoDB Atlas), in which we
 
 - Continue setting up your database:
 
-  - the database is called _jokes-database_ and
-  - the collection is called _jokes_.
-  - Note that the database's name contains "jokes" because in our case, everything will have to do with jokes; however, this is not a convention, so the name can be chosen more freely.
+  - The database is called _jokes-database_.
+  - The collection is called _jokes_.
+  - Note that the database's name contains "jokes" because in our case, everything will have to do with jokes. However, this is not a convention, so the name can be chosen more freely.
 
 - Show the two ways to insert some data via the "INSERT DOCUMENT" button:
-  - "Insert Document" to add a single data object (= _document_)
+  - "Insert Document" to add a single data object (= _document_).
     - Note that the `_id` is added automatically.
     - Add a joke below the `_id` so that it looks like this:
 
@@ -140,17 +133,12 @@ How can we create a persistent database (remotely on MongoDB Atlas), in which we
 }
 ```
 
-- "Insert Document" to _add multiple_ data objects (= _documents_)
+- "Insert Document" to _add multiple_ data objects (= _documents_):
 
-  - You can use [this `jokes.json` file](assets/jokes.json)
-  - Copy the file contents and paste them into the text field.
-    Show that the `_id` field is added automatically.
-
-![Insert many documents at once](assets/images/atlas-insert-many.png)
+  - You can use [this `jokes.json` file](assets/jokes.json).
+  - Copy the file contents and paste them into the text field. Show that the `_id` field is added automatically.
 
 - Show that all inserted documents are present in the overview.
 - Filter the data with the "Filter" input field:
   - Find a specific joke text with `{ joke: "Thanks for explaining the word “many” to me, it means a lot." }`.
   - Find a joke by its Id (`_id`) with `{ _id: ObjectId("[id_goes_here]")}`.
-
----

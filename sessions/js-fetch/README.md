@@ -1,91 +1,83 @@
 # JS Fetch
 
-## Learning objectives
+## Learning Objectives
 
 - Understanding how asynchronous code works
-- Understanding the fetch API
+- Understanding the Fetch API
   - JSON
   - with async/await
 
----
-
-Often, we want to get data from a public API or our own database. There are two issues with this
-process, called fetching: it needs time to finish and we need to convert the sent data packages into JavaScript objects.
-
-After this session, we will know how to "wait" for the fetched data to be received and how to make the received data available in our application.
-
-### Question
-
-How do we fetch data from an API?
-
----
-
-### Required
+## Requirements
 
 - JS Functions
-- JS Callback Functions
 
----
+## Demo
 
-## Session Guide
-
-Demo Start:
+### Start
 
 ```
   npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start
 ```
 
-Demo End:
+### End
 
 ```
   npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-end
 ```
 
+---
+
+## Session Guide
+
+Often, we want to get data from a public API or our own database. This process, called fetching, involves two main challenges: it takes time to complete, and we need to convert the transmitted data packages into JavaScript objects.
+After this session, you’ll know how to “wait” for the data to be fetched and how to make it available in your application.
+
+> How do you fetch data from an API, and how can you handle the delay and data conversion?
+
 ### Introduction to APIs
 
-- Explain the concept of an API (Application Programming Interface)
+- Explain the concept of an API (Application Programming Interface):
   - An _API_ provides a way one software (the _application_) can interact with another software.
-  - An application can define a set of features and rules on how other software can interact
-    with it. This is called an _interface_
-  - Think of a contract between two softwares that explains how they can work together
-- Example: server-side APIs (it is ok if the students don't know exactly what a server is at this point)
-  - An application running on a server environment can provide an API
-  - A common use-case is an API to read / load data
-  - Other operations like writing or deleting data is also possible
+  - An application can define a set of features and rules on how other software can interact with it. This is called an _interface_.
+  - Think of a contract between two softwares that explains how they can work together.
+  - Example: Server-side APIs (it is ok if the students don't know exactly what a server is at this point)
+  - An application running on a server environment can provide an API.
+  - A common use-case is an API to read / load data.
+  - Other operations like writing or deleting data is also possible.
 
 ### Introduction to Fetch
 
 - Explain the [Fetch Web API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API):
-  - provides an interface (= functions and rules) for fetching resources
-  - is available for us in the browser
-  - has a `fetch()` method we can use without further preparation
-  - it's a general method provided by the browser on how to address a server in the web
+  - Provides an interface (= functions and rules) for fetching resources.
+  - Is available for us in the browser.
+  - Has a `fetch()` method we can use without further preparation.
+  - It's a general method provided by the browser on how to address a server in the web.
 
-### The random joke API
+### The Random Joke API
 
 - Introduce the API: `https://example-apis.vercel.app/api/bad-jokes/random`
-  - Enter the above url into the browser, open the network tab, show the response and explain that the api returns data in `JSON` format. The response data looks like a joke object in JavaScript.
+  - Enter the above URL into the browser, open the network tab, show the response and explain that the API returns data in `JSON` format. The response data looks like a joke object in JavaScript.
   - JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.
   - We want to fetch a random joke inside of our JavaScript code using `fetch()` and then parse the received JSON into a JavaScript object.
 
-### Synchronous JavaScript and blocking code
+### Synchronous JavaScript and Blocking Code
 
 - Explain that JavaScript is single-threaded: only one thing can happen at a time.
 - If the execution of some code (a function or statement) takes time - like fetching data from an API - we don't want to block the main thread while waiting for the execution to finish.
 - Blocking the main thread means:
-  - that no other JavaScript code can be executed.
-  - the user is prevented from interacting with the page.
+  - No other JavaScript code can be executed.
+  - The user is prevented from interacting with the page.
 - Optional: Show what can happen if we block the main thread:
 
-Intro Blocking Demo:
+**Blocking Demo**
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/blocking-demo
 ```
 
-### Joke App introduction
+### Joke App Introduction
 
-- Introduce the Demo
+- Introduce the demo
 
   - The DOM is already prepared and we find a function `renderJoke(joke)` that we just have to call to set the Joke for the joke section.
   - Uncomment the following line with the function call:
@@ -94,9 +86,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/blocking-de
   renderJoke("Thanks for explaining the word “many” to me, it means a lot.");
   ```
 
-### Fetching data & asynchronous JavaScript
+### Fetching Data & Asynchronous JavaScript
 
-- Use the Fetch Web API
+- Use the Fetch Web API.
 
 - Write the following statement and show in the console that the fetch call does not return data directly, but instead we get a Promise object:
 
@@ -124,7 +116,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/blocking-de
 - Show in the browser console that we receive a response object with a lot of meta-information about the network request, like the URL, an HTTP Status Code, etc.
 
 - Explain that we need to declare an `async` function in order to be able to use the `await` keyword.
-- Explain that the execution of that `async` function is not blocking and we do not run in danger of blocking the main thread. The students can think of everything happening in the getJoke function as happening in the background. You can demonstrate that using the following logs:
+- Explain that the execution of that `async` function is not blocking and we do not run in danger of blocking the main thread. The students can think of everything happening in the `getJoke` function as happening in the background. You can demonstrate that using the following logs:
 
   ```js
   console.log("A");
@@ -132,7 +124,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/blocking-de
   console.log("B");
   ```
 
-- We still need to "get the actual data" out of our response object. For that we have to call the `response.json` method which is an async function and returns a promise. So we need to use the `await` keyword once again:
+- We still need to "get the actual data" out of our response object. For that we have to call the `response.json` method which is an `async` function and returns a promise. So we need to use the `await` keyword once again:
 
   ```js
   async function getJoke() {
@@ -147,5 +139,3 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/blocking-de
   ```
 
 - Reload the page and show that the app works.
-
----

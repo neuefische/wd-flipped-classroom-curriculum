@@ -1,62 +1,50 @@
 # JS Modern Syntax
 
-## Learning objectives
+## Learning Objectives
 
-- understanding JS as a developing programming language
-- destructuring assignment
-- rest and spread syntax
+- Understanding JavaScript as a developing programming language
+- Destructuring assignment
+- Rest and spread syntax
 
----
-
-JS is evolving on a regular basis. There are modern syntax additions which come in quite handy, as
-`destructuring assignment`, `rest syntax` and `spread syntax`.
-
-### Why is the content of today's block that important for the students?
-
-The `destructuring assignment`, the `rest syntax` and the `spread syntax` are very useful features
-to make the code more readable. Besides, they are widely used in modern JavaScript and, in
-particular, React projects.
-
-### Question
-
----
-
-### Required
+## Requirements
 
 - JS Basics
-- JS Variables and Functions
+- JS Variables and Numbers
+- JS Functions
 - JS Objects and Arrays
 
----
+## Demo
 
-## Session Guide
-
-- Note that JavaScript is a developing language and new features are added continuously.
-- Name the latest features students will learn in this session: `destructuring assignment`,
-  `rest syntax`, and `spread syntax`.
-
-Demo Start:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/demo-start
 ```
 
-Demo End:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/demo-end
 ```
 
+---
+
+## Session Guide
+
+JavaScript is evolving regularly, and new syntax features are added to make coding more efficient and readable. In this session, we will learn about three modern JavaScript features: destructuring assignment, rest syntax, and spread syntax. These are widely used in modern JavaScript and particularly in React projects, making them essential tools for any developer.
+
+> How can modern JavaScript syntax features like destructuring, rest, and spread help make your code cleaner and more efficient?
+
 ### Destructuring Assignment - Objects
 
 - Explain the `destructuring assignment` in general:
 
-  - easily unpack properties from objects or values from arrays into distinct variables
-  - does not mutate the original object or array
+  - It allows us to easily unpack properties from objects or values from arrays into distinct variables.
+  - It does not mutate the original object or array.
 
 - Explain `object destructuring`:
-  - remind students how to extract variables in the known way
-  - destructure the object into its keys as variables
+  - Remind students how to extract variables in the known way.
+  - Destructure the object into its keys as variables.
 
 ```js
 const tree = {
@@ -74,15 +62,15 @@ const scientificName = tree.scientificName;
 const { name, age, scientificName } = tree;
 ```
 
-#### Renaming the variable
+#### Renaming the Variable
 
-- Show how a property can be renamed while destructuring an object with a colon (`:`) :
+- Show how a property can be renamed while destructuring an object with a colon (`:`):
 
 ```js
 const { name: colloquialName } = tree;
 ```
 
-#### Default value
+#### Default Value
 
 - Show how to set a default value of a property with an equal sign (`=`):
 
@@ -90,18 +78,15 @@ const { name: colloquialName } = tree;
 const { keepsLeavesInWinter = false } = tree;
 ```
 
-#### Rest syntax in object destructuring
+#### Rest Syntax in Object Destructuring
 
-- Explain that the rest syntax(`...`) can be used to collect all other properties and extract
-  them into one variable:
+- Explain that the rest syntax (`...`) can be used to collect all other properties and extract them into one variable:
 
 ```js
 const { name, ...information } = tree;
 
 console.log(information); // {age: 1200, scientificName: 'quercus',}
 ```
-
----
 
 ### Destructuring Assignment - Arrays
 
@@ -127,10 +112,9 @@ console.log(penguin);
 console.log(tiger); // not defined
 ```
 
-#### Rest syntax in array destructuring
+#### Rest Syntax in Array Destructuring
 
-- Explain that the rest syntax (`...`) can be used to collect all other values and extract them
-  into one variable:
+- Explain that the rest syntax (`...`) can be used to collect all other values and extract them into one variable:
 
 ```js
 const [lion, tiger, penguin, ...rest] = animals;
@@ -140,13 +124,9 @@ console.log(tiger);
 console.log(rest[1]); // 'Whale'
 ```
 
----
+### Rest Syntax When Declaring Functions
 
-### Rest Syntax when Declaring Functions
-
-- The rest syntax (`...`) collects all values given and returns an array containing these
-  values. E.g. `(...args) => console.log(args)` → `args` is an array with all arguments passed
-  to the function.
+- The rest syntax (`...`) collects all values given and returns an array containing these values. E.g., `(...args) => console.log(args)` → `args` is an array with all arguments passed to the function.
 - Note that it's used for `destructuring assignments` or declaring function parameters.
 
 ```js
@@ -158,13 +138,11 @@ function showZooAnimals(...allAnimals) {
 console.log(showZooAnimals("Monkey", "Crocodil", "Pig"));
 ```
 
----
-
 ### Spread Syntax
 
 - Mark the spread syntax as the opposite of the rest syntax:
-  - splits an array into its elements and makes them accessible
-  - used when declaring array / object literals or calling functions.
+  - It splits an array into its elements and makes them accessible.
+  - It is used when declaring array / object literals or calling functions.
 
 ```js
 console.log(showZooAnimals(lion, tiger, ...rest));
@@ -174,7 +152,7 @@ const newAnimals = ["Whale", "Dolphin", "Wolf"];
 console.log(showZooAnimals(...newAnimals));
 ```
 
-#### Spread: Add another value
+#### Spread: Add Another Value
 
 - Show an example how to declare an array with the help of spread syntax.
   - Create a new array from the old one and add a new value at the end.
@@ -187,7 +165,7 @@ const newAnimalFood = "Fish";
 const allAnimalFood = [...animalFood, newAnimalFood];
 ```
 
-#### Spread for concatenating two arrays
+#### Spread for Concatenating Two Arrays
 
 - Similar to add a new value, use `spread syntax` to concatenate two arrays:
 
@@ -198,5 +176,3 @@ console.log(allMyAnimals);
 
 console.log(showZooAnimals(...allMyAnimals));
 ```
-
----

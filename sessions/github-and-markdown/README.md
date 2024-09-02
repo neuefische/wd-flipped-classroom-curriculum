@@ -1,6 +1,6 @@
 # GitHub and Markdown
 
-## Learning objectives
+## Learning Objectives
 
 - Understanding version control and why is it so useful / important?
 - Importance of GitHub in dev community
@@ -9,6 +9,11 @@
 - Creating commits on GitHub
 - Understanding Markdown
 - How to write Markdown
+
+## Requirements
+
+- None
+  // (Github account?)
 
 ---
 
@@ -25,12 +30,9 @@
 
 ---
 
-- You can ask these questions:
+> Have you come into contact with a VCS before (and how / why)? Can you think of anything where a VCS would have been helpful to you (e.g. writing an assay and accidently deleting parts of it)?
 
-  - Have you come into contact with a VCS before (and how / why)?
-  - Can you think of anything where a VCS would have been helpful to you (e.g. writing an assay and
-    accidently deleting parts of it)?
-  - Show example of badly versioned text files:
+- Show example of badly versioned text files:
 
   <img width="246" alt="badly versioned txt files" src="https://user-images.githubusercontent.com/5230863/148375477-762b9d6c-3fab-46c2-8a6e-8161cd6fe4ab.png">
 

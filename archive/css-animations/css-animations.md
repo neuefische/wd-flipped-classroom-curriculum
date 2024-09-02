@@ -21,11 +21,17 @@ with a comma.
 /* transition for opacity */
 transition: opacity 500ms;
 /* transition for opacity and background-color */
-transition: opacity 500ms, background-color 500ms;
+transition:
+  opacity 500ms,
+  background-color 500ms;
 /* ease-in-out transition for opacity and background-color */
-transition: opacity 500ms ease-in-out, background-color 500ms ease-in-out;
+transition:
+  opacity 500ms ease-in-out,
+  background-color 500ms ease-in-out;
 /* ease-in-out transition for opacity and background-color with a delay of 1s */
-transition: opacity 500ms ease-in-out 1s, background-color 500ms ease-in-out 1s;
+transition:
+  opacity 500ms ease-in-out 1s,
+  background-color 500ms ease-in-out 1s;
 ```
 
 Here are all the properties you can use with `transition`:

@@ -1,89 +1,78 @@
 # Backend Update and Delete
 
-## Learning objectives
+## Learning Objectives
 
 - Understanding the Update and Delete part of CRUD operations
-- Being able to implement `UPDATE` and `DELETE` API routes
+- Implementing `UPDATE` and `DELETE` API routes
 
----
-
-We will address that we still need to establish a method to update and delete the data in our backend.
-
-### Why is the content of today's block that important for the students?
-
-Updating and deleting data are very important parts of CRUD operations.
-
-### Question
-
-How can we update our data and how can we delete data points?
-
----
+## Requirements
 
 - Backend API Routes
+- Backend MongoDB
 - Backend Read
 - Backend Create
 
-### Required
+## Demo
 
-- Serverless functions
-- REST API in Next.js
-- `mongoose` as ODM
-
----
-
-## Session Guide
-
-Use this demo locally by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-start
 ```
 
-You can check out the final version of this demo locally by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-end
 ```
 
-> 💡 Note: If you don't have your database set up in MongoDB Atlas already, please do so. You'll find data you can use in the assets folder of this session. If you'd prefer a step by step setup guide, feel free to take a look at the session "Backend Read".
+> 💡 Note: Ensure your MongoDB Atlas database is set up and contains the necessary data.You'll find data you can use in the `assets` folder of this session. If you'd prefer a step by step setup guide, feel free to take a look at the session _[Backend Read](../backend-read/)_.  
 > Please also make sure you have an `.env.local` file containing `MONGODB_URI=mongodb+srv://<user>:<password>@<cluster-name>/jokes-database?retryWrites=true&w=majority`. If you do not have it already, please create it at the root level of your file structure.
+
+---
+
+## Session Guide
+
+Today, we’ll extend our backend functionality by adding methods to update and delete data. These operations complete the CRUD cycle (Create, Read, Update, Delete), which is fundamental for managing data in any application.
+
+> How can you update your data and how can you delete data points?
 
 ### CRUD: The U and D
 
 - Remind the students that they have successfully created `READ` and `POST` API routes.
-- Explain that we need two additional CRUD operations to reach full functionality: `Update` and `Delete`
+- Explain that we need two additional CRUD operations to reach full functionality: `Update` and `Delete`.
 - Highlight that the UI components for handling these two cases have already been created.
 - Give the students a quick overview about the new code.
 
-### Reduce, reuse, recycle - reusing our JokeForm component
+### Reduce, Reuse, Recycle - Reusing the `JokeForm` Component
 
-- We've chosen to reuse our `JokeForm` component for editing jokes as part of the `Joke` component
-- we've **already refactored the code** for reusing the form.
+- We've chosen to reuse our `JokeForm` component for editing jokes as part of the `Joke` component.
+- We've **already refactored the code** for reusing the form.
 
-#### JokeForm as a Dumb Component
+#### `JokeForm` as a Dumb Component
 
 - Navigate to the `index.js` of the `JokeForm` component.
 - Show the students that all functional logic has been removed from this component.
-- Instead, three props are passed to the component: `onSubmit`, `value`, and `isEditMode`
+- Instead, three props are passed to the component: `onSubmit`, `value`, and `isEditMode`.
 - Highlight, that we can now specify the behavior of this Form via these props and that such a component is called "dumb", since it has no internal logic.
 
-#### JokeForm for creating Jokes
+#### `JokeForm` for Creating Jokes
 
 - Navigate to the `pages/index.js` page file.
 - Highlight that the functionality for creating a joke has been moved here:
 
-  - the `useSWR` hook
-  - the `handleSubmit` function which is passed to our generalized `JokeForm`
+  - The `useSWR` hook.
+  - The `handleSubmit` function which is passed to our generalized `JokeForm`.
 
 - Point out that the form will behave just like in the previous session, only that the logic is defined in a different place.
 
-#### JokeForm for editing Jokes
+#### `JokeForm` for Editing Jokes
 
 - Navigate to the `index.js` of the `Joke` component.
 - Give a quick overview over the added content of this component:
 
   - Two buttons for editing and deleting jokes.
-  - Two handler functions `handleEdit` and `handleDelete`
+  - Two handler functions `handleEdit` and `handleDelete`.
   - The `JokeForm` component receiving the `handleEdit` function as `onSubmit` and the current joke as the `value` prop.
   - A local state `isEditMode` which toggles the rendering of the `JokeForm`.
 
@@ -112,10 +101,10 @@ if (request.method === "PUT") {
   > 💡 Note: `PUT` and `PATCH` are semantically different. According to convention, we would use `PUT` to update our entire document, and `PATCH` to update individual fields. In our demo, we're using `PUT`, simply because we only ever have _one_ field to update.
 
 - Now navigate back to the `/components/Joke/index.js` to connect the UI to our new API endpoint.
-- We want to send a "PUT" request to our new API endpoint with fetch, similar to our "POST" request we send when we create a joke.
-- Since updating an existing joke means we are going to mutate this joke data, we need to destructure `mutate` and call it after we've updated the joke to reflect the changes in the app:
+- We want to send a `PUT` request to our new API endpoint with fetch, similar to our `POST` request we send when we create a joke.
+- Since updating an existing joke means we are going to mutate this joke data, we need to destructure `mutate` and call it after we've updated the joke to reflect the changes in the app.
 
-- Implement the code below.
+- Implement the code below:
 
 ```js
 // /components/Joke/index.js
@@ -141,7 +130,7 @@ async function handleEdit(event) {
 }
 ```
 
-### Implementing the DELETE API route
+### Implementing the DELETE API Route
 
 - Navigate to `api/jokes/[id].js`.
 - Include the logic required for our `DELETE` request method.
@@ -170,5 +159,3 @@ async function handleDelete() {
 
 - Explain that the delete button now works as intended and that we have fully implemented our `DELETE` method.
 - Showcase that we are now able to delete jokes.
-
----

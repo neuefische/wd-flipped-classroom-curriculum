@@ -1,6 +1,6 @@
 # React Global State
 
-## Learning objectives
+## Learning Objectives
 
 - Reactivating prior knowledge regarding lifting state up and local state
 - Understanding the core concepts of global state management
@@ -8,51 +8,47 @@
 - Getting to know alternative global state management solutions that don't require prop drilling
 - Internalizing the core challenges of global state management
 
----
-
-- When multiple components need to access **the same state**, we have to manage it in a **centralized location**.
-
-### Why is the content of today's block that important for the students?
-
-A global state solution can be useful for a number of reasons.
-
-- It's required to preserve state between different pages and in your application.
-- A global state solution can make it easier to manage complex state updates across multiple components
-- Using a global state solution can help you **better manage the state of your React application** and make it easier to build **complex** and **scalable** applications.
-
-### Question
-
-How can we migrate our local states to top level components and what are the benefits of doing so?
-
----
-
-### Required
+## Requirements
 
 - React Everything
+- Next.js Basics and Routing
+- Next.js Dynamic Routes
 
-## Session Guide
+## Demo
 
-### Recap: Lifting up state & Local state
-
-- Briefly activate prior knowledge regarding the concept of **"lifting state up"** in React. Remind the students, that **"lifting state up"** describes the process of moving state from a **lower-level component** to a **higher-level component**.
-- Summarize how local state can be a viable option in React as well in certain cases, such as storing information that only needs to be used within a **single component**, and is not needed by any other components in the application.
-  > 💡 For example, local state might be used to store a form input value, a toggle for a menu, a timer ...
-
-### Demo: A Global State Solution
-
-Use this demo by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/demo-start
 ```
 
-You can check out the final version of this demo by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/demo-end
 ```
 
-### How to start
+---
+
+## Session Guide
+
+When multiple components need to access the same state, it is essential to manage that state in a centralized location. A global state solution can be useful for several reasons:
+
+- It is required to preserve state between different pages and across your application.
+- A global state solution can simplify the management of complex state updates across multiple components.
+- Using a global state solution can help you better manage the state of your React application, making it easier to build complex and scalable applications.
+
+Today’s session will explore the reasons and methods for managing global state in a React application.
+
+> How can you migrate your local states to top-level components, and what are the benefits of doing so?
+
+### Recap: Lifting Up State and Local State
+
+- Briefly activate prior knowledge regarding the concept of **"lifting state up"** in React. Remind the students, that **"lifting state up"** describes the process of moving state from a **lower-level component** to a **higher-level component**.
+- Summarize how local state can be a viable option in React as well in certain cases, such as storing information that only needs to be used within a **single component**, and is not needed by any other components in the application.
+  > 💡 For example, local state might be used to store a form input value, a toggle for a menu, or a timer.
+
+### Demo: A Global State Solution
 
 - Introduce the students to the general architecture of the application.
 - Show them that the count for each counter is currently declared as local state in the `<Counter />` component.
@@ -67,9 +63,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/d
 - Import `useState`.
 - Create the variable `initialAnimals` above the `App` component function.
 - Explain the shape of the data stored in state:
-  - the goal is to have a single state variable for all animal counters.
-  - we have multiple counters, so we decided to use an array of objects.
-  - each object represents an animal with `id`, `name` and the `counter` value.
+  - The goal is to have a single state variable for all animal counters.
+  - We have multiple counters, so we decided to use an array of objects.
+  - Each object represents an animal with `id`, `name` and the `counter` value.
 - Create a state variable `animals` with `initialAnimals` as initial state.
 - This will enable us to refactor our code in a way that makes it more dynamic, such as mapping over our data array in order to create individual components.
 
@@ -259,10 +255,10 @@ export default function Counter({ animal, onAdd, onSubtract }) {
 
 - With our counter data available at the top level of our application, we can now do some calculations and pass the results to the components that are intending to display them.
 - What we need:
-  - the **current count value** of every animal
-  - the **total count** of all animals
-  - the **count average** of all animals
-  - and the **amount of dragons** specifically
+  - The **current count value** of every animal
+  - The **total count** of all animals
+  - The **count average** of all animals
+  - The **amount of dragons** specifically
 - Explain that we don't need a new state for these values. They are derived from data that is already stored in state.
 
 Your solution might look something like this:
@@ -275,8 +271,8 @@ const dragonCount = animals.find((animal) => animal.name === "Dragons").count;
 ```
 
 - Now we need to pass these variables to where we want to **display** them:
-  - in our `<Header />` component
-  - in our `<Footer />` component
+  - In our `<Header />` component
+  - In our `<Footer />` component
   - ... and finally on our `index.js` page
 
 This is what the `<Layout />` and `<Component />` portion of our `_app.js` file should approximately look like:
@@ -318,11 +314,11 @@ return (
 
 ### Caveat: The Dangers of Prop Drilling
 
-- Reminder: Prop drilling is a term used to describe the process of **passing props down through multiple levels of components**
-- This can be problematic because
-  - it makes the code harder to read and understand
-  - can make the application more difficult to maintain
-  - can make it difficult to reuse components, because they may be tied to a specific data structure passed down through props
+- Reminder: Prop drilling is a term used to describe the process of **passing props down through multiple levels of components**.
+- This can be problematic because:
+  - It makes the code harder to read and understand.
+  - It can make the application more difficult to maintain.
+  - It can make it difficult to reuse components, because they may be tied to a specific data structure passed down through props.
 
 ### Alternatives: State Management Solutions in React
 
@@ -331,13 +327,13 @@ return (
 
 > 💡 We usually recommend [Zustand](https://github.com/pmndrs/zustand), because it is known for its simplicity and flexibility. Some of the key features that make Zustand a good choice for state management in React include its minimal API, which makes it easy to use and learn, and its ability to persist state across components, which can be useful for building complex, dynamic applications. It also isn't quite as difficult to maintain as Redux, especially for small-scale applications.
 
-- More advantages of using a state management solution for React are
-  - improve code organization
-  - reduce complexity
-  - make the code easier to maintain and update
-  - clear, centralized way to manage application state
-  - decouple the data from the components, making it easier to reuse components and change the data structure
-- Additionally, many state management solutions for React provide tools for debugging and testing, which can help to identify and fix issues in the code more easily.
+- Additional advantages of using a state management solution for React include:
+  - Improved code organization
+  - Reduced complexity
+  - Easier maintenance and updates
+  - A clear, centralized way to manage application state
+  - Decoupling data from components, enhancing reusability and flexibility
+- Many state management solutions also offer tools for debugging and testing, making it easier to identify and fix issues in the code.
 
 ### In Summary: No One-Size-Fits-All Approach
 

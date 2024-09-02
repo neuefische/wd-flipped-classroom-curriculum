@@ -1,117 +1,102 @@
 # Backend Read
 
-## Learning objectives
+## Learning Objectives
 
 - Knowing about ORM and (`mongoose` as) ODM
 - Understanding how to write a `mongoose` Schema
 - Knowing how to connect an application with a remote database using `mongoose`
 - Knowing how to read data with a `mongoose` model
 
----
-
-Using `mongoose`, we can easily access our database from our application and make sure that the data has the correct data types we have defined.
-
-### Why is the content of today's block that important for the students?
-
-A non-relational database like MongoDB can quickly become messy because you can add fields and data types to every document as you wish. By using `mongoose`, we can make sure that the data types are coherent and don't break our application.
-
-### Question
-
-How can we read data from our database and display it in the frontend?
-
----
-
-### Required
+## Requirements
 
 - Next.js
 - Backend Basics
 - Backend API Routes
 - Backend MongoDB (with MongoDB Atlas)
 
----
+## Demo
 
-## Session Guide
-
-Use this demo locally by running this command in your Terminal:
+### Start
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-start
 ```
 
-You can check out the final version of this demo locally by running this command in your Terminal:
+### End
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-end
 ```
 
+---
+
+## Session Guide
+
+In a non-relational database like MongoDB, things can get messy quickly because you can add fields and data types to each document as you wish. `mongoose` helps us keep our data consistent by enforcing a schema that defines the structure and data types of our documents. This way, we ensure that our application remains stable and doesn’t break due to unexpected data types. Additionally, `mongoose` allows us to easily access our database from within our application.
+
+> How can you read data from your database and display it in the frontend?
+
 ### ORM / ODM and `mongoose`
 
 - Remind students that right now, we know how to set up a database in the cloud using MongoDB Atlas.
-- Show the Demo: it has an overview and details page, but receives the data from `lib/data.js`, i.e. there is no database where we could create / read / update / delete entries.
-- Announce the goal of the session: we want to have a database with the jokes' data and access it from our app.
-- Explain that we need a JavaScript API to work with MongoDB
-  - that is sometimes called a database driver (just like your printer driver);
-  - we will use a library called `mongoose`. That's an ODM (Object Document Mapper).
+- Show the demo: It has an overview and details page, but receives the data from `lib/data.js`, i.e. there is no database where we could create / read / update / delete entries.
+- Announce the goal of the session: We want to have a database with the jokes' data and access it from our app.
+- Explain that we need a JavaScript API to work with MongoDB:
+  - That is sometimes called a database driver (just like your printer driver).
+  - We will use a library called `mongoose`. That's an ODM (Object Document Mapper).
 - Explain [the terms ORM / ODM](https://medium.com/spidernitt/orm-and-odm-a-brief-introduction-369046ec57eb):
 
   - ORM (_Object Relation Mapping_):
-    - technique to perform CRUD to mainly relational databases (MySQL, PostgreSQL, etc.),
-    - uses an _object-oriented paradigm_
-    - like excel spreadsheet with rows and columns => you cannot add a field to one entry that doesn't exist for all
-    - is mapped to a single object for all entries.
+    - A technique for performing CRUD operations on mainly relational databases (MySQL, PostgreSQL, etc.),
+    - Uses an _object-oriented paradigm_.
+    - Think of it like an Excel spreadsheet with rows and columns: You cannot add a field to one entry that doesn't exist for all.
+    - It is mapped to a single object for all entries.
   - ODM (_Object Document Mapping_):
 
-    - like ORM for non-relational databases (MongoDB)
-    - uses a _document-oriented paradigm_
+    - Similar to ORM but for non-relational databases (MongoDB).
+    - Uses a _document-oriented paradigm_.
 
 - Summarize the reasons to use `mongoose` as ODM:
   - It helps building a schema and querying the database (it's also our db driver).
   - It has to run on the server, because database access is not secure in the browser.
-- Remind students that we already have a server: our Next.js API routes! 🤡
+- Remind students that we already have a server: Our Next.js API routes! 🤡
 
 ### Prepare and Connect the Database
 
 - Explain that we need to set up two things:
-  - a database with all jokes and
-  - the connection between this database and the Next.js app with `mongoose`.
+  - A database with all jokes.
+  - A connection between this database and the Next.js app with `mongoose`.
 - To start with the database, open MongoDB Atlas and if you not have done so in the _Backend MongoDB_ session, create
 
   - a database called _jokes-database_ and
-  - a collection called _jokes_;
+  - a collection called _jokes_.
   - [Copy the jokes data](assets/data.json) into your _jokes_ collection by pasting it into the _Insert Document_ window.
 
 - Explain that we still need the connection between database and app:
   - Install mongoose: `npm install mongoose`.
   - Create a `.env.local` file at the root of your project with the following content:
     `MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-name>/jokes-database?retryWrites=true&w=majority`.
-    - Replace `<username>`, `<password>` and `<cluster-name>` with the values from
-      MongoDB Atlas (see [MongoDB Atlas Setup](../backend-mongodb/challenges-backend-mongodb.md)).
+    - Replace `<username>`, `<password>` and `<cluster-name>` with the values from MongoDB Atlas (see [MongoDB Atlas Setup](../backend-mongodb/challenges-backend-mongodb.md)).
   - Create a `db/connect.js` file and copy the
     [content](https://github.com/neuefische/web-curriculum/blob/main/sessions/backend-read/assets/dbConnect.js).
   - Remind students that it's not necessary to understand this file entirely:
-    - Note that it uses the `MONGODB_URI` we have just set up in `.env.local` to create a
-      connection.
+    - Note that it uses the `MONGODB_URI` we have just set up in `.env.local` to create a connection.
     - You should leave it here, but if there are any further questions:
-      - The example uses a cached connection across hot reloads in development to prevent
-        multiple connections to be opened simultaneously.
+      - The example uses a cached connection across hot reloads in development to prevent multiple connections to be opened simultaneously.
       - It exposes a function that returns the connection (wrapped in a promise).
 
 ### Writing a Schema
 
-- Explain that we need to declare a
-  [Schema that describes the data type of the documents in a collection](https://mongoosejs.com/docs/guide.html).
+- Explain that we need to declare a [Schema that describes the data type of the documents in a collection](https://mongoosejs.com/docs/guide.html).
 - We use this Schema to create a Model that we can use to interact with the database.
-- Note the difference between _Schema_ and _Model_
-  - the _Schema_ describes the structure of a document
-  - the _model_ gives us a programming interface for interacting with the database.
+- Note the difference between _Schema_ and _Model_:
+  - The _Schema_ describes the structure of a document.
+  - The _model_ gives us a programming interface for interacting with the database.
 - Create `db/models/Joke.js`:
   - We don't need to define the `id` because `mongoose` will automatically create one.
-  - The name of the collection the model works upon is being generated from the models name, in
-    this case "Joke" => "jokes".
-  - You can call the `mongoose.model` method with a third argument that holds the collection
-    name.
-  - We have to check whether the model with the name "Joke" has already been compiled and if
-    yes, take the already compiled model. That's why we use the logical OR (`||`) operator.
+  - The name of the collection the model works upon is being generated from the models name, in this case "Joke" => "jokes".
+  - You can call the `mongoose.model` method with a third argument that holds the collection name.
+  - We have to check whether the model with the name "Joke" has already been compiled and if yes, take the already compiled model. That's why we use the logical OR (`||`)operator.
 
 ```js
 // db/models/Joke.js
@@ -130,25 +115,21 @@ export default Joke;
 
 ### Querying the Database with `mongoose`
 
-#### Query all Jokes
+#### Query All Jokes
 
 - Explain that we can use the created `mongoose` model to query our database.
 - Switch to `api/jokes/index.js`.
-- Explain that we don't want to use the local `lib/data.js` anymore, but our remote database;
-  delete the import.
+- Explain that we don't want to use the local `lib/data.js` anymore, but our remote database - delete the import.
 - Instead, import `dbConnect` and the `Joke` model.
-- Explain that we want to create a connection to our database first by calling
-  `await dbConnect()` inside of the request handler function.
+- Explain that we want to create a connection to our database first by calling `await dbConnect()` inside of the request handler function.
 
   - Note that we need to make the `handler` an async function now.
 
-- Explain that we can define different behaviors depending on the HTTP request method used;
-  because we have not declared anything else in `components/JokeList/index.js`, the default is a
-  `GET` request.
-- Write the code to check the `request.method` and if it's `GET`,
-  - use the imported `Joke` model and it's `.find()` method to find all jokes in the database;
-  - remind students that we have to `await` the response again,
-  - return a `200` status and the `jokes`.
+- Explain that we can define different behaviors depending on the HTTP request method used. Because we have not declared anything else in `components/JokeList/index.js`, the default is a `GET` request.
+- Write the code to check the `request.method` and if it's `GET`:
+  - Use the imported `Joke` model and it's `.find()` method to find all jokes in the database.
+  - Remind students that we have to `await` the response again.
+  - Return a `200` status and the `jokes`.
 
 ```js
 // api/jokes/index.js
@@ -165,7 +146,7 @@ export default async function handler(request, response) {
 }
 ```
 
-#### Query one Joke by Id
+#### Query a Single Joke by Id
 
 - Note that querying a single joke from the database does not work yet.
 - Switch to `api/jokes/[id].js`.
@@ -198,7 +179,7 @@ export default async function handler(request, response) {
 
 - Explain that we need to adapt the frontend slightly to make the links to the details pages
   work:
-  - the fetched `data` array now contains objects with `_id` instead of `id`.
+  - The fetched `data` array now contains objects with `_id` instead of `id`.
 
 ```js
 // necessary frontend changes in components/JokeList.js: change joke.id to joke._id
@@ -208,5 +189,3 @@ export default async function handler(request, response) {
 ```
 
 - When we want to deploy the app on Vercel, we need to make sure to set the MongoDB connection string as an environment variable. We will discuss how to set environment variables in a later session.
-
----
