@@ -1,4 +1,4 @@
-# Mock Interview 1 - ✨Unlock Your Next Job with Practice ✨
+# Mock Interview 2 - ✨Unlock Your Next Job with Practice ✨
 
 ## Learning Objectives
 
@@ -38,11 +38,9 @@ Job interviews are one of the most profitable skills you can learn! Boost your c
 - **Ask questions if needed:**
   - Clarify any uncertainties about the problem.
 
-2. Come up with a solution in plain english
 
-3. Come Up with a Solution in Plain Language
-   Very often you could solve the problem yourself but you still cannot come up with the small steps that you need as instructions for the computer.
-   In this case it helps to make yourself aware what happens in your brain when you solve the task.
+2. Come Up with a Solution in Plain Language
+Very often you could solve the problem yourself but you still cannot come up with the small steps that you need as instructions for the computer. In this case it helps to make yourself aware what happens in your brain when you solve the task.
 
 - **Solve the problem mentally:** Break down what happens in your brain when you solve the task.
 
@@ -56,9 +54,7 @@ Job interviews are one of the most profitable skills you can learn! Boost your c
 
 3. Translate the instructions into code
 
-Now turn one comment after another to JavaScript code. Always ask yourself "Do i know how to implement this in JavaScript?". In case you are 100% sure: write down the code. If not you need to look it up.
-It's not a problem at all looking things up but it is a huge problem if you randomly type stuff and hope to be right by accident. Don't do this.
-After every line try to test it immediately. This will usually be done with a `console.log()`.
+Now turn one comment after another to JavaScript code. Always ask yourself "Do i know how to implement this in JavaScript?". In case you are 100% sure: write down the code. If not you need to look it up. It's not a problem at all looking things up but it is a huge problem if you randomly type stuff and hope to be right by accident. Don't do this. After every line try to test it immediately. This will usually be done with a `console.log()`.
 Always only concentrate on the small step that you are implementing right now. Avoid thinking about the whole problem at this point.
 
 ## Bonus

@@ -51,7 +51,7 @@ Here are some rules to help everyone engage:
 - The candidate can raise their hand at any point during the interview and request to switch back to the classroom setup to ask questions.
 - Others can also raise their hand and request to switch when they have questions.
 - Before the interview begins, be sure to request remote control (using the zoom feature) so that you can step in and help correct any typos. This will not only reduce their nervousness, but also ensure a seamless interview experience.
-- Feel free to utilize this [extension][coderunner] that enables you to run code with just a click of a button, eliminating the need for terminal work and allowing the student to solely focus on the code and problem at hand.
+- Feel free to utilize this [extension](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) that enables you to run code with just a click of a button, eliminating the need for terminal work and allowing the student to solely focus on the code and problem at hand.
 
 ### The Problem
 
