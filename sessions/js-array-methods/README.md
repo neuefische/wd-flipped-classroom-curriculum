@@ -33,15 +33,15 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/dem
 
 ## Session Guide
 
-In many cases, data in JavaScript is stored in arrays, often as arrays of objects. There are various ways to manipulate and access this data:
+In this session, we will explore different ways to manipulate and access data stored in arrays, often arrays of objects. These methods help make your code cleaner, more efficient, and more readable. Here are some key operations we can perform with array methods:
 
-- Running the same operation on each object, like creating a card for every item.
+- Repeating the same action for each object, such as creating a card for every item.
 - Filtering objects based on specific criteria to narrow down results.
 - Generating a new array that contains only selected pieces of information.
-- Determining if at least one element in the array meets a certain condition.
-- Locating a specific object within an array.
+- Checking if an array contains a certain element.
+- Finding a specific object within an array.
 
-> Why is it advantageous to use array methods for handling data in arrays? How do these methods contribute to making your code more readable and efficient?
+> Why is it helpful to use array methods when working with data? How do these methods make your code cleaner and easier to understand?
 
 ### What are Array Methods?
 
@@ -74,7 +74,7 @@ In many cases, data in JavaScript is stored in arrays, often as arrays of object
   });
   ```
 
-- Show how `forEach` can be used meaningfully on a web page. Use `forEach` to create a card for each game, i.e.:
+- Show how `forEach` can be used meaningfully on a web page. Use `forEach` to create a card for each game:
 
   ```js
   games.forEach((game) => {
@@ -101,7 +101,7 @@ In many cases, data in JavaScript is stored in arrays, often as arrays of object
   - Can transform each element of an array.
   - Transformed elements are stored in a **newly created array** returned by `map`.
   - The elements in the original array are not being altered.
-  - You define the kind of transformation in the callback function and **return** the transformed element.
+  - You define the kind of transformation in the callback function and `return` the transformed element.
 
   ```js
   const upperCaseStrings = strings.map((string) => {
@@ -122,13 +122,13 @@ In many cases, data in JavaScript is stored in arrays, often as arrays of object
 
 ### `find`
 
--Explain `find`:
+- Explain `find`:
 
-- Show, that we can use the `find` method to get a single element from the array that satisfies a certain condition.
-- Explain that `find` consumes a callback function that is executed for every element of the array.
-- This callback function will check a specific condition and needs to return either `true` or `false`.
-- Once the callback function returns `true`, the execution is stopped and the `find` function returns the respective object.
-- When no element is found, it returns `undefined`. We have to keep this in mind to avoid an error when rendering an `undefined` value (we can use optional chaining for this purpose or an if-else statement).
+  - Show, that we can use the `find` method to get a single element from the array that satisfies a certain condition.
+  - Explain that `find` consumes a callback function that is executed for every element of the array.
+  - This callback function will check a specific condition and needs to return either `true` or `false`.
+  - Once the callback function returns `true`, the execution is stopped and the `find` function returns the respective object.
+  - When no element is found, it returns `undefined`. We have to keep this in mind to avoid an error when rendering an `undefined` value (we can use optional chaining for this purpose or an if-else statement).
 
 ```js
 const searchResult = games.find((game) => {
