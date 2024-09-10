@@ -51,7 +51,7 @@ import useSWR from "swr";
 const fetcher = (...args) => fetch(...args).then((response) => response.json());
 
 function Character() {
-  const { data } = useSWR("https://swapi.dev/api/people/1", fetcher);
+  const { data } = useSWR("https://swapi.py4e.com/api/people/1", fetcher);
 
   // render data
   return <div>Hello {data.name}!</div>; // Hello Luke Skywalker!
@@ -104,7 +104,7 @@ You can destructure them like the `data` object and use them to conditionally re
 ```js
 function Character() {
   const { data, error, isLoading, isValidating } = useSWR(
-    "https://swapi.dev/api/people/1"
+    "https://swapi.py4e.com/api/people/1"
   );
 
   if (error) return <div>failed to load</div>;
@@ -160,7 +160,9 @@ You can use the `error` object to display a more detailed error message (`messag
 
 ```js
 function Character() {
-  const { data, error, isLoading } = useSWR("https://swapi.dev/api/people/1");
+  const { data, error, isLoading } = useSWR(
+    "https://swapi.py4e.com/api/people/1"
+  );
 
   if (error) return <div>{error.message}</div>;
   if (isLoading) return <div>loading...</div>;
@@ -176,7 +178,7 @@ To refetch the API on interval, pass a `refreshInterval` value inside of an opti
 argument to the `useSWR` hook:. In the following example, `SWR` will refetch the API every second:
 
 ```js
-useSWR("https://swapi.dev/api/people/1", { refreshInterval: 1000 });
+useSWR("https://swapi.py4e.com/api/people/1", { refreshInterval: 1000 });
 ```
 
 > 📙 Read more about
@@ -187,7 +189,7 @@ by the `useSWR` hook.
 
 ```js
 function Character() {
-  const { data, mutate } = useSWR("https://swapi.dev/api/people/1");
+  const { data, mutate } = useSWR("https://swapi.py4e.com/api/people/1");
 
   return <RefetchButton onRefetch={() => mutate()}>Refetch data</RefetchButton>;
 }
@@ -209,17 +211,17 @@ having to worry about fetching the same data multiple times.
 
 ```js
 function CharacterName() {
-  const { data } = useSWR("https://swapi.dev/api/people/1");
+  const { data } = useSWR("https://swapi.py4e.com/api/people/1");
   return <div>Hello {data.name}!</div>; // Hello Luke Skywalker!
 }
 
 function CharacterHairColor() {
-  const { data } = useSWR("https://swapi.dev/api/people/1");
+  const { data } = useSWR("https://swapi.py4e.com/api/people/1");
   return <div>His hair color is {data.hair_color}.</div>; // His hair color is blond.
 }
 
 function CharacterHeight() {
-  const { data } = useSWR("https://swapi.dev/api/people/1");
+  const { data } = useSWR("https://swapi.py4e.com/api/people/1");
   return <div>He is {data.height} cm tall.</div>; // He is 172 cm tall.
 }
 
@@ -242,7 +244,7 @@ This is true even if you were to call `mutate` from yet another component, as lo
 
 ```js
 function RevalidateButton() {
-  const { mutate } = useSWR("https://swapi.dev/api/people/1");
+  const { mutate } = useSWR("https://swapi.py4e.com/api/people/1");
   return (
     <button type="button" onClick={() => mutate()}>
       Revalidate
