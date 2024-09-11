@@ -18,6 +18,8 @@
 
 There is no pre-built demo for this session.
 
+---
+
 ## Session Guide
 
 In this session, the goal is to thoroughly prepare for your Capstone Project, ensuring that you start with confidence and efficiency. By the end of the Capstone Prep, you should have a clear understanding of your user stories, a set of wireframes, and a strong foundation for teamwork with established group rules. This preparation time is your opportunity to align on goals, clarify any uncertainties, and establish a solid plan for collaboration.
