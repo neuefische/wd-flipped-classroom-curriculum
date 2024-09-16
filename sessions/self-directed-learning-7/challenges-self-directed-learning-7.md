@@ -20,7 +20,7 @@ npm install openai
 
 We have 2 options for this project.
 
-1. Use the [openai API](https://platform.openai.com/api-keys). Yuo can either sign up and add a credit card and pre-pay for some credits (min $5.95 incl. taxes at the time of writing) 💰 or you can reach out to a coach and get credentials from us. It is important we don't expose the API key from openai. [See more on this here](./assets/openai-api-key-setup.md).
+1. Use the [openai API](https://platform.openai.com/api-keys). You can either sign up and add a credit card and pre-pay for some credits (min $5.95 incl. taxes at the time of writing) 💰 or you can reach out to a coach and get credentials from us. It is important we don't expose the API key from openai. [See more on this here](./assets/openai-api-key-setup.md).
 2. Alternatively you can use [LM Studio](https://lmstudio.ai/) to run an open source model locally. (free). You can follow our [guide here to get things setup](./assets/lm-studio-setup.md)
 
 ### 🙈 Hints 🙈
