@@ -40,31 +40,30 @@ Next.js will help us with the following topics:
 
 ### How to Next.js: Basics
 
-#### Differences to Create React App
+#### Differences to Vite
 
-Here you can see a comparison of some relevant differences between Next.js and Create React App (CRA):
+Here you can see a comparison of some relevant differences between Next.js and Vite:
 
-|                        | Next.js (new)                    | Create React App (old) |
-| ---------------------: | -------------------------------- | ---------------------- |
-| Start local dev server | `npm run dev`                    | `npm run start`        |
-|         Root component | `_app.js`                        | `App.js`               |
-|               Document | `_document.js`                   | `public/index.html`    |
-|        Default styling | CSS Modules\*                    | CSS\*                  |
-|              Rendering | Server and Client Side           | Client Side            |
-|       Route definition | file structure in `pages` folder | n/a                    |
-|      Client side links | `<Link>` component               | n/a                    |
-|     Image optimization | `<Image>` component              | n/a                    |
-|     Modifying `<head>` | `<Head>` component               | n/a                    |
-|           Font loading | `@next/font` package             | n/a                    |
-|             API routes | `pages/api` folder               | n/a                    |
-|                 ESLint | Next.js specific rules           | CRA specific rules     |
-|   Bundler + transpiler | Webpack/Turbopack + SWC          | Webpack + Babel        |
+|                      | Next.js (new)                    | Vite (old)          |
+| -------------------: | -------------------------------- | ------------------- |
+|       Root component | `_app.js`                        | `App.jsx`           |
+|             Document | `_document.js`                   | `/index.html`       |
+|      Default styling | CSS Modules\*                    | CSS\*               |
+|            Rendering | Server and Client Side           | Client Side         |
+|     Route definition | file structure in `pages` folder | n/a                 |
+|    Client side links | `<Link>` component               | n/a                 |
+|   Image optimization | `<Image>` component              | n/a                 |
+|   Modifying `<head>` | `<Head>` component               | n/a                 |
+|         Font loading | `@next/font` package             | n/a                 |
+|           API routes | `pages/api` folder               | n/a                 |
+|               ESLint | Next.js specific rules           | Vite specific rules |
+| Bundler + transpiler | Webpack/Turbopack + SWC          | esbuild / Rollup    |
 
-\*Both Next.js and CRA support all modern styling solutions.
+\*Both Next.js and Vite support all modern styling solutions.
 
 #### Server-Side Rendering
 
-With CRA the browser loads an almost empty HTML document (`public/index.html`). Your React code is only executed in the browser.
+With Vite the browser loads an almost empty HTML document (`/index.html`). Your React code is only executed in the browser.
 
 Next.js comes with a feature called "server-side rendering". This feature will execute your React components on the server to send a complete HTML document to the client (the browser). On the client your React code gets executed again.
 
@@ -165,9 +164,9 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        port: '',
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
       },
     ],
   },

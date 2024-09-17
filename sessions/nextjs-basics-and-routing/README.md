@@ -64,7 +64,6 @@ npx create-next-app@latest
 - Follow the setup guide (select _JavaScript_ and enable _ESLint_).
 - Open the created project folder in VS Code.
 - Run the dev server with the following command.
-  - Explain the command is **not** `npm run start` as with `create-react-app`.
 
 ```sh
 npm run dev
@@ -77,8 +76,9 @@ npm run dev
   - Explain there is no `index.js` as starting point for the app (like with plain React).
   - Point out there is a `pages` folder that contains all our pages (more on this later).
   - Explain the file we edited, `pages/index.js`, is the React code for the homepage.
-  - Point out `pages/_app.js` is the root component for the app like `App.js` with `create-react-app`.
+  - Point out `pages/_app.js` is the root component for the app like `App.jsx` with `vite`.
     - Everything relevant for all pages can be added here.
+  - Highlight that files containing JSX can keep the file ending `.js`. Next.js does not use vite, which had the requirement of naming component files `.jsx`.
   - Mention `pages/api` is used to create APIs. We will ignore this for now, but learn about it in a later session.
   - Mention the students will work with a template for Next.js projects.
 

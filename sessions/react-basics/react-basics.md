@@ -7,7 +7,7 @@
 - [ ] Understanding the declarative approach of React
 - [ ] Creating React components
 - [ ] Understanding rendering with React
-- [ ] Project Scaffolding with the `Create React App` tool
+- [ ] Project Scaffolding with the `Vite` tool
 
 ---
 
@@ -220,9 +220,9 @@ etc.) as well as a great developer experience (declaritive code is much easier t
 
 Since JSX is not a standard JavaScript syntax, we need to use a [transpiler](https://babeljs.io/) (a tool that translates one variant of a language into another) to transform it into standard JavaScript, that can be understood by the browser.
 
-A [bundler](https://webpack.js.org/) is a tool that combines all the files of our codebase into one file, that we can include in our HTML. The bundler also takes care of running the transpiler when needed.
+A [bundler](https://rollupjs.org/) is a tool that combines all the files of our codebase into one file, that we can include in our HTML. The bundler also takes care of running the transpiler when needed.
 
-The bundler creates a development server when we run `npm run start` locally.
+The bundler creates a development server when we run `npm run dev` locally.
 
 > 💡 You might notice that in the challenges we are using an `import` statement to import `.css` files into our JavaScript files. This is not a standard JavaScript feature, but it is supported by the bundler. A css import statement is transformed into a `<link>` element in the HTML automatically.
 >
@@ -238,7 +238,7 @@ The bundler creates a development server when we run `npm run start` locally.
 
 It is used to install and manage packages (libraries) for a project.
 
-It is also used to run scripts that are defined in the `package.json` file (like `npm start`)
+It is also used to run scripts that are defined in the `package.json` file (like `npm run dev`)
 
 ---
 
@@ -291,46 +291,42 @@ When installing, npm creates a `node_modules` folder and a `package-lock.json` f
 
 ---
 
-## Project Scaffolding with `Create React App`
+## Project Scaffolding with `Vite`
 
 Project scaffolding is the process of creating a new project. You will use the
-[Create React App](https://create-react-app.dev/docs/getting-started) tool to create a new React project automatically.
+[Vite](https://vitejs.dev/guide/) tool to create a new React project automatically.
 
 > 💡 In principle, you could create a new React project from scratch. However, this would be a lot of work and we would have to set up a lot of things ourselves.
 
-> 💡 Create React App, by the way, works quite similar to the `ghcd` tool you have probably already
-> used.
+> 💡 Vite, by the way, works quite similar to the `ghcd` tool you have probably already used.
 
 A new project is created by running the following command in the terminal:
 
 ```sh
-npx create-react-app my-react-app
+npm create vite@latest my-react-app
 ```
 
+- If running this command for the first time, you need to install the `create-vite` package, accept and continue.
+- In the menu, choose React as the framework, afterwards pick the Javascript **without** SWC (speedy web compiler) variant.
 - Run `cd my-first-react-app` to go into the project and open in VSCode with `code .`
 - Run `npm i`
-- Run `npm start`to start the dev server
+- Run `npm run dev`to start the dev server
 
-A new create-react-app project will have a lot of files and folders. Here is a brief overview:
+A new react project will have a lot of files and folders. Here is a brief overview:
 
-| File / Folder           | Description                                                                                                              | contains                                                                           |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| README.md               | general info about project                                                                                               | reminder how to start the dev-server                                               |
-| package.json            | project configuration                                                                                                    | information about dependencies, scripts, metadata                                  |
-| node_modules folder     | dependencies                                                                                                             | all dependencies of the project                                                    |
-| **public folder**       | static assets that are not processed by the bundler                                                                      | e.g. index.html, favicon.ico, manifest.json, robot.txt                             |
-| index.html              | root html file, don't mess with the `div id="root"></div>`                                                               | root element for React                                                             |
-| favicon.ico             | icon that is shown in the browser tab                                                                                    | image                                                                              |
-| robots.txt              | instructions for web robots how to crawl the site                                                                        | text                                                                               |
-| manifest.json           | configuration for Progressive Web Apps, it defines how your app appears and behaves when 'installed' on a mobile device. | metadata                                                                           |
-| images and other assets | static assets that you want to be served directly without processing.                                                    | images, fonts, etc.                                                                |
-| **src folder**          | all source code that will go through webpack processing                                                                  | all JavaScript, JSX, CSS, and other files that make up your React application.     |
-| index.js                | The JavaScript entry point where ReactDOM renders the App component into the DOM.                                        | imports react-dom and the App component                                            |
-| App.js                  | The root component of the React app                                                                                      | typically where you start writing your app's code and organizing other components. |
-| App.css                 | CSS file for the App component                                                                                           | styles for the App component                                                       |
-| App.test.js             | Test file for the App component                                                                                          |                                                                                    |
-| reportWebVitals.js      | Report performance metrics to Google Analytics                                                                           |                                                                                    |
-| setupTests.js           | Setup file for Jest                                                                                                      |
+| File / Folder        | Description                                                                       | contains                                                                           |
+| -------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| README.md            | general info about project                                                        | reminder how to start the dev-server                                               |
+| package.json         | project configuration                                                             | information about dependencies, scripts, metadata                                  |
+| vite.config.js       | configuration for vite                                                            | Configurations for basic behavior of dev server, bundler, plugin management.       |
+| node_modules folder  | dependencies                                                                      | all dependencies of the project                                                    |
+| index.html           | root html file, don't mess with the `div id="root"></div>`                        | root element for React, script tag for `src/main.jsx` file                         |
+| **public folder**    | static assets that are not processed by the bundler                               | vite.svg                                                                           |
+| **src folder**       | all source code that will go through Rollup processing                            | all JavaScript, JSX, CSS, and other files that make up your React application.     |
+| main.jsx / index.jsx | The JavaScript entry point where ReactDOM renders the App component into the DOM. | imports react-dom and the App component                                            |
+| App.jsx              | The root component of the React app                                               | typically where you start writing your app's code and organizing other components. |
+| App.css              | CSS file for the App component                                                    | styles for the App component                                                       |
+| index.css            | CSS file for global styles                                                        | css variables, style resets, fonts                                                 |
 
 ---
 
@@ -341,11 +337,4 @@ A new create-react-app project will have a lot of files and folders. Here is a b
 - [JavaScript in JSX with Curly Braces in the React Docs](https://react.dev/learn/javascript-in-jsx-with-curly-braces)
 - [Your First Component in the React Docs](https://react.dev/learn/your-first-component)
 - [Difference between a Framework and a Library on freecodecamp](https://www.freecodecamp.org/news/the-difference-between-a-framework-and-a-library-bd133054023f/)
-
-### `Create React App` Docs
-
-- [Getting Started on the Create React App Docs](https://create-react-app.dev/docs/getting-started)
-- [Folder Structure on the Create React App Docs](https://create-react-app.dev/docs/folder-structure)
-- [Available Scripts on the Create React App Docs](https://create-react-app.dev/docs/available-scripts)
-- [Adding a Stylesheet on the Create React App Docs](https://create-react-app.dev/docs/adding-a-stylesheet)
-- [Adding Images, Fonts and Files on the Create React App Docs](https://create-react-app.dev/docs/adding-images-fonts-and-files)
+- [Vite Getting Started](https://vitejs.dev/guide/)

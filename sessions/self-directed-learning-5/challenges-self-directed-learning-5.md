@@ -10,15 +10,19 @@
 
 Let's build a website that displays the current number of people in space (again!). Hints are provided if you get stuck. Try to build as much as possible without looking at the hints. We will use the [following API](http://open-notify.org/Open-Notify-API/People-In-Space/) to determine how many people are current in space.
 
-1.  Create a new React project using `create-react-app`. `cd` into the new directory that get's created and don't forget to install the packages.
+1.  Create a new React project using `vite`. `cd` into the new directory that get's created and don't forget to install the packages.
      <details>
      <summary>🙈 Hint</summary>
 
     ```bash
-    npx create-react-app people-in-space-react
+    npm create vite@latest people-in-space-react
+    ```
+
+    - choose react, then javascript without SWC
+
+    ```bash
     cd people-in-space-react
     npm i
-
     ```
 
     </details>
@@ -29,7 +33,7 @@ Let's build a website that displays the current number of people in space (again
        <summary>🙈 Hint</summary>
 
     ```bash
-    npm run start
+    npm run dev
     ```
 
     </details>

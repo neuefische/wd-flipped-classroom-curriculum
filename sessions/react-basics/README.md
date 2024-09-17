@@ -6,7 +6,7 @@
 - Understanding JSX and differences to HTML
 - Understanding the declarative approach of React
 - Gaining a brief introduction to `npm` as a CLI tool and the `package.json` file
-- Learning how to work with Create React App
+- Learning how to work with Vite
 
 ## Requirements
 
@@ -63,6 +63,7 @@ Modern apps are very complex, often containing many interactive elements that re
 - JSX is a **syntax extension** to JavaScript.
 - JSX is a way to describe the DOM tree **declaratively**.
 - It looks like HTML, but **it is not HTML**.
+- Javascript files containing JSX have the `.jsx` file extension. This is needed since `Vite`, the build tool we use to create React projects, requires this file ending when the file contains JSX code.
 
 ### Comparison of Vanilla JS and React
 
@@ -70,13 +71,13 @@ Modern apps are very complex, often containing many interactive elements that re
 - One `<div>` we use to append our simulated **Vanilla JS "environment"**.
 - The other `<div>` element is **needed by React** to render the React root element.
 
-#### Understanding the `index.js` in React
+#### Understanding the `index.jsx` in React
 
-- Open the `index.js` file and go through the code.
+- Open the `index.jsx` file and go through the code.
 
-> ❗️ Explain that later on we will get to know a framework called **Create React App** that will help us to set up a React project.
+> ❗️ Explain that later on we will get to know a tool called **vite**, which not only helps us set up a React project quickly but also provides a fast development environment and build process.
 >
-> When working with a framework like this we don't need to write this code in the `index.js` ourselves.
+> When working with a tool like this we don't need to write this code in the `index.jsx` ourselves.
 
 - `rootElement`
   - First, the "root-`<div>`" that we saw in the `index.html` is retrieved and stored in a variable named `rootElement`.
@@ -99,7 +100,7 @@ Modern apps are very complex, often containing many interactive elements that re
 
 #### Vanilla JS App Simulation
 
-- Proceed to the simulated Vanilla JS environment in the `index.js` file and show the **query selector** for the Vanilla JS root element.
+- Proceed to the simulated Vanilla JS environment in the `index.jsx` file and show the **query selector** for the Vanilla JS root element.
 - Explain that for the purpose of comparing Vanilla JS with React, we created a `VanillaApp.js`.
 - To render the `VanillaApp` component we need to first import it:
 
@@ -119,7 +120,7 @@ vanillaJSRootElement.append(vanillaApp);
 
 For the comparison, we want to build a button in Vanilla JS as we know it.
 
-- Start the dev server with `npm start`.
+- Start the dev server with `npm run dev`.
 - Open the `VanillaApp.js` file.
 - Inside the function `VanillaApp` create a container element for our button.
 
@@ -147,12 +148,12 @@ return appContainer;
 
 - Show the button being displayed in the browser.
 
-#### Vanilla JS Button: Building a reusable component
+#### Vanilla JS Button: Building a Reusable Component
 
 - Remind the students that React is all about creating components.
 - To compare it to VanillaJS we now need to create a component for the button.
-- Create a component called `Button` and copy the button related code from the `VanillaApp` function into it
-- ❗️ add the return statement
+- Create a component called `Button` and copy the button related code from the `VanillaApp` function into it.
+- ❗️ Add the return statement.
 
 ```js
 function Button() {
@@ -202,7 +203,7 @@ export default function VanillaApp() {
 
 #### React Button: Getting to know **JSX**
 
-- Open the `App.js` file.
+- Open the `App.jsx` file.
 - Explain the function `App`:
 
   - Every React component needs a return statement, otherwise it will return `undefined`.
@@ -225,7 +226,7 @@ function App() {
 ```
 
 - Clarify that even though JSX looks like HTML it is in fact a **syntax extension to JavaScript**
-- The bundler in our React App (e.g. Webpack) will transform the JSX into JavaScript that the browser can understand.
+- The bundler in our React App (e.g. Rollup) will transform the JSX into JavaScript that the browser can understand.
 - Explain (built-in) [attributes in JSX](https://reactjs.org/docs/dom-elements.html).
 
   - Some attributes are the same as in HTML (`id`, `type`).
@@ -263,12 +264,12 @@ React is all about creating components.
 - A component is a reusable part of the UI with contained **appearance and logic**.
 - **In code**: a component is a function that returns JSX.
 
-> ##### ❓ Rules of components:
+> ##### ❓ Rules of Components:
 >
-> - function name with **uppercase first letter** (convention: PascalCase)
-> - returns JSX (with **one** parent element)
-> - can be **nested**
-> - can be **reused**
+> - Function name with **uppercase first letter** (convention: PascalCase).
+> - Returns JSX (with **one** parent element).
+> - Can be **nested**.
+> - Can be **reused**.
 
 - Create a function called `Button` and paste the code from the `App` component into it:
 
@@ -311,56 +312,53 @@ export default function App() {
 }
 ```
 
-- Open both the `App.js` and `VanillaApp.js` next to each other and compare the code.
+- Open both the `App.jsx` and `VanillaApp.js` next to each other and compare the code.
 
-### Demo - Introduction to Create React App
+### Demo - Introduction to Vite
 
-> Its time to create our first React app with Create React App.
+> Its time to create our first React app with Vite.
 
-:exclamation: Good news: We do not need to setup a react project manually and that we are going to use a package for that, called **`create-react-app`**.
+❗️ Good news: We do not need to manually set up a React project, as we are going to use a tool called vite, which handles the scaffolding for us. Scaffolding means it automatically generates the basic structure and setup of our project so we can get started quickly.
 
-- Open the [Create React App website](https://create-react-app.dev/) and show the "Getting Started" section & follow the instruction on the page.
+- Open the [Vite website](https://vitejs.dev/) and show the [Getting Started](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) section & follow the instruction on the page.
+  > 💡 Highlight, that vite can be used with many different frameworks, each providing a dedicated template. We will use the React template.
 - Open your Terminal and run the following command:
 
 ```sh
-npx create-react-app my-first-react-app
+    npm create vite@latest my-first-react-app
 ```
 
+- If running this command for the first time, you need to install the `create-vite` package, accept and continue.
+- In the menu, choose React as the framework, afterwards pick the Javascript **without** SWC (speedy web compiler) variant.
 - Run `cd my-first-react-app` to go into the project and open in VSCode with `code .`.
 - Run `npm i`.
-- Run `npm start`to start the dev server.
+- Run `npm run dev`to start the dev server.
 
-> #### npm and package.json
->
-> - npm is a package registry that works like an app store for your project.
-> - It is used to install and manage packages (libraries) for a project.
-> - It is also used to run scripts that are defined in the `package.json` file (like `npm start`).
-> - The `package.json` file contains metadata about the project and a list of dependencies.
+#### npm and package.json
 
-- Go through the files of the `create-react-app`:
+- npm is a package registry that works like an app store for your project.
+- It is used to install and manage packages (libraries) for a project.
+- It is also used to run scripts that are defined in the `package.json` file (like `npm run dev`).
+- The `package.json` file contains metadata about the project and a list of dependencies.
 
-| File / Folder           | Description                                                                                                              | contains                                                                           |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| README.md               | general info about project                                                                                               | reminder how to start the dev-server                                               |
-| package.json            | project configuration                                                                                                    | information about dependencies, scripts, metadata                                  |
-| node_modules folder     | dependencies                                                                                                             | all dependencies of the project                                                    |
-| **public folder**       | static assets that are not processed by the bundler                                                                      | e.g. index.html, favicon.ico, manifest.json, robot.txt                             |
-| index.html              | root html file, don't mess with the `div id="root"></div>`                                                               | root element for React                                                             |
-| favicon.ico             | icon that is shown in the browser tab                                                                                    | image                                                                              |
-| robots.txt              | instructions for web robots how to crawl the site                                                                        | text                                                                               |
-| manifest.json           | configuration for Progressive Web Apps, it defines how your app appears and behaves when 'installed' on a mobile device. | metadata                                                                           |
-| images and other assets | static assets that you want to be served directly without processing.                                                    | images, fonts, etc.                                                                |
-| **src folder**          | all source code that will go through webpack processing                                                                  | all JavaScript, JSX, CSS, and other files that make up your React application.     |
-| index.js                | The JavaScript entry point where ReactDOM renders the App component into the DOM.                                        | imports react-dom and the App component                                            |
-| App.js                  | The root component of the React app                                                                                      | typically where you start writing your app's code and organizing other components. |
-| App.css                 | CSS file for the App component                                                                                           | styles for the App component                                                       |
-| App.test.js             | Test file for the App component                                                                                          |                                                                                    |
-| reportWebVitals.js      | Report performance metrics to Google Analytics                                                                           |                                                                                    |
-| setupTests.js           | Setup file for Jest                                                                                                      |
+- Go through the files of the `vite-react` template:
 
-- Delete all the files you don't need for the demo.
-- Show what the `index.js` usually looks like.
-- Copy the code from the previous demo into the `App.js` file.
+| File / Folder        | Description                                                                       | contains                                                                           |
+| -------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| README.md            | general info about project                                                        | reminder how to start the dev-server                                               |
+| package.json         | project configuration                                                             | information about dependencies, scripts, metadata                                  |
+| vite.config.js       | configuration for vite                                                            | Configurations for basic behavior of dev server, bundler, plugin management.       |
+| node_modules folder  | dependencies                                                                      | all dependencies of the project                                                    |
+| index.html           | root html file, don't mess with the `div id="root"></div>`                        | root element for React, script tag for `src/main.jsx` file                         |
+| **public folder**    | static assets that are not processed by the bundler                               | vite.svg                                                                           |
+| **src folder**       | all source code that will go through Rollup processing                            | all JavaScript, JSX, CSS, and other files that make up your React application.     |
+| main.jsx / index.jsx | The JavaScript entry point where ReactDOM renders the App component into the DOM. | imports react-dom and the App component                                            |
+| App.jsx              | The root component of the React app                                               | typically where you start writing your app's code and organizing other components. |
+| App.css              | CSS file for the App component                                                    | styles for the App component                                                       |
+| index.css            | CSS file for global styles                                                        | css variables, style resets, fonts                                                 |
+
+- Show what the `main.jsx` usually looks like. Point out that it can be named `index.jsx` sometimes.
+- Copy the code from the previous demo into the `App.jsx` file.
 
 ```jsx
 function Button() {
