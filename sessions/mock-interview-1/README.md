@@ -13,7 +13,7 @@
 
 ## Disclaimer: If you'd rather not read, you can watch a recorded session in action [here](https://drive.google.com/file/d/12aP1psjYGDVQn7uDiixEnu2OvfPDUmsq/view) while enjoying your favorite coffee ☕🎦
 
-- If interested here is also a [workshop](https://drive.google.com/drive/u/0/folders/1-KEnNk7anbmOHaYiSONRa4vRZYindxuq) on technical interviews we conducted earlier.
+- If interested here is also a [workshop](https://drive.google.com/drive/folders/1ZP3A3hNo2jTYX5Tq63-Rz-QlBey-zuQK) on technical interviews we conducted earlier.
 
 > 💰 Interviewing is the most
 > profitable skill you can learn! 💰
