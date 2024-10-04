@@ -6,17 +6,19 @@ The curriculum is divided into sessions, each being a distinct teaching unit foc
 
 Sessions marked with a 🏗️ are incomplete.
 
-### New Session Timetable
+### Session Timetable
 
-This timetable includes the new 4-day **React Recap Project** (Recap Project 4) and predefined capstone projects. The previous timetable is available [here](https://github.com/neuefische/web-curriculum/blob/fff449f49da7aa3b916edbf2cdaf1b65908fad60/README.md).
+This is the current session timetable for our cohorts.
+
+> ❗️ The first session after git branches and prs will have the challenge workflow explainer added. Please make sure to move it if the session order changes.
 
 | Day  | Session AM                                                                                     | Session PM                                                                      |
 | ---- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | 1    | [Welcome](sessions/welcome)                                                                    | [Github and Markdown](sessions/github-and-markdown)                             |
 | 2    | [Shell Basics](sessions/shell-basics) + Mac/Windows Setup 💻                                   | Active Learning: [HTML and the Web](sessions/html-and-the-web)                  |
-| 3    | [CSS Basics](sessions/css-basics)                                                              | [CSS Flexbox](sessions/css-flexbox)                                             |
-| 4    | [CSS Positioning](sessions/css-positioning)                                                    | [Self-Directed Learning 1](sessions/self-directed-learning-1/)                  |
-| 5    | [Git CLI & Remote](sessions/git-cli-and-remote)                                                | [Git Branches and PRs](sessions/git-branches-and-prs)                           |
+| 3    | [Git CLI & Remote](sessions/git-cli-and-remote)                                                | [Git Branches and PRs](sessions/git-branches-and-prs)                           |
+| 4    | [CSS Basics](sessions/css-basics) + web-challenges workflow                                    | [CSS Flexbox](sessions/css-flexbox)                                             |
+| 5    | [CSS Positioning](sessions/css-positioning)                                                    | [Self-Directed Learning 1](sessions/self-directed-learning-1/)                  |
 | 6    | [**Recap Project 1**](sessions/recap-project-1)                                                | Active Learning: [Accessibility](sessions/accessibility)                        |
 | 7    | [JS Basics](sessions/js-basics)                                                                | [CSS Structure](sessions/css-structure)                                         |
 | 8    | [JS Variables and Numbers](sessions/js-variables-and-numbers)                                  | [JS Conditions and Booleans](sessions/js-conditions-and-booleans)               |

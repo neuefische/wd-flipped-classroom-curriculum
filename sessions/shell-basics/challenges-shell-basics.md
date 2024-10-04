@@ -1,68 +1,28 @@
 # Challenges: Shell Basics
 
-## Shell Setup
+Go into the bootcamp docs and follow the [shell setup](../../docs/shell-setup.md).
 
-> 💡 This will install and configure the software you'll be using during this bootcamp.
+## Bootcamp Folders
 
-### Setup Guide for MacOS
+In order to have everything we need for the bootcamp in one place, lets create a general folder structure that we will use in the upcoming months!
 
-Carefully read and follow the
-[instructions in the `web-setup` repository](https://github.com/neuefische/web-setup#readme).
+- open your terminal or git-bash and navigate into your home directory (named ~, it should be your default location when you open a new terminal window).
+- Create a new folder called `web-bootcamp`.
+- Change into that folder and create another 2 folders called `web-challenges` and `session-notebook`.
 
-Run the _💻 General Setup_ and _🐙 Setting up git and GitHub_ script as described.
+The folders should now look something like this:
 
-### Setup Guide for Windows
+```
+~
+|- Downloads
+|- Pictures
+|- web-bootcamp
+   |- web-challenges
+   |- session-notebook
+|- ...
+```
 
-Carefully read and follow the
-[instructions in the `web-setup` repository for Windows users](https://github.com/neuefische/web-setup/blob/main/README_Windows.md).
-
-## Visual Studio Code Setup
-
-> 💡 Following these steps you will install some basic extensions for Visual Studio Code and do some
-> required setup for the course.
-
-1. Open **Visual Studio Code**
-2. Open the Extensions Panel (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>X</kbd>)
-3. Install the following extensions
-   - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-   - [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
-   - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-4. Open the Visual Studio Code settings (<kbd>⌘</kbd><kbd>,</kbd>)
-   - Search for "Default Formatter" and set to "Prettier - Code formatter"
-   - Search for "Format On Save" and check the checkbox
-   - > 💡 This will set up Visual Studio Code to automatically format your code on save using
-     > Prettier.
-5. Open the command palette by pressing <kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd>.
-   - Type "shell command" into the prompt.
-   - Select _"Shell Command: Install 'code' command in PATH"_ and confirm the installation by
-     pressing <kbd>Enter</kbd>.
-   - > 💡 This allows you to open a folder in Visual Studio Code from the command line with the
-     > `code .` command. This might not be needed if vscode is already registered in the PATH. If you don't know if its the case we suggest to execute this step.
-6. (Only for Windows Users) Open te command palette by pressing <kbd>⇧</kbd><kbd>CTRL</kbd><kbd>P</kbd> or <kbd>F1</kbd>.
-   - Type `Terminal: Select Default Profile` and choose `Git Bash`.
-
-## Clone Web-Challenges
-
-In order to work properly on the challenges, you need a copy of your `web-challenges` repository on your computer.
-
-1. Inside your terminal, navigate to your home route:
-   ```
-   cd ~
-   ```
-2. create a new folder called "neuefische" and enter it:
-   ```
-   mkdir neuefische
-   cd neuefische
-   ```
-3. On [GitHub](https://github.com), navigate to your `web-challenges` repository you created in the last session.
-4. Click on the `<> code` button and select the `SSH` link for this repository. It should look something like `git@github:<your username>/web-challenges.git`.
-5. Copy this link and inside your terminal (in the folder neuefische) execute:
-   ```
-   git clone <your git link>
-   ```
-6. Make sure that a new folder called `web-challenges` was created.
-7. Use this folder from now on to store your challenges.
+The web-bootcamp folder will be the home for all your projects you create during the bootcamp. Web Challenges will contain all challenges that you work on during sessions. In the session notebook you can collect your notes to specific sessions. Now you are ready to tackle the first challenges 💪.
 
 ## Treasure Hunt
 
@@ -125,5 +85,4 @@ notes
         └── announcement3.txt
 ```
 
-> 💡 You can use the `tree` command to see the file structure in the terminal. The `tree` command
-> line tool was installed with the `web-setup` script.
+> 💡 (Mac users only): You can use the `tree` command to see the file structure in the terminal. The `tree` command line tool was installed with the `web-setup` script.

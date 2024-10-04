@@ -1,25 +1,5 @@
 # Challenges: GitHub and Markdown
 
-## Web Challenges Repository
-
-We will use a repository template to create our very first repository! Later on in the bootcamp, we will use this repository to share our code with the course.
-
-[Visit the template page](https://github.com/neuefische/web-challenges-template) then click on **Use this template** / **Create a new repository**:
-
-![Fork the existing template](./assets/git-workflow-exercises-01.png)
-
-Now fill the information on the next form like:
-
-![New repo settings](./assets/git-workflow-exercises-02.png)
-
-- **owner**: your github user (not any organisation in case it shows up);
-- **name**: web-challenges;
-- **view**: public.
-
-Then click **create repository**.
-
-Congratulations! 🥳 You created your first repository.
-
 ## Github Profile
 
 Your Github Profile is generally the first impression that other developers and future employers

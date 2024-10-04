@@ -270,3 +270,9 @@ h1 {
   border-radius: 8px;
 }
 ```
+
+## Web-Challenges Workflow
+
+- Show the students the [web challenges workflow](https://github.com/neuefische/web-protocol-template/blob/main/docs/challenge-workflow.md). They have a copy in their cohort repository.
+- Make sure, that they understand it and remind them to follow this workflow from now on when working on challenges.
+- If you teach a Spiced cohort, explain the students to post the PR link into the slack session solutions thread and to review other solutions.
