@@ -1,20 +1,18 @@
 # React Component Testing
 
-## Learning objectives
+## Learning Objectives
 
 - Understanding the idea of component testing
-- Knowing how to
-  - render a React component in tests
-  - simulate interaction with a rendered React component in tests
-  - searching for expected elements in the rendered React component
-  - formulate expected results
-- Having a general understanding of mocks
-
-> 💡 Mocks are only part of the Handout
+- Learning how to:
+  - Render a React component in tests
+  - Simulate interaction with a rendered React component in tests
+  - Search for expected elements in the rendered React component
+  - Formulate expected results
+- Gaining a general understanding of mocks (covered in handout only)
 
 ## Requirements
 
-- Unit testing with Jest
+- JS Unit Testing
 - React
 
 ## Demo
@@ -31,87 +29,79 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-component-test
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-component-testing/demo-end
 ```
 
-### Which important problem will we solve today?
-
-Testing components gives us the confidence that our components work as expected. This is especially important when we refactor our code, because we can be sure that we didn't break anything. Tests should be independent of the implementation details of the component, so that we can refactor the code without breaking the tests.
-
-### Question
-
-What do you remember about unit testing with Jest? Can you imagine how we could potentially test React components with Jest?
-
 ---
 
 ## Session Guide
 
-### What are Component Tests and why are they important?
+Testing components gives us confidence that they function as expected. This becomes especially important when we refactor our code, as it ensures that nothing breaks in the process. A good test should be independent of a component’s internal implementation, allowing us to refactor freely without worrying about breaking the tests.
 
-- Explain that students already know about unit tests (and maybe integration tests)
-- Explain that component tests are a special kind of integration tests
-  - React components consist of multiple units so component testing is a kind of integration
-    testing
-- Explain that they test a component (in our case a React component) in isolation from the rest of the
-  application
-- Instead of running a function and checking the return value (like we did before), we render a component and check the
-  rendered output
-- Explain that we can also simulate user interactions (clicking, typing, etc.) and check if the component behaves as expected
-- Explain that we can use the same testing framework (Jest) for component tests as we used for unit tests
-- Explain that for Jest to work with React components, we use a special package called `react-testing-library`
-- Explain that testing components is a very important skill for developers
-  - It's a rare skill, so it's a good way to stand out in job applications
-  - It allows us to refactor our code without breaking it
-  - You can write tests before you write the code, which is called Test Driven Development (TDD) and is a very good practice
+> What do you recall about unit testing with Jest? How do you think we could apply this to testing React components?
 
-> 💡 Test driven development is a very good practice, but it's not something we will cover in this session
+### What are Component Tests?
 
-- Show the students the Movies App Demo in the browser
-- Explain that it has three main components: `Movies`, `Movie` and `Form`
-- We can write tests for each of these components
+- Explain that students already know about unit tests, and briefly remind them what integration tests are: Integration tests check how different parts of an application work together.
+- Therefore component tests are a type of integration test because React components consist of multiple units that need to work together.
+- Explain that they test a component (in our case a React component) in isolation from the rest of the application.
+- Instead of running a function and checking the return value (like we did before with unit tests), we render a component and check the rendered output.
+- Explain that we can also simulate user interactions (clicking, typing, etc.) and check if the component behaves as expected.
+- Explain that we can use the same testing framework (Jest) for component tests as we used for unit tests.
+- Explain that for Jest to work with React components, we use a special package called `react-testing-library`.
+- Explain that testing components is an important skill for developers.
+  - It's a rare skill, so it's a good way to stand out in job applications.
+  - It allows us to refactor our code without breaking it.
+  - You can write tests before you write the code, which is called Test Driven Development (TDD) and is a very good practice.
 
-### Check the rendered output of a component
+> 💡 Test Driven Development is a very good practice, but it's not something we will cover in this session.
 
-- Explain that we are going to use two methods from `react-testing-library` to check the rendered output of a component
-  - `render` renders a component to a simulated DOM (in memory using `jsdom`, not in a real browser)
-  - `screen` is a special object that contains all the elements that were rendered and has useful methods to check them
-- Create a new file `components/Movie/Movie.test.js`
-- Create a new `test` block with the description "renders a movie"
+- Show the students the movies app demo in the browser.
+- Explain that it has three main components: `Movies`, `Movie` and `Form`.
+- We can write tests for each of these components.
+
+### Rendering and Testing Output
+
+- Explain that we are going to use two methods from the `react-testing-library` to check the rendered output of a component:
+  - `render`: Renders a component to a simulated DOM (in memory using `jsdom`, not in a real browser).
+  - `screen`: Is a special object that contains all the elements that were rendered and has useful methods to check them.
+- Create a new file `components/Movie/Movie.test.js`.
+- Create a new test block with the description "renders a movie":
   ```js
   test("renders a movie", () => {
     // …
   });
   ```
-- Import the `Movie` component
+- Import the `Movie` component:
   ```js
   import Movie from ".";
   ```
-- Import `render` and `screen` from `react-testing-library`
+- Import `render` and `screen` from `react-testing-library`:
   ```js
   import { render, screen } from "@testing-library/react";
   ```
-- Render the `Movie` component in the test block
+- Render the `Movie` component in the test block:
   ```js
   render(<Movie name="The Matrix" />);
   ```
-- Explain that we can now check the rendered output of the component using the `screen` object, its methods and `expect` with `toBeInTheDocument`
+- Explain that we can now check the rendered output of the component using the `screen` object, its methods and `expect` with `toBeInTheDocument`:
   ```js
   const matrixHeading = screen.getByText("The Matrix");
   expect(matrixHeading).toBeInTheDocument();
   ```
-- Run the tests with `npm run test` and show that the test passes
-- Change the name of the movie to "The Matrix Reloaded" in the render function and show that the test fails
-- Update the test to check for the new name and show that the test passes again
+- Run the test with `npm run test` and show that the test passes.
+- Change the name of the movie to "The Matrix Reloaded" in the render function and show that the test fails.
+- Update the test to check for the new name and show that the test passes again.
 
-### Get elements on the screen
+### Selecting Elements on the Screen
 
-- Show that we can also use `getByRole` to get elements on the screen
+- Show that we can also use `getByRole` to get elements on the screen:
   ```js
   const matrixHeading = screen.getByRole("heading", {
     name: "The Matrix Reloaded",
   });
   expect(matrixHeading).toBeInTheDocument();
   ```
-- Open the [testing library docs](https://testing-library.com/docs/queries/about#priority) and show that there are many other ways to get elements on the screen
-- Explain that students should try to follow the priority list in the docs when selecting elements in tests
-- Explain that this helps to write tests that follow accessibility best practices, are resilient to changes and mirror how users interact with the app
+- Open the [Testing Library docs](https://testing-library.com/docs/queries/about#priority) and show that there are many other ways to get elements on the screen.
+- Explain that students should try to follow the priority list in the docs when selecting elements in tests.
+- Explain that this helps to write tests that follow accessibility best practices, are resilient to changes and mirror how users interact with the app.
 - Your full test should now be:
 
   ```js
@@ -127,10 +117,10 @@ What do you remember about unit testing with Jest? Can you imagine how we could 
   });
   ```
 
-### Check the rendered output of a component pt. 2
+### Testing the `Movies` Component
 
-- Create a new file: `components/Movies/Movies.test.js`
-- Paste in the following code or write the test together with students. The code includes no new concepts.
+- Create a new file: `components/Movies/Movies.test.js`.
+- Paste in the following code or write the test together with the students. The code includes no new concepts.
 
   ```js
   import { render, screen } from "@testing-library/react";
@@ -173,11 +163,11 @@ What do you remember about unit testing with Jest? Can you imagine how we could 
   });
   ```
 
-- Run the tests and show that the test passes
-- Discuss the test with the students
-  - `initialMovies` is defined outside the test block for reusability
-  - the `render` function is called with the `initialMovies` as a prop
-  - we use `expect` with `toBeInTheDocument` to check if the movies are on the screen (using `getByRole` because the movie names are headings)
+- Run the tests and show that the test passes.
+- Discuss the test with the students:
+  - `initialMovies` is defined outside the test block for reusability.
+  - The `render` function is called with the `initialMovies` as a prop.
+  - We use `expect` with `toBeInTheDocument` to check if the movies are on the screen (using `getByRole` because the movie names are headings).
 
 > 💡 This might be a good time to discuss writing the test descriptions. The test description should be a sentence that describes what the test does. It should be written in the present tense. For consistency during this bootcamp, we imagine each description beginning with "it". For example, "it renders the initialMovies" or "it renders a movie" without including the word "it" itself. In fact, we could use the `it` function from Jest to write the test descriptions as it is an alias for `test`: `it("renders the initialMovies", () => { … })`. We are using `test` here because it is standard in all documentations.
 >
@@ -185,10 +175,10 @@ What do you remember about unit testing with Jest? Can you imagine how we could 
 >
 > Do not spend too much time on this, as this is handled inconsistently in the industry. It is more important to convey what the test does than sweating over the exact wording.
 
-### Simulate user interactions
+### Simulating User Interaction
 
 - Explain that we can simulate user interactions with `userEvent` from `@testing-library/user-event`.
-- For example, if we want to test if we can add a movie using the form, we can simulate a user typing in the input and clicking the button
+- For example, if we want to test if we can add a movie using the form, we can simulate a user typing in the input and clicking the button.
 - Create a new test block inside `Movies.test.js`:
   ```js
   test("renders a new movie when the form is submitted with a new movie name", () => {
@@ -196,35 +186,35 @@ What do you remember about unit testing with Jest? Can you imagine how we could 
     // …
   });
   ```
-- Explain that we need to import `userEvent` from `@testing-library/user-event`
+- Explain that we need to import `userEvent` from `@testing-library/user-event`:
   ```js
   import userEvent from "@testing-library/user-event";
   ```
-- Explain that we need to initialize a `user` that interacts with the rendered component. (Make this the first line of the test block)
+- Explain that we need to initialize a `user` that interacts with the rendered component (Make this the first line of the test block):
   ```js
   const user = userEvent.setup();
   ```
-- Explain that we need to select the input and "type in" a new movie name
+- Explain that we need to select the input and "type in" a new movie name:
   ```js
   const input = screen.getByLabelText("Name");
   user.type(input, "The Matrix");
   ```
-- Explain that user interactions are not immediate, so we need to wait for the typing to finish using `await`
+- Explain that user interactions are not immediate, so we need to wait for the typing to finish using `await`:
   ```js
   await user.type(input, "The Matrix");
   ```
-- Show that we need to make the test asynchronous by adding `async` to the test block
+- Show that we need to make the test asynchronous by adding `async` to the test block:
   ```js
   test("renders a new movie when the form is submitted with a new movie name", async () => {
     // …
   });
   ```
-- Repeat the steps for the button
+- Repeat the steps for the button:
   ```js
   const button = screen.getByRole("button", { name: "Add" });
   await user.click(button);
   ```
-- Explain that we can now check if the new movie is on the screen
+- Explain that we can now check if the new movie is on the screen:
   ```js
   const matrixHeading = screen.getByRole("heading", { name: "The Matrix" });
   expect(matrixHeading).toBeInTheDocument();
@@ -244,8 +234,4 @@ What do you remember about unit testing with Jest? Can you imagine how we could 
   });
   ```
 
-### More examples
-
-> 💡 The final state of the demo includes more test examples. Feel free to show them to the students or hand them out as a reference.
-
----
+> 💡 The final demo includes more test examples for further practice. Feel free to explore these with students or hand them out as a reference.

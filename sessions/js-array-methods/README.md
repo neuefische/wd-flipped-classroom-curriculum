@@ -1,36 +1,19 @@
 # JS Array Methods
 
-## Learning objectives
+## Learning Objectives
 
-- Understanding basic array methods
+- Understanding basic array methods:
   - `.includes`
   - `.forEach`
   - `.map`
   - `.find`
   - `.filter`
 
----
-
-### Why is the content of today's block that important for the students?
-
-Most often, we have information stored in an array (of objects). There are several options to work
-with this information:
-
-- execute the same code for each object (e.g. create cards)
-- filter objects for specific criteria
-- create a new array with only parts of the information
-- How do you check whether at least one element is included in an array?
-- How do you find an specific object in an array?
-
----
-
-### Required
+## Requirements
 
 - JS Functions
 - JS Objects and Arrays
 - (JS Loops)
-
----
 
 ## Demo
 
@@ -46,12 +29,24 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/dem
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/demo-end
 ```
 
+---
+
 ## Session Guide
+
+In this session, we will explore different ways to manipulate and access data stored in arrays, often arrays of objects. These methods help make your code cleaner, more efficient, and more readable. Here are some key operations we can perform with array methods:
+
+- Repeating the same action for each object, such as creating a card for every item.
+- Filtering objects based on specific criteria to narrow down results.
+- Generating a new array that contains only selected pieces of information.
+- Checking if an array contains a certain element.
+- Finding a specific object within an array.
+
+> Why is it helpful to use array methods when working with data? How do these methods make your code cleaner and easier to understand?
 
 ### What are Array Methods?
 
 - Show the students that arrays not only store data, but also provide methods to work with the data.
-- Explain `.includes` and use it as an example to show how to use methods on an array, i.e.
+- Explain `.includes` and use it as an example to show how to use methods on an array:
   ```js
   strings.includes("React"); // true
   ```
@@ -61,13 +56,13 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/dem
 
 - Explain, that some array methods require a so called callback function as an argument.
 - Point out, that these functions are called automatically for each element in the array.
-- Write a simple forEach loop for the `strings` array:
+- Write a simple `forEach` loop for the `strings` array:
   ```js
   strings.forEach(function (firstParameter) {
     console.log(firstParameter);
   });
   ```
-  > 💡 using the classic function syntax might confuse students at first, but it highlights, that we write a function "declaration" which is important for understanding callback functions.
+  > 💡 Using the classic function syntax might confuse students at first, but it highlights, that we write a function "declaration" which is important for understanding callback functions.
 - Highlight, that the callback function is "anonymous", since it has no name.
 - Show that the first parameter of the callback function is always a single element of the array.
 - Explain, that it is more common to use the arrow notation for the callback function.
@@ -79,7 +74,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/dem
   });
   ```
 
-- Show how forEach can be used meaningfully on a web page: Use `forEach` to create a card for each game, i.e.:
+- Show how `forEach` can be used meaningfully on a web page. Use `forEach` to create a card for each game:
 
   ```js
   games.forEach((game) => {
@@ -106,7 +101,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/dem
   - Can transform each element of an array.
   - Transformed elements are stored in a **newly created array** returned by `map`.
   - The elements in the original array are not being altered.
-  - You define the kind of transformation in the callback function and **return** the transformed element.
+  - You define the kind of transformation in the callback function and `return` the transformed element.
 
   ```js
   const upperCaseStrings = strings.map((string) => {
@@ -127,13 +122,13 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/dem
 
 ### `find`
 
--Explain `find`:
+- Explain `find`:
 
-- Show, that we can use the `find` method to get a single element from the array that satisfies a certain condition.
-- Explain that `find` consumes a callback function that is executed for every element of the array.
-- This callback function will check a specific condition and needs to return either `true` or `false`.
-- Once the callback function returns true, the execution is stopped and the find function returns the respective object.
-- When no element is found, it returns `undefined`. We have to keep this in mind to avoid an error when rendering an undefined value (we can use optional chaining for this purpose or an if-else statement).
+  - Show, that we can use the `find` method to get a single element from the array that satisfies a certain condition.
+  - Explain that `find` consumes a callback function that is executed for every element of the array.
+  - This callback function will check a specific condition and needs to return either `true` or `false`.
+  - Once the callback function returns `true`, the execution is stopped and the `find` function returns the respective object.
+  - When no element is found, it returns `undefined`. We have to keep this in mind to avoid an error when rendering an `undefined` value (we can use optional chaining for this purpose or an if-else statement).
 
 ```js
 const searchResult = games.find((game) => {
@@ -167,7 +162,3 @@ console.log(searchResult);
   const gamesBefore2000 = games.filter((game) => game.publishingYear < 2000);
   console.log(gamesBefore2000);
   ```
-
-## Resources
-
-- [mdn docs: Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
