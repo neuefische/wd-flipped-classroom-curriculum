@@ -39,15 +39,14 @@ Testing components gives us confidence that they function as expected. This beco
 
 ### What are Component Tests?
 
-- Explain that students already know about unit tests (and maybe integration tests).
-- Explain that component tests are a special kind of integration tests.
-  - React components consist of multiple units so component testing is a kind of integration testing.
+- Explain that students already know about unit tests, and briefly remind them what integration tests are: Integration tests check how different parts of an application work together.
+- Therefore component tests are a type of integration test because React components consist of multiple units that need to work together.
 - Explain that they test a component (in our case a React component) in isolation from the rest of the application.
-- Instead of running a function and checking the return value (like we did before), we render a component and check the rendered output.
+- Instead of running a function and checking the return value (like we did before with unit tests), we render a component and check the rendered output.
 - Explain that we can also simulate user interactions (clicking, typing, etc.) and check if the component behaves as expected.
 - Explain that we can use the same testing framework (Jest) for component tests as we used for unit tests.
 - Explain that for Jest to work with React components, we use a special package called `react-testing-library`.
-- Explain that testing components is a very important skill for developers.
+- Explain that testing components is an important skill for developers.
   - It's a rare skill, so it's a good way to stand out in job applications.
   - It allows us to refactor our code without breaking it.
   - You can write tests before you write the code, which is called Test Driven Development (TDD) and is a very good practice.

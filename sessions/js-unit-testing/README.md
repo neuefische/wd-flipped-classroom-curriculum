@@ -47,8 +47,9 @@ Automated testing provides us with confidence: we can run tests automatically wi
 - Show the [Testing Trophy](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications).
 - Explain the `four types` of tests:
 - **Static Tests:**
-  - We discussed this topic already in the previous session about "Linting".
-  - The code is read automatically to find typos (think of a spellchecker).
+  - Linting is a type of static test that checks code for errors or style issues without actually running the code, ensuring code consistency and quality early in the development process.
+  - Think of linting as a spellchecker for code: it automatically scans for syntax errors and other common issues.
+  - Tools like ESLint for JavaScript can automate linting, allowing it to seamlessly integrate into the development workflow.
 - **Unit Tests:**
   - The code is not only read, but executed.
   - Tests the actual logic that is written in code.
