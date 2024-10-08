@@ -14,11 +14,49 @@ Welcome to this active learning session focused on exploring Accessibility in a 
 
 > ❗️ Start your active learning journey by clicking [here](https://web-active-learning.vercel.app/documents/html-and-the-web).
 
+## Folder Structure
+
+In previous lessons, we set up the following folder structure:
+
+```js
+web-bootcamp
+├── session-notebook
+└── web-challenges
+```
+
+## Format Salad
+
+(difficulty: 🔥)
+
+❗️ Make sure you execute this command while being located in your 'web-challenges' folder.
+
+Solve the _Format-Salad_ challenge by using this command in your terminal:
+
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/format-salad
+```
+
+## Find the errors
+
+(difficulty: 🔥🔥)
+
+❗️ Make sure you execute this command while being located in your 'web-challenges' folder.
+
+Solve the _Find-the-errors_ challenge by using this command in your terminal:
+
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/find-the-errors
+```
+
 ## `<div>`-Salad
+
+(difficulty: 🔥)
+
+❗️ Make sure you execute this command while being located in your 'web-challenges' folder.
 
 Solve the _`<div>`-Salad_ challenge by using this command in your terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/div-salad
 ```
 
@@ -27,11 +65,13 @@ to the handout.
 
 ## Personal Website
 
+(difficulty: 🔥🔥)
+
+❗️ Make sure you execute this command while being located in your 'web-bootcamp' folder, not inside the 'web-challenges'
+
 Build your own _Personal Website_ using this command in your terminal:
 
-> ❗️ Make sure you execute this command while being located in your 'neuefische' folder, not inside the 'web-challenges'
-
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/personal-website
 ```
 
