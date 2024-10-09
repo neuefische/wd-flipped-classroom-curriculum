@@ -106,4 +106,4 @@ Students will work independently to:
 
 ## Solution
 
-For additional reference, there is an [example solution](https://github.com/neuefische/web-react-recap-example/tree/) available, with branches from issue 1-8.
+For additional reference, there is an [example solution](https://github.com/neuefische/web-react-recap-example) available, with branches from issue 1-8.
