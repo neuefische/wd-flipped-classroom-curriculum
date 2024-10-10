@@ -16,9 +16,11 @@ Welcome to this active learning session focused on exploring CSS Responsive in a
 
 ## Playground
 
+(difficulty: 🔥)
+
 Solve the _Playground_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/playground
 ```
 
@@ -30,9 +32,11 @@ mini-challenge.
 
 ## Responsive Website
 
+(difficulty: 🔥🔥)
+
 Solve the _Responsive Website_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/responsive-website
 ```
 
