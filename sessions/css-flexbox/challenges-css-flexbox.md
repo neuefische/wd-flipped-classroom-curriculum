@@ -2,6 +2,8 @@
 
 ## Flexbox Games
 
+(difficulty: 🔥 -> 🔥🔥 -> 🔥🔥🔥)
+
 Master one of these two flexbox games:
 
 - [Flexbox Froggy](https://flexboxfroggy.com)
@@ -14,17 +16,21 @@ Master one of these two flexbox games:
 
 ## Flexbox Navigation
 
+(difficulty: 🔥)
+
 Solve the _Flexbox Navigation_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/navigation
 ```
 
 ## Flexbox Profile
 
+(difficulty: 🔥🔥)
+
 Solve the _Flexbox Profile_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/profile
 ```
 
