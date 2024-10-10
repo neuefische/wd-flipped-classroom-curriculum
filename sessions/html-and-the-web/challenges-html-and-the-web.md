@@ -2,7 +2,7 @@
 
 ## Active Learning
 
-Welcome to this active learning session focused on exploring Accessibility in a self-directed way. As a developer, one of the most valuable skills is the ability to teach yourself effectively, so let's take some more steps in that direction.
+Welcome to this active learning session focused on exploring HTML and the Web in a self-directed way. As a developer, one of the most valuable skills is the ability to teach yourself effectively, so let's take some more steps in that direction.
 
 > The active learning process involves the following steps:
 
@@ -28,9 +28,9 @@ web-bootcamp
 
 (difficulty: 🔥)
 
-❗️ Make sure you execute this command while being located in your 'web-challenges' folder.
+❗️ Make sure you execute this command while being located in your `web-challenges` folder.
 
-Solve the _Format-Salad_ challenge by using this command in your terminal:
+Solve this challenge by using this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/format-salad
@@ -40,9 +40,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/for
 
 (difficulty: 🔥🔥)
 
-❗️ Make sure you execute this command while being located in your 'web-challenges' folder.
+❗️ Make sure you execute this command while being located in your `web-challenges` folder.
 
-Solve the _Find-the-errors_ challenge by using this command in your terminal:
+Solve this challenge by using this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/find-the-errors
@@ -52,22 +52,22 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/fin
 
 (difficulty: 🔥)
 
-❗️ Make sure you execute this command while being located in your 'web-challenges' folder.
+❗️ Make sure you execute this command while being located in your `web-challenges` folder.
 
-Solve the _`<div>`-Salad_ challenge by using this command in your terminal:
+Solve this challenge by using this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/div-salad
 ```
 
-Replace all the div tags in the code with semantic HTML. In case you need some ideas, you can refer
+Replace all the `<div>` tags in the code with semantic HTML. In case you need some ideas, you can refer
 to the handout.
 
 ## Personal Website
 
 (difficulty: 🔥🔥)
 
-❗️ Make sure you execute this command while being located in your 'web-bootcamp' folder, not inside the 'web-challenges'
+❗️ Make sure you execute this command while being located in your `web-bootcamp` folder, not inside the `web-challenges` folder.
 
 Build your own _Personal Website_ using this command in your terminal:
 
