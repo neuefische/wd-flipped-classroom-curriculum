@@ -68,7 +68,7 @@ In this project, you will start filling the already prepared `session-notebook` 
 
 ### Connect the Session Notebook to GitHub
 
-You already created a folder and file structure for your session notes. Now, we want to connect the ´session-notebook` to your GitHub account as a repository. Therefore we need to connect the local repository to a remote repository.
+You already created a folder and file structure for your session notes. Now, we want to connect the `session-notebook` to your GitHub account as a repository. Therefore we need to connect the local repository to a remote repository.
 
 #### Part 1
 
