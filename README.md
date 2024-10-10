@@ -10,21 +10,21 @@ Sessions marked with a 🏗️ are incomplete.
 
 This is the current session timetable for our cohorts.
 
-> ❗️ The first session after git branches and prs will have the challenge workflow explainer added. Please make sure to move it if the session order changes.
+> ❗️ The first session after **Git Branches and PRs** will include the `web-challenges` workflow explainer. Please remember to move it accordingly if the session order changes.
 
 | Day  | Session AM                                                                                     | Session PM                                                                      |
 | ---- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | 1    | [Welcome](sessions/welcome)                                                                    | [Github and Markdown](sessions/github-and-markdown)                             |
 | 2    | [Shell Basics](sessions/shell-basics) + Mac/Windows Setup 💻                                   | Active Learning: [HTML and the Web](sessions/html-and-the-web)                  |
 | 3    | [Git CLI & Remote](sessions/git-cli-and-remote)                                                | [Git Branches and PRs](sessions/git-branches-and-prs)                           |
-| 4    | [CSS Basics](sessions/css-basics) + web-challenges workflow                                    | [CSS Flexbox](sessions/css-flexbox)                                             |
-| 5    | [CSS Positioning](sessions/css-positioning)                                                    | [Self-Directed Learning 1](sessions/self-directed-learning-1/)                  |
-| 6    | [**Recap Project 1**](sessions/recap-project-1)                                                | Active Learning: [Accessibility](sessions/accessibility)                        |
-| 7    | [JS Basics](sessions/js-basics)                                                                | [CSS Structure](sessions/css-structure)                                         |
-| 8    | [JS Variables and Numbers](sessions/js-variables-and-numbers)                                  | [JS Conditions and Booleans](sessions/js-conditions-and-booleans)               |
-| 9    | Active Learning: [CSS Responsive](sessions/css-responsive)                                     | [Self-Directed Learning 2](sessions/self-directed-learning-2/)                  |
-| 10   | [JS Functions](sessions/js-functions)                                                          | [HTML Forms](sessions/html-forms)                                               |
-| 11   | Active Learning: [JS Inputs and Strings](sessions/js-inputs-and-strings)                       | [JS Objects and Arrays](sessions/js-objects-and-arrays)                         |
+| 4    | [CSS Basics](sessions/css-basics) + `web-challenges` Workflow                                    | [Self-Directed Learning 1](sessions/self-directed-learning-1/)                  |
+| 5    | [CSS Positioning](sessions/css-positioning)                                                    | [CSS Flexbox](sessions/css-flexbox)                                             |
+| 6    | [CSS Structure](sessions/css-structure)                                                        | Active Learning: [CSS Responsive](sessions/css-responsive)                      |
+| 7    | [**Recap Project 1**](sessions/recap-project-1)                                                | Active Learning: [Accessibility](sessions/accessibility)                        |
+| 8    | [JS Basics and Variables](sessions/js-basics-and-variables) 🏗️                                 | [JS Events and DOM](sessions/js-events-and-dom) 🏗️                              |
+| 9    | [JS Conditions and Booleans](sessions/js-conditions-and-booleans)                              | [Self-Directed Learning 2](sessions/self-directed-learning-2/)                  |
+| 10   | [JS Objects and Arrays](sessions/js-objects-and-arrays)                                        | [JS Functions](sessions/js-functions)                                           |
+| 11   | [HTML Forms](sessions/html-forms)                                                              | Active Learning: [JS Inputs and Strings](sessions/js-inputs-and-strings)        |
 | 12   | [JS Forms](sessions/js-forms)                                                                  | [JS createElement](sessions/js-createelement)                                   |
 | 13   | [**Recap Project 2**](sessions/recap-project-2)                                                | [**Recap Project 2**](sessions/recap-project-2)                                 |
 | 14   | [JS Loops](sessions/js-loops)                                                                  | [Self-Directed Learning 3](sessions/self-directed-learning-3/)                  |
