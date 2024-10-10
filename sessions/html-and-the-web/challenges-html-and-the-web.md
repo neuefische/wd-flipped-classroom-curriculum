@@ -36,7 +36,7 @@ Solve this challenge by using this command in your terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/format-salad
 ```
 
-## Find the errors
+## Find the Errors
 
 (difficulty: 🔥🔥)
 
