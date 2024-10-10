@@ -1,10 +1,10 @@
-# CSS Basics: Challenges
+# Challenges: CSS Basics
 
 ## Pink Box
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pink-box
@@ -14,7 +14,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pink-box
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pseudo-park
@@ -24,27 +24,27 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pseudo-pa
 
 (difficulty: 🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/combined-users
 ```
 
-## Playground: Button styles
+## Playground: Button Styles
 
 (difficulty: 🔥)
 
-Solve the _Button styles_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/button-styles
 ```
 
-## Pokemon page
+## Pokemon Page
 
 (difficulty: 🔥)
 
-Solve the _Pokemon page_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page
@@ -54,17 +54,15 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-p
 
 (difficulty: 🔥🔥🔥)
 
-Solve the puzzles until **level 19** from the [CSS Diner game](https://flukeout.github.io/).
+Solve the puzzles up to **level 19** in the [CSS Diner game](https://flukeout.github.io/).
 
 **Important:** It is currently not possible to select the **table** in the game.
 
-> 💡 Hint: Don't worry, some puzzles are based on really special selectors, you don't have to learn
-> all of them.
+> 💡 Hint: Don’t worry, some puzzles involve very specialized selectors. You don’t need to memorize all of them.
 
 ## Homework: Personal Website Styling
 
 Start styling your personal website to make it absolutely fabulous. ✨
 
-- [ ] Add a `styles.css` file to your project and [link it correctly](./css-basics.md#linking-stylesheets) in your
-      index.html file.
+- [ ] Add a `styles.css` file to your project and [link it correctly](./css-basics.md#linking-stylesheets) in your `index.html` file.
 - [ ] Get creative and find your very own style for your personal website.
