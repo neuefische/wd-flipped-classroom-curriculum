@@ -16,7 +16,7 @@ So, how can you practice coding tasks and problem-solving effectively? Luckily, 
 
 If you want ChatGPT to give you the correct answers, you should learn how to ask the _right questions_, a skill known as _prompting_!
 
-## Here are some tips to help you craft effective prompts:
+## Tips for Crafting Effective Prompts
 
 ### 1. Define Specific Goals 🎯
 
