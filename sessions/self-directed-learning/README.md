@@ -16,6 +16,7 @@ Introduce the board to the students and explain how to use it:
 - Demonstrate how to create a new topic.
 - Show them how to reply to a topic.
 - Explain how to mark a reply as the solution.
+- Emphasize the importance of marking helpful replies as solutions when they resolve a question. If a suggested solution doesn’t work or if they have follow-up questions, they should provide feedback directly in the relevant thread on the discussions board.
 - Show them where they can find a [guide on how to use the discussions board during self-directed learning](https://github.com/neuefische/questions/wiki).
 
 ## Material for Students
