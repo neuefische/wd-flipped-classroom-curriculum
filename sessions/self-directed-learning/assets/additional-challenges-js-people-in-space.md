@@ -1,14 +1,17 @@
-# 📡 People in Space 🚀
+# Additional Challenge: JavaScript Advanced
+
+## 📡 People in Space 🚀
 
 > Required Sessions:
 >
-> - JS Array Methods 1 & 2
+> - JS Array Methods
 > - JS Fetch
 > - JS createElement
 
-Let's build a website that displays the current number of people in space. Hints are provided if you get stuck. Try to build as much as possible without looking at the hints. We will use the [following API](http://open-notify.org/Open-Notify-API/People-In-Space/) to determine how many people are current in space.
+Let's build a website that displays the current number of people in space. Use the [Open Notify API](http://open-notify.org/Open-Notify-API/People-In-Space/) to retrieve this data.  
+Hints are provided if you get stuck. Try to build as much as possible without looking at the hints.
 
-1. Create a new directory called `people-in-space` and add an `index.html`, `style.css` and `script.js` file.
+1. Create a directory named `people-in-space` and add an `index.html`, `style.css` and `script.js` file.
     <details>
     <summary>🙈 Hint</summary>
 
@@ -24,7 +27,7 @@ Let's build a website that displays the current number of people in space. Hints
    </details>
    &nbsp;
 
-2. Create a skeleton html and link the style.css and script.js files. "Sanity check" the css by changing the background colour of the page and the javascript file by adding a `console.log("Sanity check")` and making sure you see the log in the browser developer tools.
+2. Build the HTML skeleton and link the `style.css` and `script.js` files to your `index.html`. Run a “sanity check” to ensure both files are correctly linked by changing the background color in CSS and logging a message in JavaScript (make sure you can see the log in the developer tools of the browser).
       <details>
       <summary>🙈 Hint</summary>
 
@@ -60,7 +63,7 @@ Let's build a website that displays the current number of people in space. Hints
    </details>
    &nbsp;
 
-3. Add an element to the html where we will put the number of people currently in space (i.e. a `span` tag inside an `h1`).
+3. Add a `span` element inside an `h1` tag in the HTML to display the current number of people in space.
    <details>
    <summary>🙈 Hint</summary>
 
@@ -74,7 +77,7 @@ Let's build a website that displays the current number of people in space. Hints
     </details>
     &nbsp;
 
-4. Grab a reference to the newly created element in the script file.
+4. Grab a reference to the `span` element in the script file.
     <details>
     <summary>🙈 Hint</summary>
 
@@ -86,7 +89,7 @@ Let's build a website that displays the current number of people in space. Hints
     </details>
     &nbsp;
 
-5. Write an `async` function to get the data from the [`Open Notify API`](http://open-notify.org/Open-Notify-API/People-In-Space/). Console.log the data from the API.
+5. Write an `async` function that fetches data from the [Open Notify API](http://open-notify.org/Open-Notify-API/People-In-Space/) and logs it to the console.
    <details>
    <summary>🙈 Hint</summary>
 
@@ -103,7 +106,7 @@ Let's build a website that displays the current number of people in space. Hints
    </details>
    &nbsp;
 
-6. Set the text content of the `span` tag to be that of the number of people currently in space.
+6. Update the text content of the `span` element with the number of people currently in space.
     <details>
     <summary>🙈 Hint</summary>
 
@@ -119,11 +122,13 @@ Let's build a website that displays the current number of people in space. Hints
 
     </details>
 
-Congratulations! You have now made a website that shows the current number of people in space.
+**Congratulations!** 🚀 You now have a website that shows the current number of people in space.
 
-As a **_bonus_** feature you could add a `ul` to the page that gets updated with the names of the people currently in space (this information is also included in the response from the API). You will need to think about `looping` over an array, creating `dom elements` and updating their content. As well as `appending` dom elements to the page.
+**Bonus Features**
 
-As an **_extra bonus_** you could add 3 buttons to the page. `All`, `ISS` and `Tiangong`. Then when you click on one of the buttons you update the list of people displayed on the page based on which space craft they are on. i.e. if you click on the ISS button, your list of people should only include those on the `ISS`. We learnt about an array method that would be particularly helpful in this scenario.
+1. For an additional feature, consider adding a `ul` element to the page that dynamically updates with the names of the people currently in space. This information is provided in the API response. To achieve this, you will need to loop through an array, create DOM elements, update their content, and append these elements to the page.
+
+2. For an **extra bonus**, you could enhance the page with three buttons: All, ISS, and Tiangong. When you click one of these buttons, the list should update to show only the people aboard the selected spacecraft. For example, clicking the ISS button should display only those on the ISS. You can make use of a specific array method we have covered to filter the list based on the spacecraft.
 
   <details>
   <summary>🙈 Hint</summary>
@@ -176,7 +181,7 @@ const people = [
 // e.g.
 const peopleOnIss = people.filter((person) => person.craft === "ISS");
 
-// the value of peopleOnIss would be
+// The value of peopleOnIss would be:
 
 // [
 //     {

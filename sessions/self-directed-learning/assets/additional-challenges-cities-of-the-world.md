@@ -1,37 +1,38 @@
-# 🏙️ Cities of the World 🌇
+# Additional Challenge: Next.js
+
+## 🏙️ Cities of the World 🌇
 
 > Required Sessions:
 >
 > - Next.js Basics and Routing
 > - Next.js Dynamic Routes
 
-Let's build an app that lists 10 cities. Each city in the list will link to a detailed information page about that city. This will practice `Next.js Basics and Routing` and `Next.js Dynamic Routes`.
+Let's build an app that lists 10 cities. Each city in the list will link to a detailed information page about that city. This will practice **Next.js Basics and Routing** and **Next.js Dynamic Routes**.
 
-1. Create a new `nextjs` app.
+1. Create a new Next.js app:
 
    ```bash
    npx create-next-app@latest
    ```
 
-   then if you called the project cities
+   Then, if you named the project `cities`, navigate into the directory and install dependencies:
 
    ```bash
    cd cities
    npm i
    ```
 
-   then
+   Open the project and start the development server:
 
    ```bash
    code .
    npm run dev
    ```
 
-2. Let's create a source of data. Create a new directory called `lib` and then add a file called `data.js`.
-   Paste in the following contents.
+2. Let's create a source of data. Create a new directory called `lib` and add a file called `data.js`. Paste the following contents:
 
      <details>
-     <summary>Get your cities data here</summary>
+     <summary>Click here for cities data</summary>
 
    ```js
    export const cities = [
@@ -130,8 +131,7 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
 
      </details>
      &nbsp;
-
-   e.g. your file structure should look something like this.
+   Your file structure should look like this:
 
    ```js
    - 📁 lib
@@ -141,10 +141,10 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
      ... etc
    ```
 
-3. Create a `cities` directory inside the `pages` directory. Inside the cities directory, create an `index.js file`. This is where we will show a list of all cities. To do that, import the cities from our `data.js` file (be sure to pay attention to the path to the file).
+3. Create a `cities` directory inside the `pages` directory. Inside the `cities` directory, create an `index.js` file. This is where we will show a list of all cities. To do that, import the cities from our `data.js` file (be sure to pay attention to the path to the file).
    Once you have the data, loop over each city object and create an `li` element. For now, just display the cities name.
-   <details>
-      <summary>🙈 Hint</summary>
+      <details>
+         <summary>🙈 Hint</summary>
 
    ```js
    import { cities } from "../../lib/data";
@@ -163,10 +163,10 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
    }
    ```
 
-   </details>
-   &nbsp;
+      </details>
+      &nbsp;
 
-4. Let's link the homepage `/` to the `/cities` page. For this we will need to use the [nextjs Link Component](https://nextjs.org/docs/pages/api-reference/components/link).
+4. Use the [Next.js Link component](https://nextjs.org/docs/pages/api-reference/components/link) to navigate to the `/cities` page from the homepage (`/`).
    <details>
        <summary>🙈 Hint</summary>
 
@@ -186,7 +186,7 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
    </details>
    &nbsp;
 
-5. Now let's go back to the `cities/index.js` file and update each `li` to link to a specific page. We will use the `slug` property on each `city` object to help construct the `href`. The goal should be, for example, that the `Tokyo` city links to `/cities/tokyo`
+5. Now let's go back to the `cities/index.js` file and update each `li` to link to its specific page. We will use the `slug` property on each `city` object to help construct the `href`. The goal should be, for example, that the `Tokyo` city links to `/cities/tokyo`.
 
    <details>
        <summary>🙈 Hint</summary>
@@ -212,7 +212,7 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
    </details>
    &nbsp;
 
-6. Finally, let's work on the individual city pages. Inside the `cities` directory, create a file called `[slug].js`. For now, just display and `h1` saying `City!!` inside. Navigate in the browser to `http://localhost:3000/cities/tokyo` and see if you see `City!!`
+6. Finally, let's work on the individual city pages. Inside the `cities` directory, create a file called `[slug].js`. For now, just display a simple placeholder `h1` saying "City!!". Navigate in the browser to `http://localhost:3000/cities/tokyo` and see if you can see "City!!".
 
    <details>
        <summary>🙈 Hint</summary>
@@ -228,7 +228,7 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
    </details>
    &nbsp;
 
-   Now that we know it works, we can try and get the individual city information displaying. We will need to import `useRouter` so that we can figure out which "page" we are on. Once we have extracted the `slug` from the `params` object we can use that to `find` the city object that we want from our `cities` array.
+   Now that we know it works, we want to display individual city data. We will need to import `useRouter` so that we can figure out which page we are on. Once we have extracted the `slug` from the `params` object we can use it to `find` the city in our `cities` array.
 
    <details>
        <summary>🙈 Hint</summary>
@@ -262,7 +262,7 @@ Let's build an app that lists 10 cities. Each city in the list will link to a de
    </details>
    &nbsp;
 
-7. Bonus ideas.
+7. Bonus ideas:
 
-- Display more information about each city.
-- Create a `back to all cities` link on each city page.
+- Display additional information for each city.
+- Add a "Back to all cities" link on each city page.

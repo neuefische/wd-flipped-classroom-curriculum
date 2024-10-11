@@ -1,14 +1,17 @@
-# 📡 People in Space 🚀
+# Additional Challenge: React
+
+## 📡 People in Space 🚀
 
 > Required Sessions:
 >
 > - React Basics
 > - React State 1-3
-> - React useEffect with Fetch
+> - React Effects and Fetch
 
-Let's build a website that displays the current number of people in space. Hints are provided if you get stuck. Try to build as much as possible without looking at the hints. We will use the [following API](http://open-notify.org/Open-Notify-API/People-In-Space/) to determine how many people are current in space.
+Let's build a website that displays the current number of people in space. Use the [Open Notify API](http://open-notify.org/Open-Notify-API/People-In-Space/) to retrieve this data.  
+Hints are provided if you get stuck. Try to build as much as possible without looking at the hints.
 
-1. Create a new React project using `npm create vite@latest`. `cd` into the new directory that get's created and don't forget to install the packages.
+1. Create a new React project using `npm create vite@latest`. Change into the new directory that gets created and don't forget to install the packages.
     <details>
     <summary>🙈 Hint</summary>
 
@@ -22,18 +25,18 @@ Let's build a website that displays the current number of people in space. Hints
    </details>
    &nbsp;
 
-2. Start the dev server
+2. Start the dev server.
       <details>
       <summary>🙈 Hint</summary>
 
    ```bash
-   npm run start
+   npm run dev
    ```
 
    </details>
    &nbsp;
 
-3. Add an element to the html where we will put the number of people currently in space. We probably want to keep track of the number of people in space via state (try and think of a good react hook for this). We can set the initial value to 0 for now.
+3. Add an element to display the current number of people in space. Keep track of the number of people in space via state. Set the initial value to 0 for now.
    <details>
    <summary>🙈 Hint</summary>
 
@@ -57,7 +60,7 @@ Let's build a website that displays the current number of people in space. Hints
     </details>
     &nbsp;
 
-4. Now we want to fetch the data from the api. There is another hook from React that we want to think about here. Fetching data from an external source can be seen as a side effect. Once you have fetched the data don't forget to call `setPeopleInSpace`
+4. Fetch the data from the [Open Notify API](http://open-notify.org/Open-Notify-API/People-In-Space/). This is where another React hook comes in handy, as fetching data from an external source is considered a side effect. Remember to call `setPeopleInSpace` after fetching the data.
    <details>
    <summary>🙈 Hint</summary>
 
@@ -90,9 +93,11 @@ Let's build a website that displays the current number of people in space. Hints
    </details>
    &nbsp;
 
-Congratulations! You have now made a website that shows the current number of people in space using React.
+**Congratulations!** 🚀 You now have a React app that displays the current number of people in space.
 
-As a **_bonus_** feature you could add a `ul` to the page that gets updated with the names of the people currently in space (this information is also included in the response from the API). You will probably want to create another state variable. Then we need to remember how to loop over an array in React.
+**Bonus Features**
+
+1. For an additional feature, consider adding a `ul` element to the page that dynamically updates with the names of the people currently in space. This information is provided in the API response. You will likely want to create another state variable, and then loop over the array in React to display the data.
 
   <details>
   <summary>🙈 Hint</summary>
@@ -135,7 +140,7 @@ export default App;
   </details>
       &nbsp;
 
-As an **_extra bonus_** you could add 3 buttons to the page. `All`, `ISS` and `Tiangong`. Then when you click on one of the buttons you update the list of people displayed on the page based on which space craft they are on. i.e. if you click on the ISS button, your list of people should only include those on the `ISS`. We learnt about an array method that would be particularly helpful in this scenario.
+2. For an **extra bonus**, you could enhance the page with three buttons: All, ISS, and Tiangong. When you click one of these buttons, the list should update to show only the people aboard the selected spacecraft. For example, clicking the ISS button should display only those on the ISS. You can make use of a specific array method we have covered to filter the list based on the spacecraft.
 
   <details>
   <summary>🙈 Hint</summary>

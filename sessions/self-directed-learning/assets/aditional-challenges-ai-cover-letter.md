@@ -1,4 +1,6 @@
-# AI Cover Letter Generator
+# Additional Challenge: AI
+
+## AI Cover Letter Generator
 
 Let's use our knowledge of next.js + api routes to build an AI Cover Letter Generator.
 

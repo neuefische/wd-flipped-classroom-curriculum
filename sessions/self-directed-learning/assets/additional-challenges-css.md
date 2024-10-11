@@ -1,4 +1,4 @@
-# CSS additional Challenges
+# Additional Challenges: CSS
 
 ## Flex Component Workout
 
@@ -16,6 +16,6 @@ Want to flex about your flex knowledge? Try to reproduce the following scenarios
 >
 > - CSS Flexbox
 
-Flex to the max? Achieve full page layouts with flex!
+Flex to the max! Achieve full page layouts with flex!
 
 ![Flex Layouts](./images//flex-layout.png)

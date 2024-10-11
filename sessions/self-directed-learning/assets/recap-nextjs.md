@@ -1,4 +1,6 @@
-# Next Structure
+# Next.js Recap
+
+## Next.js Structure
 
 Now that we are dealing with a more complex architecture, it's good to take a step back from coding and spend it to have a look at the big picture.
 

@@ -1,12 +1,14 @@
-# HTML Workout
+# Additional Challenge: HTML
+
+## HTML Workout
 
 > Required Sessions:
 >
 > - HTML and the Web
 
-Here is a basic HTML structure that can be apply to different scenarios.
+This basic HTML structure can be adapted to various scenarios.
 
-Create a new `index.html` file and past the following code.
+Create a new `index.html` file and past the following code into the file:
 
 ```html
 <!doctype html>
@@ -63,15 +65,12 @@ Create a new `index.html` file and past the following code.
 </html>
 ```
 
-We have:
+**Structure Breakdown**
 
-- a `<head>` section with the `<title>` (_not_ visible in the browser body);
-- a `<body>` containing an `<header>`, a `<main>` and a `<footer>`;
-- the `<header>` has a title, a picture, a descriptive paragraph and a navigation;
-- the `<footer>` has just a (fake) copyright info;
-- the `<main>` contains three `<section>`s;
-- each `<section>` has a title, one or more paragraphs, and if needed a list of additional information.
+- **`<head>`:** Contains the `<title>` for the page (_not_ visible in the body).
+- **`<body>`:** Contains a `<header>`, `<main>` and `<footer>`.
+  - `<header>`: Includes a title, a picture, a descriptive paragraph, and navigation links.
+  - `<main>`: Consists of three sections (Experience, Skills, Contact), each with a title, one or more paragraphs, and if needed a list of additional information.
+  - `<footer>`: Displays (fake) copyright information.
 
-Try to draft a homepage for.
-
-Decide first the information you'll need / want to show (pencil and paper go a long way), then work on the HTML.
+Use this HTML structure as a template to draft a homepage for any topic you like. First, decide what information you want to showcase, sketch it out (pencil and paper go a long way), and then adapt the HTML to fit your content.

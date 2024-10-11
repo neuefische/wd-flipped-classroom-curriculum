@@ -1,4 +1,4 @@
-# JavaScript additional Challenges
+# Additional Challenges: JavaScript Fundamentals
 
 Confused by JavaScript? Let's sort it out!
 
@@ -6,22 +6,22 @@ Confused by JavaScript? Let's sort it out!
 
 > Required Sessions:
 >
-> - JS Basics
-> - JS Variables and Numbers
+> - JS Basics and Variables
+> - JS Events and DOM
 > - JS Conditions and Booleans
 
-- How many JS data types you know? Why would you pick one over another?
-- What's the different behaviour granted by the `let` and `const` keywords?
+- List the JavaScript data types you know. Why would you choose one type over another?
+- What’s the difference between the `let` and `const` keywords?
 
 ## Truthiness and Falsiness
 
 > Required Sessions:
 >
-> - JS Basics
-> - JS Variables and Numbers
+> - JS Basics and Variables
+> - JS Events and DOM
 > - JS Conditions and Booleans
 
-What values behave like `true`? Remember:
+Explore which values behave like `true`. Consider the following example:
 
 ```js
 const isRaining = true;
@@ -31,9 +31,9 @@ if (isRaining) {
 }
 ```
 
-The `isRaining` variable holds the `true` value, and definitely passes the `if(isRaining)` condition.
+The `isRaining` variable holds the `true` value, which passes the `if(isRaining)` condition.
 
-What happens with a general string:
+What happens with a general string like this?
 
 ```js
 const myName = "Jane";
@@ -43,20 +43,20 @@ if (myName) {
 }
 ```
 
-Now check for yourself what happens with the following:
+Now test various values:
 
-- the `false` value;
-- the `'false'` string;
-- an empty string (`''`);
-- a positive number;
-- a negative number;
-- the number 0;
-- `null`;
-- `undefined`.
+- `false`
+- `'false'`
+- `''`
+- Positive numbers
+- Negative numbers
+- The number 0
+- `null`
+- `undefined`
 
-Collect the results of your experience and discuss them together.
+Discuss your observations with your group.
 
-## Generate an email address
+## Generate an Email Address
 
 > Required Sessions:
 >
@@ -64,11 +64,11 @@ Collect the results of your experience and discuss them together.
 > - JS Objects and Arrays
 > - JS Forms
 
-Write a function called `generateEmail` that accepts an object as the only parameter, and returns `<firstName>.<lastName>@example.com`, all in lowercase (e.g. in this case `jane.doe@example.com`).
+Write a function called `generateEmail` that takes an object as the only parameter and returns `<firstName>.<lastName>@example.com` in lowercase (e.g., `jane.doe@example.com`).
 
-- you have to access the first and last name of the object with the dot notation;
-- you have to return a value from the function _and not_ log anything outside of it;
-- you can check that your function is working like:
+- Access the first and last name of the object with dot notation.
+- Return the value from the function without logging anything outside of it.
+- Check that your function is working with the following:
 
 ```js
 function generateEmail(...) {
@@ -84,18 +84,18 @@ const email = generateEmail(...);
 console.log(email);
 ```
 
-### Guess the first and last name from the email
+### Guess the First and Last Name from the Email
 
-Write a function that takes a string as parameter, and returns an object with `firstName` and `lastName` keys, guessed by the email.
+Write a function that takes a string as a parameter and returns an object with `firstName` and `lastName` keys, based on the email.
 
-Hint: `String.prototype.includes` and `String.prototype.split` are your friends!
+Hint: `String.prototype.includes` and `String.prototype.split` might be useful!
 
 ```js
 function getUserFromEmail(email) {
-  // if the email does not contain a @, return null
-  // if it does, split the email at @ and take the first entry in consideration
-  // if such part does not have a ., return null
-  // if it does, you know what you have to do!
+  // if the email does not contain an @, return null
+  // if it does, split the email at @ and use the first part
+  // if the part does not have a ., return null
+  // if it does, you know what to do!
 }
 
 // logs null
@@ -108,9 +108,9 @@ console.log(getUserFromEmail("nodots@example.com"));
 console.log(getUserFromEmail("jane.doe@example.com"));
 ```
 
-### Bring it online
+### Make It Interactive
 
-Let's use the first function first:
+Let's use the `generateEmail` function:
 
 ```html
 <form>
@@ -123,39 +123,39 @@ Let's use the first function first:
 <span data-js="generated-email">...</span>
 ```
 
-When the user submits the form, display the generated email in the `<span>` below the form.
+Display the generated email in the `<span>` below the form when the user submits the form.
 
-Do the same for the other operation, this time with just one field of `type=email`, that populates a span with the guessed complete name of the user (e.g. Jane Doe).
+Do the same for the other operation, this time with just one field of `type=email`, that populates a `span` with the guessed complete name of the user (e.g., Jane Doe).
 
 [A possible solution can be found here](https://codesandbox.io/s/self-learning-email-solution-45sz7y?file=/src/index.js:0-2229).
 
-## Function call order
+## Function Call Order
 
 > Required Sessions:
 >
-> - JS Functions 1 & 2
+> - JS Functions
 
-To understand how a computer handles function calls, we have to think like one. Without going to deep in what a [call stack](https://en.wikipedia.org/wiki/Call_stack) is, the general idea is that the nested function calls take precedence, much like mathematical expressions:
+To understand how computers handle function calls, think like one. Without diving to deeply into the [call stack](https://en.wikipedia.org/wiki/Call_stack), the idea is that nested function calls take precedence, similar to mathematical expressions:
 
 ```js
 [(2 + 3) * 4] / (6 - 2);
 ```
 
-First the operations between round parenthesis are evaluated, and replaced with their result:
+First, the operations within parentheses are evaluated and replaced with their result:
 
 ```js
 [5 * 4] / 4;
 ```
 
-Then it's the turn of operation in square brackets:
+Then the operation in square brackets:
 
 ```js
 20 / 4;
 ```
 
-And the last operation yields 5.
+And the final operation yields 5.
 
-If we translate this to JavaScript with the aid of custom defined `sum`, `subtract`, `multiply` and `divide` functions, we have:
+If we translate this to JavaScript using custom `sum`, `subtract`, `multiply`, and `divide` functions, we have:
 
 ```js
 function sum(a, b) {
@@ -179,7 +179,7 @@ const result = divide(multiply(sum(2, 3), 4), subtract(6, 2));
 console.log(result); // logs 5
 ```
 
-Like in the arithmetic process, the `sum()` and `subtract()` call are evaluated first, leaving us with:
+Like in the arithmetic process, the `sum()` and `subtract()` calls are evaluated first, leaving us with:
 
 ```js
 const result = divide(multiply(5, 4), 4);
@@ -195,7 +195,7 @@ That returns 5.
 
 ### Guessing Game Call Stack
 
-Given the following code, can you tell the order of the console logs **without** running the code?
+**Without** running the code, can you tell the order of the console logs?
 
 ```js
 let mealCount = 0;
@@ -204,7 +204,7 @@ let workedHours = 0;
 wakeUp(9);
 
 function wakeUp(time) {
-  console.log("⏰ good morning!");
+  console.log("⏰ Good morning!");
   if (time < 8) {
     eatBreakfast();
   }
@@ -212,12 +212,12 @@ function wakeUp(time) {
 }
 
 function commute() {
-  console.log("🚴 reaching the office...");
+  console.log("🚴 Reaching the office...");
   pretendToWork();
 }
 
 function goHome() {
-  console.log("🚴 going back home...");
+  console.log("🚴 Going back home...");
   if (mealCount === 2) {
     goToGym();
   } else {
@@ -226,17 +226,17 @@ function goHome() {
 }
 
 function eatBreakfast() {
-  console.log("☕ nice way to start the day!");
+  console.log("☕ Nice way to start the day!");
   mealCount++;
 }
 
 function eatLunch() {
-  console.log("🥪 lunch with colleagues!");
+  console.log("🥪 Lunch with colleagues!");
   mealCount++;
 }
 
 function pretendToWork() {
-  console.log("🛠️ being busy");
+  console.log("🛠️ Being busy.");
   workedHours = workedHours + 4;
   if (workedHours === 4) {
     eatLunch();
@@ -247,10 +247,10 @@ function pretendToWork() {
 }
 
 function goToGym() {
-  console.log("🏃‍♀️ keeping it fit");
+  console.log("🏃‍♀️ Keeping it fit.");
 }
 
 function watchTV() {
-  console.log("📺 let's call it a day");
+  console.log("📺 Let's call it a day.");
 }
 ```
