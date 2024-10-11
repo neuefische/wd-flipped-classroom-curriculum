@@ -35,7 +35,7 @@ Upon request, you can create an API key for each student.
 
 1. Visit the neuefische organization on the [OpenAI platform](https://platform.openai.com/).
 2. Ensure that you have selected the correct organization – check the top left corner for "neue fische".
-3. Select the project "Web Development - Cover Letter Generator Project."
+3. Select the project "Web Development - Cover Letter Generator Project".
 4. Go to “Dashboard” in the upper right menu.
 5. In the left sidebar, select “API Keys”.
 6. Click on "+ Create new secret key".
