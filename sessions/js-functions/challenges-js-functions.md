@@ -2,6 +2,8 @@
 
 ## Basic functions
 
+(difficulty: 🔥)
+
 Solve the _Basic functions_ challenge by running this command in your Terminal:
 
 ```
@@ -9,6 +11,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/basic-f
 ```
 
 ## Functions with parameters
+
+(difficulty: 🔥)
 
 Solve the _Functions with parameters_ challenge by running this command in your Terminal:
 
@@ -18,6 +22,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functio
 
 ## Functions with parameters extra
 
+(difficulty: 🔥🔥)
+
 Solve the _Functions with parameters extra_ challenge by running this command in your Terminal:
 
 ```
@@ -25,6 +31,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functio
 ```
 
 ## Functions and DOM manipulation
+
+(difficulty: 🔥🔥)
 
 Solve the _Functions and DOM manipulation_ challenge by running this command in your Terminal:
 
@@ -34,6 +42,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/dom-man
 
 ## Calculations
 
+(difficulty: 🔥)
+
 Solve the _Calculations_ challenge by running this command in your Terminal:
 
 ```
@@ -41,6 +51,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/basic-c
 ```
 
 ## Greeting Page
+
+(difficulty: 🔥🔥)
 
 Solve the _Greeting Page_ challenge by running this command in your Terminal:
 
@@ -52,6 +64,8 @@ Create a small greeting page which changes depending on your current time.
 
 ## Convert Arrow Functions
 
+(difficulty: 🔥🔥)
+
 Solve the _Convert Arrow Functions_ challenge by running this command in your Terminal:
 
 ```
@@ -62,7 +76,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/arrow-f
 
 ## Pizza Analyzer
 
-> ⚠️ This challenge is intended to be more difficult to solve.
+(difficulty: 🔥🔥🔥)
 
 Solve this **advanced** challenge by running this command in your Terminal:
 
@@ -72,7 +86,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/pizza-a
 
 ## Progress Bar
 
-> ⚠️ This challenge is intended to be more difficult to solve.
+(difficulty: 🔥🔥🔥)
 
 Solve the **advanced** _Progress Bar_ challenge by running this command in your Terminal:
 
