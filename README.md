@@ -17,7 +17,7 @@ This is the current session timetable for our cohorts.
 | 1    | [Welcome](sessions/welcome)                                                                    | [Github and Markdown](sessions/github-and-markdown)                             |
 | 2    | [Shell Basics](sessions/shell-basics) + Mac/Windows Setup 💻                                   | Active Learning: [HTML and the Web](sessions/html-and-the-web)                  |
 | 3    | [Git CLI & Remote](sessions/git-cli-and-remote)                                                | [Git Branches and PRs](sessions/git-branches-and-prs)                           |
-| 4    | [CSS Basics](sessions/css-basics) + `web-challenges` Workflow                                    | [Self-Directed Learning 1](sessions/self-directed-learning-1/)                  |
+| 4    | [CSS Basics](sessions/css-basics) + `web-challenges` Workflow                                  | [Self-Directed Learning 1](sessions/self-directed-learning-1/)                  |
 | 5    | [CSS Positioning](sessions/css-positioning)                                                    | [CSS Flexbox](sessions/css-flexbox)                                             |
 | 6    | [CSS Structure](sessions/css-structure)                                                        | Active Learning: [CSS Responsive](sessions/css-responsive)                      |
 | 7    | [**Recap Project 1**](sessions/recap-project-1)                                                | Active Learning: [Accessibility](sessions/accessibility)                        |
@@ -43,7 +43,7 @@ This is the current session timetable for our cohorts.
 | 27   | [**Recap Project 4**](sessions/recap-project-4)                                                | [**Recap Project 4**](sessions/recap-project-4)                                 |
 | 28   | [Mock Interview 2 🏗️](sessions/mock-interview-2)                                               | [Next.js Basics and Routing](sessions/nextjs-basics-and-routing/)               |
 | 29   | [Next.js Dynamic Routes](sessions/nextjs-dynamic-routes/)                                      | [Self-Directed Learning 6](sessions/self-directed-learning-6/)                  |
-| 30   | [React Component Testing](sessions/react-component-testing/)                                   | [React Styled Components](sessions/react-styled-components/)                    |
+| 30   | [React Styled Components](sessions/react-styled-components/)                                   | [React Component Testing](sessions/react-component-testing/)                    |
 | 31   | [React Global State](sessions/react-global-state/)                                             | [React Data Fetching](sessions/react-data-fetching)                             |
 | 32   | [**Recap Project 5**](sessions/recap-project-5/)                                               | [**Recap Project 5**](sessions/recap-project-5/)                                |
 | 33   | [**Recap Project 5**](sessions/recap-project-5/)                                               | [Backend Basics](sessions/backend-basics/)                                      |
