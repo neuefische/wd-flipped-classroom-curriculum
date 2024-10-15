@@ -175,6 +175,47 @@ moveElement(xPos > 300 ? 300 : xPos); // the element can't be moved further than
 
 ---
 
+## Switch Statement
+
+Sometimes, we need to check if a variable or expression matches one of several specific values. In such cases, a `switch statement` provides a clearer and more efficient solution than using multiple `if...else` statements.
+
+The `switch` statement works by taking the variable or expression, then moving sequentially through a list of possible **cases** for its value. In each `case` that it gets to, it compares the checked value with the case's value. If they match, the code in this `case` will be run. If they don't match, JavaScript will move on to the next `case` in the sequence.
+
+Here's an example:
+
+```js
+console.log("Which is your favorite season of the year?");
+const userAnswer = "spring";
+
+switch (userAnswer) {
+  case "summer":
+    console.log("Heat, sun and waves for you 😎");
+    break;
+  case "autumn":
+    console.log("Crunchy, colorful leaves and cool breezes 🍁");
+    break;
+  case "winter":
+    console.log("Ice, snow, warm clothes and hot drinks ☕️");
+    break;
+  case "spring":
+    console.log("Growth, green, and new beginnings! 🌿");
+    break;
+  default:
+    console.log("Sorry, I don't think that's a season!");
+}
+```
+
+💡 Syntax guidelines for the `switch` statement:
+
+- Similar to an `if` statement, the evaluated value or expression should be placed inside parentheses `()`.
+- The entire body of the `switch` statement must be enclosed in curly braces `{}`, just like an `if` statement.
+- Each `case` specifies a single constant value (not an expression) to compare against.
+- A colon `:` must follow each `case` value.
+- By default, all cases of a `switch` statement are checked, even if a case already matched before. This "fall-through" behavior is seldom what we want and can be prevented with a `break` statement. When executed it terminates the `switch` statement immediately, similar to the `return` statement of a function.
+- It's advisable to include a `default` case to handle unmatched values; this does not require a `break`.
+
+---
+
 ## Advanced: The strangeness of boolean coercion and making use of non-strict equality
 
 <details>
@@ -229,3 +270,7 @@ JavaScript tries to coerce the compared values into the same type. And just like
 ### Ternary Operator
 
 [MDN Ternary Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+
+### Switch Statements
+
+[MDN about switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)

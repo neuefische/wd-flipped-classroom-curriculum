@@ -15,3 +15,21 @@ A solution to this challenge can be found [here](https://github.com/neuefische/w
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check_solution
 ```
+
+## Weather Check
+
+A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/weather-check_solution). Alternatively, you can download the code with the following command:
+
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/weather-check_solution
+```
+
+# Bonus Challenge
+
+## LogType
+
+A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/logtype_solution). Alternatively, you can download the code with the following command:
+
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/log-type_solution
+```
