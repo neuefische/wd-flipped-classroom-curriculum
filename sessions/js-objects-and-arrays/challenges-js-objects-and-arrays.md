@@ -5,24 +5,30 @@
 
 ## Arrays
 
+(difficulty: 🔥)
+
 Solve the _Arrays_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays
 ```
 
 ## Objects
 
+(difficulty: 🔥)
+
 Solve the _Objects_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects
 ```
 
 ## Objects and Arrays
 
+(difficulty: 🔥🔥)
+
 Solve the _Objects and Arrays_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays
 ```
