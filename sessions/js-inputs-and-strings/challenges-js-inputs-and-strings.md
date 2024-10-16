@@ -21,9 +21,11 @@ Solve the following challenges.
 
 ## Input to uppercase Challenge
 
+(difficulty: 🔥)
+
 Solve the _Input to uppercase Challenge_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-uppercase
 ```
 
@@ -31,9 +33,11 @@ Convert the text in the input field to uppercase when clicking the button.
 
 ## Input to uppercase and lowercase Challenge
 
+(difficulty: 🔥)
+
 Solve the _Input to uppercase and lowercase Challenge_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-upper-and-lowercase
 ```
 
@@ -41,9 +45,11 @@ Convert the text in the input field to lowercase when clicking the button.
 
 ## Switch values Challenge
 
+(difficulty: 🔥🔥)
+
 Solve the _Switch values Challenge_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/switch-values
 ```
 
@@ -51,17 +57,21 @@ Switch the input values of the two inputs when clicking the button.
 
 ## Multiple inputs Challenge
 
+(difficulty: 🔥🔥)
+
 Solve the _Multiple inputs Challenge_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/multiple-inputs
 ```
 
 ## Change Box Appearance Advanced Challenge
 
+(difficulty: 🔥🔥)
+
 Solve the _Change Box Appearance Advanced Challenge_ challenge by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/change-box-appearance
 ```
 
