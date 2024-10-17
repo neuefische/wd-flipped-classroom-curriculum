@@ -1,4 +1,4 @@
-# JavaScript Basics
+# JS DOM and Events
 
 ## Learning Objectives
 
@@ -42,18 +42,19 @@ The `script` tag has two attributes:
 
 ---
 
-## Hello World: `console.log()`
+## The DOM
 
-In JavaScript we can print text to the console of the web browser. We can use this for debugging or
-error logging for example.
+In order to access and manipulate elements of our web page from inside our JavaScript file, we can use the `DOM` - Document Object Model. It contains every element of our HTML document represented as a JavaScript object. We will learn about objects in a later session.
+
+In a JavaScript file the DOM is stored in a variable called `document`.
 
 ```js
-console.log("Hello World!"); // logs into console
-console.clear(); // clears console
-console.error("Error!"); // logs as error into console
+console.log(document);
+console.log(document.head);
+console.log(document.body);
 ```
 
----
+With the help of this variable we can find, create and manipulate elements on our web page.
 
 ## Selecting HTML Elements: `.querySelector()`
 
@@ -65,10 +66,7 @@ Before we can add interactivity, we need to select the necessary HTML-Elements:
 </body>
 ```
 
-There are multiple ways to select the above main section within our JavaScript. A good practice is
-to use a
-[data-\* attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*),
-like the **data-js** in the following example:
+There are multiple ways to select the main section above in JavaScript. A good practice is to use a [data-\* attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*), such as data-js, as shown in the following example.
 
 ```js
 const mainElement = document.querySelector('[data-js="main"]');
@@ -91,8 +89,7 @@ const mainElement = document.querySelector("#main");
 
 ## Add Interaction: `.addEventListener()`
 
-We can listen to **events** like **clicks** on an Element and execute code when the event is
-triggered. The method `addEventListener` is used to react to events.
+We can listen to **events** like **clicks** on an element and execute code when the event is triggered. The method `addEventListener` is used to react to events.
 
 ```html
 <button type="button" data-js="button">Log into console</button>
@@ -103,8 +100,7 @@ const button = document.querySelector('[data-js="button"]');
 button.addEventListener("click", () => {});
 ```
 
-First you specify the kind of event, e.g. **click**, then you define what code should be executed
-when the event is triggered. You write that code between the `{}` brackets, e.g. a `console.log`.
+First, you specify the type of event (e.g., `click`), and then you define the code to be executed when the event is triggered. This code is written inside the `{}` brackets, such as a `console.log`` statement..
 
 ```js
 const button = document.querySelector('[data-js="button"]');
@@ -132,7 +128,7 @@ button.addEventListener("keydown", () => {});
 
 ## Add/remove & toggle classes: `.classList.`
 
-You can add, remove and toggle classes, e.g. to change the styling of an element.
+You can add, remove, or toggle classes to change the styling of an element. For example:
 
 ```html
 <main data-js="main">
@@ -140,14 +136,13 @@ You can add, remove and toggle classes, e.g. to change the styling of an element
 </main>
 ```
 
-Add **page--primary** class to the above main section by using the `selectedElement.classList.add`
-method:
+To add the **page--primary** class to the main section, you can use the `classList.add` method like this:
 
 ```js
 const main = document.querySelector('[data-js="main"]');
 const button = document.querySelector('[data-js="button"]');
 
-button.addEventListener("click", () => {
+button.addEventListener("click", () ={
   main.classList.add("page--primary");
 });
 ```

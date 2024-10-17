@@ -1,27 +1,63 @@
-# JS Variables and Numbers
+# JS Basics and Variables
 
 ## Learning Objectives
 
+- Understanding what JavaScript is
+- Getting to know the JS console, working with `console.log()` / `console.clear()`
 - Knowing the difference between `var`, `let` and `const`
 - Understanding the different data types
 - Using basic math operations
 
 ## Requirements
 
-- JS Basics
+- HTML Basics
+- CSS Basics
+- CSS Selectors
 - Basic math knowledge from school
 
 ## Demo
 
-There is no pre-built demo for this session.
+There is no pre-built demo for this session. We use `node.js` to execute JavaScript by itself.
 
 ---
 
 ## Session Guide
 
-Variables are a fundamental building block in programming that allow us to store and reuse values in our code. By understanding how to work with variables, you can write reusable logic that can be applied in different parts of your application. This is a key skill for creating efficient and maintainable code.
+JavaScript is a key technology that brings interactivity and dynamics to a website. It is one of the most in-demand programming languages, essential for full-stack web developers. Understanding JavaScript is fundamental, as it forms the basis of many popular development libraries and frameworks. In this session, you will get an idea of the power (and the pitfalls) of JavaScript.
 
-> How do you "remember" values in JavaScript, so that you can use them later on?
+> What is a programming language and how can I give a computer instructions?
+
+### Short Introduction of What JavaScript Is (5 min max)
+
+- Explain briefly what a programming language is:
+  - List of instructions, similar to a recipe, that a computer executes one after another.
+  - Each line is build up by syntax elements which need to be combined in the correct way to form statements that the computer can understand.
+  - With concepts like variables or functions we can reduce repetition and store information temporarily as long as the program runs.
+  - When the last line of the program is finished, the program is closed.
+- Explain **ECMAScript 6**:
+  - ECMAScript is the JavaScript standard.
+  - ECMAScript 6 is the second major revision to JavaScript and was published in 2015.
+
+### Console
+
+- In an empty folder, create a new file `index.js` and open it.
+- Show the very first syntax elements to the students and highlight that they need to be combined correctly, otherwise the computer cannot run the command.
+- Write the following log and execute it with `node.js`:
+
+```js
+console.log("Hello World!"); // logs into console
+```
+
+- Explain, that `node.js` is a program which can understand JavaScript and executes the command we give it.
+- Show that the text `Hello World` is displayed in the console.
+- Show some more examples:
+
+```js
+console.clear(); // clears console
+console.error("Error!"); // logs as error into console
+```
+
+- Explain that we can use the console for debugging or error logging.
 
 ### Variables
 
@@ -60,18 +96,13 @@ console.log(myMutableNumber);
 
 - **String**: A sequence of characters, for example: `const name="max";`
 - **Number**: A number, for example: `const length=42;` or `const price=4.95;`
-- **Boolean**: A binary value which is either true or false: `const isHungry=true;` or
-  `const done=false;`
-- **Null**: A value that represents the intentional absence of a value. Typically set by a
-  developer.
-- **Undefined**: A value that represents the absence of a value, because no value has been
-  defined or given yet.
+- **Boolean**: A binary value which is either true or false: `const isHungry=true;` or `const done=false;`
+- **Null**: A value that represents the intentional absence of a value. Typically set by a developer.
+- **Undefined**: A value that represents the absence of a value, because no value has been defined or given yet.
 
-- There are two more data types: **BigInt** and **Symbol**. If the students are interested they
-  can read about them in the handout or online.
+- There are two more data types: **BigInt** and **Symbol**. If the students are interested they can read about them in the handout or online.
 
-- It is important not to accidentally mix up data types. This can lead to bugs (errors or
-  unwanted behavior in our application), for example:
+- It is important not to accidentally mix up data types. This can lead to bugs (errors or unwanted behavior in our application), for example:
 
 ```js
 const oneTimeFee = "5";
@@ -121,29 +152,18 @@ console.log(amountToBeCharged);
 
 ### Assignment Operators
 
-- `+=`: Increases the value of the variable
+- `=`: As shown before stores the value on the right in the variable on the left.
+- `+=`: Increases the value of the variable left to the operator:
   ```js
   let balance = 20;
   balance += 5;
   console.log(balance); // will log 25
   ```
-- `-=`: Decreases the value of the variable
+- `-=`: Decreases the value of the variable left to the operator:
   ```js
   let balance = 20;
   balance -= 5;
   console.log(balance); // will log 15
-  ```
-- `*=`: Multiplies the value of the variable
-  ```js
-  let price = 8;
-  price *= 2;
-  console.log(price); // will log 16
-  ```
-- `/=`: Divides the value of the variable
-  ```js
-  let price = 8;
-  price /= 2;
-  console.log(price); // will log 4
   ```
 - `++`: Increments the value of the variable by 1
   ```js

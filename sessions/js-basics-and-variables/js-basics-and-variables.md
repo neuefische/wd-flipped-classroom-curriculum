@@ -1,22 +1,56 @@
-# JS Variables and Numbers
+# JS Basics and Variables
 
 ## Learning Objectives
 
+- Understanding what JavaScript is
+- Getting to know the JS console, working with `console.log()` / `console.clear()`
 - knowing the difference between `var`, `let` and `const`
 - understanding the different data types
 - using basic math operations
 
 ---
 
+## JavaScript
+
+JavaScript is a programming language originally designed to run in the browser. Since 2009, JavaScript can also be executed outside the browser using a program called `Node.js`. This program interprets JavaScript syntax and follows the instructions provided.
+
+A JavaScript program consists of a series of instructions that are executed sequentially, one after another. For example:
+
+```js
+console.clear(); // executed first
+const text = "Hello World!";
+console.log(text); // executed last
+```
+
+It is important to follow syntax rules precisely; otherwise, `Node.js` won’t understand your instructions. For example, you _must_ place a `.` (dot) between `console` and `clear`—with nothing in between.
+
+```js
+console.log("hey"); // works!
+consolelog("hey"); // wrong syntax -> fails!
+console.log<"hey">; // also wrong syntax -> fails!
+```
+
+Learning these syntax rules is like learning a new language, a programming language! But where humans can understand you despite syntax errors, computers cannot! So make sure that you have a good understanding of all syntax rules you come across.
+
+## Hello World: `console.log()`
+
+In JavaScript, we can print text to the terminal, also known as the console. This is useful for tasks such as debugging or error logging.
+
+```js
+console.log("Hello World!"); // logs into console
+console.clear(); // clears console
+console.error("Error!"); // logs as error into console
+```
+
+---
+
 ## Variable Declarations
 
-Variables are a `reference` or `alias` for data stored in memory. You can access this data by using
-this variable. You can use three different keywords to declare a variable:
+Variables act as a _reference_ or _alias_ for data stored in memory. You can access and manipulate this data using the variable name. In JavaScript, there are three different keywords to declare a variable:
 
-- `const` - declares a constant, the value can't be changed. Default way to declare variables.
-- `let` - declares a variable, the value can be changed. Only used when reassigning a new value is
-  necessary.
-- `var` - outdated, not used anymore.
+- `const`: Declares a constant variable, meaning the value cannot be changed. This is the preferred way to declare variables.
+- `let`: Declares a variable whose value can be changed. Use `let` only when you need to reassign a new value.
+- `var`: This is outdated and should no longer be used.
 
 Normally the keyword `const` is used to declare a variable.
 
@@ -123,7 +157,7 @@ right to the element on the left. There are more assignment operators for very c
 increasing a variable by a fixed value.
 
 | operator | effect                                                                                                               |
-| -------- | ---------------------------------------------------------------------------------------------------------------------|
+| -------- | -------------------------------------------------------------------------------------------------------------------- |
 | `+=`     | Increases the value of the variable on the left about the value on the right: `count += 6` → count is increased by 6 |
 | `-=`     | Decreases the value of the variable on the left about the value on the right                                         |
 | `*=`     | Multiplies the variable on the left with the value on the right                                                      |
