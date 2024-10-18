@@ -106,53 +106,24 @@ if (!currentMovie) {
 > 💡 If you are short on time, skip this section. Imperative routing is explained in the handout and only required for the bonus challenge.
 
 - Explain that we can also navigate imperatively using the `router.push` method. This is useful when we want to navigate to a route not in direct response to a user action.
-- As an example we want to create a button that navigates to the aquaman movie page, but only after the user confirms that they are - in fact - Aquaman.
-  - This is of course a silly example, but it illustrates the concept.
-  - In the future this will mainly be used to navigate to a new page after a create form has been submitted.
-- Add a button to the `Movies` component that asks the user if they are Aquaman.
-  ```js
-  <button onClick={() => {}} type="button">
-    Are you Aquaman?
-  </button>
-  ```
-- In the `onClick` handler we want to use the native `confirm` method to ask the user if they are Aquaman.
-  ```js
-  <button
-    onClick={() => {
-      if (confirm("Are you Aquaman?")) {
-        console.log("navigate to the aquaman movie page");
-      }
-    }}
-    type="button"
-  >
-    Are you Aquaman?
-  </button>
-  ```
-- Demonstrate that the button shows a confirmation dialog and only logs a message if the user confirms.
-- Explain that we need to use a method provided by Next.js to actually navigate to the aquaman page.
-- Explain that we can use the `useRouter` hook to get the `router` object which has a `push` method that when called navigates to a new path. Import it and use it in the `Movies` component.
+- Point out that we want to create a button that redirects the user to a random movie page.
+- Create a function `handleRandomRedirect`:
 
-  ```js
-  import { useRouter } from "next/router";
-  ```
+```js
+function handleRandomRedirect() {
+  const randomIndex = Math.floor(Math.random() * movies.length);
+  const randomMovie = movies[randomIndex];
+  router.push(`/movies/${randomMovie.slug}`);
+}
+```
 
-  ```js
-  const router = useRouter();
-  ```
+- Then create a button add add this handler as the `onClick` callback:
 
-  ```js
-  <button
-    onClick={() => {
-      if (confirm("Are you Aquaman?")) {
-        router.push("/movies/aquaman");
-      }
-    }}
-    type="button"
-  >
-    Are you Aquaman?
-  </button>
-  ```
+```jsx
+<button onClick={handleRandomRedirect}>Suprise me!</button>
+```
 
+- Show that the user is taken to a random movie page.
 - Point out that a `<Link>` component should _always_ be preferred over imperative routing, because it is more accessible, it is easier to see where the link goes and Next.js also prefetches the page in the background giving us a faster page load.
 
 ### Head Component
