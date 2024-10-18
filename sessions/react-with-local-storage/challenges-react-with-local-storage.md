@@ -16,6 +16,8 @@ Welcome to this active learning session focused on exploring React with Local St
 
 ## Store stuff in your Browser
 
+(difficulty: 🔥)
+
 Open the developer tools of your browser and open the console.
 
 Write any value to the `localStorage` and/or `sessionStorage`.
@@ -23,6 +25,8 @@ Write any value to the `localStorage` and/or `sessionStorage`.
 Reload the page, restart your browser (or heck, even restart your computer) and check if the value is still there.
 
 ## Stored Note 📝
+
+(difficulty: 🔥)
 
 Solve this challenge by running this command in your Terminal:
 
@@ -32,6 +36,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-sto
 
 ## Journal App with Local Storage
 
+(difficulty: 🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -40,6 +46,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-sto
 
 ## Dice 🎲
 
+(difficulty: 🔥🔥🔥)
 Solve this challenge by running this command in your Terminal:
 
 ```

@@ -2,6 +2,8 @@
 
 ## Github Profile
 
+(difficulty: 🔥)
+
 Your Github Profile is generally the first impression that other developers and future employers
 will get of you. There is a simple way to enhance this profile with your individual style, namely
 the so called **profile readme markdown file**. So let's build our very own personal profile page!

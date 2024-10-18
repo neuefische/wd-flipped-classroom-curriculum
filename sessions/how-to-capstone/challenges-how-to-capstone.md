@@ -2,6 +2,8 @@
 
 ## Code Review
 
+(difficulty: 🔥 -> 🔥🔥 -> 🔥🔥🔥)
+
 We prepared a fresh repository with a feature branch for you. Your task is to review that code and find the bugs/issues. You can use the [common issues](./how-to-capstone.md#common-issues) collection as a guide. Good Luck!
 
 1. Clone [this repository](https://github.com/neuefische/web-code-review-challenge/tree/main):

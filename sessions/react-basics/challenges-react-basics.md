@@ -2,6 +2,8 @@
 
 ## Hello World
 
+(difficulty: 🔥)
+
 Solve this challenge **locally** by running this command in your Terminal:
 
 ```
@@ -10,6 +12,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/hello-w
 
 ## Hello World Article
 
+(difficulty: 🔥)
+
 Solve this challenge **locally** by running this command in your Terminal:
 
 ```
@@ -17,6 +21,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/hello-w
 ```
 
 ## Attributes
+
+(difficulty: 🔥)
 
 Solve this challenge **locally** by running this command in your Terminal:
 

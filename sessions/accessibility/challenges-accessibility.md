@@ -16,6 +16,8 @@ Welcome to this active learning session focused on exploring Accessibility in a 
 
 ## Quiz App project continuation
 
+(difficulty: 🔥🔥)
+
 Continue to work on your Quiz App project and make your application more accessible. Here are some
 ideas of what you can do.
 

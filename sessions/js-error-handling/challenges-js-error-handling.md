@@ -16,6 +16,8 @@ Welcome to this active learning session focused on exploring Error Handling in a
 
 ## Calculator
 
+(difficulty: 🔥🔥)
+
 Solve the _Calculator_ challenge by running this command in your Terminal:
 
 ```
@@ -23,6 +25,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-error-handling/ca
 ```
 
 ## Fetch
+
+(difficulty: 🔥🔥)
 
 Solve the _Fetch_ challenge by running this command in your Terminal:
 

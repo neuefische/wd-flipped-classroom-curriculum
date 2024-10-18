@@ -2,6 +2,8 @@
 
 ## Session Notebook Part 2
 
+(difficulty: 🔥)
+
 Continue working on your session notebook.
 
 1. First, create a new branch called `notes/github-and-markdown`.

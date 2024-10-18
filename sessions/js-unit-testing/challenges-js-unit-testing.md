@@ -12,6 +12,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/get-
 
 ## Math Functions
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -19,6 +21,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/math
 ```
 
 ## People
+
+(difficulty: 🔥🔥)
 
 Solve this challenge by running this command in your Terminal:
 

@@ -2,6 +2,8 @@
 
 ## Box 📦
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -9,6 +11,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/box
 ```
 
 ## Counter 🧮
+
+(difficulty: 🔥)
 
 Solve this challenge by running this command in your Terminal:
 
@@ -18,6 +22,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/counte
 
 ## Emoji Checker 🤔
 
+(difficulty: 🔥🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -25,6 +31,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/emoji-
 ```
 
 ## Journal App Favorite Button
+
+(difficulty: 🔥🔥)
 
 Solve this challenge by running this command in your Terminal:
 

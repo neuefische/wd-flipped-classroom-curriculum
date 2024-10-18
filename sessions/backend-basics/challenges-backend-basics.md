@@ -2,6 +2,8 @@
 
 ## Greeting
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -10,6 +12,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/greet
 
 ## Routes
 
+(difficulty: 🔥🔥)
+
 Solve this challenge running this command in your Terminal:
 
 ```
@@ -17,6 +21,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-basics/route
 ```
 
 ## Chance: Random Responses
+
+(difficulty: 🔥🔥)
 
 Solve this challenge running this command in your Terminal:
 

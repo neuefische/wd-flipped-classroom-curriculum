@@ -27,13 +27,19 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-bo
 
 ## Converting boolean values to strings
 
+(difficulty: 🔥🔥)
+
 Solve this [Kata](https://www.codewars.com/kata/53369039d7ab3ac506000467/train/javascript).
 
 ## Grasshopper - If/else syntax debug
 
+(difficulty: 🔥🔥)
+
 Solve this [Kata](https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript).
 
 ## Grasshopper - Personalized Message
+
+(difficulty: 🔥🔥)
 
 Solve this [Kata](https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript).
 

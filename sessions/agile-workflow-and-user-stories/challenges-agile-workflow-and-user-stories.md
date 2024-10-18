@@ -2,6 +2,8 @@
 
 ## Movie App User Stories
 
+(difficulty: 🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```

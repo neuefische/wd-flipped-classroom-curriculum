@@ -2,6 +2,8 @@
 
 ## Simple Algorithms
 
+(difficulty: 🔥🔥)
+
 Run this demo locally in your terminal:
 
 ```
@@ -18,7 +20,6 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/mock-interview-1/sim
 - [Problem 2]
 - [Problem 3]
 - [Problem 4]
-
 
 [Guide]: ../self-directed-learning-3/chatgpt-pair-programming.md
 [Problem 1]: https://www.codewars.com/kata/52efefcbcdf57161d4000091

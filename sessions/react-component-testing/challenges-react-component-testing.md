@@ -2,6 +2,8 @@
 
 ## Scorekeeper
 
+(difficulty: 🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```

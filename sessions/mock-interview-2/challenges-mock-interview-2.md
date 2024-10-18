@@ -1,16 +1,19 @@
 # Challenges: Mock Interview 1
 
 ## CodeWars Callanges
+
+(difficulty: 🔥 -> 🔥🔥 -> 🔥🔥🔥)
+
 > It is all about practice! 💪
 
-Please make sure you have an account on www.codewars.com, if not you can join [here](https://www.codewars.com/join)! 
+Please make sure you have an account on www.codewars.com, if not you can join [here](https://www.codewars.com/join)!
 
 - [Problem 1]
 - [Problem 2]
 - [Problem 3]
 - [Problem 4]
 - [Problem 5]
-- [Problem 6]  => The same problem covered during the sessison
+- [Problem 6] => The same problem covered during the sessison
 
 > 💡 If not sure where to start, it is highly recommended to refer to this guide 👉😉 [Guide]!
 

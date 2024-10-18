@@ -1,5 +1,7 @@
 # Challenges: Backend MongoDB
 
+(difficulty: 🔥)
+
 ## 1. Setting Up a MongoDB Atlas Account and Database
 
 Follow this guide to set up your MongoDB Atlas account and your first database.

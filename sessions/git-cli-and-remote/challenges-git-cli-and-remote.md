@@ -15,6 +15,8 @@ It's important that we do NOT nest git repositories inside each other, meaning t
 
 ## Upload Web Challenges
 
+(difficulty: 🔥)
+
 Our `web-challenges` folder should become a git repository so that we can upload our progress. Let's do that right now!
 
 - Inside `web-challenges`, turn the folder into a git repository with the command `git init`.
@@ -38,6 +40,8 @@ For every challenge in your `web-challenges` repository:
 
 ## Upload the Personal Website
 
+(difficulty: 🔥)
+
 Lets upload our personal website as well!
 
 - Go to your **personal website** project folder and turn the folder into a git repository with `git init`.
@@ -55,6 +59,8 @@ Lets upload our personal website as well!
 - Reload the GitHub repository page and check if the code for your personal website is now online.
 
 ## Session Notebook Part 1
+
+(difficulty: 🔥)
 
 In this project, you will start filling the already prepared `session-notebook` for all your upcoming session notes. In this part, you will create the folder structure and markdown files. Later, we will fill these files with actual content.
 

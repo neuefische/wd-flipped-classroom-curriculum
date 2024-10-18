@@ -2,6 +2,8 @@
 
 ## Fruits
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -10,11 +12,15 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/fr
 
 ## Users
 
+(difficulty: 🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/users
 ```
+
+(difficulty: 🔥🔥)
 
 ## Journal App Entries Array
 

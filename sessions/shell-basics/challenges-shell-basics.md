@@ -4,6 +4,8 @@ Go into the bootcamp docs and follow the [computer setup](../../docs/computer-se
 
 ## Bootcamp Folders
 
+(difficulty: 🔥)
+
 To keep everything needed for the bootcamp in one place, let’s create a general folder structure that we will use over the upcoming months!
 
 - Open your **iTerm/Git Bash** and navigate to your home directory (named `~`, it should be your default location when you open a new terminal window).
@@ -25,6 +27,8 @@ The folders should now look something like this:
 The `web-bootcamp` folder will be the home for all projects you create during the bootcamp. `web-challenges` will contain all the challenges you work on during sessions. In `session-notebook`, you can collect your notes related to specific sessions. Now you are ready to tackle the first challenges. 💪
 
 ## Treasure Hunt
+
+(difficulty: 🔥🔥)
 
 Open your terminal and navigate to the `web-challenges` folder. Use the following command to download the challenge files:
 
@@ -52,6 +56,8 @@ Use the following commands:
 Good luck! 💎
 
 ## Notes Project
+
+(difficulty: 🔥🔥)
 
 Create the following file structure in a new folder inside your `web-challenges` folder (using `mkdir`,
 `touch` and `cd`):

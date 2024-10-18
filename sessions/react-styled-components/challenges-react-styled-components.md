@@ -2,6 +2,8 @@
 
 ## Card Conversion
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -9,6 +11,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-compone
 ```
 
 ## Styled Navbar
+
+(difficulty: 🔥🔥)
 
 Solve this challenge on by running this command in your Terminal:
 
@@ -18,6 +22,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-compone
 
 ## Box
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -25,6 +31,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-compone
 ```
 
 ## Lord of the Rings Fanpage
+
+(difficulty: 🔥🔥🔥)
 
 > 💡 If you are far enough along with your own Lord of the Rings App, follow the
 > [instructions of this challenge](https://github.com/neuefische/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling?file=/README.md)

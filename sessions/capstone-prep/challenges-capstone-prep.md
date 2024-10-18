@@ -2,6 +2,8 @@
 
 ## User Stories
 
+(difficulty: 🔥🔥)
+
 Start (or continue) working on your user stories. Make sure that toward the end of the "Capstone Prep" you've finished up your user stories to a satisfactory degree. Perhaps there's something you've missed or something that needs to be clarified?
 
 Here's a quick checklist to check against:
@@ -29,6 +31,8 @@ Here's a few subjects that, as a group, you may still want to think about:
   - Do we need to come back to some of our user stories now that we've finished them all?
 
 ## Group Rules
+
+(difficulty: 🔥)
 
 1. Introduction & Objective 📝
 
@@ -62,6 +66,8 @@ Here's a few subjects that, as a group, you may still want to think about:
 - Acknowledge the fact that these rules should be respected and adhered to.
 
 ## Capstone Docs
+
+(difficulty: 🔥)
 
 Get to know & understand the Capstone Phase via our comprehensive [Capstone Docs](https://web-capstone-docs.neuefische.de/)!
 

@@ -4,6 +4,8 @@ In this workshop we will practice to write good and concise users stories for a 
 
 ## User Story 1
 
+(difficulty: 🔥🔥)
+
 Take a look at the [movie app wireframes](./assets/user-story-workshop-start.excalidraw). You can import this file at [excalidraw.com](https://excalidraw.com) and get an overview about the features of the app.
 
 Then, start writing the first user story:
@@ -14,5 +16,7 @@ Then, start writing the first user story:
 After around 30min, meet again with the coach to discuss the first user story.
 
 ## User Story 2 & 3
+
+(difficulty: 🔥🔥)
 
 Continue with the other user stories. Keep in mind to describe every **new** element and possible interaction.

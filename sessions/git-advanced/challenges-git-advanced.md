@@ -2,6 +2,8 @@
 
 ## Git Conflicts Challenge
 
+(difficulty: 🔥🔥🔥)
+
 Open the
 [`git-conflicts-template` on GitHub](https://github.com/neuefische/web-git-conflicts-template#readme)
 and follow the instructions in the `README.md` file.

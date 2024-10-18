@@ -2,6 +2,8 @@
 
 ## Colored Number
 
+(difficulty: 🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -9,6 +11,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/colore
 ```
 
 ## Table Reservation
+
+(difficulty: 🔥🔥🔥)
 
 Solve this challenge by running this command in your Terminal:
 
@@ -18,6 +22,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/table-
 
 ## Favourite Holiday Form
 
+(difficulty: 🔥🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -25,6 +31,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/favour
 ```
 
 ## Personal Details Form
+
+(difficulty: 🔥🔥🔥)
 
 Solve this challenge by running this command in your Terminal:
 
@@ -34,6 +42,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/person
 
 ## Bonus: Fix Triple Count
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -41,6 +51,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/triple
 ```
 
 ## Bonus: Fix Conditionally Rendered useState Hook
+
+(difficulty: 🔥)
 
 Solve this challenge by running this command in your Terminal:
 

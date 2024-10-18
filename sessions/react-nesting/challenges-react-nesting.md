@@ -2,6 +2,8 @@
 
 ## Buttons and Children
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -10,6 +12,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/button
 
 ## Fragments
 
+(difficulty: 🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -17,6 +21,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/fragme
 ```
 
 ## Navigation
+
+(difficulty: 🔥🔥🔥)
 
 Solve this challenge by running this command in your Terminal:
 

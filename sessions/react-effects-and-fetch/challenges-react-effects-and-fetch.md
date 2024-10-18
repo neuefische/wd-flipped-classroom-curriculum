@@ -2,6 +2,8 @@
 
 ## Pokémon API
 
+(difficulty: 🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -9,6 +11,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fe
 ```
 
 ## Pokémon API with paging
+
+(difficulty: 🔥🔥)
 
 Solve this challenge by running this command in your Terminal:
 
@@ -18,6 +22,8 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fe
 
 ## ISS Tracker
 
+(difficulty: 🔥🔥🔥)
+
 Solve this challenge by running this command in your Terminal:
 
 ```
@@ -26,6 +32,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fe
 
 ## API Status and Error Handling
 
+(difficulty: 🔥🔥)
 Solve this challenge by running this command in your Terminal:
 
 ```
