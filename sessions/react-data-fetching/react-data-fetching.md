@@ -63,6 +63,15 @@ function Character() {
 > `{ data: person }`. 📙 Read more about
 > [Getting Started in the docs](https://swr.vercel.app/docs/getting-started).
 
+The fetcher function above uses the `.then` syntax for handling the `fetch` and `.json` promises. You can rewrite this code with syntax you are already familiar with:
+
+```js
+async function fetcher(url) {
+  const response = await fetch(url);
+  return await response.json();
+}
+```
+
 ### Configuring SWR
 
 It can be useful to set some application-wide configuration for `SWR`. You can do so by passing an
@@ -72,7 +81,10 @@ an application wide `refreshInterval`:
 ```js
 import { SWRConfig } from "swr";
 
-const fetcher = (...args) => fetch(...args).then((response) => response.json());
+async function fetcher(url) {
+  const response = await fetch(url);
+  return await response.json();
+}
 
 function App() {
   return (
@@ -128,7 +140,7 @@ You can customize the `fetcher` to `throw` an `Error` with additional informatio
 [example is taken from the docs](https://swr.vercel.app/docs/error-handling#status-code-and-error-object)):
 
 ```js
-const fetcher = async (url) => {
+async function fetcher(url) {
   const response = await fetch(url);
 
   // If the status code is not in the range 200-299,
@@ -142,7 +154,7 @@ const fetcher = async (url) => {
   }
 
   return response.json();
-};
+}
 ```
 
 This function throws an error with the keys `info` and `status` if the status code of
@@ -276,7 +288,7 @@ The `useSWR` hook returns an SWR response object with the following properties:
 |           `error` | An error object if the fetcher function threw an error |
 |       `isLoading` | `true` if the data is being loaded for the first time  |
 |    `isValidating` | `true` if there is any request or revalidation loading |
-|        `mutate()` | A function to mutate the data                          |
+|          `mutate` | A function to mutate the data                          |
 
 ## Combine Fetched Data with Local State
 
