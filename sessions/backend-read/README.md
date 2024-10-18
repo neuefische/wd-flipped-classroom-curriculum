@@ -125,7 +125,7 @@ export default Joke;
 
   - Note that we need to make the `handler` an async function now.
 
-- Explain that we can define different behaviors depending on the HTTP request method used. Because we have not declared anything else in `components/JokeList/index.js`, the default is a `GET` request.
+- Explain that we can define different behaviors depending on the HTTP request method used. Because we have not declared anything else in `pages/index.js`, the default is a `GET` request.
 - Write the code to check the `request.method` and if it's `GET`:
   - Use the imported `Joke` model and it's `.find()` method to find all jokes in the database.
   - Remind students that we have to `await` the response again.
@@ -133,16 +133,18 @@ export default Joke;
 
 ```js
 // api/jokes/index.js
-import dbConnect from "../../../db/connect";
-import Joke from "../../../db/models/Joke";
+import dbConnect from "@/db/connect";
+import Joke from "@/db/models/Joke";
 
 export default async function handler(request, response) {
   await dbConnect();
 
   if (request.method === "GET") {
     const jokes = await Joke.find();
-    return response.status(200).json(jokes);
+    response.status(200).json(jokes);
+    return;
   }
+  response.status(405).json({ status: "Method not allowed." })
 }
 ```
 
@@ -158,8 +160,8 @@ export default async function handler(request, response) {
 
 ```js
 // api/jokes/[id].js
-import dbConnect from "../../../db/connect";
-import Joke from "../../../db/models/Joke";
+import dbConnect from "@/db/connect";
+import Joke from "@/db/models/Joke";
 
 export default async function handler(request, response) {
   await dbConnect();
@@ -169,11 +171,15 @@ export default async function handler(request, response) {
     const joke = await Joke.findById(id);
 
     if (!joke) {
-      return response.status(404).json({ status: "Not Found" });
+      response.status(404).json({ status: "Not Found" });
+      return;
     }
 
     response.status(200).json(joke);
+    return;
   }
+
+  response.status(405).json({ status: "Method not allowed." });
 }
 ```
 
@@ -182,7 +188,7 @@ export default async function handler(request, response) {
   - The fetched `data` array now contains objects with `_id` instead of `id`.
 
 ```js
-// necessary frontend changes in components/JokeList.js: change joke.id to joke._id
+// necessary frontend changes in pages/index.js: change joke.id to joke._id
 <li key={joke._id}>
   <Link href={`/${joke._id}`}>{joke.joke}</Link>
 </li>

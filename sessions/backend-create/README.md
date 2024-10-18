@@ -63,16 +63,14 @@ To start with the database, open MongoDB Atlas and if you not have done so in th
 //pages/api/index.js
 
 if (request.method === "POST") {
-  try {
-    const jokeData = request.body;
-    await Joke.create(jokeData);
+  const jokeData = request.body;
+  await Joke.create(jokeData);
 
-    response.status(201).json({ status: "Joke created" });
-  } catch (error) {
-    console.log(error);
-    response.status(400).json({ error: error.message });
-  }
+  response.status(201).json({ status: "Joke created" });
+  return;
 }
+
+response.status(405).json({ status: "Method not allowed." });
 ```
 
 [Final stage of the code without comments](https://github.com/neuefische/web-exercises/blob/main/sessions/backend-create/demo-end/pages/api/jokes/index.js).

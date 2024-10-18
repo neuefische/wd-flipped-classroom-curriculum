@@ -61,12 +61,9 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/d
 
 - Open the starter demo and show the students around:
 
-  - The `HomePage` (`pages/index.js`) renders the `JokeList` component.
-  - The `JokeDetailsPage` (`pages/[id].js`) renders the `Joke` component.
-  - The `JokeList` component fetches an array of jokes from an API and renders a list of jokes
-    to `/`.
-  - The `Joke` component fetches one joke depending on the `id` query parameter and renders this joke to `/[id]`.
-  - Both components use the bad-jokes API under `https://example-apis.vercel.app/api/bad-jokes/`.
+  - The `HomePage` (`pages/index.js`) fetches an array of jokes from an API and renders a list of jokes.
+  - The `Joke` (`pages/[id].js`) fetches one joke depending on the `id` query parameter and renders this joke.
+  - Both fetches use the bad-jokes API under `https://example-apis.vercel.app/api/bad-jokes/`.
 
 - Explain that we want to build our own API:
 
@@ -86,7 +83,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/d
 
 ```js
 // pages/api/jokes/index.js
-import { jokes } from "../../../lib/data.js";
+import { jokes } from "@/lib/data.js";
 
 export default function handler(request, response) {
   response.status(200).json(jokes);
@@ -112,7 +109,7 @@ export default function handler(request, response) {
 
 ```js
 // /pages/api/jokes/[id].js
-import { jokes } from "../../../lib/data.js";
+import { jokes } from "@/lib/data.js";
 
 export default function handler(request, response) {
   const { id } = request.query;
@@ -120,7 +117,8 @@ export default function handler(request, response) {
   const joke = jokes.find((joke) => joke.id === id);
 
   if (!joke) {
-    return response.status(404).json({ status: "Not Found" });
+    response.status(404).json({ status: "Not Found" });
+    return;
   }
 
   response.status(200).json(joke);
@@ -133,20 +131,20 @@ export default function handler(request, response) {
 
 - Remind students that you've created an API responding with either all or only one joke which is exactly what the frontend of this app is currently doing with the help of the external API via `https://example-apis.vercel.app/api/bad-jokes/`.
 - Explain that we can exchange this external API with our own routes `/api/jokes` and `api/jokes/[id]`.
-- Open `components/JokeList/index.js`; change the URL passed to `useSWR` to `/api/jokes`:
+- Open `pages/index.js`; change the URL passed to `useSWR` to `/api/jokes`:
 
 ```js
-// `components/JokeList/index.js`
+// `pages/index.js`
 const { data } = useSWR("/api/jokes");
 ```
 
 - Reload the browser under `/` and show the network tab: the request is now send to `http://localhost:3000/api/jokes` and receives its data from your API.
 - Switch to one of the details pages (e.g. `localhost:3000/2`) and show the network again: the details are still fetched from the external API `https://example-apis.vercel.app/api/bad-jokes/2`.
 
-- Refactor `components/Joke/index.js` to fetch the data from `api/jokes/[id]` by changing the URL passed to `useSWR`:
+- Refactor `pages/[id].js` to fetch the data from `api/jokes/[id]` by changing the URL passed to `useSWR`:
 
 ```js
-// `components/Joke/index.js`
+// `pages/[id].js`
 const { data } = useSWR(`/api/jokes/${id}`);
 ```
 
