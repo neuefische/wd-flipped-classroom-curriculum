@@ -20,3 +20,12 @@ Here you can find the excalidraw wireframes for this project:
 - [Quiz App Form Page with Counter](assets/quiz-app-form-page-with-counter.excalidraw)
 
 To watch these files in VSCode, install the [excalidraw extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor).
+
+## ToDo List
+
+If the student use the template:
+
+- Ask the student via slack to send before 12 o'clock:
+  - their repository url.
+  - their deployment url.
+- (Spiced only) Save both links in the cohort google sheet.
