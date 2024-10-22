@@ -1,5 +1,7 @@
 # Challenges: Shell Basics
 
+## Computer Setup
+
 Go into the bootcamp docs and follow the [computer setup](../../docs/computer-setup.md).
 
 ## Bootcamp Folders
