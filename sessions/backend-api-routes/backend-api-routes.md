@@ -37,15 +37,15 @@ APIs running on a server environment are called server-side APIs. They are provi
 
 ## Next.js API routes
 
-Our main goal is to build a database and to handle its data in our web application. To do this we have to create our own API routes inside of the web application and decide what information and data the routes return. Luckyly, Next.js provides us with a cool feature using simple and intuitive syntax.
+Our main goal is to build a database and to handle its data in our web application. To do this we have to create our own API routes inside of the web application and decide what information and data the routes return. Luckily, Next.js provides us with a cool feature using simple and intuitive syntax.
 
 It follows a simple folder structure: Any file inside the folder e.g. `pages/api/test/file.js` is mapped to the respective url with the same path e.g. `/api/test/file` and will be treated as an API endpoint instead of a page.
 
-In Next.js, an API route is simply a JavaScript module that exports a default function. For example, a file called `pages/api/hello.js` creates the API endpoint `/api/hello` that responds with a JSON message of "Hello neuefische!". The handler function takes two arguments: a request object and a response object, which are used to start the serverless programm on vercel and handle incoming requests and send responses back to the client.
+In Next.js, an API route is simply a JavaScript module that exports a default function. For example, a file called `pages/api/hello.js` creates the API endpoint `/api/hello` that responds with a JSON message of "Hello Web Developer!". The handler function takes two arguments: a request object and a response object, which are used to start the serverless program on vercel and handle incoming requests and send responses back to the client.
 
 ```js
 export default function handler(request, response) {
-  response.status(200).json({ message: "Hello neuefische!" });
+  response.status(200).json({ message: "Hello Web Developer!" });
 }
 ```
 
