@@ -9,7 +9,7 @@
 Let's have a look at a basic HTML structure and apply it to different scenarios.
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

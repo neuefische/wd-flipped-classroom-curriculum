@@ -144,7 +144,7 @@ export default async function handler(request, response) {
     response.status(200).json(jokes);
     return;
   }
-  response.status(405).json({ status: "Method not allowed." })
+  response.status(405).json({ status: "Method not allowed." });
 }
 ```
 
