@@ -1,9 +1,3 @@
 # Recap Project 6: Tourio App
 
-Build your own _Tourio App_ by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-6/tourio-app
-```
-
-Please follow the instructions given in the `README.md` file.
+Build your own _Tourio App_ [🔗 **following these instructions**](https://github.com/neuefische/web-exercises/blob/main/sessions/recap-project-6/tourio-app/README.md).
