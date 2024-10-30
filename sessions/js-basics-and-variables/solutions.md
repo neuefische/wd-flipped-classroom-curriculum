@@ -34,7 +34,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variab
 
 ## Calculate Circle Area and Circumference
 
-A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/calculate-circle-area-and-circumference_solution). Alternatively, you can download the code with the following command:
+A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/calculate-circle-area-and-circumference__solution). Alternatively, you can download the code with the following command:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/calculate-circle-area-and-circumference_solution
