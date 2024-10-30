@@ -20,7 +20,7 @@ This is the current session timetable for our cohorts.
 > | 5 | [CSS Positioning](sessions/css-positioning) | [CSS Flexbox](sessions/css-flexbox) |
 > | 6 | [CSS Structure](sessions/css-structure) | Active Learning: [CSS Responsive](sessions/css-responsive) |
 > | 7 | [**Recap Project 1**](sessions/recap-project-1) | Active Learning: [Accessibility](sessions/accessibility) |
-> | 8 | [JS Basics and Variables](sessions/js-basics-and-variables) 🏗️ | [JS Events and DOM](sessions/js-events-and-dom) 🏗️ |
+> | 8 | [JS Basics and Variables](sessions/js-basics-and-variables) 🏗️ | [JS DOM and Events](sessions/js-dom-and-events) 🏗️ |
 > | 9 | [JS Conditions and Booleans](sessions/js-conditions-and-booleans) | [Self-Directed Learning 2](sessions/self-directed-learning/) |
 > | 10 | [JS Objects and Arrays](sessions/js-objects-and-arrays) | [JS Functions](sessions/js-functions) |
 > | 11 | [HTML Forms](sessions/html-forms) | Active Learning: [JS Inputs and Strings](sessions/js-inputs-and-strings) |
