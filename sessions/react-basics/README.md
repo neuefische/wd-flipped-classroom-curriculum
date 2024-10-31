@@ -10,7 +10,7 @@
 
 ## Requirements
 
-- JS Basics
+- JS DOM and Events
 - JS Functions
 - JS Structure
 

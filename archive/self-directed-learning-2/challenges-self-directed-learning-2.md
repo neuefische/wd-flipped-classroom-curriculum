@@ -52,8 +52,8 @@ Done? Great!
 
 > Required Sessions:
 >
-> - JS Basics
-> - JS Variables and Numbers
+> - JS Basics and Variables
+> - JS DOM and Events
 > - JS Conditions and Booleans
 
 ### Variables

@@ -9,8 +9,8 @@
 
 ## Requirements
 
-- JS Basics
-- JS Variables and Numbers
+- JS Basics and Variables
+- JS DOM and Events
 
 ## Demo
 

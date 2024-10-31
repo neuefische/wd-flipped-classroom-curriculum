@@ -28,7 +28,7 @@ How can we use JavaScript to catch and handle errors to prevent our application 
 
 ### Required
 
-- JS Basics
+- JS DOM and Events
 - JS Conditions and Booleans
 - JS Fetch
 

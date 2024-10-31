@@ -9,7 +9,8 @@
 
 ## Requirements
 
-- JS Basics
+- JS Basics and Variables
+- JS DOM and Events
 - JS Forms
 
 ## Demo

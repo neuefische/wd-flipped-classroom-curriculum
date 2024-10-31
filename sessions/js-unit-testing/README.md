@@ -9,7 +9,7 @@
 
 ## Requirements
 
-- JS Basics
+- JS Basics and Variables
 - JS Functions
 - JS Inputs and Strings
 

@@ -10,7 +10,7 @@
 
 ## Requirements
 
-- JS Variables and Numbers
+- JS Basics and Variables
 
 ## Demo
 

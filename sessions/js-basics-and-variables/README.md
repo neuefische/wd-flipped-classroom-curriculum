@@ -12,7 +12,6 @@
 
 - HTML Basics
 - CSS Basics
-- CSS Selectors
 - Basic math knowledge from school
 
 ## Demo

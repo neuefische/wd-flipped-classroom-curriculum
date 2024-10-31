@@ -8,8 +8,8 @@
 
 ## Requirements
 
-- JS Basics
-- JS Variables and Numbers
+- JS Basics and Variables
+- JS DOM and Events
 - JS Functions
 - JS Objects and Arrays
 

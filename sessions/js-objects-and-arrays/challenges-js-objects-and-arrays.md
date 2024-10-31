@@ -7,7 +7,7 @@
 
 (difficulty: 🔥)
 
-Solve the _Arrays_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-array
 
 (difficulty: 🔥)
 
-Solve the _Objects_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-array
 
 (difficulty: 🔥🔥)
 
-Solve the _Objects and Arrays_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays
