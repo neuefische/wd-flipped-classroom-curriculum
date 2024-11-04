@@ -4,7 +4,7 @@
 
 (difficulty: 🔥🔥)
 
-Solve the _Absolute Position_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/absolute-position
@@ -14,7 +14,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/abso
 
 (difficulty: 🔥🔥)
 
-Solve the _Layout with Position_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/layout-with-position
