@@ -1,7 +1,6 @@
 # Self-Directed Learning
 
-Today’s session, **Self-Directed Learning**, is dedicated time for you to catch up on your progress, work on any pending challenges, and focus on your **career** development. Your commitment to the course is impressive, and we encourage you to make the most of this opportunity.
-
+Today’s session, **Self-Directed Learning**, is dedicated time for you to catch up on your progress, work on any pending challenges, and focus on your **career** development.
 ## Today's Schedule
 
 - **1 Hour**: Career Development (if applicable)
