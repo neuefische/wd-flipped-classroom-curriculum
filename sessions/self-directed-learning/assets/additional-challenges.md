@@ -52,7 +52,7 @@ Learn how to use [ChatGPT for pair programming](./chatgpt-pair-programming.md) a
 
 Take on React! A great way to practice is by recreating the ‘Rick and Morty’ project using React. Apply what you’ve learned to elevate the project.
 
-If you’d prefer something different, build a [People in Space App](./additional-challenge-react-people-in-space.md).
+If you’d prefer something different, build a [People in Space App](./additional-challenges-react-people-in-space.md).
 
 ## Practice Next.js
 
