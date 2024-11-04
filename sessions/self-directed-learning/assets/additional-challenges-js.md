@@ -7,7 +7,7 @@ Confused by JavaScript? Let's sort it out!
 > Required Sessions:
 >
 > - JS Basics and Variables
-> - JS Events and DOM
+> - JS DOM and Events
 > - JS Conditions and Booleans
 
 - List the JavaScript data types you know. Why would you choose one type over another?
@@ -18,7 +18,7 @@ Confused by JavaScript? Let's sort it out!
 > Required Sessions:
 >
 > - JS Basics and Variables
-> - JS Events and DOM
+> - JS DOM and Events
 > - JS Conditions and Booleans
 
 Explore which values behave like `true`. Consider the following example:
