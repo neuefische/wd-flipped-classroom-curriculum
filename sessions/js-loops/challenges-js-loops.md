@@ -1,20 +1,20 @@
 # Challenges: JS Loops
 
-## For Loop and `console.log`
+## `for` Loop and `console.log()`
 
 (difficulty: 🔥)
 
-Solve the _For Loop and `console.log`_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/for-console
 ```
 
-## Creating a list
+## Creating a List
 
 (difficulty: 🔥)
 
-Solve the _Creating a list_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/forof-list
@@ -24,7 +24,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/forof-list
 
 (difficulty: 🔥🔥)
 
-Solve the _Select and Navigation Bar_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/forin-select-nav
@@ -34,7 +34,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/forin-selec
 
 (difficulty: 🔥)
 
-Solve the _`while`_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/while-random-number
@@ -44,7 +44,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/while-rando
 
 (difficulty: 🔥🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/stars
@@ -54,7 +54,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/stars
 
 (difficulty: 🔥🔥🔥)
 
-Solve the _Bonus: Pixels_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/pixels
