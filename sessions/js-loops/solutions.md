@@ -1,6 +1,6 @@
-# Solutions: JS Fetch
+# Solutions: JS Loops
 
-## For Loop and `console.log`
+## `for` Loop and `console.log()`
 
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-loops/for-console_solution). Alternatively, you can download the code with the following command:
 
@@ -8,7 +8,7 @@ A solution to this challenge can be found [here](https://github.com/neuefische/w
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/for-console_solution
 ```
 
-## Creating a list
+## Creating a List
 
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-loops/forof-list_solution). Alternatively, you can download the code with the following command:
 
