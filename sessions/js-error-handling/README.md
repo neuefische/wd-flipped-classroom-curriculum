@@ -1,14 +1,5 @@
 # JS Error Handling
 
-## Active Learning
-
-This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro.
-
-- [Introduce](#active-learning-intro) the topic for 5 - 10 minutes
-- Share [Challenges](challenges-js-error-handling.md) and [learning document](js-error-handling.md) with the students
-
-## Session Guide
-
 ## Learning Objectives
 
 - knowing the **different types of exceptions**
@@ -16,23 +7,27 @@ This is an Active Learning session for the students. That means that the coach a
 - knowing how to throw **custom errors**
 - understanding the errors in a `fetch` request environment
 
----
-
-How can we ensure our applications handle errors gracefully and provide a better user experience? We will learn how to manage and handle errors in JavaScript effectively.
-
-### Question
-
-How can we use JavaScript to catch and handle errors to prevent our application from crashing?
-
----
-
-### Required
+## Requirements
 
 - JS DOM and Events
 - JS Conditions and Booleans
 - JS Fetch
 
-## Active Learning Intro
+## Demo
+
+There is no demo for this session.
+
+---
+
+## Session Guide
+
+> This is an active learning session, this means that the session should take up to 5-10 minutes. The session is meant as an introduction into the topic, most concepts will be learned independently by the students with the help of the active learning material.
+
+Errors can occur in every program. To avoid catastrophic failures, we need to be able to handle those errors and resolve them gracefully. How to construct a backup plan to resolve errors programmatically is a fundamental skill for any developer.
+
+> How can we use JavaScript to catch and handle errors to prevent our application from crashing?
+
+### Errors and Try-Catch Blocks
 
 - Explain that errors are an inevitable part of programming, but with the right tools and techniques, we can effectively control how our code behaves even when facing "unexpected" issues.
 
@@ -47,5 +42,3 @@ How can we use JavaScript to catch and handle errors to prevent our application 
 - Explain that they'll discuss error handling in the context of **asynchronous operations**, particularly in **fetch requests**, where errors can occur due to network issues or server errors.
 
 - Conclude that by the end of this **Active Learning** session, they'll have a solid understanding of error handling techniques in JavaScript, empowering them to write **more robust and reliable code**.
-
----

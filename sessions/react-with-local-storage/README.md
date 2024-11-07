@@ -1,233 +1,42 @@
 # React with Local Storage
 
-## Active Learning
-
-This is an Active Learning session for the students. That means that the coach assigned to the session only needs to provide a brief 5-10 minute intro. The old session guide is retained below in case it is decided to be used as a one-off.
-
-- Intro topic for 5 - 10 mins
-- Share [Challenges](challenges-react-with-local-storage.md) with the students.
-
----
-
-## Active Learning Intro
-
-At the moment, the data we've entered using forms in our apps gets lost when the page is reloaded. Our goal is to understand how to store data in the browser to make it _**persistent**_.
-
-- We can demo this behavior with the Movie App:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end
-```
-
-- Add a few movies, and then reload the page and they will all vanish 🪄.
-
-- To get the browser to "remember" the data we add to the page, we can use something called _**local storage**_.
-
-- Show an example of a site that uses local storage. i.e. [wordcounter.net](https://wordcounter.net/). Add some words and then refresh the page.
-
-- Show that they can open the dev tools, and navigate to the _**Application tab**_ (chrome) and then inspect the _**Local Storage**_ section.
-
-- Show how these are stored in _**key value**_ pairs.
-
-- _Optionally_ show that we can modify these values as a user. (the modified value will only be displayed on reload)
-
-- _Optionally_ show that the saved values are local to the browser. (i.e. open a different browser (i.e. firefox) and it will have a separate local storage).
-
-- _Optionally_ show that these values are not "saved" in incognito mode.
-
-- Mention that in this session we will learn how to _**write to**_, and _**read from**_ local storage using "vanilla javascript".
-
-- They will also learn how to use local storage within a React application.
-
----
-
-## Session Guide
-
-## Learning objectives
+## Learning Objectives
 
 - Understanding the concept of persistent storage in the browser
 - Knowing the difference between `localStorage` and `sessionStorage`
 - Using the methods `setItem()` and `getItem()`
 - Using a library to handle local storage in React apps
 
----
-
-All data we entered with any form in any of our apps so far is lost after a page reload. We want to learn how to persist data in the browser.
-
-### Question
-
-Which browser feature enables us to store and retrieve data?
-
----
-
-### Required
+## Requirements
 
 - React State
 
----
+## Demo
+
+```
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end
+```
 
 ## Session Guide
 
-> 💡 This session uses the `use-local-storage-state` library. Read our [rationale as to why we are not building our own solution in this session](./rationale.md).
+> This is an active learning session, this means that the session should take up to 5-10 minutes. The session is meant as an introduction into the topic, most concepts will be learned independently by the students with the help of the active learning material.
 
-### Introduction to Web Storage API
+Sometimes we want to store user data locally within the user's browser. With the local storage we can persist the state of an app across page reloads.
 
-- Show the [Web Storage API docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) website
-- Explain that it's a mechanism available in any browser to store data
-  - Point out that the data is persistent across page reloads
-  - Point out this is not a React feature, but an API we can use with any JavaScript app in the browser
-- Explain the storage consists of **key/value pairs**
-  - `key`: the name you can choose freely to retrieve your data
-  - `value`: the data to be stored
-- Explain the browser offers two types of storage
-  - `localStorage` stores data with no expiration date
-  - `sessionStorage` stores data for one session (data is lost when the browser tab is closed)
-- Point that out we are going to use `localStorage`, but everything we talk about applies to `sessionStorage` too.
+> How can I persist the data of my users?
 
-- Explain the students should imagine a feature where users can define UI settings for an app
+### Persistant Data
 
-  - Like a theme or colors
-  - This would be a good use case for local storage
+At the moment, the data we've entered using forms in our apps gets lost when the page is reloaded. Our goal is to understand how to store data in the browser to make it _**persistent**_.
 
-- Open your browser's dev tools, go to the Local Storage panel (Firefox: _Web Storage_ > _Local Storage_, Chrome: _Application_ > _Local Storage_)
-  - Explain this is a tool to see the data stored in the browser
-  - (it might be empty or there might be data stored by MDN already)
-- Open the Console panel in the dev tools and add some data
-
-```js
-localStorage.setItem("theme", "dark");
-```
-
-- Explain the syntax:
-  - `localStorage` is a global in the browser that gives us access to the storage
-  - `setItem` lets us add new or overwrite existing data
-  - The first argument is the `key`
-  - The second argument is the `value`
-- Go back to the Local Storage panel and demonstrate the data is stored
-  - Point out the two columns `key` and `value`
-- Reload the browser tab and demonstrate the data is still there
-  - Fun fact: the MDN website does actually read the `theme` key after page load and changes the UI :)
-- Go back to the Console panel and read the data
-
-```js
-localStorage.getItem("theme");
-```
-
-- Explain the syntax
-  - `getItem` lets us retrieve the stored data
-  - We pass the `key` as argument
-- Demonstrate the string stored earlier gets returned
-- Highlight this `setItem` / `getItem` mechanism works not only in the dev tools. We can use it in our JavaScript or React apps the same way.
-
-- Demonstrate we can overwrite existing data by calling `setItem` with an existing `key`
-
-```js
-localStorage.setItem("theme", "light");
-```
-
-- Go back to the Local Storage panel and demonstrate the data was overwritten
-- Open the JavaScript Console panel and retrieve the data with the API
-
-```js
-localStorage.getItem("theme");
-```
-
-- Demonstrate how we **must not** store complex data
-
-```js
-localStorage.setItem("settings", { color: "red", font: "arial" });
-```
-
-- Open the Local Storage panel and demonstrate the stored value is `"[object Object]"`
-- Highlight that complex data like objects and arrays need to be serialized before storing (converted to a string representation)
-- Open the JavaScript Console panel and demonstrate we can use `JSON.stringify()` for this
-
-```js
-localStorage.setItem(
-  "settings",
-  JSON.stringify({ color: "red", font: "arial" })
-);
-```
-
-- Open the Local Storage panel and demonstrate the stored value in JSON format
-- Open the JavaScript Console panel and demonstrate we retrieve a string when using `getItem`
-
-```js
-localStorage.getItem("settings");
-```
-
-- Demonstrate we can use `JSON.parse()` to transform the string in an JavaScript object
-
-```js
-JSON.parse(localStorage.getItem("settings"));
-```
-
-### Local Storage in React with `use-local-storage-state` hook
-
-Use this demo by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start
-```
-
-You can check out the final version of this demo by running this command in your Terminal:
-
-```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end
-```
-
-- Open the demo in the browser and introduce this small Todo App
-- Demonstrate you can add a todo with the input field, like
-  - buy milk
-  - cleanup kitchen
-  - pay bills
-- Demonstrate you can check todos with the checkbox
-- Reload the browser to demonstrate all todos are gone
-- Explain we can persist the todos data in the browser using local storage
-
-- Open the `App` component and explain the structure:
-
-  - There are two components: `Form` and `List`
-  - There is one state: `todos`
-  - There is a function to add a new todo: `handleAddTodo`
-  - There is function to toggle the `isChecked` flag of a todo: `handleToggleCheckTodo`
-  - (don't go into detail or show the other components)
-
-- Explain the basic idea of using local storage in React
-  - Initialize the state with data retrieved from local storage
-  - When state changes, also write the changes to the local storage
-- Explain that using local storage in React is tricky to get it right
-- Point out that it's advisable to use a library for this
-
-- Show the [`use-local-storage-state` hook github page](https://github.com/astoilkov/use-local-storage-state)
-- Explain we want to use this library
-- Explain we need to install it first
-
-```sh
-npm install use-local-storage-state
-```
-
-- Remove the import of `useState`
-- Add import for `use-local-storage-state`
-
-```jsx
-import useLocalStorageState from "use-local-storage-state";
-```
-
-- Comment out the line with `useState` (keep it for comparison)
-- Add a new line with `useLocalStorageState`
-
-```jsx
-// const [todos, setTodos] = useState([]);
-const [todos, setTodos] = useLocalStorageState("todos", {
-  defaultValue: [],
-});
-```
-
-- Open the demo in the browser again
-- Add some todos and check a few of them
-- Reload the browser tab and demonstrate the todos are still there, no data is lost
-
-- **Optional:** You can let the students know that `use-local-storage-state` is what is know as a `custom hook`. Custom hooks, are hooks that we can write ourselves to potentially help DRY up our code (or we can use 3rd party hooks like `use-local-storage-state`). Students interested in the topic can find a [link to plenty of examples at the end of the notes](assets/react-custom-hooks.md).
-
----
+- We can demo this behavior with the Movie App (see demo).
+- Add a few movies, and then reload the page and they will all vanish 🪄.
+- To get the browser to "remember" the data we add to the page, we can use something called _**local storage**_.
+- Show an example of a site that uses local storage. i.e. [wordcounter.net](https://wordcounter.net/). Add some words and then refresh the page.
+- Show that they can open the dev tools, and navigate to the _**Application tab**_ (chrome) and then inspect the _**Local Storage**_ section.
+- Show how these are stored in _**key value**_ pairs.
+- _Optionally_ show that we can modify these values as a user. (the modified value will only be displayed on reload)
+- _Optionally_ show that the saved values are local to the browser. (i.e. open a different browser (i.e. Firefox) and it will have a separate local storage).
+- _Optionally_ show that these values are not "saved" in incognito mode.
+- Mention that in this session we will learn how to _**write to**_, and _**read from**_ local storage using "vanilla javascript".
+- They will also learn how to use local storage within a React application.
