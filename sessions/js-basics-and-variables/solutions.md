@@ -8,7 +8,7 @@ A solution to this challenge can be found [here](https://github.com/neuefische/w
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/console-methods_solution
 ```
 
-## Social Media Post
+## Data for a Social Media Post
 
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/social-media-post_solution). Alternatively, you can download the code with the following command:
 
