@@ -28,7 +28,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-bo
 
 ## LogType
 
-A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/logtype_solution). Alternatively, you can download the code with the following command:
+A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/log-type_solution). Alternatively, you can download the code with the following command:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/log-type_solution
