@@ -4,17 +4,17 @@
 
 (difficulty: 🔥)
 
-Solve the _Console Methods_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/console-methods
 ```
 
-## Data for a social media post
+## Data for a Social Media Post
 
 (difficulty: 🔥)
 
-Solve the _Data for a social media post_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/social-media-post
@@ -24,7 +24,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variab
 
 (difficulty: 🔥🔥)
 
-Solve the _Tip Calculator_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/tip-calculator
@@ -34,7 +34,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variab
 
 (difficulty: 🔥🔥)
 
-Solve the _Track Your Savings Goals_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/track-your-savings-goals
@@ -44,7 +44,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variab
 
 (difficulty: 🔥🔥🔥)
 
-Solve the _Calculate Circle Area and Circumference_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/calculate-circle-area-and-circumference
@@ -54,7 +54,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variab
 
 (difficulty: 🔥🔥🔥)
 
-Solve the _Lifetime calculator_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-basics-and-variables/lifetime-calculator
