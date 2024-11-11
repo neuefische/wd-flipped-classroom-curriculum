@@ -6,7 +6,7 @@
 
 Run this demo locally in your terminal:
 
-```
+```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/mock-interview-1/simple-algorithms
 ```
 
@@ -21,7 +21,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/mock-interview-1/sim
 - [Problem 3]
 - [Problem 4]
 
-[Guide]: ../self-directed-learning-3/chatgpt-pair-programming.md
+[Guide]: ../self-directed-learning/assets/chatgpt-pair-programming.md
 [Problem 1]: https://www.codewars.com/kata/52efefcbcdf57161d4000091
 [Problem 2]: https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
 [Problem 3]: https://www.codewars.com/kata/5bb904724c47249b10000131
