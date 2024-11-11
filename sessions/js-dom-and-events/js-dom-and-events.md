@@ -66,13 +66,13 @@ Before we can add interactivity, we need to select the necessary HTML-Elements:
 </body>
 ```
 
-There are multiple ways to select the main section above in JavaScript. A good practice is to use a [data-\* attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*), such as data-js, as shown in the following example.
+There are multiple ways to select the main section above in JavaScript. A good practice is to use a [data-\* attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*), such as `data-js`, as shown in the following example.
 
 ```js
 const mainElement = document.querySelector('[data-js="main"]');
 ```
 
-Other css selectors work as well, but the data-\* attribute selectors should be preferred.
+Other CSS selectors work as well, but the `data-*` attribute selectors should be preferred.
 
 ```js
 // tag as identifier
@@ -83,7 +83,7 @@ const mainElement = document.querySelector(".main");
 const mainElement = document.querySelector("#main");
 ```
 
-> 💡 We try to separate our concerns: Classes are for CSS and data-\* attributes are for JavaScript.
+> 💡 We try to separate our concerns: Classes are for CSS and `data-*` attributes are for JavaScript.
 
 ---
 
@@ -100,7 +100,7 @@ const button = document.querySelector('[data-js="button"]');
 button.addEventListener("click", () => {});
 ```
 
-First, you specify the type of event (e.g., `click`), and then you define the code to be executed when the event is triggered. This code is written inside the `{}` brackets, such as a `console.log`` statement..
+First, you specify the type of event (e.g., `click`), and then you define the code to be executed when the event is triggered. This code is written inside the `{}` brackets, such as a `console.log` statement.
 
 ```js
 const button = document.querySelector('[data-js="button"]');
@@ -136,18 +136,18 @@ You can add, remove, or toggle classes to change the styling of an element. For 
 </main>
 ```
 
-To add the **page--primary** class to the main section, you can use the `classList.add` method like this:
+To add the `page--primary` class to the main section, you can use the `classList.add` method like this:
 
 ```js
 const main = document.querySelector('[data-js="main"]');
 const button = document.querySelector('[data-js="button"]');
 
-button.addEventListener("click", () ={
+button.addEventListener("click", () => {
   main.classList.add("page--primary");
 });
 ```
 
-A click on the button adds the class **page--primary** to the main element:
+A click on the button adds the class `page--primary` to the main element:
 
 ```html
 <main data-js="main" class="page--primary">
