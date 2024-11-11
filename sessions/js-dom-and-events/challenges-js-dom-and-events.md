@@ -1,6 +1,6 @@
 # Challenges: JS DOM and Events
 
-## Errors in a Survey App
+## Survey Error Fixing
 
 (difficulty: 🔥)
 
