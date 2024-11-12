@@ -29,5 +29,3 @@ Solve this challenge by running this command in your terminal:
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/spacerocket
 ```
-
-> Launch the rocket! 🚀
