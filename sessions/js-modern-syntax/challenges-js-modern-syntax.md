@@ -30,13 +30,11 @@ Solve this challenge by running this command in your terminal:
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/rest-and-spread
 ```
 
-## Back to Basics
+## Bonus: Back to Basics
 
 (difficulty: 🔥🔥🔥🔥)
 
-This is a true challenge! Prepare to replace modern syntax with "classic" JavaScript and deepen your understanding. Don’t give up — there’s a lot to learn here!
-
-Solve the _Back-to-Basics_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/back-to-basics
