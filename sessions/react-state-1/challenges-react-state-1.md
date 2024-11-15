@@ -4,7 +4,7 @@
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/box
@@ -14,7 +14,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/box
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/counter
@@ -24,7 +24,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/counte
 
 (difficulty: 🔥🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/emoji-checker
@@ -34,7 +34,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/emoji-
 
 (difficulty: 🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/journal-app-favorite-button
