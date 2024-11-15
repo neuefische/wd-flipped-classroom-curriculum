@@ -77,14 +77,14 @@ That starts the discussion between you and your personal expert JavaScript coach
 
 ![Meme](./assets/meme.png)
 
-[video]: https://github.com/user-attachments/assets/3de79870-8ca4-462d-a014-9c29ac21caf5
+[video]: https://drive.google.com/file/d/1j5Co0TvEcxYt2zWLColkHt7tiL1MwAP-/view?usp=sharing
 [Claude]: https://claude.ai/
 
 ## Still Not Sure How to Do It? 🤔
 
 We’ve got your back! Here is a [video] that features a developer applying this technique to solve a problem.
 
-https://github.com/user-attachments/assets/3de79870-8ca4-462d-a014-9c29ac21caf5
+https://drive.google.com/file/d/1j5Co0TvEcxYt2zWLColkHt7tiL1MwAP-/view?usp=sharing
 
 > 💡 ChatGPT is one of the AI options you can use. Feel free to utilize other options such as [Claude] which is becoming more and more popular.
 
