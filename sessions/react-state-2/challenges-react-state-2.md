@@ -4,7 +4,7 @@
 
 (difficulty: 🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/colored-number
@@ -14,7 +14,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/colore
 
 (difficulty: 🔥🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/table-reservation
@@ -24,7 +24,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/table-
 
 (difficulty: 🔥🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/favourite-holiday
@@ -34,7 +34,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/favour
 
 (difficulty: 🔥🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/personal-details
@@ -44,17 +44,17 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/person
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/triple-count
 ```
 
-## Bonus: Fix Conditionally Rendered useState Hook
+## Bonus: Fix Conditionally Rendered `useState` Hook
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/conditional-usestate
