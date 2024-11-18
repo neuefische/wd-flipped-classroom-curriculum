@@ -16,15 +16,7 @@ A solution to this challenge can be found [here](https://github.com/neuefische/w
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/table-reservation_solution
 ```
 
-## Personal Details
-
-A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-2/personal-details_solution). Alternatively, you can download the code with the following command:
-
-```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/personal-details_solution
-```
-
-## Favourite Holiday
+## Favourite Holiday Form
 
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-2/favourite-holiday_solution). Alternatively, you can download the code with the following command:
 
@@ -32,18 +24,27 @@ A solution to this challenge can be found [here](https://github.com/neuefische/w
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/favourite-holiday_solution
 ```
 
-## Conditional useState
+## Personal Details Form
 
-A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-2/conditional-usestate_solution). Alternatively, you can download the code with the following command:
+A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-2/personal-details_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/conditional-usestate_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/personal-details_solution
 ```
 
-## Triple Count
+## Bonus: Fix Triple Count
 
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-2/triple-count_solution). Alternatively, you can download the code with the following command:
 
 ```bash
 npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/triple-count_solution
+```
+
+
+## Bonus: Fix Conditionally Rendered useState Hook
+
+A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-2/conditional-usestate_solution). Alternatively, you can download the code with the following command:
+
+```bash
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/conditional-usestate_solution
 ```
