@@ -5,7 +5,7 @@
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/repetition_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/repetition_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/repetition_solution
 ```
 
 ## Map
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/r
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/map_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/map_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map_solution
 ```
 
 ## For Each
@@ -21,7 +21,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/m
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/for-each_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/for-each_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/for-each_solution
 ```
 
 ## Filter
@@ -29,7 +29,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/f
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/filter_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/filter_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/filter_solution
 ```
 
 ## Animal Strings
@@ -37,7 +37,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/f
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/animal-strings_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/animal-strings_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/animal-strings_solution
 ```
 
 ## Zoo Animals
@@ -45,7 +45,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/a
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/zoo-animals_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/zoo-animals_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/zoo-animals_solution
 ```
 
 ## Employees
@@ -53,7 +53,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/z
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/employees_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/employees_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/employees_solution
 ```
 
 ## News Flash
@@ -61,7 +61,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/e
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/news-flash_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/news-flash_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/news-flash_solution
 ```
 
 ## Letter Puzzle
@@ -69,7 +69,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/n
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/letter-puzzle_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/letter-puzzle_solution
 ```
 
 ## Animal Objects
@@ -77,7 +77,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/l
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/animal-objects_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/animal-objects_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/animal-objects_solution
 ```
 
 ## Fun with Flags
@@ -85,5 +85,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/a
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/js-array-methods/fun-with-flags_solution). Alternatively, you can download the code with the following command:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/fun-with-flags_solution
+npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/fun-with-flags_solution
 ```
