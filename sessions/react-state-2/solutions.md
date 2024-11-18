@@ -41,7 +41,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/triple
 ```
 
 
-## Bonus: Fix Conditionally Rendered useState Hook
+## Bonus: Fix Conditionally Rendered `useState` Hook
 
 A solution to this challenge can be found [here](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-2/conditional-usestate_solution). Alternatively, you can download the code with the following command:
 
