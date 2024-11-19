@@ -123,6 +123,6 @@ passed with the call of the `set` function. This means the return JSX includes t
 
 - [React Docs: Adding Interactivity](https://react.dev/learn/adding-interactivity)
 - [React Docs: Responding to Events](https://react.dev/learn/responding-to-events)
-- [React Docs: A simple variable is not enough](https://react.dev/learn/state-a-components-memory#when-a-regular-variable-isnt-enough)
-- [React Docs: Render and commit](https://react.dev/learn/render-and-commit)
-- [MDN: react events and state](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state)
+- [React Docs: State: A Component's Memory](https://react.dev/learn/state-a-components-memory#when-a-regular-variable-isnt-enough)
+- [React Docs: Render and Commit](https://react.dev/learn/render-and-commit)
+- [MDN: React Events and State](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_interactivity_events_state)
