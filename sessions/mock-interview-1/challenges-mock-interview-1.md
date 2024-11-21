@@ -22,7 +22,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/mock-interview-1/sim
 - [Problem 4]
 
 [Guide]: ../self-directed-learning/assets/chatgpt-pair-programming.md
-[Problem 1]: https://www.codewars.com/kata/52efefcbcdf57161d4000091
-[Problem 2]: https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
-[Problem 3]: https://www.codewars.com/kata/5bb904724c47249b10000131
+[Problem 1]: https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
+[Problem 2]: https://www.codewars.com/kata/5bb904724c47249b10000131
+[Problem 3]: https://www.codewars.com/kata/5526fc09a1bbd946250002dc/
 [Problem 4]: https://www.codewars.com/kata/52efefcbcdf57161d4000091
