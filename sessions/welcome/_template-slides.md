@@ -43,13 +43,13 @@ Coach
 
 <!-- _class: big-headline granite-->
 
-# Das Coach-Team bei _neue fische_
+# Das Coach-Team
 
 ---
 
 <!-- _class: image-center -->
 
-![w:900](images/neuefische_coaches_all.png)
+![w:1000](images/coaches_all.jpg)
 
 ---
 
