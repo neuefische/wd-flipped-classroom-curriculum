@@ -165,14 +165,14 @@ Moving from the Fear Zone to the Growth Zone
 
 **9:00 - 13:00**
 
-| Time      | Task                                  |
-| --------- | ------------------------------------- |
-| **09:00** | Open Questions, Attendance Screenshot |
-| **09:30** | Check-in with Coaches                 |
-|           | **Part I**                            |
-|           | Session, Active Learning, Recap       |
-| **12:15** | Research Time                         |
-| **13:00** | Lunch Break                           |
+| Time      | Task                            |
+| --------- | ------------------------------- |
+| **09:00** | Open Questions                  |
+| **09:30** | Check-in with Coaches           |
+|           | **Part I**                      |
+|           | Session, Active Learning, Recap |
+| **12:15** | Research Time                   |
+| **13:00** | Lunch Break                     |
 
 ---
 

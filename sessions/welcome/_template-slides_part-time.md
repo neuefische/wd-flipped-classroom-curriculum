@@ -168,7 +168,7 @@ Moving from the Fear Zone to the Growth Zone
 
 | Zeit      | Aktivität                        |
 | --------- | -------------------------------- |
-| **08:30** | Offene Fragen, Anwesenheitsbild  |
+| **08:30** | Offene Fragen                    |
 | **09:00** | Checkin mit Coaches              |
 |           | Session, Active Learning, Recap  |
 | **12:15** | Research Time                    |
