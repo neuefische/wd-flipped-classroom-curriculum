@@ -23,6 +23,7 @@ web-bootcamp
 ├── session-notebook
 └── web-challenges
 ```
+> 💡 For better organisation, it's recommended to create subfolders within the `web-challenges` folder for each session, named according to the session title.
 
 ## Format Salad
 
