@@ -28,7 +28,7 @@ If you haven’t finished styling your personal website, now is the perfect time
 
 For additional practice, check out some more CSS challenges [here](./additional-challenges-css.md).
 
-If you haven't yet styled your new website created in the [Practice HTML](#practice-html) section, this is your opportunity to get creative.
+If you haven't yet styled your new website created in the [Practice HTML](./additional-challenges-html.md) section, this is your opportunity to get creative.
 
 ## Work on Your Quiz App
 
