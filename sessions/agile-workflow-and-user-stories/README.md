@@ -1,6 +1,6 @@
 # Agile Workflow and User Stories
 
-## Learning Objectives
+## Learning Objectives:
 
 - Understanding the agile workflow and Scrum framework
 - Identifying key Scrum roles and events
