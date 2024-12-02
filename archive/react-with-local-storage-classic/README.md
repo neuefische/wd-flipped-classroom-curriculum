@@ -142,13 +142,13 @@ JSON.parse(localStorage.getItem("settings"));
 Use this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-with-local-storage/demo-start
 ```
 
 You can check out the final version of this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-with-local-storage/demo-end
 ```
 
 - [ ] Open the demo in the browser and introduce this small Todo App

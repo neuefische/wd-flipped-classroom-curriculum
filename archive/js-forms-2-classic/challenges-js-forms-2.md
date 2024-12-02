@@ -8,7 +8,7 @@
 Solve the _Form validation_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/formvalidation
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms-2/formvalidation
 ```
 
 ## Controlled input changed to uppercase
@@ -16,7 +16,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/formvalid
 Solve the _Controlled input changed to uppercase_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/controlled-input-uppercase
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms-2/controlled-input-uppercase
 ```
 
 ## Simple live calculator
@@ -24,7 +24,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/controlle
 Solve the _Simple live calculator_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-live-calculator
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms-2/simple-live-calculator
 ```
 
 ## Simple todo list
@@ -32,5 +32,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-li
 Solve the _Simple todo list_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/simple-todolist
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms-2/simple-todolist
 ```

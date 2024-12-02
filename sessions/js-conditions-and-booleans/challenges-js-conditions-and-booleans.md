@@ -10,7 +10,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/statements
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-conditions-and-booleans/statements
 ```
 
 ## Truthy and Falsy values
@@ -20,7 +20,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-bo
 Solve the _Truthy and Falsy values_ challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/truthy-and-falsy
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-conditions-and-booleans/truthy-and-falsy
 ```
 
 <!--
@@ -52,7 +52,7 @@ Solve this [Kata](https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/j
 Solve the _Teenager check_ challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-conditions-and-booleans/teenager-check
 ```
 
 ## Weather check
@@ -62,7 +62,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-bo
 Solve the _Weather check_ challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/weather-check
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-conditions-and-booleans/weather-check
 ```
 
 # Bonus Challenge
@@ -74,5 +74,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-bo
 Solve the _LogType_ challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/log-type
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-conditions-and-booleans/log-type
 ```

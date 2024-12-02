@@ -21,13 +21,13 @@ Comparison of Vanilla JS and React
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-basics/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-basics/demo-end
 ```
 
 > 💡 For this demo you will imitate the React `App` component in Vanilla JS. A `VanillaApp.js` file is provided in the demo to simulate the React `App` component.

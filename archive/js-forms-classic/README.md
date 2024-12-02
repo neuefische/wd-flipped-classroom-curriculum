@@ -50,13 +50,13 @@ after submit as well! This is where JavaScript comes into play:
 Demo Start:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms/demo-start
 ```
 
 Demo End:
 
 ```
-npx ghcd@latest neuefische/web-exercises/main/sessions/js-forms/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/main/sessions/js-forms/demo-end
 ```
 
 ### Handle the Default Behavior

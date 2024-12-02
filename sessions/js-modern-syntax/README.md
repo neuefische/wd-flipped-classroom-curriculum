@@ -18,13 +18,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-modern-syntax/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-modern-syntax/demo-end
 ```
 
 ---

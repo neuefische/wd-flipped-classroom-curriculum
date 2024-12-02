@@ -59,7 +59,7 @@ What concepts in React make it easier for us to write better apps?
 Use this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-render
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-basics/demo-render
 ```
 
 - [ ] Show that react renders the `<h1>Hello World</h1>` into the `#root` div.
@@ -146,7 +146,7 @@ root.render(
 Use this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-basics/demo-inner-html-vs-render
 ```
 
 - [ ] Show the HTML and the `index.js` file.

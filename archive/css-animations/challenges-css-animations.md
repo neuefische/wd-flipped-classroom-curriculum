@@ -5,7 +5,7 @@
 Solve the _Toast Animations_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-animations/toast-animations
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-animations/toast-animations
 ```
 
 ## Quiz App project continuation

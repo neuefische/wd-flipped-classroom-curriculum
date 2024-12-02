@@ -172,7 +172,7 @@ Open the
 [demo]:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-project-setup/demo-project-structure
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-project-setup/demo-project-structure
 ```
 
 - [ ] Show the rendered page of this React app

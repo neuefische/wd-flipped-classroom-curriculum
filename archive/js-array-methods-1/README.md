@@ -35,13 +35,13 @@ with this information:
 Demo Start:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/demo-start
 ```
 
 Demo End:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/demo-end
 ```
 
 Use the demo to show the problem:

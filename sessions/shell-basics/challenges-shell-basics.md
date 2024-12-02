@@ -38,7 +38,7 @@ Open your terminal and navigate to the `web-challenges` folder. Use the followin
 > download challenges from GitHub to your computer. Press <kbd>Enter</kbd> to confirm the download.
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/shell-basics/treasure-hunt
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/shell-basics/treasure-hunt
 ```
 
 Once the download is complete, navigate into the `shell-basics_treasure-hunt` folder using the `cd` command. Now

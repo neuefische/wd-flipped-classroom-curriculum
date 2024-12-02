@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/box
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-1/box
 ```
 
 ## Counter 🧮
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/box
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/counter
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-1/counter
 ```
 
 ## Emoji Checker 🤔
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/counte
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/emoji-checker
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-1/emoji-checker
 ```
 
 ## Journal App Favorite Button
@@ -37,5 +37,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/emoji-
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/journal-app-favorite-button
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-1/journal-app-favorite-button
 ```

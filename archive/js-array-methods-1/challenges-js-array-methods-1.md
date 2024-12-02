@@ -5,7 +5,7 @@
 Solve the _Color Boxes (`forEach`)_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/for-each
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/for-each
 ```
 
 ## `map`
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/f
 Solve the _`map`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/map
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/map
 ```
 
 ## `filter`
@@ -21,7 +21,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/m
 Solve the _`filter`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/filter
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/filter
 ```
 
 ## Repetition: `map`and `filter`
@@ -29,7 +29,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/f
 Solve the _Repetition: `map`and `filter`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/repetition
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/repetition
 ```
 
 ## `document.querySelectorAll`
@@ -55,19 +55,19 @@ enhanced versions which make use of `forEach` in order to improve and reduce the
 SPA 1: a working solution:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-1
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/spa-1
 ```
 
 SPA 2: simplified with `forEach`:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-2
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/spa-2
 ```
 
 `forEach` within `forEach`:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-1/spa-3
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-1/spa-3
 ```
 
 Working in groups, use the examples above. Make sure that every student understands every

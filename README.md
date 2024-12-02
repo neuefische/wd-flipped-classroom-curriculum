@@ -59,7 +59,7 @@ This is the current session timetable for our cohorts.
 
 ### Old Session Timetable
 
-This timetable includes the new 4-day **React Recap Project** (Recap Project 4) and predefined capstone projects. The previous timetable is available [here](https://github.com/neuefische/web-curriculum/blob/fff449f49da7aa3b916edbf2cdaf1b65908fad60/README.md).
+This timetable includes the new 4-day **React Recap Project** (Recap Project 4) and predefined capstone projects. The previous timetable is available [here](https://github.com/wd-bootcamp/web-curriculum/blob/fff449f49da7aa3b916edbf2cdaf1b65908fad60/README.md).
 
 | Day | Session AM                                                                      | Session PM                                                                   |
 | --- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |

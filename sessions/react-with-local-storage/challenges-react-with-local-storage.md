@@ -31,7 +31,7 @@ Reload the page, restart your browser (or heck, even restart your computer) and 
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/stored-note
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-with-local-storage/stored-note
 ```
 
 ## Journal App with Local Storage
@@ -41,7 +41,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-sto
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/journal-app-with-local-storage
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-with-local-storage/journal-app-with-local-storage
 ```
 
 ## Dice 🎲
@@ -50,5 +50,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-sto
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-local-storage/dice
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-with-local-storage/dice
 ```

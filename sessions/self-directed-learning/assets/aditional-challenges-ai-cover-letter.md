@@ -9,7 +9,7 @@ Let's use our knowledge of next.js + api routes to build an AI Cover Letter Gene
 We can create a new project from the following template
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/templates/next cover-letter-generator
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/templates/next cover-letter-generator
 ```
 
 > Are you still unsure about Next.js folder organization? If so, [click here](./recap-nextjs.md) for a detailed recap.

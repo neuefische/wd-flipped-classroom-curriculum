@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/taco-truck
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-structure/taco-truck
 ```
 
 ## Custom Properties
@@ -17,5 +17,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/taco-t
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/custom-properties
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-structure/custom-properties
 ```

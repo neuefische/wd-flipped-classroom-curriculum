@@ -50,13 +50,13 @@ How can we abstract logic in React components that might include state and effec
 Use this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-custom-hooks/demo-start
 ```
 
 You can check out the final version of this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-custom-hooks/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-custom-hooks/demo-end
 ```
 
 > 💡 This demo is based on the final version of the demo from the [_React Effects and Fetch_](../react-effects-and-fetch/README.md) session and picks up where it left off.

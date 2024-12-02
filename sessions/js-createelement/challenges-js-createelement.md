@@ -7,7 +7,7 @@
 Solve the _Toast Messages_ challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-createelement/toast-messages
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-createelement/toast-messages
 ```
 
 ## Social Media Post
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-createelement/toa
 Solve the _Social Media Post_ challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-createelement/social-media-post
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-createelement/social-media-post
 ```
 
 ## Product teaser
@@ -27,5 +27,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-createelement/soc
 Solve the _Product teaser_ challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-createelement/product-teaser
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-createelement/product-teaser
 ```

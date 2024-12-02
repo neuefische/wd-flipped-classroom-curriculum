@@ -14,7 +14,7 @@
 ## Demo
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/demo-end
 ```
 
 ## Session Guide

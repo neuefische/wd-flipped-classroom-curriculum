@@ -48,13 +48,13 @@ Why do we need another layout algorithm for the web?
 Use this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/demo-start
 ```
 
 You can check out the final version of this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/demo-end
 ```
 
 ## Inform: Session Guide

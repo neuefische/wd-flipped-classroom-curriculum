@@ -21,13 +21,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/demo-end
 ```
 
 ---

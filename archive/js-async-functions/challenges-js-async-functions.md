@@ -5,7 +5,7 @@
 Solve the _Relay Race 🏃‍♀️_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/relay-race
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/relay-race
 ```
 
 ## Sleep
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/r
 Solve the _Sleep_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/sleep
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/sleep
 ```
 
 ## Slot Machine 🎰
@@ -24,5 +24,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/s
 Solve the _Slot Machine 🎰_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/slot-machine
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/slot-machine
 ```

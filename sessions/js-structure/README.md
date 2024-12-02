@@ -16,13 +16,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-structure/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-structure/demo-end
 ```
 
 > 💡 Our approach is to create vanialla JavaScript components that are similar to React components. That's why we use uppercase function names for our components and folders.

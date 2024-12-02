@@ -19,13 +19,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-api-routes/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-api-routes/demo-end
 ```
 
 ---

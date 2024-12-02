@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/shapes
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-structure/shapes
 ```
 
 ## Quiz App
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/shapes
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/quiz-app
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-structure/quiz-app
 ```
 
 ## Bonus: Space Rocket
@@ -27,5 +27,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/quiz-ap
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-structure/spacerocket
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-structure/spacerocket
 ```

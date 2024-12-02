@@ -20,13 +20,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/demo-end
 ```
 
 > 💡 Have a look at `components/SearchFormControlled` to see the code for the controlled input version.

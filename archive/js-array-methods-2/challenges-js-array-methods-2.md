@@ -5,7 +5,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/zoo-animals
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/zoo-animals
 ```
 
 ## Employees
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/z
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/employees
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/employees
 ```
 
 ## Bonus: Letter Puzzle
@@ -21,7 +21,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/e
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/letter-puzzle
 ```
 
 ## Array of Animal Strings
@@ -29,7 +29,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/l
 Solve the _Array of Animal Strings_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/animal-strings
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/animal-strings
 ```
 
 ---
@@ -39,7 +39,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/a
 Solve the _Array of Animal Objects_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/animal-objects
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/animal-objects
 ```
 
 ---
@@ -49,7 +49,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/a
 Solve the _News Flash_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/news-flash
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/news-flash
 ```
 
 ---
@@ -59,5 +59,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/n
 Solve the _Fun with Flags_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/fun-with-flags
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/fun-with-flags
 ```

@@ -25,13 +25,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-flexbox/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-flexbox/demo-end
 ```
 
 ---

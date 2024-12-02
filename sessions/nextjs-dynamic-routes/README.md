@@ -18,13 +18,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/nextjs-dynamic-routes/demo-end
 ```
 
 ---

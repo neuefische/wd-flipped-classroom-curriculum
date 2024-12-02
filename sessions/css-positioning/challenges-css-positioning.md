@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/absolute-position
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-positioning/absolute-position
 ```
 
 ## Layout with Position
@@ -17,5 +17,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/abso
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-positioning/layout-with-position
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-positioning/layout-with-position
 ```

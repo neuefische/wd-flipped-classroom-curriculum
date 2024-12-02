@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-dom-and-events/survey-error-fixing
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-dom-and-events/survey-error-fixing
 ```
 
 ## Simple Calculator
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-dom-and-events/su
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-dom-and-events/simple-calculator
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-dom-and-events/simple-calculator
 ```
 
 ## Dark Mode
@@ -27,5 +27,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-dom-and-events/si
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-dom-and-events/dark-mode
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-dom-and-events/dark-mode
 ```

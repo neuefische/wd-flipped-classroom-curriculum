@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/adding-animals
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/adding-animals
 ```
 
 ## Tags, Tags, Tags
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/adding
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/tags
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/tags
 ```
 
 ## Journal App with Form Submit
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/tags
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/journal-app-form
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-form
 ```
 
 ## Journal App with Favorite Button and Shared State
@@ -35,13 +35,13 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/journa
 (difficulty: 🔥🔥🔥)
 
 > 💡 If you are far enough along with your own journal app, follow the
-> [instructions of this challenge](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-3/journal-app-favorite-button-shared-state#readme)
+> [instructions of this challenge](https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-favorite-button-shared-state#readme)
 > using your own code.
 
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/journal-app-favorite-button-shared-state
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-favorite-button-shared-state
 ```
 
 ## Journal App with Entries Filter
@@ -49,11 +49,11 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/journa
 (difficulty: 🔥🔥🔥)
 
 > 💡 If you are far enough along with your own journal app, follow the
-> [instructions of this challenge](https://github.com/neuefische/web-exercises/tree/main/sessions/react-state-3/journal-app-filter#readme)
+> [instructions of this challenge](https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-filter#readme)
 > using your own code.
 
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-3/journal-app-filter
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-filter
 ```

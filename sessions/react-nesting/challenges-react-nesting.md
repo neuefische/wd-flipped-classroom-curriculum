@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/buttons-and-children
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/buttons-and-children
 ```
 
 ## Fragments
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/button
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/fragments
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/fragments
 ```
 
 ## Navigation
@@ -27,5 +27,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/fragme
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/navigation
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/navigation
 ```

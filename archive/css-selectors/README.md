@@ -57,11 +57,11 @@ Give a short overview of the different kind of selectors with two or three examp
 You can use the following commands to demonstrate the different kinds of selectors:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-selectors/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-selectors/demo-start
 ```
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-selectors/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-selectors/demo-end
 ```
 
 ### Recap: Basic Selectors

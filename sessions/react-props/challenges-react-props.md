@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/greeting
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/greeting
 ```
 
 ## Calculating the Sum
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/greeting
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/sum
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/sum
 ```
 
 ## Smile ;)
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/sum
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/smiley
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/smiley
 ```
 
 ## Buttons, Buttons, Buttons
@@ -37,5 +37,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/smiley
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-props/button
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/button
 ```

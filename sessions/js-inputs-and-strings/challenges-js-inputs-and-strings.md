@@ -26,7 +26,7 @@ Solve the following challenges.
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-uppercase
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-uppercase
 ```
 
 ## Input to Uppercase and Lowercase
@@ -36,7 +36,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-string
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-upper-and-lowercase
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-inputs-and-strings/input-to-upper-and-lowercase
 ```
 
 ## Switch Values
@@ -46,7 +46,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-string
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/switch-values
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-inputs-and-strings/switch-values
 ```
 
 ## Multiple Inputs
@@ -56,7 +56,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-string
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/multiple-inputs
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-inputs-and-strings/multiple-inputs
 ```
 
 ## Change Box Appearance
@@ -66,5 +66,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-string
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-inputs-and-strings/change-box-appearance
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-inputs-and-strings/change-box-appearance
 ```

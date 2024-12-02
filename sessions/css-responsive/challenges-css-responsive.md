@@ -21,7 +21,7 @@ Welcome to this active learning session focused on exploring CSS Responsive in a
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/playground
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-responsive/playground
 ```
 
 ## Responsive Website
@@ -31,5 +31,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/playg
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-responsive/responsive-website
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-responsive/responsive-website
 ```

@@ -73,13 +73,13 @@ You can ask these questions:
 Use this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-flexbox/demo-start
 ```
 
 You can check out the final version of this demo by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-flexbox/demo-end
 ```
 
 - [ ] Show the code and the normal document flow of the demo.

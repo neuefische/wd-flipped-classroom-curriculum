@@ -5,7 +5,7 @@
 You can find an example implementation for this project or locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/recap-project-4/example-implementation
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/recap-project-4/example-implementation
 ```
 
 ## Wireframes

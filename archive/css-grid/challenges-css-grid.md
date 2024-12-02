@@ -24,7 +24,7 @@ Solve the following Grid Challenges
 Solve the _Image Gallery_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/image-gallery
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/image-gallery
 ```
 
 Expected Result:
@@ -36,7 +36,7 @@ Expected Result:
 Solve the _Service Gallery_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/service-gallery
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/service-gallery
 ```
 
 Expected Result:
@@ -48,7 +48,7 @@ Expected Result:
 Solve the _Payment Cards Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/payment-cards
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/payment-cards
 ```
 
 Expected Result:
@@ -60,7 +60,7 @@ Expected Result:
 Solve the _Fish Cards_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/fish-cards
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/fish-cards
 ```
 
 Expected Result:
@@ -72,7 +72,7 @@ Expected Result:
 Solve the _Image Board_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/image-board
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/image-board
 ```
 
 Expected Result:
@@ -84,7 +84,7 @@ Expected Result:
 Solve the _Place The Elements Challenge_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-grid/place-elements
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/place-elements
 ```
 
 Expected Result:

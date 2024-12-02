@@ -7,7 +7,7 @@
 Solve this challenge locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/products
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-api-routes/products
 ```
 
 ## Random Character
@@ -17,5 +17,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/p
 Solve this challenge locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-api-routes/random-character
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-api-routes/random-character
 ```

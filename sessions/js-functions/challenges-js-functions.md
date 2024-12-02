@@ -7,7 +7,7 @@
 Solve the _Basic functions_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/basic-functions
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/basic-functions
 ```
 
 ## Functions with parameters
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/basic-f
 Solve the _Functions with parameters_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/functions-with-parameters
 ```
 
 ## Functions with parameters extra
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functio
 Solve the _Functions with parameters extra_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functions-with-parameters-extra
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/functions-with-parameters-extra
 ```
 
 ## Functions and DOM manipulation
@@ -37,7 +37,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/functio
 Solve the _Functions and DOM manipulation_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/dom-manipulation
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/dom-manipulation
 ```
 
 ## Calculations
@@ -47,7 +47,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/dom-man
 Solve the _Calculations_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/basic-calculations
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/basic-calculations
 ```
 
 ## Greeting Page
@@ -57,7 +57,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/basic-c
 Solve the _Greeting Page_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/greeting-page
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/greeting-page
 ```
 
 Create a small greeting page which changes depending on your current time.
@@ -69,7 +69,7 @@ Create a small greeting page which changes depending on your current time.
 Solve the _Convert Arrow Functions_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/arrow-functions
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/arrow-functions
 ```
 
 # Bonus Challenges
@@ -81,7 +81,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/arrow-f
 Solve this **advanced** challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/pizza-analyzer
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/pizza-analyzer
 ```
 
 ## Progress Bar
@@ -91,7 +91,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/pizza-a
 Solve the **advanced** _Progress Bar_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions/progress-bar
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions/progress-bar
 ```
 
 Build a Progress Bar which indicates how much the user scrolled down the page.

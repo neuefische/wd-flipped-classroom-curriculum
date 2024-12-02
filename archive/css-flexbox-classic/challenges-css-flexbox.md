@@ -17,7 +17,7 @@ Master one of these two flexbox games:
 Solve the _Flexbox Navigation_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/navigation
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-flexbox/navigation
 ```
 
 ## Flexbox Profile
@@ -25,7 +25,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/navigati
 Solve the _Flexbox Profile_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-flexbox/profile
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-flexbox/profile
 ```
 
 ## Personal Website

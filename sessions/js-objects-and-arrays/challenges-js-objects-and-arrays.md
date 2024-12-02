@@ -10,7 +10,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-objects-and-arrays/arrays
 ```
 
 ## Objects
@@ -20,7 +20,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-array
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-objects-and-arrays/objects
 ```
 
 ## Objects and Arrays
@@ -30,5 +30,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-array
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-objects-and-arrays/objects-and-arrays
 ```

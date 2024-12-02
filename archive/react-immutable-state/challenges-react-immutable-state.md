@@ -5,7 +5,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/form
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-immutable-state/form
 ```
 
 ## Car Race
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-stat
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-immutable-state/car-race
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-immutable-state/car-race
 ```
 
 ## Further Challenges

@@ -5,7 +5,7 @@
 Solve the _Basic functions_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/basic-functions
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions-1/basic-functions
 ```
 
 ## Functions with parameters
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/basic
 Solve the _Functions with parameters_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/functions-with-parameters
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions-1/functions-with-parameters
 ```
 
 ## Functions with parameters extra
@@ -21,7 +21,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/funct
 Solve the _Functions with parameters extra_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/functions-with-parameters-extra
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions-1/functions-with-parameters-extra
 ```
 
 ## Functions and DOM manipulation
@@ -29,7 +29,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/funct
 Solve the _Functions and DOM manipulation_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/dom-manipulation
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions-1/dom-manipulation
 ```
 
 # Bonus Challenge
@@ -41,5 +41,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/dom-m
 Solve this **advanced** challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-functions-1/pizza-analyzer
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-functions-1/pizza-analyzer
 ```

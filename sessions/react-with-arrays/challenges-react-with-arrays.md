@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/fruits
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-with-arrays/fruits
 ```
 
 ## Users
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/fr
 Solve this challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/users
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-with-arrays/users
 ```
 
 ## Journal App Entries Array
@@ -27,5 +27,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/us
 Solve this challenge by running this command in your Terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-with-arrays/journal-app-entries-array
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-with-arrays/journal-app-entries-array
 ```

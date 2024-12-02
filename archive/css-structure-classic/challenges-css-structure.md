@@ -5,7 +5,7 @@
 Solve the _Selectors and Cascading Bugs_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-structure/selectors-and-cascading
 ```
 
 Have a look at the `styles.css` file.
@@ -26,7 +26,7 @@ check if you selected the correct elements.
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-structure/custom-properties
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-structure/custom-properties
 ```
 
 ## Apply BEM to your Quiz App

@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pink-box
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-basics/pink-box
 ```
 
 ## Pseudo Park
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pink-box
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pseudo-park
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-basics/pseudo-park
 ```
 
 ## Combined Users
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pseudo-pa
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/combined-users
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-basics/combined-users
 ```
 
 ## Playground: Button Styles
@@ -37,7 +37,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/combined-
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/button-styles
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-basics/button-styles
 ```
 
 ## Pokemon Page
@@ -47,7 +47,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/button-st
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-basics/pokemon-page
 ```
 
 ## CSS Diner

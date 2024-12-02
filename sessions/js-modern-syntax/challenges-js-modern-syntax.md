@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/destructuring-objects
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-modern-syntax/destructuring-objects
 ```
 
 ## Destructuring Arrays
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/des
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/destructuring-arrays
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-modern-syntax/destructuring-arrays
 ```
 
 ## Rest and Spread Syntax
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/des
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/rest-and-spread
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-modern-syntax/rest-and-spread
 ```
 
 ## Bonus: Back to Basics
@@ -37,5 +37,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/res
 Solve this challenge by running this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-modern-syntax/back-to-basics
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-modern-syntax/back-to-basics
 ```

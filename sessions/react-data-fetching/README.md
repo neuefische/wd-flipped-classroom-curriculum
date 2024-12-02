@@ -21,13 +21,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-data-fetching/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-data-fetching/demo-end
 ```
 
 ---

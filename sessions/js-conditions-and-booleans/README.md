@@ -17,13 +17,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-conditions-and-booleans/demo-end
 ```
 
 ---

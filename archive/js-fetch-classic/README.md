@@ -52,13 +52,13 @@ How do we fetch data from an API?
 Demo Start:
 
 ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start
+  npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-fetch/demo-start
 ```
 
 Demo End:
 
 ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-end
+  npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-fetch/demo-end
 ```
 
 ### Introduction to APIs

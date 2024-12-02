@@ -23,13 +23,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms/demo-end
 ```
 
 ---

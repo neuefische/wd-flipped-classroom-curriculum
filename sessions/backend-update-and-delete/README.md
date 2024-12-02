@@ -17,13 +17,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-update-and-delete/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-update-and-delete/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-update-and-delete/demo-end
 ```
 
 > 💡 Note: Ensure your MongoDB Atlas database is set up and contains the necessary data.You'll find data you can use in the `assets` folder of this session. If you'd prefer a step by step setup guide, feel free to take a look at the session _[Backend Read](../backend-read/)_.  

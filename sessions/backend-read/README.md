@@ -19,13 +19,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-read/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-read/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-read/demo-end
 ```
 
 ---
@@ -78,7 +78,7 @@ In a non-relational database like MongoDB, things can get messy quickly because 
     `MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-name>/jokes-database?retryWrites=true&w=majority`.
     - Replace `<username>`, `<password>` and `<cluster-name>` with the values from MongoDB Atlas (see [MongoDB Atlas Setup](../backend-mongodb/challenges-backend-mongodb.md)).
   - Create a `db/connect.js` file and copy the
-    [content](https://github.com/neuefische/web-curriculum/blob/main/sessions/backend-read/assets/dbConnect.js).
+    [content](https://github.com/wd-bootcamp/web-curriculum/blob/main/sessions/backend-read/assets/dbConnect.js).
   - Remind students that it's not necessary to understand this file entirely:
     - Note that it uses the `MONGODB_URI` we have just set up in `.env.local` to create a connection.
     - You should leave it here, but if there are any further questions:

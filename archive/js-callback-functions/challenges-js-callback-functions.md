@@ -9,7 +9,7 @@ If the names used for functions seem unclear at the beginning (e.g. `onSuccess()
 Solve the _Named vs. anonymous callback functions_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-functions/user-login-callback-1-named-vs-anonymous
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-callback-functions/user-login-callback-1-named-vs-anonymous
 ```
 
 ## Callback functions with one argument
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-function
 Solve the _Callback functions with one argument_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-functions/user-login-callback-2-with-argument
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-callback-functions/user-login-callback-2-with-argument
 ```
 
 ## Callback functions with multiple arguments
@@ -25,7 +25,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-function
 Solve the _Callback functions with multiple arguments_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-functions/user-login-callback-3-with-multiple-arguments
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-callback-functions/user-login-callback-3-with-multiple-arguments
 ```
 
 ## Multiple callback functions
@@ -33,5 +33,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-function
 Solve the _Multiple callback functions_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-functions/user-login-callback-4-with-multiple-functions
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-callback-functions/user-login-callback-4-with-multiple-functions
 ```

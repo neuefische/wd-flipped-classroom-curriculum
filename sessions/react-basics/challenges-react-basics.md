@@ -7,7 +7,7 @@
 Solve this challenge **locally** by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/hello-world
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-basics/hello-world
 ```
 
 ## Hello World Article
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/hello-w
 Solve this challenge **locally** by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/hello-world-article
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-basics/hello-world-article
 ```
 
 ## Attributes
@@ -27,5 +27,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/hello-w
 Solve this challenge **locally** by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-basics/attributes
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-basics/attributes
 ```

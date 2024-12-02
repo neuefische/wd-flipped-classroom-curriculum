@@ -5,7 +5,7 @@
 Solve the _Social Card_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/social-card
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-basics/social-card
 ```
 
 ## Button styles
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/social-ca
 Solve the _Button styles_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/button-styles
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-basics/button-styles
 ```
 
 ## Pokemon page
@@ -21,7 +21,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/button-st
 Solve the _Pokemon page_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/css-basics/pokemon-page
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-basics/pokemon-page
 ```
 
 ## Homework: Personal Website Styling

@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/card-conversion
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/card-conversion
 ```
 
 ## Styled Navbar
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-compone
 Solve this challenge on by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/styled-navbar
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/styled-navbar
 ```
 
 ## Box
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-compone
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/box
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/box
 ```
 
 ## Lord of the Rings Fanpage
@@ -35,11 +35,11 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-compone
 (difficulty: 🔥🔥🔥)
 
 > 💡 If you are far enough along with your own Lord of the Rings App, follow the
-> [instructions of this challenge](https://github.com/neuefische/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling?file=/README.md)
+> [instructions of this challenge](https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling?file=/README.md)
 > using your own code.
 
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling
 ```

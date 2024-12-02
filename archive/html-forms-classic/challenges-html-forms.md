@@ -5,7 +5,7 @@
 Solve the _Personal Profile Form_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/personal-profile-form
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/personal-profile-form
 ```
 
 ## Forms and A11y
@@ -13,7 +13,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/personal-
 Solve the _Forms and A11y_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/Finding-a11y-errors
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/Finding-a11y-errors
 ```
 
 ## More input types
@@ -21,5 +21,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/Finding-a
 Solve the _More input types_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-forms/zoo
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/zoo
 ```

@@ -16,13 +16,13 @@
 ### Start
 
 ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-start
+  npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-fetch/demo-start
 ```
 
 ### End
 
 ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/demo-end
+  npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-fetch/demo-end
 ```
 
 ---
@@ -72,7 +72,7 @@ After this session, you’ll know how to “wait” for the data to be fetched a
 **Blocking Demo**
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-fetch/blocking-demo
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-fetch/blocking-demo
 ```
 
 ### Joke App Introduction

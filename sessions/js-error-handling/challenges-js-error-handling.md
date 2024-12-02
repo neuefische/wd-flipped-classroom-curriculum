@@ -21,7 +21,7 @@ Welcome to this active learning session focused on exploring Error Handling in a
 Solve the _Calculator_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-error-handling/calculator
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-error-handling/calculator
 ```
 
 ## Fetch
@@ -31,5 +31,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-error-handling/ca
 Solve the _Fetch_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-error-handling/fetch
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-error-handling/fetch
 ```

@@ -52,13 +52,13 @@ How can we guide the user to enter valid data into a form?
 Demo Start:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms-2/demo-start
 ```
 
 Demo End:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms-2/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms-2/demo-end
 ```
 
 ### HTML Form Validation

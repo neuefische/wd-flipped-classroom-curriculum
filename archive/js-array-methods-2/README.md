@@ -34,13 +34,13 @@ As developers, we are often confronted with arrays. In order to process these ar
 Demo Start:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/demo-start
 ```
 
 Demo End:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods-2/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods-2/demo-end
 ```
 
 Show the students the demo code and explain, that we often have to deal with arrays. If the array contains simple data types (like numbers or strings), we can use the `includes` method to check whether a certain value is included or not.

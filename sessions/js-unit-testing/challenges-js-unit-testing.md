@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/get-animal
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-unit-testing/get-animal
 ```
 
 ## Math Functions
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/get-
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/math-functions
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-unit-testing/math-functions
 ```
 
 ## People
@@ -27,5 +27,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/math
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/people
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-unit-testing/people
 ```

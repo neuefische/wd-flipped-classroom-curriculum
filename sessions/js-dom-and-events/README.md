@@ -15,13 +15,13 @@
 ### Start
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-dom-and-events/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-dom-and-events/demo-start
 ```
 
 ### End
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-dom-and-events/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-dom-and-events/demo-end
 ```
 
 ---

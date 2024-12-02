@@ -26,7 +26,7 @@ node script.js
 ### Template
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/templates/js-with-node my-app
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/templates/js-with-node my-app
 ```
 
 ---

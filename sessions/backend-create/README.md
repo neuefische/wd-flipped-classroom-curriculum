@@ -16,13 +16,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-create/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-create/demo-end
 ```
 
 ---
@@ -73,7 +73,7 @@ if (request.method === "POST") {
 response.status(405).json({ status: "Method not allowed." });
 ```
 
-[Final stage of the code without comments](https://github.com/neuefische/web-exercises/blob/main/sessions/backend-create/demo-end/pages/api/jokes/index.js).
+[Final stage of the code without comments](https://github.com/wd-bootcamp/web-exercises/blob/main/sessions/backend-create/demo-end/pages/api/jokes/index.js).
 
 > 💡 Note: Since this is the implementation of just the route, it isn't "doing anything" yet. Imagine building a tunnel that isn't currently connected to a road carrying traffic.
 

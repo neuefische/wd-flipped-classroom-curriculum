@@ -17,19 +17,19 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/demo-end
 ```
 
 ### Composition Demo
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-nesting/demo-composition
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/demo-composition
 ```
 
 ---

@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/colored-number
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/colored-number
 ```
 
 ## Table Reservation
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/colore
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/table-reservation
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/table-reservation
 ```
 
 ## Favourite Holiday Form
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/table-
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/favourite-holiday
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/favourite-holiday
 ```
 
 ## Personal Details Form
@@ -37,7 +37,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/favour
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/personal-details
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/personal-details
 ```
 
 ## Bonus: Fix Triple Count
@@ -47,7 +47,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/person
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/triple-count
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/triple-count
 ```
 
 ## Bonus: Fix Conditionally Rendered `useState` Hook
@@ -57,5 +57,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/triple
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-2/conditional-usestate
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/conditional-usestate
 ```

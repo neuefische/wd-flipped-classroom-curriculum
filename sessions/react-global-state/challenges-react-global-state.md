@@ -7,5 +7,5 @@
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-global-state/lights
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-global-state/lights
 ```

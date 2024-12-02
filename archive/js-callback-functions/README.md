@@ -61,13 +61,13 @@ You can use this demo to explain the topic:
 Demo Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-functions/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-callback-functions/demo-start
 ```
 
 Demo End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-callback-functions/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-callback-functions/demo-end
 ```
 
 ### Section 1: Callback functions and button click events

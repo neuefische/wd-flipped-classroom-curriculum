@@ -7,7 +7,7 @@
 Run this demo locally in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/mock-interview-1/simple-algorithms
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/mock-interview-1/simple-algorithms
 ```
 
 ## Play around with these problems before your next mock interview

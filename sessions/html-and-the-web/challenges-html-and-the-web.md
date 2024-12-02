@@ -23,6 +23,7 @@ web-bootcamp
 ├── session-notebook
 └── web-challenges
 ```
+
 > 💡 For better organisation, it's recommended to create subfolders within the `web-challenges` folder for each session, named according to the session title.
 
 ## Format Salad
@@ -34,7 +35,7 @@ web-bootcamp
 Solve this challenge by using this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/format-salad
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-and-the-web/format-salad
 ```
 
 ## Find the Errors
@@ -46,7 +47,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/for
 Solve this challenge by using this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/find-the-errors
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-and-the-web/find-the-errors
 ```
 
 ## `<div>`-Salad
@@ -58,7 +59,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/fin
 Solve this challenge by using this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/div-salad
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-and-the-web/div-salad
 ```
 
 Replace all the `<div>` tags in the code with semantic HTML. In case you need some ideas, you can refer
@@ -73,7 +74,7 @@ to the handout.
 Build your own _Personal Website_ using this command in your terminal:
 
 ```bash
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/html-and-the-web/personal-website
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-and-the-web/personal-website
 ```
 
 Follow the instructions in the `README.md`. Good luck!

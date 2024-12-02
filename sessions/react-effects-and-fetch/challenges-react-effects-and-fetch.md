@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/pokemon-api
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-effects-and-fetch/pokemon-api
 ```
 
 ## Pokémon API with Paging
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fe
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/pokemon-api-with-paging
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-effects-and-fetch/pokemon-api-with-paging
 ```
 
 ## ISS Tracker
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fe
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/iss-tracker
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-effects-and-fetch/iss-tracker
 ```
 
 ## API Status and Error Handling
@@ -36,5 +36,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fe
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-effects-and-fetch/api-status
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-effects-and-fetch/api-status
 ```

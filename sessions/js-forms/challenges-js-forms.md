@@ -7,7 +7,7 @@
 Solve the _Part 1: Handle Form Submit_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/handle-form-submit
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms/handle-form-submit
 ```
 
 ## Part 2: Checkbox Input
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/handle-form
 Solve the _Part 2: Checkbox Input_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/checkbox-input
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms/checkbox-input
 ```
 
 ## Part 3: Calculator
@@ -27,5 +27,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/checkbox-in
 Solve the _Part 3: Calculator_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-forms/calculator
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-forms/calculator
 ```

@@ -7,5 +7,5 @@
 Solve this challenge locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/backend-create/products
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/backend-create/products
 ```

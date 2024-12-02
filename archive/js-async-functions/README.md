@@ -55,25 +55,25 @@ There are three demos for this session:
 Intro Blocking Demo:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/blocking-demo
 ```
 
 Main Demo Start:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/demo-start
 ```
 
 Main Demo End:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/demo-end
 ```
 
 Fetch Demo:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/fetch-demo
 ```
 
 ### Introduction: JS is a single-threaded language
@@ -82,7 +82,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/f
 
 ```
 
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/blocking-demo
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/blocking-demo
 ```
 
 - [ ] Explain that some processes in programming languages take time to complete. For example,
@@ -144,14 +144,14 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/b
 
 ```
 
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/demo-start
 ```
 
 You can check out the final version of this demo by running this command in your Terminal:
 
 ```
 
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/demo-end
 ```
 
 - [ ] This demo uses the
@@ -317,7 +317,7 @@ animateButton.addEventListener("click", async () => {
 - [ ] Use this demo by running this command in your Terminal:
 
   ```
-  npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-async-functions/fetch-demo
+  npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-async-functions/fetch-demo
   ```
 
 - [ ] Explain the code:

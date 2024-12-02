@@ -7,7 +7,7 @@
 Solve this challenge locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/iss-tracker
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-data-fetching/iss-tracker
 ```
 
 (difficulty: 🔥🔥)
@@ -17,5 +17,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/
 Solve this challenge locally by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-data-fetching/star-wars
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-data-fetching/star-wars
 ```

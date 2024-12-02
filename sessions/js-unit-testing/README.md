@@ -18,13 +18,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-unit-testing/demo-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-unit-testing/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-unit-testing/demo-end
 ```
 
 > 💡 Replace the placeholder `<YOUR-NAME>` with your actual name in the demo.

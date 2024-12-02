@@ -7,7 +7,7 @@
 Solve the _Color Boxes (`forEach`)_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/for-each
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/for-each
 ```
 
 ## `map`
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/for
 Solve the _`map`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/map
 ```
 
 ## `filter`
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/map
 Solve the _`filter`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/filter
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/filter
 ```
 
 ## Zoo Animals
@@ -37,7 +37,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/fil
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/zoo-animals
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/zoo-animals
 ```
 
 ## Employees
@@ -47,7 +47,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/zoo
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/employees
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/employees
 ```
 
 ## Array of Animal Strings
@@ -57,7 +57,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/emp
 Solve the _Array of Animal Strings_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/animal-strings
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/animal-strings
 ```
 
 ---
@@ -69,7 +69,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/ani
 Solve the _Array of Animal Objects_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/animal-objects
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/animal-objects
 ```
 
 ---
@@ -81,7 +81,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/ani
 Solve the _News Flash_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/news-flash
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/news-flash
 ```
 
 ---
@@ -93,7 +93,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/new
 Solve the _Fun with Flags_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/fun-with-flags
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/fun-with-flags
 ```
 
 ## `document.querySelectorAll`
@@ -116,7 +116,7 @@ Log the result to the console and inspect the result.
 Solve the _Repetition: `map`and `filter`_ challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/repetition
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/repetition
 ```
 
 ## Bonus: Letter Puzzle
@@ -126,7 +126,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/rep
 Solve this challenge by running this command in your Terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/letter-puzzle
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/letter-puzzle
 ```
 
 ## Bonus: Single Page Application
@@ -143,19 +143,19 @@ enhanced versions which make use of `forEach` in order to improve and reduce the
 SPA 1: a working solution:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/spa-1
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/spa-1
 ```
 
 SPA 2: simplified with `forEach`:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/spa-2
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/spa-2
 ```
 
 `forEach` within `forEach`:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-array-methods/spa-3
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-array-methods/spa-3
 ```
 
 Working in groups, use the examples above. Make sure that every student understands every

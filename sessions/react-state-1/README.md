@@ -17,13 +17,13 @@
 ### Start
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-counter-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-1/demo-counter-start
 ```
 
 ### End
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/react-state-1/demo-counter-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-1/demo-counter-end
 ```
 
 ---

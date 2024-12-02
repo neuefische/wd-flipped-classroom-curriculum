@@ -7,7 +7,7 @@
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/for-console
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-loops/for-console
 ```
 
 ## Creating a List
@@ -17,7 +17,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/for-console
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/forof-list
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-loops/forof-list
 ```
 
 ## Select and Navigation Bar
@@ -27,7 +27,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/forof-list
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/forin-select-nav
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-loops/forin-select-nav
 ```
 
 ## `while`
@@ -37,7 +37,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/forin-selec
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/while-random-number
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-loops/while-random-number
 ```
 
 ## Stars
@@ -47,7 +47,7 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/while-rando
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/stars
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-loops/stars
 ```
 
 ## Bonus: Pixels
@@ -57,5 +57,5 @@ npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/stars
 Solve this challenge by running this command in your terminal:
 
 ```
-npx ghcd@latest neuefische/web-exercises/tree/main/sessions/js-loops/pixels
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/js-loops/pixels
 ```
