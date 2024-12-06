@@ -146,7 +146,7 @@ We have a target of 540 teaching minutes per day, which is equivalent to 9 hours
 
 ## How to Contribute
 
-Changes to the curriculum are managed through tickets on the [Curriuclum Project Board](https://github.com/orgs/neuefische/projects/45/views/10).
+Changes to the curriculum are managed through tickets on the [Curriuclum Project Board](https://github.com/orgs/wd-bootcamp/projects/1/views/1).
 
 ### When to Create a Ticket
 
@@ -156,7 +156,7 @@ Use this board for significant curriculum changes. For minor fixes like bugs or 
 
 To propose a change:
 
-1. Click `+ Add item` in the "🆕 New" column of the [Curriculum Project Board](https://github.com/orgs/neuefische/projects/45/views/10).
+1. Click `+ Add item` in the "🆕 New" column of the [Curriculum Project Board](https://github.com/orgs/wd-bootcamp/projects/1/views/4).
 2. Enter `#web-curriculum` and choose `Create new issue` from the dropdown menu.
 3. In the popup window, select the `New Ticket` issue template.
 4. Detail the issue and your solution, then create the ticket.

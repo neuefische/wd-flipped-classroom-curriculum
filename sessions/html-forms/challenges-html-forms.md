@@ -4,7 +4,7 @@
 
 (difficulty: 🔥)
 
-Solve the _Personal Profile Form_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/personal-profile-form
@@ -14,17 +14,17 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/personal
 
 (difficulty: 🔥🔥)
 
-Solve the _Forms and A11y_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/finding-a11y-errors
 ```
 
-## Form validation
+## Form Validation
 
 (difficulty: 🔥🔥)
 
-Solve the _Form validation_ challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```bash
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/form-validation

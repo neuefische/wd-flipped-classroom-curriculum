@@ -6,9 +6,9 @@
 
 We prepared a fresh repository with a feature branch for you. Your task is to review that code and find the bugs/issues. You can use the [common issues](./how-to-capstone.md#common-issues) collection as a guide. Good Luck!
 
-1. Clone [this repository](https://github.com/neuefische/web-code-review-challenge/tree/main):
+1. Clone [this repository](https://github.com/wd-bootcamp/web-code-review-challenge):
    ```shell
-   git clone git@github.com:neuefische/web-code-review-challenge.git
+   git clone git@github.com:wd-bootcamp/web-code-review-challenge.git
    ```
 2. Download the feature branch by switching to it:
 

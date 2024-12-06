@@ -14,17 +14,13 @@ Welcome to this active learning session focused on exploring Accessibility in a 
 
 > ❗️ Start your active learning journey by clicking [here](https://web-active-learning.vercel.app/documents/accessibility).
 
-## Quiz App project continuation
+## Quiz App Project Continuation
 
 (difficulty: 🔥🔥)
 
-Continue to work on your Quiz App project and make your application more accessible. Here are some
-ideas of what you can do.
+Continue working on your Quiz App project and enhance its accessibility. Below are some ideas to guide your progress:
 
-Make sure:
-
-- you used semantic HTML whenever possible.
-- all of your interactive elements have an accessible name. If there is an icon for example that the
-  user can click, it might not have an accessible name yet.
-- your pages have one h1 element and do not skip heading levels.
-- the text content of your interactive elements is descriptive.
+- Ensure that semantic HTML is used wherever possible.
+- Verify that all interactive elements have an accessible name. For instance, an icon that the user can click might still lack an accessible name.
+- Make sure each page includes a single `<h1>` element, and that heading levels are not skipped.
+- Check that the text content of your interactive elements is clear and descriptive.

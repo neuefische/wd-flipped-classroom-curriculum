@@ -46,7 +46,7 @@ node js/index.js
 - Open the `index.html` and add a `script` tag to the head:
 
 ```html
-<script src="index.js" defer></script>
+<script src="js/index.js" defer></script>
 ```
 
 - Explain the elements of this tag:
@@ -66,6 +66,7 @@ console.log(document);
 
 - Browse through the object in the dev console and show that next to a lot of extra information we find the `head` and `body` of the document. Inside the `body` we see the `children`: our three buttons!
 - Highlight that inside this one object all information about every element on the website is stored.
+- The appearance of the document object in the console varies between browsers. Be sure to point this out and, if possible, demonstrate the difference to avoid confusion.
 
 ### QuerySelector
 
@@ -92,8 +93,8 @@ console.log(button);
 - We can then find these elements:
 
 ```js
-const bodyElement = document.querySelector("[data-js=root]");
-const addButton = document.querySelector("[data-js=add-button]");
+const bodyElement = document.querySelector('[data-js="root"]');
+const addButton = document.querySelector('[data-js="add-button"]');
 ```
 
 - Show that we found the requested elements by logging the variables.
@@ -171,7 +172,7 @@ addButton.addEventListener("click", () => {
 ```
 
 ```js
-const bodyElement = document.querySelector("[data-js=root]");
+const bodyElement = document.querySelector('[data-js="root"]');
 const addButton = document.querySelector('[data-js="add-button"]');
 const removeButton = document.querySelector('[data-js="remove-button"]');
 const toggleButton = document.querySelector('[data-js="toggle-button"]');

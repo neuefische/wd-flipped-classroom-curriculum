@@ -40,9 +40,9 @@ In this session, we’ll cover the essential steps for successfully navigating t
   - They learn how to read code and understand code faster.
   - They get in contact with new patterns and ways of how to write code.
   - Code reviews should encourage discussions about code.
-- Clone the [practice repository](https://github.com/neuefische/web-code-review-challenge). It has everything set up to create a PR with lots of problems 😈.
+- Clone the [practice repository](https://github.com/wd-bootcamp/web-code-review-challenge). It has everything set up to create a PR with lots of problems 😈.
   ```shell
-  git clone git@github.com:neuefische/web-code-review-challenge.git
+  git clone git@github.com:wd-bootcamp/web-code-review-challenge.git
   ```
 - In order to persist the git history but also to practice in a separate repository, the students need to create a new remote repository and connect it to the cloned one.
 - Show [the steps](./challenges-how-to-capstone.md#code-review) necessary to achieve this. Make sure that the students push the `main` branch first to the new repository. Otherwise it will not be recognized as the default branch.

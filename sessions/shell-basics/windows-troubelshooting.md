@@ -2,7 +2,7 @@
 
 ## Problem: The following script would not run for a student today:
 
-`bash <(curl -s https://raw.githubusercontent.com/neuefische/web-setup/main/setup-windows.bash)`
+`bash <(curl -s https://raw.githubusercontent.com/wd-bootcamp/web-setup/main/setup-windows.bash)`
 
 ### Solution:
 

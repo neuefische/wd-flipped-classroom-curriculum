@@ -24,7 +24,7 @@ By the end of this session, you should all be in your respective groups and have
 
 ### Voting Preparations
 
-> ❗️ In preparation for this session, the course management has presented a subset of our [predefined Capstone projects](https://github.com/neuefische/web-internal/tree/main/team-capstone-projects) to the students in the last checkout. It is expected that all students are familiar with the projects by now.
+> ❗️ In preparation for this session, the course management has presented a subset of our [predefined Capstone projects](https://github.com/wd-bootcamp/web-internal/tree/main/team-capstone-projects) to the students in the last checkout. It is expected that all students are familiar with the projects by now.
 >
 > During this session, the students will vote for their preferred Capstone project. Based on this voting you will form the Capstone groups. If you are not the course management for this course, it is strongly advised that you communicate closely with the course management in order to make balanced group dynamics possible.
 
