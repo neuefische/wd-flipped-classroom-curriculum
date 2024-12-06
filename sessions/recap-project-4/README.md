@@ -1,12 +1,12 @@
 # Recap Project 4: Color Theme Creator App
 
-In this eight-session recap project (4 days for full-time courses, 8 days for part-time courses), students will create a Color Theme Creator app. The project involves managing [8 predefined issues](https://github.com/neuefische/web-react-recap-project/issues) using a GitHub board.
+In this eight-session recap project (3 days for full-time courses, 6 days for part-time courses), students will create a Color Theme Creator app. The project involves managing [8 predefined issues](https://github.com/wd-bootcamp/web-recap-project-4/issues) using a GitHub board.
 
-> 💡 Coaches can use the [Repo Checker](https://github.com/neuefische/web-repo-checker) to monitor individual student progress.
+> 💡 Coaches can use the [Repo Checker](https://github.com/wd-bootcamp/web-repo-checker) to monitor individual student progress.
 
 ## Session Guide
 
-Ensure students understand the documentation within the [Color Theme Creator Template](https://github.com/neuefische/web-react-recap-project) and can manage the project setup independently. This includes creating the project board and managing issues with the help of the README.md as part of their learning process.
+Ensure students understand the documentation within the [Color Theme Creator Template](https://github.com/wd-bootcamp/web-recap-project-4) and can manage the project setup independently. This includes creating the project board and managing issues with the help of the README.md as part of their learning process.
 
 Students will work independently to:
 
