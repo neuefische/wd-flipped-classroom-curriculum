@@ -103,14 +103,31 @@ export default function JokeForm() {
 
 ```js
 // pages/index.js
-import JokeList from "../components/JokeList";
-import JokeForm from "../components/JokeForm";
+import useSWR from "swr";
+import Link from "next/link";
+import JokeForm from "@/components/JokeForm";
 
 export default function HomePage() {
+  const { data, isLoading } = useSWR("/api/jokes");
+
+  if (isLoading) {
+    return <h1>Loading...</h1>;
+  }
+
+  if (!data) {
+    return;
+  }
+
   return (
     <>
       <JokeForm />
-      <JokeList />
+      <ul>
+        {data.map((joke) => (
+          <li key={joke._id}>
+            <Link href={`/${joke._id}`}>{joke.joke}</Link>
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
@@ -120,7 +137,7 @@ export default function HomePage() {
 
 ### Connecting the `JokeForm` to your `POST` API Route
 
-- Explain that we plan to mutate the jokes state we receive in the `JokeList` component.
+- Explain that we plan to mutate the jokes state.
 - Quickly remind the students about what mutating a state means:
   - We are changing the content of a state, e.g., adding an item to a list.
   - Each element in our app that uses this state needs to be updated to reflect this change.
