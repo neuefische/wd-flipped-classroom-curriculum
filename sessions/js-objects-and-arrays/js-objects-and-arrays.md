@@ -13,58 +13,6 @@
 - Objects and arrays are fundamental in JavaScript because they provide the core structure for organizing, storing, and manipulating data in complex and flexible ways.
 - Objects and arrays aren’t just data structures in JavaScript; they form the backbone of how data is managed, processed, and transferred, making them essential for writing effective JavaScript.
 
-## Arrays
-
-Arrays are a structured data type which can store multiple values in one variable.
-
-You can declare an array using `[]` square brackets (array literals):
-
-```js
-const shoppingList = ["apple", "tomato"];
-```
-
-Each item in the array has an index, which starts at 0. You can access individual items using the
-bracket notation and the item's index:
-
-```js
-shoppingList[0]; // "apple"
-shoppingList[1]; // "tomato"
-```
-
-Arrays can hold any type of value, even another array. This is called a nested array. The values of
-nested arrays can be accessed by choosing the index of the nested array first and then stating the
-index of the element inside the nested array.
-
-```js
-const nestedArray = ["a", 1, ["a", "new", "sentence"], false];
-nestedArray[2][1]; // "new"
-```
-
-You can overwrite individual values in an array:
-
-```js
-const shoppingList = ["apple", "tomato"];
-shoppingList[0] = "banana";
-shoppingList; // ["banana","tomato"];
-```
-
-### Common Array Attributes and Methods
-
-| Attribute / Method       | Effect                                           |
-| ------------------------ | ------------------------------------------------ |
-| `array.length`           | returns the number of elements in the array      |
-| `array.push(element)`    | adds `element` to the end of the array           |
-| `array.pop()`            | removes the last element of an array             |
-| `array.unshift(element)` | adds `element` as the first element of the array |
-| `array.shift()`          | removes the first element of the array           |
-
-> 💡 There are much more array methods and attributes which we will discover in later sessions. Go
-> to the
-> [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)
-> for more information.
-
----
-
 ## Objects
 
 Objects are a structured data type, which couple their values not to an index, but to a unique key.
@@ -132,6 +80,60 @@ You can delete properties using the delete keyword:
 ```js
 delete person.score;
 ```
+
+---
+
+## Arrays
+
+Arrays are a structured data type which can store multiple values in one variable.
+
+You can declare an array using `[]` square brackets (array literals):
+
+```js
+const shoppingList = ["apple", "tomato"];
+```
+
+Each item in the array has an index, which starts at 0. You can access individual items using the
+bracket notation and the item's index:
+
+```js
+shoppingList[0]; // "apple"
+shoppingList[1]; // "tomato"
+```
+
+Arrays can hold any type of value, even another array. This is called a nested array. The values of
+nested arrays can be accessed by choosing the index of the nested array first and then stating the
+index of the element inside the nested array.
+
+```js
+const nestedArray = ["a", 1, ["a", "new", "sentence"], false];
+nestedArray[2][1]; // "new"
+```
+
+You can overwrite individual values in an array:
+
+```js
+const shoppingList = ["apple", "tomato"];
+shoppingList[0] = "banana";
+shoppingList; // ["banana","tomato"];
+```
+
+### Common Array Attributes and Methods
+
+| Attribute / Method       | Effect                                           |
+| ------------------------ | ------------------------------------------------ |
+| `array.length`           | returns the number of elements in the array      |
+| `array.push(element)`    | adds `element` to the end of the array           |
+| `array.pop()`            | removes the last element of an array             |
+| `array.unshift(element)` | adds `element` as the first element of the array |
+| `array.shift()`          | removes the first element of the array           |
+
+> 💡 There are much more array methods and attributes which we will discover in later sessions. Go
+> to the
+> [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)
+> for more information.
+
+---
 
 ## Nested Objects / Arrays
 
