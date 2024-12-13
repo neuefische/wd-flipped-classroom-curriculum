@@ -19,7 +19,17 @@
 
 ## Demo
 
-There is no pre-built demo for this session.
+### Start
+
+```
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/demo-start
+```
+
+### End:
+
+```
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-forms/demo-end
+```
 
 ---
 
@@ -50,16 +60,6 @@ Your HTMl should look like this:
 </form>
 ```
 
-### Form Validation
-
-- We can use built-in form validation without having to write any JavaScript.
-- Add the `required` attribute to the input field. Go to the browser and show that leaving it empty will lead to an error message when hitting the submit button.
-- Explain the concept of form validation:
-  - Form fields can be enriched with various attributes.
-  - These attributes define rules for the expected input.
-  - The browser reads these attributes and validates the user's input.
-  - The validation must be successful to trigger the actual form submission.
-
 ### More Input Types
 
 - Show more input types: `date`, `number`, `email`.
@@ -70,27 +70,43 @@ Your HTMl should look like this:
 ```html
 <form>
   <label for="input-name">Name:</label>
-  <input id="input-name" type="text" required />
+  <input id="input-name" type="text" />
   <label for="input-email">Email:</label>
-  <input id="input-email" type="email" required />
+  <input id="input-email" type="email" />
   <label for="input-date">Your favorite date:</label>
   <input id="input-date" type="date" />
   <label for="select-guests">How many friends will join you?</label>
   <select id="select-guests">
     <option value="">--Please choose an option--</option>
-    <option value="single">I come alone.</option>
-    <option value="multiple">Maybe some?</option>
-    <option value="alone">I do not have friends.</option>
+    <option value="none">I will come alone.</option>
+    <option value="one">I will bring one friend.</option>
+    <option value="few">I will bring a few friends.</option>
   </select>
   <button type="submit">Submit</button>
 </form>
 ```
 
-- Show that the email input is being validated → the user gets an error message when the `@` sign is missing.
-- Add one more attribute for client side form validation like `minlength` to an input element.
-- Mention that there is more attributes you can use for client side form validation and show the following link: [MDN built-in form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation).
+### Form Validation
 
-### Form Structure and Accessibility (a11y)
+- We can use built-in form validation without having to write any JavaScript.
+- Some input fields, like `type="email"` or `type="number"`, are automatically validated by the browser.
+
+  - Show that the email input is being validated → the user gets an error message when the `@` sign is missing.
+
+- Explain that we can customise and extend validation using attributes like:
+  - `required`: Makes the field mandatory.
+  - `minlength`/`maxlength`: Sets minimum or maximum input length.
+- Add some attributes for validation to the input fields. Go to the browser and show the error messages when hitting the submit button.
+- Explain the general concept of form validation:
+
+  - Form fields can be enriched with various attributes.
+  - These attributes define rules for the expected input.
+  - The browser reads these attributes and validates the user's input.
+  - The validation must be successful to trigger the actual form submission.
+
+- Mention that there are many other attributes you can use for form validation and show the following link: [MDN built-in form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#using_built-in_form_validation).
+
+### Form Structure and Accessibility (A11y)
 
 - Explain the use of the `fieldset` element:
   - Groups several elements (controls, labels, etc) inside a form element.
@@ -98,7 +114,7 @@ Your HTMl should look like this:
 - Add a headline for the form via `id` and `aria-labelledby` attributes:
   - Provides the user with a recognizable, accessible name for an interactive element.
 - Add a description for the form via `id` and `aria-describedby` attributes:
-  - Provides more verbose information than a label (e.g., via `aria-labelledby`).
+  - Provides more verbose information than a headline (e.g., via `aria-labelledby`).
 
 ```html
 <h2 id="title">Private Birthday Party Picker</h2>
@@ -107,15 +123,15 @@ Your HTMl should look like this:
   preferred party date and how many friends you will bring to my private
   birthday party.
 </p>
-<form aria-labelledby="title">
-  <fieldset aria-describedby="description">
-    <legend>Enter your information</legend>
+<form aria-labelledby="title" aria-describedby="description">
+  <fieldset>
+    <legend>Personal Information</legend>
     <label for="input-name">Name:</label>
-    <input id="input-name" type="text" />
-    <select>
-      ...
-    </select>
+    <input id="input-name" type="text" required />
+    <label for="input-email">Email:</label>
+    <input id="input-email" type="email" minlength="4" required />
   </fieldset>
+  ...
   <button type="submit">Submit</button>
 </form>
 ```
