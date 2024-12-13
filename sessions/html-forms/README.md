@@ -50,7 +50,7 @@ Forms are a fundamental part of web development as they enable user interaction 
   - Accessibility aids, such as a screen readers, can correctly identify the purpose of the input element.
 - Add a submit button with type `submit`.
 
-Your HTMl should look like this:
+Your HTML should look like this:
 
 ```html
 <form>
