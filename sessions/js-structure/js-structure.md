@@ -208,7 +208,7 @@ following:
 
 > 💡 **These are just recommendations**
 >
-> Another common convention is to use kabap-case names for component files. This way they are named
+> Another common convention is to use kebab-case names for component files. This way they are named
 > after the BEM block class name. For example you could use `button-group/button-group.js` and
 > `button-group/button-group.css` for a component that has a `.button-group` class. This is the same
 > organizational style you are used to when working with just CSS.
