@@ -1,6 +1,6 @@
 # Challenges: Git Advanced
 
-## Git Conflicts Challenge
+## Git Conflicts
 
 (difficulty: 🔥🔥🔥)
 
