@@ -3,39 +3,43 @@
 ## Learning Objectives
 
 - [ ] Understanding what React is and why it is used
-- [ ] Understanding JSX and differences to HTML
-- [ ] Understanding the declarative approach of React
+- [ ] Learn the differences between JSX and HTML
+- [ ] Explore the declarative approach of React
 - [ ] Creating React components
 - [ ] Understanding rendering with React
-- [ ] Project Scaffolding with the `Vite` tool
+- [ ] Project Scaffolding with the Vite tool
 
 ---
 
-## What is React and why do we use it?
+## What is React and Why Do We Use It?
 
-React is a JavaScript **library** used for building user interfaces. It allows us to create reusable UI components without needing to work directly with the DOM API (e.g. `createElement`) in most cases. In React we write shorter, declarative code.
+React is a **JavaScript library** for building user interfaces. It allows developers to:
 
-Compared to working with Vanilla JS, in React we now **describe what the user interface should look like** and React handles the DOM for us under the hood.
+- Create **reusable components** to organize and simplify their code.
+- Focus on **what the UI should look like** (declarative), while React handles the how behind the scenes.
 
-To write declarative code for React, we use **JSX**.
+Unlike **Vanilla JS**, where you manage the DOM manually, React abstracts this process for efficiency.
 
-## JSX
+### Introduction to JSX
 
-Even thought JSX looks similar to HTML, it is not HTML as we know it. JSX is actually a syntax extension to JavaScript.
-JSX expressions can be used anywhere a JavaScript expression can be used.
-This can look as simple as this:
+**JSX** is a syntax extension for JavaScript that looks like HTML but behaves like JavaScript. It allows you to **describe the UI declaratively**.
 
 ```jsx
 const element = <p>Hello World!</p>;
 ```
 
-We use JSX to create **React elements**. React elements are an intermediary format that React converts
-to DOM elements during the rendering process.
+Key Points:
 
-This allows us to **declaratively** describe our user interface using JSX.
-Up until now we have been using the DOM API in Vanilla JS to create elements **imperatively**.
+- JSX looks like HTML but is transformed into JavaScript that the browser can understand.
+- Files containing JSX typically use the `.jsx` file extension.
+- JSX expressions can include JavaScript code wrapped in curly braces `{}`
 
-### Imperative vs. Declarative Programming
+```jsx
+const name = "React";
+const element = <p>Hello {name}!</p>; // Outputs: Hello React!
+```
+
+### Imperative vs Declarative Programming
 
 To understand the difference between imperative and declarative code, let's look at an example of a simple button.
 
@@ -43,7 +47,7 @@ To understand the difference between imperative and declarative code, let's look
 
 #### Imperative Code in Vanilla JavaScript
 
-In imperative programming, your code performs a series of actions.
+You describe how the UI is built step by step.
 
 ```js
 const button = document.createElement("button");
@@ -59,9 +63,9 @@ document.body.append(button);
 - We add the event listener
 - We append the button to the body
 
-#### Declarative Code in React
+#### Declarative Code in React + JSX
 
-In declarative programming, your code describes a desired outcome.
+You describe what the UI should look like.
 
 ```jsx
 const element = (
@@ -82,11 +86,13 @@ const element = (
 
 ## React Components
 
-React components are **customizable, reusable building blocks** for a React application, They serve as **independent elements of the user interface** that can be used multiple times across different parts of the app. It contains its own structure, logic, and potentially styling.
+React components are reusable, independent building blocks of a React application. Each component combines logic and appearance and represents a part of the user interface that can be used multiple times.
 
-> 💡 There are hardly any limitations to how 'small' a component can be (e.g. a button), or how 'big' (e.g. an entire page).
+> 💡 Components can be as 'small' as a button or as 'big' as an entire page.
 
-To create a component in React, we define a **named function** (using PascalCase) and have it **return the desired elements using JSX**. We can then use the component in our code by using the function name as a tag name.
+### Creating a Component
+
+- A component is a function that returns JSX.
 
 ```jsx
 function Button() {
@@ -96,14 +102,30 @@ function Button() {
     </button>
   );
 }
-
-// Use the component by using the function name as a tag name
-const element = <Button />;
 ```
 
-This is a very powerful concept, because it allows us to reuse the same component in multiple places in our application.
+### Using Components
 
-> 💡 Components need to be named with PascalCase, otherwise React will not recognize them as components.
+- Use the component as a custom HTML tag:
+
+```js
+export default function App() {
+  return (
+    <div>
+      <Button />
+      <Button />
+      <Button />
+    </div>
+  );
+}
+```
+
+Key Rules:
+
+- Components must have PascalCase names.
+- Components must return JSX with one parent element.
+
+This is a very powerful concept, because it allows us to reuse the same component in multiple places in our application.
 
 > 📙 Read about [**Your First Component**
 > in the React Docs](https://react.dev/learn/your-first-component).
@@ -144,16 +166,27 @@ const myValue = "This is a string";
 const input = <input type="text" value={myValue} minLength={5} />;
 ```
 
-### Interpolating Expressions
+### Dynamic Values in JSX
 
-We can use any JavaScript expression inside JSX by wrapping it in curly braces. This is called interpolation. It is similar to string interpolation in JavaScript template strings.
+To make components dynamic, you can insert JavaScript expressions into JSX using curly braces `{}`.
 
-```jsx
+```js
+export default function App() {
+  const buttonText = "click with React";
+  return (
+    <button type="button" onClick={() => console.log("Hello React!")}>
+      {buttonText}
+    </button>
+  );
+}
+```
+
+```js
 const name = "Pawtricia";
 const element = <p>My cat's name is {name}</p>;
 ```
 
-```jsx
+```js
 const a = 5;
 const b = 10;
 
@@ -173,9 +206,7 @@ const element = (
 
 ## How React Renders
 
-React needs to know where to render the elements it creates. We select the DOM element we want to
-render into by using `document.querySelector()`. We then create a React root object. The root object
-has a `render()` method that we can use to render React elements into the DOM.
+React needs a **root element** in the DOM to render your application. This root acts as the entry point where React mounts its components
 
 **HTML**
 
@@ -183,70 +214,89 @@ has a `render()` method that we can use to render React elements into the DOM.
 <div id="root"></div>
 ```
 
-**JavaScript**
-
-```js
-const rootElement = document.querySelector("#root");
-const root = ReactDOM.createRoot(rootElement);
-root.render(<h1>Hello, world</h1>);
-```
-
-You'll probably never have to write this code yourself, because it is already included in all
-templates and starters. In the real world it usally looks like this:
+In most projects, this code is already provided in templates or starters. A typical setup looks like this:
 
 ```js
 const rootElement = document.getElementById("root");
-const root = ReactDOM.createRoot();
+const root = createRoot(rootElement);
 
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
 ```
 
-Here we have an imported `<App />` element that is wrapped in `<React.StrictMode>`.
+- `App`: The root React component of your application.
+- `StrictMode`: A development-only tool that highlights potential issues in your code without affecting the visible UI.
 
-> 💡 `StrictMode` sets up React to run in strict mode. In strict mode React points out potential
-> problems in an application.
+### How React Updates the DOM
 
-### React works smart, not hard
+React works **smart, not hard**. It uses the Virtual DOM to track changes and efficiently updates only the parts of the DOM that have changed compared to the last render.
 
-React only updates the DOM elements that have changed compared to the last render. This is very
-efficient and provides a great user experience (focus stays consistent, inputs keep their values,
-etc.) as well as a great developer experience (declaritive code is much easier to read).
+Benefits:
+
+- React avoids unnecessary updates, ensuring fast rendering.
+- Focus remains consistent, and inputs keep their values.
+- Declarative code is easier to write and understand.
 
 ## Nice to know: React, JSX, Transpilers and Bundlers
 
-Since JSX is not a standard JavaScript syntax, we need to use a [transpiler](https://babeljs.io/) (a tool that translates one variant of a language into another) to transform it into standard JavaScript, that can be understood by the browser.
+React uses JSX, a syntax extension that lets us write HTML-like code in JavaScript. However, JSX is not standard JavaScript, so it needs to be transformed into regular JavaScript that browsers can understand.
 
-A [bundler](https://rollupjs.org/) is a tool that combines all the files of our codebase into one file, that we can include in our HTML. The bundler also takes care of running the transpiler when needed.
+- Transpilers (e.g., Babel)
 
-The bundler creates a development server when we run `npm run dev` locally.
+  - Convert JSX into standard JavaScript code that browsers can run.
+  - Example: JSX like `<h1>Hello</h1>` gets converted to `createElement(...)`.
 
-> 💡 You might notice that in the challenges we are using an `import` statement to import `.css` files into our JavaScript files. This is not a standard JavaScript feature, but it is supported by the bundler. A css import statement is transformed into a `<link>` element in the HTML automatically.
->
-> ```js
-> import "./styles.css";
-> ```
+- Bundlers (e.g., Vite or Rollup)
+  - Combine all project files (JS, JSX, CSS) into optimized bundles.
+  - Automatically run the transpiler when needed.
+  - Provide a development server with live reloading when you run:
+
+```sh
+  npm run dev
+```
+
+### Importing CSS Files
+
+Bundlers allow you to use non-standard features, like importing CSS files directly into JavaScript:
+
+```js
+import "./styles.css";
+```
+
+- The bundler transforms this into a `<link>` tag in the final HTML.
+- This simplifies managing styles in modern JavaScript projects.
 
 ---
 
 ## npm
 
-[npm](https://www.npmjs.com/) a package registry that works like an app store for your project.
+[npm](https://www.npmjs.com/) (Node Package Manager) is a package registry for JavaScript projects. It allows you to:
 
-It is used to install and manage packages (libraries) for a project.
+- Install and manage libraries (called packages):
 
-It is also used to run scripts that are defined in the `package.json` file (like `npm run dev`)
+```sh
+  npm install package-name
+```
+
+- Run project scripts defined in `package.json`, like starting the development server.
+
+```sh
+  npm run dev
+```
 
 ---
 
 ## `package.json`
 
-Packages that are installed into your project are called dependencies. They are kept inside a
-`package.json` file in your project root. The `package.json` file also contains information about
-your project.
+The `package.json` file is the configuration file for your project. It includes:
+
+- Metadata: Project name, version, and description.
+- `dependencies`: Libraries your app needs to run.
+- `devDependencies`: Tools needed for development (e.g., linters, bundlers).
+- `scripts`: Shortcuts for running commands like starting a development server.
 
 A `package.json` may look something like this:
 
@@ -271,30 +321,31 @@ A `package.json` may look something like this:
 }
 ```
 
-- `dependencies` are packages that your application source code directly depends on, like libraries
-  or frameworks.
-- `devDependencies` are packages that help you while developing your application, like linters or
-  build tools.
-
 ### Installing dependencies
 
-`dependencies` and `devDependencies` inside the `package.json` can be installed by running
-`npm install` (or just `npm i` for short).
+To install all dependencies listed in `package.json`, run:
 
-> 💡 Do not forget to run `npm install` after cloning a new repository that has a `package.json`
-> file.
+```sh
+ npm install
+```
 
-When installing, npm creates a `node_modules` folder and a `package-lock.json` file.
+> 💡 Always run `npm install` after cloning a project to set up its dependencies.
 
-- `node_modules` must always be in your `.gitignore` and must not be committed to your repository!
-- `package-lock.json` should be commited to your repository.
+- `node_modules`:
+
+  - Contains all installed packages (dependencies).
+  - **Do not commit this folder** to your repository as it is large and can be regenerated using npm install.
+  - Add `node_modules` to your `.gitignore` file to exclude it from version control.
+
+- `package-lock.json`:
+  - Stores the exact versions of installed dependencies to ensure consistency across different environments and team members.
+  - **Should be committed** to the repository to avoid unexpected changes caused by newer versions of a package.
 
 ---
 
-## Project Scaffolding with `Vite`
+## Setting Up a React Project with Vite
 
-Project scaffolding is the process of creating a new project. You will use the
-[Vite](https://vitejs.dev/guide/) tool to create a new React project automatically.
+[Vite](https://vitejs.dev/guide/) automates project scaffolding and setup, saving time.
 
 > 💡 In principle, you could create a new React project from scratch. However, this would be a lot of work and we would have to set up a lot of things ourselves.
 
@@ -303,16 +354,22 @@ Project scaffolding is the process of creating a new project. You will use the
 A new project is created by running the following command in the terminal:
 
 ```sh
-npm create vite@latest my-react-app
+  npm create vite@latest my-react-app
 ```
 
 - If running this command for the first time, you need to install the `create-vite` package, accept and continue.
-- In the menu, choose React as the framework, afterwards pick the Javascript **without** SWC (speedy web compiler) variant.
-- Run `cd my-first-react-app` to go into the project and open in VSCode with `code .`
-- Run `npm i`
-- Run `npm run dev`to start the dev server
+- Select `React` as the framework and the `JavaScript` template (without SWC – speedy web compiler).
+- Navigate into your project folder:
 
-A new react project will have a lot of files and folders. Here is a brief overview:
+```sh
+  cd my-first-react-app
+  npm install
+  npm run dev
+```
+
+### Project Structure
+
+Here’s a quick overview of key files and folders:
 
 | File / Folder        | Description                                                                       | contains                                                                           |
 | -------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
