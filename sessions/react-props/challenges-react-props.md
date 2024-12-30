@@ -4,7 +4,7 @@
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/greeting
@@ -14,7 +14,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/greetin
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/sum
@@ -24,7 +24,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/sum
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/smiley
@@ -34,7 +34,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/smiley
 
 (difficulty: 🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-props/button
