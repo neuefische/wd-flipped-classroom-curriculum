@@ -14,29 +14,36 @@ Follow this guide to set up your MongoDB Atlas account and your first database.
 - Fill in the required information, including your email, and create a password.
 - Alternatively, you can sign up using your Google account.
 
-**2. Create a New Project** - _This step may vary and could be automatic in some cases._
+**2. Enable your multi-factor authentication methods**
+
+- You can set up multi-factor authentication methods,
+- Or skip this by selecting "Remind me later".
+
+**3. Create a New Project** - _This step may vary and could be automatic in some cases._
 
 - Enter a name for your project (e.g., "Web Dev Bootcamp").
 
-**3. Set Up a Cluster**
+**4. Set Up a Cluster**
 
+- Navigate to the "DATABASE > Clusters" tab,
+- Select `Build a Cluster`,
 - Choose a free tier: `M0 Free`.
 - Select a provider: `AWS`.
 - Select a region: `Frankfurt`.
-- Click on "Create".
+- Click on "Create Deployment".
 - Wait for the cluster to deploy; this may take a few minutes.
 
-**4. Configure Database Access**- _You might be led to this screen automatically after creating the cluster._
+**5. Configure Database Access**- _You might be led to this screen automatically after creating the cluster._
 
-**4.1 Add a Databse User**
+**5.1 Add a Databse User**
 
 - Go to the "Security > Database Access" tab.
 - Click "Add New Database User".
 - Create a user with a username and password. 💡 Make sure to save these credentials as you will need them to connect to your database.
-- Choose "Read and Write to any database" as the user role.
+- Choose "Read and Write to any database" as their `Built-in Role`.
 - Click "Add User".
 
-**4.2 Change Your IP Adress**
+**5.2 Change Your IP Adress**
 
 - Go to the "Security > Network Access" tab.
   -Make sure that the IP adress is `0.0.0.0/0  (includes your current IP address)`
@@ -47,7 +54,7 @@ Follow this guide to set up your MongoDB Atlas account and your first database.
 
 **1. Create a Fish-Shop Database**
 
-- Go to the "Deployments > Database" tab.
+- Go to the "Database > Clusters" tab.
 - Click "Browse Collections".
 - Click "Create Database".
 - In the dialog that appears, enter `fish-shop-database` as the `database name`.
