@@ -36,16 +36,6 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-positioning/dem
 
 ---
 
-> Hint: In case you prefer the Sweeties Demo for this session, it is located in the archive folder. You can install it using this command:
-
-```
-npx ghcd@latest wd-bootcamp/web-exercises/tree/main/archive/css-positioning/sweeties-demo-start
-```
-
-> The corresponding session guide can be found [here](../../archive/css-positioning/sweeties-README.md).
-
----
-
 ## Session Guide
 
 Elements on a web page are positioned according to the normal document flow, which follows the order of elements in the HTML document. However, there are times when we need to position elements outside of this normal flow. One way to accomplish this is to use the `position` property.
@@ -66,15 +56,14 @@ Elements on a web page are positioned according to the normal document flow, whi
 
 - Explain that `position: static` is the default declaration for all elements.
 - Mention that this doesn't have to be defined.
-- The position of the element is determined by the document normal flow.
+- The position of the element is determined by the document normal flow
 - Properties `top`, `bottom`, `right`, `left` have no effect.
-- Demonstrate the latter by trying to move the `.infobox__bookmark`.
+- Demonstrate the latter by trying to move the `.plate`.
 
 ### `position: fixed`
 
 - Explain that this declaration "pins" the element to a fixed position.
-- Explain that we want our header to be fixed in its position and always visible, even when scrolling.
-- Navigate to the `.header` selector in your `styles.css` and add the following to the rule:
+- Navigate to the `.header` selector in your `styles.css` and add the following to the rule
 
 ```css
 .header {
@@ -89,56 +78,55 @@ Elements on a web page are positioned according to the normal document flow, whi
 - The element is lifted out of the normal flow of the document.
 - And not just that: `top`, `right`, `bottom` and `left` refer to the viewport - the browser window.
 
-- Next, we want our "Back to top" link to be always visible.
-- Now add the following to the `.to-top` rule:
+- Now add the following to the `.button` rule:
 
 ```css
-.to-top {
+.button {
   position: fixed;
-  bottom: 20px;
-  left: 5px;
+  left: 20px;
+  bottom: 40px;
   /* ... */
 }
 ```
 
-- The link element is now pinned to that exact position and we can use it to navigate back to the top not just from the bottom of the page, but also around the midway point, and so on.
+- The button element is now pinned to that exact position and we can use it to navigate back to the top not just from the bottom of the page, but also around the midway point, and so on.
 - Demonstrate the behavior of `top`, `right`, `bottom` and `left` by adjusting e.g. the width of the browser window.
+- The button stays put no matter what, which may lead to undesirable outcomes such as the button getting stuck far off to the left, but we'll choose to ignore this for now. At a later point we'll learn how to adjust such behaviors.
 
 ### `position: relative`
 
 - Explain that this declaration is only effective when paired with `position: absolute`.
-- Point out that the element is still displayed according to its position in the normal flow of the document, although you can displace it with the `top`, `bottom`, `right` and `left` properties.
-- Add the following to the `.infobox` rule:
+- Point out that the element still presents according to its position in the normal flow of the document, although you can displace it with the `top`, `bottom`, `right` and `left` properties.
+- Add the following to the `.header__headline` rule:
 
 ```css
-.infobox {
+.header__headline {
   position: relative;
   /* ... */
 }
 ```
 
-- Explain that we have now created a "pin board" for its child elements that we want to position with `position: absolute` that has the exact dimensions of our `infobox` element, which is a `<section>` block element.
-- Notice that all elements with the class `.infobox` now overlap our header, we will fix this at the end of the demo.
+- Explain that we have now created a "pin board" for its child elements that we want to position with `position: absolute` that has the exact dimensions of our `header__headline` element, which is an `<h1>` block element.
 
-> 💡 Note: If the students have questions regarding what's allowed to nest into e.g. a `<section>` element, here's a [website](https://caninclude.glitch.me/) to help you out with that question.
+> 💡 Note: If the students have questions regarding what's allowed to nest into e.g. a `<h1>` element, here's a [website](https://caninclude.glitch.me/) to help you out with that question.
 
 ### `position: absolute`
 
 - Explain that this declaration moves the element outside of the document normal flow.
 - The element is positioned "absolutely" inside the "nearest non-static ancestor element".
 - Note: Oftentimes, students will use `position: absolute` without declaring `position: relative` on an ancestor element, which will pin the element to the next best `relative` ancestor, which is oftentimes the `<body>` element. It seems to work at first, but it usually creates unexpected behavior.
-- Add the following to the `.infobox__bookmark` rule:
+- Add the following to the `.plate` rule:
 
 ```css
-.infobox__bookmark {
+.plate {
   position: absolute;
   top: 20px;
-  right: 20px;
+  left: 20px;
   /* ... */
 }
 ```
 
-- The bookmark is now positioned to the right of the title.
+- The plate is now positioned to the left of the title.
 - Feel free to demonstrate the relation between `position: relative` and `position: absolute` by playing with the values for `top`, `right`, `bottom`, `left`, such as `top: 0`.
 
 ### `position: sticky`
@@ -146,23 +134,47 @@ Elements on a web page are positioned according to the normal document flow, whi
 - This property displays some interesting behavior: it appears to be part of the normal document flow, until it reaches a certain point.
 - Once it reaches a value (that you need to determine) it becomes "sticky" and scrolls along with the user.
 - Or, in other words: it keeps an offset relative to its nearest scrolling ancestor (i.e. appears like a fixed element).
-- Navigate to the `.cta-box` selector and add the following code to the rule:
+- Navigate to the `.donut` selector and add the following code to the rule:
 
 ```css
-.cta-box {
+.donut {
   position: sticky;
-  top: 48px;
+  top: 30px;
   /* ... */
 }
 ```
 
-- Now the call to action box "sticks" to its intended goal: the header!
+- Now the donut "sticks" to its intended goal: the plate!
 - Demonstrate the behavior of `position: sticky` by playing with the value of `top`.
 
 ### `z-index`
 
-Point out that some of our infobox elements currently unintentionally overlap the header as well as the call to action box.
+To explain the `z-index`, prepare the following:
 
+- Take a look at the purple info boxes.
+- They contain a little lollipop that we want to position absolutely.
+
+- Add the following to the rule of the `.content__text--info` selector:
+
+```css
+.content__text--info {
+  position: relative;
+  /* ... */
+}
+```
+
+- Now add the following to the `.content__accent` rule:
+
+```css
+.content__accent {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  /* ... */
+}
+```
+
+- The accents are positioned correctly, but when we start to scroll, suddenly the info boxes are scrolling across the header.
 - This is due to the stacking context.
 - To fix this, we need the `z-index` property.
 
@@ -170,21 +182,25 @@ Point out that some of our infobox elements currently unintentionally overlap th
 
 ```css
 .header {
-  z-index: 10;
+  z-index: 1;
   /* ... */
 }
 ```
 
-- Now the info boxes scroll below the header.
+- Now the info boxes scroll below the header, but so does the donut.
+- We need to "lift" the donut to a `z-index` value that corresponds with the value defined as part of the `.header` rule.
+- This value can be equivalent or below `1`, seeing as how we want the donut to be on the plate.
 
-- Repeat the step for the `.cta-box` rule:
+- Add the following to the `.donut` rule:
 
 ```css
-.cta-box {
-  z-index: 10;
+.donut {
+  z-index: 1;
   /* ... */
 }
 ```
+
+- Now the donut sticks to the plate again!
 
 - Further explain the "under the hood" behavior of the `z-index` property:
 
