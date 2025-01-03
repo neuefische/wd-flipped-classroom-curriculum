@@ -234,4 +234,19 @@ Testing components gives us confidence that they function as expected. This beco
   });
   ```
 
+- In your terminal you might see this error message once you work with user events and run your tests:
+
+```
+  Warning: An update to Movies inside a test was not wrapped in act(...).
+
+  When testing, code that causes React state updates should be wrapped into act(...):
+
+  act(() => {
+    /* fire events that update state */
+  });
+  /* assert on the output */
+```
+
+- You can ignore this error and also tell students to ignore this error. The exact root cause for this error is currently unclear, but we suspect it to be on the library's side.
+
 > 💡 The final demo includes more test examples for further practice. Feel free to explore these with students or hand them out as a reference.
