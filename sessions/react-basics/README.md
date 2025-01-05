@@ -150,7 +150,7 @@ export default function App() {
 
 _Optional_
 
-- If time allows, show how to move the `Button` function into its own file for better structure, mirroring how React organizes components.
+- If time allows, show how to move the `Button` function into its own file for better structure, mirroring how React organises components.
 
 ---
 
