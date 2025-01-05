@@ -63,7 +63,7 @@ React simplifies building interactive user interfaces by focusing on what the UI
 - We’ll start by building a simple button component in Vanilla JS to compare it with React later.
 
 - Open the Vanilla JS Demo
-- In the `index.html`, we define a `div` element with a `data-js` attribute.
+- In the `index.html`, we have a `div` element with a `data-js` attribute.
 - This acts as the `root` container for our app – similar to how React uses a `root` element, which we’ll explore in more detail later.
 
 ```bash
