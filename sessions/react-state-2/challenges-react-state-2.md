@@ -42,7 +42,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/perso
 
 ## Bonus: Fix Triple Count
 
-(difficulty: 🔥)
+(difficulty: 🔥🔥)
 
 Solve this challenge by running this command in your terminal:
 
@@ -52,7 +52,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-2/tripl
 
 ## Bonus: Fix Conditionally Rendered `useState` Hook
 
-(difficulty: 🔥)
+(difficulty: 🔥🔥)
 
 Solve this challenge by running this command in your terminal:
 
