@@ -4,7 +4,7 @@
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/buttons-and-children
@@ -14,7 +14,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/butto
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/fragments
@@ -24,7 +24,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/fragm
 
 (difficulty: 🔥🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-nesting/navigation
