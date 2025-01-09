@@ -4,7 +4,7 @@
 
 (difficulty: 🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/adding-animals
@@ -14,7 +14,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/addin
 
 (difficulty: 🔥🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/tags
