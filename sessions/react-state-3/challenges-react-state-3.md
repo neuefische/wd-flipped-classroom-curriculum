@@ -24,7 +24,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/tags
 
 (difficulty: 🔥🔥🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-form
@@ -35,10 +35,9 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journ
 (difficulty: 🔥🔥🔥)
 
 > 💡 If you are far enough along with your own journal app, follow the
-> [instructions of this challenge](https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-favorite-button-shared-state#readme)
-> using your own code.
+> instructions of this challenge using your own code.
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-favorite-button-shared-state
@@ -49,10 +48,9 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journ
 (difficulty: 🔥🔥🔥)
 
 > 💡 If you are far enough along with your own journal app, follow the
-> [instructions of this challenge](https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-filter#readme)
-> using your own code.
+> instructions of this challenge using your own code.
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-state-3/journal-app-filter
