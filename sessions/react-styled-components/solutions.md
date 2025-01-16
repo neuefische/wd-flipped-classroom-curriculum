@@ -24,7 +24,7 @@ A solution to this challenge can be found [here](https://github.com/wd-bootcamp/
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/box_solution
 ```
 
-## Lotr App Styling
+## Lord of the Rings Fanpage
 
 A solution to this challenge can be found [here](https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling_solution). Alternatively, you can download the code with the following command:
 
