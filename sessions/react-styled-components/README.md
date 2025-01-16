@@ -196,7 +196,7 @@ export default function HomePage() {
 - Highlight that we are writing a JavaScript template string and can use interpolation with `${}`.
 - When interpolating within a styled component, we can write a function that receives all props passed to the component.
 - Write the code to interpolate the `$color` prop. Replace the old declaration for `background-color` with the following.
-- Explain that here we check if the `$color` prop is equal to `"danger"`. If so, set the background color to the css variable `--color-danger` and if not then use `--color-primary`.
+- Explain that here we check if the `$color` prop is equal to `"danger"`. If so, set the background color to the css variable `--color-danger` and if not then use `--primary-color`.
 - Show the two different colored buttons in the browser.
 
 ```jsx
@@ -283,33 +283,33 @@ export default styled.button`
   color: white;
   border-radius: 4px;
   background-color: ${(props) =>
-    props.$color === "danger" ? "var(--color-danger)" : "var(--color-primary)"};
+    props.$color === "danger" ? "var(--color-danger)" : "var(--primary-color)"};
 
   ${(props) =>
     props.$variant === "text" &&
     css`
       background-color: transparent;
-      color: var(--color-primary);
+      color: var(--primary-color);
     `};
 
   ${(props) =>
     props.$variant === "outlined" &&
     css`
       background-color: transparent;
-      color: var(--color-primary);
-      border: solid 2px var(--color-primary);
+      color: var(--primary-color);
+      border: solid 2px var(--primary-color);
     `};
 
   ${(props) =>
     props.$variant === "contained" &&
     css`
-      background-color: var(--color-primary);
+      background-color: var(--primary-color);
       color: white;
     `};
 
   &:hover {
-    color: var(--color-primary);
-    background-color: var(--color-secondary);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
   }
 `;
 ```
