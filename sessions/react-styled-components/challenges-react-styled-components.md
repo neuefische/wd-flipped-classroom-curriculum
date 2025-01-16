@@ -4,7 +4,7 @@
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/card-conversion
@@ -14,7 +14,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-compon
 
 (difficulty: 🔥🔥)
 
-Solve this challenge on by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/styled-navbar
@@ -24,7 +24,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-compon
 
 (difficulty: 🔥)
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/box
@@ -34,11 +34,10 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-compon
 
 (difficulty: 🔥🔥🔥)
 
-> 💡 If you are far enough along with your own Lord of the Rings App, follow the
-> [instructions of this challenge](https://github.com/wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling?file=/README.md)
+> 💡 If you are far enough along with your own Lord of the Rings App, follow the instructions of this challenge
 > using your own code.
 
-Solve this challenge by running this command in your Terminal:
+Solve this challenge by running this command in your terminal:
 
 ```
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/react-styled-components/lotr-app-styling
