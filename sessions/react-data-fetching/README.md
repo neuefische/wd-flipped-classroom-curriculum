@@ -42,7 +42,7 @@ Additionally we will learn how to connect local state to the data we fetched wit
 ### Recap: Fetching Data in React
 
 - Remind students how to fetch data in React using effects.
-- Open the `Joke` Component in the demo and show how it works.
+- Open the demo and show how it works.
 - Remind students that with our naive implementation we are not handling a few core things:
   - Error handling
   - Refetching (neither manually nor on a timer)
