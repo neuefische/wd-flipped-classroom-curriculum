@@ -75,7 +75,7 @@ That starts the discussion between you and your personal expert JavaScript coach
 
 > ❗️ Make sure to utilize the follow-up questions to understand the problem! Never copy and past code blindly from ChatGPT - you don't want to end up like this guy! 👇🤭
 
-![Meme](./assets/meme.png)
+![Meme](./images/chatgpt-pair-programming_meme.png)
 
 [video]: https://drive.google.com/file/d/1j5Co0TvEcxYt2zWLColkHt7tiL1MwAP-/view?usp=sharing
 [Claude]: https://claude.ai/
