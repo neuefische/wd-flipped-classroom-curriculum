@@ -49,7 +49,7 @@ This is the current session timetable for our cohorts.
 > | 34 | [Backend API Routes](sessions/backend-api-routes/) | [Self-Directed Learning 7](sessions/self-directed-learning/) |
 > | 35 | [Backend MongoDB](sessions/backend-mongodb/) | [Backend Read](sessions/backend-read) |
 > | 36 | [Backend Create](sessions/backend-create) | [Backend Update and Delete](sessions/backend-update-and-delete) |
-> | 37 | [**Recap Project 6**](sessions/) | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories/) |
+> | 37 | [**Recap Project 6**](sessions/recap-project-6) | [Agile Workflow and User Stories](sessions/agile-workflow-and-user-stories/) |
 > | 38 | Design Workshop (external) | [Capstone Grouping and Setup](sessions/capstone-grouping-and-setup/) |
 > | 39 | Design Workshop (external) | [Capstone Prep 1](sessions/capstone-prep/) |
 > | 40 | [Capstone Prep 2](sessions/capstone-prep/) | [How to Capstone](sessions/how-to-capstone/) |
