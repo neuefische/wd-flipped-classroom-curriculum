@@ -1,4 +1,4 @@
-# Challenges: Session Name
+# Challenges: UX/UI Principles
 
 ## Design Sensei
 

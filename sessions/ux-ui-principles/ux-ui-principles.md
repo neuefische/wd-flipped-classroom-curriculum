@@ -1,4 +1,4 @@
-# UX/UI Principles for Web Developers
+# UX/UI Principles
 
 ## Learning Objectives
 
