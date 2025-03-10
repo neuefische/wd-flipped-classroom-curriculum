@@ -12,12 +12,12 @@ Starter Code:
 
 ```js
 const exampleNumbers = [2, 7, 11, 15];
-const target = 9;
+const exampleTarget = 9;
 
-const result = twoSums(exampleNumbers, target); // Expected Output: [0,1]
+const result = twoSums(exampleNumbers, exampleTarget); // Expected Output: [0,1]
 console.log(result);
 
-// Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+// Explanation: Because exampleNumbers[0] + exampleNumbers[1] == 9, we return [0, 1].
 
 function twoSums(numbers, target) {}
 ```
