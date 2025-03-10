@@ -38,9 +38,8 @@ Job interviews are one of the most profitable skills you can learn! Boost your c
 - **Ask questions if needed:**
   - Clarify any uncertainties about the problem.
 
-
 2. Come Up with a Solution in Plain Language
-Very often you could solve the problem yourself but you still cannot come up with the small steps that you need as instructions for the computer. In this case it helps to make yourself aware what happens in your brain when you solve the task.
+   Very often you could solve the problem yourself but you still cannot come up with the small steps that you need as instructions for the computer. In this case it helps to make yourself aware what happens in your brain when you solve the task.
 
 - **Solve the problem mentally:** Break down what happens in your brain when you solve the task.
 
@@ -58,6 +57,7 @@ Now turn one comment after another to JavaScript code. Always ask yourself "Do i
 Always only concentrate on the small step that you are implementing right now. Avoid thinking about the whole problem at this point.
 
 ## Bonus
+
 > 💡 check this guide out to unlock the power of ChatGPT to help you with problem solving 💪👉😉 [Guide]!
 
-[Guide]: ../self-directed-learning-3/chatgpt-pair-programming.md
+[Guide]: ../self-directed-learning/assets/chatgpt-pair-programming.md

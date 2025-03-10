@@ -17,7 +17,7 @@ Please make sure you have an account on www.codewars.com, if not you can join [h
 
 > 💡 If not sure where to start, it is highly recommended to refer to this guide 👉😉 [Guide]!
 
-[Guide]: ../self-directed-learning-3/chatgpt-pair-programming.md
+[Guide]: ../self-directed-learning/assets/chatgpt-pair-programming.md
 [Problem 1]: https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript
 [Problem 2]: https://www.codewars.com/kata/525c65e51bf619685c000059/train/javascript
 [Problem 3]: https://www.codewars.com/kata/52ae6b6623b443d9090002c8/train/javascript
