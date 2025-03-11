@@ -1,6 +1,21 @@
 # Solutions: CodeWars Challanges
 
-## [Problem 1](https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript)
+## [Problem 1](https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript)
+
+```js
+function likes(names) {
+  if (names.length === 0) return "no one likes this";
+  if (names.length === 1) return `${names[0]} likes this`;
+  if (names.length === 2) return `${names[0]} and ${names[1]} like this`;
+  if (names.length === 3) {
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+  }
+
+  return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+}
+```
+
+## [Problem 2](https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript)
 
 ```js
 function count(string) {
@@ -14,51 +29,35 @@ function count(string) {
     }
   }
 
-  return charCount
+  return charCount;
 }
 ```
 
-## [Problem 2](https://www.codewars.com/kata/525c65e51bf619685c000059/train/javascript)
+## [Problem 3](https://www.codewars.com/kata/525c65e51bf619685c000059/train/javascript)
 
 ```js
+function cakes(recipe, available) {
   let maxCakes = Infinity;
 
   for (const ingredient in recipe) {
     if (ingredient in available) {
-      maxCakes = Math.min(maxCakes, Math.floor(available[ingredient] / recipe[ingredient]));
+      maxCakes = Math.min(
+        maxCakes,
+        Math.floor(available[ingredient] / recipe[ingredient])
+      );
     } else {
       return 0;
     }
   }
 
   return maxCakes;
-```
-
-## [Problem 3](https://www.codewars.com/kata/52ae6b6623b443d9090002c8/train/javascript)
-
-```js
-function guessGifts(wishlist, presents) {
-   let possibleGifts = [];
-
-  presents.forEach(present => {
-    wishlist.forEach(item => {
-      if (item.size === present.size &&
-          item.clatters === present.clatters &&
-          item.weight === present.weight) {
-        if (!possibleGifts.includes(item.name)) {
-          possibleGifts.push(item.name);
-        }
-      }
-    });
-  });
-
-  return possibleGifts;
 }
 ```
 
 ## [Problem 4](https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript)
+
 ```js
-function toCamelCase(str){
+function toCamelCase(str) {
   return str
     .split(/[-_]/) // Split the string by dash or underscore
     .map((word, index) => {
@@ -67,42 +66,12 @@ function toCamelCase(str){
       }
       return word.charAt(0).toUpperCase() + word.slice(1); // Capitalize the first letter of subsequent words
     })
-    .join(''); // Join the words back together without spaces
+    .join(""); // Join the words back together without spaces
 }
 ```
 
-## [Problem 5](https://www.codewars.com/kata/5d23d89906f92a00267bb83d/train/javascript)
-```js
-function getOrder(order) {
-  // Define the menu items in the desired order
-  const menuItems = [
-    "Burger", "Fries", "Chicken", "Pizza",
-    "Sandwich", "Onionrings", "Milkshake", "Coke"
-  ];
+## [Problem 5](https://www.codewars.com/kata/52c31f8e6605bcc646000082/train/javascript)
 
-  // Create an array to hold the formatted order
-  let formattedOrder = [];
-
-  // Iterate through each menu item
-  menuItems.forEach(item => {
-    // Use a regular expression to find how many times the item appears in the order
-    const regex = new RegExp(item.toLowerCase(), "g");
-    const matches = order.match(regex);
-
-    // If the item is found, add it to the formatted order array
-    if (matches) {
-      for (let i = 0; i < matches.length; i++) {
-        formattedOrder.push(item);
-      }
-    }
-  });
-
-  // Join the formatted order array into a single string with spaces between items
-  return formattedOrder.join(' ');
-}
-```
-
-## [Problem 6](https://www.codewars.com/kata/52c31f8e6605bcc646000082/train/javascript)
 ```js
 function twoSum(nums, target) {
   // create an empty object to store the complements
@@ -125,7 +94,7 @@ function twoSum(nums, target) {
 }
 ```
 
-OR 
+OR
 
 ```js
 function twoSum(nums, target) {
@@ -140,5 +109,53 @@ function twoSum(nums, target) {
       }
     }
   }
+}
+```
+
+## [Problem 6](https://www.codewars.com/kata/5d23d89906f92a00267bb83d/train/javascript)
+
+```js
+const menuItems = [
+  "Burger",
+  "Fries",
+  "Chicken",
+  "Pizza",
+  "Sandwich",
+  "Onionrings",
+  "Milkshake",
+  "Coke",
+];
+
+function GetOrder(input) {
+  const orders = [];
+
+  menuItems.forEach((dish) => {
+    input.replaceAll(dish.toLowerCase(), () => {
+      // function runs for each replacement aka match
+      orders.push(dish);
+    });
+  });
+
+  return orders.join(" ");
+}
+
+function getOrderVariant2(input) {
+  const orders = [];
+
+  menuItems.forEach((dish) => {
+    for (const _match of input.matchAll(dish.toLowerCase())) {
+      orders.push(dish);
+    }
+  });
+
+  return orders.join(" ");
+}
+
+function getOrderVariant3(input) {
+  return menuItems
+    .flatMap((dish) =>
+      [...input.matchAll(dish.toLowerCase())].map((item) => dish)
+    )
+    .join(" ");
 }
 ```
