@@ -133,7 +133,7 @@ const user = { // singular for single items
 ### console.logs
 
 ```js
-const { data } = userSWR("...");
+const { data } = useSWR("...");
 console.log(data); // remove before creating a PR
 ```
 
