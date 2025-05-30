@@ -1,63 +1,35 @@
 # CSS Grid
 
-> 💡 feel free to create a personal branch of this guide to add your own notes
-
-| duration | content         |
-| -------- | --------------- |
-| 0:45     | Session         |
-| 1:30     | Active Learning |
-| 0:15     | Recap           |
-
 ## Learning objectives
 
-- using CSS Grid to layout Webpages
-- positioning elements in Grid cells
-- aligning cells in a Grid
+- Using CSS Grid to layout Webpages
+- Positioning elements in Grid cells
+- Aligning cells in a Grid
 
----
+## Requirements
 
-## Arrival: Motivate students and prepare them for today's topic(s)
-
-> 💡 Breathe and relax :)
-
-### Which important problem will we solve today?
-
-Some layouts are hard (if not impossible) to create with the layout methods we already know. Grid is
-another way to create more complex two-dimensional layouts.
-
-### Why is the content of today's block that important for the students?
-
-You need to know the most important layout methods, to decide what method to use when and why.
-
-### Pose a question to be answered by the end of the block!
-
-Why do we need another layout algorithm for the web?
-
----
-
-## Activate prior knowledge of students
-
-### Which previously learned concepts will be utilized in this session?
-
-- Some flexbox
-
----
+- HTML Basics
+- CSS Basics
+- CSS Box Model
+- CSS Flexbox
 
 ## Demo
 
 Use this demo by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/demo-start
 ```
 
 You can check out the final version of this demo by running this command in your Terminal:
 
-```
+```bash
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/demo-end
 ```
 
-## Inform: Session Guide
+---
+
+## Session Guide
 
 - Grid is a very versatile layout mechanism with many properties.
 - This session only shows one possible way of approaching the subject.
@@ -141,38 +113,38 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/demo-end
   Explain that there is a way to "draw" the grid template in CSS using "ASCII art". Add the
   following code into the CSS:
 
-```css
-.bootcamp-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-areas:
-    "web web  ux   da"
-    "ds  java java da";
-}
-```
+    ```css
+    .bootcamp-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-areas:
+        "web web  ux   da"
+        "ds  java java da";
+    }
+    ```
 
 - Explain why we're not seeing the layout yet: The template is defined, but the children don't yet
   know in which area (slot) they should be placed.
 - Show the named areas in the dev tools.
 - Add the `grid-area` property to place children inside the areas:
 
-```css
-.bootcamp--1 {
-  grid-area: web;
-}
-.bootcamp--2 {
-  grid-area: ux;
-}
-.bootcamp--3 {
-  grid-area: ds;
-}
-.bootcamp--4 {
-  grid-area: java;
-}
-.bootcamp--5 {
-  grid-area: da;
-}
-```
+    ```css
+    .bootcamp--1 {
+      grid-area: web;
+    }
+    .bootcamp--2 {
+      grid-area: ux;
+    }
+    .bootcamp--3 {
+      grid-area: ds;
+    }
+    .bootcamp--4 {
+      grid-area: java;
+    }
+    .bootcamp--5 {
+      grid-area: da;
+    }
+    ```
 
 - Explain how `grid-template-areas` can be very visual.
 - Point out that the columns are not equal width anymore and that we want 4 columns that all have
@@ -189,47 +161,3 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-grid/demo-end
 > approaching the subject and intentionally ignores many grid properties (such as alignment,
 > auto-fit/fill, minmax, named lines, etc.). Most of what is not covered here is part of the
 > handout.
-
----
-
-## Process: Challenges
-
-- Provide the [handout](css-grid.md) and [challenges](challenges-css-grid.md) to the students
-- Open the handout and walk the students through the tasks
-- Divide the students into groups of 2
-- Remind them of the ground rules:
-  - meet again 30 min before lunch break in the class room
-  - they can ask the coaches for help at any time
-  - always try to help each other
-  - take a break within the next 1.5 hrs
-  - keep an eye on Slack
-
----
-
-## Evaluate: Recap of the assignment / Discussion of the MVP / Solution
-
-- Revisit the question that was posed in the beginning of the session and try to answer it with a
-  few phrases.
-
----
-
-## Checkout
-
-> 💡 In case the students seem frustrated try to find some encouraging words (e.g. remind them of
-> how far they have come already) :)
-
-- Summarize the day by repeating all of the topics that were discussed
-- Highlight the progress made that day
-- Encourage the students to repeat what they learned with practical exercises
-- Remind them to rest :)
-
-## Keywords for Recap:
-
-grid, grid-template, 1fr, span 2
-
-> These keywords are for the weekly summary on Fridays. We use the keywords to automatically
-> generate excalidraw tags with the help of
-> [this amazing tool](https://github.com/F-Kirchhoff/tag-cloud-generator). The students structure
-> the cards in a pattern that makes sense for them. Each tag, that is added to the structure needs
-> to be explained in a few words by one student. We go in rounds one by one until all tags are
-> included in the structure.
