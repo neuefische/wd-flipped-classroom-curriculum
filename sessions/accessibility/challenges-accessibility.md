@@ -14,11 +14,11 @@ Welcome to this active learning session focused on exploring Accessibility in a 
 
 > ❗️ Start your active learning journey by clicking [here](https://web-active-learning.vercel.app/documents/accessibility).
 
-## Quiz App Project Continuation
+## Personal Website Continuation
 
 (difficulty: 🔥🔥)
 
-Continue working on your Quiz App project and enhance its accessibility. Below are some ideas to guide your progress:
+Continue working on your Personal Website and enhance its accessibility. Below are some ideas to guide your progress:
 
 - Ensure that semantic HTML is used wherever possible.
 - Verify that all interactive elements have an accessible name. For instance, an icon that the user can click might still lack an accessible name.
