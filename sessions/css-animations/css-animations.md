@@ -2,10 +2,10 @@
 
 ## Learning Objectives
 
-- [ ] Understanding the `transition` property
-- [ ] Understanding easing functions
-- [ ] Understanding what properties can be animated
-- [ ] Understanding the `animation` property
+- Understanding the `transition` property
+- Understanding easing functions
+- Understanding what properties can be animated
+- Understanding the `animation` property
 
 ---
 
