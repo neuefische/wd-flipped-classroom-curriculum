@@ -18,13 +18,13 @@
 Demo Start:
 
 ```bash
-npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-animations/demo-start
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-animation/demo-start
 ```
 
 Demo End:
 
 ```bash
-npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-animations/demo-end
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-animation/demo-end
 ```
 
 ---
