@@ -106,68 +106,6 @@ Here we present some concrete scenarios.
 }
 ```
 
-### Preventing unwanted cascading
-
-Let's say we have an homepage with multiple `.homepage-section`, one of them looking like this:
-
-```js
-<section class="homepage-section">
-  <h2>About us<h2>
-  <p>We offer the following services:</p>
-  <ul>
-    <li>Service one</li>
-    <li>Service two</li>
-    <li>Service three</li>
-  </ul>
-  <div class="cards">
-    <article>
-      <h3>Why you should choose us</h3>
-      <ul>
-        <li>Reason one</li>
-        <li>Reason two</li>
-        <li>Reason three</li>
-      </ul>
-    </article>
-    <article>...</article>
-    <article>...</article>
-  <div>
-</section>
-```
-
-The section has some cards at the bottom, yielding the following output:
-
-![Example 01](./assets/example_01.png)
-
-Now both the section itself and the first article have a `<ul>`, and styling them in an incautious way would propagate the definitions to the article, see:
-
-```css
-.homepage-section ul {
-  padding: 0 1rem;
-  margin-bottom: 2rem;
-}
-
-.homepage-section .cards article ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-```
-
-Even to the padding is overridden by the second definition, the margin from the first one would still applied.
-
-Possible solution? Use the `>` selector:
-
-```css
-.homepage-section > ul {
-  padding: 0 1rem;
-  margin-bottom: 2rem;
-}
-```
-
-Now the definition applies just to the `<ul>`s that are **direct descendants** of the section.
-
-[You can see a working example here][CSS Structure Example #1].
-
 ### BEM
 
 Among the various naming conventions, a popular one is [BEM][Introduction to BEM]. It suggests the concept of blocks, elements and modifiers like:
@@ -226,6 +164,9 @@ A common practice is to define variables in the `:root` pseudo class selector as
 :root {
   --primary-color: #ff00ff;
   --secondary-color: #f00f0f;
+
+  --rounded-sm: 5px;
+  --rounded-lg: 10px;
 }
 ```
 

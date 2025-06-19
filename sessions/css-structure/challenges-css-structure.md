@@ -10,6 +10,16 @@ Solve this challenge by running this command in your terminal:
 npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-structure/taco-truck
 ```
 
+## BEM
+
+(difficulty: 🔥🔥)
+
+Solve this challenge by running this command in your terminal:
+
+```bash
+npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/css-structure/bem
+```
+
 ## Custom Properties
 
 (difficulty: 🔥)

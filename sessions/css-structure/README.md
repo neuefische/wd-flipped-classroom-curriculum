@@ -143,40 +143,6 @@ body {
 > Ask the students to later play around with inheritance during the challenges.
 > You can now undo or comment out these examples to explain the next concept.
 
-### CSS practical strategies for good structure
-
-- Show some concrete use cases
-- Show that the CSS code is doubled in the `body`and the `.card` selector
-- to respect the D.R.Y. (Don't Repeat Yourself) principle we should avoid this
-- The guidelines:
-  - Independent blocks and CSS selectors
-  - Make your code reusable and modular
-  - Code is easier to read and understand
-  - Easier to scale, more robust and explicit
-- Cut the flexbox rules from the `.card` selector and `body` and create a new class called `.flex`. Add the rules to the new selector.
-
-```css
-/*add to the demo:*/
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-```
-
-- Go to the `index.html` and add the `class="flex"` to the `body` element. For the section elements, add the class `flex` behind the class `card` like this:
-
-```html
-<body class="flex">
-  ...
-  <section class="card flex">...</section>
-  <section class="card flex">...</section>
-</body>
-```
-
 ### CSS Structure best practices
 
 - Explain why we need a consistent CSS structure
@@ -193,7 +159,7 @@ body {
 - write the import statement in the `styles.css` file
 
 ```css
-@import "global.css";
+@import "./global.css";
 ```
 
 - copy the global styles into the file
@@ -210,15 +176,6 @@ body {
   color: #e4e8f0;
   background-color: #282828;
 }
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 ```
 
 - create a folder named `components`
@@ -226,7 +183,7 @@ body {
 - write the import statement in the `styles.css` file
 
 ```css
-@import "../components/card.css";
+@import "./components/card.css";
 ```
 
 - copy the card styles into the file
@@ -259,6 +216,24 @@ body {
 }
 ```
 
+- Repeat the component process for the title component:
+
+```css
+// styles/components/title.css
+
+.title {
+  color: #ff4a11;
+}
+```
+
+```css
+// styles/styles.css
+
+@import "./components/title.css";
+```
+
+- Highlight, that the order of imports matter, since class rulesets imported later might overrule rulesets in previous style imports.
+
 ### Custom Properties
 
 - Discuss the concept of variables
@@ -276,6 +251,15 @@ body {
   --secondary-color: #e4e8f0;
   --tertiary-color: #9ca3af;
   --background-color: #282828;
+}
+```
+
+- Show that you can not only specify colors as variables but any values you like, for example the border radius.
+
+```css
+:root {
+  --rounded-sm: 5px;
+  --rounded-lg: 10px;
 }
 ```
 
