@@ -1,18 +1,20 @@
 # Challenges: HTML and the Web
 
-## Active Learning
+## Your Self-Guided HTML and Web Exploration
 
-Welcome to this active learning session focused on exploring HTML and the Web in a self-directed way. As a developer, one of the most valuable skills is the ability to teach yourself effectively, so let's take some more steps in that direction.
+ While your coach delivered this session, we want to empower you to start building a crucial skill for any developer: **self-directed learning**. This session is designed to gently introduce you to the power of active learning, helping you discover HTML and the Web at your own pace.
 
-> The active learning process involves the following steps:
+Think of this as a guided journey where you'll learn **how to learn effectively**. As you go through the material, you'll be practicing the steps of active learning, which will be incredibly valuable throughout your studies and career.
 
-1. Read and Understand the Document: Begin by carefully reading the document and familiarizing yourself with its contents.
+Here's how to make the most of this session:
 
-1. Analyze the Examples: As you progress through the document, take your time to break down and comprehend the various examples provided. They appear as you keep scrolling down the page.
+1. **Read and Understand:** Take your time to carefully read through the document. Don't rush!
 
-1. Collect Your Questions: As you read the document, you may have questions or uncertainties. Write them down in a text file or on a piece of paper. We will dedicate time to address them during the recap session.
+2. **Analyze Examples:** As you scroll, you'll find various examples. Pause, break them down, and make sure you understand how they work. This is key to grasping the concepts.
 
-> ❗️ Start your active learning journey by clicking [here](https://web-active-learning.vercel.app/documents/html-and-the-web).
+3. **Note Your Questions:** Keep a text file or a piece of paper handy. As questions come up, write them down. We'll have a dedicated recap session to discuss them together.
+
+Ready to begin your active learning journey? Click [here](https://web-active-learning.vercel.app/documents/html-and-the-web) to dive in!
 
 ## Folder Structure
 
@@ -30,7 +32,7 @@ web-bootcamp
 
 (difficulty: 🔥)
 
-❗️ Make sure you execute this command while being located in your `web-challenges` folder.
+❗️ Make sure you execute this command while being located in your **`web-challenges`** folder.
 
 Solve this challenge by using this command in your terminal:
 
@@ -42,7 +44,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-and-the-web/fo
 
 (difficulty: 🔥🔥)
 
-❗️ Make sure you execute this command while being located in your `web-challenges` folder.
+❗️ Make sure you execute this command while being located in your **`web-challenges`** folder.
 
 Solve this challenge by using this command in your terminal:
 
@@ -54,7 +56,7 @@ npx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/html-and-the-web/fi
 
 (difficulty: 🔥)
 
-❗️ Make sure you execute this command while being located in your `web-challenges` folder.
+❗️ Make sure you execute this command while being located in your **`web-challenges`** folder.
 
 Solve this challenge by using this command in your terminal:
 
@@ -69,7 +71,7 @@ to the handout.
 
 (difficulty: 🔥🔥)
 
-❗️ Make sure you execute this command while being located in your `web-bootcamp` folder, not inside the `web-challenges` folder.
+❗️ Make sure you execute this command while being located in your **`web-bootcamp`** folder, not inside the `web-challenges` folder.
 
 Build your own _Personal Website_ using this command in your terminal:
 
