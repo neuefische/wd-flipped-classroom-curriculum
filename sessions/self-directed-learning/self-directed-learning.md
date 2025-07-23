@@ -8,7 +8,7 @@ Today’s session, **Self-Directed Learning**, is dedicated time for you to catc
 
 ## Career Development
 
-If you have already attended an initial session with a career coach, we recommend setting aside an hour for career development. You can follow the self-study materials on the [Career Development LMS](https://login.neuefische.de/?domain=dashboard.neuefische.de). The LMS allows you to book weekly online group sessions for CV reviews with a career coach, available in both English and German. Remember, it’s essential to dedicate one hour per week to advancing your career development.
+If you have already attended an initial session with a career coach, we recommend setting aside an hour for career development. You can follow the self-study materials on the [Career Development LMS](https://neue-fische-classroom-h5kn30b1st.mymemberspot.de/library). The LMS allows you to book weekly online group sessions for CV reviews with a career coach, available in both English and German. Remember, it’s essential to dedicate one hour per week to advancing your career development.
 
 For more details, please refer to the guide [here](./assets/careers.md)
 
