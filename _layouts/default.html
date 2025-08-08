@@ -6,7 +6,10 @@
     <title>{{ page.title }}</title>
     {{ site.theme_config }} {{ content_for_head }}
     <!-- Theme CSS laden -->
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css?v='' | append: site.github.build_revision | relative_url }}"
+    />
   </head>
   <body>
     <!-- Optional: navigation, aber ohne Repo-H1 -->
@@ -29,4 +32,3 @@
     </script>
   </body>
 </html>
-
