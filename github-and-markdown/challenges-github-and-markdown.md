@@ -10,7 +10,8 @@ the so called **profile readme markdown file**. So let's build our very own pers
 
 ### Part 1
 
-First we need a <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme" target="_blank" rel="noopener noreferrer">
+First we need a
+[special repository](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme){:target="_blank"}
 containing a file called **README.md**. This markdown file will later be displayed on your profile
 page.
 
