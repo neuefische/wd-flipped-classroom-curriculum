@@ -2,11 +2,20 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    {{ site.theme_config }} {{ content_for_head }}
+    <!-- Theme CSS laden -->
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
   </head>
   <body>
-    {{ content }}
+    <!-- Optional: navigation, aber ohne Repo-H1 -->
+    {% include head.html %}
+
+    <!-- Hauptinhalt -->
+    <main>{{ content }}</main>
+
+    {% include footer.html %}
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll("a[href^='http']").forEach(function (link) {
@@ -20,3 +29,4 @@
     </script>
   </body>
 </html>
+
