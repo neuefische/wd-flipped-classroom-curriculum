@@ -14,10 +14,10 @@
   <body>
     <!-- Optional: navigation, aber ohne Repo-H1 -->
     {% include head.html %}
-
-    <!-- Hauptinhalt -->
-    <main>{{ content }}</main>
-
+    <div class="container-lg px-3 my-5 markdown-body">
+      <!-- Hauptinhalt -->
+      <main>{{ content }}</main>
+    </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll("a[href^='http']").forEach(function (link) {
